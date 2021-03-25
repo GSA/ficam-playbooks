@@ -1,8 +1,8 @@
 ---
 layout: page
-navtitle: ICAM Privileged User Instruction Playbook
 title: ICAM Privileged User Instruction Playbook
 type: Markdown
+pubDate: 2021
 date: 2021
 permalink: /pam-playbook/
 description: This document provides federal agencies with guidance to manage its privileged users by
