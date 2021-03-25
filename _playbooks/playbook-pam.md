@@ -1,5 +1,6 @@
 ---
 layout: page
+collection: p;aybooks
 title: ICAM Privileged User Instruction Playbook
 type: Markdown
 pubDate: 2021
