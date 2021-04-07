@@ -241,12 +241,11 @@ have begun to develop policy, regulations, and programs that mitigate unwanted a
 espionage, disclosure of information) by employees, including privileged users.^9 In order to
 proactively mitigate these threats, the NITP requires agencies to:
 
-```
- Gather, integrate, and centrally analyze and respond to key threat-related information;
- Monitor employee use of classified networks;
- Provide the workforce with insider threat awareness training; and
- Protect the civil liberties and privacy of all personnel.^10
-```
+* Gather, integrate, and centrally analyze and respond to key threat-related information;
+* Monitor employee use of classified networks;
+* Provide the workforce with insider threat awareness training; and
+* Protect the civil liberties and privacy of all personnel.^10
+
 In particular, these employees and contractors who require elevated access to facilities and
 information systems to fulfill their organizational role (i.e., privileged users) have the ability to
 jeopardize sensitive information or infrastructure, whether knowingly or unknowingly.
