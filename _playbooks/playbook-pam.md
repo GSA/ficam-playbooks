@@ -313,22 +313,20 @@ security domains. This document is not to supersede existing policy or requireme
 
 The following items fall outside the scope of this document:
 
-```
- Recommendations and guidance specific to only one security domain (i.e., unclassified,
+* Recommendations and guidance specific to only one security domain (i.e., unclassified,
 Secret, Top Secret);
-```
+
 (^12) FICAM Roadmap
 (^13) See the CNSS website for CNSS directives, issuances, and policies.
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-```
- Timelines associated with achieving the leading management approaches and practices
+* Timelines associated with achieving the leading management approaches and practices
 outlined herein; and
- Implementation of an agency’s insider threat program as it relates to privileged users in
+* Implementation of an agency’s insider threat program as it relates to privileged users in
 fulfillment of NITP requirements.
-```
+
 ## 1.4. Assumptions
 
 This document takes into consideration the following assumptions and dependencies:
