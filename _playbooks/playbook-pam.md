@@ -38,12 +38,12 @@ development of this document aligns with and supports the responsibilities of th
 which include:
 
 ```
- Aligning federal agencies around common practices by fostering effective government-
+* Aligning federal agencies around common practices by fostering effective government-
 wide Identity, Credential, and Access Management (ICAM);
- Collaborating with Federal Government and external identity management activities
+* Collaborating with Federal Government and external identity management activities
 (non-federal, commercial, and more) to leverage best practices and enhance
 interoperability; and
- Enabling trust and interoperability in online transactions, through the application of
+* Enabling trust and interoperability in online transactions, through the application of
 common policies and approaches, in activities that cross organizational boundaries.
 ```
 This guidance has been prepared for use by federal agencies and is not intended to contradict
