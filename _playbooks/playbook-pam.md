@@ -24,7 +24,7 @@ This page is intentionally left blank.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-August 30. 2021
+August 30, 2021
 
 **Authority**
 
