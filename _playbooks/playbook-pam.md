@@ -25,14 +25,7 @@ August 30, 2021
 
 **Authority**
 
-This document has been developed by the Privileged User Tiger Team (PUTT) of the Identity,
-Credential, and Access Management Subcommittee (ICAMSC), as supplemental guidance to the
-Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation
-Guidance.^1 The ICAMSC was established in 2008 by the Federal Chief Information Officers
-(CIO) Council’s Information Security and Identity Management Committee (ISIMC) and was
-tasked with aligning the Identity Management activities of the Federal Government. The
-development of this document aligns with and supports the responsibilities of the ICAMSC,
-which include:
+This document has been developed by the Privileged User Tiger Team (PUTT) of the Identity, Credential, and Access Management Subcommittee (ICAMSC), as supplemental guidance to the Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance.Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version 2.0, Federal Chief Information Officers Council, December 2, 2011, [FICAM Roadmap]. The ICAMSC was established in 2008 by the Federal Chief Information Officers (CIO) Council’s Information Security and Identity Management Committee (ISIMC) and was tasked with aligning the Identity Management activities of the Federal Government. The development of this document aligns with and supports the responsibilities of the ICAMSC, which include:
 
 * Aligning federal agencies around common practices by fostering effective government-
 wide Identity, Credential, and Access Management (ICAM);
@@ -42,13 +35,7 @@ interoperability; and
 * Enabling trust and interoperability in online transactions, through the application of
 common policies and approaches, in activities that cross organizational boundaries.
 
-This guidance has been prepared for use by federal agencies and is not intended to contradict
-other previously established standards and guidelines that are mandatory and binding on federal
-agencies. Additionally, these guidelines should not be interpreted as altering or superseding the
-existing authority of the FICAM Roadmap.
-
-(^1) Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version 2.0, Federal Chief
-Information Officers Council, December 2, 2011, [FICAM Roadmap].
+This guidance has been prepared for use by federal agencies and is not intended to contradict other previously established standards and guidelines that are mandatory and binding on federal agencies. Additionally, these guidelines should not be interpreted as altering or superseding the existing authority of the FICAM Roadmap.
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
@@ -124,9 +111,7 @@ information security goals by directing or tailoring these activities based on i
 environment, mission, business needs, and privileged user population (Step 9). To assist in this
 effort, this document includes a collection of useful references, insider threat classifications, and
 a security controls mapping to the National Institute for Standards and Technology’s Special
-Publication 800-53.^4
-
-(^4) SP 800- 53 , Security and Privacy Controls for Federal Information Systems and Organizations, Revision 4, NIST,
+Publication 800-53, Security and Privacy Controls for Federal Information Systems and Organizations, Revision 4, NIST,
 April 2013. [SP 800-53]. For agencies operating on classified fabrics, please leverage Security Categorization and
 Control Selection 1253 (CNSS 1253), as this document identifies applicable options in alignment with SP 800-53.
 
@@ -217,86 +202,28 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
 ## 1.1. Background
 
 In alignment with the Federal Identity, Credential, and Access Management Roadmap and
-Implementation Guidance (FICAM Roadmap),^5 federal agencies are responsible for ensuring
-that their employees and contractors are fulfilling their job functions through appropriate use of
-the physical and logical resources to which they have access. In recent years, the Federal
-Government has experienced incidents in which an individual employee or contractor with
-elevated access^6 compromised security from within agency boundaries. In some instances, these
-individuals were able to expose content and data due to a lack of effective access control, which
-allowed them unrestricted access to information systems.
+Implementation Guidance (FICAM Roadmap), Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version 2.0, Federal Chief
+Information Officers Council, December 2, 2011, [FICAM Roadmap]. Federal agencies are responsible for ensuring that their employees and contractors are fulfilling their job functions through appropriate use of the physical and logical resources to which they have access. In recent years, the Federal Government has experienced incidents in which an individual employee or contractor with elevated access. Elevated access allows a user to perform security or administration functions on a protected resource that the general user population is not authorized to perform. Individuals who are granted elevated access are referred to as privileged users. Refer to Section 2 for the definition of a
+privileged user. compromised security from within agency boundaries. In some instances, these individuals were able to expose content and data due to a lack of effective access control, which allowed them unrestricted access to information systems.
 
 In 2012, the President released the “National Insider Threat Policy and Minimum Standards for
-Executive Branch Insider Threat Programs,”^7 (NITP) to address the need for federal agencies to
-monitor all employees who may pose a threat to national security. Additionally in 2012, the
-National Strategy for Information Sharing and Safeguarding (NSISS) was released, in which one
-of its highlighted goals supports identifying, preventing, and mitigating insider threats to the
-Federal Government.^8 As a result of the NITP, NSISS, and federal security incidents, agencies
-have begun to develop policy, regulations, and programs that mitigate unwanted actions (e.g.,
-espionage, disclosure of information) by employees, including privileged users.^9 In order to
-proactively mitigate these threats, the NITP requires agencies to:
+Executive Branch Insider Threat Programs”, “Presidential Memorandum -- National Insider Threat Policy and Minimum Standards for Executive Branch Insider Threat Programs,” Office of the Press Secretary, November 21, 2012. [NITP] (NITP) to address the need for federal agencies to monitor all employees who may pose a threat to national security. Additionally in 2012, the National Strategy for Information Sharing and Safeguarding (NSISS) was released, in which one of its highlighted goals supports identifying, preventing, and mitigating insider threats to the Federal Government. The National Strategy for Information Sharing and Safeguarding (NSISS), Executive Office of the President (EOP), December 2012. [NSISS] As a result of the NITP, NSISS, and federal security incidents, agencies have begun to develop policy, regulations, and programs that mitigate unwanted actions (e.g., espionage, disclosure of information) by employees, including privileged users. In order to proactively mitigate these threats, the NITP requires agencies to:
 
 * Gather, integrate, and centrally analyze and respond to key threat-related information;
 * Monitor employee use of classified networks;
 * Provide the workforce with insider threat awareness training; and
-* Protect the civil liberties and privacy of all personnel.^10
+* Protect the civil liberties and privacy of all personnel, the NITP.
 
-In particular, these employees and contractors who require elevated access to facilities and
-information systems to fulfill their organizational role (i.e., privileged users) have the ability to
-jeopardize sensitive information or infrastructure, whether knowingly or unknowingly.
-Administrative and security related functions commonly assigned to privileged users grant these
-individuals the means to compromise all three core elements of information security: availability,
-confidentiality, and integrity.^11 Therefore, an attack executed by a privileged user can have
+In particular, these employees and contractors who require elevated access to facilities and information systems to fulfill their organizational role (i.e., privileged users) have the ability to jeopardize sensitive information or infrastructure, whether knowingly or unknowingly. Administrative and security related functions commonly assigned to privileged users grant these individuals the means to compromise all three core elements of information security: availability, confidentiality, and integrity. FIPS 199, Standards for Security Categorization for Federal Information and Information Systems, National Institute of Standards and Technology (NIST), April 2004. [FIPS 199] Therefore, an attack executed by a privileged user can have especially damaging effects on a federal agency. The threat posed by privileged users demonstrates the need for a concerted federal effort to manage these essential, yet inherently risky, individuals through policy-based and technical measures.
 
-(^5) Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version 2.0, Federal Chief
-Information Officers Council, December 2, 2011, [FICAM Roadmap].
-(^6) Elevated access allows a user to perform security or administration functions on a protected resource that the general user population is not
-authorized to perform. Individuals who are granted elevated access are referred to as privileged users. Refer to Section 2 for the definition of a
-privileged user.
-(^7) “Presidential Memorandum -- National Insider Threat Policy and Minimum Standards for Executive Branch Insider Threat Programs,” Office of
-the Press Secretary, November 21, 2012. [NITP]
-(^8) National Strategy for Information Sharing and Safeguarding (NSISS), Executive Office of the President (EOP), December 2012. [NSISS]
-(^9) Please see Section 2 for the definition of a privileged user.
-(^10) NITP
-(^11) FIPS 199, Standards for Security Categorization for Federal Information and Information Systems, National Institute of Standards and
-Technology (NIST), April 2004. [FIPS 199]
+Privileged users have been responsible for the most recent high-profile federal security breaches since the release of NITP, bolstering the need for agencies to align with the requirements outlined in NITP, and in particular, emphasizing the management of their privileged user populations. As part of the insider threat program required by NITP, agencies should focus on developing stringent policy to proactively address the threat privileged users can pose from within. Relevant activities would address the three federal requirements of agencies: mitigate the insider threat, protect agency operations, and safeguard sensitive information.
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-especially damaging effects on a federal agency. The threat posed by privileged users
-demonstrates the need for a concerted federal effort to manage these essential, yet inherently
-risky, individuals through policy-based and technical measures.
-
-Privileged users have been responsible for the most recent high-profile federal security breaches
-since the release of NITP, bolstering the need for agencies to align with the requirements
-outlined in NITP, and in particular, emphasizing the management of their privileged user
-populations. As part of the insider threat program required by NITP, agencies should focus on
-developing stringent policy to proactively address the threat privileged users can pose from
-within. Relevant activities would address the three federal requirements of agencies: mitigate the
-insider threat, protect agency operations, and safeguard sensitive information.
-
-In support of this need, the Identity, Credential, and Access Management (ICAM) Sub-
-Committee (ICAMSC) within the Information Security and Identity Management Committee
-(ISIMC) of the Federal Chief Information Officer (CIO) Council directed the development of a
-Privileged User Instruction (i.e., privileged user agreement) and Implementation Guidance.
-Agencies should work to proactively, securely, and efficiently manage their privileged user
-populations in alignment with the FICAM Roadmap. To support agencies in overcoming the
-challenges associated with privileged user management, the ICAMSC formed the Privileged
-User Tiger Team (PUTT). This group has been tasked with developing guidance that provides
-instruction and implementation best practices to federal agencies for managing and monitoring
-privileged users across security domains. The PUTT has collaborated with several agencies to
-provide leading practices for monitoring, identifying, and mitigating potential threats to agency
-resources to maintain control of agency data and drive security improvements across the federal
-enterprise.
+In support of this need, the Identity, Credential, and Access Management (ICAM) Sub-Committee (ICAMSC) within the Information Security and Identity Management Committee
+(ISIMC) of the Federal Chief Information Officer (CIO) Council directed the development of a Privileged User Instruction (i.e., privileged user agreement) and Implementation Guidance. Agencies should work to proactively, securely, and efficiently manage their privileged user populations in alignment with the FICAM Roadmap. To support agencies in overcoming the challenges associated with privileged user management, the ICAMSC formed the Privileged User Tiger Team (PUTT). This group has been tasked with developing guidance that provides instruction and implementation best practices to federal agencies for managing and monitoring privileged users across security domains. The PUTT has collaborated with several agencies to provide leading practices for monitoring, identifying, and mitigating potential threats to agency resources to maintain control of agency data and drive security improvements across the federal enterprise.
 
 ## 1.2. Purpose
 
-The purpose of this document is to provide guidance to federal agencies to assist in managing
-their privileged users’ access to agency protected resources (i.e., content and data, applications
-and web services, network and infrastructure, facilities). This document will serve as a
-supplement to the FICAM Roadmap^12 and Committee on National Security Systems (CNSS)
-Directive 504 Annex C^13 by providing guidance for managing privileged users that is applicable
-across security domains.
+The purpose of this document is to provide guidance to federal agencies to assist in managing their privileged users’ access to agency protected resources (i.e., content and data, applications and web services, network and infrastructure, facilities). This document will serve as a supplement to the FICAM Roadmap^12 and Committee on National Security Systems (CNSS) Directive 504 Annex C, See the CNSS website for CNSS directives, issuances, and policies. by providing guidance for managing privileged users that is applicable across security domains.
 
 ## 1.3. Scope
 
@@ -308,9 +235,6 @@ The following items fall outside the scope of this document:
 
 * Recommendations and guidance specific to only one security domain (i.e., unclassified,
 Secret, Top Secret);
-
-(^12) FICAM Roadmap
-(^13) See the CNSS website for CNSS directives, issuances, and policies.
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
@@ -331,11 +255,7 @@ This document takes into consideration the following assumptions and dependencie
     support of achieving the desired target state.
 3. The information in this document is not to supersede guidance provided for national
     security systems via CNSSD 504 Annex C.
-4. The information in this document supports the requirement and assumes that an agency
-    has implemented National Institute for Standards and Technology’s (NIST) Special
-    Publication 800 - 53: Security and Privacy Control for Federal Information Systems and
-    Organizations (SP 800-53),^14 per the Federal Information Security Management Act
-    (FISMA).^15
+4. The information in this document supports the requirement and assumes that an agency has implemented National Institute for Standards and Technology’s (NIST) Special Publication 800 - 53: Security and Privacy Control for Federal Information Systems and Organizations (SP 800-53), SP 800- 53 , Security and Privacy Controls for Federal Information Systems and Organizations, Revision 4, NIST, April 2013. [SP 800-53] per the Federal Information Security Management Act (FISMA).FISMA Metrics, FY2014 Chief Information Office Federal Information Security Management Act Reporting Metrics v2.0, January 2014. [FISMA Metrics]
 
 ## 1.5. Reference Documentation
 
@@ -345,19 +265,8 @@ urgency for federal agencies to implement proper controls for privileged users, 
 a heightened risk to their respective organizations and the country at large. Documents outlined
 in Appendix A: Reference Documentation, include the National Insider Threat Policy (NITP),^16
 relevant Executive Orders (E.O.), FISMA, the Standards for Security Categorization for Federal
-Information and Information Systems (FIPS 199),^17 FICAM Roadmap,^18 and SP 800- 53 ,^19 and
-the Software Engineering Institute at Carnegie Mellon’s Insider Threat Center’s Common Sense
-Guide to Mitigating Insider Threats (4th Edition).^20
-
-(^14) SP 800- 53 , Security and Privacy Controls for Federal Information Systems and Organizations, Revision 4, NIST, April 2013. [SP 800-53]
-(^15) FISMA Metrics, FY2014 Chief Information Office Federal Information Security Management Act Reporting Metrics v2.0, January 2014.
-[FISMA Metrics]
-(^16) NITP
-(^17) FIPS 199
-(^18) FICAM Roadmap
-(^19) For agencies operating on classified fabrics, leverage CNSS 1253.
-(^20) Common Sense Guide to Mitigating Insider Threats (4th Edition), CERT Insider Threat Center, Software Engineering Institute, Carnegie
-Mellon University, December 2012. [Common Sense Guide]
+Information and Information Systems (FIPS 199), FICAM Roadmap, and SP 800- 53 , For agencies operating on classified fabrics, leverage CNSS 1253. and
+the Software Engineering Institute at Carnegie Mellon’s Insider Threat Center’s Common Sense Guide to Mitigating Insider Threats (4th Edition), CERT Insider Threat Center, Software Engineering Institute, Carnegie Mellon University, December 2012. [Common Sense Guide]
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
@@ -367,35 +276,11 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
 
 ## 2. Privileged User Landscape Overview
 
-An agency is responsible for managing the privileges of all users with access to agency resources
-to ensure that employees can fulfill their assigned duties efficiently and securely.^21 To execute
-assigned duties, a subset of an agency’s user population may be granted elevated access to an
-agency’s protected resources (e.g., content and data, applications and web services, network and
-infrastructure, facilities), which if misused or abused, could significantly compromise these
-resources.^22 The individuals entrusted with elevated access constitute an agency’s privileged user
-population.
+An agency is responsible for managing the privileges of all users with access to agency resources to ensure that employees can fulfill their assigned duties efficiently and securely. Referred to as “privilege management;” the definition can be found in the FICAM Roadmap. To execute assigned duties, a subset of an agency’s user population may be granted elevated access to an agency’s protected resources (e.g., content and data, applications and web services, network and infrastructure, facilities), which if misused or abused, could significantly compromise these resources, Please see Section 3.3 for information on protected resources. The individuals entrusted with elevated access constitute an agency’s privileged user population.
 
-An agency’s privileged user population can include a range of individuals entrusted with
-elevated access. For example, both a security guard with physical access to a server room and a
-UNIX administrator with root access may be categorized as privileged users, despite different
-elevated access profiles. Given the broad-reaching nature of an organization’s privileged user
-population, it is important that an agency understand the user groups and accounts that constitute
-its privileged user population. Examples of individuals who may be considered privileged users
-include: application developer, database administrator, data center operations personnel,
-information technology (IT) security practitioner, IT audit practitioner, maintenance personnel,
-network engineer, and system administrator. Because of privileged users’ elevated access,
-unwanted behavior by these individuals can significantly compromise agency assets or
-operations. As a result, privileged user management is a cornerstone of insider threat mitigation.
+An agency’s privileged user population can include a range of individuals entrusted with elevated access. For example, both a security guard with physical access to a server room and a UNIX administrator with root access may be categorized as privileged users, despite different elevated access profiles. Given the broad-reaching nature of an organization’s privileged user population, it is important that an agency understand the user groups and accounts that constitute its privileged user population. Examples of individuals who may be considered privileged users include: application developer, database administrator, data center operations personnel, information technology (IT) security practitioner, IT audit practitioner, maintenance personnel, network engineer, and system administrator. Because of privileged users’ elevated access, unwanted behavior by these individuals can significantly compromise agency assets or operations. As a result, privileged user management is a cornerstone of insider threat mitigation.
 
-(^21) Referred to as “privilege management;” the definition can be found in the FICAM Roadmap.
-(^22) Please see Section 3.3 for information on protected resources.
-(^23) This definition is derived from the FY14 FISMA Metrics, as defined in the Information Security Glossary.
-Terminology
-Privileged User **–** A user who has been granted elevated privileges for access protected
-physical or logical resources. Such users include, for example, security personnel or
-system administrators who are responsible for managing restricted physical locations or
-shared information technology (IT) infrastructure, and require access to related systems
-to create new user accounts, and add to or amend the privileges of other users.^23
+This definition is derived from the FY14 FISMA Metrics, as defined in the Information Security Glossary. Terminology Privileged User **–** A user who has been granted elevated privileges for access protected physical or logical resources. Such users include, for example, security personnel or system administrators who are responsible for managing restricted physical locations or shared information technology (IT) infrastructure, and require access to related systems to create new user accounts, and add to or amend the privileges of other users.^23
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
