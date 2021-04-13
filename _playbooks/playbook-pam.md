@@ -515,15 +515,12 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
     elevated access as necessary in support of a user’s job function and role. This activity is
     outlined in Section 3.2.
 
-```
-Implementation Tip
-When identifying an agency’s privileged user population, it is important to validate that the elevated
+**_Implementation Tip_**
+*When identifying an agency’s privileged user population, it is important to validate that the elevated
 access an individual possesses supports his/her job function. If the elevated access is not needed,
 it should be immediately revoked and de-provisioned. De-provisioning is performed when there is
 a need to permanently eliminate an existing access permission or remove a user account
-altogether.
-```
-# 
+altogether.*
 
 Once an agency identifies its privileged user population for a protected resource, it can analyze
 the related vulnerabilities, impact, and likelihood of misuse or abuse.^27 An agency can then
@@ -535,6 +532,11 @@ The following table provides examples of job functions that may have elevated ac
 resources. As an agency advances its enterprise-wide access control services, and thus its
 convergence of physical and logical access activities and processes, it may have job functions
 with elevated access that overlap both logical and physical resources (as highlighted below).
+
+| Job Functions  |  Examples of Elevated Access  |
+|:--------------:|:------------------------------|
+| **Application Administrator**  | <ul> <li> Access to logical information is controlled through a variety of managed application interfaces; however, the user is granted additional privileges within the constraints of the application interface.</li> <li>Physical access to organization-specific sensitive doors or turnstiles that do not contain shared systems or infrastructure.</li> </ul>|
+| **Systems Administrator**  | <ul> <li> User has elevated or complete access to one or more vertical systems or applications. Compromise to a system is limited to the application-specific capabilities, and loss of availability would not impact the entire organization.</li> <li> A Non-Person Entity (NPE) has access to communicate and otherwise interact with other systems within an application vertical. Damage from the compromise of an NPE’s account is limited to the application vertical.</li> <li> Physical access to organization-specific sensitive doors or turnstiles that do not contain shared systems or infrastructure.</li> </ul>|
 
 ```
 Job Functions Examples of Elevated Access
