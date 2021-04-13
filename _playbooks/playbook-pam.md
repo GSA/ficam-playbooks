@@ -484,6 +484,7 @@ with elevated access that overlap both logical and physical resources (as highli
 |:--------------:|:------------------------------|
 | **Application Administrator**  | <ul> <li> Access to logical information is controlled through a variety of managed application interfaces; however, the user is granted additional privileges within the constraints of the application interface.</li> <li>Physical access to organization-specific sensitive doors or turnstiles that do not contain shared systems or infrastructure.</li> </ul>|
 | **Systems Administrator**  | <ul> <li> User has elevated or complete access to one or more vertical systems or applications. Compromise to a system is limited to the application-specific capabilities, and loss of availability would not impact the entire organization.</li> <li> A Non-Person Entity (NPE) has access to communicate and otherwise interact with other systems within an application vertical. Damage from the compromise of an NPE’s account is limited to the application vertical.</li> <li> Physical access to organization-specific sensitive doors or turnstiles that do not contain shared systems or infrastructure.</li> </ul>|
+| **Shared Infrastructure Administrator**   | <ul> <li> User has elevated or complete access to one or more shared systems, applications or infrastructure. Compromise of these systems could impact large portions of or the entire organization. </li> <li>An NPE has access to communicate and otherwise interact with other shared infrastructure systems. Damage from the compromise of an NPE’s account could impact large portions of or the entire organization.</li> <li>Physical access to doors or turnstiles protecting critical shared infrastructure, information, or other physical resources. Compromise of these physical controls could result in multiple types of wide-spread damage to the organization’s physical and logical resources.</li> </ul>|
 
 (^27) For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and
 Privileged Users.
@@ -492,24 +493,7 @@ Privileged Users.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-```
-Job Functions Examples of Elevated Access
-Shared
-Infrastructure
-Administrator
-```
-```
- User has elevated or complete access to one or more shared systems, applications or
-infrastructure. Compromise of these systems could impact large portions of or the entire
-organization.
- An NPE has access to communicate and otherwise interact with other shared infrastructure
-systems. Damage from the compromise of an NPE’s account could impact large portions of
-or the entire organization.
- Physical access to doors or turnstiles protecting critical shared infrastructure, information, or
-other physical resources. Compromise of these physical controls could result in multiple
-types of wide-spread damage to the organization’s physical and logical resources.
-```
-## Figure 2: Example Set of Elevated Access Profiles for a Resource
+###### Figure 2: Example Set of Elevated Access Profiles for a Resource
 
 By granting privileged users elevated access to protected resources, an agency becomes
 vulnerable to the risk of a privileged user misusing or exploiting these resources out of
@@ -520,15 +504,15 @@ mechanisms to mitigate unwanted behavior by privileged users. These mechanisms s
 include detective and preventive measures to provide a holistic approach to privileged user
 management.
 
-```
-FAQ
-What is the difference between preventive and detective measures?
+**FAQ**
+
+_What is the difference between preventive and detective measures?
 Preventive measures seek to proactively inhibit inappropriate behavior through measures
 such as background investigations, training, etc. Detective measures serve to identify
 unusual, suspicious behavior or changes in activity to proactively mitigate risk to agency
 facilities and resources (e.g., keystroke logging, audit logs). An agency should leverage
-both preventive and detective measures for privileged user activities.
-```
+both preventive and detective measures for privileged user activities._
+
 
 
 An agency should seek to leverage existing processes and controls to effectively manage its
@@ -537,9 +521,9 @@ Security Controls Mapping for Special Publication 800- 53 for a mapping of contr
 SP 800-53. These controls have been augmented to serve as countermeasures for how an agency
 can mitigate unwanted behavior by its privileged user population.
 
-```
-FAQ
-What if my agency discovers privileged accounts that are not associated with one
+**FAQ**
+
+_What if my agency discovers privileged accounts that are not associated with one
 person during a protected resource analysis?
 Conducting a protected resource analysis allows an agency to identify the privileged
 accounts relevant to protected resources. An agency may discover privileged accounts
@@ -547,8 +531,7 @@ that lack accountability as they are not associated with one person, including o
 rogue, and default accounts that have gone unnoticed or unmanaged. Once these
 problematic accounts are identified, an agency can determine whether these accounts
 should exist, and if so, which accountability mechanism should be applied (e.g., assign
-administrator).
-```
+administrator)._
 
 
 (^29) For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and
