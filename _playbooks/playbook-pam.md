@@ -790,6 +790,7 @@ when conforming to this portion of the Privileged User Management Framework:
     functions that require elevated access.
 
 **Implementation Tip**
+
 _Documenting a privileged user’s acknowledgement of his/her role and responsibilities is
 an excellent way to formalize the privileges granted. Implementing a standard privileged
 user acknowledgement form that requires the individual’s signature reinforces the
