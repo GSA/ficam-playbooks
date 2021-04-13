@@ -878,33 +878,13 @@ portion of the framework. An agency can find guidance on selecting the appropria
 control model in The Access Management Framework.^45
 
 The following table defines the protected resources a privileged user could attempt to access.
-
-```
-Protected Resource Definition
-Data and Content Data:^ A subset of information in an electronic format that allows it to be retrieved or
-transmitted between different systems.^46
-Content: Data in a usable form for one or more purposes.
-Applications and Web
-Services
-```
-```
-Applications: Software programs hosted by an information system that performs
-specific functions.^47
-Web Services: Software systems designed to support interactive and automated
-interaction with information systems over a network.^48
-Networks and
-Infrastructure
-```
-```
-Network: Information system(s) implemented with a collection of interconnected
-components.^49
-Infrastructure: The hardware, storage, servers, and data center space or network
-components that provide IT services to an organization.^50
-Facilities All buildings and structures^ occupied by Federal employees (includes existing
-owned, to be purchased or leased facilities; stand-alone facilities; Federal
-campuses; individual facilities on Federal campuses; and special-use facilities).
-```
-## Figure 4: Protected Resource Definitions
+|  Protected Resourse  |     Definition     |
+|:---------------------|--------------------|
+| **Data and Content** | <ul><li>**Data:** A subset of information in an electronic format that allows it to be retrieved or transmitted between different systems.</li> <li>**Content:** Data in a usable form for one or more purposes.</li></ul>|
+|**Applications and Web Services** | <ul><li>**Application:** Software programs hosted by an information system that performs specific functions.</li><li>**Web Services:** Software systems designed to support interactive and automated interaction with information systems over a network.</li></ul>|
+|**Netwoks and Infrastructure** | <ul><li>**Network:** Information system(s) implemented with a collection of interconnected components.</li><li>**Infrastructure:** The hardware, storage, servers, and data center space or network components that provide IT services to an organization.</li></ul>|
+|**Facillities** | All buildings and structures occupied by Federal employees (includes existing owned, to be purchased or leased facilities; stand-alone facilities; Federal campuses; individual facilities on Federal campuses; and special-use facilities).|
+###### Figure 4: Protected Resource Definitions
 
 The privileged user’s attempt to execute activities that require elevated access for the identified
 protected resource initiates the following processes:
