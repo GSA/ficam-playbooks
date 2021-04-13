@@ -889,46 +889,20 @@ The following table defines the protected resources a privileged user could atte
 The privileged user’s attempt to execute activities that require elevated access for the identified
 protected resource initiates the following processes:
 
-```
- Authentication. The privileged user will authenticate using the required multi-factor
-authentication, as illustrated in Figure 2. Multi-factor authentication involves three
-```
-(^44) Please refer to the FICAM Roadmap section 9.3.1 and Guide to Attribute Based Access Control (ABAC) Definition and Considerations,
-January 2014 for further information on managing users with different access control models.
-(^45) Refer to the AMF for a more detailed discussion on the various access control models. (pending hyperlink)
-(^46) Adapted from NIST IR 7298, Glossary of Key Information Security Terms, May 2013. [NIST IR 7298]
-(^47) As defined in NIST IR 7298.
-(^48) Adapted from W3C Web Services Glossary, February 2004.
-(^49) As defined in NIST IR 7298.
-(^50) Adapted from Information Technology Infrastructure Library (ITIL) Glossary of Terms, Definitions, and Acronyms, May 2007.
-(^51) Additional information regarding the protected resources can be found in the AMF.
+**Authentication.** The privileged user will authenticate using the required multi-factor
+authentication, as illustrated in Figure 2. Multi-factor authentication involves three distinct types of authentication factors: a) something you have, in this case, a PIV card; b) something you know, knowledge of the Personal Identification Number (PIN) to access protected areas of the PIV card; and c) something you are, cardholder fingerprint match with biometric data stored on the card. The confidence of the authentication increases with the number of factors used.^52 Based upon the level of authentication required, the privileged user will validate his/her identity through a combination of something he/she has, knows, and is.
 
+**Implementation Tip**
 
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-```
-distinct types of authentication factors: a) something you have, in this case, a PIV card; b)
-something you know, knowledge of the Personal Identification Number (PIN) to access
-protected areas of the PIV card; and c) something you are, cardholder fingerprint match
-with biometric data stored on the card. The confidence of the authentication increases
-with the number of factors used.^52 Based upon the level of authentication required, the
-privileged user will validate his/her identity through a combination of something he/she
-has, knows, and is.
-```
-```
-Implementation Tip
-In a Microsoft enterprise environment, an agency may manage its privileged users’
+_In a Microsoft enterprise environment, an agency may manage its privileged users’
 logical access by mapping each user’s PIV card to multiple accounts (e.g. enable
 altSecurityIdentities and Username Hints). After the privileged user presents his/her PIV
 card at log-in, the user can specify to which valid account he/she would like to
 authenticate. This function provides a standard log-in experience but also secure
 separation between standard accounts and those requiring elevated access (i.e.,
-privileged accounts).
-```
-# 
+privileged accounts)._
 
-```
- Authorization. Following successful authentication, the privileged user’s attempted
+**Authorization.** Following successful authentication, the privileged user’s attempted
 access is confirmed by the system that it is allowable. Authorization is the process of
 granting or denying specific access requests for obtaining and using information
 processing services or data and entering specific physical facilities.^53 Through an
@@ -939,10 +913,10 @@ requests to access protected resources. Management may become cumbersome for an
 agency if controls are too stringent or granular. Therefore, an agency needs to balance the
 complexity of the authorization process against the user’s ability to effectively perform
 his/her job.
-```
-```
-Implementation Tip
-For protected resources that do not support PIV authentication, an agency can use a
+
+**Implementation Tip**
+
+_For protected resources that do not support PIV authentication, an agency can use a
 privileged access gateway to enable use of the PIV card. A privileged access gateway is
 an intermediary between privileged users and protected resources that acts as a security
 checkpoint, providing authentication and authorization, as well as on-going monitoring
@@ -952,9 +926,7 @@ to protect the resource based on the user’s provisioned access and the agency�
 policies. Although an agency should opt for PIV authentication where possible, PIV
 authentication by proxy through single sign-on does qualify as PIV-enabled, per the
 FY14 Chief Information Officer Federal Information Security Management Act (FISMA)
-Reporting Metrics.^55
-```
-# 
+Reporting Metrics._
 
 (^52) SP 800- 116 , A Recommendation for the Use of PIV Credentials in Physical Access Control Systems (PACS), NIST, November 2008. [SP
 800 - 116]. SP 800- 116 specifies several authentication mechanisms using the PIV card to establish confidence in the identity of the cardholder. A
@@ -974,31 +946,32 @@ auditing of these actions.^56 Maintaining an audit trail facilitates tracking of
 account(s), access entitlements, and activity across protected resources. The list below highlights
 key monitoring activities that assist an agency in safeguarding the enterprise.^57
 
-```
- Training and Education. Enforcing curriculum-based training is a preventive measure
+
+**Training and Education.** Enforcing curriculum-based training is a preventive measure
 that can enhance employee vigilance of security protocol. As a detective measure, an
 agency can use training and education to develop observation skills to enhance both
 employee vigilance and reporting of suspicious behavior. Furthermore, an agency should
 hold on-going training sessions to reinforce the technical competencies commensurate to
 a privileged user’s elevated access. An agency should maintain accurate records of these
 training sessions to monitor their scope and effectiveness.
-```
-```
-Lesson Learned
-It is important for an agency to have mandatory training requirements for privileged
+
+
+**Lesson Learned**
+
+_It is important for an agency to have mandatory training requirements for privileged
 users on a recurring basis. The State Department requires privileged users to attend a
 five day training class specific to their user population’s role. Curriculum that reinforces
 the efficient and secure way to carry out assigned duties for privileged users can
-mitigate unwanted behavior stemming from ignorance.
-```
-```
- Access Recertification. Renewing the privileged user’s certification on a recurring basis
+mitigate unwanted behavior stemming from ignorance._
+
+
+**Access Recertification.** Renewing the privileged user’s certification on a recurring basis
 assists in validating the need for the individual’s elevated access. For example,
 recertification may be required on a monthly basis for a highly sensitive protected
 resource. Access should be removed (i.e., de-provisioned) in the event that recertification
 is not completed in a timely manner or if there is no longer a business need for the
 privileged user to have such access.
- Session Monitoring and Anomaly Reporting. Recording and analyzing patterns of
+**Session Monitoring and Anomaly Reporting.** Recording and analyzing patterns of
 privileged user behavior assists in identifying activity that deviates from the established
 baseline of normal behavior. For example, assigned job duties may require a privileged
 user to perform a pre-determined activity with specific steps on a daily basis by accessing
@@ -1007,58 +980,49 @@ steps or inexplicably repeating the pre-determined activity, further investigati
 warranted. Privileged users’ awareness of session recording serves to deter misuse or
 abuse. For privileged user activities/accounts that are highly sensitive, an agency can opt
 to implement live session monitoring, which is a security step above session recording.
- Alerts. Configuring a notification system to provide timely notice of unusual and
+**Alerts.** Configuring a notification system to provide timely notice of unusual and
 potentially dangerous activity assists the agency in its vigilance of privileged user
 activity. At the time an alert is received, the agency can implement necessary preventive
 measures to halt further activity.
-```
-(^56) Implementation on-going monitoring controls should be executed based on an agency’s risk assessment, as described in FIPS 199.
-(^57) The examples discussed are not meant to serve as an exhaustive list.
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-```
- Keystroke Logging. Recording and logging the keys struck on a privileged user’s
+**Keystroke Logging.** Recording and logging the keys struck on a privileged user’s
 workstation keyboard allows an agency to oversee the privileged user’s activity at a
 granular level. Such logging identifies key word usage that may alert the agency of
 suspicious behavior.
- Audit Logs and Reviews. Documenting and reviewing a set of audit records provides an
+**Audit Logs and Reviews.** Documenting and reviewing a set of audit records provides an
 agency with documentary evidence of a sequence of activities that has occurred on its
 physical or logical protected resources. Through recurring analysis, an agency may
 identify activity that did not trigger an alert, warranting the agency to implement more
 stringent monitoring of privileged user activity to properly safeguard the agency’s
 resources. Furthermore, an agency should consistently re-evaluate the scope and
 effectiveness of its audit review processes.
-```
-```
-Implementation Tip
-An analytics capability bolsters on-going monitoring activities by empowering an agency
+
+
+**Implementation Tip**
+
+_An analytics capability bolsters on-going monitoring activities by empowering an agency
 to maximize the utility of its data and log collections by offering an easy method to detect
 risk indicators of security violations and unwanted behavior by privileged users. Analytics
 support an enterprise with a platform for automatically identifying anomalies, such as
 rogue or orphaned accounts, segregation of duties violations, and deviations from
-system access and usage patterns.
-```
-# 
+system access and usage patterns._
 
-```
- Continuous Evaluation. To consistently validate privileged user suitability, an agency
+
+**Continuous Evaluation.** To consistently validate privileged user suitability, an agency
 should work closely with its personnel security office to confirm that the access level
 granted to the privileged user is consistent with personnel security records. Additionally,
 an agency should vet privileged users with background investigations on a recurring,
 consistent basis to protect an agency’s resources from insider threat. Performing
 continuous evaluation on a recurring basis cultivates a proactive security culture.
-```
-```
-Implementation Tip
-An agency should evaluate available tools to assist in privileged user management.
+
+
+**Implementation Tip**
+
+_An agency should evaluate available tools to assist in privileged user management.
 Continuous Diagnostics and Mitigation (CDM) is one example of a program that provides
 a broad spectrum of tools that enables an agency to identify privileged user risks on an
 ongoing basis, prioritize these risks based upon potential impact, and enable
-cybersecurity personnel to mitigate the most significant problems first.^58
-```
-# 
+cybersecurity personnel to mitigate the most significant problems first._
+
 
 (^58) Refer to the Department of Homeland Security (DHS) website for more information regarding CDM.
 
