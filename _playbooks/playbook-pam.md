@@ -476,6 +476,8 @@ with elevated access that overlap both logical and physical resources (as highli
 | **Systems Administrator**  | <ul> <li> User has elevated or complete access to one or more vertical systems or applications. Compromise to a system is limited to the application-specific capabilities, and loss of availability would not impact the entire organization.</li> <li> A Non-Person Entity (NPE) has access to communicate and otherwise interact with other systems within an application vertical. Damage from the compromise of an NPE’s account is limited to the application vertical.</li> <li> Physical access to organization-specific sensitive doors or turnstiles that do not contain shared systems or infrastructure.</li> </ul>|
 | **Shared Infrastructure Administrator**   | <ul> <li> User has elevated or complete access to one or more shared systems, applications or infrastructure. Compromise of these systems could impact large portions of or the entire organization. </li> <li>An NPE has access to communicate and otherwise interact with other shared infrastructure systems. Damage from the compromise of an NPE’s account could impact large portions of or the entire organization.</li> <li>Physical access to doors or turnstiles protecting critical shared infrastructure, information, or other physical resources. Compromise of these physical controls could result in multiple types of wide-spread damage to the organization’s physical and logical resources.</li> </ul>|
 
+###### Figure 2: Example Set of Elevated Access Profiles for a Resource
+
 (^27) For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and
 Privileged Users.
 (^28) For more information on logical and physical access control systems, refer to the FICAM Roadmap.
@@ -483,7 +485,6 @@ Privileged Users.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-###### Figure 2: Example Set of Elevated Access Profiles for a Resource
 
 By granting privileged users elevated access to protected resources, an agency becomes
 vulnerable to the risk of a privileged user misusing or exploiting these resources out of
