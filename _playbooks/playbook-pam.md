@@ -431,59 +431,6 @@ purposes copying classified files on portable media.
 | **Intellectual Property Theft**| Stealing intangible assets (e.g., discoveries, inventions, designs) from an organization.| Cloud administrator uses elevated access to server to steal proprietary information.|
 | **Unwanted Information Disclosure**| A communication or physical transfer of information to a recipient who is not authorized to access to the information.| System administrator creates a “backdoor” account to inappropriately access and release classified information.|
 
-```
-Unwanted Behavior Definition Examples of Unwanted
-Behavior by Privileged Users
-Fraud Unwanted^ use,^ modification, addition, or
-deletion of agency’s data for personal gain.
-```
-```
-On the pretense of fixing corrupt
-data, a database administrator
-modifies data without authorization.
-Espionage Sharing restricted information with the
-intention of aiding a foreign actor or
-harming the U.S. Government.
-```
-```
-System administrator uses elevated
-access to retrieve confidential data
-and sells it to a foreign actor.
-Sabotage Purposefully inflicting harm on an
-organization.
-```
-```
-Maintenance worker inserts a
-Universal Serial Bus (USB) drive
-into a server to inject malware on
-behalf of an external bad actor.
-Intellectual Property
-Theft
-```
-```
-Stealing intangible assets (e.g.,
-discoveries, inventions, designs) from an
-organization.
-```
-```
-Cloud administrator uses elevated
-access to server to steal proprietary
-information.
-Unwanted Information
-Disclosure
-```
-```
-A communication or physical transfer of
-information to a recipient who is not
-authorized to access to the information.
-```
-```
-System administrator creates a
-“backdoor” account to
-inappropriately access and release
-classified information.
-Figure 1 : Unwanted Behavior by Privileged Users
-```
 ## 2.2. Evaluating Privileged User Risks
 
 As the first step in mitigating privileged users’ engaging in the unwanted behavior described in
@@ -538,30 +485,6 @@ with elevated access that overlap both logical and physical resources (as highli
 | **Application Administrator**  | <ul> <li> Access to logical information is controlled through a variety of managed application interfaces; however, the user is granted additional privileges within the constraints of the application interface.</li> <li>Physical access to organization-specific sensitive doors or turnstiles that do not contain shared systems or infrastructure.</li> </ul>|
 | **Systems Administrator**  | <ul> <li> User has elevated or complete access to one or more vertical systems or applications. Compromise to a system is limited to the application-specific capabilities, and loss of availability would not impact the entire organization.</li> <li> A Non-Person Entity (NPE) has access to communicate and otherwise interact with other systems within an application vertical. Damage from the compromise of an NPE’s account is limited to the application vertical.</li> <li> Physical access to organization-specific sensitive doors or turnstiles that do not contain shared systems or infrastructure.</li> </ul>|
 
-```
-Job Functions Examples of Elevated Access
-Application
-Administrator
-```
-```
- Access to logical information is controlled through a variety of managed application
-interfaces; however, the user is granted additional privileges within the constraints of the
-application interface.
- Physical access to organization-specific sensitive doors or turnstiles that do not contain
-shared systems or infrastructure.
-System
-Administrator
-```
-```
- User has elevated or complete access to one or more vertical systems or applications.
-Compromise to a system is limited to the application-specific capabilities, and loss of
-availability would not impact the entire organization.
- A Non-Person Entity (NPE) has access to communicate and otherwise interact with other
-systems within an application vertical. Damage from the compromise of an NPE’s account is
-limited to the application vertical.
- Physical access to organization-specific sensitive doors or turnstiles that do not contain
-shared systems or infrastructure.
-```
 (^27) For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and
 Privileged Users.
 (^28) For more information on logical and physical access control systems, refer to the FICAM Roadmap.
