@@ -50,7 +50,8 @@ October 15, 2014 v
 **Executive Summary**
 
 The President released the National Insider Threat Policy and Minimum Standards for Executive
-Branch Insider Threat Programs^2 (NITP) in 2012 to address the need for federal agencies to
+Branch Insider Threat Programs Presidential Memorandum -- National Insider Threat Policy and Minimum Standards for Executive Branch Insider
+Threat Programs, Office of the Press Secretary, November 21, 2012. [NITP] in 2012 to address the need for federal agencies to
 monitor all employees who may pose a threat to national security. In particular, recent incidents
 highlighted the need for improved management of privileged users within the Federal
 Government. These incidents involved employees or contractors with elevated access wrongfully
@@ -65,7 +66,8 @@ agencies should implement controls for privileged users that mitigate unwanted b
 without impeding their ability to carry out assigned job duties. In creating a secure physical and
 virtual workplace for privileged users, agencies should align efforts with Federal Identity,
 Credential, and Access Management Roadmap and Implementation Guidance (FICAM
-Roadmap).^3
+Roadmap). Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version
+2.0, Federal Chief Information Officers Council, December 2, 2011, [FICAM Roadmap].
 
 This document provides federal agencies with guidance to manage its privileged users by
 mitigating the inherent risks associated with this population through the use of Identity,
@@ -83,11 +85,6 @@ an agency to improve its privileged user risk management:
 7. Implement run-time access control using privileged user management techniques.
 8. Perform on-going monitoring of privileged users at a level commensurate to the risk
     posed.
-
-(^2) Presidential Memorandum -- National Insider Threat Policy and Minimum Standards for Executive Branch Insider
-Threat Programs, Office of the Press Secretary, November 21, 2012. [NITP]
-(^3) Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version
-2.0, Federal Chief Information Officers Council, December 2, 2011, [FICAM Roadmap].
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
