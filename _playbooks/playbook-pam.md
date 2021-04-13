@@ -422,20 +422,7 @@ purposes copying classified files on portable media.
 
 ## 2.2. Evaluating Privileged User Risks
 
-As the first step in mitigating privileged users’ engaging in the unwanted behavior described in
-Figure 1 , an agency should evaluate the risks to its protected resources by leveraging its resource
-risk assessment as required^24 in addition to a user community analysis.^25 These processes are
-components of a protected resource analysis, a foundational element of safeguarding agency
-resources (see Figure 4 ). For more information on how to conduct a comprehensive protected
-resources analysis, refer to the Access Management Framework.^26 In combination, a resource
-risk assessment and a user community analysis allows an agency to identify its privileged user
-population and related risks to protected resources. It is recommended that an agency follow
-these steps to identify its privileged users:
-
-(^24) FIPS 199
-(^25) “User community” is terminology derived from the Access Management Framework (AMF). For the purpose of the Privileged User Instruction
-and Implementation Guidance, this term is used synonymously with “user population.” (Hyperlink to be provided once publicly available).
-(^26) For more information on risk assessments for protected resources, refer to the AMF. (Hyperlink to be provided once publicly available).
+As the first step in mitigating privileged users’ engaging in the unwanted behavior described in Figure 1 , an agency should evaluate the risks to its protected resources by leveraging its resource risk assessment as required in FIPS 199 in addition to a user community analysis.“User community” is terminology derived from the Access Management Framework (AMF). For the purpose of the Privileged User Instruction and Implementation Guidance, this term is used synonymously with “user population.” (Hyperlink to be provided once publicly available). These processes are components of a protected resource analysis, a foundational element of safeguarding agency resources (see Figure 4 ). For more information on how to conduct a comprehensive protected resources analysis, refer to the Access Management Framework. For more information on risk assessments for protected resources, refer to the AMF In combination, a resource risk assessment and a user community analysis allows an agency to identify its privileged user population and related risks to protected resources. It is recommended that an agency follow these steps to identify its privileged users:
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
@@ -459,16 +446,9 @@ it should be immediately revoked and de-provisioned. De-provisioning is performe
 a need to permanently eliminate an existing access permission or remove a user account
 altogether.*
 
-Once an agency identifies its privileged user population for a protected resource, it can analyze
-the related vulnerabilities, impact, and likelihood of misuse or abuse.^27 An agency can then
-categorize these privileged users into groups based on their job functions and types of privileges
-(i.e., logical, physical).^28 Using these groups, an agency can allocate resources to manage
-privileged users at a level commensurate with the associated risks
+Once an agency identifies its privileged user population for a protected resource, it can analyze the related vulnerabilities, impact, and likelihood of misuse or abuse. For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and Privileged Users. An agency can then categorize these privileged users into groups based on their job functions and types of privileges (i.e., logical, physical). For more information on logical and physical access control systems, refer to the FICAM Roadmap. Using these groups, an agency can allocate resources to manage privileged users at a level commensurate with the associated risks
 
-The following table provides examples of job functions that may have elevated access to agency
-resources. As an agency advances its enterprise-wide access control services, and thus its
-convergence of physical and logical access activities and processes, it may have job functions
-with elevated access that overlap both logical and physical resources (as highlighted below).
+The following table provides examples of job functions that may have elevated access to agency resources. As an agency advances its enterprise-wide access control services, and thus its convergence of physical and logical access activities and processes, it may have job functions with elevated access that overlap both logical and physical resources (as highlighted below).
 
 | Job Functions  |  Examples of Elevated Access  |
 |:--------------:|:------------------------------|
@@ -478,22 +458,12 @@ with elevated access that overlap both logical and physical resources (as highli
 
 ###### Figure 2: Example Set of Elevated Access Profiles for a Resource
 
-(^27) For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and
-Privileged Users.
-(^28) For more information on logical and physical access control systems, refer to the FICAM Roadmap.
-
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
 
-By granting privileged users elevated access to protected resources, an agency becomes
-vulnerable to the risk of a privileged user misusing or exploiting these resources out of
-accidental, complacent, or malicious behavior.^29 The management requirements developed from
-assessing a resource’s privileged user population and associated privileged accounts can serve as
-core factors for federal agencies to consider when selecting, implementing, and configuring
-mechanisms to mitigate unwanted behavior by privileged users. These mechanisms should
-include detective and preventive measures to provide a holistic approach to privileged user
-management.
+By granting privileged users elevated access to protected resources, an agency becomes vulnerable to the risk of a privileged user misusing or exploiting these resources out of
+accidental, complacent, or malicious behavior.^29 The management requirements developed from assessing a resource’s privileged user population and associated privileged accounts can serve as core factors for federal agencies to consider when selecting, implementing, and configuring mechanisms to mitigate unwanted behavior by privileged users. These mechanisms should include detective and preventive measures to provide a holistic approach to privileged user management.
 
 **FAQ**
 
@@ -505,11 +475,7 @@ facilities and resources (e.g., keystroke logging, audit logs). An agency should
 both preventive and detective measures for privileged user activities._
 
 
-An agency should seek to leverage existing processes and controls to effectively manage its
-privileged user population and protected resources. Please refer to Appendix C: Privileged User
-Security Controls Mapping for Special Publication 800- 53 for a mapping of controls defined in
-SP 800-53. These controls have been augmented to serve as countermeasures for how an agency
-can mitigate unwanted behavior by its privileged user population.
+An agency should seek to leverage existing processes and controls to effectively manage its privileged user population and protected resources. Please refer to Appendix C: Privileged User Security Controls Mapping for Special Publication 800- 53 for a mapping of controls defined in SP 800-53. These controls have been augmented to serve as countermeasures for how an agency can mitigate unwanted behavior by its privileged user population.
 
 **FAQ**
 
