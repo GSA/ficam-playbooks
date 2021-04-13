@@ -374,7 +374,7 @@ This page is intentionally left blank.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-2. **Privileged User Landscape Overview**
+## 2. Privileged User Landscape Overview
 
 An agency is responsible for managing the privileges of all users with access to agency resources
 to ensure that employees can fulfill their assigned duties efficiently and securely.^21 To execute
@@ -423,6 +423,13 @@ elevated access to protected resources by privileged users may involve a variety
 behaviors (e.g., fraud, sabotage) as outlined in Figure 1. This unwanted behavior can lead to
 catastrophic events, such as a privileged user with broad access to agency files for administrative
 purposes copying classified files on portable media.
+| Unwanted Behavior     |                     Definition                   |    Examples of Unwanted Behavior by Privileged Users  |
+|:----------------------:|------------------------------------------------|-----------------------------------------------------|
+| **Fraud**                 | Unwanted use, modification, addition, or deletion of agency’s data for personal gain.| On the pretense of fixing corrupt data, a database administrator modifies data without authorization.|
+| **Espionage**             | Sharing restricted information with the intention of aiding a foreign actor or harming the U.S. Government. |  System administrator uses elevated access to retrieve confidential data and sells it to a foreign actor.|
+| **Sabotage**              | Purposefully inflicting harm on an organization.| Maintenance worker inserts a Universal Serial Bus (USB) drive into a server to inject malware on behalf of an external bad actor.|
+| **Intellectual Property Theft**| Stealing intangible assets (e.g., discoveries, inventions, designs) from an organization.| Cloud administrator uses elevated access to server to steal proprietary information.|
+| **Unwanted Information Disclosure**| A communication or physical transfer of information to a recipient who is not authorized to access to the information.| System administrator creates a “backdoor” account to inappropriately access and release classified information.|
 
 ```
 Unwanted Behavior Definition Examples of Unwanted
