@@ -540,7 +540,7 @@ Privileged Users.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-3. **Privileged User Management Framework**
+# 3. Privileged User Management Framework
 
 As discussed in Section 2 , there may be a variety of privileged users that constitute an agency’s
 privileged user population with an assortment of elevated access profiles. An agency can use a
@@ -561,7 +561,7 @@ Privileged User Management Framework illustrated in Figure 3 can support these e
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-## Figure 3: Privileged User Management Framework
+###### Figure 3: Privileged User Management Framework
 
 The framework represents a cohesive set of measures to manage privileged users and to assist in
 holistically protecting the enterprise. First, an agency should have the elements of a Secure
@@ -689,14 +689,14 @@ which privileged users leverage to carry out job functions.^32 The following act
 a host of processes and controls which, when taken together, build a Secure Operating
 Environment to enable privileged user management techniques in the rest of the framework:
 
-1. Business Continuity and Resiliency Planning. Improper use of privileged users’
+1. **Business Continuity and Resiliency Planning.** Improper use of privileged users’
     elevated access to critical agency resources can cause disruptions such as system failures,
     outages, or data loss, whether through either intentional or accidental means. Sustaining
     an organization’s mission and business operations during and after disruption requires
     established continuity and resiliency plans, processes, and technology. This can include
     continuity of operations (COOP) plans, data backup, alternate operating sites, secure
     recovery processes, etc.
-2. Network Security. An agency can prevent unwanted access, misuse, or modification of a
+2. **Network Security.** An agency can prevent unwanted access, misuse, or modification of a
     computer network through the use of firewalls, intrusion detection, secure remote access,
     etc. In particular, an agency can configure these mechanisms to manage the privileged
     user population. For example, an agency can configure firewalls to restrict access to
@@ -710,13 +710,13 @@ described in Section 3.4.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-3. Data Protection. For administrative or security reasons, a privileged user may have
+3. **Data Protection.** For administrative or security reasons, a privileged user may have
     access to a large amount of sensitive information, necessitating protective mechanisms
     for such data. Enforcing restrictions and tight controls over data assists in safeguarding
     information in transit. Implementing mechanisms such as encryption, exfiltration
     controls, and file size restrictions assists in secure exchanges of information and relevant
     data that a privileged user may handle in support of his/her job function.
-4. Configuration Management. Maintaining the performance level and attributes of an
+4. **Configuration Management.** Maintaining the performance level and attributes of an
     information system to match mission requirements entails managing the system’s
     configurations. Developing stringent controls and accountability mechanisms for
     establishing a secure configuration baseline, approving configuration changes, and
@@ -726,13 +726,13 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
     whitelisting [authorized software]) and maintaining appropriate patching of configuration
     levels to defend privileged user credentials when these users perform security and
     administration functions.
-5. Endpoint Security. Endpoint security ensures all devices on a network meet
+5. **Endpoint Security.** Endpoint security ensures all devices on a network meet
     predetermined standards before access to the network is granted. This approach to
     network security allows an agency to defend its protected resources from individuals who
     are not authorized to have elevated access. An agency should equip devices accessed by
     privileged users with the appropriate security configurations (e.g., anti-malware) in order
     to defend privileged user accounts and credentials from compromise.
-6. Physical Security. Physical security protects employees, data, and information
+6. **Physical Security.** Physical security protects employees, data, and information
     technology infrastructure from harm. However, users with elevated physical access can
     undermine the efficacy of strong IT controls for resources in protected physical spaces.
     To manage physical activity, an agency can use an IT-enabled physical access control
@@ -746,15 +746,15 @@ Environment, it is important to consider the number of controls and related requ
 Implementation of unnecessary controls can create management repercussions such as costly and
 time consuming maintenance and cumbersome management and oversight.
 
-```
-FAQ
-How can an agency mitigate unwanted behavior by complacent privileged users?
+**FAQ**
+
+_How can an agency mitigate unwanted behavior by complacent privileged users?
 In addition to training and education, an agency can address complacent insider activity
 by implementing internal controls and processes, such as software blacklisting and
 whitelisting, segregation of duties, checking passwords in and out, etc. The Privileged
 User Management Framework includes a host of internal controls and processes to
-protect the enterprise from a careless privileged user.
-```
+protect the enterprise from a careless privileged user._
+
 
 
 (^33) For more information on physical and logical access control convergence, refer to Section 9 of the FICAM Roadmap.
@@ -771,39 +771,38 @@ privileged user needs to perform assigned duties by leveraging segregation of du
 “principle of least privilege.”^35 At a minimum, an agency should include the following activities
 when conforming to this portion of the Privileged User Management Framework:
 
-1. Privilege Access Request. An individual completes a request for access to an application
+1. **Privilege Access Request.** An individual completes a request for access to an application
     and provides it to the individual responsible for access approvals.^36
-2. Personnel Security Vetting and Check for Certification/Training. The Personnel
+2. **Personnel Security Vetting and Check for Certification/Training.** The Personnel
     Security Office verifies that the existing background, suitability or fitness checks are
     valid and adequate. When conducting these checks, an agency should implement a
     consistent approach that enforces background checks that are commensurate to the
     privileged user’s level of risk as determined by an agency’s risk assessment, as outlined
     in Section 2.2.
-3. Entitlement Approval(s). The individual responsible for approving the privileged user
+3. **Entitlement Approval(s).** The individual responsible for approving the privileged user
     validates the individual’s need for access. A user account for the privileged user is then
     created with the appropriate user entitlements.
-4. Privileged User Agreement. The privileged user reads and understands the agency’s
+4. **Privileged User Agreement.** The privileged user reads and understands the agency’s
     privileged user agreement. This agreement highlights the responsibilities of the privileged
     user and acceptable rules of behavior. See Appendix D: Privileged User Instruction for a
     sample agreement template. An agency’s Privileged User Agreement may include a
     training requirement for the privileged user to fulfill prior to beginning executing the job
     functions that require elevated access.
 
-```
-Implementation Tip
-Documenting a privileged user’s acknowledgement of his/her role and responsibilities is
+**Implementation Tip**
+_Documenting a privileged user’s acknowledgement of his/her role and responsibilities is
 an excellent way to formalize the privileges granted. Implementing a standard privileged
 user acknowledgement form that requires the individual’s signature reinforces the
 privileged user’s responsibilities and helps the agency maintain a record indicating
-acknowledgement.
-```
+acknowledgement._
+
 # 
 
-5. Credential Management. Leveraging secure, unique credentials (i.e., Personal Identity
+5. **Credential Management.** Leveraging secure, unique credentials (i.e., Personal Identity
     Verification card [PIV card])^37 is both a preventive and detective measure for managing
     privileged users and aligns with the ICAM target state. PIV cards allow an agency to
     improve monitoring of privilege user activity versus a credential that is neither unique
-    nor differentiated from those of other privileged users (e.g., shared
+    nor differentiated from those of other privileged users (e.g., shared username/password).
 
 (^34) Defined in the FICAM Roadmap as a manual process for granting entitlement across applications and resources to determine if access
 entitlements violate policies. Per SP 800-53, an agency should not allow a single individual to perform the processing, adjudication, and
@@ -815,10 +814,6 @@ provisioning of elevated access.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-```
-username/password).^38
-```
-```
 In response to HSPD-12 and OMB M- 11 - 11,^39 agencies have made a significant
 investment in the PIV card, which employees and contractors must use when
 authenticating to logical resources. Additionally, agencies have invested in the supporting
@@ -826,8 +821,7 @@ infrastructure for PIV cards, enabling more secure physical and logical access c
 Leveraging the existing PIV infrastructure to manage privileged user authentication
 provides an agency with enhanced security, reduced risk, and decreased cost relative to
 issuing alternative credentials (e.g., tokens, username/password).^40
-```
-```
+
 However, in standing up this PIV infrastructure, agencies had to manage versions of
 various operating systems that did not support the mapping of a single PIV card to
 multiple accounts. As agencies migrate to PIV-enabled technologies for privileged user
@@ -848,7 +842,7 @@ shared/group account ends, providing the agency with more control over the use o
 passwords by privileged users. An agency should only use a password vault if its
 privileged users authenticate to the vault with the PIV card and if it is pursuing
 technologies that support PIV-enablement of privileged user accounts.
-```
+
 (^38) Per the FICAM Roadmap, it is anticipated agencies will experience a transition period in working to modernize systems to meet the
 requirements of the ICAM target state. Please refer to Section 8.3.3 of the FICAM Roadmap for recommended transition activities to manage
 privileged users’ PIV cards and associated infrastructure.
