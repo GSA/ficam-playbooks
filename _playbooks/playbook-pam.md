@@ -19,9 +19,6 @@ Version 1. 1
 August 30, 2021
 
 
-This page is intentionally left blank.
-
-
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
 August 30, 2021
@@ -58,9 +55,6 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
 
 October 15, 2014 iv
 
-```
-This page is intentionally left blank.
-```
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
@@ -368,9 +362,6 @@ Mellon University, December 2012. [Common Sense Guide]
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-```
-This page is intentionally left blank.
-```
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
@@ -405,8 +396,6 @@ physical or logical resources. Such users include, for example, security personn
 system administrators who are responsible for managing restricted physical locations or
 shared information technology (IT) infrastructure, and require access to related systems
 to create new user accounts, and add to or amend the privileges of other users.^23
-
-# 
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
@@ -462,7 +451,8 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
     elevated access as necessary in support of a user’s job function and role. This activity is
     outlined in Section 3.2.
 
-**_Implementation Tip_**
+**Implementation Tip**
+
 *When identifying an agency’s privileged user population, it is important to validate that the elevated
 access an individual possesses supports his/her job function. If the elevated access is not needed,
 it should be immediately revoked and de-provisioned. De-provisioning is performed when there is
@@ -513,7 +503,6 @@ unusual, suspicious behavior or changes in activity to proactively mitigate risk
 facilities and resources (e.g., keystroke logging, audit logs). An agency should leverage
 both preventive and detective measures for privileged user activities._
 
-
 
 An agency should seek to leverage existing processes and controls to effectively manage its
 privileged user population and protected resources. Please refer to Appendix C: Privileged User
@@ -532,7 +521,7 @@ rogue, and default accounts that have gone unnoticed or unmanaged. Once these
 problematic accounts are identified, an agency can determine whether these accounts
 should exist, and if so, which accountability mechanism should be applied (e.g., assign
 administrator)._
-
+
 
 (^29) For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and
 Privileged Users.
@@ -755,7 +744,6 @@ whitelisting, segregation of duties, checking passwords in and out, etc. The Pri
 User Management Framework includes a host of internal controls and processes to
 protect the enterprise from a careless privileged user._
 
-
 
 (^33) For more information on physical and logical access control convergence, refer to Section 9 of the FICAM Roadmap.
 
@@ -797,7 +785,6 @@ user acknowledgement form that requires the individual’s signature reinforces 
 privileged user’s responsibilities and helps the agency maintain a record indicating
 acknowledgement._
 
-# 
 
 5. **Credential Management.** Leveraging secure, unique credentials (i.e., Personal Identity
     Verification card [PIV card])^37 is both a preventive and detective measure for managing
