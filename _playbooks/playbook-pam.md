@@ -27,13 +27,10 @@ August 30, 2021
 
 This document has been developed by the Privileged User Tiger Team (PUTT) of the Identity, Credential, and Access Management Subcommittee (ICAMSC), as supplemental guidance to the Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance.Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version 2.0, Federal Chief Information Officers Council, December 2, 2011, [FICAM Roadmap]. The ICAMSC was established in 2008 by the Federal Chief Information Officers (CIO) Council’s Information Security and Identity Management Committee (ISIMC) and was tasked with aligning the Identity Management activities of the Federal Government. The development of this document aligns with and supports the responsibilities of the ICAMSC, which include:
 
-* Aligning federal agencies around common practices by fostering effective government-
-wide Identity, Credential, and Access Management (ICAM);
-* Collaborating with Federal Government and external identity management activities
-(non-federal, commercial, and more) to leverage best practices and enhance
+* Aligning federal agencies around common practices by fostering effective government- wide Identity, Credential, and Access Management (ICAM);
+* Collaborating with Federal Government and external identity management activities (non-federal, commercial, and more) to leverage best practices and enhance
 interoperability; and
-* Enabling trust and interoperability in online transactions, through the application of
-common policies and approaches, in activities that cross organizational boundaries.
+* Enabling trust and interoperability in online transactions, through the application of common policies and approaches, in activities that cross organizational boundaries.
 
 This guidance has been prepared for use by federal agencies and is not intended to contradict other previously established standards and guidelines that are mandatory and binding on federal agencies. Additionally, these guidelines should not be interpreted as altering or superseding the existing authority of the FICAM Roadmap.
 
@@ -294,13 +291,16 @@ elevated access to protected resources by privileged users may involve a variety
 behaviors (e.g., fraud, sabotage) as outlined in Figure 1. This unwanted behavior can lead to
 catastrophic events, such as a privileged user with broad access to agency files for administrative
 purposes copying classified files on portable media.
-| Unwanted Behavior     |                     Definition                   |    Examples of Unwanted Behavior by Privileged Users  |
+
+    
+|   Unwanted Behavior    |                     Definition                 | Examples of Unwanted Behavior by Privileged Users   |
 |:----------------------:|------------------------------------------------|-----------------------------------------------------|
 | **Fraud**                 | Unwanted use, modification, addition, or deletion of agency’s data for personal gain.| On the pretense of fixing corrupt data, a database administrator modifies data without authorization.|
 | **Espionage**             | Sharing restricted information with the intention of aiding a foreign actor or harming the U.S. Government. |  System administrator uses elevated access to retrieve confidential data and sells it to a foreign actor.|
 | **Sabotage**              | Purposefully inflicting harm on an organization.| Maintenance worker inserts a Universal Serial Bus (USB) drive into a server to inject malware on behalf of an external bad actor.|
 | **Intellectual Property Theft**| Stealing intangible assets (e.g., discoveries, inventions, designs) from an organization.| Cloud administrator uses elevated access to server to steal proprietary information.|
 | **Unwanted Information Disclosure**| A communication or physical transfer of information to a recipient who is not authorized to access to the information.| System administrator creates a “backdoor” account to inappropriately access and release classified information.|
+
 
 ## 2.2. Evaluating Privileged User Risks
 
