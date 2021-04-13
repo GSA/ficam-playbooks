@@ -438,13 +438,13 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
     elevated access as necessary in support of a user’s job function and role. This activity is
     outlined in Section 3.2.
 
-**Implementation Tip**
+>**Implementation Tip**
 
-*When identifying an agency’s privileged user population, it is important to validate that the elevated
-access an individual possesses supports his/her job function. If the elevated access is not needed,
-it should be immediately revoked and de-provisioned. De-provisioning is performed when there is
-a need to permanently eliminate an existing access permission or remove a user account
-altogether.*
+>*When identifying an agency’s privileged user population, it is important to validate that the elevated
+>access an individual possesses supports his/her job function. If the elevated access is not needed,
+>it should be immediately revoked and de-provisioned. De-provisioning is performed when there is
+>a need to permanently eliminate an existing access permission or remove a user account
+>alltogether.*
 
 Once an agency identifies its privileged user population for a protected resource, it can analyze the related vulnerabilities, impact, and likelihood of misuse or abuse. For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and Privileged Users. An agency can then categorize these privileged users into groups based on their job functions and types of privileges (i.e., logical, physical). For more information on logical and physical access control systems, refer to the FICAM Roadmap. Using these groups, an agency can allocate resources to manage privileged users at a level commensurate with the associated risks
 
@@ -465,29 +465,29 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
 By granting privileged users elevated access to protected resources, an agency becomes vulnerable to the risk of a privileged user misusing or exploiting these resources out of
 accidental, complacent, or malicious behavior.^29 The management requirements developed from assessing a resource’s privileged user population and associated privileged accounts can serve as core factors for federal agencies to consider when selecting, implementing, and configuring mechanisms to mitigate unwanted behavior by privileged users. These mechanisms should include detective and preventive measures to provide a holistic approach to privileged user management.
 
-**FAQ**
+>**FAQ**
 
-_What is the difference between preventive and detective measures?
-Preventive measures seek to proactively inhibit inappropriate behavior through measures
-such as background investigations, training, etc. Detective measures serve to identify
-unusual, suspicious behavior or changes in activity to proactively mitigate risk to agency
-facilities and resources (e.g., keystroke logging, audit logs). An agency should leverage
-both preventive and detective measures for privileged user activities._
+>_What is the difference between preventive and detective measures?
+>Preventive measures seek to proactively inhibit inappropriate behavior through measures
+>such as background investigations, training, etc. Detective measures serve to identify
+>unusual, suspicious behavior or changes in activity to proactively mitigate risk to agency
+>facilities and resources (e.g., keystroke logging, audit logs). An agency should leverage
+>both preventive and detective measures for privileged user activities._
 
 
 An agency should seek to leverage existing processes and controls to effectively manage its privileged user population and protected resources. Please refer to Appendix C: Privileged User Security Controls Mapping for Special Publication 800- 53 for a mapping of controls defined in SP 800-53. These controls have been augmented to serve as countermeasures for how an agency can mitigate unwanted behavior by its privileged user population.
 
-**FAQ**
+>**FAQ**
 
-_What if my agency discovers privileged accounts that are not associated with one
-person during a protected resource analysis?
-Conducting a protected resource analysis allows an agency to identify the privileged
-accounts relevant to protected resources. An agency may discover privileged accounts
-that lack accountability as they are not associated with one person, including orphaned,
-rogue, and default accounts that have gone unnoticed or unmanaged. Once these
-problematic accounts are identified, an agency can determine whether these accounts
-should exist, and if so, which accountability mechanism should be applied (e.g., assign
-administrator)._
+>_What if my agency discovers privileged accounts that are not associated with one
+>person during a protected resource analysis?
+>Conducting a protected resource analysis allows an agency to identify the privileged
+>accounts relevant to protected resources. An agency may discover privileged accounts
+>that lack accountability as they are not associated with one person, including orphaned,
+>rogue, and default accounts that have gone unnoticed or unmanaged. Once these
+>problematic accounts are identified, an agency can determine whether these accounts
+>should exist, and if so, which accountability mechanism should be applied (e.g., assign
+>administrator)._
 
 
 (^29) For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and
@@ -702,14 +702,14 @@ Environment, it is important to consider the number of controls and related requ
 Implementation of unnecessary controls can create management repercussions such as costly and
 time consuming maintenance and cumbersome management and oversight.
 
-**FAQ**
+>**FAQ**
 
-_How can an agency mitigate unwanted behavior by complacent privileged users?
-In addition to training and education, an agency can address complacent insider activity
-by implementing internal controls and processes, such as software blacklisting and
-whitelisting, segregation of duties, checking passwords in and out, etc. The Privileged
-User Management Framework includes a host of internal controls and processes to
-protect the enterprise from a careless privileged user._
+>_How can an agency mitigate unwanted behavior by complacent privileged users?
+>In addition to training and education, an agency can address complacent insider activity
+>by implementing internal controls and processes, such as software blacklisting and
+>whitelisting, segregation of duties, checking passwords in and out, etc. The Privileged
+>User Management Framework includes a host of internal controls and processes to
+>protect the enterprise from a careless privileged user._
 
 
 (^33) For more information on physical and logical access control convergence, refer to Section 9 of the FICAM Roadmap.
@@ -744,13 +744,13 @@ when conforming to this portion of the Privileged User Management Framework:
     training requirement for the privileged user to fulfill prior to beginning executing the job
     functions that require elevated access.
 
-**Implementation Tip**
+>**Implementation Tip**
 
-_Documenting a privileged user’s acknowledgement of his/her role and responsibilities is
-an excellent way to formalize the privileges granted. Implementing a standard privileged
-user acknowledgement form that requires the individual’s signature reinforces the
-privileged user’s responsibilities and helps the agency maintain a record indicating
-acknowledgement._
+>_Documenting a privileged user’s acknowledgement of his/her role and responsibilities is
+>an excellent way to formalize the privileges granted. Implementing a standard privileged
+>user acknowledgement form that requires the individual’s signature reinforces the
+>privileged user’s responsibilities and helps the agency maintain a record indicating
+>acknowledgement._
 
 
 5. **Credential Management.** Leveraging secure, unique credentials (i.e., Personal Identity
@@ -846,15 +846,15 @@ protected resource initiates the following processes:
 **Authentication.** The privileged user will authenticate using the required multi-factor
 authentication, as illustrated in Figure 2. Multi-factor authentication involves three distinct types of authentication factors: a) something you have, in this case, a PIV card; b) something you know, knowledge of the Personal Identification Number (PIN) to access protected areas of the PIV card; and c) something you are, cardholder fingerprint match with biometric data stored on the card. The confidence of the authentication increases with the number of factors used.^52 Based upon the level of authentication required, the privileged user will validate his/her identity through a combination of something he/she has, knows, and is.
 
-**Implementation Tip**
+>**Implementation Tip**
 
-_In a Microsoft enterprise environment, an agency may manage its privileged users’
-logical access by mapping each user’s PIV card to multiple accounts (e.g. enable
-altSecurityIdentities and Username Hints). After the privileged user presents his/her PIV
-card at log-in, the user can specify to which valid account he/she would like to
-authenticate. This function provides a standard log-in experience but also secure
-separation between standard accounts and those requiring elevated access (i.e.,
-privileged accounts)._
+>_In a Microsoft enterprise environment, an agency may manage its privileged users’
+>logical access by mapping each user’s PIV card to multiple accounts (e.g. enable
+>altSecurityIdentities and Username Hints). After the privileged user presents his/her PIV
+>card at log-in, the user can specify to which valid account he/she would like to
+>authenticate. This function provides a standard log-in experience but also secure
+>separation between standard accounts and those requiring elevated access (i.e.,
+>privileged accounts)._
 
 **Authorization.** Following successful authentication, the privileged user’s attempted
 access is confirmed by the system that it is allowable. Authorization is the process of
@@ -868,19 +868,19 @@ agency if controls are too stringent or granular. Therefore, an agency needs to 
 complexity of the authorization process against the user’s ability to effectively perform
 his/her job.
 
-**Implementation Tip**
+>**Implementation Tip**
 
-_For protected resources that do not support PIV authentication, an agency can use a
-privileged access gateway to enable use of the PIV card. A privileged access gateway is
-an intermediary between privileged users and protected resources that acts as a security
-checkpoint, providing authentication and authorization, as well as on-going monitoring
-capabilities. A privileged user authenticates to the privileged access gateway using
-his/her PIV card. Then, the privileged access gateway provides run-time access control
-to protect the resource based on the user’s provisioned access and the agency’s security
-policies. Although an agency should opt for PIV authentication where possible, PIV
-authentication by proxy through single sign-on does qualify as PIV-enabled, per the
-FY14 Chief Information Officer Federal Information Security Management Act (FISMA)
-Reporting Metrics._
+>_For protected resources that do not support PIV authentication, an agency can use a
+>privileged access gateway to enable use of the PIV card. A privileged access gateway is
+>an intermediary between privileged users and protected resources that acts as a security
+>checkpoint, providing authentication and authorization, as well as on-going monitoring
+>capabilities. A privileged user authenticates to the privileged access gateway using
+>his/her PIV card. Then, the privileged access gateway provides run-time access control
+>to protect the resource based on the user’s provisioned access and the agency’s security
+>policies. Although an agency should opt for PIV authentication where possible, PIV
+>authentication by proxy through single sign-on does qualify as PIV-enabled, per the
+>FY14 Chief Information Officer Federal Information Security Management Act (FISMA)
+>Reporting Metrics._
 
 (^52) SP 800- 116 , A Recommendation for the Use of PIV Credentials in Physical Access Control Systems (PACS), NIST, November 2008. [SP
 800 - 116]. SP 800- 116 specifies several authentication mechanisms using the PIV card to establish confidence in the identity of the cardholder. A
@@ -910,13 +910,13 @@ a privileged user’s elevated access. An agency should maintain accurate record
 training sessions to monitor their scope and effectiveness.
 
 
-**Lesson Learned**
+>**Lesson Learned**
 
-_It is important for an agency to have mandatory training requirements for privileged
-users on a recurring basis. The State Department requires privileged users to attend a
-five day training class specific to their user population’s role. Curriculum that reinforces
-the efficient and secure way to carry out assigned duties for privileged users can
-mitigate unwanted behavior stemming from ignorance._
+>_It is important for an agency to have mandatory training requirements for privileged
+>users on a recurring basis. The State Department requires privileged users to attend a
+>five day training class specific to their user population’s role. Curriculum that reinforces
+>the efficient and secure way to carry out assigned duties for privileged users can
+>mitigate unwanted behavior stemming from ignorance._
 
 
 **Access Recertification.** Renewing the privileged user’s certification on a recurring basis
@@ -951,14 +951,14 @@ resources. Furthermore, an agency should consistently re-evaluate the scope and
 effectiveness of its audit review processes.
 
 
-**Implementation Tip**
+>**Implementation Tip**
 
-_An analytics capability bolsters on-going monitoring activities by empowering an agency
-to maximize the utility of its data and log collections by offering an easy method to detect
-risk indicators of security violations and unwanted behavior by privileged users. Analytics
-support an enterprise with a platform for automatically identifying anomalies, such as
-rogue or orphaned accounts, segregation of duties violations, and deviations from
-system access and usage patterns._
+>_An analytics capability bolsters on-going monitoring activities by empowering an agency
+>to maximize the utility of its data and log collections by offering an easy method to detect
+>risk indicators of security violations and unwanted behavior by privileged users. Analytics
+>support an enterprise with a platform for automatically identifying anomalies, such as
+>rogue or orphaned accounts, segregation of duties violations, and deviations from
+>system access and usage patterns._
 
 
 **Continuous Evaluation.** To consistently validate privileged user suitability, an agency
@@ -969,13 +969,13 @@ consistent basis to protect an agency’s resources from insider threat. Perform
 continuous evaluation on a recurring basis cultivates a proactive security culture.
 
 
-**Implementation Tip**
+>**Implementation Tip**
 
-_An agency should evaluate available tools to assist in privileged user management.
-Continuous Diagnostics and Mitigation (CDM) is one example of a program that provides
-a broad spectrum of tools that enables an agency to identify privileged user risks on an
-ongoing basis, prioritize these risks based upon potential impact, and enable
-cybersecurity personnel to mitigate the most significant problems first._
+>_An agency should evaluate available tools to assist in privileged user management.
+>Continuous Diagnostics and Mitigation (CDM) is one example of a program that provides
+>a broad spectrum of tools that enables an agency to identify privileged user risks on an
+>ongoing basis, prioritize these risks based upon potential impact, and enable
+>cybersecurity personnel to mitigate the most significant problems first._
 
 
 (^58) Refer to the Department of Homeland Security (DHS) website for more information regarding CDM.
