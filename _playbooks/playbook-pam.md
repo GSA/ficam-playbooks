@@ -1098,163 +1098,17 @@ resource analysis (Section 2.1).
 |   **Institute separation of duties for privileged users**|   AC-5  |   Separation of duties does not guarantee that privileged users will not abuse or misuse their elevated access, but it can mitigate the risk of an individual privileged user inflicting harm. By dividing the mission functions and information system support performed by privileged users among a pool of individuals or accounts, an agency can work to mitigate one privileged user from amassing too much power or undermining monitoring activities. In particular, an agency should confirm the same individuals do not administer both access control and audit functions. An agency should document how its individual privileged users are segregated throughout the agency.|   <ul><li>Applications and web services </li><li>Network and infrastructure</li></ul>|
 |   **Exercise the principle of least privilege for information systems** |   AC-6  |   The principle of least privilege involves confirming an agency’s privileged users are only granted access to the information systems required to carry out each individual’s specific job duties. It is an important countermeasure to mitigating unwanted behavior by privileged users.<ul><li>Least privilege is particularly important regarding the management of privileged users, as their elevated access already greatly increases the consequence of their actions and impact on protected resources.</li><li>Privileged users can accumulate authorizations as they transition from projects and departments. The failure to conduct continuous evaluation activities and terminate excess privileges as appropriate renders these privileged users a security risk. Such individuals can cause harm to an agency, knowingly or unknowingly.</ul></li>|   <ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>|
 |   **Secure remote access for privileged  users** |   AC-17 |   Remote access points such as dial-up, broadband, and wireless, can be complex to monitor (e.g., VPNs with encrypted tunnels). Certifying privileged users are subject to stringent access controls and monitoring is thus especially important with remote access. Privileged users should not be able to act remotely the same way they do when they access the network locally. An agency can protect the enterprise from the privileged user insider threat via remote access by: <ul><li>Limiting the execution of privileged commands and access for a narrowly defined subset of needs</li><li>Establishing stringent connection requirements and session controls (e.g., session duration limitations, automatic termination when user is idle)</li><li>Instituting a remote monitoring and intervention capability</li></ul>|   <ul><li>Applications and web services</li><li>Network and infrastructure</ul></li> |
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-mitigate one privileged user from amassing too
-much power or undermining monitoring activities. In
-particular, an agency should confirm the same
-individuals do not administer both access control
-and audit functions. An agency should document
-how its individual privileged users are segregated
-throughout the agency.
-Exercise the
-principle of least
-privilege for
-information
-systems
-```
-```
-AC- 6 The principle of least privilege involves confirming
-an agency’s privileged users are only granted
-access to the information systems required to carry
-out each individual’s specific job duties. It is an
-important countermeasure to mitigating unwanted
-behavior by privileged users.
- Least privilege is particularly important regarding
-the management of privileged users, as their
-elevated access already greatly increases the
-consequence of their actions and impact on
-protected resources.
- Privileged users can accumulate authorizations
-as they transition from projects and departments.
-The failure to conduct continuous evaluation
-activities and terminate excess privileges as
-appropriate renders these privileged users a
-security risk. Such individuals can cause harm to
-an agency, knowingly or unknowingly.
-```
-```
- Applications and
-web services
- Network and
-infrastructure
-```
-```
-Secure remote
-access for
-privileged users
-```
-```
-AC- 17 Remote access points such as dial-up, broadband,
-and wireless, can be complex to monitor (e.g.,
-VPNs with encrypted tunnels). Certifying privileged
-users are subject to stringent access controls and
-monitoring is thus especially important with remote
-access. Privileged users should not be able to act
-remotely the same way they do when they access
-the network locally. An agency can protect the
-enterprise from the privileged user insider threat via
-remote access by:
- Limiting the execution of privileged commands
-and access for a narrowly defined subset of
-needs
- Establishing stringent connection requirements
-and session controls (e.g., session duration
-limitations, automatic termination when user is
-idle)
- Instituting a remote monitoring and intervention
-capability
-```
-```
- Applications and
-web services
- Network and
-infrastructure
-```
-## Figure 6: Access Control
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
+##### Figure 6: Access Control
 
 ## Awareness and Training
 
-```
-Countermeasure SP 800 -
-53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Conduct security
-awareness
-training on the
-threat privileged
-users can pose
-```
-```
-AT- 2 Agencies should work to ensure that privileged
-users who access information systems receive
-security awareness training on the role everyone
-plays in maintaining security, and insider threat
-training should be a component of this. Not only
-does this training bolster an agency’s insider threat
-detection capabilities, but it serves as a deterrent
-for individuals who consider abusing the access
-granted to them. A training module is a fitting
-venue to discuss the inherent risk posed by
-privileged users.
-```
-```
- Content and data
- Applications and
-Web Services
- Networks and
-Infrastructure
- Facilities
-```
-```
-Institute role-
-based security
-training for
-privileged users
-```
-```
-AT- 3 An agency should train privileged users on proper
-security protocol based on their job duties. Training
-is a preventive method for protecting the enterprise
-against accidental insiders. This is especially
-important for privileged users, because the
-consequence of their abuse or misuse on
-protected resources can be greater than users who
-do not have elevated access.
-Individuals tasked with overseeing physical
-security controls require different specialized
-training than database administrators, for example.
-The agency should confirm each privileged user
-has received adequate technical training based on
-assigned duties and the protected resources they
-are each responsible for.
-```
-```
- Content and data
- Applications and
-Web Services
- Networks and
-Infrastructure
- Facilities
-```
-## Figure 7: Awareness and Training
+|   Countermeasure|  SP 800-53 Control|   Explanation|   Relevant Protected Resources|
+|:---------------:|:-----------------:|--------------|-------------------------------|
+|   **Conduct security awareness training on the threat privileged users can pose**|   AT-2|   Agencies should work to ensure that privileged users who access information systems receive security awareness training on the role everyone plays in maintaining security, and insider threat training should be a component of this. Not only does this training bolster an agency’s insider threat detection capabilities, but it serves as a deterrent for individuals who consider abusing the access granted to them. A training module is a fitting venue to discuss the inherent risk posed by privileged users.|   <ul><li>Content and data </li><li>Applications and Web Services </li><li>Networks and
+    Infrastructure</li><li>Facilities</ul></li>|
+|   **Institute role-based security training for privileged**|   AT-3 |   An agency should train privileged users on proper security protocol based on their job duties. Training is a preventive method for protecting the enterprise against accidental insiders. This is especially important for privileged users, because the consequence of their abuse or misuse on protected resources can be greater than users who do not have elevated access. Individuals tasked with overseeing physical security controls require different specialized training than database administrators, for example. The agency should confirm each privileged user has received adequate technical training based on
+assigned duties and the protected resources they are each responsible for. |   <ul><li>Content and data  Applications and Web Services</li><li>Networks and Infrastructure</li><li>Facilities</ul></li> |
+##### Figure 7: Awareness and Training
 
 ## Audit and Accountability
 
