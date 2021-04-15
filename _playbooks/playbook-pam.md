@@ -1046,14 +1046,11 @@ accidental and complacent insiders, as well as malicious ones.
 The following table presents the three classifications of insider threat with accompanying
 examples of how specifically privileged users of each classification can pose a threat to an
 agency.
-
 |   Classification of Insider Threats  |   Definition  |   Indicators   |   Example of Privileged User Insider Threats|
 |   -----------------------------------|  : --------- :|  : ---------- :|   : ----------------------------------------|
 |   **Accidental**  |   An insider’s lack of awareness regarding policies, procedures, and technical competencies results in a security risk for the organization.| An insider lacks an understanding of security protocols, technical procedures, and the potential impact of deviating from an organization’s security protocol and the individuals assigned job duties.|   <ul><li>A privileged user unknowingly installs software that is not approved for use on an agency system.</li><li>Use privileged accounts for anything other than official administrative actions.</li><li>A privileged user accidentally deletes all data with a single command.</li></ul>|
-|   **Complacent**   |   An individual or organization’s lax approach to security causes an insider to neglect security obligations, despite his/her awareness of protocol.
-|   Violating insider assumes his/her behavior does not have a noticeable impact or that it is not being monitored. Over time, the insider becomes careless with security.
-|   <ul><li>Privileged users create user accounts and assign privileges without the appropriate review and approval.</li><li>Privileged users share passwords to system accounts.</li></ul>|
-
+|   **Complacent**   |   An individual or organization’s lax approach to security causes an insider to neglect security obligations, despite his/her awareness of protocol.|   Violating insider assumes his/her behavior does not have a noticeable impact or that it is not being monitored. Over time, the insider becomes careless with security.|   <ul><li>Privileged users create user accounts and assign privileges without the appropriate review and approval.</li><li>Privileged users share passwords to system accounts.</li></ul>|
+|   **Malicious**   |   Personal circumstances or specific events lead an insider to intentionally disrupt, threaten, or endanger an organization’s activities or assets.| Insider usually develops a plan to breach security in advance. Insider typically exhibits behavior, virtual or in person, that is unusual for the insider’s personality or job duties.|   <ul><li>Unwanted, purposeful disclosure or theft of information.</li><li>Introduce malicious code, malware, Trojan horse, viruses into the organization’s information system.</li><li>Destroy or modify system audit logs.</li></ul>|
 
 ```
 Classifications of
