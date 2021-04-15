@@ -1069,9 +1069,7 @@ efforts.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-## Appendix C: Privileged User Security Controls Mapping for
-
-**Special Publication 800** - **53**
+## Appendix C: Privileged User Security Controls Mapping for Special Publication 800-53
 
 In seeking to implement cohesive, integrated privileged user management practices (e.g., Secure
 Operating Environment, Provisioning, Run-Time Access Control, On-Going Monitoring) via the
@@ -1094,62 +1092,11 @@ countermeasures can be applied as security measures in accordance with an agency
 resource analysis (Section 2.1).
 
 ## Access Control
+|   Countermeasure|  SP 800-53 Controls|   Explanation|   Relevant Protected Resources|
+|:----------------:|:------------------:|--------------|-------------------------------|
+|   **Manage privileged user accounts** |   AC-2  |   Management of users that have been granted elevated access requires additional scrutiny by agency personnel. Privileged user accounts can be managed through a variety of ways, including:<ul><li>Appropriate approval mechanisms based on mission and business functions</li><li>Clear identification of roles and responsibilities</li><li>Access attributes (i.e., timeframes, point-of-origin)</li><li>Timely issuance and revocation process for credentials based on established timeline or event (i.e., individual is removed from group)</li><li>Continuous evaluation of access needs</li></ul>|   <ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>|
+|   **Institute separation of duties for privileged users**|   AC-5  |   Separation of duties does not guarantee that privileged users will not abuse or misuse their elevated access, but it can mitigate the risk of an individual privileged user inflicting harm. By dividing the mission functions and information system support performed by privileged users among a pool of individuals or accounts, an agency can work to mitigate one privileged user from amassing too much power or undermining monitoring activities. In particular, an agency should confirm the same individuals do not administer both access control and audit functions. An agency should document how its individual privileged users are segregated throughout the agency.|   <ul><li>Applications and web services </li><li>Network and infrastructure</li></ul>|
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Manage privileged
-user accounts
-```
-```
-AC- 2 Management of users that have been granted
-elevated access requires additional scrutiny by
-agency personnel. Privileged user accounts can be
-managed through a variety of ways, including:
- Appropriate approval mechanisms based on
-mission and business functions
- Clear identification of roles and responsibilities
- Access attributes (i.e., timeframes, point-of-origin)
- Timely issuance and revocation process for
-credentials based on established timeline or event
-(i.e., individual is removed from group)
- Continuous evaluation of access needs
-```
-```
- Applications and
-web services
- Network and
-infrastructure
-```
-```
-Institute
-separation of
-duties for
-privileged users
-```
-```
-AC- 5 Separation of duties does not guarantee that
-privileged users will not abuse or misuse their
-elevated access, but it can mitigate the risk of an
-individual privileged user inflicting harm. By dividing
-the mission functions and information system
-support performed by privileged users among a pool
-of individuals or accounts, an agency can work to
-```
-```
- Applications and
-web services
- Network and
-infrastructure
-```
-(^72) This analysis is not meant to be exhaustive; however, is intended to assist an agency in correlating practices to existing controls. Refer to SP
-800 - 53.
-(^73) Refer to Section 3.3 for the definitions of each protected resource highlighted in the privileged user management lifecycle.
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
