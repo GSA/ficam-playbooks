@@ -401,6 +401,8 @@ Privileged User Management Framework illustrated in Figure 3 can support these e
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
+<img src="https://github.com/GSA/ficam-playbooks/blob/pam-playbook/_assets/images/Annotation%202021-04-15%20074941.png">
+
 ###### Figure 3: Privileged User Management Framework
 
 The framework represents a cohesive set of measures to manage privileged users and to assist in
@@ -412,93 +414,6 @@ measures in the Privileged User Management Framework. Implementing preventive me
 geared towards privileged users, such as firewalls, secure remote access, and file restrictions can
 support an agency in securing its IT environment so privileged users are controlled and
 monitored effectively.
-
-Privilege Access Request
-
-```
-Personnel Security Vetting and
-Check for Certification/Training
-```
-Entitlement Approval(s)
-
-Privileged User Agreement
-
-```
-Run-Time Access Control
-Protected
-Resources
-```
-Facilities
-
-```
-Applications &
-Web Services
-```
-```
-Networks &
-Infrastructure
-```
-```
-Multi-factor
-Authentication
-```
-Credential Validation
-
-Access Attempt
-
-```
-Authentication Authorization
-Is the user of the identity
-validated?
-Is the attempted access
-allowed?
-```
-Policy Decision
-
-Policy Enforcement
-
-```
-Have
-Know
-Are
-```
-Policy Execution
-
-ACCESS DENIED
-
-NO NO
-
-YES YES
-
-Content & Data
-
-Privileged User Management Framework
-
-Provisioning
-
-On-Going Monitoring
-
-```
-Access
-Recertification SeAsnsioomn^ aRlye Rcoerpdoinrgti^ nagnd^ Alerts Keystroke^ Logging
-```
-```
-Audit Logs and
-Reviews
-```
-Continuous
-
-T rEadinuincag (^) taionnd Evaluation
-Credential Management
-Secure Operating Environment
-Business Continuity and
-Resiliency Planning
-Network Security Data Protection Configuration (^) Endpoint Security
-Management
-Physical Security
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 The Privileged User Management Framework includes provisioning of the privileged user.
 Provisioning refers to creating user accounts and assigning privileges or entitlements within the
