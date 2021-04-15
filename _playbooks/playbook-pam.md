@@ -10,7 +10,7 @@ sticky_sidenav: true
 sidenav: playbook-pam
 ---
 
-<img src="https://github.com/GSA/ficam-playbooks/blob/pam-playbook/_assets/images/GSA%20Logo.png">
+<img src="https://github.com/GSA/ficam-playbooks/blob/pam-playbook/_assets/images/GSA%20Logo.png" alt="GSA Logo">
 
 ICAM Privileged User Instruction and
 
