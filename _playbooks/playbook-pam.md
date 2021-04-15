@@ -782,7 +782,7 @@ continuous evaluation on a recurring basis cultivates a proactive security cultu
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-**Appendix A: Reference Documentation**
+## Appendix A: Reference Documentation
 
 ## National Insider Threat Policy
 
@@ -1049,7 +1049,7 @@ Sense Guide prominently feature privileged users.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-**Appendix B: Classifications of Insider Threats and Privileged**
+## Appendix B: Classifications of Insider Threats and Privileged
 
 **Users**
 
@@ -1212,7 +1212,7 @@ efforts.
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-**Appendix C: Privileged User Security Controls Mapping for**
+## Appendix C: Privileged User Security Controls Mapping for
 
 **Special Publication 800** - **53**
 
