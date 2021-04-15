@@ -1062,28 +1062,8 @@ resource analysis (Section 2.1).
 
 |   Countermeasure |   SP 800-53 Control|   Explanation |   Relevant Protected Resources |
 |:-----------------:|:------------------:|--------------|--------------------------------|
-|   **Determine the pool of audit events** | AU-2 |   A primary component of an agency’s ability to manage its privileged user population is an audit capability using a log correlation engine or security information and event management (SIEM) that can monitor employee activities. An agency needs to determine the scope of audit events, but should work to ensure that all types of privileged users are adequately monitored. When determining the pool of audit events, all departments within the agency should be engaged to leverage all audit-related information in order to generate a comprehensive picture of an employee’s relative risk. Audit events can include:<ul><li>Password changes</li><li>Failed access attempts related to information systems</li><li>Administrative privilege usage</li><li>Secure credential usage (e.g., PIV card, CAC, third-party)</li></ul>|    <ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>|
-
-```
-AU- 3 Audit records that contain vague information or that
-lack adequate event details are ineffective in
-assisting an agency in managing its workforce. Audit
-records should include:
- Type of event
- Time of the event
- Location of event
- Source of event
- Outcome of event
- Identity of individuals involved with event
-Not all auditable events can be audited at the same
-time, so the agency should determine under which
-circumstances events are audited. It should be
-noted that audit records for privileged user activity
-that come with the computing platform are often
-inadequate, and require refining.
-```
-```
- Applications and
+|   **Determine the pool of audit events** | AU-2 |   A primary component of an agency’s ability to manage its privileged user population is an audit capability using a log correlation engine or security information and event management (SIEM) that can monitor employee activities. An agency needs to determine the scope of audit events, but should work to ensure that all types of privileged users are adequately monitored. When determining the pool of audit events, all departments within the agency should be engaged to leverage all audit-related information in order to generate a comprehensive picture of an employee’s relative risk. Audit events can include:<ul><li>Password changes</li><li>Failed access attempts related to information systems</li><li>Administrative privilege usage</li><li>Secure credential usage (e.g., PIV card, CAC, third-party)</li></ul>|    <ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>
+|   **Use adequate audit records** |   AU-3 |   Audit records that contain vague information or that lack adequate event details are ineffective in assisting an agency in managing its workforce. Audit records should include:<ul><li>Type of event</li><li>Time of the event</li><li>Location of event</li><li>Source of event</li><li>Outcome of event</li><li>Identity of individuals involved with event</li><ul>Not all auditable events can be audited at the same time, so the agency should determine under which circumstances events are audited. It should be noted that audit records for privileged user activity that come with the computing platform are often inadequate, and require refining. |    Applications and
 web services
  Network and
 infrastructure
