@@ -367,7 +367,6 @@ population, so that protected resources are safeguarded and security protocol is
 
 As an agency looks to proactively manage its privileged user population, leveraging the
 Privileged User Management Framework illustrated in Figure 3 can support these efforts.
-
 <img src="https://github.com/GSA/ficam-playbooks/blob/pam-playbook/_assets/images/Annotation%202021-04-15%20074941.png">
 ##### Figure 3: Privileged User Management Framework
 
