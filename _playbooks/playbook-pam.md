@@ -265,11 +265,6 @@ Information and Information Systems (FIPS 199), FICAM Roadmap, and SP 800- 53 , 
 the Software Engineering Institute at Carnegie Mellon’s Insider Threat Center’s Common Sense Guide to Mitigating Insider Threats (4th Edition), CERT Insider Threat Center, Software Engineering Institute, Carnegie Mellon University, December 2012. [Common Sense Guide]
 
 
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
 ## 2. Privileged User Landscape Overview
 
 An agency is responsible for managing the privileges of all users with access to agency resources to ensure that employees can fulfill their assigned duties efficiently and securely. Referred to as “privilege management;” the definition can be found in the FICAM Roadmap. To execute assigned duties, a subset of an agency’s user population may be granted elevated access to an agency’s protected resources (e.g., content and data, applications and web services, network and infrastructure, facilities), which if misused or abused, could significantly compromise these resources, Please see Section 3.3 for information on protected resources. The individuals entrusted with elevated access constitute an agency’s privileged user population.
@@ -277,9 +272,6 @@ An agency is responsible for managing the privileges of all users with access to
 An agency’s privileged user population can include a range of individuals entrusted with elevated access. For example, both a security guard with physical access to a server room and a UNIX administrator with root access may be categorized as privileged users, despite different elevated access profiles. Given the broad-reaching nature of an organization’s privileged user population, it is important that an agency understand the user groups and accounts that constitute its privileged user population. Examples of individuals who may be considered privileged users include: application developer, database administrator, data center operations personnel, information technology (IT) security practitioner, IT audit practitioner, maintenance personnel, network engineer, and system administrator. Because of privileged users’ elevated access, unwanted behavior by these individuals can significantly compromise agency assets or operations. As a result, privileged user management is a cornerstone of insider threat mitigation.
 
 This definition is derived from the FY14 FISMA Metrics, as defined in the Information Security Glossary. Terminology Privileged User **–** A user who has been granted elevated privileges for access protected physical or logical resources. Such users include, for example, security personnel or system administrators who are responsible for managing restricted physical locations or shared information technology (IT) infrastructure, and require access to related systems to create new user accounts, and add to or amend the privileges of other users.^23
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 ## 2.1. Unwanted Behavior by Privileged Users
 
@@ -303,13 +295,9 @@ purposes copying classified files on portable media.
 | **Intellectual Property Theft**| Stealing intangible assets (e.g., discoveries, inventions, designs) from an organization.| Cloud administrator uses elevated access to server to steal proprietary information.|
 | **Unwanted Information Disclosure**| A communication or physical transfer of information to a recipient who is not authorized to access to the information.| System administrator creates a “backdoor” account to inappropriately access and release classified information.|
 
-
 ## 2.2. Evaluating Privileged User Risks
 
 As the first step in mitigating privileged users’ engaging in the unwanted behavior described in Figure 1 , an agency should evaluate the risks to its protected resources by leveraging its resource risk assessment as required in FIPS 199 in addition to a user community analysis.“User community” is terminology derived from the Access Management Framework (AMF). For the purpose of the Privileged User Instruction and Implementation Guidance, this term is used synonymously with “user population.” (Hyperlink to be provided once publicly available). These processes are components of a protected resource analysis, a foundational element of safeguarding agency resources (see Figure 4 ). For more information on how to conduct a comprehensive protected resources analysis, refer to the Access Management Framework. For more information on risk assessments for protected resources, refer to the AMF In combination, a resource risk assessment and a user community analysis allows an agency to identify its privileged user population and related risks to protected resources. It is recommended that an agency follow these steps to identify its privileged users:
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 1. Identify and document mission critical and sensitive resources (Figure 4 ).
 2. Identify the individuals and accounts that interact with mission critical and sensitive
@@ -341,11 +329,6 @@ The following table provides examples of job functions that may have elevated ac
 | **Shared Infrastructure Administrator**   | <ul> <li> User has elevated or complete access to one or more shared systems, applications or infrastructure. Compromise of these systems could impact large portions of or the entire organization. </li> <li>An NPE has access to communicate and otherwise interact with other shared infrastructure systems. Damage from the compromise of an NPE’s account could impact large portions of or the entire organization.</li> <li>Physical access to doors or turnstiles protecting critical shared infrastructure, information, or other physical resources. Compromise of these physical controls could result in multiple types of wide-spread damage to the organization’s physical and logical resources.</li> </ul>|
 
 ###### Figure 2: Example Set of Elevated Access Profiles for a Resource
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-
 By granting privileged users elevated access to protected resources, an agency becomes vulnerable to the risk of a privileged user misusing or exploiting these resources out of
 accidental, complacent, or malicious behavior.^29 The management requirements developed from assessing a resource’s privileged user population and associated privileged accounts can serve as core factors for federal agencies to consider when selecting, implementing, and configuring mechanisms to mitigate unwanted behavior by privileged users. These mechanisms should include detective and preventive measures to provide a holistic approach to privileged user management.
 
@@ -357,7 +340,6 @@ accidental, complacent, or malicious behavior.^29 The management requirements de
 >unusual, suspicious behavior or changes in activity to proactively mitigate risk to agency
 >facilities and resources (e.g., keystroke logging, audit logs). An agency should leverage
 >both preventive and detective measures for privileged user activities._
-
 
 An agency should seek to leverage existing processes and controls to effectively manage its privileged user population and protected resources. Please refer to Appendix C: Privileged User Security Controls Mapping for Special Publication 800- 53 for a mapping of controls defined in SP 800-53. These controls have been augmented to serve as countermeasures for how an agency can mitigate unwanted behavior by its privileged user population.
 
@@ -373,12 +355,9 @@ An agency should seek to leverage existing processes and controls to effectively
 >should exist, and if so, which accountability mechanism should be applied (e.g., assign
 >administrator)._
 
-
 (^29) For more information on the basis for privileged users’ unwanted behavior, refer to Appendix B: Classifications of Insider Threats and
 Privileged Users.
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 # 3. Privileged User Management Framework
 
@@ -398,11 +377,7 @@ population, so that protected resources are safeguarded and security protocol is
 As an agency looks to proactively manage its privileged user population, leveraging the
 Privileged User Management Framework illustrated in Figure 3 can support these efforts.
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
 <img src="https://github.com/GSA/ficam-playbooks/blob/pam-playbook/_assets/images/Annotation%202021-04-15%20074941.png">
-
 ###### Figure 3: Privileged User Management Framework
 
 The framework represents a cohesive set of measures to manage privileged users and to assist in
@@ -418,7 +393,7 @@ monitored effectively.
 The Privileged User Management Framework includes provisioning of the privileged user.
 Provisioning refers to creating user accounts and assigning privileges or entitlements within the
 scope of a defined process or interaction to provide users with access rights to applications and
-other resources that may be available in an environment.^30 Provisioning activities assist an
+other resources that may be available in an environment. As defined in the FICAM Roadmap. Provisioning activities assist an
 agency in managing how elevated access is assigned to privileged users and maintaining central
 situational awareness regarding which privileged users have what kind of access to protected
 resources.
@@ -427,7 +402,7 @@ When the privileged user obtains a credential required for access, the privilege
 use his/her elevated access via run-time access control to interact with one of the four protected
 resources (i.e., content and data, applications and web services, network and infrastructure,
 facilities). To access the protected resource(s), the privileged user must successfully authenticate
-in order for an affirmative authorization decision to be made.^31 An agency can hold privileged
+in order for an affirmative authorization decision to be made. An agency can hold privileged
 users to a higher authentication standard than standard users because of the higher risk associated
 with elevated access. On-going monitoring of privileged user activity can verify that these users’
 activities are in line with the job function or a business purpose to help discern valid actions from
@@ -438,11 +413,7 @@ User Management Framework.
 
 ## 3.1. Secure Operating Environment
 
-A Secure Operating Environment includes controls (e.g., firewalls, secure remote access, file
-restrictions) to protect the agency’s IT infrastructure (e.g., business applications, devices, data),
-which privileged users leverage to carry out job functions.^32 The following activities encompass
-a host of processes and controls which, when taken together, build a Secure Operating
-Environment to enable privileged user management techniques in the rest of the framework:
+A Secure Operating Environment includes controls (e.g., firewalls, secure remote access, file restrictions) to protect the agency’s IT infrastructure (e.g., business applications, devices, data), which privileged users leverage to carry out job functions. An agency should conduct recurring training for its users on how to protect the agency’s IT infrastructure as part of On-going Monitoring, described in Section 3.4. The following activities encompass a host of processes and controls which, when taken together, build a Secure Operating Environment to enable privileged user management techniques in the rest of the framework:
 
 1. **Business Continuity and Resiliency Planning.** Improper use of privileged users’
     elevated access to critical agency resources can cause disruptions such as system failures,
@@ -457,14 +428,6 @@ Environment to enable privileged user management techniques in the rest of the f
     user population. For example, an agency can configure firewalls to restrict access to
     privileged user accounts using an IP address and can configure remote access to restrict
     the execution of privileged commands via remote access.
-
-(^30) As defined in the FICAM Roadmap.
-(^32) An agency should conduct recurring training for its users on how to protect the agency’s IT infrastructure as part of On-going Monitoring,
-described in Section 3.4.
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
 3. **Data Protection.** For administrative or security reasons, a privileged user may have
     access to a large amount of sensitive information, necessitating protective mechanisms
     for such data. Enforcing restrictions and tight controls over data assists in safeguarding
@@ -494,7 +457,8 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
     system (PACS) that is integrated with capabilities such as video surveillance, guard force,
     notification systems, and fire alarms. To safeguard protected resources, an agency should
     integrate its physical and network security processes and technologies through access
-    control convergence.^33
+    control convergence. For more information on physical and logical access control convergence,
+    refer to Section 9 of the FICAM Roadmap.
 
 As an agency determines the appropriate controls to implement in its Secure Operating
 Environment, it is important to consider the number of controls and related requirements.
@@ -510,11 +474,6 @@ time consuming maintenance and cumbersome management and oversight.
 >User Management Framework includes a host of internal controls and processes to
 >protect the enterprise from a careless privileged user._
 
-
-(^33) For more information on physical and logical access control convergence, refer to Section 9 of the FICAM Roadmap.
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 ## 3.2. Provisioning
 
@@ -550,7 +509,6 @@ when conforming to this portion of the Privileged User Management Framework:
 >user acknowledgement form that requires the individual’s signature reinforces the
 >privileged user’s responsibilities and helps the agency maintain a record indicating
 >acknowledgement._
-
 
 5. **Credential Management.** Leveraging secure, unique credentials (i.e., Personal Identity
     Verification card [PIV card])^37 is both a preventive and detective measure for managing
