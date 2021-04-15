@@ -862,33 +862,7 @@ policies developed by the National Insider Threat Task Force (NITTF), as establi
 
 ## Executive Order 12968, as amended
 
-Executive Order 13467 - Reforming Processes Related to Suitability for Government
-Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National
-Security Information,^63 the 2008 amendment of Executive Order 12968 _–_ Access to Classified
-Information,^64 aligns the Federal Government’s personnel security clearance processes into a
-unified structure. This structure supports efforts to maintain relevant information housed by an
-agency in a manner that can be shared rapidly across the executive branch. E.O. 13467
-empowers the Director of National Intelligence (DNI) to administer the clearance process across
-the executive branch, including the creation of government-wide policies on the security
-clearance, investigation, and adjudication processes.
-
-(^62) E.O. 13587
-(^63) E.O. 13467, Executive Order 13467 – Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor
-Employees, and Eligibility for Access to Classified National Security Information, June 2008. [E.O. 13467]
-(^64) E.O. 12968, Executive Order 12968 – Access to Classified Information, August 1995. [E.O. 12968]
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-Additionally, E.O. 13467 authorizes the continuous evaluation of federal employees and
-contractors holding security clearances using automated procedures executed by a government-
-wide computer system thus strengthening the reciprocity of security clearances, allowing cleared
-personnel from one federal agency to operate more easily within another federal agency. This
-facilitates cooperation and resource-sharing among federal agencies involved in matters of
-national security, but expands the scope of insider threat at one agency to all agencies. Although
-automated continuous evaluation can assist in mitigating government-wide exposure to the threat
-posed by a single insider, E.O. 13467 reinforces the need for coherent and effective government-
-wide policy on privileged user access.
+Executive Order 13467 - Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information, E.O. 13467, Executive Order 13467 – Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information, June 2008. [E.O. 13467] the 2008 amendment of Executive Order 12968 _–_ Access to Classified Information,^64 aligns the Federal Government’s personnel security clearance processes into a unified structure. This structure supports efforts to maintain relevant information housed by an agency in a manner that can be shared rapidly across the executive branch. E.O. 13467 empowers the Director of National Intelligence (DNI) to administer the clearance process across the executive branch, including the creation of government-wide policies on the security clearance, investigation, and adjudication processes. Additionally, E.O. 13467 authorizes the continuous evaluation of federal employees and contractors holding security clearances using automated procedures executed by a government-wide computer system thus strengthening the reciprocity of security clearances, allowing cleared personnel from one federal agency to operate more easily within another federal agency. This facilitates cooperation and resource-sharing among federal agencies involved in matters of national security, but expands the scope of insider threat at one agency to all agencies. Although automated continuous evaluation can assist in mitigating government-wide exposure to the threat posed by a single insider, E.O. 13467 reinforces the need for coherent and effective government-wide policy on privileged user access.
 
 ## Executive Order 10450, as amended
 
@@ -928,11 +902,7 @@ the heightened threat that privileged users pose by simple virtue of their eleva
 (^67) FISMA metrics are derived from Administration Priorities (AP,) as determined by the National Security Staff and the Office of Management
 and Budget (OMB), baseline practices pulled from the National Institute of Standards and Technology (NIST), and metrics from FISMA itself,
 known as Key FISMA Metrics (KFM), revolving around six performance areas.
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-recognizes that an attack executed by, or directed at, a privileged user can have especially
+Recognizes that an attack executed by, or directed at, a privileged user can have especially
 damaging effects on a federal agency. Consequently, through its mandated reporting
 requirements, FISMA encourages federal agencies to influence the behavior of their privileged
 users, whether through technical controls or training programs.
@@ -982,13 +952,9 @@ credentials, modernizing Physical Access Control Systems (PACS) and Logical Acce
 (^68) FIPS 199, Standards for Security Categorization for Federal Information and Information Systems, April 2004. [FIPS 199]
 (^69) FICAM Roadmap
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
 Systems (LACS) infrastructure, and implementing a federated identity capability. Part B
 provides guidance on a broad range of topics to enable a holistic approach for alignment with the
 ICAM segment architecture, including:
-
 For supplemental information to assist an agency in managing its privileged users, refer to the
 use cases in Part A of the Roadmap (e.g., 4.7 Provision and De-provision User Account for an
 Application) and Section 9.2 Privilege Management. Section 9.2 of the Roadmap discusses the
@@ -996,14 +962,13 @@ impacts of the ICAM segment architecture on traditional privilege management pro
 introduces the automated provisioning capability that is outlined in the target state. Additionally,
 it discusses:
 
-```
- Steps and activities that are involved in managing privileges throughout the access
+- Steps and activities that are involved in managing privileges throughout the access
 management lifecycle;
- Privilege management processes that may be improved by correlating similar information
+- Privilege management processes that may be improved by correlating similar information
 and access needs into defined roles; and
- The automated provisioning capability and the benefits this approach provides over
+- The automated provisioning capability and the benefits this approach provides over
 current techniques.
-```
+
 ## NIST SP 800- 53
 
 In an effort to address the growing body of legislative and executive requirements on the security
@@ -1043,8 +1008,6 @@ on organizations. As a result, case studies for the other 18 best practices list
 Sense Guide prominently feature privileged users.
 
 
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
 ## Appendix B: Classifications of Insider Threats and Privileged
 
 **Users**
@@ -1069,21 +1032,25 @@ user population existing as a subset of that. An agency can do a number of thing
 these three classifications of insider threat, all of which are contained in the Privileged User
 Management Framework:
 
-```
- Training and Education - (Section 3.4) can primarily prevent the insider threat
+- **Training and Education -** (Section 3.4) can primarily prevent the insider threat
 stemming from accidental behavior, but heightened security awareness can mitigate
 complacent insiders as well.
- Internal Controls - (Sections 3.1, 3.2, 3.3), like segregation of duties, can mitigate
+- **Internal Controls -** (Sections 3.1, 3.2, 3.3), like segregation of duties, can mitigate
 insider threat stemming from accidental and complacent behavior.
- On-going Monitoring Capabilities - (Section 3.4) can mitigate the insider threat posed
+- **On-going Monitoring Capabilities -** (Section 3.4) can mitigate the insider threat posed
 by the often deceptive malicious insider. However, as the most sophisticated measure to
 insider threat, on-going monitoring empowers an agency to mitigate all three
 classifications of insider threat at once, as this can deter and detect security violations by
 accidental and complacent insiders, as well as malicious ones.
-```
+
 The following table presents the three classifications of insider threat with accompanying
 examples of how specifically privileged users of each classification can pose a threat to an
 agency.
+
+|   Classification of Insider Threats   |  Definition  |   Indicators   |   Example of Privileged User Insider Threats   |
+|  ...................................  | :............|  :............ |   :..........................................  |
+|   Accidental   | An insider’s lack of awareness regarding policies, procedures, and technical competencies results in a security risk for the organization.| An insider lacks an understanding of security protocols, technical procedures, and the potential impact of deviating from an organization’s security protocol and the individuals assigned job duties. |   - A privileged user unknowingly installs software that is not approved for use on an agency system. - Use privileged accounts for anything other than official administrative actions. - A privileged user accidentally deletes all data with a single command. |
+
 
 ```
 Classifications of
