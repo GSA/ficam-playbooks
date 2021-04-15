@@ -831,21 +831,17 @@ November 2012 [NITP]. For more information on the National Insider Threat Task F
 Safeguarding of Classified Information, October 2011. [E.O. 13587]
 (^61) National Strategy for Information Sharing and Safeguarding (NSISS), Executive Office of the President (EOP), December 2012.
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-```
- The Unclassified Implementation Plan includes all Unclassified, Sensitive but
+- **The Unclassified Implementation Plan** includes all Unclassified, Sensitive but
 Unclassified (SBU), and Controlled Unclassified Information (CUI) systems within the
 Executive Branch of the Federal Government and all systems and users that interact with
 these federal systems.
- The Secret Implementation Plan includes all systems within the Executive Branch of
+- **The Secret Implementation Plan** includes all systems within the Executive Branch of
 the Federal Government that process secret information and all systems and users that
 interact with these federal systems.
- The Top Secret Implementation Plan includes all systems within the Executive Branch
+- **The Top Secret Implementation Plan** includes all systems within the Executive Branch
 of the Federal Government that process top secret information and all systems and users
 that interact with these federal systems.
-```
+
 As an agency works to extend its ICAM implementations across security domains, it is important
 to consider Goal #4 and PO #4 in relation to managing privileged users.
 
