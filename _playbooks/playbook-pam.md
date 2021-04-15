@@ -1060,60 +1060,11 @@ resource analysis (Section 2.1).
 
 ## Audit and Accountability
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Determine the
-pool of audit
-events
-```
-```
-AU- 2 A primary component of an agency’s ability to
-manage its privileged user population is an audit
-capability using a log correlation engine or security
-information and event management (SIEM) that can
-monitor employee activities. An agency needs to
-determine the scope of audit events, but should
-work to ensure that all types of privileged users are
-adequately monitored. When determining the pool of
-audit events, all departments within the agency
-should be engaged to leverage all audit-related
-information in order to generate a comprehensive
-picture of an employee’s relative risk. Audit events
-can include:
- Password changes
- Failed access attempts related to information
-systems
- Administrative privilege usage
- Secure credential usage (e.g., PIV card, CAC,
-third-party)
-```
-```
- Applications and
-web services
- Network and
-infrastructure
- Facilities
-```
+|   Countermeasure |   SP 800-53 Control|   Explanation |   Relevant Protected Resources |
+|:-----------------:|:------------------:|--------------|--------------------------------|
+|   **Determine the pool of audit events** | AU-2 |   A primary component of an agency’s ability to manage its privileged user population is an audit capability using a log correlation engine or security information and event management (SIEM) that can monitor employee activities. An agency needs to determine the scope of audit events, but should work to ensure that all types of privileged users are adequately monitored. When determining the pool of audit events, all departments within the agency should be engaged to leverage all audit-related information in order to generate a comprehensive picture of an employee’s relative risk. Audit events can include:<ul><li>Password changes</li><li>Failed access attempts related to information systems</li><li>Administrative privilege usage</li><li>Secure credential usage (e.g., PIV card, CAC, third-party)</li></ul>|
+<ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>|
 
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Use adequate
-audit records
-```
 ```
 AU- 3 Audit records that contain vague information or that
 lack adequate event details are ineffective in
