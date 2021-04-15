@@ -369,7 +369,8 @@ As an agency looks to proactively manage its privileged user population, leverag
 Privileged User Management Framework illustrated in Figure 3 can support these efforts.
 
 <img src="https://github.com/GSA/ficam-playbooks/blob/pam-playbook/_assets/images/Annotation%202021-04-15%20074941.png">
-###### Figure 3: Privileged User Management Framework
+
+#####Figure 3: Privileged User Management Framework
 
 The framework represents a cohesive set of measures to manage privileged users and to assist in
 holistically protecting the enterprise. First, an agency should have the elements of a Secure
