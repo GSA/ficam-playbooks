@@ -74,22 +74,13 @@ Credential, and Access Management (ICAM). In summary, nine primary steps are sug
 an agency to improve its privileged user risk management:
 
 1. Identify and document mission critical and sensitive resources.
-2. Identify the individuals and accounts that interact with mission critical and sensitive
-    resources.
+2. Identify the individuals and accounts that interact with mission critical and sensitive resources.
 3. Identify the individuals that require elevated access to the protected resources.
-4. Conduct a risk assessment by analyzing vulnerabilities, impact, and likelihood of misuse
-    or abuse of elevated access by privileged users.
+4. Conduct a risk assessment by analyzing vulnerabilities, impact, and likelihood of misuse or abuse of elevated access by privileged users.
 5. Develop a secure operating environment for the privileged user population.
 6. Execute effective provisioning of privileged users.
 7. Implement run-time access control using privileged user management techniques.
-8. Perform on-going monitoring of privileged users at a level commensurate to the risk
-    posed.
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-October 15, 2014 vi
-
+8. Perform on-going monitoring of privileged users at a level commensurate to the risk posed.
 9. Consult leading information security guidance on methods to further improve privileged
     user management throughout the enterprise.
 
