@@ -1065,40 +1065,9 @@ resource analysis (Section 2.1).
 |   **Determine the pool of audit events** | AU-2 |   A primary component of an agency’s ability to manage its privileged user population is an audit capability using a log correlation engine or security information and event management (SIEM) that can monitor employee activities. An agency needs to determine the scope of audit events, but should work to ensure that all types of privileged users are adequately monitored. When determining the pool of audit events, all departments within the agency should be engaged to leverage all audit-related information in order to generate a comprehensive picture of an employee’s relative risk. Audit events can include:<ul><li>Password changes</li><li>Failed access attempts related to information systems</li><li>Administrative privilege usage</li><li>Secure credential usage (e.g., PIV card, CAC, third-party)</li></ul>|    <ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>
 |   **Use adequate audit records** |   AU-3 |   Audit records that contain vague information or that lack adequate event details are ineffective in assisting an agency in managing its workforce. Audit records should include: <ul><li>Type of event</li><li>Time of the event</li><li>Location of event</li><li>Source of event</li><li>Outcome of event</li><li>Identity of individuals involved with event</li></ul> Not all auditable events can be audited at the same time, so the agency should determine under which circumstances events are audited. It should be noted that audit records for privileged user activity that come with the computing platform are often inadequate, and require refining. |   <ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>
 |   **Set up processes to review, analyze, and report on auditing records** |   AU-6 |   Auditing components such as account usage, remote access, and configuration settings allow an agency insight into whether its privileged users are abiding by security protocol. An agency can improve its ability to mitigate the threat posed by privileged users through enhancing the auditing capability’s integration and correlation with other processes like physical monitoring, non-technical sources, and vulnerability scanning. Full- text analysis of privileged commands can greatly improve an agency’s management of its privileged users and accounts. In particular, malicious insiders require an integrated, enterprise-wide mitigation approach. To mitigate unwanted behavior by malicious privileged users, an agency should consider feeding its auditing information into an analytic capability. |   <ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>
+|   **Protect audit information from unwanted changes** |   AU-9 |   An agency should take technical measures to protect its audit resources (e.g., settings, records, and reports), such as limiting access. The management of audit resources inherently requires elevated access. A privileged user insider with nefarious motives may have incentive to tamper with an agency’s audit capabilities. A privileged user that is subject to the auditing processes and also has the means to alter audit resources poses an intrinsic risk of manipulation. An agency can dedicate a subset of privileged users to manage the audit functions to improve reliability of the audit capabilities. |   <ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>
+##### Figure 8: Audit and Accountability
 
-```
-```
-Protect audit
-information from
-unwanted
-changes
-```
-```
-AU- 9 An agency should take technical measures to
-protect its audit resources (e.g., settings, records,
-and reports), such as limiting access. The
-management of audit resources inherently requires
-elevated access. A privileged user insider with
-nefarious motives may have incentive to tamper with
-an agency’s audit capabilities. A privileged user that
-is subject to the auditing processes and also has the
-means to alter audit resources poses an intrinsic
-risk of manipulation. An agency can dedicate a
-subset of privileged users to manage the audit
-functions to improve reliability of the audit
-capabilities.
-```
-```
- Applications and
-web services
- Network and
-infrastructure
- Facilities
-```
-## Figure 8: Audit and Accountability
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 ## Security Assessment and Authorization
 
