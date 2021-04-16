@@ -1071,43 +1071,10 @@ resource analysis (Section 2.1).
 
 ## Security Assessment and Authorization
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Establish
-Interconnection
-Security
-Agreements
-where necessary
-```
-```
-CA- 3 Weak governance of system interconnections can
-create an opportunity for insiders to exploit
-information systems and exfiltrate data without
-authorization, particularly those with privileged
-access. Because different systems may have
-different security requirements, authorizing officials
-should establish Interconnection Security
-Agreements that document the interface
-characteristics, security requirements, and nature of
-the information communicated. If the rules of system
-interconnection are clearly defined, accidental and
-complacent insider activity by privileged users who
-manage these systems can be avoided to some
-extent, while malicious insider activity by privileged
-users also in this role can be deterred or detected
-more easily.
-```
-```
- Network and
-infrastructure
-```
-## Figure 9: Security Assessment and Authorization
+|   Countermeasure |   SP 800-53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:-------------------:|---------------|--------------------------------|
+|   **Establish Interconnection Security Agreements where necessary** |   CA-3 |   Weak governance of system interconnections can create an opportunity for insiders to exploit information systems and exfiltrate data without authorization, particularly those with privileged access. Because different systems may have different security requirements, authorizing officials should establish Interconnection Security Agreements that document the interface characteristics, security requirements, and nature of the information communicated. If the rules of system interconnection are clearly defined, accidental and complacent insider activity by privileged users who manage these systems can be avoided to some extent, while malicious insider activity by privileged users also in this role can be deterred or detected more easily. |   <ul><li>Network and infrastructure</li></ul>
+##### Figure 9: Security Assessment and Authorization
 
 ## Configuration Management
 
