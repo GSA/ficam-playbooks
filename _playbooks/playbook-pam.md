@@ -1022,44 +1022,10 @@ resource analysis (Section 2.1).
 
 ## Configuration Management
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Develop and
-maintain
-configuration
-baselines for
-information
-systems
-```
-```
-CM- 2 By establishing baseline configurations for
-information systems and their components, an
-agency can help prevent privileged users from
-incorrectly assuming a role in altering the
-information system. Even though baseline
-configurations must change over time to reflect the
-current enterprise architecture, this countermeasure
-centralizes information about the information system
-components and network topology. This
-centralization can delineate parameters around the
-role of privileged users to provide guidance on
-configurations management so the system performs
-as intended. Documenting the configurations of all
-assets allows the agency to audit for anomalies,
-possible signs of insider activity from the privileged
-users in relevant roles.
-```
-```
- Applications and
-web services
- Network and
-infrastructure
+|   Countermeasure |   SP-800-53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:-------------------:|---------------|--------------------------------|
+|   **Develop and configuration baselines for information systems** |   CM-2 |   By establishing baseline configurations for information systems and their components, an agency can help prevent privileged users from incorrectly assuming a role in altering the information system. Even though baseline configurations must change over time to reflect the current enterprise architecture, this countermeasure centralizes information about the information system components and network topology. This centralization can delineate parameters around the role of privileged users to provide guidance on configurations management so the system performs as intended. Documenting the configurations of all assets allows the agency to audit for anomalies, possible signs of insider activity from the privileged users in relevant roles. |   <ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>
+
 ```
 ```
 Change
