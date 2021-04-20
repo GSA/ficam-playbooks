@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: playbooks
-title: ICAM Privileged User Instruction Playbook
+title: ICAM Privileged Access Management Playbook
 type: Markdown
 pubDate: August 30, 2021
 permalink: /pam-playbook/
@@ -12,95 +12,36 @@ sidenav: playbook-pam
 
 <img src="https://github.com/GSA/ficam-playbooks/blob/pam-playbook/_assets/images/GSA%20Logo.png" alt="GSA Logo">
 
-ICAM Privileged User Instruction and
-
-Implementation Guidance
+ICAM Privileged Access Management Playbook
 
 Version 1. 1
 
 August 30, 2021
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
+ICAM Privileged Access Management Playbook Draft
 
 August 30, 2021
 
-**Authority**
+**Acknowledgements**
 
-This document has been developed by the Privileged User Tiger Team (PUTT) of the Identity, Credential, and Access Management Subcommittee (ICAMSC), as supplemental guidance to the Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance.Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version 2.0, Federal Chief Information Officers Council, December 2, 2011, [FICAM Roadmap]. The ICAMSC was established in 2008 by the Federal Chief Information Officers (CIO) Council’s Information Security and Identity Management Committee (ISIMC) and was tasked with aligning the Identity Management activities of the Federal Government. The development of this document aligns with and supports the responsibilities of the ICAMSC, which include:
+This playbook reflects the contributions of the Privileged Access Management working group of the Identity, Credential and Access Management Subcommittee (ICAMSC).  The working group was co-chaired by members from the  . Contributions were made by the members of services or agencies representing:  Department of Homeland Security (DHS), Cybersecurity and Infrastructure Security Agency (CISA), Department of Defence (DoD), and the General Services Administration (GSA). 
 
-* Aligning federal agencies around common practices by fostering effective government- wide Identity, Credential, and Access Management (ICAM);
-* Collaborating with Federal Government and external identity management activities (non-federal, commercial, and more) to leverage best practices and enhance
-interoperability; and
-* Enabling trust and interoperability in online transactions, through the application of common policies and approaches, in activities that cross organizational boundaries.
 
+ICAM Privileged Access Management Playbook
+August 30,2021 iv
+
+
+ICAM Privileged Access Management Playbook
+
+August 30, 2021 v
+
+**Introduction**
+
+Privileged Access Management represents each individual engaged in privileged level access to a government network or system that is responsible for the configuration and maintenance or the management of that system/systems. This playbook is a method to apply the National Institute of Standards and Technology (NIST) Special Publication 800-53 security controls to this management process.  Federal agencies can perform a Risk Assessment) to determine the appropriate security controls and best practices to reduce Insider Threat issues. The development of this document aligns with and supports the responsibilities of the ICAMSC, which include: 
+-Aligning federal agencies around common practices by fostering effective government- wide Identity, Credential, and Access Management (ICAM)
+-Collaborating with Federal Government and external identity management activities (non-federal, commercial, and more) to leverage best practices and enhance interoperability; and 
+-Enabling trust and interoperability in online transactions, through the application of common policies and approaches, in activities that cross organizational boundaries.
 This guidance has been prepared for use by federal agencies and is not intended to contradict other previously established standards and guidelines that are mandatory and binding on federal agencies. Additionally, these guidelines should not be interpreted as altering or superseding the existing authority of the FICAM Roadmap.
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-October 15, 2014 iv
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-October 15, 2014 v
-
-**Executive Summary**
-
-The President released the National Insider Threat Policy and Minimum Standards for Executive
-Branch Insider Threat Programs Presidential Memorandum -- National Insider Threat Policy and Minimum Standards for Executive Branch Insider
-Threat Programs, Office of the Press Secretary, November 21, 2012. [NITP] in 2012 to address the need for federal agencies to
-monitor all employees who may pose a threat to national security. In particular, recent incidents
-highlighted the need for improved management of privileged users within the Federal
-Government. These incidents involved employees or contractors with elevated access wrongfully
-exposing information due to a lack of effective access control, which in many cases allowed
-them unrestricted access to agency information systems. These incidents compromised national
-security by exposing sensitive information as well as damaging the reputation of affected
-agencies.
-
-Certain individuals need elevated access to perform necessary administrative and security
-functions for federal agencies, yet this carries an inherent risk of misuse or abuse. As a result,
-agencies should implement controls for privileged users that mitigate unwanted behavior,
-without impeding their ability to carry out assigned job duties. In creating a secure physical and
-virtual workplace for privileged users, agencies should align efforts with Federal Identity,
-Credential, and Access Management Roadmap and Implementation Guidance (FICAM
-Roadmap). Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version
-2.0, Federal Chief Information Officers Council, December 2, 2011, [FICAM Roadmap].
-
-This document provides federal agencies with guidance to manage its privileged users by
-mitigating the inherent risks associated with this population through the use of Identity,
-Credential, and Access Management (ICAM). In summary, nine primary steps are suggested for
-an agency to improve its privileged user risk management:
-
-1. Identify and document mission critical and sensitive resources.
-2. Identify the individuals and accounts that interact with mission critical and sensitive resources.
-3. Identify the individuals that require elevated access to the protected resources.
-4. Conduct a risk assessment by analyzing vulnerabilities, impact, and likelihood of misuse or abuse of elevated access by privileged users.
-5. Develop a secure operating environment for the privileged user population.
-6. Execute effective provisioning of privileged users.
-7. Implement run-time access control using privileged user management techniques.
-8. Perform on-going monitoring of privileged users at a level commensurate to the risk posed.
-9. Consult leading information security guidance on methods to further improve privileged
-    user management throughout the enterprise.
-
-As further detailed within this document, it is crucial that an agency identify which individuals
-have elevated access to an agency’s protected resources (Steps 1 – 3). Once the scope of
-privileged users’ interactions with protected resources (Step 4) is understood by the agency, it
-should leverage the Privileged User Management Framework outlined within this document to
-mitigate the risk of these users engaging in unwanted behavior (Steps 5 – 8). Implementing
-standard mechanisms within ICAM best practices as well as additional countermeasures to
-prevent privileged user misuse or abuse of elevated access can provide comprehensive,
-integrated protection for agency resources. Steps 5 – 8 should operate in unison; however, they
-are presented in a logical progression. Furthermore, an agency can bolster the activities within
-the Privileged User Management Framework by leveraging existing efforts to achieve
-information security goals by directing or tailoring these activities based on its resources,
-environment, mission, business needs, and privileged user population (Step 9). To assist in this
-effort, this document includes a collection of useful references, insider threat classifications, and
-a security controls mapping to the National Institute for Standards and Technology’s Special
-Publication 800-53, Security and Privacy Controls for Federal Information Systems and Organizations, Revision 4, NIST,
-April 2013. [SP 800-53]. For agencies operating on classified fabrics, please leverage Security Categorization and
-Control Selection 1253 (CNSS 1253), as this document identifies applicable options in alignment with SP 800-53.
 
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
