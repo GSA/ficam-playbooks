@@ -30,6 +30,7 @@ Privileged Access Management represents each individual engaged in privileged le
 - Aligning federal agencies around common practices by fostering effective government- wide Identity, Credential, and Access Management (ICAM)
 - Collaborating with Federal Government and external identity management activities (non-federal, commercial, and more) to leverage best practices and enhance interoperability; and 
 - Enabling trust and interoperability in online transactions, through the application of common policies and approaches, in activities that cross organizational boundaries.
+
 This guidance has been prepared for use by federal agencies and is not intended to contradict other previously established standards and guidelines that are mandatory and binding on federal agencies. Additionally, these guidelines should not be interpreted as altering or superseding the existing authority of the FICAM Roadmap.
 
 
@@ -80,6 +81,9 @@ __Appendix C: Privileged User Security Controls Mapping for Special Publication 
 __Appendix D: Privileged User Instruction ............................................................................................................... 41__
 
 
+
+
+
 ## ICAM Privileged Access Management Draft
 
 **List of Figures**
@@ -107,8 +111,6 @@ __Appendix D: Privileged User Instruction ......................................
 - Figure 21: System and Communications Protection
 - Figure 22: System and Information Integrity
 
-
-1. **Introduction**
 
 ## Background
 
