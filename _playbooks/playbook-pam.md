@@ -24,10 +24,6 @@ August 30, 2021
 This playbook reflects the contributions of the Privileged Access Management working group of the Identity, Credential and Access Management Subcommittee (ICAMSC).  The working group was co-chaired by members from the  . Contributions were made by the members of services or agencies representing:  Department of Homeland Security (DHS), Cybersecurity and Infrastructure Security Agency (CISA), Department of Defence (DoD), and the General Services Administration (GSA). 
 
 
-ICAM Privileged Access Management Playbook
-
-August 30, 2021 
-
 **Introduction**
 
 Privileged Access Management represents each individual engaged in privileged level access to a government network or system that is responsible for the configuration and maintenance or the management of that system/systems. This playbook is a method to apply the National Institute of Standards and Technology (NIST) Special Publication 800-53 security controls to this management process.  Federal agencies can perform a Risk Assessment) to determine the appropriate security controls and best practices to reduce Insider Threat issues. The development of this document aligns with and supports the responsibilities of the ICAMSC, which include: 
@@ -36,10 +32,6 @@ Privileged Access Management represents each individual engaged in privileged le
 - Enabling trust and interoperability in online transactions, through the application of common policies and approaches, in activities that cross organizational boundaries.
 This guidance has been prepared for use by federal agencies and is not intended to contradict other previously established standards and guidelines that are mandatory and binding on federal agencies. Additionally, these guidelines should not be interpreted as altering or superseding the existing authority of the FICAM Roadmap.
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-October 15, 2014 vii
 
 **Table of Contents**
 
@@ -88,9 +80,7 @@ __Appendix C: Privileged User Security Controls Mapping for Special Publication 
 __Appendix D: Privileged User Instruction ............................................................................................................... 41__
 
 
-## ICAM Privileged User Instruction and Implementation Guidance Draft
-
-October 15, 2014 viii
+## ICAM Privileged Access Management Draft
 
 - Figure 1: Unwanted Behavior by Privileged Users List of Figures
 - Figure 2: Example Set of Elevated Access Profiles for a Resource
@@ -115,8 +105,6 @@ October 15, 2014 viii
 - Figure 21: System and Communications Protection
 - Figure 22: System and Information Integrity
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 1. **Introduction**
 
@@ -163,10 +151,6 @@ The following items fall outside the scope of this document:
 
 * Recommendations and guidance specific to only one security domain (i.e., unclassified,
 Secret, Top Secret);
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
 * Timelines associated with achieving the leading management approaches and practices
 outlined herein; and
 * Implementation of an agency’s insider threat program as it relates to privileged users in
@@ -457,8 +441,6 @@ provisioning of elevated access.
 (^37) For the purpose of this document, the Personal Identification (PIV) Card and Common Access Card (CAC) are used synonymously.
 
 
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
 In response to HSPD-12 and OMB M- 11 - 11,^39 agencies have made a significant
 investment in the PIV card, which employees and contractors must use when
 authenticating to logical resources. Additionally, agencies have invested in the supporting
@@ -503,9 +485,6 @@ assurance. An agency should also refer to Office of Management and Budget Memora
 review new and existing electronic transactions to ensure authentication processes provide the appropriate level of assurance. This is particularly
 important as an agency manages its provisioned privileged users during Run-Time Access Control.
 (^43) See Section Section 8 of the FICAM Roadmap for more information around the PIV-Interoperable (PIV-I) card.
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 Once a privileged user has been issued a credential and assigned elevated access during
 Provisioning, additional security controls are required to manage his/her access to protected
@@ -579,8 +558,6 @@ list of authentication mechanism combinations can be found in Appendix C of SP 8
 (^54) For more information regarding policy execution for access control, please refer to the AMF.
 (^55) FISMA Metrics
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 ## Continuous Monitoring
 
@@ -670,8 +647,6 @@ continuous evaluation on a recurring basis cultivates a proactive security cultu
 
 (^58) Refer to the Department of Homeland Security (DHS) website for more information regarding CDM.
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 ## Appendix A: Reference Documentation
 
@@ -886,17 +861,13 @@ Communications and the U.S. Secret Service.
 The Common Sense guide presents readers with 19 best practices to mitigate insider threats
 within organizations, with accompanying case studies for each. Practice 10 involves instituting
 stringent access controls and monitoring policies on privileged users. Due to privileged users’
+elevated access, cases of insider threat involving these individuals often have a significant impact
+on organizations. As a result, case studies for the other 18 best practices listed in the Common
+Sense Guide prominently feature privileged users.
 
 (^70) SP 800- 53 , Security and Privacy Controls for Federal Information Systems and Organizations, Revision 4, NIST, April 2013. [SP 800-53]
 (^71) Common Sense Guide to Mitigating Insider Threats (4th Edition), CERT Insider Threat Center, Software Engineering Institute, Carnegie
 Mellon University, December 2012. [Common Sense Guide]
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-elevated access, cases of insider threat involving these individuals often have a significant impact
-on organizations. As a result, case studies for the other 18 best practices listed in the Common
-Sense Guide prominently feature privileged users.
 
 
 ## Appendix B: Classifications of Insider Threats and Privileged
@@ -957,8 +928,6 @@ Mapping for Special Publication 800- 53 in the “Explanation” column. This al
 further integrate relevant controls for privileged user management with insider threat mitigation
 efforts.
 
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
 
 ## Appendix C: Privileged User Security Controls Mapping for Special Publication 800-53
 
