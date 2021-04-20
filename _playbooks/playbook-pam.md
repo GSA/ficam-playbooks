@@ -123,7 +123,7 @@ ICAM Privileged User Instruction and Implementation Guidance Draft
 
 1. **Introduction**
 
-## 1.1. Background
+## Background
 
 In alignment with the Federal Identity, Credential, and Access Management Roadmap and
 Implementation Guidance (FICAM Roadmap), Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance, Version 2.0, Federal Chief
@@ -145,11 +145,18 @@ Privileged users have been responsible for the most recent high-profile federal 
 In support of this need, the Identity, Credential, and Access Management (ICAM) Sub-Committee (ICAMSC) within the Information Security and Identity Management Committee
 (ISIMC) of the Federal Chief Information Officer (CIO) Council directed the development of a Privileged User Instruction (i.e., privileged user agreement) and Implementation Guidance. Agencies should work to proactively, securely, and efficiently manage their privileged user populations in alignment with the FICAM Roadmap. To support agencies in overcoming the challenges associated with privileged user management, the ICAMSC formed the Privileged User Tiger Team (PUTT). This group has been tasked with developing guidance that provides instruction and implementation best practices to federal agencies for managing and monitoring privileged users across security domains. The PUTT has collaborated with several agencies to provide leading practices for monitoring, identifying, and mitigating potential threats to agency resources to maintain control of agency data and drive security improvements across the federal enterprise.
 
-## 1.2. Purpose
+## Purpose
 
 The purpose of this document is to provide guidance to federal agencies to assist in managing their privileged users’ access to agency protected resources (i.e., content and data, applications and web services, network and infrastructure, facilities). This document will serve as a supplement to the FICAM Roadmap^12 and Committee on National Security Systems (CNSS) Directive 504 Annex C, See the CNSS website for CNSS directives, issuances, and policies. by providing guidance for managing privileged users that is applicable across security domains.
 
-## 1.3. Scope
+## How to Use This Playbook
+
+This playbook is divided into three major sections. Read the entire playbook or jump directly to the section that will help your agency.
+- High-Level PAM Process - Step-by-step guide on how to approach a PAM process for each agency.
+- Agency Process Plays - Four plays to create efficient and consistent processes. For example, Play #4 includes a shortcut decision tree for a streamlined PAM for some applications.
+- Appendices - Example diagrams and templates, and references to policies and standards to use in your agency for communications. 
+
+## Scope
 
 The scope of this document is limited to high-level guidance that is specific to privileged users
 accessing operational Federal Government information systems and physical resources across
@@ -168,7 +175,7 @@ outlined herein; and
 * Implementation of an agency’s insider threat program as it relates to privileged users in
 fulfillment of NITP requirements.
 
-## 1.4. Assumptions
+## Assumptions
 
 This document takes into consideration the following assumptions and dependencies:
 
@@ -181,7 +188,7 @@ This document takes into consideration the following assumptions and dependencie
     security systems via CNSSD 504 Annex C.
 4. The information in this document supports the requirement and assumes that an agency has implemented National Institute for Standards and Technology’s (NIST) Special Publication 800 - 53: Security and Privacy Control for Federal Information Systems and Organizations (SP 800-53), SP 800- 53 , Security and Privacy Controls for Federal Information Systems and Organizations, Revision 4, NIST, April 2013. [SP 800-53] per the Federal Information Security Management Act (FISMA).FISMA Metrics, FY2014 Chief Information Office Federal Information Security Management Act Reporting Metrics v2.0, January 2014. [FISMA Metrics]
 
-## 1.5. Reference Documentation
+## Reference Documentation
 
 There are a variety of policies and standards that bind federal agencies to the national effort of
 protecting the country against insider threat. Taken together, these documents communicate the
@@ -193,7 +200,7 @@ Information and Information Systems (FIPS 199), FICAM Roadmap, and SP 800- 53 , 
 the Software Engineering Institute at Carnegie Mellon’s Insider Threat Center’s Common Sense Guide to Mitigating Insider Threats (4th Edition), CERT Insider Threat Center, Software Engineering Institute, Carnegie Mellon University, December 2012. [Common Sense Guide]
 
 
-## 2. Privileged User Landscape Overview
+## Privileged User Landscape Overview
 
 An agency is responsible for managing the privileges of all users with access to agency resources to ensure that employees can fulfill their assigned duties efficiently and securely. Referred to as “privilege management;” the definition can be found in the FICAM Roadmap. To execute assigned duties, a subset of an agency’s user population may be granted elevated access to an agency’s protected resources (e.g., content and data, applications and web services, network and infrastructure, facilities), which if misused or abused, could significantly compromise these resources, Please see Section 3.3 for information on protected resources. The individuals entrusted with elevated access constitute an agency’s privileged user population.
 
@@ -201,7 +208,7 @@ An agency’s privileged user population can include a range of individuals entr
 
 This definition is derived from the FY14 FISMA Metrics, as defined in the Information Security Glossary. Terminology Privileged User **–** A user who has been granted elevated privileges for access protected physical or logical resources. Such users include, for example, security personnel or system administrators who are responsible for managing restricted physical locations or shared information technology (IT) infrastructure, and require access to related systems to create new user accounts, and add to or amend the privileges of other users.^23
 
-## 2.1. Unwanted Behavior by Privileged Users
+## Unwanted Behavior by Privileged Users
 
 Since misuse or abuse of elevated access can significantly compromise an agency’s protected
 resources, the agency should be fully aware of the potential for privileged users to exploit their
@@ -223,7 +230,7 @@ purposes copying classified files on portable media.
 | **Intellectual Property Theft**| Stealing intangible assets (e.g., discoveries, inventions, designs) from an organization.| Cloud administrator uses elevated access to server to steal proprietary information.|
 | **Unwanted Information Disclosure**| A communication or physical transfer of information to a recipient who is not authorized to access to the information.| System administrator creates a “backdoor” account to inappropriately access and release classified information.|
 
-## 2.2. Evaluating Privileged User Risks
+## Evaluating Privileged User Risks
 
 As the first step in mitigating privileged users’ engaging in the unwanted behavior described in Figure 1 , an agency should evaluate the risks to its protected resources by leveraging its resource risk assessment as required in FIPS 199 in addition to a user community analysis.“User community” is terminology derived from the Access Management Framework (AMF). For the purpose of the Privileged User Instruction and Implementation Guidance, this term is used synonymously with “user population.” (Hyperlink to be provided once publicly available). These processes are components of a protected resource analysis, a foundational element of safeguarding agency resources (see Figure 4 ). For more information on how to conduct a comprehensive protected resources analysis, refer to the Access Management Framework. For more information on risk assessments for protected resources, refer to the AMF In combination, a resource risk assessment and a user community analysis allows an agency to identify its privileged user population and related risks to protected resources. It is recommended that an agency follow these steps to identify its privileged users:
 
@@ -287,7 +294,7 @@ An agency should seek to leverage existing processes and controls to effectively
 Privileged Users.
 
 
-# 3. Privileged User Management Framework
+# Privileged User Management Framework
 
 As discussed in Section 2 , there may be a variety of privileged users that constitute an agency’s
 privileged user population with an assortment of elevated access profiles. An agency can use a
@@ -340,7 +347,7 @@ malicious, careless, and accidental actions.
 The following subsections provide a more detailed discussion of each piece of the Privileged
 User Management Framework.
 
-## 3.1. Secure Operating Environment
+## Secure Operating Environment
 
 A Secure Operating Environment includes controls (e.g., firewalls, secure remote access, file restrictions) to protect the agency’s IT infrastructure (e.g., business applications, devices, data), which privileged users leverage to carry out job functions. An agency should conduct recurring training for its users on how to protect the agency’s IT infrastructure as part of On-going Monitoring, described in Section 3.4. The following activities encompass a host of processes and controls which, when taken together, build a Secure Operating Environment to enable privileged user management techniques in the rest of the framework:
 
@@ -404,7 +411,7 @@ time consuming maintenance and cumbersome management and oversight.
 >protect the enterprise from a careless privileged user._
 
 
-## 3.2. Provisioning
+## Provisioning
 
 As discussed in Section 3 the provisioning portion of the framework is multi-faceted and
 determines who within the enterprise should have elevated access based on job function,
@@ -507,7 +514,7 @@ Once a privileged user has been issued a credential and assigned elevated access
 Provisioning, additional security controls are required to manage his/her access to protected
 resources, which are described in the following sections.
 
-## 3.3. Run-Time Access Control
+## Run-Time Access Control
 
 Once the privileged user successfully completes Provisioning (Section 3.2), the Run-Time
 Access Control element of the framework enforces authentication and authorization when he/she
@@ -578,7 +585,7 @@ list of authentication mechanism combinations can be found in Appendix C of SP 8
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-## 3.4. On-Going Monitoring
+## On-Going Monitoring
 
 As an agency leverages preventive and detective measures to observe privileged user activities,
 there are a variety of mechanisms an agency can leverage to assist in the continuous tracking and
