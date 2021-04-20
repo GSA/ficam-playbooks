@@ -585,7 +585,7 @@ list of authentication mechanism combinations can be found in Appendix C of SP 8
 
 ICAM Privileged User Instruction and Implementation Guidance Draft
 
-## On-Going Monitoring
+## Continuous Monitoring
 
 As an agency leverages preventive and detective measures to observe privileged user activities,
 there are a variety of mechanisms an agency can leverage to assist in the continuous tracking and
