@@ -12,15 +12,12 @@ sidenav: playbook-pam
 
 <img src="https://github.com/GSA/ficam-playbooks/blob/pam-playbook/_assets/images/GSA%20Logo.png" alt="GSA Logo">
 
-ICAM Privileged Access Management Playbook
+# ICAM Privileged Access Management Playbook #
 
 Version 1. 1
 
 August 30, 2021
 
-ICAM Privileged Access Management Playbook Draft
-
-August 30, 2021
 
 **Acknowledgements**
 
