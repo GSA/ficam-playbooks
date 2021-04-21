@@ -217,7 +217,7 @@ There are many ways to categorize systems within the federal government, such as
     <li>Cloud based systems</li></ul>
       
 >**Key Point**
->Identifying categories of systems helps define the requirements for the level of privileged access required for each individual with system management responsibilities during >the Risk Assessments. 
+>Identifying categories of systems helps define the requirements for the level of privileged access required for each individual with system management responsibilities during the Risk Assessments. 
 
 
 #### Step 2: Identify the cyber workforce position / roles required to manage the system
@@ -225,7 +225,7 @@ Based on the system assessment of Hardware, Operating System, type of applicatio
 The risks and impact assessment considers the risks to both the agency and the privileged user for the transactions. The risk to one can be significant, while not negatively impacting the other at all.  It’s common for government applications to have different assurance levels based on differing impacts and risks for each community of users and transactions.
 
 >**Key Point**
->The impact categories and definitions used in the PAM process are the same used to determine the overall application system categorization for impacts to confidentiality, >integrity, and availability (a FIPS 199 assessment).
+>The impact categories and definitions used in the PAM process are the same used to determine the overall application system categorization for impacts to confidentiality, integrity, and availability (a FIPS 199 assessment).
 
 
 #### Step 3: Verification of assigned Individual’s credentials
