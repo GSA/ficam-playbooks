@@ -241,7 +241,7 @@ The following should be taken into consideration when filling cyber workforce po
 Best Practices in securing the federal government networks from Insider Threats are as follows.
 <ul><li>Monitor Privileged User activity via Audits / Logs on their assigned Privileged Access Workstation (PAW).</li> 
     <li>Track their training and ensure the individuals are maintaining proper certifications throughout their certification life-cycle.</li> 
-    <li>Monitor annual Insider Threat and Cyber Awareness training is completed.</li><ul>
+    <li>Monitor annual Insider Threat and Cyber Awareness training is completed.</li></ul>
 
 
 #### Step 5: Continuously Manage Cyber Workforce
@@ -251,7 +251,6 @@ Ensure that the organization's On /Off-boarding processes are being followed and
 
 >**Key Point**
 >Working closely with your organization’s human resources department  will go a long way in ensuring that your organization hires the right individuals for your Cyber Workforce >positions.
-
 
 
 ## Unwanted Behavior by Privileged Users
