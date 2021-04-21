@@ -59,6 +59,7 @@ __1. Introduction ..............................................................
 __2. Privileged User Landscape Overview ................................................................................................................. 5__
 
 * High-level PAM Process ................................................................................................................6*
+
 * Unwanted Behavior by Privileged Users ................................................................................................ 7*
 
 * Evaluating Privileged User Risks ..................................................................................................... 7*
@@ -230,17 +231,17 @@ The risks and impact assessment considers the risks to both the agency and the p
 #### Step 3: Verification of assigned Individual’s credentials
 The following should be taken into consideration when filling cyber workforce positions.
 <ul><li>Verify assigned individual’s clearance level for the system they will have privileged access on.</li>
-<li>Training requirements, i.e. Operating System, Application training, and or Network equipment training.>/li>
-<li>Roles and responsibilities, i.e. System Administrator, Network Administrator, and or Database Administrator.</li>
-<li>Ensure acknowledgement of organizations Privileged Access Agreement (PAA)</li>
-<li>Ensure that the individual has been properly appointed on appointment orders by system Authorizing Official (AO) based on meeting position requirements.</li></ul>
+    <li>Training requirements, i.e. Operating System, Application training, and or Network equipment training.>/li>
+    <li>Roles and responsibilities, i.e. System Administrator, Network Administrator, and or Database Administrator.</li>
+    <li>Ensure acknowledgement of organizations Privileged Access Agreement (PAA)</li>
+    <li>Ensure that the individual has been properly appointed on appointment orders by system Authorizing Official (AO) based on meeting position requirements.</li></ul>
 
 
 #### Step 4: Monitor Privileged User Activity
 Best Practices in securing the federal government networks from Insider Threats are as follows.
 <ul><li>Monitor Privileged User activity via Audits / Logs on their assigned Privileged Access Workstation (PAW).</li> 
-<li>Track their training and ensure the individuals are maintaining proper certifications throughout their certification life-cycle.</li> 
-<li>Monitor annual Insider Threat and Cyber Awareness training is completed.</li><ul>
+    <li>Track their training and ensure the individuals are maintaining proper certifications throughout their certification life-cycle.</li> 
+    <li>Monitor annual Insider Threat and Cyber Awareness training is completed.</li><ul>
 
 
 #### Step 5: Continuously Manage Cyber Workforce
@@ -248,9 +249,9 @@ Continuously Manage the organization's cyber workforce ensuring that position de
 The requirements for the position meet the required Information Assurance / Cyber Workforce certification level for the position.
 Ensure that the organization's On /Off-boarding processes are being followed and systems access is revoked as needed.
 
-
 >**Key Point**
 >Working closely with your organization’s human resources department  will go a long way in ensuring that your organization hires the right individuals for your Cyber Workforce >positions.
+
 
 
 ## Unwanted Behavior by Privileged Users
