@@ -58,9 +58,10 @@ __1. Introduction ..............................................................
 
 __2. Privileged User Landscape Overview ................................................................................................................. 5__
 
-* Unwanted Behavior by Privileged Users ................................................................................................ 6*
+* High-level PAM Process ................................................................................................................6*
+* Unwanted Behavior by Privileged Users ................................................................................................ 7*
 
-* Evaluating Privileged User Risks ..................................................................................................... 6*
+* Evaluating Privileged User Risks ..................................................................................................... 7*
 
 __3. Privileged User Management Framework................................................................................................................ 9__
 
@@ -192,6 +193,65 @@ An agency is responsible for managing the privileges of all users with access to
 An agency’s privileged user population can include a range of individuals entrusted with elevated access. For example, both a security guard with physical access to a server room and a UNIX administrator with root access may be categorized as privileged users, despite different elevated access profiles. Given the broad-reaching nature of an organization’s privileged user population, it is important that an agency understand the user groups and accounts that constitute its privileged user population. Examples of individuals who may be considered privileged users include: application developer, database administrator, data center operations personnel, information technology (IT) security practitioner, IT audit practitioner, maintenance personnel, network engineer, and system administrator. Because of privileged users’ elevated access, unwanted behavior by these individuals can significantly compromise agency assets or operations. As a result, privileged user management is a cornerstone of insider threat mitigation.
 
 This definition is derived from the FY14 FISMA Metrics, as defined in the Information Security Glossary. Terminology Privileged User **–** A user who has been granted elevated privileges for access protected physical or logical resources. Such users include, for example, security personnel or system administrators who are responsible for managing restricted physical locations or shared information technology (IT) infrastructure, and require access to related systems to create new user accounts, and add to or amend the privileges of other users.^23
+
+
+## High-level PAM Process
+
+The PAM process should be considered when a new application or system is identified or a time-driven or event-driven reassessment is triggered. Once it is determined a PAM is needed, a system risk assessment should be conducted to determine the risk associated with the loss or compromise of system, data transmitted, and data stored on the system.
+A high-level PAM process includes five steps:
+
+1. Determine the System type and function.
+2. Identify the cyber workforce  positions / roles required to manage the systems.
+3. Verification of assigned Individual’s credentials
+4. Monitor Privileged User activity.
+5. Continuously Manage the organization's cyber workforce.
+
+#### Step 1: Determine the System type and function
+The first step is to determine the type of Systems Hardware,Operating System, Applications, and Data to be maintained / managed  by the Cyber workforce.
+There are many ways to categorize systems within the federal government, such as:  
+<ul><li>Hardware</li>
+    <li>Operating System</li>
+    <li>Applications running on the system</li>
+    <li>System physical location / virtual</li>
+    <li>Cloud based systems</li></ul>
+      
+>**Key Point**
+>Identifying categories of systems helps define the requirements for the level of privileged access required for each individual with system management responsibilities during >the Risk Assessments. 
+
+
+#### Step 2: Identify the cyber workforce position / roles required to manage the system
+Based on the system assessment of Hardware, Operating System, type of applications running on the system and or the type of data transmitted or stored on the system will determine the required cyber workforce position / roles required to manage the system.  
+The risks and impact assessment considers the risks to both the agency and the privileged user for the transactions. The risk to one can be significant, while not negatively impacting the other at all.  It’s common for government applications to have different assurance levels based on differing impacts and risks for each community of users and transactions.
+
+>**Key Point**
+>The impact categories and definitions used in the PAM process are the same used to determine the overall application system categorization for impacts to confidentiality, >integrity, and availability (a FIPS 199 assessment).
+
+
+#### Step 3: Verification of assigned Individual’s credentials
+The following should be taken into consideration when filling cyber workforce positions.
+<ul><li>Verify assigned individual’s clearance level for the system they will have privileged access on.</li>
+<li>Training requirements, i.e. Operating System, Application training, and or Network equipment training.>/li>
+<li>Roles and responsibilities, i.e. System Administrator, Network Administrator, and or Database Administrator.</li>
+<li>Ensure acknowledgement of organizations Privileged Access Agreement (PAA)</li>
+<li>Ensure that the individual has been properly appointed on appointment orders by system Authorizing Official (AO) based on meeting position requirements.</li></ul>
+
+
+#### Step 4: Monitor Privileged User Activity
+Best Practices in securing the federal government networks from Insider Threats are as follows.
+<ul><li>Monitor Privileged User activity via Audits / Logs on their assigned Privileged Access Workstation (PAW).</li> 
+<li>Track their training and ensure the individuals are maintaining proper certifications throughout their certification life-cycle.</li> 
+<li>Monitor annual Insider Threat and Cyber Awareness training is completed.</li><ul>
+
+
+#### Step 5: Continuously Manage Cyber Workforce
+Continuously Manage the organization's cyber workforce ensuring that position descriptions meet the positions/role and duties to be performed.
+The requirements for the position meet the required Information Assurance / Cyber Workforce certification level for the position.
+Ensure that the organization's On /Off-boarding processes are being followed and systems access is revoked as needed.
+
+
+>**Key Point**
+>Working closely with your organization’s human resources department  will go a long way in ensuring that your organization hires the right individuals for your Cyber Workforce >positions.
+
 
 ## Unwanted Behavior by Privileged Users
 
