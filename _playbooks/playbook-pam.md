@@ -250,7 +250,7 @@ The requirements for the position meet the required Information Assurance / Cybe
 Ensure that the organization's On /Off-boarding processes are being followed and systems access is revoked as needed.
 
 >**Key Point**
->Working closely with your organization’s human resources department  will go a long way in ensuring that your organization hires the right individuals for your Cyber Workforce >positions.
+>Working closely with your organization’s human resource department will go a long way in ensuring that your organization hires the right individual for your Cyber Workforce positions.
 
 
 ## Unwanted Behavior by Privileged Users
