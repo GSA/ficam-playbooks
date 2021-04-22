@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GSA Certificate Profile Conformnace Tool
+title: GSA Certificate Profile Conformance Tool
 collection: fpki
 permalink: fpki/tools/cpct/
 sticky_sidenav: true
@@ -8,14 +8,9 @@ sidenav: fpkitools
 ---
 **Last Update**: February 4, 2021
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rutrum magna sed felis lobortis, eu vulputate ipsum blandit. Quisque a dapibus justo. Fusce a augue aliquam, scelerisque magna sed, suscipit eros. Nullam scelerisque, massa in accumsan posuere, urna massa ultricies leo, ut aliquet lacus lorem sit amet lorem. Donec cursus ipsum gravida, suscipit urna a, vulputate nunc. Nunc in massa pellentesque arcu iaculis blandit at eu magna. Nunc consectetur sem et facilisis gravida. Vestibulum aliquet ornare tempus. Mauris eu pulvinar ligula, eget convallis metus. Praesent vehicula tellus et magna sagittis convallis. Nullam sit amet egestas arcu, eu cursus felis. Morbi efficitur justo at ante tristique, a commodo urna faucibus.
+The **Certificate Profile Conformance Tool (CPCT)** analyzes certificates for conformance to a specific Federal PKI profile document and certificate profile. In conjunction with the Card Conformance Tool (CCT), the CPCT enables entity representatives to perform testing directly, with results verified by the GSA teams. This can improve the detection of any issues during development and maintenance, and reduce travel and resource time and costs.
 
-Suspendisse sapien dui, molestie sed velit aliquam, tincidunt vestibulum tortor. Fusce interdum augue pulvinar, interdum tortor a, tincidunt enim. Morbi pharetra massa vel turpis interdum interdum. Suspendisse egestas turpis vehicula sodales lobortis. Aliquam quis lectus ac diam efficitur gravida. Nullam tempor dolor id posuere pretium. Ut nibh erat, semper sed sodales a, iaculis vitae ante.
+For more information about the CPCT, see the following resources:
 
-Aenean facilisis, est id lobortis eleifend, turpis mauris ultrices ex, in mollis augue leo et dui. Curabitur nec congue enim. Cras sit amet sem in magna vestibulum tempor sed vel elit. Cras ac venenatis orci. Aliquam blandit tellus sapien, et fringilla erat dictum id. Nullam condimentum placerat dolor. Sed sapien nisl, ultricies vel massa ac, ultrices condimentum metus. Etiam ipsum sem, blandit quis tristique nec, aliquet sit amet leo. Cras congue efficitur magna id molestie. Curabitur vehicula tempor consequat. Quisque eleifend vehicula dictum. Fusce ultrices maximus quam, at venenatis libero interdum non. In fringilla feugiat lacus porttitor molestie. Phasellus at porttitor justo.
-
-Phasellus mauris mauris, tincidunt sed mi at, viverra tincidunt ex. Donec quam erat, pretium eget est vitae, venenatis facilisis mauris. Nam sed dolor lacinia, bibendum elit non, suscipit tortor. Ut aliquam est pulvinar nulla elementum, mollis aliquam est sollicitudin. Ut tincidunt, odio in bibendum euismod, dolor mi imperdiet justo, nec congue quam nibh a lorem. Aliquam suscipit velit non enim feugiat, ac tempus sem feugiat. Quisque non vulputate est, eu ullamcorper ante. Aenean sit amet justo odio. Etiam et odio dignissim, efficitur velit in, vulputate eros. Pellentesque eu magna et tortor tincidunt semper nec eget metus. Vestibulum vitae vehicula ipsum. Curabitur sollicitudin rutrum mauris, eget consequat nisi elementum in. Pellentesque in enim finibus, mollis libero eget, imperdiet lectus. Pellentesque tellus purus, accumsan eget tortor a, viverra convallis nunc.
-
-Mauris consectetur sem nisi, in aliquam mi varius nec. Etiam aliquam, massa porta placerat vehicula, eros justo volutpat ex, eget placerat mi nisi et sem. Nam vitae ultricies risus, in faucibus tellus. Integer ipsum ante, scelerisque sed dolor sit amet, consectetur interdum tellus. Proin pulvinar suscipit mi, et ullamcorper erat molestie sit amet. Morbi dapibus viverra dui sed euismod. Sed sagittis ex finibus augue finibus tincidunt. Mauris ut magna feugiat, fermentum nulla vel, rhoncus velit. Praesent sodales pharetra dignissim. Fusce eros nibh, eleifend a semper id, tempus molestie neque. Sed non dolor nisi. Etiam ullamcorper fermentum placerat. Vivamus feugiat, tortor at porttitor viverra, ex enim tincidunt turpis, et euismod ipsum ipsum sed tortor. Cras quis erat ligula. Nunc dapibus semper ante, a consectetur tellus tempus a. In quis aliquet quam, a ornare magna.
-
-Nam eget neque tincidunt, venenatis lectus non, tempor nisl. Suspendisse ligula neque, aliquet vel tempus eget, scelerisque quis mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ultrices vitae ex in pulvinar. Nullam gravida, tellus sit amet volutpat ultrices, magna odio feugiat odio, sit amet lacinia sem nunc et augue. In mattis ipsum non eleifend tempor. Ut tincidunt, neque ut molestie laoreet, urna enim faucibus lacus, sed efficitur erat justo id nunc. Curabitur lobortis, augue egestas tempor dignissim, quam libero tempor risus, vitae maximus eros metus in purus. Suspendisse varius arcu dictum, sollicitudin nunc luctus, imperdiet lorem. Ut laoreet justo mi, sed ullamcorper dolor consequat vel. Donec laoreet posuere eros quis commodo. Praesent dignissim nisi quis ante tempor cursus.
+URL: https://cpct.app.cloud.gov/
+Support page: https://cpct.app.cloud.gov/help/
