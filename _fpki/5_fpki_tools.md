@@ -13,6 +13,10 @@ subnav:
       href: ../tools/fpkiar/
     - text: CITE Participation Guide
       href: ../tools/citeguide/
+    - text: Card Conformance Tool
+      href: ../tools/cct/
+    - text: Certificate Profile Conformance Tool
+      href: ../tools/cpct/
 ---
 
 We are always collecting useful tools and links that will help you understand and use the Federal Public Key Infrastructure. The table below provides a list of useful tools.
