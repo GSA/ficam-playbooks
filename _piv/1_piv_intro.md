@@ -17,8 +17,8 @@ subnav:
       href: '#what-systems-should-use-piv'
     - text: Where can I find the Standards?
       href: '#where-can-i-find-the-standards'
-    - text: Where can I find the Standards?
-      href: '#where-can-i-find-the-standards'     
+    - text: How can I test a PIV card?
+      href: '#how-can-i-test-a-piv-card'     
 ---
 
 These **Personal Identity Verification (PIV)** Guides are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}){:target="_blank"} and a _work in progress_ and we [welcome contributions](../../contribute/) from our colleagues.
