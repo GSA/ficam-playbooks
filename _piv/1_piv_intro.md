@@ -77,4 +77,4 @@ To review the Standards, there is a [National Institute for Science and Technolo
 
 ## How can I test a PIV card?
 
-The [**Card Conformance Tool (CCT)**](https://github.com/GSA/piv-conformance/wiki/User-Guide){:target="_blank"}{:rel="noopener noreferrer"} can test PIV and PIV-I cards on several common operating systems. The purpose of the CCT is to validate that commercially-available PIV and PIV-Interoperable (PIV-I) cards comply with relevant PIV interoperability standards.
+The [**Card Conformance Tool (CCT)**](https://github.com/GSA/piv-conformance/wiki/User-Guide){:target="_blank"}{:rel="noopener noreferrer"} can remotely test PIV and PIV-I on several common operating systems. The purpose of the CCT is to validate that commercially-available PIV and PIV-I comply with relevant standards.
