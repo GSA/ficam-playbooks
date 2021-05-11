@@ -20,5 +20,5 @@ The CPCT can improve the detection of certificate profile issues during FPKI dev
 
 For more information about the CPCT, see the following resources:
 
-URL: https://cpct.app.cloud.gov/
-Support page: https://cpct.app.cloud.gov/help/
+URL: (https://cpct.app.cloud.gov/)[https://cpct.app.cloud.gov/]{:target="_blank"}{:rel="noopener noreferrer"}
+Support page: (https://cpct.app.cloud.gov/help/)[https://cpct.app.cloud.gov/help/]{:target="_blank"}{:rel="noopener noreferrer"}
