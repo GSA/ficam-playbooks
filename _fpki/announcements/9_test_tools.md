@@ -1,7 +1,7 @@
 ---
 layout: page
 title: New Test Tools Available
-pubDate: February 14, 2021
+pubDate: May 18, 2021
 collection: fpki
 permalink: fpki/announcements/test-tools/
 description: Release announcement for the Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
