@@ -7,11 +7,8 @@ permalink: fpki/announcements/test-tools/
 description: Release announcement for the Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
 status: Active
 sticky_sidenav: true
-sidenav: fpkiannouncements
-
-subnav:
-    - text: New Test Tools Available
-      href: '#'
+sidenav: fpkiactiveannouncements
+      
 ---
 
 GSA has created two tools to streamline Federal PKI Annual Review testing with remote evaluation capabilities.
