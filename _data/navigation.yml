@@ -153,6 +153,10 @@ fpkitools:
     href: /fpki/tools/fpkiar/
   - text: CITE Participation Guide
     href: /fpki/tools/citeguide/
+   - text: Card Conformance Tool
+    href: /fpki/tools/cct/   
+  - text: Certificate Profile Conformance Tool
+    href: /fpki/tools/cpct/
 
 fpkiactiveannouncements:
   - text: Back to FPKI Guide
