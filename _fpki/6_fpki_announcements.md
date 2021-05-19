@@ -19,7 +19,7 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
   <thead class="usa-sr-only">
     <tr>
       <th id="announce-table-heading-title" scope="col">Title</th>
-      <th id="announce-table-heading-status" scope="col">status</th>
+      <th id="announce-table-heading-status" scope="col">Status</th>
       <th id="announce-table-heading-date" scope="col">Date</th>
       <th id="announce-table-heading-description" scope="col">Description</th>
     </tr>
