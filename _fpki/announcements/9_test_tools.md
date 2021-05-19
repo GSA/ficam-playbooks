@@ -8,6 +8,10 @@ description: Release announcement for the Card Conformance Tool (CCT) and Certif
 status: Active
 sticky_sidenav: true
 sidenav: fpkiannouncements
+
+subnav:
+    - text: New Test Tools Available
+      href: '#'
 ---
 
 GSA has created two tools to streamline Federal PKI Annual Review testing with remote evaluation capabilities.
