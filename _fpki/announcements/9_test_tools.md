@@ -22,12 +22,12 @@ The tools enable entity representatives to perform testing directly, with result
 
 For more information, see the following web sites:
 -	Card Conformance Tool 
-     - Latest release: https://github.com/GSA/piv-conformance/releases 
-     - Support page: https://github.com/GSA/piv-conformance/wiki 
+     - Latest release: [https://github.com/GSA/piv-conformance/releases](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"} 
+     - Support page: [https://github.com/GSA/piv-conformance/wiki](https://github.com/GSA/piv-conformance/wiki){:target="_blank"}{:rel="noopener noreferrer"} 
 
 - Certificate Profile Conformance Tool 
-     - URL: https://cpct.app.cloud.gov/
-     - Support page: https://cpct.app.cloud.gov/help/ 
+     - URL: [https://cpct.app.cloud.gov/](https://cpct.app.cloud.gov/){:target="_blank"}{:rel="noopener noreferrer"} 
+     - Support page: [https://cpct.app.cloud.gov/help/](https://cpct.app.cloud.gov/help/){:target="_blank"}{:rel="noopener noreferrer"}  
 
 ## Who can I contact for help or more information?
 Email us at fpki@gsa.gov.
