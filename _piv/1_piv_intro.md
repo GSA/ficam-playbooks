@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title:  Personal Identity Verification Guide Introduction
-permalink: piv/
+permalink: piv/intro-piv/
 sticky_sidenav: true
 sidenav: piv
 
@@ -17,11 +17,13 @@ subnav:
       href: '#what-systems-should-use-piv'
     - text: Where can I find the Standards?
       href: '#where-can-i-find-the-standards'
+    - text: How can I test a PIV card?
+      href: '#how-can-i-test-a-piv-card'     
 ---
 
-These **Personal Identity Verification** (PIV) Guides are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}){:target="_blank"} and a _work in progress_ and we [welcome contributions](../../contribute/) from our colleagues.
+These **Personal Identity Verification (PIV)** Guides are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}){:target="_blank"} and a _work in progress_ and we [welcome contributions](../../contribute/) from our colleagues.
 
-The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications, or digitally signing and encrypting. Using PIV for _physical access_ is available in the [PACS Guide](../../pacs/){:target="_blank"}.
+The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications, or digitally signing and encrypting. Using PIV for _physical access_ is available in the [PACS Guide](../../pacs/intro-pacs/){:target="_blank"}.
 
 If you cannot find a particular topic, it may still be in development. Review the [Issues]({{ site.repourl }}/issues){:target="_blank"} for questions and lessons that are in progress. Create a new [Issue]({{ site.repourl }}/issues/new){:target="_blank"} to ask a question or share information with others.  
 
@@ -29,7 +31,7 @@ Read on to learn more about PIV credentials.
 
 ## What is PIV?
 
-A Personal Identity Verification (PIV) credential is a US Federal governmentwide credential used to access Federally controlled facilities and information systems at the appropriate security level.
+A PIV credential is a US Federal governmentwide credential used to access Federally controlled facilities and information systems at the appropriate security level.
 
 PIV credentials have certificates and key pairs, pin numbers, biometrics like fingerprints and pictures, and other unique identifiers.  When put together into a PIV credential, it provides the capability to implement multi-factor authentication for networks, applications, and buildings.
 
@@ -69,6 +71,10 @@ If you are interested in the bits and bytes of PIV credentials, you can review t
 
 To review the Standards, there is a [National Institute for Science and Technology (NIST) website](http://csrc.nist.gov/groups/SNS/piv/standards.html){:target="_blank"}{:rel="noopener noreferrer"} with all PIV related Standards.  Links to some of the most common Standards:
 
-- **[FIPS-201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf){:target="_blank"}{:rel="noopener noreferrer"}** specifies the issuance and management of PIV credentials.
-- **[NIST Special Publication 800-73, "Interfaces for Personal Identity Verification"](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf){:target="_blank"}{:rel="noopener noreferrer"}** specifies the interface and data elements of PIV credentials.
-- **[NIST Special Publication 800-76, "Biometric Data Specification for Personal Identity Verification"](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-76-2.pdf){:target="_blank"}{:rel="noopener noreferrer"}** specifies the technical acquisition and formatting requirements for biometric data of PIV credentials.
+- [**FIPS-201**](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies the issuance and management of PIV credentials.
+- [**NIST Special Publication 800-73, "Interfaces for Personal Identity Verification"**](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies the interface and data elements of PIV credentials.
+- [**NIST Special Publication 800-76, "Biometric Data Specification for Personal Identity Verification"**](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-76-2.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies the technical acquisition and formatting requirements for biometric data of PIV credentials.
+
+## How can I test a PIV card?
+
+The [**Card Conformance Tool (CCT)**](https://github.com/GSA/piv-conformance/wiki/User-Guide){:target="_blank"}{:rel="noopener noreferrer"} can remotely test PIV and PIV-I on several common operating systems. The purpose of the CCT is to validate that commercially-available PIV and PIV-I comply with relevant standards.
