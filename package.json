@@ -5,7 +5,7 @@
     "build": "bundle exec jekyll build",
     "clean": "bundle exec jekyll clean",
     "reset": "npx rimraf .git",
-    "start": "bundle exec jekyll serve",
+    "start": "bundle exec jekyll serve"
   },
   "dependencies": {
     "uswds": "~2.9.0"
