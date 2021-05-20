@@ -8,7 +8,7 @@ sidenav: fpki
 
 subnav:
   - text: Active
-    href: ../announcements/common-g2-update/
+    href: ../announcements/test-tools/
   - text: Archived
     href: ../announcements/2019fpkimigration/
 ---
