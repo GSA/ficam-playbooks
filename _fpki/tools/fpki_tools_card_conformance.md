@@ -8,7 +8,7 @@ sidenav: fpkitools
 ---
 **Last Update**: May 10, 2021
 
-The Card Conformance Tool (CCT) can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model per current releases of related standards, including:
+The Card Conformance Tool (CCT) is a GSA managed, Java tool that can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model per current releases of related standards, including:
 
 - [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"}: PIV of Federal Employees and Contractors
 - [NIST SP 800-73](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}: Interfaces for Personal Identity Verification
