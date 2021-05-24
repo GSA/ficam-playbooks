@@ -71,9 +71,9 @@ If you are interested in the bits and bytes of PIV credentials, you can review t
 
 To review the Standards, there is a [National Institute for Science and Technology (NIST) website](http://csrc.nist.gov/groups/SNS/piv/standards.html){:target="_blank"}{:rel="noopener noreferrer"} with all PIV related Standards.  Links to some of the most common Standards:
 
-- [**FIPS-201**](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies the issuance and management of PIV credentials.
-- [**NIST Special Publication 800-73, "Interfaces for Personal Identity Verification"**](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies the interface and data elements of PIV credentials.
-- [**NIST Special Publication 800-76, "Biometric Data Specification for Personal Identity Verification"**](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-76-2.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies the technical acquisition and formatting requirements for biometric data of PIV credentials.
+- [**FIPS-201**](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the issuance and management of PIV credentials.
+- [**NIST Special Publication 800-73, "Interfaces for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the interface and data elements of PIV credentials.
+- [**NIST Special Publication 800-76, "Biometric Data Specification for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the technical acquisition and formatting requirements for biometric data of PIV credentials.
 
 ## How can I test a PIV card?
 
