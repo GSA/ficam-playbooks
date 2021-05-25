@@ -51,12 +51,12 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
     <tbody>
       {% for category in categories %}
         <tr class="guides-table-category-heading" data-category="{{ category }}">
-          <th colspan="2" class="guides-table-heading" id="guides-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
+          <th colspan="4" class="guides-table-heading" id="guides-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
         </tr>
         {% for guide in site.fpki.announcements %}
           {% if guide.category == category %}
             <tr class="guides-table-row" data-category="{{ guide.category }}">
-              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-title"><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></td>
+              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-title"><a href="{{ guide.permalink | prepend: site.baseurl }}">{{ guide.title }}</a></td>
               <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-status">{{ guide.category }}</td>
               <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-date">{{ guide.pubDate }}</td>
               <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-description">{{ guide.description }}</td>
