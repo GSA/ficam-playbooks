@@ -9,7 +9,7 @@ category: Apple
 permalink: fpki/announcements/2018applepkichanges/
 description: Upcoming changes regarding Apple's remove of the U.S. Government Root CA.
 sidenav: fpkiarchivedannouncements
-status: Archived
+category: Archived
 sticky_sidenav: true
 
 subnav:

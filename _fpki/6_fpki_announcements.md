@@ -43,18 +43,22 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
     <thead class="usa-sr">
       <tr>
         <th id="guides-table-heading-title" scope="col">Title</th>
+        <th id="guides-table-heading-status" scope="col">Status</th>
+        <th id="guides-table-heading-date" scope="col">Date</th>
         <th id="guides-table-heading-description" scope="col">Description</th>
       </tr>
     </thead>
     <tbody>
       {% for category in categories %}
         <tr class="guides-table-category-heading" data-category="{{ category }}">
-          <th colspan="2" class="guides-table-heading" id="guides-table-heading-{{ category | slugify }}"><b>{{ category }} Guides</b></th>
+          <th colspan="2" class="guides-table-heading" id="guides-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
         </tr>
-        {% for guide in site.guides %}
+        {% for guide in site.fpki.announcements %}
           {% if guide.category == category %}
             <tr class="guides-table-row" data-category="{{ guide.category }}">
               <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-title"><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></td>
+              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-status">{{ guide.category }}</td>
+              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-date">{{ guide.pubDate }}</td>
               <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-description">{{ guide.description }}</td>
             </tr>
           {% endif %}
@@ -63,25 +67,3 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
     </tbody>
   </table>
 </div>
-
-<table class="usa-table--borderless announce-table">
-  <thead class="usa-sr-only">
-    <tr>
-      <th id="announce-table-heading-title" scope="col">Title</th>
-      <th id="announce-table-heading-status" scope="col">Status</th>
-      <th id="announce-table-heading-date" scope="col">Date</th>
-      <th id="announce-table-heading-description" scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign announcements = site.fpki.announcements | concat: site.data.fpkiannouncements| sort: "status" %}
-    {% for announcement in announcements %}
-        <tr class="announce-table-row">
-          <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
-          <td>{{ announcement.status }}</td>
-          <td>{{ announcement.pubDate }}</td>
-          <td>{{ announcement.description }}</td>
-        </tr>
-    {% endfor %}
-  </tbody>
-</table>
