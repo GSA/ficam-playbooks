@@ -24,7 +24,6 @@ subnav:
 
 These announcements and hot topic concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
 
-<div class="usa-width-one-fourth">
   <fieldset class="usa-fieldset-inputs guides-filter">
     <legend>Status</legend>
     <ul class="usa-unstyled-list">
@@ -36,7 +35,6 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
       {% endfor %}
     </ul>
   </fieldset>
-</div>
 
 <div class="usa-width-three-fourths">
   <table class="usa-table-borderless">
@@ -58,7 +56,7 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
             <tr class="guides-table-row" data-category="{{ guide.category }}">
               <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-title"><a href="{{ guide.permalink | prepend: site.baseurl }}">{{ guide.title }}</a></td>
               <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-status">{{ guide.category }}</td>
-              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-date">{{ guide.pubDate }}</td>
+              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-date">{{ guide.date }}</td>
               <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-description">{{ guide.description }}</td>
             </tr>
           {% endif %}

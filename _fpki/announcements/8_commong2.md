@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Federal Common Policy CA Update
-pubDate: 10/12/2020
+date: 10/12/2020
 archiveDate: 10/11/2021
 removeDate: 10/11/2023
 collection: fpki
