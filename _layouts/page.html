@@ -7,7 +7,7 @@ This template is for a single page that does not have a date associated with it.
 {% endcomment %}
 
 <div class="usa-section">
-  <div class="grid-container maxw-widescreen margin-left-0">
+  <div class="grid-container">
     <div class="grid-row grid-gap flex-align-start">
       {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
       {% if sidenav %}
@@ -16,7 +16,7 @@ This template is for a single page that does not have a date associated with it.
         </div>
       {% endif %}
 
-      <main class="usa-layout-docs usa-layout-docs__main{% if sidenav %} desktop:grid-col-9{% endif %}" id="main-content">
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose{% if sidenav %} desktop:grid-col-9{% endif %}" id="main-content">
         {% if page.title %}
           <h1>{{ page.title }}</h1>
         {% endif %}
