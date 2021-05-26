@@ -1,5 +1,5 @@
 ---
-layout: page-custom
+layout: pagegraph
 title: Federal PKI Graph
 collection: fpki
 permalink: fpki/tools/fpkigraph/
