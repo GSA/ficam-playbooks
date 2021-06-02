@@ -4025,7 +4025,7 @@
   change_type: CA Certificate Issuance 
   start_datetime:
   system: IdenTrust Global Common Root CA 1
-  change_description: IdenTrust to issued a new CA certificate from IdenTrust Global Common Root CA 1 to replace the IGC Server CA 1 certificate expiring 4/14/2024.
+  change_description: IdenTrust issued a new CA certificate from IdenTrust Global Common Root CA 1 to replace the IGC Server CA 1 certificate expiring 4/14/2024.
   contact: support at identrust dot com
   ca_certificate_hash: d21a5bedf6ab09a419cb8a07bcff2e609765a81f  
   ca_certificate_issuer: CN=IdenTrust Global Common Root CA 1, O=IdenTrust, C=US
