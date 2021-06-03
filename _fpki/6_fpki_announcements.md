@@ -36,3 +36,16 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
     {% endfor %}
   </tbody>
 </table>
+
+
+
+<section class="usa-graphic-list margin-bottom-4">
+    <div class="grid-container">
+        <div class="usa-graphic-list__row grid-row grid-gap">
+
+            {% include policies-guidance-filters.html %}
+            {% include policies-guidance-data.html %}
+
+        </div>
+    </div>
+</section>
