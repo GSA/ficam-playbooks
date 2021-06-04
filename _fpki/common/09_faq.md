@@ -25,6 +25,8 @@ sidenav: fpkicommon
 - [How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2)
 - [How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-macos-device-to-trust-the-new-federal-common-policy-ca-g2) 
 - [How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-ios-device-to-trust-the-new-federal-common-policy-ca-g2) 
+- [How do I configure the Firefox web browser to trust the new Federal Common Policy CA G2?](#how-do-i-configure-the-firefox-web-browser-to-trust-the-new-federal-common-policy-ca-g2)
+
 
 
 ## Will my PIV credentials break or need to be updated or replaced when this change occurs?
@@ -302,3 +304,14 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using the Safari web browser.
 <br>
 <a href="../../../assets/fpki/ios_safari_configuration-unmanaged.gif" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_safari_configuration-unmanaged.gif" height="600" alt="A video that shows the steps to install a mobile configuration file in the Safari web browser"></a>
+
+## How do I configure the Firefox web browser to trust the new Federal Common Policy CA G2?
+The following steps will allow Firefox to use the underlying operating system trust store.  Follow these steps only after distributing the Federal Common Policy CA G2 to your Windows or macOS device.
+1. Open **Firefox**.
+2. Enter **about:config** in the address bar and continue to the list of preferences.
+3. Set the preference **security.enterprise_roots.enabled** to **true**.   
+
+**Note:**&nbsp;&nbsp;The following video shows you how to configure the Firefox web browser to trust the certificates included in the operating system trust store.
+<br>
+<a href="../../../assets/fpki/configure-firefox.gif" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/configure-firefox.gif" height="90%" width="90%" alt="A video that shows the steps to configure the Firefox web browser"></a>
+
