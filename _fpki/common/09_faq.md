@@ -309,7 +309,8 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 The following steps will allow Firefox to use the underlying operating system trust store.  Follow these steps only after distributing the Federal Common Policy CA G2 to your Windows or macOS device.
 1. Open **Firefox**.
 2. Enter **about:config** in the address bar and continue to the list of preferences.
-3. Set the preference **security.enterprise_roots.enabled** to **true**.   
+3. Set the preference **security.enterprise_roots.enabled** to **true**.  
+4. Restart **Firefox**. 
 
 **Note:**&nbsp;&nbsp;The following video shows you how to configure the Firefox web browser to trust the certificates included in the operating system trust store.
 <br>
