@@ -8,7 +8,7 @@ sidenav: fpkitools
 ---
 **Last Update**: April 22, 2021
 
-The **Certificate Profile Conformance Tool (CPCT)** is a web site appliction that supports FPKI annual reviews and compliance by analyzing public X.509 certificates for conformance to a specified FPKI profile:
+The [Certificate Profile Conformance Tool (CPCT)](https://cpct.app.cloud.gov/){:target="_blank"}{:rel="noopener noreferrer"} is a web site appliction that supports FPKI annual reviews and compliance by analyzing public X.509 certificates for conformance to a specified FPKI profile:
 
 - Common Policy SSP Program
 - FPKI/Federal Bridge
