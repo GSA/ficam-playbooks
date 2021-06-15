@@ -1065,738 +1065,84 @@ resource analysis (Section 2.1).
 
 ## Contingency Planning
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Use an alternate
-storage site
-```
-```
-CP- 6 An alternative storage site for information system
-backup information, geographically distinct from the
-primary site, increases complexity for a malicious
-privileged user to purposefully inflict damage on an
-agency. By housing information in two or more
-distinct places, an individual would have to destroy
-or modify the information housed in both sites to
-permanently cripple the information system’s
-backup capabilities. An agency should carefully
-monitor and implement stringent processes for the
-privileged users who have access to both sites.
-```
-```
- Content and data
-```
-```
-Back up
-information
-system data
-appropriately
-```
-```
-CP- 9 As part of an agency’s contingency plan, user-level,
-system-level, and security-related documentation
-should be backed up using digital signatures,
-cryptographic hashes, etc. Backing up information
-can prevent the unwanted destruction or
-modification of information. An agency should
-consider implementing dual authorization
-mechanisms for the privileged users that manage
-this backup data.
-```
-```
- Applications and
-web services
- Network and
-infrastructure
-```
-```
-Restore
-information
-systems following
-failures and
-conduct post-
-recovery
-assessments
-```
-```
-CP- 10 An agency should have secure recovery processes
-in place if information systems are disrupted. An
-information system failure presents ample
-opportunity for a malicious privileged user to
-manipulate critical recovery processes tasked to
-him/her. An agency should conduct assessments of
-the information systems once fully restored to
-ensure all recovery processes executed by the
-privileged users tasked with these duties were valid.
-```
-```
- Applications and
-web services
- Network and
-infrastructure
-```
-## Figure 11: Contingency Planning
+|   Countermeasure |   SP-800-53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:-------------------:|---------------|--------------------------------|
+|  **Explanation Relevant Protected Resources Use an alternate storage site** |  CP- 6 |   An alternative storage site for information system backup information, geographically distinct from the primary site, increases complexity for a malicious privileged user to purposefully inflict damage on an agency. By housing information in two or more distinct places, an individual would have to destroy or modify the information housed in both sites to permanently cripple the information system’s backup capabilities. An agency should carefully monitor and implement stringent processes for the privileged users who have access to both sites content and data. |   <ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>
+|  **Back up information system data appropriately** |   CP- 9|   As part of an agency’s contingency plan, user-level, system-level, and security-related documentation should be backed up using digital signatures, cryptographic hashes, etc. Backing up information can prevent the unwanted destruction or modification of information. An agency should consider implementing dual authorization mechanisms for the privileged users that manage this backup data.|   <ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>
+|   **Restore information systems following failures and conduct post- recovery assessments** |   CP- 10 |   An agency should have secure recovery processes in place if information systems are disrupted. An information system failure presents ample opportunity for a malicious privileged user to manipulate critical recovery processes tasked to him/her. An agency should conduct assessments of the information systems once fully restored to ensure all recovery processes executed by the privileged users tasked with these duties were valid. |   <ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>
+##### Figure 11: Contingency Planning
 
 ## Identification and Authentication
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Require the use of
-the PIV card
-credential
-```
-```
-IA- 2 All agencies should be leveraging PIV card
-credentials for employee access to physical and
-logical resources per HSPD-12 and alignment with
-the ICAM target state. Information systems need to
-uniquely identify and authenticate its users to
-maintain security. However, to manage privileged
-users, an agency could require an additional layer of
-authentication, in addition to the standard multifactor
-authentication used for local and network access.
-Namely, an agency should consider implementing
-unique identification of individuals using shared
-privileged accounts and detailed accountability of
-individual privileged user activity.
-```
-```
- Applications and
-web services
- Network and
-infrastructure
- Facilities
-```
-## Figure 12: Identification and Authentication
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Require the use of the PIV card credential** |   IA- 2 |   All agencies should be leveraging PIV card credentials for employee access to physical and logical resources per HSPD-12 and alignment with the ICAM target state. Information systems need to uniquely identify and authenticate its users to maintain security. However, to manage privileged users, an agency could require an additional layer of authentication, in addition to the standard multifactor authentication used for local and network access. Namely, an agency should consider implementing unique identification of individuals using shared privileged accounts and detailed accountability of individual privileged user activity. |   <ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>
+##### Figure 12: Identification and Authentication
 
 ## Incident Response
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Develop and
-implement
-incident handling
-capability
-commensurate to
-inherent risk of
-privileged user
-abuse
-```
-```
-IR- 4 As part of business process development for an
-agency’s information systems, an incident handling
-capability must be designed to incorporate
-detection, analysis, containment, eradication, and
-recovery. The consequence of privileged user
-misuse or abuse of the information system is
-greater than standard users because of privileged
-users’ elevated access. As a result, privileged users
-may require more vigorous audit, network, and
-physical monitoring. The primary purpose of these
-robust monitoring capabilities is to enable the
-agency to handle security incidents effectively. As
-such, mitigating the insider threat posed by
-privileged users through incident handling is an
-important component to managing the privileged
-user population effectively. An agency can achieve
-effective incident handling through organization-
-wide coordination of mission owners, information
-system owners, human resources, physical and
-personnel security, etc.
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-```
-Develop an
-information
-spillage response
-plan
-```
-```
-IR- 9 In managing its privileged user population, an
-agency should work to mitigate information spillage
-```
-- namely, the unwanted disclosure of information
-and the theft of intellectual property. This includes
-when, intentionally or accidentally, classified or
-sensitive information is placed on information
-systems that are unwanted to process it. Developing
-a secure, timely, and organized response to
-information spillage can mitigate the harmful effects
-on the agency. Since information spillage is a
-primary concern for agencies in regards to
-privileged users, developing an appropriate
-response plan only serves to improve an agency’s
-privileged user management.
-
-```
- Content and data
-```
-## Figure 13: Incident Response
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Develop and implement incident handling capability commensurate to inherent risk of privileged user abuse** |  IR- 4 |   As part of business process development for an agency’s information systems, an incident handling capability must be designed to incorporate detection, analysis, containment, eradication, and recovery. The consequence of privileged user misuse or abuse of the information system is greater than standard users because of privileged users’ elevated access. As a result, privileged users may require more vigorous audit, network, and physical monitoring. The primary purpose of these robust monitoring capabilities is to enable the agency to handle security incidents effectively. As such, mitigating the insider threat posed by privileged users through incident handling is an important component to managing the privileged user population effectively. An agency can achieve effective incident handling through organization-wide coordination of mission owners, information system owners, human resources, physical and personnel security, etc. |   <ul><li>Content and data</li><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>
+|   **Develop an information spillage response plan** |   IR- 9 |   In managing its privileged user population, an agency should work to mitigate information spillage namely, the unwanted disclosure of information and the theft of intellectual property. This includes when, intentionally or accidentally, classified or sensitive information is placed on information systems that are unwanted to process it. Developing a secure, timely, and organized response to information spillage can mitigate the harmful effects on the agency. Since information spillage is a primary concern for agencies in regards to privileged users, developing an appropriate response plan only serves to improve an agency’s privileged user management. |   <ul><li>Content and data</li></ul>
+##### Figure 13: Incident Response
 
 ## Maintenance
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Exercise strict
-supervision and
-access
-procedures for
-maintenance
-personnel
-```
-```
-MA- 5 Maintenance personnel can be considered
-privileged users due to their trusted position with
-information systems and the extraordinary access
-granted to them. Software and hardware require
-maintenance often on short notice. As such, an
-agency might have to bring in individuals not
-previously identified as authorized maintenance
-personnel.
- An agency should maintain a list of individuals
-authorized to carry out this type of maintenance.
- For those individuals who are not escorted
-throughout the facility, the agency should verify
-```
-```
- Applications and
-web services
- Network and
-infrastructure
- Facilities
-```
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-these maintenance personnel have the necessary
-and required authorizations.
- For those individuals who do not possess
-required authorizations and must be escorted,
-supervisory personnel must possess the technical
-expertise to oversee the maintenance activities.
-This measure can detect or deter harmful activity
-on the part of the maintenance personnel.
- Temporary credentials (e.g., visitor badge,
-password) granted to maintenance personnel
-must be terminated as soon as maintenance
-concludes.
-```
-## Figure 14: Maintenance
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Exercise strict supervision and access procedures for maintenance personnel** |   MA- 5 |   Maintenance personnel can be considered privileged users due to their trusted position with information systems and the extraordinary access granted to them. Software and hardware require maintenance often on short notice. As such, an agency might have to bring in individuals not previously identified as authorized maintenance personnel. An agency should maintain a list of individuals authorized to carry out this type of maintenance. For those individuals who are not escorted throughout the facility, the agency should verify these maintenance personnel have the necessary and required authorizations. For those individuals who do not possess required authorizations and must be escorted, supervisory personnel must possess the technical expertise to oversee the maintenance activities. This measure can detect or deter harmful activity on the part of the maintenance personnel. Temporary credentials (e.g., visitor badge, password) granted to maintenance personnel must be terminated as soon as maintenance concludes. |   <ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>
+##### Figure 14: Maintenance
 
 ## Media Protection
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Restrict media
-use for privileged
-users
-```
-```
-MP- 7 An agency can restrict the types of media used on
-information systems through technical or policy-
-based safeguards. Prohibiting the use of writeable,
-portable devices or restricting the use of all media to
-a set of approved devices can prevent the unwanted
-disclosure of information, intellectual property theft,
-or the introduction of dangerous files or software.
-The restriction of media use is especially important
-regarding privileged users, because these users
-often have sweeping access to an agency’s files for
-administrative or security purposes. Additional
-controls around the content and data that privileged
-users’ access may be necessary to confirm these
-users’ interactions with these resources are
-restricted to those necessary for their assigned
-duties.
-```
-```
- Content and data
- Networks and
-infrastructure
-```
-## Figure 15: Media Protection
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Restrict media use for privileged users** |   MP- 7 |   An agency can restrict the types of media used on information systems through technical or policy-based safeguards. Prohibiting the use of writeable, portable devices or restricting the use of all media to a set of approved devices can prevent the unwanted disclosure of information, intellectual property theft, or the introduction of dangerous files or software. The restriction of media use is especially important regarding privileged users, because these users often have sweeping access to an agency’s files for administrative or security purposes. Additional controls around the content and data that privileged users’ access may be necessary to confirm these users’ interactions with these resources are restricted to those necessary for their assigned duties. |   <ul><li>Content and data</li><li>Networks and infrastructure</li></ul>
+##### Figure 15: Media Protection
 
 ## Physical and Environmental Protection
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Monitor physical
-access of
-privileged users
-```
-```
-PE- 6 Monitoring physical access is fundamental to
-conducting continuous evaluation activities, which
-determine on an ongoing basis that all users,
-including privileged users, are granted the proper
-access to the protected resources their job roles
-require.
- Continuous evaluation is a central component to
-privileged user management, as the scope of
-these individuals’ elevated access should be
-constantly validated because of the inherent risk
-of harm to protected resources.
- If an organization’s physical access monitoring
-detects suspicious activity, like access for unusual
-lengths of time, the user could present an insider
-threat.
- Robust physical monitoring capabilities serve as a
-deterrent to malicious insider activity.
-```
-```
- Networks and
-infrastructure
- Facilities
-```
-## Figure 16: Physical and Environmental Protection
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Monitor physical access of privileged users** |   PE- 6 |   Monitoring physical access is fundamental to conducting continuous evaluation activities, which determine on an ongoing basis that all users, including privileged users, are granted the proper access to the protected resources their job roles require. Continuous evaluation is a central component to privileged user management, as the scope of these individuals’ elevated access should be constantly validated because of the inherent risk of harm to protected resources. If an organization’s physical access monitoring detects suspicious activity, like access for unusual lengths of time, the user could present an insider threat. Robust physical monitoring capabilities serve as a deterrent to malicious insider activity. |   <ul><li>Networks and infrastructure</li><li>Facilities</li></ul>
+##### Figure 16: Physical and Environmental Protection
 
 ## Planning
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Rules of behavior PL-^4 An agency should administer and collect signed
-agreements from all users that delineate both their
-responsibilities and the behavior expected of them,
-based on their assigned duties. This process should
-be completed before the user is issued a unique
-credential to the protected resource. In particular,
-these rules of behavior should differ based on the
-level of privilege. An agency can protect itself from
-unwanted behavior by privileged users through such
-agreements. These documents can prevent
-accidental and complacent privileged user insider
-activity, and deter malicious insider activity by
-communicating the severe ramifications. An agency
-should consider requiring a renewal of such
-agreements periodically (e.g., annual basis).
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-## Figure 17: Planning
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Resources Rules of behavior** |   PL-4 |   An agency should administer and collect signed agreements from all users that delineate both their responsibilities and the behavior expected of them, based on their assigned duties. This process should be completed before the user is issued a unique credential to the protected resource. In particular, these rules of behavior should differ based on the level of privilege. An agency can protect itself from unwanted behavior by privileged users through such agreements. These documents can prevent accidental and complacent privileged user insider activity, and deter malicious insider activity by communicating the severe ramifications. An agency should consider requiring a renewal of such agreements periodically (e.g., annual basis). |   <ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>
+##### Figure 17: Planning
 
 ## Personnel Security
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Develop,
-document, and
-disseminate clear
-policies on
-personnel
-security
-```
-```
-PS- 1 An agency should monitor employees with elevated
-access beginning with the hiring process. In
-managing components of a workforce, clearly
-documented personnel policies are important. The
-privileged user should be aware of all facets of the
-agency’s duties and abilities to determine access
-rights for, adjust responsibilities of, and monitor its
-privileged user population. This not only provides
-legal protection for the agency, but the ramifications
-of misuse or abuse serve as a deterrent to
-unwanted behavior by privileged users.
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-```
-Assign risk
-designations for
-privileged users
-```
-```
-PS- 2 An agency should assign a risk designation for all
-positions within the organization which will inform an
-individual’s screening criteria and authorization
-procedures. As privileged users likely have the
-potential for adverse impact on the efficiency or
-integrity of the services an agency provides,^74 these
-privileged positions may warrant categorization as
-medium or high risk, depending on the agency’s
-information systems, data, and the individuals’
-assigned duties. This risk categorization acts as tool
-for an agency to manage a privilege user’s
-employee lifecycle.
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-```
-Screen privileged
-users based on
-type of risk
-designation
-```
-```
-PS- 3 Personnel screening criteria hinge on an individual’s
-risk designation. However, an agency is free to
-define different screening conditions and
-frequencies based on the information processed,
-stored, or transmitted by information systems. If a
-user has elevated access to manage a critical
-information system, an agency can enforce stricter
-screening procedures. Screening involves
-coordination with personnel security (e.g.,
-background investigation status, reinvestigation).
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-```
-Follow secure and
-comprehensive
-personnel
-termination
-procedures
-```
-```
-PS- 4 Termination procedures are especially important if
-the departing employee had been granted elevated
-access, because a disgruntled, privileged user
-poses an even greater risk to an agency’s protected
-resources than a disgruntled user with standard
-access. When terminating an employee, the agency
-should:
- Immediately terminate the employee’s physical
-and logical access (i.e., PIV card, keys, system
-administration manuals), especially if the
-termination occurred under unfavorable
-circumstances, to prevent unwanted access to
-protected resources once termination is finalized.
- Notify security personnel and the departing
-employees’ colleagues of the departure, so these
-individuals do not assist the departed employee in
-accessing the protected resources because of
-their familiarity.
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-(^74) Definition can be found in 5 C.F.R. 731.106.
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
-
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Continuously
-evaluate
-authorizations
-granted to the
-privileged user
-population
-```
-```
-PS- 5 If a privileged user transfers to a different
-department within the agency, the individual might
-be granted additional physical and logical access
-associated with new job duties. Failing to terminate
-privileges from an individual’s prior assignment risks
-inadvertently empowering the privileged user with a
-greater collection of authorizations than is explicitly
-needed. Maintaining access authorizations in line
-with Human Resources records is critical to
-mitigating the threat a privileged user can pose to
-an agency. An agency should conduct continuous
-evaluation on its privileged users to confirm these
-individuals have an ongoing operational need for
-their privileges.
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-```
-Confirm
-employees sign
-access
-agreements prior
-to granting them
-access
-```
-```
-PS- 6 Prior to granting access, an agency should develop,
-distribute, and document signed access agreements
-for employees who use agency information
-systems. Through non-disclosure agreements,
-acceptable use agreements, and rules of behavior
-agreements an agency can hold its employees
-accountable. An agency should consider tailoring
-these agreements to privileged users where
-necessary, as the nature of their access is very
-different than that of standard users.
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-```
-Institute a formal
-personnel
-sanctions
-process
-```
-```
-PS- 8 Access agreements should explain the ramifications
-of employees violating the terms of agreement,
-including any personnel sanctions involved. By
-instituting a formal sanctions process the agency
-can protect its resources from privileged users who
-exhibit tendencies towards unwanted behavior.
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-## Figure 18: Personnel Security
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Develop, document, and disseminate clear policies on personnel security** |   PS- 1 |   An agency should monitor employees with elevated access beginning with the hiring process. In managing components of a workforce, clearly documented personnel policies are important. The privileged user should be aware of all facets of the agency’s duties and abilities to determine access rights for, adjust responsibilities of, and monitor its privileged user population. This not only provides legal protection for the agency, but the ramifications of misuse or abuse serve as a deterrent to unwanted behavior by privileged users. |   <ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>
+|   **Assign risk designations for privileged users** |   PS- 2 |   An agency should assign a risk designation for all positions within the organization which will inform an individual’s screening criteria and authorization procedures. As privileged users likely have the potential for adverse impact on the efficiency or integrity of the services an agency provides, these privileged positions may warrant categorization as medium or high risk, depending on the agency’s information systems, data, and the individuals’ assigned duties. This risk categorization acts as tool for an agency to manage a privilege user’s employee lifecycle. |   <ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>
+|   **Screen privileged users based on type of risk designation** |   PS- 3 |   Personnel screening criteria hinge on an individual’s risk designation. However, an agency is free to define different screening conditions and frequencies based on the information processed, stored, or transmitted by information systems. If a user has elevated access to manage a critical information system, an agency can enforce stricter screening procedures. Screening involves coordination with personnel security (e.g., background investigation status, reinvestigation). |   <ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>
+|   **Follow secure and comprehensive personnel termination procedures** |   PS- 4 |   Termination procedures are especially important if the departing employee had been granted elevated access, because a disgruntled, privileged user poses an even greater risk to an agency’s protected resources than a disgruntled user with standard access. When terminating an employee, the agency should: <ul><li>Immediately terminate the employee’s physical and logical access (i.e., PIV card, keys, system administration manuals), especially if the termination occurred under unfavorable circumstances, to prevent unwanted access to protected resources once termination is finalized.</li><li>Notify security personnel and the departing employees’ colleagues of the departure, so these individuals do not assist the departed employee in accessing the protected resources because of their familiarity.</li><ul> Definition can be found in 5 C.F.R. 731.106. |   <ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>
+|   **Continuously evaluate authorizations granted to the privileged user population** |   PS- 5 |   If a privileged user transfers to a different department within the agency, the individual might be granted additional physical and logical access associated with new job duties. Failing to terminate privileges from an individual’s prior assignment risks inadvertently empowering the privileged user with a greater collection of authorizations than is explicitly needed. Maintaining access authorizations in line with Human Resources records is critical to mitigating the threat a privileged user can pose to an agency. An agency should conduct continuous evaluation on its privileged users to confirm these individuals have an ongoing operational need for their privileges. |   <ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>
+|   **Confirm employees sign access agreements prior to granting them access** |   PS- 6 |   Prior to granting access, an agency should develop, distribute, and document signed access agreements for employees who use agency information systems. Through non-disclosure agreements, acceptable use agreements, and rules of behavior agreements an agency can hold its employees accountable. An agency should consider tailoring these agreements to privileged users where necessary, as the nature of their access is very different than that of standard users. |   <ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>
+|   **Institute a formal personnel sanctions process** |   PS- 8 |   Access agreements should explain the ramifications of employees violating the terms of agreement, including any personnel sanctions involved. By instituting a formal sanctions process the agency can protect its resources from privileged users who exhibit tendencies towards unwanted behavior. |   <ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>
+##### Figure 18: Personnel Security
 
 ## Risk Assessment
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Incorporate
-privileged user
-insider threat into
-enterprise-wide
-risk assessments
-```
-```
-RA- 3 An agency should consider incorporating privileged
-user misuse and abuse of protected resources into
-its enterprise-wide risk assessments. Once critical
-data, systems, and business process are identified,
-the agency can assess the associated privileged
-user threats, vulnerabilities, and likelihood of an
-insider incident to inform the risk assessment.
-Please refer to Section 2.1 for more information on
-conducting a risk assessment as part of a protected
-resource analysis to identify privileged users.
-```
-```
- Content and data
- Applications and
-web services
- Networks and
-infrastructure
- Facilities
-```
-## Figure 19: Risk Assessment
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Incorporate privileged user insider threat into enterprise-wide risk assessments** |   RA- 3 |   An agency should consider incorporating privileged user misuse and abuse of protected resources into its enterprise-wide risk assessments. Once critical data, systems, and business process are identified, the agency can assess the associated privileged user threats, vulnerabilities, and likelihood of an insider incident to inform the risk assessment. Please refer to Section 2.1 for more information on conducting a risk assessment as part of a protected resource analysis to identify privileged users. |    <ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>
+##### Figure 19: Risk Assessment
 
 ## System and Services Acquisition
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Have a robust
-system
-development life
-cycle
-```
-```
-SA- 3 An agency needs a well-defined system
-development life cycle (SDLC) to verify that
-appropriate controls and business processes are in
-place to guard against privileged user abuse or
-misuse of protected resources. To effectively
-integrate these security requirements into the
-enterprise architecture, qualified personnel from
-across the organization need to work in unison. As
-some of these personnel may have privileged
-access, it is important to identify these individuals
-and then define and document their information
-security roles and responsibilities to reduce the
-ease of exploitation. Please refer to Section 2.1 for
-more information on identifying privileged users.
-```
-```
- Applications and
-web services
- Network and
-infrastructure
-```
-```
-Identify
-vulnerabilities
-within information
-systems
-```
-```
-SA- 5 As part of the implementation and operation of
-security controls associated with information
-systems, known vulnerabilities regarding
-configuration and use of privileged functions should
-be identified. This knowledge allows an agency to
-target areas for stringent access control and
-monitoring of privileged users. Furthermore, these
-vulnerabilities can feed into the enterprise risk
-assessment (RA-3).
-```
-```
- Applications and
-web services
- Network and
-infrastructure
-```
-```
-Require that
-information
-system
-developers
-structure for least
-privilege
-```
-```
-SA- 17 An agency can require that internal or external
-developers of the information system, system
-component, or system service structure security-
-relevant hardware, software, and firmware to
-facilitate controlling access by least privilege. This is
-particularly important for privileged users, who are
-can be granted sweeping access to systems with a
-default account because this is easier than creating
-dozens of personalized accounts assigned to
-individual privileged users.
-```
-```
- Network and
-infrastructure
-```
-## Figure 20: System and Services Acquisition
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Have a robust system development life cycle** |   SA- 3 |   An agency needs a well-defined system development life cycle (SDLC) to verify that appropriate controls and business processes are in place to guard against privileged user abuse or misuse of protected resources. To effectively integrate these security requirements into the enterprise architecture, qualified personnel from across the organization need to work in unison. As some of these personnel may have privileged access, it is important to identify these individuals and then define and document their information security roles and responsibilities to reduce the ease of exploitation. Please refer to Section 2.1 for more information on identifying privileged users. |   <ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>
+|   **Identify vulnerabilities within information systems** |   SA- 5 |   As part of the implementation and operation of security controls associated with information systems, known vulnerabilities regarding configuration and use of privileged functions should be identified. This knowledge allows an agency to target areas for stringent access control and monitoring of privileged users. Furthermore, these vulnerabilities can feed into the enterprise risk assessment (RA-3). |   <ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>
+|   **Require that information system developers structure for least privilege** |   SA- 17 |   An agency can require that internal or external developers of the information system, system component, or system service structure security-relevant hardware, software, and firmware to facilitate controlling access by least privilege. This is particularly important for privileged users, who are can be granted sweeping access to systems with a default account because this is easier than creating dozens of personalized accounts assigned to individual privileged users. |   <ul><li>Network and infrastructure</li></ul>
+##### Figure 20: System and Services Acquisition
 
 ## System and Communications Protection
 
