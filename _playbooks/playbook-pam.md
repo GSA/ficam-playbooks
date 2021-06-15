@@ -1145,93 +1145,18 @@ resource analysis (Section 2.1).
 ##### Figure 20: System and Services Acquisition
 
 ## System and Communications Protection
-
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Boundary
-protection
-```
-```
-SC- 7 Monitoring and controlling communications at the
-external boundary of an information system allows
-an agency to develop a baseline of normal network
-device behavior. Using baselines, an agency can
-deploy anomaly detection capabilities to identify
-suspicious insider activity. Furthermore, an agency
-can opt to route networked privileged access
-through a dedicated interface for improved access
-control and auditing of users with elevated access.
-```
-```
- Network and
-infrastructure
-```
-```
-Protection of
-Information at
-Rest
-```
-```
-SC- 28 An agency should implement measures to protect
-the confidentiality and integrity of system and user
-information while located on storage devices. This
-information can be protected through cryptographic
-means, file sharing scanning, etc. Since privileged
-users’ job functions may entail performing
-administrative and security related functions on this
-information, enhanced protection increases an
-agency’s privileged user management capabilities.
-```
-```
- Content and data
- Network and
-infrastructure
-```
-## Figure 21: System and Communications Protection
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Boundary protection** |   SC- 7 |   Monitoring and controlling communications at the external boundary of an information system allows an agency to develop a baseline of normal network device behavior. Using baselines, an agency can deploy anomaly detection capabilities to identify suspicious insider activity. Furthermore, an agency can opt to route networked privileged access through a dedicated interface for improved access control and auditing of users with elevated access. |   <ul><li>Network and infrastructure</li></ul>
+|   **Protection of Information at Rest** |   SC- 28 |   An agency should implement measures to protect the confidentiality and integrity of system and user information while located on storage devices. This information can be protected through cryptographic means, file sharing scanning, etc. Since privileged users’ job functions may entail performing administrative and security related functions on this information, enhanced protection increases an agency’s privileged user management capabilities. |   <ul><li>Content and data</li><li>Network and infrastructure</li></ul>
+##### Figure 21: System and Communications Protection
 
 ## System and Information Integrity
 
-```
-Countermeasure SP 800 - 53
-Control
-```
-```
-Explanation Relevant
-Protected
-Resources
-Internal
-information
-system
-monitoring
-```
-```
-SI- 4 As part of formalized insider threat program, an
-agency should monitor its information systems for
-internal events. This can include real time
-monitoring of audit activities, access patterns, and
-communications traffic anomalies. The agency can
-define its own additional monitoring requirements for
-its privileged users based on its systems, mission,
-and business processes. However, information
-system monitoring is a critical component of an
-organization’s continuous monitoring and incident
-response programs, and thus an integral part of
-privileged user management.
-```
-```
- Network and
-infrastructure
-```
-## Figure 22: System and Information Integrity
-
-
-ICAM Privileged User Instruction and Implementation Guidance Draft
+|   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
+|:----------------:|:---------------------:|---------------|--------------------------------|
+|   **Internal information system monitoring** |   SI- 4 |   As part of formalized insider threat program, an agency should monitor its information systems for internal events. This can include real time monitoring of audit activities, access patterns, and communications traffic anomalies. The agency can define its own additional monitoring requirements for its privileged users based on its systems, mission, and business processes. However, information system monitoring is a critical component of an organization’s continuous monitoring and incident response programs, and thus an integral part of privileged user management. |   <ul><li>Network and infrastructure</li></ul>
+##### Figure 22: System and Information Integrity
 
 **Appendix D: Privileged User Instruction**
 
