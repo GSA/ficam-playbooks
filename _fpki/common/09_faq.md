@@ -53,7 +53,7 @@ Timeline:
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
 The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
 
-**Note:** This table was last updated on **April 26, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"} for the latest information possible.
+**Note:** This table was last updated on **June 10, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"} for the latest information possible.
 
 #### Issued to: Federal Bridge CA G4
 
@@ -123,7 +123,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | August 14, 2019 to August 14, 2022  |
 | Serial Number | 734b   |
 | SHA-1 Thumbprint | 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2   |
-| Planned Revocation Date | **June 10, 2021** |
+| Revocation Date | **June 10, 2021** |
 
 | Certificate Attribute (2 of 2) | Value                                              |
 | :--------  | :--------------------------------------------------------     |
@@ -131,7 +131,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | August 29, 2018 to August 29, 2021   |
 | Serial Number | 6405    |
 | SHA-1 Thumbprint | 5a87922b5eaf1d63198a951b2ab6f59b2f16c131  |
-| Planned Revocation Date | **June 10, 2021** |
+| Revocation Date | **June 10, 2021** |
 
 #### Issued to: Entrust Managed Services Root CA
 
