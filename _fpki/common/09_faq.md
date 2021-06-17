@@ -7,6 +7,7 @@ sticky_sidenav: true
 sidenav: fpkicommon
 ---
  
+{% include alert-warning.html heading="Heads-up! " content="The Federal PKI Management Authority has completed the revocation of the certificates issued by the Federal Common Policy CA.  If you are encountering any issues, please review our solutions for <a href=\"#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2\">Windows</a> and <a href=\"#how-do-i-configure-my-unmanaged-macos-device-to-trust-the-new-federal-common-policy-ca-g2\">macOS</a>.  If these solutions do not address your problem, please escalate to your agency or component help desk for additional support.  Agency or component help desks that need support can contact fpkirootupdate@gsa.gov." %} 
 
 - [Will my PIV credentials break or need to be updated or replaced when this change occurs](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs)
 - [Is the Federal Common Policy CA changing?](#is-the-federal-common-policy-ca-changing)
@@ -53,7 +54,7 @@ Timeline:
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
 The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
 
-**Note:** This table was last updated on **June 10, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"} for the latest information possible.
+**Note:** This table was last updated on **June 17, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"} for the latest information possible.
 
 #### Issued to: Federal Bridge CA G4
 
@@ -141,7 +142,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | August 14, 2019 to August 14, 2029  |
 | Serial Number | 734a   |
 | SHA-1 Thumbprint | a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9  |
-| Planned Revocation Date | **June 17, 2021** (previously April 22, 2021) |
+| Revocation Date | **June 17, 2021** |
 
 | Certificate Attribute (2 of 2) | Value                                              |
 | :--------  | :--------------------------------------------------------     |
@@ -149,7 +150,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | July 30, 2015 to July 30, 2025  |
 | Serial Number | 2e26   |
 | SHA-1 Thumbprint | 39c1d3b64e756a3267bfe5fecb103da892ca0611  |
-| Planned Revocation Date | **June 17, 2021** (previously April 22, 2021) |
+| Revocation Date | **June 17, 2021** |
 
 ## Which types of systems will this change affect?
 
