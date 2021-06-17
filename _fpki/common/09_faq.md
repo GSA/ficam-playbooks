@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: fpkicommon
 ---
  
-{% include alert-warning.html heading="Heads-up! " content="The Federal PKI Management Authority has completed the revocation of the certificates issued by the Federal Common Policy CA.  If you are encountering any issues, please review our solutions for <a href=\"#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2\">Windows</a> and <a href=\"#how-do-i-configure-my-unmanaged-macos-device-to-trust-the-new-federal-common-policy-ca-g2\">macOS</a>.  If these solutions do not address your problem, please escalate to your agency or component help desk for additional support.  If you support an agency or component help desk and need support, please contact fpkirootupdate@gsa.gov." %} 
+{% include alert-warning.html heading="Heads-up! " content="The Federal PKI Management Authority has completed the revocation of the certificates issued by the Federal Common Policy CA.  If you are encountering any issues, please review our solutions for <a href=\"#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2\">Windows</a> and <a href=\"#how-do-i-configure-my-unmanaged-macos-device-to-trust-the-new-federal-common-policy-ca-g2\">macOS</a>.  If these solutions do not address your problem, please escalate to your agency or component help desk for additional support.  Agency or component help desks that need support can contact fpkirootupdate@gsa.gov." %} 
 
 - [Will my PIV credentials break or need to be updated or replaced when this change occurs](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs)
 - [Is the Federal Common Policy CA changing?](#is-the-federal-common-policy-ca-changing)
