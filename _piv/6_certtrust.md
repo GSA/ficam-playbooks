@@ -32,7 +32,7 @@ For the US Federal Government Executive branch agencies, there is one Root Certi
 
 * [CLICK HERE: A graph of the federal public key infrastructure, including the business communities](../../fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"}
 
-The participating Certificate Authorities and the policies, processes, and auditing is referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/community/twg/fpki-cas-audit-info/){:target="_blank"}{:rel="noopener noreferrer"}
+The participating Certificate Authorities and the policies, processes, and auditing is referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Certificate Chains
 To digitally trust YOU and your PIV credential certificates, the workstations, servers, applications and network domains will be configured. Understanding and managing certificate chains are one of the methods to configure trust.

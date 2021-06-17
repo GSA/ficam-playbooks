@@ -314,7 +314,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
   <ul>
 	<li>After contract award, your integrator will help you:
 	<ul>
-	<li>Choose the best PACS topology (that is, an end-to-end solution of hardware, software, a Certificate Validation System, and PIV credential readers) listed on the <a href="https://www.idmanagement.gov/approved-products-list-pacs-products/" target="_blank" rel="noopener noreferrer">GSA PACS APL</a> for the PIV authentication mechanisms selected for your facility.</li>
+	<li>Choose the best PACS topology (that is, an end-to-end solution of hardware, software, a Certificate Validation System, and PIV credential readers) listed on the <a href="https://www.idmanagement.gov/buy/#products" target="_blank" rel="noopener noreferrer">GSA PACS APL</a> for the PIV authentication mechanisms selected for your facility.</li>
 	<li>Buy the products and additional services you need by using the <a href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology" target="_blank" rel="noopener noreferrer">GSA Multiple Award Schedule (MAS)</a>. Your chosen integrator will help your agency choose the right PACS products and services, according to your agency’s preferred GSA purchasing vehicle(s).</li>
 	</ul>
 	</li>
