@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: Risk Management
-permalink: ficampm/risk/
+permalink:
 sidenav: pm
 
 subnav:
