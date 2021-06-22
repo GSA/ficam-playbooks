@@ -1,3 +1,4 @@
+<!--
 ---
 layout: page
 collection: fpki
@@ -19,6 +20,7 @@ subnav:
     - text: Use the Certificate Policy Object Identifier
       href: '#how-do-i-use-the-certificate-policy-object-identifier'
 ---
+-->
 
 ### What is a Certificate Policy?
 
