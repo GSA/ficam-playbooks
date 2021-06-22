@@ -3,7 +3,7 @@
 layout: page
 collection: fpki
 title: Certificate Policies
-permalink: fpki/policyobjects/
+permalink:
 sidenav: fpki
 
 subnav:
