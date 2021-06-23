@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: Capital Planning and Investment Control (CPIC)
-permalink: ficampm/cpic/
+permalink:
 sidenav: pm
 
 subnav:
