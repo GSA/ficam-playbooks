@@ -43,20 +43,6 @@ primary_navigation:
   - name: Home
     description: FICAM Playbooks Home Page
     url: /
-#  - name: Buy
-#    children:
-#      - name: Buy Overview
-#        url: /buy/buy/
-#      - name: Trust Services
-#        url: /buy/trust-services/
-#  - name: Sell
-#    children:
-#      - name: Sell Overview
-#        url: /sell/sell/
-#      - name: FIPS 201 Evaluation Program
-#        url: /sell/fips201ep/
-#      - name: FIPS 201 Approved Product List
-#        url: /sell/fips201apl/
   - name: FICAM Architecture
     description: FICAM Archtecture
     url: /arch/
@@ -108,7 +94,7 @@ searchgov:
   access_key: zCEoL5u4U5XFzfFSxy8y4Iz6vdtTjsb4U539L_rgDTM=
 
   # this renders the results within the page instead of sending to user to search.gov
-  inline: false
+  inline: true
 
 ##########################################################################################
 # The values below here are more advanced and should only be
