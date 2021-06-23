@@ -229,20 +229,6 @@ pm:
     href: /pm/examples/
 
 ## Other Site Navigation
-
-buy:
-  - text: Buy Identity Products and Services
-    href: /buy/
-  - text: Trust Services
-    href: /buy/trust-services/
-    
-sell:
-  - text: Sell Identity Products and Services
-    href: /sell/
-  - text: FIPS 201 Evaluation Program
-    href: /sell/fips201ep/
-  - text: FIPS 201 Approved Product List
-    href: /sell/fips201apl/
     
 policy:
   - text: Contact Us
@@ -305,7 +291,6 @@ signword:
     href: /signword/#verify-digital-signature-settings
   - text: Additional Resources
     href: /signword/#additional-resources
-    
     
 signwordofr:
   - text: Digitally Signing Documents for Submission to Office of the Federal Register
