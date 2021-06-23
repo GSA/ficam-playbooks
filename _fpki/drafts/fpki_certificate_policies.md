@@ -1,8 +1,9 @@
+<!--
 ---
 layout: page
 collection: fpki
 title: Certificate Policies
-permalink: fpki/policyobjects/
+permalink:
 sidenav: fpki
 
 subnav:
@@ -19,6 +20,7 @@ subnav:
     - text: Use the Certificate Policy Object Identifier
       href: '#how-do-i-use-the-certificate-policy-object-identifier'
 ---
+-->
 
 ### What is a Certificate Policy?
 

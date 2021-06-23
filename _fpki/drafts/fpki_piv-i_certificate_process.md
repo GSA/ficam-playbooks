@@ -1,8 +1,10 @@
+<!--
 ---
 layout: default
 title: PIV-I Certification Process
 permalink: /pivi-certification-process/
 ---
+-->
 
 **PIV-I Certification Playbook**
 ======================
