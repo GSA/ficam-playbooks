@@ -13,8 +13,8 @@ subnav:
       href: '#send-a-signed-email'
     - text: Send an Encrypted Email
       href: '#send-an-Encrypted-email' 
-    - text: Dencrypt an Email
-      href: '#Decreypt-an-email'    
+    - text: Decrypt an Email
+      href: '#Decrypt-an-email'    
       
 ---
 
