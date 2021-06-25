@@ -13,12 +13,14 @@ subnav:
       href: '#send-a-signed-email'
     - text: Send an Encrypted Email
       href: '#send-an-Encrypted-email' 
+    - text: Dencrypt an Email
+      href: '#Decreypt-an-email'    
       
 ---
 
 Did you know that PIV cards contain digital certificates intended to help users send secure email? In general, "secure email" refers to digitally signed and/or encrypted emails.  Digitally signed emails give us confidence that the individual who claimed to send a message actually did (non-repudiation) and that the message was not modified while in transit (integrity).  Encrypted emails prevent the message from being read by unintended recipients (confidentiality).  
 
-The following guide will walk users through configuring Outlook to leverage the digital signature and key management certificates found on their PIV to enable secure email.
+The following guide will walk users through configuring Outlook to leverage the digital signature and key management certificates found on their PIV to enable secure email. Be aware that by default, Outlook will only allow siganture and encryption of emails provided the configured email address on the client is same email address as encoded on a PIV.
 
 ## Configure Outlook to Send Secure Email
 
@@ -96,3 +98,11 @@ When sending an encrypted email, the message is encrypted using the public key i
 
 [![A completed contact entry.](../../../assets/piv/outlook-certificate-configuration-contact-entry.png){:style="width:85%;"}](../../../assets/piv/outlook-certificate-configuration-contact-entry.png){:target="_blank"}{:rel="noopener noreferrer"}
 
+## Decrypt an Email
+
+PIV users may received and store encrypted emails througout their tenure in an organization.  These emails may have been encrypted with various public key management keys that have been subsequently retired and/or replaced.  Many PIV card issuers provide historical key management keys when they issue a PIV card, but others may not.  Outlook, via the MicroSoft Cryptographic Application Programming Interface (CAPI), has the ability to decrypt these emails provided the associated private keys are available.  The following steps outline how to decrypt an email when the private decryption keys are available:
+
+1. Select an encrypted email
+2. Enter your PIV PIN or private key password when prompted
+
+**Note:** Your orgnaization may not recover previously issued encryption keys onto your PIV, instead they may provide a seperate key recovery system. Please reach out to your local IT department to determine if you can recover retired encryption keys.
