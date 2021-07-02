@@ -45,8 +45,6 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance_](https://www.idmanagement.gov/docs/roadmap-ficam.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0, Executive Office of the President (EOP) and Federal Chief Information Officers (CIO) Council, December 2, 2011.
 
-[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 3.0, February 26, 2021.
-
 [FIPS PUB 199, _Standards for Security Categorization of Federal Information and Information Systems_](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, February 2004.
 
 [FIPS PUB 200, _Minimum Security Requirements for Federal Information and Information Systems_](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.200.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, March 9, 2006. 
@@ -82,6 +80,8 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 [_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, ISC, 2nd Edition, November 2016.
 
 [_Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS)_](https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf){:target="_blank"}, Version 1.0, December 2020.
+
+[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 3.0, February 26, 2021.
 
 ## Other Relevant Publications
 
