@@ -3,7 +3,7 @@ layout: page
 collection: piv
 navtitle: Digitally Signing in Microsoft Word
 title: Digitally Sign a Microsoft Word Document
-pubdate: 03/2018
+pubdate: 2018-03-02
 date: March 23, 2018
 type: Markdown
 permalink: /signword/

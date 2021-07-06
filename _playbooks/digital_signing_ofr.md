@@ -2,7 +2,7 @@
 layout: page
 navtitle: Digitally Signing Documents for Submission to Office of the Federal Register
 title: Digitally Signing Documents for Submission to Office of the Federal Register
-pubdate: 07/2018
+pubdate: 2018-07-05
 date: July, 17, 2018
 type: Markdown
 permalink: /signfedregister/
