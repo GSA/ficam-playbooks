@@ -6,7 +6,7 @@ permalink: /playbooks/
 
 <p>A playbook is a comprehensive guide on a technical topic, describing both overarching strategy and tactical approaches. The below table is sorted by title.</p>
 
-<table class="usa-table--borderless playbooks-table" id="myTable">
+<table class="usa-table--borderless playbooks-table" id="table">
   <thead>
     <tr>
       <th id="playbooks-table-heading-title" scope="col" onclick="sortTable(0)">Title</th>
@@ -29,6 +29,7 @@ permalink: /playbooks/
 </table>
 
 <script>
+  
 function sortTable(n) {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("table");
