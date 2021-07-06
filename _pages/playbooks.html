@@ -6,17 +6,17 @@ permalink: /playbooks/
 
 <p>A playbook is a comprehensive guide on a technical topic, describing both overarching strategy and tactical approaches. The below table is sorted by title.</p>
 
-<table class="usa-table--borderless playbooks-table">
-  <thead class="usa-sr-only">
+<table class="usa-table--borderless playbooks-table" id="myTable">
+  <thead>
     <tr>
-      <th id="playbooks-table-heading-title" scope="col">Title</th>
+      <th id="playbooks-table-heading-title" scope="col" onclick="sortTable(0)">Title</th>
       <th id="playbooks-table-heading-type" scope="col">Type</th>
       <th id="playbooks-table-heading-date" scope="col">Latest Update</th>
       <th id="playbooks-table-heading-description" scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
-    {% assign playbooks = site.playbooks | concat: site.data.external_playbooks | sort: "title" %}
+    {% assign playbooks = site.playbooks | concat: site.data.external_playbooks%}
     {% for playbook in playbooks %}
         <tr class="playbooks-table-row">
           <td><a href="{{ playbook.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ playbook.title }}</a></td>
@@ -27,3 +27,69 @@ permalink: /playbooks/
     {% endfor %}
   </tbody>
 </table>
+
+<script>
+  function sortTable(n) {
+  var table,
+    rows,
+    switching,
+    i,
+    x,
+    y,
+    shouldSwitch,
+    dir,
+    switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < rows.length - 1; i++) { //Change i=0 if you have the header th a separate table.
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+</script>
