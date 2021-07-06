@@ -9,9 +9,9 @@ permalink: /playbooks/
 <table class="usa-table--borderless playbooks-table" id="myTable">
   <thead>
     <tr>
-      <th id="playbooks-table-heading-title" scope="col" onclick="sortTable(0)">Title</th>
+      <th id="playbooks-table-heading-title" scope="col" onclick="sortColumn(0)">Title</th>
       <th id="playbooks-table-heading-type" scope="col">Type</th>
-      <th id="playbooks-table-heading-date" scope="col" onclick="sortTable(2)">Latest Update</th>
+      <th id="playbooks-table-heading-date" scope="col">Latest Update</th>
       <th id="playbooks-table-heading-description" scope="col">Description</th>
     </tr>
   </thead>
@@ -29,67 +29,33 @@ permalink: /playbooks/
 </table>
 
 <script>
-  function sortTable(n) {
-  var table,
-    rows,
-    switching,
-    i,
-    x,
-    y,
-    shouldSwitch,
-    dir,
-    switchcount = 0;
-  table = document.getElementById("myTable");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc";
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.getElementsByTagName("TR");
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < rows.length - 1; i++) { //Change i=0 if you have the header th a separate table.
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
+const sortColumn = function(index) {
+    // Get the current direction
+    const direction = directions[index] || 'asc';
+
+    // A factor based on the direction
+    const multiplier = (direction === 'asc') ? 1 : -1;
+
+   
+    newRows.sort(function(rowA, rowB) {
+        const cellA = rowA.querySelectorAll('td')[index].innerHTML;
+        const cellB = rowB.querySelectorAll('td')[index].innerHTML;
+
+        const a = transform(index, cellA);
+        const b = transform(index, cellB);    
+
+        switch (true) {
+            case a > b: return 1 * multiplier;
+            case a < b: return -1 * multiplier;
+            case a === b: return 0;
         }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount++;
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+    });
+
+  
+    // Reverse the direction
+    directions[index] = direction === 'asc' ? 'desc' : 'asc';
+
+    
+};
 
 </script>
