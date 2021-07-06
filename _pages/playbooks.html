@@ -9,9 +9,9 @@ permalink: /playbooks/
 <table class="usa-table--borderless playbooks-table" id="myTable">
   <thead>
     <tr>
-      <th id="playbooks-table-heading-title" scope="col" onclick="sortColumn(0)">Title</th>
+      <th id="playbooks-table-heading-title" scope="col" onclick="sortTable(0)">Title</th>
       <th id="playbooks-table-heading-type" scope="col">Type</th>
-      <th id="playbooks-table-heading-date" scope="col">Latest Update</th>
+      <th id="playbooks-table-heading-date" scope="col" type="date" onclick="sortTable(2)">Latest Update</th>
       <th id="playbooks-table-heading-description" scope="col">Description</th>
     </tr>
   </thead>
@@ -29,33 +29,44 @@ permalink: /playbooks/
 </table>
 
 <script>
-const sortColumn = function(index) {
-    // Get the current direction
-    const direction = directions[index] || 'asc';
+function sortTable(n) {
+    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("table");
+    switching = true;
+    dir = "asc";
 
-    // A factor based on the direction
-    const multiplier = (direction === 'asc') ? 1 : -1;
+    while (switching) {
+        switching = false;
+        rows = table.rows;
 
-   
-    newRows.sort(function(rowA, rowB) {
-        const cellA = rowA.querySelectorAll('td')[index].innerHTML;
-        const cellB = rowB.querySelectorAll('td')[index].innerHTML;
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[n];
+            y = rows[i + 1].getElementsByTagName("TD")[n];
 
-        const a = transform(index, cellA);
-        const b = transform(index, cellB);    
-
-        switch (true) {
-            case a > b: return 1 * multiplier;
-            case a < b: return -1 * multiplier;
-            case a === b: return 0;
+            if (dir == "asc") {
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                }
+            } else if (dir == "desc") {
+                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                }
+            }
         }
-    });
-
-  
-    // Reverse the direction
-    directions[index] = direction === 'asc' ? 'desc' : 'asc';
-
-    
-};
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+            switchcount ++;
+        } else {
+            if (switchcount == 0 && dir == "asc") {
+                dir = "desc";
+                switching = true;
+            }
+        }
+    }
+}
 
 </script>
