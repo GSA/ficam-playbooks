@@ -52,13 +52,13 @@ This is the only difference when implementing the policy: which objects in your 
 You can set the policy option on a single user by checking the _Smart Card is required for interactive logon_ check box in the user account properties.  You can also apply this setting using group policy objects. When the **scforceoption** setting is applied, the SMARTCARD_REQUIRED flag is added to the UserAccountControl (UAC) and the DONT_EXPIRE_PASSWORD attribute is set to true.
 
 ## Defining Kerberos Policies for Reauthentication
-Although users can authenticate to domain controllers using their PIV, the client and the domain controller mantain those sessions using kerberos tickets.  
+Although users can PIV authenticate to domain controllers, the client and the domain controller mantain those sessions using kerberos tickets.  
 
-Group policies can be configured by domain administrators to align with local security policies for maximum lifetimes of kerberos user tickets.  This may cause users to be promted to reauthetnicate with their PIV when prompted with one of the following options:
+Group policies can be configured by domain administrators to align with local security policies for maximum lifetimes of kerberos user tickets.  This may cause users to be prompted to reauthetnicate with their PIV when prompted with one of the following options:
 
 - Windows Needs Your Current Credentials
 - Please Lock this computer, then unlock it using your most recent password or smart card
 
 These prompts happen when the kerberos ticket lifetime expires and a new authentication event is required. User is set to user based enforcement, which requires a new PKINIT event with the domain controller.
 
-You can find additional information on configuring kerberos policies given the following [reference documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/maximum-lifetime-for-user-ticket){:target="_blank"}{:rel="noopener noreferrer"}
+You can find additional information on configuring kerberos policies given the following [reference documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/maximum-lifetime-for-user-ticket){:target="_blank"}{:rel="noopener noreferrer"}.
