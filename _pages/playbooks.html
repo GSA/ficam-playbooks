@@ -9,13 +9,13 @@ permalink: /playbooks/
 <table class="usa-table--borderless playbooks-table" id="mytable">
   
     <tr>
-      <th id="playbooks-table-heading-title" scope="col" onclick="sortTable('mytable',0)" >Title</th>
+      <th id="playbooks-table-heading-title" scope="col" onclick="sorting('tbody01', 0)" >Title</th>
       <th id="playbooks-table-heading-type" scope="col">Type</th>
       <th id="playbooks-table-heading-date" scope="col" type="date" onclick="sortTable()">Latest Update (sort)</th>
       <th id="playbooks-table-heading-description" scope="col">Description</th>
     </tr>
   
-  <tbody>
+  <tbody id="tbody01">
     {% assign playbooks = site.playbooks | concat: site.data.external_playbooks %}
     {% for playbook in playbooks %}
         <tr class="playbooks-table-row">
@@ -30,15 +30,55 @@ permalink: /playbooks/
 
 
 <script>
-function sortTable(table_id, sortColumn){
-    var tableData = document.getElementById(table_id).getElementsByTagName('tbody').item(0);
-    var rowData = tableData.getElementsByTagName('tr');            
-    for(var i = 0; i < rowData.length - 1; i++){
-        for(var j = 0; j < rowData.length - (i + 1); j++){
-            if(Number(rowData.item(j).getElementsByTagName('td').item(sortColumn).innerHTML.replace(/[^0-9\.]+/g, "")) < Number(rowData.item(j+1).getElementsByTagName('td').item(sortColumn).innerHTML.replace(/[^0-9\.]+/g, ""))){
-                tableData.insertBefore(rowData.item(j+1),rowData.item(j));
-            }
-        }
+var index;      // cell index
+var toggleBool; // sorting asc, desc 
+
+function sorting(tbody, index){
+    this.index = index;
+    if(toggleBool){
+        toggleBool = false;
+    }else{
+        toggleBool = true;
+    }
+
+    var datas= new Array();
+    var tbodyLength = tbody.rows.length;
+    for(var i=0; i<tbodyLength; i++){
+        datas[i] = tbody.rows[i];
+    }
+
+    // sort by cell[index] 
+    datas.sort(compareCells);
+    for(var i=0; i<tbody.rows.length; i++){
+        // rearrange table rows by sorted rows
+        tbody.appendChild(datas[i]);
+    }   
+}
+
+function compareCells(a,b) {
+    var aVal = a.cells[index].innerText;
+    var bVal = b.cells[index].innerText;
+
+    aVal = aVal.replace(/\,/g, '');
+    bVal = bVal.replace(/\,/g, '');
+
+    if(toggleBool){
+        var temp = aVal;
+        aVal = bVal;
+        bVal = temp;
+    } 
+
+    if(aVal.match(/^[0-9]+$/) && bVal.match(/^[0-9]+$/)){
+        return parseFloat(aVal) - parseFloat(bVal);
+    }
+    else{
+          if (aVal < bVal){
+              return -1; 
+          }else if (aVal > bVal){
+                return 1; 
+          }else{
+              return 0;       
+          }         
     }
 }
 </script>
