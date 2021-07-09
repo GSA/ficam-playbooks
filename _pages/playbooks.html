@@ -5,11 +5,11 @@ permalink: /playbooks/
 ---
 
 <p>A playbook is a comprehensive guide on a technical topic, describing both overarching strategy and tactical approaches. The below table is sorted by title.</p>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <table class="usa-table--borderless playbooks-table" id="table">
   
     <tr>
-      <th id="playbooks-table-heading-title" scope="col" >Title</th>
+      <th id="playbooks-table-heading-title" scope="col" onclick="sortTable()" >Title</th>
       <th id="playbooks-table-heading-type" scope="col">Type</th>
       <th id="playbooks-table-heading-date" scope="col" type="date" onclick="sortTable()">Latest Update (sort)</th>
       <th id="playbooks-table-heading-description" scope="col">Description</th>
@@ -29,22 +29,39 @@ permalink: /playbooks/
 </table>
 
 <script>
-  
-
-  $('th').click(function(){
-    var table = $(this).parents('table').eq(0)
-    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
-    this.asc = !this.asc
-    if (!this.asc){rows = rows.reverse()}
-    for (var i = 0; i < rows.length; i++){table.append(rows[i])}
-})
-function comparer(index) {
-    return function(a, b) {
-        var valA = getCellValue(a, index), valB = getCellValue(b, index)
-        return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("table");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
     }
-}
-function getCellValue(row, index){ return $(row).children('td').eq(index).text() 
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
 }
 
 </script>
