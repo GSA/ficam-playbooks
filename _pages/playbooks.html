@@ -46,8 +46,8 @@ function sortTable(n) {
             shouldSwitch = false;
 
             if(n == 0){
-              x = rows[i].getElementsByTagName("a")[0].innerHTML;
-              y = rows[i + 1].getElementsByTagName("a")[0].innerHTML;
+              x = rows[i].getElementsByTagName("a")[0];
+              y = rows[i + 1].getElementsByTagName("a")[0];
             }
             else{
               x = rows[i].getElementsByTagName("TD")[0];
