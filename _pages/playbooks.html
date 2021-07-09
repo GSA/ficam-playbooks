@@ -12,17 +12,17 @@ permalink: /playbooks/
       <th id="playbooks-table-heading-title" scope="col"  onclick="sortTable(0)">Title</th>
       <th id="playbooks-table-heading-type" scope="col">Type</th>
       <th id="playbooks-table-heading-date" scope="col" type="date" onclick="sortTable(2)">Latest Update (sort)</th>
-      <th id="playbooks-table-heading-description" scope="col">Description</th>
+      <th id="playbooks-table-heading-description" scope="col" onclick="sortTable(3)" >Description</th>
     </tr>
   </thead>
   <tbody>
-    {% assign playbooks = site.playbooks | concat: site.data.external_playbooks | split: " " %}
+    {% assign playbooks = site.playbooks | concat: site.data.external_playbooks %}
     {% for playbook in playbooks %}
         <tr class="playbooks-table-row">
-          <td><a href="{{ playbook.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ playbook.title }}</a></td>
+          <td><a href="{{ playbook.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ playbook.title | split: " " }}</a></td>
           <td>{{ playbook.type }}</td>
           <td>{{ playbook.pubdate }}</td>
-          
+
           <td>{{ playbook.description }}</td>
         </tr>
     {% endfor %}
