@@ -4,61 +4,19 @@ title: FICAM Playbooks
 permalink: /playbooks/
 ---
 
-<script>
-  function sortTable(n) {
-      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-      table = document.getElementById("table");
-      switching = true;
-      dir = "asc";
-  
-      while (switching) {
-          switching = false;
-          rows = table.rows;
-  
-          for (i = 1; i < (rows.length - 1); i++) {
-              shouldSwitch = false;
-              x = rows[i].getElementsByTagName("TD")[n];
-              y = rows[i + 1].getElementsByTagName("TD")[n];
-  
-              if (dir == "asc") {
-                  if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                      shouldSwitch = true;
-                      break;
-                  }
-              } else if (dir == "desc") {
-                  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                      shouldSwitch = true;
-                      break;
-                  }
-              }
-          }
-          if (shouldSwitch) {
-              rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-              switching = true;
-              switchcount ++;
-          } else {
-              if (switchcount == 0 && dir == "asc") {
-                  dir = "desc";
-                  switching = true;
-              }
-          }
-      }
-  }
-  </script>
-
 <p>A playbook is a comprehensive guide on a technical topic, describing both overarching strategy and tactical approaches. The below table is sorted by title.</p>
 
 <table class="usa-table--borderless playbooks-table" id="table">
-  
+  <thead>
     <tr>
-      <th id="playbooks-table-heading-title" scope="col" type="text" onclick="sortTable(0)" >Title</th>
+      <th id="playbooks-table-heading-title" scope="col"  onclick="sortTable(0)">Title</th>
       <th id="playbooks-table-heading-type" scope="col">Type</th>
       <th id="playbooks-table-heading-date" scope="col" type="date" onclick="sortTable(2)">Latest Update (sort)</th>
-      <th id="playbooks-table-heading-description" scope="col" type="text" onclick="sortTable(3)">Description</th>
+      <th id="playbooks-table-heading-description" scope="col">Description</th>
     </tr>
-  
+  </thead>
   <tbody>
-    {% assign playbooks = site.playbooks | concat: site.data.external_playbooks | split: " " %}
+    {% assign playbooks = site.playbooks | concat: site.data.external_playbooks %}
     {% for playbook in playbooks %}
         <tr class="playbooks-table-row">
           <td><a href="{{ playbook.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ playbook.title }}</a></td>
@@ -70,5 +28,45 @@ permalink: /playbooks/
   </tbody>
 </table>
 
+<script>
+  
+function sortTable(n) {
+    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("table");
+    switching = true;
+    dir = "asc";
 
+    while (switching) {
+        switching = false;
+        rows = table.rows;
 
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[0];
+            y = rows[i + 1].getElementsByTagName("TD")[0];
+
+            if (dir == "asc") {
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                }
+            } else if (dir == "desc") {
+                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+            switchcount ++;
+        } else {
+            if (switchcount == 0 && dir == "asc") {
+                dir = "desc";
+                switching = true;
+            }
+        }
+    }
+  }
+</script>
