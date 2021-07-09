@@ -9,13 +9,13 @@ permalink: /playbooks/
 <table class="usa-table--borderless playbooks-table" id="mytable">
   
     <tr>
-      <th id="playbooks-table-heading-title" scope="col" onclick="sortTable(1,0)" >Title</th>
+      <th id="playbooks-table-heading-title" scope="col" id ="sl" onclick="sortTable(-1,0)" >Title</th>
       <th id="playbooks-table-heading-type" scope="col">Type</th>
       <th id="playbooks-table-heading-date" scope="col" type="date" onclick="sortTable()">Latest Update (sort)</th>
       <th id="playbooks-table-heading-description" scope="col">Description</th>
     </tr>
   
-  <tbody id="tbody01">
+  <tbody>
     {% assign playbooks = site.playbooks | concat: site.data.external_playbooks %}
     {% for playbook in playbooks %}
         <tr class="playbooks-table-row">
