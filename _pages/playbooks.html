@@ -5,11 +5,11 @@ permalink: /playbooks/
 ---
 
 <p>A playbook is a comprehensive guide on a technical topic, describing both overarching strategy and tactical approaches. The below table is sorted by title.</p>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <table class="usa-table--borderless playbooks-table" id="table">
   
     <tr>
-      <th id="playbooks-table-heading-title" scope="col" onclick="sortTable()">Title</th>
+      <th id="playbooks-table-heading-title" scope="col" >Title</th>
       <th id="playbooks-table-heading-type" scope="col">Type</th>
       <th id="playbooks-table-heading-date" scope="col" type="date" onclick="sortTable()">Latest Update (sort)</th>
       <th id="playbooks-table-heading-description" scope="col">Description</th>
@@ -30,7 +30,7 @@ permalink: /playbooks/
 
 <script>
   
-function sortTable() {
+
   $('th').click(function(){
     var table = $(this).parents('table').eq(0)
     var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
@@ -46,5 +46,5 @@ function comparer(index) {
 }
 function getCellValue(row, index){ return $(row).children('td').eq(index).text() 
 }
-}
+
 </script>
