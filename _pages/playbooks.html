@@ -47,6 +47,11 @@ function sortTable(n) {
             x = rows[i].getElementsByTagName("TD")[0];
             y = rows[i + 1].getElementsByTagName("TD")[0];
 
+            if(n==0){
+              x = rows[i].getElementsByTagName("a")[0].innerHTML;
+              y = rows[i + 1].getElementsByTagName("a")[0].innerHTML;
+            }
+
             if (dir == "asc") {
                 if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
                     shouldSwitch = true;
