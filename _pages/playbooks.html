@@ -44,20 +44,21 @@ function sortTable(n) {
 
         for (i = 1; i < (rows.length - 1); i++) {
             shouldSwitch = false;
-            x = rows[i].getElementsByTagName("TD")[0];
-            y = rows[i + 1].getElementsByTagName("TD")[0];
 
-            if(n==0){
+            if(sortTable(0)){
               x = rows[i].getElementsByTagName("a")[0].innerHTML;
-              y = rows[i + 1].getElementsByTagName("a")[0].innerHTML;
             }
-
+            else{
+              x = rows[i].getElementsByTagName("TD")[0];
+            }
+          }
             if (dir == "asc") {
                 if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
                     shouldSwitch = true;
                     break;
                 }
-            } else if (dir == "desc") {
+            } 
+            else if (dir == "desc") {
                 if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
                     shouldSwitch = true;
                     break;
@@ -75,5 +76,6 @@ function sortTable(n) {
             }
         }
     }
-  }
+  
+
 </script>
