@@ -1,5 +1,11 @@
 ## FPKI announcements
 
+- title: New FPKI Tools Available
+  pubDate: May 18, 2021
+  url: /fpki/announcements/test-tools/
+  description: Release announcement for the Federal PKI Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
+  status: Active
+
 - title: Federal Common <br> Policy CA G2 Update
   pubDate: October 12, 2020
   url: /fpki/announcements/common-g2-update/

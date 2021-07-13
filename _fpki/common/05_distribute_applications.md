@@ -15,7 +15,7 @@ Collaborate across agency teams to identify applications that rely on custom tru
 
 **Example applications with custom trust stores:**
 - Java and all Java-based applications (for example, Apache Tomcat)
-- Mozilla products (for example, Firefox or Thunderbird)
+- Mozilla products (for example, [Firefox](../faq/#how-do-i-configure-the-firefox-web-browser-to-trust-the-new-federal-common-policy-ca-g2){:target="_blank"} or Thunderbird)
 - OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
 
 
