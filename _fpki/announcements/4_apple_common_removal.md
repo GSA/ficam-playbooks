@@ -9,7 +9,7 @@ category: Apple
 permalink: fpki/announcements/2018applepkichanges/
 description: Upcoming changes regarding Apple's remove of the U.S. Government Root CA.
 sidenav: fpkiarchivedannouncements
-status: Archived
+category: Archived
 sticky_sidenav: true
 
 subnav:
@@ -91,7 +91,7 @@ Yes.
 Please see [What Will Be Impacted?](#what-will-be-impacted). 
 
 ## Additional Resources
-1. [COMMON Removal from Microsoft Certificate Trust List](https://fpki.idmanagement.gov/archive/mspkichanges/){:target="_blank"}
+1. [COMMON Removal from Microsoft Certificate Trust List](../fpki/announcements/2018mspkichanges/){:target="_blank"}
 1. [macOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT202858){:target="_blank"}
 1. [iOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT204132){:target="_blank"}
 1. [tvOS Available Trusted Root Certificates](https://support.apple.com/en-us/HT207231){:target="_blank"}
