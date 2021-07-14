@@ -10,25 +10,25 @@
   pubDate: October 12, 2020
   url: /fpki/announcements/common-g2-update/
   description: In October 2020, the Federal Government will establish a new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA).  This new root is named the Federal Common Policy CA G2.  This announcement details the CA update timeline and actions agencies need to perform.
-  status: Active
+  category: Active
 
 - title: Upcoming Migration of Federal PKI Certificate Repository Services
   pubDate: April 1, 2019
   url: /fpki/announcements/2019fpkimigration/
   description: On April 22, 2019, the Federal Public Key Infrastructure Management Authority will migrate the hosting of HyperText Transfer Protocol (HTTP) repository services to a cloud-based solution. This announcement provides additional information related to the upcoming migration.
-  status: Archived
+  category: Archived
 
 - title: DigiCert CA Decommissioning 
   pubDate: April 1, 2019
   url: /fpki/announcements/2019digicert/
   description: DigiCert Incorporated is planning on decommissioning several certification authorities (CAs) from the Federal PKI. These CAs are no longer active or required, and there is no expected impact from these changes.  This announcement provides information related to the CAs affected by this change.
-  status: Archived
+  category: Archived
 
 - title: Removal of Health CAs from Federal PKI
   pubDate: March 5, 2019
   url: /fpki/announcements/2019removal/
   description: Federal PKI teams recently performed two actions to remove fifty-nine (59) certification authorities (CAs) related to health IT use cases from the Federal PKI trust framework. This change is not a distrust action. This announcement provides information related to the CAs affected by this change.
-  status: Archived
+  category: Archived
 
 - title: Federal Common Policy CA Removal from Apple Trust Stores Impact
   pubDate: September 13, 2018
@@ -46,10 +46,10 @@
   pubDate: May 18, 2018
   url: /fpki/announcements/2018mspkichanges/
   description: This change will cause Windows users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices.
-  status: Archived
+  category: Archived
 
 - title: Chrome TLS Certificate Lifetime Requirement
   pubDate: May 10, 2018
   url: /fpki/announcements/2018tlslifetime/
   description: Recent changes to Chrome could affect your agency. Chrome users may receive errors when browsing to government intranet websites and applications. Starting **March 1, 2018**, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
-  status: Archived
+  category: Archived
