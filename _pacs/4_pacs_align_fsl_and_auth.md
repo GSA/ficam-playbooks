@@ -24,11 +24,11 @@ To protect your agency's critical assets, you must assess each site's risk level
 The FSL and Authentication checklist below will help you:
 
 - [Assess Facility Security Level](#assess-facility-security-level)
-- [Categorize Security Areas](#categorize-security-areas)
-- [Determine Authentication Factors](#determine-authentication-factors)
-- [Select Authentication Mechanisms](#select-authentication-mechanisms)
+- [Categorize security areas](#categorize-security-areas)
+- [Determine authentication factors](#determine-authentication-factors)
+- [Select the authentication mechanisms needed to protect critical assets](#select-authentication-mechanisms)
 
-Additional guidance regarding aligning FSL to PACS authentication factors can be found in the [Security Control Overlay for Electronic Physical Access Control Systems (ePACS)_](https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf){:target="_blank"}{:rel="noopener noreferrer"} . This overlay provides additional guidance on configuring and securing PACS systems in accordance with relevant guidance and in support of the NIST Risk Management Framework (RMF).
+Additional guidance regarding aligning FSL to PACS authentication factors can be found in the [Security Control Overlay for Electronic Physical Access Control Systems (ePACS)_](../../docs/pacs-800-53-overlay.pdf){:target="_blank"}. This overlay provides additional guidance on configuring and securing PACS systems in accordance with relevant guidance and in support of the NIST Risk Management Framework (RMF).
 
 ## Assess Facility Security Level 
 

@@ -142,7 +142,6 @@ Each section of this page lists documents in reverse chronological order, with t
 
 <a href="https://csrc.nist.gov/publications/detail/white-paper/2016/04/21/best-practices-for-privileged-user-piv-authentication/final" target="_blank" rel="noopener noreferrer">**NIST White Paper: Best Practices for Privileged User PIV Authentication**</a> (PDF, April 2016)<br/>
 > This white paper was developed in response to the Cybersecurity Strategy and Implementation Plan to explain the need for multi-factor PIV-based user authentication for privileged users. It provides best practices for agencies implementing PIV authentication for privileged users.
-
 <a href="https://www.cisa.gov/cdm" target="_blank" rel="noopener noreferrer">**Continuous Diagnostics and Mitigation**</a><br/>
 > The Continuous Diagnostics and Mitigation (CDM) Program is an approach to fortifying the cybersecurity of government networks and systems. The CDM Program provides cybersecurity tools, integration services, and dashboards to participating agencies to support them in improving their respective security posture.  The CDM approach focuses on five areas for the federal enterprise: Data Protection Management, Network Security Management, Identity and Access Management, Asset Management, and Monitoring and Dashboards. 
 

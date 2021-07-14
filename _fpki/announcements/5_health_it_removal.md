@@ -10,7 +10,7 @@ permalink: fpki/announcements/2019removal/
 description: This announcement provides information related to the Health IT CAs removed from the Federal PKI.
 sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
-category: Archive
+status: Archive
 
 subnav: 
   - text: What was the change?
