@@ -165,5 +165,4 @@ Word 2016:  Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\c
 1. [XML Digital Signature](https://www.w3.org/TR/XAdES/){:target="_blank"}{:rel="noopener noreferrer"}
 1. [Digital Signatures in Office 2010](https://blogs.technet.microsoft.com/office2010/2009/12/08/digital-signatures-in-office-2010/){:target="_blank"}{:rel="noopener noreferrer"}
 1. [Digital Signature Settings in Office 2013](https://technet.microsoft.com/en-us/library/cc545900.aspx){:target="_blank"}{:rel="noopener noreferrer"}
-1. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-common-policy.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 1. [NIST Policy on Hash Functions](https://csrc.nist.gov/Projects/Hash-Functions/NIST-Policy-on-Hash-Functions){:target="_blank"}{:rel="noopener noreferrer"}
