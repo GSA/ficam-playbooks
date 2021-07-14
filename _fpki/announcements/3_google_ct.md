@@ -9,7 +9,7 @@ permalink: fpki/announcements/2018chromect/
 category: Google
 description: All TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log. Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.
 sidenav: fpkiarchivedannouncements
-category: Archived
+status: Archived
 sticky_sidenav: true
 
 subnav:
