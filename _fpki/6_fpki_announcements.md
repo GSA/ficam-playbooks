@@ -25,13 +25,13 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
     </tr>
   </thead>
   <tbody>
-    {% assign announcements = site.fpki.announcements | concat: site.data.fpkiannouncements| sort: "status" %}
+    {% assign announcements = site.fpki.announcements | concat: site.data.fpkiannouncements| sort: "pubDate" %}
     {% for announcement in announcements %}
-        <tr class="announce-table-row">
-          <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
-          <td>{{ announcement.status }}</td>
-          <td>{{ announcement.pubDate }}</td>
-          <td>{{ announcement.description }}</td>
+      <tr class="announce-table-row" data-status="{{ announcement.status }}">
+          <td headers="announce-table-heading-{{ status | slugify }} announce-table-heading-title"><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
+          <td headers="announce-table-heading-{{ status | slugify }} announce-table-heading-status">{{ announcement.status }}</td>
+          <td headers="announce-table-heading-{{ status | slugify }} announce-table-heading-date">{{ announcement.pubDate }}</td>
+          <td headers="announce-table-heading-{{ status | slugify }} announce-table-heading-description">{{ announcement.description }}</td>
         </tr>
     {% endfor %}
   </tbody>
