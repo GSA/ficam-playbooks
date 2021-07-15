@@ -15,8 +15,8 @@ subnav:
 
 These announcements and hot topic concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
 
-<table class="usa-table--borderless announce-table">
-  <thead class="usa-sr-only">
+<table class="usa-table--borderless">
+  <thead class="usa-sr">
     <tr>
       <th id="announce-table-heading-title" scope="col">Title</th>
       <th id="announce-table-heading-status" scope="col">Status</th>
@@ -25,7 +25,7 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
     </tr>
   </thead>
   <tbody>
-    {% assign announcements = site.fpki.announcements | concat: site.data.fpkiannouncements| sort: "pubDate" %}
+    {% assign announcements = site.fpki.announcements | concat: site.data.fpkiannouncements| sort: "status" %}
     {% for announcement in announcements %}
       <tr class="announce-table-row" data-status="{{ announcement.status }}">
           <td headers="announce-table-heading-{{ status | slugify }} announce-table-heading-title"><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
