@@ -15,7 +15,6 @@ subnav:
 
 These announcements and hot topic concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
 
-<div class="usa-table-container--scrollable">
 <table class="usa-table--borderless announce-table">
   <thead class="usa-sr-only">
     <tr>
@@ -37,4 +36,3 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
     {% endfor %}
   </tbody>
 </table>
-</div>
