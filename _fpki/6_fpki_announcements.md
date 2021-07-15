@@ -15,24 +15,26 @@ subnav:
 
 These announcements and hot topic concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
 
+<div class="usa-table-container--scrollable">
 <table class="usa-table--borderless announce-table">
   <thead class="usa-sr-only">
     <tr>
-      <th id="announce-table-heading-title" scope="col">Title</th>
-      <th id="announce-table-heading-status" scope="col">Status</th>
-      <th id="announce-table-heading-date" scope="col">Date</th>
-      <th id="announce-table-heading-description" scope="col">Description</th>
+      <th data-sortable scope="col" role="columnheader">Title</th>
+      <th data-sortable scope="col" role="columnheader">Status</th>
+      <th data-sortable scope="col" role="columnheader">Date</th>
+      <th data-sortable scope="col" role="columnheader">Description</th>
     </tr>
   </thead>
   <tbody>
     {% assign announcements = site.fpki.announcements | concat: site.data.fpkiannouncements| sort: "status" %}
     {% for announcement in announcements %}
-        <tr class="announce-table-row">
-          <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
-          <td>{{ announcement.status }}</td>
-          <td>{{ announcement.pubDate }}</td>
-          <td>{{ announcement.description }}</td>
+        <tr>
+          <th scope="row"><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></th>
+          <th scope="row">{{ announcement.status }}</th>
+          <th scope="row">{{ announcement.pubDate }}</th>
+          <th scope="row">{{ announcement.description }}</td>
         </tr>
     {% endfor %}
   </tbody>
 </table>
+</div>
