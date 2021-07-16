@@ -11,6 +11,8 @@ subnav:
       href: '#machine-based-enforcement-versus-user-based-enforcement'
     - text: Defining the policies for Machine Based Enforcement or User Based Enforcement
       href: '#defining-the-policies-for-machine-based-enforcement-or-user-based-enforcement'
+    - text: Defining Kerberos Policies for Reauthentication
+      href: '#defining-kerberos-policies-for-reauthentication'
 ---
 
 The US Government publishes the [United States Government Configuration Baseline (USGCB)](http://usgcb.nist.gov/usgcb_content.html){:target="_blank"}{:rel="noopener noreferrer"} for use by Executive Branch agencies to promote uniform configurations for commonly used operating systems.  The USGCB configuration guidelines for specific operating systems include references to some configurations related to smartcard (PIV) logon and should be referenced first.
@@ -48,3 +50,15 @@ The setting to enforce PIV logon is controlled by **scforceoption** in your netw
 This is the only difference when implementing the policy: which objects in your domain you apply the policy to.
 
 You can set the policy option on a single user by checking the _Smart Card is required for interactive logon_ check box in the user account properties.  You can also apply this setting using group policy objects. When the **scforceoption** setting is applied, the SMARTCARD_REQUIRED flag is added to the UserAccountControl (UAC) and the DONT_EXPIRE_PASSWORD attribute is set to true.
+
+## Defining Kerberos Policies for Reauthentication
+Although users can PIV authenticate to domain controllers, the client and the domain controller mantain those sessions using kerberos tickets.  
+
+Group policies can be configured by domain administrators to align with local security policies for maximum lifetimes of kerberos user tickets.  This may cause users to be prompted to reauthetnicate with their PIV when prompted with one of the following options:
+
+- Windows Needs Your Current Credentials
+- Please Lock this computer, then unlock it using your most recent password or smart card
+
+These prompts happen when the kerberos ticket lifetime expires and a new authentication event is required. User is set to user based enforcement, which requires a new PKINIT event with the domain controller.
+
+You can find additional information on configuring kerberos policies given the following [reference documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/maximum-lifetime-for-user-ticket){:target="_blank"}{:rel="noopener noreferrer"}.

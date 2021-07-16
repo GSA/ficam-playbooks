@@ -159,7 +159,7 @@ Websites Not-Chained to Common
    Ctrl + Shift + Del
 ```
 
-3d. Re-Install COMMON using the group policy object procedures: [Install Using Group Policy Objects](https://fpki.idmanagement.gov/truststores/microsoft/){:target="_blank"}
+3d. Re-Install COMMON using the group policy object procedures: [Install Using Group Policy Objects](../fpki/common/distribute-os#use-microsoft-group-policy-object-gpo){:target="_blank"}
 
 3e. Repeat website tests from Step 6. 
 
