@@ -29,7 +29,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 8, 2021
   system: DoD Root CA 3
-  change_description: The DoD Root CA 3 issued a certificate to DOD EMAIL CA-62.
+  change_description: DoD Root CA 3 issued a certificate to DOD EMAIL CA-62.
   contact: dodpke at mail dot mil
   ca_certificate_hash: cc04a4f733b767761de8935d4c745eb25524b505
   ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
@@ -43,7 +43,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 1, 2021
   system: DoD Root CA 3
-  change_description: The DoD Root CA 3 issued a certificate to DOD EMAIL CA-63.
+  change_description: DoD Root CA 3 issued a certificate to DOD EMAIL CA-63.
   contact: dodpke at mail dot mil
   ca_certificate_hash: 1b977e3104f27cd4afb47d502e09037a956ab126
   ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
@@ -57,7 +57,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 1, 2021
   system: DoD Root CA 3
-  change_description: The DoD Root CA 3 issued a certificate to DOD EMAIL CA-64.
+  change_description: DoD Root CA 3 issued a certificate to DOD EMAIL CA-64.
   contact: dodpke at mail dot mil
   ca_certificate_hash: 8ca4fcf4d1186f52e243be7b8cccfeb0ec7d4f4e
   ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
@@ -71,7 +71,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 8, 2021
   system: DoD Root CA 3
-  change_description: The DoD Root CA 3 issued a certificate to DOD EMAIL CA-65.
+  change_description: DoD Root CA 3 issued a certificate to DOD EMAIL CA-65.
   contact: dodpke at mail dot mil
   ca_certificate_hash: 671288d3adbb5909aa2858e3f86498ded6fd85a0
   ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
@@ -85,7 +85,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 1, 2021
   system: DoD Root CA 3
-  change_description: The DoD Root CA 3 issued a certificate to DOD ID CA-62.
+  change_description: DoD Root CA 3 issued a certificate to DOD ID CA-62.
   contact: dodpke at mail dot mil
   ca_certificate_hash: 14f4cfd8364412a6a27e5bba82c5342ff9b337a7
   ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
@@ -99,7 +99,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 1, 2021
   system: DoD Root CA 3
-  change_description: The DoD Root CA 3 issued a certificate to DOD ID CA-64.
+  change_description: DoD Root CA 3 issued a certificate to DOD ID CA-64.
   contact: dodpke at mail dot mil
   ca_certificate_hash: d9991bd1e89ae5a8b1143c3c37f01103779b8db7
   ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
@@ -113,7 +113,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 1, 2021
   system: DoD Root CA 3
-  change_description: The DoD Root CA 3 issued a certificate to DOD ID CA-65.
+  change_description: DoD Root CA 3 issued a certificate to DOD ID CA-65.
   contact: dodpke at mail dot mil
   ca_certificate_hash: 2838d25ae351654a094f00348f4bd0ea3178d871
   ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
@@ -127,7 +127,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 8, 2021
   system: DoD Root CA 3
-  change_description: The DoD Root CA 3 issued a certificate to DOD SW CA-66.
+  change_description: DoD Root CA 3 issued a certificate to DOD SW CA-66.
   contact: dodpke at mail dot mil
   ca_certificate_hash: 8f9d91c33d4b4e4e6fd7690c053048a7aabbd3a2
   ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
@@ -141,7 +141,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 8, 2021
   system: DoD Root CA 3
-  change_description: The DoD Root CA 3 issued a certificate to DOD SW CA-67.
+  change_description: DoD Root CA 3 issued a certificate to DOD SW CA-67.
   contact: dodpke at mail dot mil
   ca_certificate_hash: 7b38aa22d6f76a8ff48b23d2485e7d2520f99cab
   ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
