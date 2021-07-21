@@ -25,6 +25,160 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: June 8, 2021
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD EMAIL CA-62.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: cc04a4f733b767761de8935d4c745eb25524b505
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD EMAIL CA-62, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: June 1, 2021
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD EMAIL CA-63.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 1b977e3104f27cd4afb47d502e09037a956ab126
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD EMAIL CA-63, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: June 1, 2021
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD EMAIL CA-64.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 8ca4fcf4d1186f52e243be7b8cccfeb0ec7d4f4e
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD EMAIL CA-64, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: June 8, 2021
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD EMAIL CA-65.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 671288d3adbb5909aa2858e3f86498ded6fd85a0
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD EMAIL CA-65, OU=PKI ,OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: June 1, 2021
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD ID CA-62.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 14f4cfd8364412a6a27e5bba82c5342ff9b337a7
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD ID CA-62, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: June 1, 2021
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD ID CA-64.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: d9991bd1e89ae5a8b1143c3c37f01103779b8db7
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD ID CA-64, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: June 1, 2021
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD ID CA-65.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 2838d25ae351654a094f00348f4bd0ea3178d871
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD ID CA-65, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: June 8, 2021
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD SW CA-66.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 8f9d91c33d4b4e4e6fd7690c053048a7aabbd3a2
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD SW CA-66, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: June 8, 2021
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD SW CA-67.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 7b38aa22d6f76a8ff48b23d2485e7d2520f99cab
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD SW CA-67, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: July 19, 2021
+  change_type: CA Certificate Issuance
+  start_datetime: July 6, 2021
+  system: ECA Root CA 4
+  change_description: ECA Root CA 4 issued a certificate to WidePoint ECA 8.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 334707684fe4bccfb4dbf50ed3c463ed9ea77467
+  ca_certificate_issuer: CN=ECA Root CA 4, OU=ECA, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint ECA 8, OU=Certification Authorities, OU=ECA, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/ECAROOTCA4.crl
+  aia_uri: http://crl.disa.mil/issuedto/ECAROOTCA4_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  
+- notice_date: July 16, 2021
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: DoD Interoperability Root CA 2
+  change_description: The DoD Interoperability Root CA 2 intends to reissue a certificate to ECA Root CA 4. The existing certificate expires on July 31, 2021.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=ECA Root CA 4, OU=ECA, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODINTEROPERABILITYROOTCA2.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c
+  sia_uri: http://crl.disa.mil/issuedby/ECAROOTCA4_IB.p7c
+  ocsp_uri: http://ocsp.disa.mil/
+
 - notice_date: June 17, 2021
   change_type: CA Certificate Revocation
   start_datetime:
