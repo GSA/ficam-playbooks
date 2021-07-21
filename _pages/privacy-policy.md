@@ -43,7 +43,7 @@ We use persistent cookies in two ways, both of which enhance your experience on 
 1. To remember you when your browser comes back to the site, so we don’t invite you to take our customer satisfaction survey every time you visit.
 2. To get aggregate metrics on site usage to understand how people are using the site and how we can make it better. Government agencies only ever receive traffic statistics anonymously and in the aggregate.
 
-Most Internet browsers automatically accept persistent cookies. Although using persistent cookies creates a much better experience for you, this site will also work without them. If you don’t want to accept cookies, you can edit your browser’s options to stop accepting persistent cookies or to prompt you before accepting a cookie from the websites you visit. Here’s how you can disable cookies.
+Most Internet browsers automatically accept persistent cookies. Although using persistent cookies creates a much better experience for you, this site will also work without them. If you don’t want to accept cookies, you can edit your browser’s options to stop accepting persistent cookies or to prompt you before accepting a cookie from the websites you visit.
 
 ## Site Security
 
