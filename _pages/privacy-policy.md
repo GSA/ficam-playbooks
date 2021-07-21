@@ -55,4 +55,4 @@ Unauthorized attempts to upload information or change information on this servic
 
 ## Other Website Policies
 
-To learn more about how we manage this website, view accessibility, linking, and other website policies for IDManagement.gov.
+To learn more about how we manage this website, view accessibility, linking, and [other website policies](../website-policy/){:target="_blank"} for IDManagement.gov.
