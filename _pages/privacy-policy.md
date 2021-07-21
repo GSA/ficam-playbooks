@@ -21,12 +21,13 @@ This website automatically collects some basic system information to help us mea
 
 When you visit IDManagement.gov, we may store some or all of the following:
 
-Internet protocol (IP) address from which you accessed the site;
-Date and time of your visit;
-Name of the file or words you searched;
-Items clicked on a page;
-Browser and operating system used; and
-Name of the website from which you linked to IDmanagement.gov
+- Internet protocol (IP) address from which you accessed the site;
+- Date and time of your visit;
+- Name of the file or words you searched;
+- Items clicked on a page;
+- Browser and operating system used; and
+- Name of the website from which you linked to IDmanagement.gov
+
 We do not use this information to associate search terms or patterns of site navigation with individual users. We do not share or sell visitor data for the purposes of advertising, marketing, or any other commercial purpose.
 
 ## Information You Send Us
