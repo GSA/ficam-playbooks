@@ -89,6 +89,8 @@ pivnetwork:
     href: /piv/network/localca/
   - text: Authentication Assurance
     href: /piv/network/auth/
+  - text: Common Issues and Solutions
+    href: /piv/network/solutions/
 
 pivengineer:
   - text: Back to PIV Guide
