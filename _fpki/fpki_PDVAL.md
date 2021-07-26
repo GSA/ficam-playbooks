@@ -29,3 +29,8 @@ Date processing/validity periods, path constraints, policy constrints, etc.
 
 ## What is Revocation Checking
 outline how CRLs and OCSP work at a high level
+
+Sources may include:
+[RFC 5280 (chapter 6)](https://datatracker.ietf.org/doc/html/rfc5280#page-71)
+[RFC 4158](https://datatracker.ietf.org/doc/html/rfc4158)
+[RFC 6960](https://datatracker.ietf.org/doc/html/rfc6960)
