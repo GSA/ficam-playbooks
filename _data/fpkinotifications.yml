@@ -25,6 +25,19 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: August 2, 2021
+  change_type: CRL Outage
+  system: DigiCert Federal Shared Service Provider
+  change_description: At approximately 7:15 AM (ET) on August 2, 2021, DigiCert PIV users reported issues with  authentication to some relying party applications; it was determined that this was the result of an exipred CRL being served by the Symantec SSP Intermediate CA G4 and its subordinate CAs.
+  contact: fpki_support at digicert dot com
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: N/A
+  ca_certificate_subject: N/A
+  cdp_uri: http://ssp-crl.symauth.com/SSP/SSPG4.crl
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: N/A
+
 - notice_date: July 19, 2021
   change_type: CA Certificate Issuance
   start_datetime: June 8, 2021
