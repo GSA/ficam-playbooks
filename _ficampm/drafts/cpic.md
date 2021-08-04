@@ -1,14 +1,16 @@
+<!--
 ---
 layout: page
 collection: ficampm
 title: Capital Planning and Investment Control (CPIC)
-permalink: ficampm/cpic/
+permalink:
 sidenav: pm
 
 subnav:
     - text: Title
       href: '#title'
 ---
+-->
 
 Use the Capital Planning and Investment Control (CPIC) approach to align investments with your agency's mission, support business needs, reduce risk, and increase returns. The CPIC process includes:
 

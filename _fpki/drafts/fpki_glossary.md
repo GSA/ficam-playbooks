@@ -1,8 +1,10 @@
+<!--
 ---
 layout: default
 title: Glossary
-permalink: /glossary/
+permalink: fpki/glossary/
 ---
+-->
 
 ## Glossary ##
 

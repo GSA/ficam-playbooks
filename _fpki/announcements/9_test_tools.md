@@ -5,7 +5,7 @@ pubDate: May 18, 2021
 collection: fpki
 permalink: fpki/announcements/test-tools/
 description: Release announcement for the Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
-status: Active
+category: Active
 sticky_sidenav: true
 sidenav: fpkiactiveannouncements
       
@@ -30,4 +30,4 @@ For more information, see the following web sites:
      - Support page: [https://cpct.app.cloud.gov/help/](https://cpct.app.cloud.gov/help/){:target="_blank"}{:rel="noopener noreferrer"}  
 
 ## Who can I contact for help or more information?
-Email us at fpki@gsa.gov.
+Email us at fpki at gsa.gov.

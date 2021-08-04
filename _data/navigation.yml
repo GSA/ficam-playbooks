@@ -67,6 +67,8 @@ piv:
     href: /piv/network/
   - text: Engineering Guides
     href: /piv/engineer/
+  - text: User Guides
+    href: /piv/user-guide/
 
 pivnetwork:
   - text: Back to PIV Guide
@@ -95,6 +97,12 @@ pivengineer:
     href: /piv/engineer/firefox/
   - text: Enable SSH
     href: /piv/engineer/ssh/
+    
+pivuser:
+  - text: Back to PIV Guide
+    href: /piv/user-guide/
+  - text: Configure Outlook for Secure Email
+    href: /piv/user-guide/outlook/
 
 ## FPKI Navigation
 
@@ -229,20 +237,6 @@ pm:
     href: /pm/examples/
 
 ## Other Site Navigation
-
-buy:
-  - text: Buy Identity Products and Services
-    href: /buy/
-  - text: Trust Services
-    href: /buy/trust-services/
-    
-sell:
-  - text: Sell Identity Products and Services
-    href: /sell/
-  - text: FIPS 201 Evaluation Program
-    href: /sell/fips201ep/
-  - text: FIPS 201 Approved Product List
-    href: /sell/fips201apl/
     
 policy:
   - text: Contact Us
@@ -283,6 +277,10 @@ sso:
 dw:
   - text: Digital Worker Playbook
     href: /playbooks/dw/
+
+playbook-pam:
+  - text: PAM Playbook
+    href: /playbooks/pam/
     
 # Digital Signature Guides Navigation
 
@@ -305,7 +303,6 @@ signword:
     href: /signword/#verify-digital-signature-settings
   - text: Additional Resources
     href: /signword/#additional-resources
-    
     
 signwordofr:
   - text: Digitally Signing Documents for Submission to Office of the Federal Register
