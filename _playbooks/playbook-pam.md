@@ -842,7 +842,6 @@ resource analysis (Section 2.1).
 ##### Figure 20: System and Services Acquisition
 
 ## System and Communications Protection
-
 |   Countermeasure |   SP 800 - 53 Control |   Explanation |   Relevant Protected Resources |
 |:----------------:|:---------------------:|---------------|--------------------------------|
 |   **Boundary protection** |   SC- 7 |   Monitoring and controlling communications at the external boundary of an information system allows an agency to develop a baseline of normal network device behavior. Using baselines, an agency can deploy anomaly detection capabilities to identify suspicious insider activity. Furthermore, an agency can opt to route networked privileged access through a dedicated interface for improved access control and auditing of users with elevated access. |   <ul><li>Network and infrastructure</li></ul>
