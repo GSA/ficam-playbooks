@@ -279,7 +279,7 @@ dw:
     href: /playbooks/dw/
 
 playbook-pam:
-  - text: PAM Playbook
+  - text: Privileged User Playbook
     href: /playbooks/pam/
     
 # Digital Signature Guides Navigation

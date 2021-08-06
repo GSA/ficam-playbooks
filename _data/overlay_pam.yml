@@ -1,0 +1,269 @@
+##Access Control
+- 
+   category: 'Access Control'
+   countermeasure: 'Manage privileged user accounts'
+   control: 'AC-2(7)'
+   explanation: '<ul><li>Management of users that have been granted elevated access requires additional scrutiny by agency personnel. Privileged user accounts can be managed through a variety of ways, including, </li><li>Appropriate approval mechanisms based on mission and business functions.</li><li>Clear identification of roles and responsibilities</li><li>Access attributes (i.e., timeframes, point-of-origin)</li><li>Timely issuance and revocation process for credentials based on established timeline or event (i.e., individual is removed from group)</li><li>Continuous evaluation of access needs.</li></ul>'
+   resource: '<ul><li>Applications</li><li>Web services</li><li>Network</li><li>Infrastructure</li></ul>'
+-  
+   category: 'Access Control'
+   countermeasure: 'Institute separation of duties for privileged users'
+   control: 'AC-5'
+   explanation: 'Separation of duties does not guarantee that privileged users will not abuse or misuse their elevated access, but it can mitigate the risk of an individual privileged user inflicting harm. By dividing the mission functions and information system support performed by privileged users among a pool of individuals or accounts, an agency can work to mitigate one privileged user from amassing too much power or undermining monitoring activities. In particular, an agency should confirm the same individuals do not administer both access control and audit functions. An agency should document how its individual privileged users are segregated throughout the agency.'
+   resource: '<ul><li>Applications and Web services</li><li>Network and Infrastructure</li></ul>'
+- 
+   category: 'Access Control'
+   countermeasure: 'Exercise the principle of least privilege for information systems'
+   control: 'AC-6'
+   explanation: '<ul><li>The principle of least privilege involves confirming an agency’s privileged users are only granted access to the information systems required to carry out each individual’s specific job duties. It is an important countermeasure to mitigating unwanted behavior by privileged users.</li><li>Least privilege is particularly important regarding the management of privileged users, as their elevated access already greatly increases the consequence of their actions and impact on protected resources.</li><li>Privileged users can accumulate authorizations as they transition from projects and departments. The failure to conduct continuous evaluation activities and terminate excess privileges as appropriate renders these privileged users a security risk. Such individuals can cause harm to an agency, knowingly or unknowingly.</li></ul>'
+   resource: '<ul><li>Applications and Web services</li><li>Network and Infrastructure</li></ul>'
+-  
+   category: 'Access Control'
+   countermeasure: 'Secure remote access for privileged users'
+   control: 'AC-17'
+   explanation: '<ul><li>Remote access points such as dial-up, broadband, and wireless, can be complex to monitor (e.g., VPNs with encrypted tunnels). Certifying privileged users are subject to stringent access controls and monitoring is thus especially important with remote access.</li><li>Privileged users should not be able to act remotely the same way they do when they access the network locally.</li><li>An agency can protect the enterprise from the privileged user insider threat via remote access by Limiting the execution of privileged commands and access for a narrowly defined subset of needs.</li><li>Establishing stringent connection requirements and session controls (e.g., session duration limitations, automatic termination when user is idle) Instituting a remote monitoring and intervention capability.</li></ul>'
+   resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+
+## Literacy Training and Awareness 
+- 
+   category: 'Literacy Training and Awareness'
+   countermeasure: 'Provide security and privacy literacy awareness training'
+   control: 'AT-2'
+   explanation: 'Agencies should work to ensure that privileged users who access information systems receive security awareness training on the role everyone plays in maintaining security, and insider threat training should be a component of this. Not only does this training bolster an agency’s insider threat detection capabilities, but it serves as a deterrent for individuals who consider abusing the access granted to them. A training module is a fitting venue to discuss the inherent risk posed by privileged users.'
+   resource: '<ul><li>Content and data </li><li>Applications and Web Services </li><li>Networks and Infrastructure</li><li>Facilities</li></ul>'
+- 
+   category: 'Literacy Training and Awareness'
+   countermeasure: 'Institute role-based security training for privileged'
+   control: 'AT-3'
+   explanation: 'An agency should train privileged users on proper security protocol based on their job duties. Training is a preventive method for protecting the enterprise against accidental insiders. This is especially important for privileged users, because the consequence of their abuse or misuse on protected resources can be greater than users who do not have elevated access. Individuals tasked with overseeing physical security controls require different specialized training than database administrators, for example. The agency should confirm each privileged user has received adequate technical training based on assigned duties and the protected resources they are each responsible for.'
+   resource: '<ul><li>Content and data</li><li>Applications and Web Services</li><li>Networks and Infrastructure</li><li>Facilities</li></ul>'
+
+## Audit abd Accountability
+- 
+   category: 'Audit and Accountability'
+   countermeasure: 'Determine the pool of audit events'
+   control: 'AU-2'
+   explanation: 'A primary component of an agency’s ability to manage its privileged user population is an audit capability using a log correlation engine or security information and event management (SIEM) that can monitor employee activities. An agency needs to determine the scope of audit events, but should work to ensure that all types of privileged users are adequately monitored. When determining the pool of audit events, all departments within the agency should be engaged to leverage all audit-related information in order to generate a comprehensive picture of an employee’s relative risk. Audit events can include:<ul><li>Password changes</li><li>Failed access attempts related to information systems</li><li>Administrative privilege usage</li><li>Secure credential usage (e.g., PIV card, CAC, third-party)</li></ul>'
+   resource:  '<ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>'
+- 
+   category: 'Audit and Accountability'
+   countermeasure: 'Use adequate audit records'
+   control: 'AU-3'
+   explanation: 'Audit records that contain vague information or that lack adequate event details are ineffective in assisting an agency in managing its workforce. Audit records should include, <ul><li>Type of event</li><li>Time of the event</li><li>Location of event</li><li>Source of event</li><li>Outcome of event</li><li>Identity of individuals involved with event</li></ul> Not all auditable events can be audited at the same time, so the agency should determine under which circumstances events are audited. It should be noted that audit records for privileged user activity that come with the computing platform are often inadequate, and require refining.'
+   resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>'
+- 
+   category: 'Audit and Accountability' 
+   countermeasure: 'Set up processes to review, analyze, and report on auditing records'
+   control: 'AU-6'
+   explanation: 'Auditing components such as account usage, remote access, and configuration settings allow an agency insight into whether its privileged users are abiding by security protocol. An agency can improve its ability to mitigate the threat posed by privileged users through enhancing the auditing capability’s integration and correlation with other processes like physical monitoring, non-technical sources, and vulnerability scanning. Full- text analysis of privileged commands can greatly improve an agency’s management of its privileged users and accounts. In particular, malicious insiders require an integrated, enterprise-wide mitigation approach. To mitigate unwanted behavior by malicious privileged users, an agency should consider feeding its auditing information into an analytic capability.'
+   resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>'
+- 
+   category: 'Audit and Accountability'
+   countermeasure: 'Protect audit information from unwanted changes'
+   control: 'AU-9'
+   explanation: 'An agency should take technical measures to protect its audit resources (e.g., settings, records, and reports), such as limiting access. The management of audit resources inherently requires elevated access. A privileged user insider with nefarious motives may have incentive to tamper with an agency’s audit capabilities. A privileged user that is subject to the auditing processes and also has the means to alter audit resources poses an intrinsic risk of manipulation. An agency can dedicate a subset of privileged users to manage the audit functions to improve reliability of the audit capabilities.'
+   resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>'
+
+## Configuration Management
+-
+    category: 'Configuration Management'
+    countermeasure: 'Develop and configuration baselines for information systems'
+    control: 'CM-2'
+    explanation: 'By establishing baseline configurations for information systems and their components, an agency can help prevent privileged users from incorrectly assuming a role in altering the information system. Even though baseline configurations must change over time to reflect the current enterprise architecture, this countermeasure centralizes information about the information system components and network topology. This centralization can delineate parameters around the role of privileged users to provide guidance on configurations management so the system performs as intended. Documenting the configurations of all assets allows the agency to audit for anomalies, possible signs of insider activity from the privileged users in relevant roles.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+-
+    category: 'Configuration Management'
+    countermeasure: 'Change configuration baselines in a secure, systematic manner'
+    control: CM-3
+    explanation: 'Unwanted changes to configuration baselines can create severe vulnerabilities for information system components. An agency should use Configuration Change Boards to approve major changes to the baseline configuration to reflect the current enterprise architecture. Since this is a privileged function, changes should be conducted by a group of people to maintain accountability and avoid abuse by one individual. An agency should have a clearly defined system of proposal, justification, implementation, testing, review, and disposition for system upgrades and modifications.'
+    resource: '<ul><li>Applications and web services </li><li>Network and infrastructure</li></ul>'
+-
+    category: 'Configuration Management'
+    countermeasure: 'Appropriately restrict privileged users’ ability to modify information systems'
+    control: CM-5
+    explanation: 'An agency should limit the privileges for modifying the hardware and software or firmware components of an information system because these changes have such a significant impact on the security of protected resources. The individuals who perform these duties are privileged users because of these changes require elevated access. An agency should maintain access records to confirm these privileged users appropriately carry out their duties. In addition, an agency can institute processes like dual authorization and code authentication for installed components to restrict the privileged users’ ability to misuse or abuse their trusted position of modifying the information system.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Configuration Management'
+    countermeasure: 'Establish, document, and monitor configuration settings'
+    control: CM-6
+    explanation: 'An agency needs to establish and document configuration settings, as well as record deviations from the agreed upon security parameters for the various information systems within the organization. Once the security parameters are defined and documented, an agency is positioned to monitor configuration changes to ensure that the privileged users tasked with configuration duties are adhering to agency policies.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+-
+    category: 'Configuration Management'
+    countermeasure: 'Ensure information system components are fitted for least functionality'
+    control: CM-7
+    explanation: 'By limiting functionality of information system components to only those that are necessary, an agency can protect the enterprise against unwanted data exfiltration by employees. For example, physical or logical ports, fire-sharing capabilities, or instant messaging can be disabled when the component does not require its use. An agency can employ blacklisting (list of unwanted software) or whitelisting (list of authorized software) to further inhibit unwanted actions. Implementing these controls allows the agency an extra layer of protection against abuse or misuse of its systems by privileged users, as well as standards users.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+-
+    category: 'Configuration Management'
+    countermeasure: 'Create a centralized inventory of information system components'
+    control: CM-8
+    explanation: 'Implementing a centralized information system component inventory allows an agency to hold its privileged users accountable. Hardware inventory specification, software license information, software version numbers, and component owners should be well documented. When a privileged user transitions within the organization or is granted additional access, the individual may accumulate entitlements, licenses, or components that they do not need for his/her assigned duties. This can create an opportunity for abuse or misuse and undermine monitoring activities. With a centralized inventory, an agency can protect itself against unwanted components, ensure components are properly administered, and avoid duplicate accounting of components. An understanding of an organization’s assets is an important element of insider threat mitigation, especially in regards to the privileged users tasked with administration and security functions for these information system components.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+
+## Contingency Planning
+-
+    category: 'Contingency Planning'
+    countermeasure: 'Explanation Relevant Protected Resources Use an alternate storage site'
+    control: 'CP- 6'
+    explanation: 'An alternative storage site for information system backup information, geographically distinct from the primary site, increases complexity for a malicious privileged user to purposefully inflict damage on an agency. By housing information in two or more distinct places, an individual would have to destroy or modify the information housed in both sites to permanently cripple the information system’s backup capabilities. An agency should carefully monitor and implement stringent processes for the privileged users who have access to both sites content and data.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+-
+    category: 'Contingency Planning'
+    countermeasure: 'Backup information system data appropriately'
+    control: 'CP- 9'
+    explanation: 'As part of an agency’s contingency plan, user-level, system-level, and security-related documentation should be backed up using digital signatures, cryptographic hashes, etc. Backing up information can prevent the unwanted destruction or modification of information. An agency should consider implementing dual authorization mechanisms for the privileged users that manage this backup data.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+-
+    category: 'Contingency Planning'
+    countermeasure: 'Restore information systems following failures and conduct post- recovery assessments'
+    control: 'CP- 10'
+    explanation: 'An agency should have secure recovery processes in place if information systems are disrupted. An information system failure presents ample opportunity for a malicious privileged user to manipulate critical recovery processes tasked to him/her. An agency should conduct assessments of the information systems once fully restored to ensure all recovery processes executed by the privileged users tasked with these duties were valid.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+
+## Identification and Authentication
+-
+    category: 'Identification and Authentication'
+    countermeasure: 'Require the use of PIV credential or Multi-Factor Authentication'
+    control: 'IA- 2'
+    explanation: 'All agencies should be leveraging PIV card credentials for employee access to physical and logical resources per HSPD-12 and alignment with the ICAM target state. Information systems need to uniquely identify and authenticate its users to maintain security. However, to manage privileged users, an agency could require an additional layer of authentication, in addition to the standard multifactor authentication used for local and network access. Namely, an agency should consider implementing unique identification of individuals using shared privileged accounts and detailed accountability of individual privileged user activity.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>'
+
+## 'Incident Response'
+-
+    category: 'Incident Response'
+    countermeasure: 'Develop and implement incident handling capability commensurate to inherent risk of privileged user abuse'
+    control: 'IR- 4'
+    explanation: 'As part of business process development for an agency’s information systems, an incident handling capability must be designed to incorporate detection, analysis, containment, eradication, and recovery. The consequence of privileged user misuse or abuse of the information system is greater than standard users because of privileged users’ elevated access. As a result, privileged users may require more vigorous audit, network, and physical monitoring. The primary purpose of these robust monitoring capabilities is to enable the agency to handle security incidents effectively. As such, mitigating the insider threat posed by privileged users through incident handling is an important component to managing the privileged user population effectively. An agency can achieve effective incident handling through organization-wide coordination of mission owners, information system owners, human resources, physical and personnel security, etc.'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Incident Response'
+    countermeasure: 'Develop an information spillage response plan'
+    control: 'IR- 9'
+    explanation: 'In managing its privileged user population, an agency should work to mitigate information spillage namely, the unwanted disclosure of information and the theft of intellectual property. This includes when, intentionally or accidentally, classified or sensitive information is placed on information systems that are unwanted to process it. Developing a secure, timely, and organized response to information spillage can mitigate the harmful effects on the agency. Since information spillage is a primary concern for agencies in regards to privileged users, developing an appropriate response plan only serves to improve an agency’s privileged user management.'
+    resource: '<ul><li>Content and data</li></ul>'
+
+## Maintenance
+-
+    category: Maintenance
+    countermeasure: 'Exercise strict supervision and access procedures for maintenance personnel'
+    control: 'MA- 5'
+    explanation: 'Maintenance personnel can be considered privileged users due to their trusted position with information systems and the extraordinary access granted to them. Software and hardware require maintenance often on short notice. As such, an agency might have to bring in individuals not previously identified as authorized maintenance personnel. An agency should maintain a list of individuals authorized to carry out this type of maintenance. For those individuals who are not escorted throughout the facility, the agency should verify these maintenance personnel have the necessary and required authorizations. For those individuals who do not possess required authorizations and must be escorted, supervisory personnel must possess the technical expertise to oversee the maintenance activities. This measure can detect or deter harmful activity on the part of the maintenance personnel. Temporary credentials (e.g., visitor badge, password) granted to maintenance personnel must be terminated as soon as maintenance concludes.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li><li>Facilities</li></ul>'
+
+## Media Protection
+-
+    category: 'Media Protection'
+    countermeasure: 'Restrict media use for privileged users'
+    control: 'MP- 7'
+    explanation: 'An agency can restrict the types of media used on information systems through technical or policy-based safeguards. Prohibiting the use of writeable, portable devices or restricting the use of all media to a set of approved devices can prevent the unwanted disclosure of information, intellectual property theft, or the introduction of dangerous files or software. The restriction of media use is especially important regarding privileged users, because these users often have sweeping access to an agency’s files for administrative or security purposes. Additional controls around the content and data that privileged users’ access may be necessary to confirm these users’ interactions with these resources are restricted to those necessary for their assigned duties.'
+    resource: '<ul><li>Content and data</li><li>Networks and infrastructure</li></ul>'
+
+## Personnel Security
+-
+    category: 'Personnel Security'
+    countermeasure: 'Develop, document, and disseminate clear policies on personnel security'
+    control: 'PS- 1'
+    explanation: 'An agency should monitor employees with elevated access beginning with the hiring process. In managing components of a workforce, clearly documented personnel policies are important. The privileged user should be aware of all facets of the agency’s duties and abilities to determine access rights for, adjust responsibilities of, and monitor its privileged user population. This not only provides legal protection for the agency, but the ramifications of misuse or abuse serve as a deterrent to unwanted behavior by privileged users.'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Personnel Security'
+    countermeasure: 'Assign risk designations for privileged users'
+    control: 'PS- 2'
+    explanation: 'An agency should assign a risk designation for all positions within the organization which will inform an individual’s screening criteria and authorization procedures. As privileged users likely have the potential for adverse impact on the efficiency or integrity of the services an agency provides, these privileged positions may warrant categorization as medium or high risk, depending on the agency’s information systems, data, and the individuals’ assigned duties. This risk categorization acts as tool for an agency to manage a privilege user’s employee lifecycle.'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Personnel Security'
+    countermeasure: 'Screen privileged users based on type of risk designation'
+    control: 'PS- 3'
+    explanation: 'Personnel screening criteria hinge on an individual’s risk designation. However, an agency is free to define different screening conditions and frequencies based on the information processed, stored, or transmitted by information systems. If a user has elevated access to manage a critical information system, an agency can enforce stricter screening procedures. Screening involves coordination with personnel security (e.g., background investigation status, reinvestigation).'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Personnel Security'
+    countermeasure: 'Follow secure and comprehensive personnel termination procedures'
+    control: 'PS- 4'
+    explanation: 'Termination procedures are especially important if the departing employee had been granted elevated access, because a disgruntled, privileged user poses an even greater risk to an agency’s protected resources than a disgruntled user with standard access. When terminating an employee, the agency should: <ul><li>Immediately terminate the employee’s physical and logical access (i.e., PIV card, keys, system administration manuals), especially if the termination occurred under unfavorable circumstances, to prevent unwanted access to protected resources once termination is finalized.</li><li>Notify security personnel and the departing employees’ colleagues of the departure, so these individuals do not assist the departed employee in accessing the protected resources because of their familiarity.</li><ul> Definition can be found in 5 C.F.R. 731.106.'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Personnel Security'
+    countermeasure: 'Continuously evaluate authorizations granted to the privileged user population'
+    control: 'PS- 5'
+    explanation: 'If a privileged user transfers to a different department within the agency, the individual might be granted additional physical and logical access associated with new job duties. Failing to terminate privileges from an individual’s prior assignment risks inadvertently empowering the privileged user with a greater collection of authorizations than is explicitly needed. Maintaining access authorizations in line with Human Resources records is critical to mitigating the threat a privileged user can pose to an agency. An agency should conduct continuous evaluation on its privileged users to confirm these individuals have an ongoing operational need for their privileges.'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Personnel Security'
+    countermeasure: 'Confirm employees sign access agreements prior to granting them access'
+    control: 'PS- 6'
+    explanation: 'Prior to granting access, an agency should develop, distribute, and document signed access agreements for employees who use agency information systems. Through non-disclosure agreements, acceptable use agreements, and rules of behavior agreements an agency can hold its employees accountable. An agency should consider tailoring these agreements to privileged users where necessary, as the nature of their access is very different than that of standard users.'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Personnel Security'
+    countermeasure: 'Institute a formal personnel sanctions process'
+    control: 'PS- 8'
+    explanation: 'Access agreements should explain the ramifications of employees violating the terms of agreement, including any personnel sanctions involved. By instituting a formal sanctions process the agency can protect its resources from privileged users who exhibit tendencies towards unwanted behavior.'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+
+## Physical and Environmental Protection
+-
+    category: 'Physical and Environmental Protection'
+    countermeasure: 'Monitor physical access of privileged users'
+    control: 'PE- 6'
+    explanation: 'Monitoring physical access is fundamental to conducting continuous evaluation activities, which determine on an ongoing basis that all users, including privileged users, are granted the proper access to the protected resources their job roles require. Continuous evaluation is a central component to privileged user management, as the scope of these individuals’ elevated access should be constantly validated because of the inherent risk of harm to protected resources. If an organization’s physical access monitoring detects suspicious activity, like access for unusual lengths of time, the user could present an insider threat. Robust physical monitoring capabilities serve as a deterrent to malicious insider activity.'
+    resource: '<ul><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+
+## Planning
+-
+    category: Planning
+    countermeasure: 'Resources Rules of behavior'
+    control: PL-4
+    explanation: 'An agency should administer and collect signed agreements from all users that delineate both their responsibilities and the behavior expected of them, based on their assigned duties. This process should be completed before the user is issued a unique credential to the protected resource. In particular, these rules of behavior should differ based on the level of privilege. An agency can protect itself from unwanted behavior by privileged users through such agreements. These documents can prevent accidental and complacent privileged user insider activity, and deter malicious insider activity by communicating the severe ramifications. An agency should consider requiring a renewal of such agreements periodically (e.g., annual basis).'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Risk Assessment'
+    countermeasure: 'Incorporate privileged user insider threat into enterprise-wide risk assessments'
+    control: 'RA- 3'
+    explanation: 'An agency should consider incorporating privileged user misuse and abuse of protected resources into its enterprise-wide risk assessments. Once critical data, systems, and business process are identified, the agency can assess the associated privileged user threats, vulnerabilities, and likelihood of an insider incident to inform the risk assessment. Please refer to Section 2.1 for more information on conducting a risk assessment as part of a protected resource analysis to identify privileged users.'
+    resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
+-
+    category: 'Security Assessment and Authorization'
+    countermeasure: 'Establish Interconnection Security Agreements where necessary'
+    control: CA-3
+    explanation: 'Weak governance of system interconnections can create an opportunity for insiders to exploit information systems and exfiltrate data without authorization, particularly those with privileged access. Because different systems may have different security requirements, authorizing officials should establish Interconnection Security Agreements that document the interface characteristics, security requirements, and nature of the information communicated. If the rules of system interconnection are clearly defined, accidental and complacent insider activity by privileged users who manage these systems can be avoided to some extent, while malicious insider activity by privileged users also in this role can be deterred or detected more easily.'
+    resource: '<ul><li>Network and infrastructure</li></ul>'
+-
+    category: 'System and Communications Protection'
+    countermeasure: 'Boundary protection'
+    control: 'SC- 7'
+    explanation: 'Monitoring and controlling communications at the external boundary of an information system allows an agency to develop a baseline of normal network device behavior. Using baselines, an agency can deploy anomaly detection capabilities to identify suspicious insider activity. Furthermore, an agency can opt to route networked privileged access through a dedicated interface for improved access control and auditing of users with elevated access.'
+    resource: '<ul><li>Network and infrastructure</li></ul>'
+-
+    category: 'System and Communications Protection'
+    countermeasure: 'Protection of Information at Rest'
+    control: 'SC- 28'
+    explanation: 'An agency should implement measures to protect the confidentiality and integrity of system and user information while located on storage devices. This information can be protected through cryptographic means, file sharing scanning, etc. Since privileged users’ job functions may entail performing administrative and security related functions on this information, enhanced protection increases an agency’s privileged user management capabilities.'
+    resource: '<ul><li>Content and data</li><li>Network and infrastructure</li></ul>'
+-
+    category: 'System and Information Integrity'
+    countermeasure: 'Internal information system monitoring'
+    control: 'SI- 4'
+    explanation: 'As part of formalized insider threat program, an agency should monitor its information systems for internal events. This can include real time monitoring of audit activities, access patterns, and communications traffic anomalies. The agency can define its own additional monitoring requirements for its privileged users based on its systems, mission, and business processes. However, information system monitoring is a critical component of an organization’s continuous monitoring and incident response programs, and thus an integral part of privileged user management.'
+    resource: '<ul><li>Network and infrastructure</li></ul>'
+-
+    category: 'System and Services Acquisition'
+    countermeasure: 'Have a robust system development life cycle'
+    control: 'SA- 3'
+    explanation: 'An agency needs a well-defined system development life cycle (SDLC) to verify that appropriate controls and business processes are in place to guard against privileged user abuse or misuse of protected resources. To effectively integrate these security requirements into the enterprise architecture, qualified personnel from across the organization need to work in unison. As some of these personnel may have privileged access, it is important to identify these individuals and then define and document their information security roles and responsibilities to reduce the ease of exploitation. Please refer to Section 2.1 for more information on identifying privileged users.'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+-
+    category: 'System and Services Acquisition'
+    countermeasure: 'Identify vulnerabilities within information systems'
+    control: 'SA- 5'
+    explanation: 'As part of the implementation and operation of security controls associated with information systems, known vulnerabilities regarding configuration and use of privileged functions should be identified. This knowledge allows an agency to target areas for stringent access control and monitoring of privileged users. Furthermore, these vulnerabilities can feed into the enterprise risk assessment (RA-3).'
+    resource: '<ul><li>Applications and web services</li><li>Network and infrastructure</li></ul>'
+
+-   category: 'System and Services Acquisition'
+    countermeasure: 'Require that information system developers structure for least privilege'
+    control: 'SA- 17'
+    explanation: 'An agency can require that internal or external developers of the information system, system component, or system service structure security-relevant hardware, software, and firmware to facilitate controlling access by least privilege. This is particularly important for privileged users, who are can be granted sweeping access to systems with a default account because this is easier than creating dozens of personalized accounts assigned to individual privileged users.'
+    resource: '<ul><li>Network and infrastructure</li></ul>'
