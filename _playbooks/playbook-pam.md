@@ -26,7 +26,7 @@ subnav:
       href: '#appendix-a-reference-documentation'
     - text: Appendix B. Privileged User Agreement
       href: '#appendix-b-privileged-user-agreement'
-    - text: Appendix C. Privileged Accoumnt DIRA
+    - text: Appendix C. Privileged Account DIRA
       href: '#appendix-c-privileged-account-dira'
     - text: Appendix D. 800-53 Privileged User Overlay
       href: '#appendix-d-nist-sp-800-53-privileged-user-overlay'
@@ -39,10 +39,13 @@ subnav:
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
-[![General Services Administration Logo]({{site.baseurl}}/assets/img/logo-gsa.png){:style="width:50%;float:left;"}]({{site.baseurl}}/assets/img/logo-gsa.png){:target="_blank"}{:rel="noopener noreferrer"} [![Federal CIO Council Logo]({{site.baseurl}}/assets/img/logo-cio.png){:style="width:50%;float:left;"}]({{site.baseurl}}/assets/img/logo-cio.png){:target="_blank"}{:rel="noopener noreferrer"}[![Department of Homeland Security Cybersecurity and Infrastructure Security Agency Logo]({{site.baseurl}}/assets/img/logo-cisa.png){:style="width:10%;height:10%;float:left;"}]({{site.baseurl}}/assets/img/logo-cisa.png){:target="_blank"}{:rel="noopener noreferrer"}
+<a href="../../assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
+<a href="../../assets/img/logo-cioc.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cioc.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a>
+
+[![General Services Administration Logo]({{site.baseurl}}/assets/img/logo-gsa.png){:style="width:50%;float:left;"}]({{site.baseurl}}/assets/img/logo-gsa.png){:target="_blank"}{:rel="noopener noreferrer"} [![Federal CIO Council Logo]({{site.baseurl}}/assets/img/logo-cioc.png){:style="width:50%;float:left;"}]({{site.baseurl}}/assets/img/logo-cioc.png){:target="_blank"}{:rel="noopener noreferrer"}[![Department of Homeland Security Cybersecurity and Infrastructure Security Agency Logo]({{site.baseurl}}/assets/img/logo-cisa.png){:style="width:16px;height:16px;float:left;"}]({{site.baseurl}}/assets/img/logo-cisa.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Version 1.0  
-Last Updated: August 30, 2021
+Last Updated: August xx, 2021
 
 # Executive Summary
 The Privileged User Playbook is a practical guide to **help federal agencies implement and manage a privileged user program**. Privileged users are a special user type that perform security-related duties. A privileged user program enables an agency to identify, track, monitor, and audit privileged users and accounts, effectively decreasing the cyber risk and impact on an agency's mission. **Unwanted behavior or compromise of privileged accounts are also responsible for the most high-profile federal security breaches**. It is a critical Identity, Credential, and Access Management capability to identify privileged users and access to high value assets. As part of agency insider threat programs, agencies can use this playbook to define privileged user program requirements and capabilities.
