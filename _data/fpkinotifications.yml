@@ -28,12 +28,12 @@
 - notice_date: August 5, 2021
   change_type: CRL Outage
   system: DigiCert Federal Shared Service Provider
-  change_description: Between approximately 4:30 AM (ET) on July 31, 2021 and 11:00 AM (ET) on August 4, 2021, DigiCert PIV users reported issues with authentication to some relying party applications; it was determined that this was the result of an expired CRL being served by the Symantec SSP Intermediate CA G4,  DigiCert Federal SSP Intermediate CA - G5, and their subordinate CAs.
+  change_description: Between approximately 4:30 AM (ET) on July 31, 2021 and 11:00 AM (ET) on August 4, 2021, DigiCert PIV users reported issues with authentication to some relying party applications; it was determined that this was the result of an expired CRL being served by the Symantec SSP Intermediate CA G4,  DigiCert Federal SSP Intermediate CA - G5, and their issuing CAs.
   contact: fpki_support at digicert dot com
   ca_certificate_hash: N/A
   ca_certificate_issuer: N/A
   ca_certificate_subject: N/A
-  cdp_uri: http://ssp-crl.symauth.com/SSP/SSPG4.crl, http://ssp-crl.digicert.com/SSP/SSPG5.crl
+  cdp_uri: http://ssp-crl.symauth.com/SSP/SSPG4.crl, http://ssp-crl.digicert.com/SSP/SSPG5.crl, and several of DigiCert's issuing CA CRL URIs
   aia_uri: N/A
   sia_uri: N/A
   ocsp_uri: N/A
