@@ -26,10 +26,8 @@ subnav:
       href: '#appendix-a-reference-documentation'
     - text: Appendix B. Privileged User Agreement
       href: '#appendix-b-privileged-user-agreement'
-    - text: Appendix C. Privileged Account DIRA
-      href: '#appendix-c-privileged-account-dira'
-    - text: Appendix D. 800-53 Privileged User Overlay
-      href: '#appendix-d-nist-sp-800-53-privileged-user-overlay'
+    - text: Appendix C. 800-53 Privileged User Overlay
+      href: '#appendix-C-nist-sp-800-53-privileged-user-overlay'
 ---
 
 {% assign categories = "" | split: "" %}
@@ -52,7 +50,7 @@ Last Updated: August xx, 2021
 The Privileged User Playbook is a practical guide to **help federal agencies implement and manage a privileged user program**. Privileged users are a special user type that perform security-related duties. A privileged user program enables an agency to identify, track, monitor, and audit privileged users and accounts, effectively decreasing the cyber risk and impact on an agency's mission. **Unwanted behavior or compromise of privileged accounts are also responsible for the most high-profile federal security breaches**. It is a critical Identity, Credential, and Access Management capability to identify privileged users and access to high value assets. As part of agency insider threat programs, agencies can use this playbook to define privileged user program requirements and capabilities.
 
 There are three main use cases to identify a privileged account or user.
-1. Accounts used to manage IT infrastructure and resources of high value assets (HVA) and core systems (e.g. perform maintenance activities on human resource applications or databases).
+1. Accounts used to manage IT infrastructure, resources of high value assets (HVA), and core systems (e.g. perform maintenance activities on human resource applications or databases).
 2. Help desk personnel with escalated privilege to perform security-relevant processes on endpoints (e.g. install software on user laptops or change endpoint configuration settings).
 3. Managers that approve access or accounts (e.g. a manager approving access requests to a risk reporting application).
 
@@ -151,7 +149,7 @@ Even though agency missions may differ, objectives of a privileged user program 
 
 [![Consider both person and non-person access to protected resources]({{site.baseurl}}/assets/playbooks/pam-iceberg.png)]({{site.baseurl}}/assets/playbooks/pam-iceberg.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-In addition to setting minimum program objectives, an agency should evaluate the risks to its resources by conducting a [Digital Identity Risk Assessment (DIRA)](https://playbooks.idmanagement.gov/docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"}. The DIRA process identifies the risk of user transactions and identifies a minimum identity assurance, authenticator assurance, and federation assurance level outlined in [NIST Special Publication 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html){:target="_blank"}{:rel="noopener noreferrer"}. An example of a [Privileged Account DIRA is located in Appendix C](appendix-c-privileged-account-dira).
+In addition to setting minimum program objectives, an agency should evaluate the risks to its resources by conducting a [Digital Identity Risk Assessment (DIRA)](../../docs/playbook-dira.pdf){:target="_blank"}. The DIRA process identifies the risk of user transactions and identifies a minimum identity assurance, authenticator assurance, and federation assurance level outlined in [NIST Special Publication 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ### Zero Trust Alignment
 NIST Special Publication 800-207 outlines a Zero Trust Architecture that move defenses from static, network-based perimeters to focus on users, assets, and resources. It shifts the operating model toward using telemetry to determine trust rather than location (e.g. if a user is on an agency netowrk and on a government furnished device, they are trusted). WIthin the context of this playbook, step 4 provides recommendations on how to align privileged program technical measures with a zero trust architecture from five elements.
@@ -307,54 +305,33 @@ The following documentation references help inform the development and direction
 
 # Appendix B: Privileged User Agreement
 
-Below is a template for an agency to tailor to uphold mission and business needs in support of privileged access to logical and physical resources. An agency should obtain and retain a digitally signed copy of such instruction and ensure that privileged user access to the identified protected resource is prohibited without a signed acknowledgement of system-specific rules and a signed acknowledgement of said instruction.
+An agency can tailor [this template](../../docs/template-pua.docx){:target="_blank"} to uphold mission and business needs in support of privileged access to logical and physical resources. An agency should obtain and retain a digitally signed copy of such instruction and ensure that privileged user access to the identified protected resource is prohibited without a signed acknowledgement of system-specific rules and a signed acknowledgement of said instruction.
 
 ## [AGENCY OR PROGRAM NAME] Privileged Access User Agreement
 
-**Download this agreement as a editable word document** <include link>
+Version 1.0  
+Last Updated: August 10, 2021
 
-I am being granted elevated access to [AGENCY or PROGRAM NAME] controlled systems and facilities and
-am responsible for all actions taken under my accounts. I agree to the following:
+I am being granted elevated access to [AGENCY or PROGRAM NAME] controlled systems and facilities and am responsible for all actions taken under my accounts. I agree to the following:
 
-1. I will only use the elevated granted to me to perform authorized tasks or mission-related
-    functions.
-2. I will not use my elevated access to perform routine tasks that do not require elevated
-    access.
-3. I will obtain and maintain required certifications and trainings according to [AGENCY OR PROGRAM
-    POLICY], including but not limited to specialized role-based security or privacy training.
-4. I understand the need to safeguard all credentials at the level appropriate to the data they
-    protect.
-5.  I will not share passwords, accounts, or other credentials with unwanted personnel.
-6.  I will only add and remove users to the [ADMINISTRATOR GROUPS] group after
-    receiving approval/direction from the [AGENCY OR PROGRAM POINT OF CONTACT].
-7.  I will not install, modify, or remove any hardware or software without written entitlement
-    and approval from the [AGENCY OR PROGRAM POINT OF CONTACT].
-8.  I will not introduce any viruses, malicious/unwanted code, malware, or Trojan horse
-    programs into [AGENCY OR PROGRAM NAME] systems.
-9.  I will not attempt to hack the network or connected information systems, gain access to
-    data or protected resources which I do not have authorized access. I will not use sensitive
-    information for anything other than the purpose for which it has been authorized.
-10. I understand that there are distinct information systems and access points – [AGENCY
-    SECURITY DOMAINS]. I will not introduce or process data or software for information
-    systems that I have not have elevated access to.
-11. I will contact the [AGENCY OR PROGRAM POINT OF CONTACT] if I require clarification of my roles
-    or responsibilities.
+1.	I will only use my elevated privileges to perform authorized tasks or mission-related functions on systems I am authorized to access.
+2.	I will not use my elevated privileges to perform routine tasks that do not require elevated access.
+3.	I will obtain and maintain required certifications and trainings according to [AGENCY OR PROGRAM POLICY], including but not limited to specialized role-based security and privacy training.
+4.	I understand the need to safeguard all credentials at the level appropriate to the data they protect.
+5.	I will not share passwords, accounts, or other credentials with unwanted personnel.
+6.	I will only add and remove users to the [ADMINISTRATOR GROUPS] group after receiving approval/direction from the [AGENCY OR PROGRAM POINT OF CONTACT].
+7.	I will not install, modify, or remove any hardware or software without written approval from the [AGENCY OR PROGRAM POINT OF CONTACT].
+8.	I will not knowingly introduce any viruses, malicious/unwanted code, malware, or Trojan horse programs into [AGENCY OR PROGRAM NAME] systems.
+9.	I will not attempt to hack the network or connected information systems, gain access to data or agency assets which I am authorized to access. I will not use sensitive information for anything other than the purpose for which it has been authorized.
+10.	I will contact the [AGENCY OR PROGRAM POINT OF CONTACT] if I require clarification of my roles or responsibilities.
 
-I understand that failure to comply with the above requirements may result in disciplinary action,
-including termination of employment; removal or disbarment from work on federal contracts or
-projects; revocation of access to federal information, information systems, and/or facilities;
-criminal penalties; and/or imprisonment. I also understand that violation of certain laws, such as the Privacy Act of 1974, copyright law, and 18 USC 2071 can result in monetary fines and criminal charges that may result in imprisonment.
+I understand that failure to comply with the above requirements may result in disciplinary action, including termination of employment; removal or disbarment from work on federal contracts or projects; revocation of access to federal information, information systems, and/or facilities; criminal penalties; and/or imprisonment. I also understand that violation of certain laws, such as the Privacy Act of 1974, copyright law, and 18 USC 2071 can result in monetary fines and criminal charges that may result in imprisonment.
 
 Printed Name:  
 Date:   
 Digital Signature (preferred):  
 
-# Appendix C: Privileged Account DIRA
-A Digital Identity Risk Assessment (DIRA) analyzes account privileges against what happens if the account is compromised (the risk).
-
-**insert DIRA Example**
-
-# Appendix D: NIST SP 800-53 Privileged User Overlay
+# Appendix C: NIST SP 800-53 Privileged User Overlay
 
 In seeking to implement cohesive, integrated privileged user management practices an agency should consider existing controls and practices which can assist in safeguarding the enterprise’s protected resources from privileged compromise. This section provides an analysis of countermeasures for privileged user compromise by leveraging NIST SP 800- 53 security controls.
 
