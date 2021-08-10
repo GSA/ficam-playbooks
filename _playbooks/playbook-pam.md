@@ -39,7 +39,7 @@ subnav:
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
-[![General Services Administration Logo]({{site.baseurl}}/assets/img/logo-gsa.png){:style="width:40%;float:left;"}]({{site.baseurl}}/assets/img/logo-gsa.png){:target="_blank"}{:rel="noopener noreferrer"} [![Federal CIO Council Logo]({{site.baseurl}}/assets/img/logo-cio.png){:style="width:40%;float:left;"}]({{site.baseurl}}/assets/img/logo-cio.png){:target="_blank"}{:rel="noopener noreferrer"}[![Department of Homeland Security Cybersecurity and Infrastructure Security Agency Logo]({{site.baseurl}}/assets/img/logo-cisa.png){:style="width:40%;float:left;"}]({{site.baseurl}}/assets/img/logo-cisa.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![General Services Administration Logo]({{site.baseurl}}/assets/img/logo-gsa.png){:style="width:50%;float:left;"}]({{site.baseurl}}/assets/img/logo-gsa.png){:target="_blank"}{:rel="noopener noreferrer"} [![Federal CIO Council Logo]({{site.baseurl}}/assets/img/logo-cio.png){:style="width:50%;float:left;"}]({{site.baseurl}}/assets/img/logo-cio.png){:target="_blank"}{:rel="noopener noreferrer"}[![Department of Homeland Security Cybersecurity and Infrastructure Security Agency Logo]({{site.baseurl}}/assets/img/logo-cisa.png){:style="width:10%;height:10%;float:left;"}]({{site.baseurl}}/assets/img/logo-cisa.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Version 1.0  
 Last Updated: August 30, 2021
