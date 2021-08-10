@@ -40,10 +40,11 @@ subnav:
 {% assign categories = categories | uniq | sort %}
 
 <a href="../../assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
-<a href="../../assets/img/logo-cioc.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cioc.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a>
+<a href="../../assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a>
+<a href="../../assets/img/logo-cisa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cisa.png" width="64" height='64' align="left" alt="U.S. Department of Homeland Security Cybersecurity and Infrastructure Security Agency Logo"></a><br><br><br>
 
-[![General Services Administration Logo]({{site.baseurl}}/assets/img/logo-gsa.png){:style="width:50%;float:left;"}]({{site.baseurl}}/assets/img/logo-gsa.png){:target="_blank"}{:rel="noopener noreferrer"} [![Federal CIO Council Logo]({{site.baseurl}}/assets/img/logo-cioc.png){:style="width:50%;float:left;"}]({{site.baseurl}}/assets/img/logo-cioc.png){:target="_blank"}{:rel="noopener noreferrer"}[![Department of Homeland Security Cybersecurity and Infrastructure Security Agency Logo]({{site.baseurl}}/assets/img/logo-cisa.png){:style="width:16px;height:16px;float:left;"}]({{site.baseurl}}/assets/img/logo-cisa.png){:target="_blank"}{:rel="noopener noreferrer"}
-
+This playbook is a collaboration between the General Services Administration (GSA) through the Federal CIO Council and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA)
+  
 Version 1.0  
 Last Updated: August xx, 2021
 
@@ -309,6 +310,8 @@ The following documentation references help inform the development and direction
 Below is a template for an agency to tailor to uphold mission and business needs in support of privileged access to logical and physical resources. An agency should obtain and retain a digitally signed copy of such instruction and ensure that privileged user access to the identified protected resource is prohibited without a signed acknowledgement of system-specific rules and a signed acknowledgement of said instruction.
 
 ## [AGENCY OR PROGRAM NAME] Privileged Access User Agreement
+
+**Download this agreement as a editable word document** <include link>
 
 I am being granted elevated access to [AGENCY or PROGRAM NAME] controlled systems and facilities and
 am responsible for all actions taken under my accounts. I agree to the following:
