@@ -27,7 +27,8 @@ subnav:
     - text: Appendix B. Privileged User Agreement
       href: '#appendix-b-privileged-user-agreement'
     - text: Appendix C. 800-53 Privileged User Overlay
-      href: '#appendix-C-nist-sp-800-53-privileged-user-overlay'
+      href: '#appendix-c-nist-sp-800-53-privileged-user-overlay'
+      
 ---
 
 {% assign categories = "" | split: "" %}
