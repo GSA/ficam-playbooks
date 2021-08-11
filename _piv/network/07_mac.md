@@ -21,9 +21,16 @@ subnav:
 ### Considerations for MacOS X and Network Authentication
 
 ## Authentication Models
+Machine-Based Enforcement (MBE)
+User-BAsed Enforcement (UBE)
 
 ## Directory Preperation
+Device groups
+Attribute mapping
 
 ## Mac Device Configuration
+Smartcard Payload
+Smartcard Middleware
+Trust Store Management
 
 ## Helpful References
