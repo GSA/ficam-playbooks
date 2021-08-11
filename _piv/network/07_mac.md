@@ -22,7 +22,7 @@ subnav:
 
 ## Authentication Models
 Machine-Based Enforcement (MBE)
-User-BAsed Enforcement (UBE)
+User-Based Enforcement (UBE)
 
 ## Directory Preperation
 Device groups
