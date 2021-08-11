@@ -25,17 +25,45 @@
 # sia_uri:
 # ocsp_uri:
 
-- notice_date: August 2, 2021
+- notice_date: August 5, 2021
   change_type: CRL Outage
   system: DigiCert Federal Shared Service Provider
-  change_description: Between approximately 4:30 AM (ET) on July 31, 2021 and 2:00 PM (ET) on August 2, 2021, DigiCert PIV users reported issues with authentication to some relying party applications; it was determined that this was the result of an exipred CRL being served by the Symantec SSP Intermediate CA G4 and its subordinate CAs.
+  change_description: Between approximately 4:30 AM (ET) on July 31, 2021 and 11:00 AM (ET) on August 4, 2021, DigiCert PIV users reported issues with authentication to some relying party applications; it was determined that this was the result of an expired CRL being served by the Symantec SSP Intermediate CA G4,  DigiCert Federal SSP Intermediate CA - G5, and their issuing CAs.
   contact: fpki_support at digicert dot com
   ca_certificate_hash: N/A
   ca_certificate_issuer: N/A
   ca_certificate_subject: N/A
-  cdp_uri: http://ssp-crl.symauth.com/SSP/SSPG4.crl
+  cdp_uri: http://ssp-crl.symauth.com/SSP/SSPG4.crl, http://ssp-crl.digicert.com/SSP/SSPG5.crl, and several of DigiCert's issuing CA CRL URIs
   aia_uri: N/A
   sia_uri: N/A
+  ocsp_uri: N/A
+  
+- notice_date: July 30, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: DoD Interoperability Root CA 2
+  change_description: The DoD Interoperability Root CA 2 reissued a certificate to ECA Root CA 4.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 2554e552c7a54664fd0d34b20ff8b6cdcc9c1970
+  ca_certificate_issuer: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=ECA Root CA 4, OU=ECA, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODINTEROPERABILITYROOTCA2.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c
+  sia_uri: http://crl.disa.mil/issuedby/ECAROOTCA4_IB.p7c
+  ocsp_uri: http://ocsp.disa.mil/
+
+  
+- notice_date: July 28, 2021
+  change_type: CA Decommissioning 
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority decommissioned the Federal Common Policy CA.  Valid CA certificates issued by the Federal Common Policy CA were revoked prior to decommissioning.  A long-lived CRL is available at http://http.fpki.gov/fcpca/fcpca.crl.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 905f942fd9f28f679b378180fd4f846347f645c1 
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: N/A
+  aia_uri: N/A
+  sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c 
   ocsp_uri: N/A
 
 - notice_date: July 19, 2021
