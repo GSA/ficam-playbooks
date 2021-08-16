@@ -7,6 +7,9 @@ sticky_sidenav: true
 sidenav: fpkicommon
 ---
  
+ 
+{% include alert-warning.html heading="Mac OS Version Support" content="Smartcard logon has been supported within the Mac Operating System since macOS Sierra 10.12, and Windows Server Directory logon has been natively available since macOS High Seirra 10.13. All instructions contained within this guide assume the implmenter is leveraving High Sierra or newer Mac Operating Systems." %}
+
 
 Use the checklist below to prepare your agency for the migration to the Federal Common Policy CA (FCPCA) G2.  The checklist highlights activities as they relate to the following roles:
 - **ENG** - Information technology engineers and system administrators
