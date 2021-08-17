@@ -23,13 +23,13 @@ As Federal IT networks and system expand, and especially in light of recent Brin
 
 {% include alert-warning.html heading="Mac OS Version Support" content="Smartcard logon has been supported within the macOS since Sierra 10.12, and Windows Server Directory logon has been natively available since High Seirra 10.13. All instructions contained within this guide assume the implmenter is leveraving High Sierra or more recent macOS." %}
 
-{% include alert-success.html content="Enablement of mandatory Smartcard logon for all Mac workstations and laptops within your environment will provide the benefit of alignment to NIST SP 800-53 Identification and Authentication family of controls and supports FISMA compliance." %} 
+{% include alert-success.html heading="Compliance Support" content="Enablement of mandatory Smartcard logon for all Mac workstations and laptops within your environment will provide the benefit of alignment to NIST SP 800-53 Identification and Authentication family of controls and supports FISMA compliance." %} 
 
 ## Authentication Models
 When users logon to workstations or laptops, they can either authenticate to a **local user account** that limits access to just the resources on the computer, or they can authenticate to a **network account** that can expand access to other domain level resources.  It is recommended, especially for Government Furnished Equipement (GFE), that smartcard based athentication be enforced for both account types.  There are two primary models for enforcing smartcard only authentication to include:
 
 - Machine-Based Enforcement (MBE): This implmentation completely removes the option for password-based authentication in favor of Smartcard only authentication, for any account accessible by the macOS device (local or network)
-- User-Based Enforcement (UBE): This implmentation creates an exception to Smartcard only authetnication to specified users or groups of users (e.g., network admins, device admins, individuals waived from smartcard requirements, etc.)
+- User-Based Enforcement (UBE): This implmentation creates an exception to smartcard only authentication to specified users or groups of users (e.g., network admins, device admins, individuals waived from smartcard requirements, etc.)
 
 Apple support provides some additional detail on MBD vs. UBE in the [following article](https://support.apple.com/guide/deployment-reference-macos/configuring-macos-smart-cardonly-apdd3d1cd57d/web){:target="_blank"}{:rel="noopener noreferrer"}.
 Additional details on [Windows authentication enforcement models](../../group){:target="_blank"} are also available in this playbook.
@@ -39,13 +39,48 @@ Enforcing smartcard only authentication for access to domain or to local account
 
 Generally speaking, most departments and agencies already maintain processes to map PIV attributes to Active Directory network accounts.  If needed, this playbook also provides guiance on the different models that can be used to [link network accounts to PIV certificate attributes](../../account){:target="_blank"}.
 
-The macOS devices themselves may need to be configured to extract the appropriate attributes from the smartcard based certificates, the [following section](#device-configuration) contains additional detail on this process.
+The macOS devices themselves may need to be configured to extract the appropriate attributes from the smartcard based certificates, the [following section](#3.-other-configurations-and-software) contains additional detail on this process.
 
 ## Device Configuration
-Smartcard Payload
+Configuration of the actual macOS workstations and laptops can vary between implementing organizations; however, there are only a few mechanisms that can deliver needed configuration profiles (known as property lists or .plist) to the target device, which may include:
 
-Smartcard Middleware
+- Employing third party Mobile Device Management (MDM) tools
+- Leveraging an [Apple specific configuration tools](https://apps.apple.com/us/app/apple-configurator-2/id1037126344?mt=12){:target="_blank"}{:rel="noopener noreferrer"} via the App Store
+- Direct configuration profile delivery via one of several avenues such as:
+    - delivery via an email,
+    - from a webpage, or
+    - using [over-the-air profile delivery](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}
 
-Trust Store Management
+If the options above are not available, device administrator may also leverage physical access to manually run needed [configuration commands](https://support.apple.com/guide/deployment-reference-macos/advanced-smart-card-options-apd2969ad2d7/web){:target="_blank"}{:rel="noopener noreferrer"}
+
+Several changes may be needed to comply with organizational IT policies, but these configurations can be categorized as follows:
+
+# 1. [Smartcard Relevant Configurations](https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"}
+These include configurations that are needed to appropriately enforce use cases associated with smartcard authentication, such as:
+- allowSmartCard - must be set to TRUE to allow the device to leverage smartcards for multiple functions (authentication, digital signing, etc.) 
+- enforceSmartCard - can be set to TRUE to ensure that smartcard authentication is made mandatory at intial logon, authorization, and unlocking from screen saver mode
+- tokenRemovalAction - if set to "1" enables the screensaver when a smartcard is physically removed from the device
+- UserPairing - can be set to FALSE to prevent the pairing dialoge from appearing on smartcard insertion
+- oneCardPerUser - can be set to FALSE users may have multiple acceptable smartcards (e.g., PIV and alternative tokens)
+- checkCertificateTrust - can be an integer between 0 and 3:
+    - 0 - turns off certificate trust checking
+    - 1 - turns on trust checking, but does not conduct revocation checking
+    - 2 - turns on trust checking, and a 'soft' revocation check is conducted where 'valid' and 'unknown' are treated the same
+    - 3 - turns on trust checking, and a 'hard' revocation check is conducted where the response must contain a 'valid' status to allow the authentication to proceed
+
+
+# 2. Trust Store Management
+As part of the authentication protocols that take place between a device with a smartcard and a domain controller, all certificates in use need to be validated.  This includes validation of the certificates contained on the smartcard used for authentication, and validation of the domain controller device certificate.  
+
+As a result of this needed certificate validation, the device trust store must be able to conduct path discovery and validation (PDVAL) on both certificates, requiring their trust anchors to be installed on the target device.  For the purpose of leveraging PIV certificates, administrators will want to ensure the [Federal Common Policy Certification Authority G2 certificate](http://repo.fpki.gov/fcpca/fcpcag2.crt){:target="_blank"}{:rel="noopener noreferrer"} is included in those trust store updates.  Additionally, the root certificate of the domain contoller device certificate will also need to be included.
+
+{% include alert-warning.html heading="Domain Controller Certificate Trust" content="Many orgnaiztions run internal device PKIs that issue their domain controller certificates.  Do not assume that installing the FCPCAG2 certificate into macOS keychains will facilitate smartcard login." %}
+
+# 3. Other Configurations and Software
+In order to leverage smartcard authentication for network accounts, the device must also be configured to present the appropriate identifiers from the smartcard PKI certifiate for matching to a network account.  The following image provides the contents of a configuration file that extracts the NT Principal Name from a PIV to match against a directory AltSecID in support of an authentication event.
+
+
+
+Other configurations might be needed on the target device such as loading preferred 
 
 ## Helpful References
