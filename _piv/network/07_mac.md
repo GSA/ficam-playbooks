@@ -79,7 +79,7 @@ As a result of this needed certificate validation, the device trust store must b
 # 3. Other Configurations and Software
 In order to leverage smartcard authentication for network accounts, the device must also be configured to present the appropriate identifiers from the smartcard PKI certifiate for matching to a network account.  The following image provides the contents of a configuration file that extracts the NT Principal Name from a PIV to match against a directory AltSecID in support of an authentication event.
 
-
+[![P List configuration for extracting a network account identifier from a PIV]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:style="float:left"}]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Other configurations might be needed on the target device such as loading preferred 
 
