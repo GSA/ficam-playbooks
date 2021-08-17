@@ -18,7 +18,6 @@ subnav:
 ---
 
 
-### Considerations for macOS and Smartcard Authentication
 As Federal IT networks and system expand, and especially in light of recent Bring-Your-Own-Device (BYOD) models gaining in popularity, it has become necessary to extend mandatory security controls to previously unsupported devices.  This guide aims to provide implementation considerations for enabling mandatory smartcard authentication on mac operating system (macOS) based workstations and laptops for access to your domains and local computer accounts, as needed.
 
 {% include alert-warning.html heading="Mac OS Version Support" content="Smartcard logon has been supported within the macOS since Sierra 10.12, and Windows Server Directory logon has been natively available since High Seirra 10.13. All instructions contained within this guide assume the implmenter is leveraving High Sierra or more recent macOS." %}
@@ -55,7 +54,7 @@ If the options above are not available, device administrator may also leverage p
 
 Several changes may be needed to comply with organizational IT policies, but these configurations can be categorized as follows:
 
-# 1. [Smartcard Relevant Configurations](https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"}
+### 1. [Smartcard Relevant Configurations](https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"}
 These include configurations that are needed to appropriately enforce use cases associated with smartcard authentication, such as:
 - allowSmartCard - must be set to TRUE to allow the device to leverage smartcards for multiple functions (authentication, digital signing, etc.) 
 - enforceSmartCard - can be set to TRUE to ensure that smartcard authentication is made mandatory at intial logon, authorization, and unlocking from screen saver mode
@@ -69,18 +68,23 @@ These include configurations that are needed to appropriately enforce use cases 
     - 3 - turns on trust checking, and a 'hard' revocation check is conducted where the response must contain a 'valid' status to allow the authentication to proceed
 
 
-# 2. Trust Store Management
+### 2. Trust Store Management
 As part of the authentication protocols that take place between a device with a smartcard and a domain controller, all certificates in use need to be validated.  This includes validation of the certificates contained on the smartcard used for authentication, and validation of the domain controller device certificate.  
 
 As a result of this needed certificate validation, the device trust store must be able to conduct path discovery and validation (PDVAL) on both certificates, requiring their trust anchors to be installed on the target device.  For the purpose of leveraging PIV certificates, administrators will want to ensure the [Federal Common Policy Certification Authority G2 certificate](http://repo.fpki.gov/fcpca/fcpcag2.crt){:target="_blank"}{:rel="noopener noreferrer"} is included in those trust store updates.  Additionally, the root certificate of the domain contoller device certificate will also need to be included.
 
 {% include alert-warning.html heading="Domain Controller Certificate Trust" content="Many orgnaiztions run internal device PKIs that issue their domain controller certificates.  Do not assume that installing the FCPCAG2 certificate into macOS keychains will facilitate smartcard login." %}
 
-# 3. Other Configurations and Software
+### 3. Other Configurations and Software
 In order to leverage smartcard authentication for network accounts, the device must also be configured to present the appropriate identifiers from the smartcard PKI certifiate for matching to a network account.  The following image provides the contents of a configuration file that extracts the NT Principal Name from a PIV to match against a directory AltSecID in support of an authentication event.
 
 [![P List configuration for extracting a network account identifier from a PIV]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:style="float:left"}]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-Other configurations might be needed on the target device such as loading preferred 
+Local account logon via smartcard may also require that the unique identifiers from a smartcard are mapped to a local user record.  Scripting can be leveraged to lookup a userPrincipalName from a public directory and subsequently update the local user record with the identifier.
+
+> script placeholder
+> placeholder line 2
+
+Other configurations might be needed on the target device such as loading preferred middleware for interfacing with the smartcard.  It should however be noted that CrytoTokenKit has the ability to interface with most PIV, and comes native with macOS 10.12 and later.
 
 ## Helpful References
