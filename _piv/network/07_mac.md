@@ -20,7 +20,7 @@ subnav:
 
 As Federal IT networks and system expand, and especially in light of recent Bring-Your-Own-Device (BYOD) models gaining in popularity, it has become necessary to extend mandatory security controls to previously unsupported devices.  This guide aims to provide implementation considerations for enabling mandatory smartcard authentication on mac operating system (macOS) based workstations and laptops for access to your domains and local computer accounts, as needed.
 
-{% include alert-warning.html heading="Mac OS Version Support" content="Smartcard logon has been supported within the macOS since Sierra 10.12, and Windows Server Directory logon has been natively available since High Seirra 10.13. All instructions contained within this guide assume the implmenter is leveraving High Sierra or more recent macOS." %}
+{% include alert-warning.html heading="macOS Version Support" content="Smartcard logon has been supported within the macOS since Sierra 10.12, and Windows Server Directory logon has been natively available since High Seirra 10.13. All instructions contained within this guide assume the implmenter is leveraving High Sierra or more recent macOS." %}
 
 {% include alert-success.html heading="Compliance Support" content="Enablement of mandatory Smartcard logon for all Mac workstations and laptops within your environment will provide the benefit of alignment to NIST SP 800-53 Identification and Authentication family of controls and supports FISMA compliance." %} 
 
