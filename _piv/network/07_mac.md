@@ -39,7 +39,7 @@ Enforcing smartcard only authentication for access to domain or to local account
 
 Generally speaking, most departments and agencies already maintain processes to map PIV attributes to Active Directory network accounts.  If needed, this playbook also provides guiance on the different models that can be used to [link network accounts to PIV certificate attributes](../../account){:target="_blank"}.
 
-The macOS devices themselves may need to be configured to extract the appropriate attributes from the smartcard based certificates, the [following section](#device-configuration){:target="_blank"} contains additional detail on this process.
+The macOS devices themselves may need to be configured to extract the appropriate attributes from the smartcard based certificates, the [following section](#device-configuration) contains additional detail on this process.
 
 ## Device Configuration
 Smartcard Payload
