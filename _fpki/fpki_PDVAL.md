@@ -17,7 +17,7 @@ subnav:
     href: '#what-is-revocation-checking'
     
 ---
-#Path Discovery and Validation
+# Path Discovery and Validation
 
 ## What is PDVAL
 Before using a public key contained in a certificate, a relying party first has to determine the authenticity of that certificate, and specifically, the validity of all the certificates leading to a trusted public key, called a trust anchor. To do this, a two-step process called path discovery and validation (PDVAL), also called path processing, is performed:
