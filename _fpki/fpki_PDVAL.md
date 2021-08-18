@@ -26,6 +26,7 @@ Before using a public key contained in a certificate, a relying party first has 
 
 2.	Trust Path Validation – checks each certificate in the certification path to see that it has been properly signed, has not expired, and has not been revoked; also includes other checks on things such as name or path constraints, key usage, and extended key usage.
 
+{% include alert-info.html content="<strong>Public trust for websites</strong><bPerforming PDVAL helps an application make an informed trust decision – i.e., determine whether a certificate is appropriate for use in a particular application context." %}
 
 ## How are Paths Built
 subject/issuer name matching, SKI/AKI matching, 
