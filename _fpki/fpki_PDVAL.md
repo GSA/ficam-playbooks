@@ -58,14 +58,28 @@ Intermediate Certificates may be retrieved by any means available.  This include
 
 ## How is a Certification Path Chained Together?
 ### Subject/Issuer Name Chaining
-
 Path construction is done by following the Subject Name / Issuer Name connection between certificates.  Moving from the trust anchor to the target certificate, the Subject Name in one certificate must be the Issuer Name in the next certificate in the path, and so on.
 
 ### SKID/AKID Chaining
-
 When name chaining is not sufficient, the Authority Key Identifier (AKID) and Subject Key Identifier (SKID) connection can be used to enhance path construction. 
 
 AKIDs distinguish one public key from another when a given CA has multiple signing keys. SKIDs identify certificates that contain a specific public key. Between a trust anchor and a target certificate, the SKID of the first certificate should be the AKID of the next certificate in the path, and so on.
+
+## Required Inputs for Path Construction
+The following are required inputs to the certification path construction process:
+
+1.	Target Certificate - the target certificate itself or information to retrieve the target certificate
+2.	Trust List – the other endpoint of the path, and can consist of either:
+    a.	Trusted CA certificates
+    b.	Trusted keys and DNs; a certificate is not necessarily required
+
+## Optional Inputs for Path Construction
+Optional inputs can be used to optimize path construction.  Some examples are:
+
+1.	Time: The time for which the certificate is to be validated
+2.	Initial user acceptable policy set
+3.	The complete certification path for the Certification Authority  
+4.	Collection of certificates that may be useful in building the path
 
 
 Sources may include:
