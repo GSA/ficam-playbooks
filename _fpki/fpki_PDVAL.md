@@ -68,15 +68,15 @@ AKIDs distinguish one public key from another when a given CA has multiple signi
 ## Required Inputs for Path Construction
 The following are required inputs to the certification path construction process:
 
-1.	Target Certificate - the target certificate itself or information to retrieve the target certificate
-2.	Trust List – the other endpoint of the path, and can consist of either:
-    a.	Trusted CA certificates
-    b.	Trusted keys and DNs; a certificate is not necessarily required
+1.	**Target Certificate** - the target certificate itself or information to retrieve the target certificate
+2.	**Trust List** – the other endpoint of the path, and can consist of either:   
+  a.	Trusted CA certificates
+  b.	Trusted keys and DNs; a certificate is not necessarily required
 
 ## Optional Inputs for Path Construction
 Optional inputs can be used to optimize path construction.  Some examples are:
 
-1.	Time: The time for which the certificate is to be validated
+1.	The time for which the certificate is to be validated
 2.	Initial user acceptable policy set
 3.	The complete certification path for the Certification Authority  
 4.	Collection of certificates that may be useful in building the path
