@@ -56,6 +56,17 @@ Intermediate Certificates may be retrieved by any means available.  This include
 
 > **_Note:_** _A path may be discovered dynamically each time as needed or it may be constructed once and stored (or cached). PDVAL products may vary in how they choose to implement this operation_.
 
+## How is a Certification Path Chained Together?
+### Subject/Issuer Name Chaining
+
+Path construction is done by following the Subject Name / Issuer Name connection between certificates.  Moving from the trust anchor to the target certificate, the Subject Name in one certificate must be the Issuer Name in the next certificate in the path, and so on.
+
+### SKID/AKID Chaining
+
+When name chaining is not sufficient, the Authority Key Identifier (AKID) and Subject Key Identifier (SKID) connection can be used to enhance path construction. 
+
+AKIDs distinguish one public key from another when a given CA has multiple signing keys. SKIDs identify certificates that contain a specific public key. Between a trust anchor and a target certificate, the SKID of the first certificate should be the AKID of the next certificate in the path, and so on.
+
 
 Sources may include:
 [RFC 5280 (chapter 6)](https://datatracker.ietf.org/doc/html/rfc5280#page-71)
