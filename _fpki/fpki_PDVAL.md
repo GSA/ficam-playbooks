@@ -70,7 +70,7 @@ The following are required inputs to the certification path construction process
 
 1.	**Target Certificate** - the target certificate itself or information to retrieve the target certificate
 2.	**Trust List** – the other endpoint of the path, and can consist of either:   
-  a.	Trusted CA certificates
+  a.	Trusted CA certificates   
   b.	Trusted keys and DNs; a certificate is not necessarily required
 
 ## Optional Inputs for Path Construction
