@@ -81,6 +81,25 @@ Optional inputs can be used to optimize path construction.  Some examples are:
 3.	The complete certification path for the Certification Authority  
 4.	Collection of certificates that may be useful in building the path
 
+## Trust Path Validation
+Trust path validation inspects each certificate that comprises the certification path, examining policies, constraints, and consulting the issuing CA's CRL or OCSP Responder to determine each certificate's validity status at that moment. What constitutes valid is dictated by each PKI.  
+Some path validation steps (e.g., checking certificate revocation status) may be performed during certification path discovery to help find the best path sooner rather than later.
+
+> **_Note:_** _Even if a trust path is cached, all certificates in the path should be validated in real-time at the beginning of each transaction_.
+
+### Required Inputs for Path Validation
+Path validation requires the following inputs:  
+- The certificate path to be evaluated, to include all relevant public keys for signature validation
+- The current date/time
+- The list of certificate policy object identifiers (OIDs) acceptable to the relying party (or any)
+- The trust anchor of the certificate path
+- Indication of whether policy mapping is allowed and if any policy OID is to be tolerated
+
+### Path Validation Steps
+Path validation can perform various checks on each certificate in the path.  This includes for example, signature validation, expiration status, revocation status, policy constraints, key usage, and path length.
+
+The submitted path is not approved if any check fails on any certificate. Otherwise, the submitted path is approved.
+
 
 Sources may include:
 [RFC 5280 (chapter 6)](https://datatracker.ietf.org/doc/html/rfc5280#page-71)
