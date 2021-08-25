@@ -100,6 +100,20 @@ Path validation can perform various checks on each certificate in the path.  Thi
 
 The submitted path is not approved if any check fails on any certificate. Otherwise, the submitted path is approved.
 
+## What is Revocation Checking
+Various circumstances may cause a certificate to become invalid prior to expiration of its validity period.  Circumstances include name change, employee termination, and compromise or suspected compromise of the private key.  Under such circumstances, the CA needs to revoke the certificate.  
+There are two common revocation checking methods:
+- Certificate Revocation Lists (CRLs)
+- Online Certificate Status Protocol (OCSP)
+
+### Certification Revocation Lists (CRLs)
+A CRL is a digitally signed and time-stamped list of revoked certificates that is signed by a CA or CRL issuer and made freely available in a public repository.  Each revoked certificate is identified by its certificate serial number. 
+
+When a certificate-using system uses a certificate (e.g., for verifying a user's digital signature), that system not only checks the certificate signature and validity but also acquires the most recent CRL and checks that the certificate serial number is not on that CRL.  
+A new CRL is issued on a regular periodic basis (e.g., hourly, daily, or weekly).
+
+> **_Note:_** _FPKI CRLs are required to be refreshed at least every 18 hours._.
+
 
 Sources may include:
 [RFC 5280 (chapter 6)](https://datatracker.ietf.org/doc/html/rfc5280#page-71)
