@@ -277,6 +277,10 @@ sso:
 dw:
   - text: Digital Worker Playbook
     href: /playbooks/dw/
+
+playbook-pam:
+  - text: Privileged User Playbook
+    href: /playbooks/pam/
     
 # Digital Signature Guides Navigation
 
