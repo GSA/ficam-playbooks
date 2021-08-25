@@ -25,6 +25,19 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: August 17, 2021
+  change_type: CRL Outage
+  system: DigiCert Department of Defense PKI
+  change_description: Between Friday, August 13, 2021 and Tuesday, August 17, 2021, external relying parties connecting from devices outside the Non-classified Internet Protocol (IP) Router Network (NIPRNet) received stale CRLs when attempting to connect to DoD PKI CRL distribution point HTTP URIs.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: N/A
+  ca_certificate_subject: N/A
+  cdp_uri: Several of DoD's issuing CA CRL URIs.
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: N/A
+  
 - notice_date: August 5, 2021
   change_type: CRL Outage
   system: DigiCert Federal Shared Service Provider
