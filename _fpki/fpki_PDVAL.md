@@ -112,10 +112,35 @@ A CRL is a digitally signed and time-stamped list of revoked certificates that i
 When a certificate-using system uses a certificate (e.g., for verifying a user's digital signature), that system not only checks the certificate signature and validity but also acquires the most recent CRL and checks that the certificate serial number is not on that CRL.  
 A new CRL is issued on a regular periodic basis (e.g., hourly, daily, or weekly).
 
-> **_Note:_** _FPKI CRLs are required to be refreshed at least every 18 hours._.
+> **_Note:_** _FPKI CRLs are required to be refreshed at least every 18 hours_.
 
+### Online Certificate Status Protocol (OCSP)
+OCSP can provide more timely revocation information than is possible with CRLs and may also be used to obtain additional status information. Other benefits of OCSP over CRLs include smaller file size and more efficient for high volume transactions.
 
-Sources may include:
-[RFC 5280 (chapter 6)](https://datatracker.ietf.org/doc/html/rfc5280#page-71)
-[RFC 4158](https://datatracker.ietf.org/doc/html/rfc4158)
-[RFC 6960](https://datatracker.ietf.org/doc/html/rfc6960)
+An OCSP client issues a status request to an OCSP Responder and suspends acceptance of the certificates in question until the Responder provides a response. More than one Target certificate may be included in a request.  A requestor may choose to sign the OCSP request.
+
+An OCSP request includes:
+- **Protocol version** – OCSP protocol version
+- **Service request** – one or more single certificate status requests
+- **Target certificate identifier** – serial number of each certificate in the service request
+- **Optional extensions** – which may be processed by the OCSP Responder (e.g., serviceLocator extension used to route the request to the OCSP server known to be authoritative for the identified certificate)
+
+OCSP returns a definitive response message composed of:
+- Version of the response syntax
+- Identifier of the responder
+- Time when the response was generated
+- Responses for each of the certificates in the request
+- Optional extensions
+- Signature algorithm OID
+- Signature computed across a hash of the response
+
+The response for each of the certificates in a request consists of:
+- **Target certificate identifier** – the serial number of the certificate
+- **Certificate status value** – specifies whether a certificate is Good, Revoked, or Unknown (if revoked, includes the time at which the certificate was revoked and, optionally, the reason why it was revoked)   
+  o	**_Good_** - certificate currently within its validity interval is not revoked  
+  o	**_Revoked_** - certificate has been revoked, either temporarily or permanently  
+  o	**_Unknown_** - OCSP Responder doesn't know about the certificate, usually because the request indicates an unrecognized issuer that is not served by this responder
+- **Validity interval** – the validity interval of the response
+- **Optional extensions** – adds additional information to the response (e.g., CRLid extension used to indicate the CRL on which a revoked or onHold certificate is found)
+
+> **_Note:_** _The "Revoked" status indicates that a certificate with the requested serial number should be rejected, while the "Unknown" status indicates that the status could not be determined by this Responder, thereby allowing the relying party to decide whether it wants to try another source of status information (such as a CRL)_.
