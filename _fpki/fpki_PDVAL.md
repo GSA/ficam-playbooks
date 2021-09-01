@@ -41,10 +41,10 @@ Ideally, the path building algorithm is optimized with priorities to guide path 
  
  > **_Note:_** _Even with an ideal, optimized algorithm, more than one path may need to be built before the best path is identified and provided to the validation step_.
 
-## What is Best Path?
+### What is Best Path?
 The best certification path is typically the shortest path most likely to validate.  The longer a path becomes, the greater the potential dilution of trust in the certification path. The longer and more complicated a path, the less likely it is to validate because of basic constraints, policies or policy constraints, name constraints, CRL availability, or even revocation.
 
-## How are Certificates Found?
+### How are Certificates Found?
 Path building finds certificates in the relying party’s local repositories and cache.  It also uses locations specified in the certificates it inspects during live path construction.  For example, the algorithm may use: 
 
 - **Authority Information Access (AIA) Extension** which indicates how to access CA information and services for the issuer of the certificate in which the extension appears.  
@@ -56,16 +56,21 @@ Intermediate Certificates may be retrieved by any means available.  This include
 
 > **_Note:_** _A path may be discovered dynamically each time as needed or it may be constructed once and stored (or cached). PDVAL products may vary in how they choose to implement this operation_.
 
-## How is a Certification Path Chained Together?
-### Subject/Issuer Name Chaining
+### How is a Certification Path Chained Together?
+#### Subject/Issuer Name Chaining
 Path construction is done by following the Subject Name / Issuer Name connection between certificates.  Moving from the trust anchor to the target certificate, the Subject Name in one certificate must be the Issuer Name in the next certificate in the path, and so on.
 
-### SKID/AKID Chaining
+#### SKID/AKID Chaining
 When name chaining is not sufficient, the Authority Key Identifier (AKID) and Subject Key Identifier (SKID) connection can be used to enhance path construction. 
 
 AKIDs distinguish one public key from another when a given CA has multiple signing keys. SKIDs identify certificates that contain a specific public key. Between a trust anchor and a target certificate, the SKID of the first certificate should be the AKID of the next certificate in the path, and so on.
 
-## Required Inputs for Path Construction
+### Forward vs. Reverse Certification Paths
+Certification paths can be constructed in the forward direction (from target certificate to trust anchor), the reverse direction (from trust anchor to target certificate), or a combination of both. The decision is based on the PKI structure / environment.
+
+> **_Note:_** _Deciding between forward and reverse direction paths can be an important consideration.  For example, Forward paths may be better suited for hierarchical PKIs while reverse paths may be better suited for distributed PKIs.  Sometimes a combination of both paths may be best suited_.
+
+### Required Inputs for Path Construction
 The following are required inputs to the certification path construction process:
 
 1.	**Target Certificate** - the target certificate itself or information to retrieve the target certificate
@@ -73,7 +78,7 @@ The following are required inputs to the certification path construction process
   a.	Trusted CA certificates   
   b.	Trusted keys and DNs; a certificate is not necessarily required
 
-## Optional Inputs for Path Construction
+### Optional Inputs for Path Construction
 Optional inputs can be used to optimize path construction.  Some examples are:
 
 1.	The time for which the certificate is to be validated
