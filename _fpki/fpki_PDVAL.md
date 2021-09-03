@@ -164,4 +164,4 @@ The response for each of the certificates in a request consists of:
 
 > **_Note:_** _The "Revoked" status indicates that a certificate with the requested serial number should be rejected and the "Unknown" status indicates that the status could not be determined by this Responder, thereby allowing the relying party to decide whether it wants to try another source of status information (such as a CRL)_.
 
-{% include alert-warning.html heading="Note" content="The "Revoked" status indicates that a certificate with the requested serial number should be rejected and the **Unknown** status indicates that the status could not be determined by this Responder, thereby allowing the relying party to decide whether it wants to try another source of status information, such as a CRL." %}
+{% include alert-warning.html heading="Note" content="The **Revoked** status indicates that a certificate with the requested serial number should be rejected and the **Unknown** status indicates that the status could not be determined by this Responder, thereby allowing the relying party to decide whether it wants to try another source of status information, such as a CRL." %}
