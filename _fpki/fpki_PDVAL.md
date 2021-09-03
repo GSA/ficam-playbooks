@@ -27,10 +27,11 @@ Before using a public key contained in a certificate, a relying party first has 
 2.	Trust Path Validation – Checks each certificate in the certification path to see that it has been properly signed, has not expired, and has not been revoked; also includes other checks on things such as name or path constraints, key usage, and extended key usage.
 
 > **_Note:_** _Performing PDVAL helps an application make an informed trust decision (i.e., determine whether a certificate is appropriate for use in a particular application context)_.
+{% include alert-success.html heading="Note" content="Performing PDVAL helps an application make an informed trust decision (i.e., determine whether a certificate is appropriate for use in a particular application context)." %}
 
 The diagram below provides an example of a simple certification path, with three tiers in the hierarchy. The Identity Certificate is the target certificate that represents a human subscriber or a device. An example of a target certificate is an end-entity digital signature certificate on a user’s PIV Card.  The Root Certificate is the trust anchor, which is a CA’s self-signed certificate trusted by other relying parties. The Intermediate Certificates are from CAs that have signed other CA certificates along the path or the target certificate itself. These CAs are often referred to as issuing CAs. There may be multiple Intermediate Certificates in a certification path between the target and the root.
 
-[![Example of a Certification Path](../assets/fpki/pivcertificatechain_small.png){:style="float:center"}](../assets/fpki/pivcertificatechain.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![Example of a Certification Path](../../assets/fpki/pivcertificatechain_small.png){:style="float:center"}](../../assets/fpki/pivcertificatechain.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Certification Path Discovery
 Without valid certification paths, certificates cannot be validated and therefore cannot be trusted.  
@@ -40,6 +41,7 @@ Path building implementations can be configured in different ways.  Some impleme
 Ideally, the path building algorithm is optimized with priorities to guide path decision-making, is capable of building paths successfully regardless of PKI structure, and can find all possible valid paths. 
  
  > **_Note:_** _Even with an ideal, optimized algorithm, more than one path may need to be built before the best path is identified and provided to the validation step_.
+{% include alert-warning.html heading="Note" content="Even with an ideal, optimized algorithm, more than one path may need to be built before the best path is identified and provided to the validation step." %}
 
 ### What Is Best Path?
 The best certification path is typically the shortest path most likely to validate. The longer a path becomes, the greater the potential dilution of trust in the certification path. The longer and more complicated a path, the less likely it is to validate because of basic constraints, policies or policy constraints, name constraints, CRL availability, or even revocation.
@@ -55,6 +57,7 @@ Path building finds certificates in the relying party’s local repositories and
 Intermediate Certificates may be retrieved by any means available. This includes LDAP, HTTP, SQL, a local cache or certificate store, or as part of the security protocol itself, as is common practice with signed S/MIME messages and SSL/TLS sessions.
 
 > **_Note:_** _A path may be discovered dynamically each time as needed or it may be constructed once and stored (or cached). PDVAL products may vary in how they choose to implement this operation_.
+{% include alert-warning.html heading="Note" content="A path may be discovered dynamically each time as needed or it may be constructed once and stored (or cached). PDVAL products may vary in how they choose to implement this operation." %}
 
 ### How Is a Certification Path Chained Together?
 #### Subject/Issuer Name Chaining
@@ -69,6 +72,7 @@ AKIDs distinguish one public key from another when a given CA has multiple signi
 Certification paths can be constructed in the forward direction (from target certificate to trust anchor), the reverse direction (from trust anchor to target certificate), or a combination of both. The decision is based on the PKI structure/environment.
 
 > **_Note:_** _Deciding between forward and reverse direction paths can be an important consideration. For example, forward paths may be better suited for hierarchical PKIs and reverse paths may be better suited for distributed PKIs. Sometimes a combination of both paths may be best suited_.
+{% include alert-success.html heading="Note" content="Deciding between forward and reverse direction paths can be an important consideration. For example, forward paths may be better suited for hierarchical PKIs and reverse paths may be better suited for distributed PKIs. Sometimes a combination of both paths may be best suited." %}
 
 ### Required Inputs for Path Construction
 The following are required inputs to the certification path construction process:
@@ -92,6 +96,7 @@ Trust path validation inspects each certificate that makes up the certification 
 Some path validation steps (e.g., checking certificate revocation status) may be performed during certification path discovery to help find the best path sooner rather than later.
 
 > **_Note:_** _Even if a trust path is cached, all certificates in the path should be validated in real time at the beginning of each transaction_.
+{% include alert-success.html heading="Note" content="Even if a trust path is cached, all certificates in the path should be validated in real time at the beginning of each transaction" %}
 
 ### Required Inputs for Path Validation
 Path validation requires the following inputs:  
@@ -120,6 +125,7 @@ When a certificate-using system uses a certificate (e.g., for verifying a user's
 A new CRL is issued on a regular periodic basis (e.g., hourly, daily, or weekly).
 
 > **_Note:_** _FPKI CRLs are required to be refreshed at least every 18 hours_.
+{% include alert-success.html heading="Note" content="FPKI CRLs are required to be refreshed at least every 18 hours." %}
 
 ### Online Certificate Status Protocol
 OCSP can provide more timely revocation information than is possible with CRLs and may also be used to obtain additional status information. Other benefits of OCSP over CRLs include smaller file size and greater efficiency for high-volume transactions.
@@ -151,3 +157,4 @@ The response for each of the certificates in a request consists of:
 - **Optional extensions** – Adds additional information to the response (e.g., CRLid extension used to indicate the CRL on which a revoked or onHold certificate is found)
 
 > **_Note:_** _The "Revoked" status indicates that a certificate with the requested serial number should be rejected and the "Unknown" status indicates that the status could not be determined by this Responder, thereby allowing the relying party to decide whether it wants to try another source of status information (such as a CRL)_.
+{% include alert-warning.html heading="Note" content="The "Revoked" status indicates that a certificate with the requested serial number should be rejected and the "Unknown" status indicates that the status could not be determined by this Responder, thereby allowing the relying party to decide whether it wants to try another source of status information (such as a CRL)." %}
