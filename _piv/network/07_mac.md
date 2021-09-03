@@ -31,7 +31,7 @@ When users logon to workstations or laptops, they can either authenticate to a *
 - User-Based Enforcement (UBE): This implementation creates an exception to smartcard only authentication for specified users or groups of users (e.g., network admins, device admins, individuals waived from smartcard requirements, etc.)
 
 Apple support provides some additional detail on MBE vs. UBE in the [following article](https://support.apple.com/guide/deployment-reference-macos/configuring-macos-smart-cardonly-apdd3d1cd57d/web){:target="_blank"}{:rel="noopener noreferrer"}.
-Additional details on [Windows authentication enforcement models](../../group){:target="_blank"} are also available in this playbook.
+Additional details on [Windows authentication enforcement models](../group){:target="_blank"} are also available in this playbook.
 
 ## Directory Preparation
 Enforcing smartcard only authentication for access to domain or to local accounts requires that attributes available on the smartcard are mapped to a user account for the the purpose of proper identification.  
