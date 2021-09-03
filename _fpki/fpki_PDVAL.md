@@ -9,10 +9,10 @@ sidenav: fpki
 subnav:
   - text: What Is PDVAL?
     href: '#what-is-pdval'
-  - text: How Are Paths Built?
-    href: '#how-are-paths-built'
-  - text: What Certificate Fields Impact Path Building?
-    href: '#what-certificate-fields-impact-path-building'
+  - text: Certification Path Discovery
+    href: '#certification-path-discovery'  
+  - text: Trust Path Validation
+    href: '#trust-path-validation'
   - text: What Is Revocation Checking?
     href: '#what-is-revocation-checking'
     
@@ -30,7 +30,7 @@ Before using a public key contained in a certificate, a relying party first has 
 
 The diagram below provides an example of a simple certification path, with three tiers in the hierarchy. The Identity Certificate is the target certificate that represents a human subscriber or a device. An example of a target certificate is an end-entity digital signature certificate on a user’s PIV Card.  The Root Certificate is the trust anchor, which is a CA’s self-signed certificate trusted by other relying parties. The Intermediate Certificates are from CAs that have signed other CA certificates along the path or the target certificate itself. These CAs are often referred to as issuing CAs. There may be multiple Intermediate Certificates in a certification path between the target and the root.
 
-[![Example of a Certification Path](../../../assets/fpki/pivcertificatechain.png){:style="float:center"}](../../../assets/fpki/pivcertificatechain.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![Example of a Certification Path](../assets/fpki/pivcertificatechain_small.png){:style="float:center"}](../assets/fpki/pivcertificatechain.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Certification Path Discovery
 Without valid certification paths, certificates cannot be validated and therefore cannot be trusted.  
