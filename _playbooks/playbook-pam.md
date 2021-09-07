@@ -256,26 +256,46 @@ Access management is how an agency authenticates privileged users and authorizes
 **Added Ross Foard, CISA Comments**
 
 1. Inventory systems to focus on those that have a FIPS categorization of High for Confidentiality or Integrity (from Step 2).
+
 2. Scan systems to discover privileged accounts that exist on those systems, update inventory in Step 2 as necessary.
+
 3. Categorize systems by system purpose, system impact, operating system, and sensitivity.
-a) Use DIRA to understand the authenticator level of assurance required for the system based on system sensitivity.
-b) Production systems are more critical than non-production systems.
-c) Systems that control other systems (i.e Active Directory) are more critical than single-purpose systems.
+    
+    a) Use DIRA to understand the authenticator level of assurance required for the system based on system sensitivity.
+    
+    b) Production systems are more critical than non-production systems.
+    
+    c) Systems that control other systems (i.e Active Directory) are more critical than single-purpose systems.
+
 4. Choose a champion to begin the implementation process
-a) Choosing an initial group of privileged users that are supportive of the process change management required is a great step in overcoming resistance to change.
-b) Implement incrementally, first within the champion organization and expand based on readiness.
-c) Learn from the each group experience to ease subsequent groups integrations.
+    
+    a) Choosing an initial group of privileged users that are supportive of the process change management required is a great step in overcoming resistance to change.
+    
+    b) Implement incrementally, first within the champion organization and expand based on readiness.
+    
+    c) Learn from the each group experience to ease subsequent groups integrations.
+
 5. Start with basic account management, ensuring that the most impactful accounts are well in control.
-a) Accounts should be provisioned to only authorized administrators who have committed to the responsibilities of their job (see Appendix B)
-b) Administrators should utilize PIV or other Multifactor Authentication directly where possible.
-c) Where not possible PIV or MFA should be required to access vaulted secrets and session monitoring should be utilized for the most sensitive accounts.
+    
+    a) Accounts should be provisioned to only authorized administrators who have committed to the responsibilities of their job (see Appendix B)
+    
+    b) Administrators should utilize PIV or other Multifactor Authentication directly where possible.
+    
+    c) Where not possible PIV or MFA should be required to access vaulted secrets and session monitoring should be utilized for the most sensitive accounts.
+
 6. Advanced capabilities such as separation of duties enforcement/detection, privileged threat analytics, fine grained entitlements management, SIEM integration should be introduced as the agency matures in their PAM implementation.
-a) Look for specific issues that have been experienced in the agency when deploying advanced capabilities.
-b) SIEM integration is a great next step but requires a mature SIEM capability in order to execute.
-c) Use capabilities from other ICAM services, such as Identity Governance and Administration (IGA), to bring privileged users into context of the user in the organization.
-d) A privileged user is first a user in the environment, and when integrated IGA can ensure that privileges assigned to a user are appropriate to their current job or role within an agency.
-e) Access control methods such as RBAC are complex to implement. Implementing a set of “birthright” access rules such as access to a “safe” when a person is added to a security group to administrator a system can ease the management burden.
-f) The rule here should be coverage and then depth. Bring all of the sensitive accounts under control and then apply further analysis and control on those accounts.
+    
+    a) Look for specific issues that have been experienced in the agency when deploying advanced capabilities.
+    
+    b) SIEM integration is a great next step but requires a mature SIEM capability in order to execute.
+    
+    c) Use capabilities from other ICAM services, such as Identity Governance and Administration (IGA), to bring privileged users into context of the user in the organization.
+    
+    d) A privileged user is first a user in the environment, and when integrated IGA can ensure that privileges assigned to a user are appropriate to their current job or role         within an agency.
+    
+    e) Access control methods such as RBAC are complex to implement. Implementing a set of “birthright” access rules such as access to a “safe” when a person is added to a             security group to administrator a system can ease the management burden.
+    
+    f) The rule here should be coverage and then depth. Bring all of the sensitive accounts under control and then apply further analysis and control on those accounts.
 
 
 One of the greatest challenges in establishing any program is where to start. Step 1 identified the highest risk systems and suggested grouping systems to help identify a priority based on a number of group factors.
