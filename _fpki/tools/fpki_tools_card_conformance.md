@@ -34,8 +34,8 @@ You can [download the latest version of the CCT here](https://github.com/GSA/piv
 If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to fips201ep at gsa.gov.
 
 1.	A completed testing application for each PCI configuration evaluated (See Section 1 of the application for more information).
-2.	All accompanying Card Conformance Tool Log files:   
-    o	logs (directory)   
+2.	All accompanying Card Conformance Tool Log files:
+--logs (directory)   
     o	piv-artifacts (directory)   
     o	x509-artifacts (directory)   
     o	x509-certs (directory)   
