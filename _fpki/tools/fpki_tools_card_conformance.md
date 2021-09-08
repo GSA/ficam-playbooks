@@ -44,7 +44,7 @@ If you are running the Card Conformance Tool as part of the annual requirement t
 4.	A report (PDF or XLSX) for each certificate found on the card (use the Certificate Profile Conformance Tool (web application) to generate the reports).
 5.	High-resolution card photos of the front and back of each card tested.
 
-{% include alert-warning.html heading="Note" content="Failure to submit a complete CCT Package may delay review of  your testing results and completion of your annual FPKI PIV/PIV-I testing requirement." %}
+{% include alert-warning.html heading="Note" content="Failure to submit a complete CCT Package may delay review of your testing results and completion of your annual FPKI PIV/PIV-I testing requirement." %}
 
 # Resources
 
