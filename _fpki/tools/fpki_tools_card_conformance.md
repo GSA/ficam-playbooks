@@ -28,7 +28,7 @@ The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/release
 
 The CCT, in conjunction with the [Certificate Profile Conformance Tool (CPCT)](../cpct), also facilitates remote PIV and PIV-I testing in support of FPKI [annual reviews](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}, reducing travel and resource time and costs. To request an official report on your CPCT and CCT results, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form](https://www.idmanagement.gov/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} and send it with outputs and testing artifacts to fips201ep at gsa.gov.
 
-For more information about the CCT, see the [CCT Wiki](https://github.com/GSA/piv-conformance/wiki){:target="_blank"}{:rel="noopener noreferrer"}. You can [download the latest version of the CCT here](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}.
+You can [download the latest version of the CCT here](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 # Submitting a CCT Test Results Package
 If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to fips201ep at gsa.gov.
@@ -48,4 +48,10 @@ Note: Failure to submit a complete CCT Package may delay review of  your testing
 
 # Resources
 
-For assistance with the CCT, contact fpki at gsa.gov.
+For more information about the CCT, see the [CCT Wiki](https://github.com/GSA/piv-conformance/wiki){:target="_blank"}{:rel="noopener noreferrer"}. 
+
+For step-by-step instructions to help you perform CCT Testing, see the [CCT User Guide](https://github.com/GSA/piv-conformance/wiki/User-Guide).
+
+For a detailed video on how to perform CCT testing and how to prepare and submit a proper CCT Test Results Package, please watch this [CCT video](https://github.com/GSA/piv-conformance/raw/master/docs/Card_Test_Submission.mp4){:target="_blank"}{:rel="noopener noreferrer"}: PIV Conformance Tool Video.
+
+For further assistance with the CCT, contact fpki at gsa.gov.
