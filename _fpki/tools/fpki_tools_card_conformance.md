@@ -35,11 +35,11 @@ If you are running the Card Conformance Tool as part of the annual requirement t
 
 1.	A completed testing application for each PCI configuration evaluated (See Section 1 of the application for more information).
 2.	All accompanying Card Conformance Tool Log files:
---logs (directory)   
-    o	piv-artifacts (directory)   
-    o	x509-artifacts (directory)   
-    o	x509-certs (directory)   
-    o	the test database used for the evaluation (e.g., PIV_Production_Cards.db)   
+  - logs (directory)   
+  - piv-artifacts (directory)   
+  - x509-artifacts (directory)   
+  - x509-certs (directory)   
+  - the test database used for the evaluation (e.g., PIV_Production_Cards.db)   
 3.	The card's Answer-to-Rest value presented within the "Reader Status" text box (e.g., 3bd6970081b1fe451f078031c1521118f9)
 4.	A report (PDF or XLSX) for each certificate found on the card (use the Certificate Profile Conformance Tool (web application) to generate the reports).
 5.	High-resolution card photos of the front and back of each card tested.
