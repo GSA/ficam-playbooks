@@ -4,26 +4,32 @@ title: FICAM Playbooks
 permalink: /playbooks/
 ---
 
-<p>A playbook is a comprehensive guide on a technical topic, describing both overarching strategy and tactical approaches. The below table is sorted by title.</p>
-
-<table class="usa-table--borderless playbooks-table">
-  <thead class="usa-sr-only">
+<p style="max-width: 100%">A playbook is a comprehensive guide on a technical topic, describing both overarching strategy and tactical approaches. The below table is sorted by title.</p>
+<div class="usa-table-container--scrollable">
+  <table class="usa-table usa-table--borderless">
+    <thead>
     <tr>
-      <th id="playbooks-table-heading-title" scope="col">Title</th>
-      <th id="playbooks-table-heading-type" scope="col">Type</th>
-      <th id="playbooks-table-heading-date" scope="col">Latest Update</th>
-      <th id="playbooks-table-heading-description" scope="col">Description</th>
+      <th data-sortable="true"  scope="col" role="columnheader">Title</th>
+      <th data-sortable="true"  scope="col" role="columnheader">Type</th>
+      <th data-sortable="true"  scope="col" role="columnheader">Latest Update</th>
+      <th data-sortable="true"  scope="col" role="columnheader">Description</th>
     </tr>
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     {% assign playbooks = site.playbooks | concat: site.data.external_playbooks | sort: "title" %}
     {% for playbook in playbooks %}
-        <tr class="playbooks-table-row">
-          <td><a href="{{ playbook.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ playbook.title }}</a></td>
-          <td>{{ playbook.type }}</td>
-          <td>{{ playbook.pubdate }}</td>
-          <td>{{ playbook.description }}</td>
-        </tr>
+    <tr>
+      <th scope="row" role="rowheader"><a href="{{ playbook.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ playbook.title }}</a></th>
+      <td data-sort-value={{ playbook.type }}>{{ playbook.type }}</td>
+      <td data-sort-value={{ playbook.pubdate }}>{{ playbook.pubdate }}</td>
+      <td data-sort-value={{ playbook.description }}>{{ playbook.description }}</td>
+    </tr>
     {% endfor %}
-  </tbody>
-</table>
+    </tbody>
+  </table>
+  <div
+      class="usa-sr-only usa-table__announcement-region"
+      aria-live="polite"
+  ></div>
+</div>
+
