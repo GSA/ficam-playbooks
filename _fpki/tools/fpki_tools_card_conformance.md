@@ -7,8 +7,8 @@ sticky_sidenav: true
 sidenav: fpkitools
 
 subnav:
-  - text: What Is CCT?
-    href: '#what-is-CCT'
+  - text: What is the Card Conformance Tool (CCT)?
+    href: '#what-is-the-card-conformance-tool-(CCT)?'
   - text: Submitting a CCT Test Results Package
     href: '#submitting-a-cct-test-results-package'  
   - text: Resources
@@ -18,7 +18,7 @@ subnav:
 
 **Last Update**: May 10, 2021
 
-# What is CCT?
+# What is the Card Conformance Tool (CCT)?
 The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"} is a GSA managed, Java tool hosted on GitHub that can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model per current releases of related standards, including:
 
 - [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"}: PIV of Federal Employees and Contractors
@@ -31,6 +31,20 @@ The CCT, in conjunction with the [Certificate Profile Conformance Tool (CPCT)](.
 For more information about the CCT, see the [CCT Wiki](https://github.com/GSA/piv-conformance/wiki){:target="_blank"}{:rel="noopener noreferrer"}. You can [download the latest version of the CCT here](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 # Submitting a CCT Test Results Package
+If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to fips201ep at gsa.gov.
+
+1.	A completed testing application for each PCI configuration evaluated (See Section 1 of the application for more information).
+2.	All accompanying Card Conformance Tool Log files:   
+    o	logs (directory)   
+    o	piv-artifacts (directory)   
+    o	x509-artifacts (directory)   
+    o	x509-certs (directory)   
+    o	the test database used for the evaluation (e.g., PIV_Production_Cards.db)   
+3.	The card's Answer-to-Rest value presented within the "Reader Status" text box (e.g., 3bd6970081b1fe451f078031c1521118f9)
+4.	A report (PDF or XLSX) for each certificate found on the card (use the Certificate Profile Conformance Tool (web application) to generate the reports).
+5.	High-resolution card photos of the front and back of each card tested.
+
+Note: Failure to submit a complete CCT Package may delay review of  your testing results and completion of your annual FPKI PIV/PIV-I testing requirement.
 
 # Resources
 
