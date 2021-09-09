@@ -113,6 +113,8 @@ fpki:
     href: /fpki/ca/
   - text: Trust Stores
     href: /fpki/trust-stores/
+  - text: Path Discovery and Validation
+    href: /fpki/pdval/    
   - text: Federal Common Policy CA Update (FY21)
     href: /fpki/common/
   - text: Useful Tools
