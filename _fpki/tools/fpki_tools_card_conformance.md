@@ -40,12 +40,11 @@ If you are running the Card Conformance Tool as part of the annual requirement t
   - x509-artifacts (directory)   
   - x509-certs (directory)   
   - the test database used for the evaluation (e.g., PIV_Production_Cards.db)   
-
-{% include alert-success.html heading="Helpful Hint" content="Collecting all accompanying Card Conformance Tool Log files is most easily achieved by zipping the fips201-card-conformance-tool-[Release-Version]-[Release-Date] directory." %}
-
 3.	The card's Answer-to-Rest value presented within the "Reader Status" text box (e.g., 3bd6970081b1fe451f078031c1521118f9)
 4.	A report (PDF or XLSX) for each certificate found on the card (use the Certificate Profile Conformance Tool (web application) to generate the reports).
 5.	High-resolution card photos of the front and back of each card tested.
+
+{% include alert-success.html heading="Helpful Hint" content="Collecting all accompanying Card Conformance Tool Log files is most easily achieved by zipping the fips201-card-conformance-tool-[Release-Version]-[Release-Date] directory." %}
 
 {% include alert-warning.html heading="Note" content="Failure to submit a complete CCT Package may delay review of your testing results and completion of your annual FPKI PIV/PIV-I testing requirement." %}
 
