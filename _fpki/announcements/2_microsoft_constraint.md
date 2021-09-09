@@ -5,10 +5,9 @@ pubDate: 05/18/2018
 archiveDate: 05/19/2019
 removeDate: 05/19/2021
 collection: fpki
-permalink: fpki/announcements/2018mspkichanges/
 category: Microsoft
 description: UUpcoming changes regarding Microsoft's remove of the U.S. Government Root CA.
-category: Archived
+category: Removed
 sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
 

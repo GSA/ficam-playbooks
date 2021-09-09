@@ -1,9 +1,10 @@
 ---
 layout: page
 navtitle: Digitally Signing Documents for Submission to Office of the Federal Register
-title: Digitally Signing Documents for Submission to Office of the Federal Register
-pubdate: 07/2018
-date: July, 17, 2018
+title: Digitally Sign an Office of the Federal Register Document
+pubdate: 2018-07
+date: July 17, 2018
+category: Digitally Sign
 type: Markdown
 permalink: /signfedregister/
 description: This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
