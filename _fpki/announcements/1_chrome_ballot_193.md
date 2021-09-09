@@ -7,10 +7,10 @@ removeDate: 05/09/2021
 collection: fpki
 permalink: fpki/announcements/2018tlslifetime/
 tag: Chrome
-description: tarting March 1, 2018, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
+description: Starting March 1, 2018, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
 sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
-category: Archived
+category: Removed
 
 subnav: 
     - text: What Will Be Impacted?
