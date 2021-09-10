@@ -35,11 +35,11 @@ COMMON serves as the _root_ and _trust anchor_ for the _intermediate_ and _issui
 
 ### Federal Common Policy Certification Authority
 
-The _Federal Common Policy CA_ may be referred to as the _FCPCA_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the Federal Government, the FCPCA supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials](../../piv#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
+The _Federal Common Policy CA_ may be referred to as the _FCPCAG2_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the Federal Government, the FCPCAG2 supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials](../../piv#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
 
-A few commercial vendors include the FCPCA root certificate in the commercial-off-the-shelf (COTS) products' [Trust Stores](../trust-stores/). This enables Federal Government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCA root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
+A few commercial vendors include the FCPCAG2 root certificate in the commercial-off-the-shelf (COTS) products' [Trust Stores](../trust-stores/). This enables Federal Government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCAG2 root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
 
-{% include alert-warning.html content="The FCPCA root certificate is included in the trust stores for some platforms such as Microsoft and Adobe. Other platforms, such as Mozilla and Apple, do not include the FCPCA by default. " %}
+{% include alert-warning.html content="The FCPCAG2 root certificate is included in the trust stores for some platforms such as Adobe. Other platforms, such as Microsoft, Mozilla and Apple, do not include the FCPCA by default. " %}
 
 ### Federal Bridge Certification Authority
 
@@ -64,7 +64,7 @@ We realize all the acronyms and labels may be confusing and welcome your input t
 
 |**Certification Authority Category**|**Description**|
 |-----------|---------------|
-| PKI Shared Service Provider (SSP) Certification Authorities | An SSP CA is *subordinate* to the FCPCA.  Any certificate that an SSP CA creates, signs, and issues to people or devices is in the FCPCA _trust chain_. An SSP must adhere to strict federal IT security standards and requirements.  The SSPs are granted a FISMA Authority To Operate (ATO), undergo continuous monitoring, and are contracted by the Federal Government to issue certificates to federal employees and contractors, as well as devices that are deployed in federal agency networks. |
+| PKI Shared Service Provider (SSP) Certification Authorities | An SSP CA is *subordinate* to the FCPCAG2.  Any certificate that an SSP CA creates, signs, and issues to people or devices is in the FCPCA _trust chain_. An SSP must adhere to strict federal IT security standards and requirements.  The SSPs are granted a FISMA Authority To Operate (ATO), undergo continuous monitoring, and are contracted by the Federal Government to issue certificates to federal employees and contractors, as well as devices that are deployed in federal agency networks. |
 | Private Sector Certification Authorities | A Private Sector CA that is cross-certified has shown a valid need to conduct business or provide PKI services to the Federal Government. |
 | Other Government Certification Authorities | These CAs are managed and operated by State, Local, Tribal, Territorial, or International Governments. |
 | Bridge Certification Authorities | Bridge CAs connect member PKIs and are designed to enable interoperability between different PKIs operating under their own certificate policies. A Bridge CA is not a _root_. |
