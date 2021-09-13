@@ -1,6 +1,8 @@
 ---
 
 layout: page
+title: NIST SP 800-63 Updates
+collection: dira
 permalink: /DIRA/updates
 sticky_sidenav: true
 sidenav: DIRA
