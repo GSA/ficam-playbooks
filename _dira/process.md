@@ -4,7 +4,7 @@ layout: page
 navtitle: Digital Identity Risk Assessment
 title: DIRA Process
 collection: dira
-permalink: /DIRA/process
+permalink: /DIRA/process/
 sticky_sidenav: true
 sidenav: DIRA
 
