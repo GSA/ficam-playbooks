@@ -1,6 +1,7 @@
 ---
 
 layout: page
+navtitle: Digital Identity Risk Assessment
 title: DIRA Process
 collection: dira
 permalink: /DIRA/process
