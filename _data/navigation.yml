@@ -315,6 +315,8 @@ signwordofr:
     href: /signfedregister/#faqs
 
 # DIRA Playbook
+
+DIRA:
   - text: Introduction
     href: /DIRA/
   - text: Process
