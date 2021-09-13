@@ -2,7 +2,7 @@
 
 layout: page
 navtitle: Digital Identity Risk Assessment Playbook
-title: Introduction
+title: Digital Identity Risk Assessment Playbook
 collection: dira
 pubdate: 09/2020
 date: September, 13, 20121
@@ -21,6 +21,8 @@ subnav:
     href: #Scope
 
 ---
+
+# Introduction
 
 ## Purpose
 
