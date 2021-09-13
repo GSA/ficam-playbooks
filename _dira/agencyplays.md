@@ -1,6 +1,8 @@
 ---
 
 layout: page
+title: DIRA Agency Plays
+collection: dira
 permalink: /DIRA/plays
 sticky_sidenav: true
 sidenav: DIRA
