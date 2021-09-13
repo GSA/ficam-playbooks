@@ -21,4 +21,8 @@ subnav:
 
 ---
 
+## Purpose
 
+## How to Use This Playbook
+
+## Scope
