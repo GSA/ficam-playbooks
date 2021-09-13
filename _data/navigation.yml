@@ -268,7 +268,7 @@ footer:
 
 dira:
   - text: Digital Identity Risk Assessment (DIRA) Playbook
-    href: /playbooks/dira/
+    href: /dira/
 
 sso:
   - text: Single Sign On (SSO) Playbook
