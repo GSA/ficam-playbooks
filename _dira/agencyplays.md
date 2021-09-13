@@ -1,6 +1,7 @@
 ---
 
 layout: page
+navtitle: Digital Identity Risk Assessment
 title: DIRA Agency Plays
 collection: dira
 permalink: /DIRA/plays
