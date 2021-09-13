@@ -1,6 +1,8 @@
 ---
 
 layout: page
+title: DIRA Process
+collection: dira
 permalink: /DIRA/process
 sticky_sidenav: true
 sidenav: DIRA
