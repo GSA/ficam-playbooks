@@ -14,7 +14,9 @@ subnav:
     - text: Send an Encrypted Email
       href: '#send-an-Encrypted-email' 
     - text: Decrypt an Email
-      href: '#Decrypt-an-email'    
+      href: '#Decrypt-an-email'
+    - text: Other Helpful References
+      href: '#other-helpful-references'  
       
 ---
 
@@ -106,3 +108,10 @@ PIV users may received and store encrypted emails througout their tenure in an o
 2. Enter your PIV card PIN or private key password when prompted
 
 **Note:** Your orgnaization may not recover previously issued encryption keys onto your PIV, instead they may maintain a seperate key recovery service. Please reach out to your local IT department to determine if you can recover retired key management keys.
+
+## Other Helpful References
+
+- Enabling S/MIME on [Mac Mail](https://support.apple.com/guide/mail/sign-or-encrypt-emails-mlhlp1180/mac){:target="_blank"}{:rel="noopener noreferrer"}
+- Enabling S/MIME on [Thurderbird email client](https://docs.nitrokey.com/pro/smime-thunderbird.html){:target="_blank"}{:rel="noopener noreferrer"}
+- S/MIME with [Gmail](https://support.google.com/a/topic/9061730?hl=en&ref_topic=2683828){:target="_blank"}{:rel="noopener noreferrer"}
+- S/MIME with [O365](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-web-app-2e57e4bd-4cc2-4531-9a39-426e7c873e26){:target="_blank"}{:rel="noopener noreferrer"}

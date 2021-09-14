@@ -28,7 +28,7 @@ The full process of proving identity when issuing the certificates, auditing the
 
 [![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/piv/certificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/piv/certificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-For the US Federal Government Executive branch agencies, there is one Root Certificate Authority named _Federal Common Policy Certificate Authority (COMMON)_, and dozens of Intermediate Certification Authorities.  The US Federal Government has also established Trust with other Certification Authorities which serve business communities, state and local government communities, and international government communities.
+For the US Federal Government Executive branch agencies, there is one Root Certificate Authority named _Federal Common Policy Certificate Authority G2 (FCPCAG2 or COMMON)_, and dozens of Intermediate Certification Authorities.  The US Federal Government has also established Trust with other Certification Authorities which serve business communities, state and local government communities, and international government communities.
 
 The participating Certification Authorities are subject to policies, processes, and auditing collectively referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -43,7 +43,7 @@ The certificate chain includes the Intermediate Certification Authorities certif
 [![Example of a PIV certificate chain to Common]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 
-{% include alert-info.html heading = "Federal PKI Person Root - COMMON" content="The Federal Common Policy Certification Authority (COMMON) root certificate is included in Microsoft, Adobe and some Apple trust stores by default.  It is not included by default in Mozilla, java, all mobile device operating systems, or Linux based operating systems." %}
+{% include alert-info.html heading = "Federal PKI Person Root - COMMON" content="The Federal Common Policy Certification Authority G2 (COMMON) root certificate is included in Adobe trust stores by default.  It is not included by default in Microsoft, Apple, Mozilla, java, all mobile device operating systems, or Linux based operating systems." %}
 
 If you are an engineer working on implementing PIV authentication, you may need to download and install the root certificate (COMMON) for your workstations, servers, applications and network domains.
 
@@ -80,7 +80,7 @@ For a portion of your implementations such as network authentication, the _revoc
 
 ## Download root and intermediate certificates
 
-The Federal Government recently deployed the Federal Common Policy CA (FCPCA) G2, a new Federal Public Key Infrastructure (FPKI) root Certification Authority (CA). As the existing Federal Common Policy CA reaches the end of its planned service life, FCPCA G2 will roll out incrementally and serve as the new trust anchor for the Federal PKI. Below, you’ll find important dates and steps for a successful operational transition to the FCPCA G2 trust anchor.
+The Federal Government recently deployed the Federal Common Policy CA G2 (FCPCAG2), a new Federal Public Key Infrastructure (FPKI) root Certification Authority (CA). As the existing Federal Common Policy CA reaches the end of its planned service life, FCPCAG2 will roll out incrementally and serve as the new trust anchor for the Federal PKI. Below, you’ll find important dates and steps for a successful operational transition to the FCPCAG2 trust anchor.
 
 For instructions on how to download the new root and intermediate certificates, go to [the FPKI guide on the Federal Common Policy G2 Update](https://fpki.idmanagement.gov/common/obtain-and-verify/){:target="_blank"}{:rel="noopener noreferrer"}
 
