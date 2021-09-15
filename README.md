@@ -1,10 +1,3 @@
-<!--
-  Federalist recommends you use Continuous Integration to automatically test
-  and validate any new changes to your site. CircleCI is free for open source
-  projcets. You should replace this badge with your own.
-
-  https://circleci.com/
--->
 [![CircleCI](https://circleci.com/gh/GSA/ficam-playbooks.svg?style=svg)](https://circleci.com/gh/GSA/ficam-playbooks)
 
 This work is led by the GSA Identity and Trusted Access Division FICAM Program in coordination with the ICAM Subcommittee of the Federal CISO Council.
@@ -43,7 +36,8 @@ To build but not serve the site, run
 
 `npm run build or bundle exec jekyll build`
 
-With Docker
+### With Docker
+
 ```
 $ docker-compose run node npm install
 $ docker-compose build
@@ -61,7 +55,7 @@ This project is in the worldwide [public domain](/_pages/license.md/).
 >
 > All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
 
-### Special Thanks
+## Special Thanks
 This site is based on GitHub Pages and Jekyll templates. 
 
 Special thanks to the teams at [18F](https://18f.gsa.gov/), [18F Pages](https://pages.18f.gov/), and [US Digital Services Playbooks](https://playbook.cio.gov/) for their open and transparent model which benefits citizens, government, and technology.
