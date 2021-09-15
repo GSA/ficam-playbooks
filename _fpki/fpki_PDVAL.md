@@ -7,6 +7,10 @@ sticky_sidenav: true
 sidenav: fpki
 
 subnav:
+  - text: Audience
+    href: '#audience'
+  - text: Key Takeaways
+    href: '#key-takeaways'
   - text: What Is PDVAL?
     href: '#what-is-pdval'
   - text: Certification Path Discovery
@@ -18,9 +22,18 @@ subnav:
     
 ---
 
+## Audience
+This page is intended for system administrators and engineers who are responsible for managing technical interoperability with internal and external certificates to facilitate their mission and business processes. It is also useful as background for users who are issued certificates. 
+
+## Key Takeaways
+- Trust must be established in order to use a certificate for a given purpose. The trust process includes multiple checks that must be completed through a cryptographic relationship to a high-level trusted entity known as a trust anchor. A path must be built from any given certificate up to its trust anchor each time the certificate is used; this can be done with a local trust store or it can also be done dynamically:
+  - IT administrators may need to configure their users' trust stores to facilitate interoperability.
+  - IT administrators may need to configure their networks to allow for dynamic path building.
+- Primary use cases that path discovery and validation (PDVAL) supports can include authentication to IT resources (people and devices) and verification of a digital signature (e.g., signed email and signed documents).
+- A relying party is an entity that receives and consumes identity and credential data from an identity provider and makes access control decisions based on that data, in accordance with the Federal Trust Framework and established federation governance.
 
 ## What Is PDVAL?
-Before using a public key contained in a certificate, a relying party first has to determine the authenticity of that certificate and, specifically, the validity of all the certificates leading to a trusted public key, called a trust anchor. To do this, a two-step process called path discovery and validation (PDVAL), also called path processing, is performed:
+Before using a public key contained in a certificate, a relying party first has to determine the authenticity of that certificate and, specifically, the validity of all the certificates leading to a trusted public key, called a trust anchor. To do this, a two-step process called PDVAL, also called path processing, is performed:
 
 1.	Trust Path Discovery – Establishes a certification path, which is an ordered list of certificates starting with a certificate that can be validated by one of the relying party's trust anchors and ending with the certificate to be validated (the target certificate).
 
