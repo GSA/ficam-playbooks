@@ -116,15 +116,9 @@ collections:
   piv:
     output: true
     permalink: /piv/:path/
-  buy:
-    output: true
-    permalink: /buy/:path/
   playbooks:
     output: true
     permalink: /playbooks/:path/
-  sell:
-    output: true
-    permalink: /sell/:path/
   guides:
     output: true
   pages:
