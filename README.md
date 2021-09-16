@@ -48,10 +48,7 @@ To build but not serve the site, run:
 `docker-compose run ruby bundle exec jekyll build`
 
 ### Public domain
-<<<<<<< HEAD
-=======
 
->>>>>>> 62a69997b958d8ab591606d585ae7f896d033745
 This project is in the worldwide [public domain](/_pages/license.md/). 
 
 > This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
