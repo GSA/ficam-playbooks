@@ -3,7 +3,7 @@
 layout: page
 navtitle: Digital Identity Risk Assessment
 title: DIRA Agency Plays
-collection: dira
+collection: playbooks
 permalink: DIRA/plays/
 sticky_sidenav: true
 sidenav: DIRA
