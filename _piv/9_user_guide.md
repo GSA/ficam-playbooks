@@ -23,4 +23,4 @@ You can find additional guides across agency websites by using a few simple meth
 
 If you don't find what you're looking for, open an [Issue]({{site.repourl}}/issues/new){:target="_blank"}.  We can help look through the archives of guides that haven't been posted yet or help you send a request to the government listserves.  
 
-Your contributions are encouraged and welcome! You can [contribute](../../contribute/) to this effort or open an [Issue]({{site.repourl}}/issues/new){:target="_blank"} to discuss a need you may have for a guide.
+Your contributions are encouraged and welcome! You can [contribute](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} to this effort or open an [Issue]({{site.repourl}}/issues/new){:target="_blank"} to discuss a need you may have for a guide.

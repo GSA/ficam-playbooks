@@ -21,7 +21,7 @@ subnav:
       href: '#how-can-i-test-a-piv-card'     
 ---
 
-These **Personal Identity Verification (PIV)** Guides are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}){:target="_blank"} and a _work in progress_ and we [welcome contributions](../../contribute/) from our colleagues.
+These **Personal Identity Verification (PIV)** Guides are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}){:target="_blank"} and a _work in progress_ and we [welcome contributions](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.
 
 The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications, or digitally signing and encrypting. Using PIV for _physical access_ is available in the [PACS Guide](../../pacs/intro-pacs/){:target="_blank"}.
 
