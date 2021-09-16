@@ -3,7 +3,7 @@
 layout: page
 navtitle: Digital Identity Risk Assessment
 title: DIRA Process
-collection: dira
+collection: playbooks
 permalink: DIRA/process/
 sticky_sidenav: true
 sidenav: DIRA
