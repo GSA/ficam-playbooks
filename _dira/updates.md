@@ -4,7 +4,7 @@ layout: page
 navtitle: Digital Identity Risk Assessment
 title: NIST SP 800-63 Updates
 collection: dira
-permalink: /DIRA/updates/
+permalink: DIRA/updates/
 sticky_sidenav: true
 sidenav: DIRA
 
