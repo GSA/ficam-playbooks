@@ -3,7 +3,7 @@
 layout: page
 navtitle: Digital Identity Risk Assessment
 title: NIST SP 800-63 Updates
-collection: dira
+collection: playbooks
 permalink: DIRA/updates/
 sticky_sidenav: true
 sidenav: DIRA
