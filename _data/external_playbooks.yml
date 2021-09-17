@@ -2,16 +2,10 @@
 # FICAM-produced playbooks located in the /_playbooks/ and PDF versions in /assets/playbooks folder.
 # Newest on top
 
-- title: Enterprise Single Sign-On Playbook
-  type: PDF
-  pubdate: 2021-02
-  description: The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.
-  url: /docs/playbook-sso.pdf
-
 - title: Digital Worker Identity Playbook
   type: PDF
   pubdate: 2021-01
-  description: The Digital Worker Identity Playbook is a practical guide to manage digital worker identities.
+  description: The Digital Worker Identity Playbook is a practical guide to assess the risk of using digital workers and recommended identity-based mitigation.
   url: /docs/playbook-digital-worker.pdf
 
 - title: Digital Identity Risk Assessment Playbook
