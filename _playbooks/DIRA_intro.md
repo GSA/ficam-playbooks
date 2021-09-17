@@ -62,7 +62,7 @@ This playbook does not apply to:
 -	Non-person entities (refer to NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 2.3: A Few Limitations), such as devices, Robotic Process Automation (RPA) or Machine Learning;
 - Facilities access;
 - Federation Assurance Level 3 solutions (working group members determined that Federation Assurance Level 3 was complex and not widely supported in commercial products and implementations; the working group decided the Federation Assurance Level 3 explanations were better served by agency technical exchanges or deferred to details included in NIST Special Publications); or
-- National security systems (NSS) (Refer to Federal Information Security Modernization Act of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283, December 8, 2014).
+- National security systems (NSS) (refer to Federal Information Security Modernization Act of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283, December 8, 2014).
 
 
 
