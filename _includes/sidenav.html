@@ -28,7 +28,6 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
   <br>
   {% assign pdf = page.pdf %}
   {% if pdf == true %}
-    <button class="usa-button usa-button--big"><a href="{{ pdf.pdflocation }}" target="_blank" rel="noopener noreferrer">Download a PDF</a></button><br>
     <button class="usa-button"><a href= "{{ pdf.pdflocation }}" target="_blank" rel="noopener noreferrer">Download a PDF</a></button>
   {% endif %}
 </nav>
