@@ -10,6 +10,8 @@ type: Markdown
 permalink: /playbooks/sso/
 description: The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.
 sticky_sidenav: true
+pdf: true
+pdflocation: /docs/playbook-sso.pdf
 sidenav: sso
 
 subnav:
