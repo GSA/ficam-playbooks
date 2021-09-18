@@ -39,7 +39,7 @@ This Digital Identity Risk Assessment playbook helps federal agency Chief Inform
 -	Integrate DIRA into agency Risk Management Framework (RMF) processes; and
 -	Learn practices to implement DIRA processes.
 
-NIST publishes implementation guides (for more information, refer to [_NIST Special Publication 800-63-3: Digital Identity Guidelines_](https://pages.nist.gov/800-63-3){:target="_blank"}{:rel="noopener noreferrer"}) and frequently asked questions (FAQs) (NIST Special Publication 800-63-3: Digital Identity Guidelines, Frequently Asked Questions)  for agencies and service providers to use to create information technology solutions to meet these standards. This playbook promotes consistency, effectiveness, and efficiency in your agency’s processes.
+NIST publishes implementation guides (for more information, refer to [NIST Special Publication 800-63-3: Digital Identity Guidelines](https://pages.nist.gov/800-63-3){:target="_blank"}{:rel="noopener noreferrer"}) and frequently asked questions (FAQs) (NIST Special Publication 800-63-3: Digital Identity Guidelines, Frequently Asked Questions)  for agencies and service providers to use to create information technology solutions to meet these standards. This playbook promotes consistency, effectiveness, and efficiency in your agency’s processes.
 
 ## How to Use This Playbook
 
@@ -52,7 +52,7 @@ This playbook is divided into three major sections. Read the entire playbook or 
 
 The DIRA playbook applies to all federal Information Technology (IT) systems and applications that need identity proofing and authentication (pursuant to 0MB Circular A-130, "information system" means a discrete set of information resources organized for the collection, processing, maintenance, use, sharing, dissemination, or disposition of information. *System* and *application* are used synonymously throughout this playbook). This playbook complements the following standard and policy:
 
-- [_NIST Special Publication 800-63-3: Digital Identity Guidelines_](https://pages.nist.gov/800-63-3){:target="_blank"}{:rel="noopener noreferrer"}
+- [NIST Special Publication 800-63-3: Digital Identity Guidelines](https://pages.nist.gov/800-63-3){:target="_blank"}{:rel="noopener noreferrer"}
 - [Office of Management and Budget Memorandum (OMB) M-19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 All agency information technology systems should use the DIRA process as part of the Risk Management Framework (RMF) and Federal Information Security Modernization Act (FISMA) processes. Business owners and information security officers produce a Digital Identity Assessment Statement (DIAS) to document the assurance levels determined by collecting and analyzing the system or application data as part of the assessment process.
