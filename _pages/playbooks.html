@@ -20,9 +20,9 @@ permalink: /playbooks/
     {% for playbook in playbooks reversed %}
     <tr>
       <th scope="row" ><a href="{{ playbook.url | relative_url }}" target="_blank" rel="noopener noreferrer" title="playbook.title">{{ playbook.title }}</a></th>
-      <td data-sort-value={{ playbook.type }} >{{ playbook.type }}</td>
-      <td data-sort-value={{ playbook.pubdate }} ><a date="playbook.pubdate">{{ playbook.pubdate }}</a></td>
-      <td data-sort-value={{ playbook.description }} >{{ playbook.description }}</td>
+      <td >{{ playbook.type }}</td>
+      <td ><a date="playbook.pubdate">{{ playbook.pubdate }}</a></td>
+      <td >{{ playbook.description }}</td>
     </tr>
     {% endfor %}
     </tbody>
