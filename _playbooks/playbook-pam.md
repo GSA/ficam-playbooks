@@ -277,7 +277,7 @@ Access management is how an agency authenticates privileged users and authorizes
 
 5. Start with basic account management, ensuring that the most impactful accounts are well in control.
     
-    a) Accounts should be provisioned to only authorized administrators who have committed to the responsibilities of their job (see Appendix B)
+    a) Accounts should be provisioned to only authorized administrators who have committed to the responsibilities of their job (see Appendix B).
     
     b) Administrators should utilize PIV or other Multifactor Authentication directly where possible.
     
