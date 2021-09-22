@@ -11,6 +11,24 @@ permalink: /signword/
 description: This guide will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
 sticky_sidenav: true
 sidenav: signword
+
+subnav:
+  - text: Add a Digital Signature Using a Signature Line
+    href: /signword/#add-a-digital-signature-using-a-signature-line
+  - text: Add an Invisible Digital Signature
+    href: /signword/#add-an-invisible-digital-signature
+  - text: Add Multiple Digital Signatures Using Signature Lines
+    href: /signword/#add-multiple-digital-signatures-using-signature-lines
+  - text: Add Multiple Invisible Digital Signatures
+    href: /signword/#add-multiple-invisible-digital-signatures
+  - text: View Digital Signatures
+    href: /signword/#view-digital-signatures
+  - text: Remove a Digital Signature
+    href: /signword/#remove-a-digital-signature
+  - text: Verify Digital Signature Settings
+    href: /signword/#verify-digital-signature-settings
+  - text: Additional Resources
+    href: /signword/#additional-resources
 ---
 
 {% include alert-info.html content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the Verify Digital Signature Settings section below." %}
