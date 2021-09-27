@@ -206,4 +206,16 @@ Formalize the results of the assessment process with a Digital Identity Acceptan
 
 The [Digital Identity Acceptance Statement template](../../docs/dira-dias-template.docx){:target="_blank"} provides an example DIAS for agencies.   
 
-## Step 5
+## Step 5: Reassess
+
+A digital identity reassessment may be time-driven or event-driven and applies to a reassessment of the DIRA.
+
+{% include alert-info.html heading="Key Point" content="Reassess digital identity risk annually or more often for higher impact categories and transactions. A time-based assessment drives alignment with modernization initiatives, changes to technology, and changes to policies." %}
+
+If an event triggers a security impact analysis, an agency may perform a DIRA outside the normal continuous monitoring cycle. Significant changes requiring a digital identity reassessment include changes in:
+- Core mission or business functions,
+- Purpose or nature of a system,
+- Risk environment,
+- How information, including PII, is processed, or
+- How information is processed, stored, or transmitted by the system.
+
