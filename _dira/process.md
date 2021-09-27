@@ -181,8 +181,29 @@ Figure 7 is an example of a decision tree of the risk assessment process flow th
 
 [![Figure 7 is a decision tree to select an appropriate Federation Assurance Level (FAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, are you federating? If no, a FAL assessment is not required. If yes, specify the risks (to the agency or the subject) of providing the digital service (i.e., an identity assertion is compromised) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select FAL3. If no, did you assess moderate for personal safety? If yes, select FAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select FAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select FAL2. If no, are you making personal data accessible? If yes, select FAL2. If no, are you using a front channel? If yes, select FAL2. If no, select FAL1. Reassess the FAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.](../../assets/dira/process_DIRAFigure7.png)](../../assets/DIRA/process_DIRA Figure7.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-## Step 3
+## Step 3: Determine Steps to Meet Assurance Levels
 
-## Step 4
+Analyze available technology and solutions at your agency, determine if they are sufficient enough to meet the application needs, and identify what you need to implement. Use data and agency enterprise defined needs when choosing solutions, including:
+- Number of users by community of users;
+- User experience (UX) and usability (for non-organizational users i.e., public, business, partner); and
+- Direct and indirect benefits to reuse enterprise-level chosen solutions, including consolidated support desks.
+
+Your agency may determine alternatives to the NIST-recommended guidance for the assessed assurance levels (refer to NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 5.4, Risk Acceptance and Compensating Controls) based on:  
+- Your mission,
+- Your risk tolerance,
+- Your existing business processes,
+- Special considerations for certain populations,
+- The availability of data that provides similar mitigations to those described in the Digital Identity Guidelines, or
+- Other capabilities unique to the agency.
+
+Figure 8 depicts all the steps for implementing a DIRA. 
+
+[![Figure 8 is a flowchart depicting 18 steps for performing a Digital Identity Risk Assessment. Steps 1 through 3 are under the column heading Data Collection. Steps 4 and 5 are under the column heading Analysis. Steps 6 through 10 are under the column heading Review. Steps 11 through 13 are under the column heading Implementation Determination. Steps 14 and 15 are under the column heading Concurrence. Steps 16 through 18 are under the column headig Ongoing Assessment. Below the first through fifth columns there is a bar labeled Outputs. The outputs are as follows Column 1 Transaction Data, Column 2 Provisional xALs for Review, Column 3 Assessed xALs, Column 4 Implementation x ALs, Column 5 Approved Digital Identity Acceptance Statement.](../../assets/dira/process_DIRAFigure8.png)](../../assets/DIRA/process_DIRA Figure8.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+## Step 4: Finalize Digital Identity Acceptance Statement
+
+Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels. Refer to NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 5.5, Digital Identity Acceptance Statement. 
+
+The [Digital Identity Acceptance Statement template](../../docs/dira-dias-template.docx){:target="_blank"} provides an example DIAS for agencies.   
 
 ## Step 5
