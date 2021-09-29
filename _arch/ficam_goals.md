@@ -6,9 +6,9 @@ permalink: arch/goals/
 sidenav: arch
 ---
 
-These Goals and Objectives identify the aims and outcomes of a Federal agency enterprise ICAM program.  The goals and objectives are for ICAM functions and map to government-wide policies, cross-agency priorities, and strategic government initiatives.  
+These Goals and Objectives identify the aims and outcomes of a federal agency enterprise ICAM program.  The goals and objectives are for ICAM functions and map to government-wide policies, cross-agency priorities, and strategic government initiatives.  
 
-The goals are aspirational statements designed for senior government leaders, agency executives, and agency ICAM program leadership responsible for setting program strategy.  The objectives are action areas where agency execution strategies, action plans and performance metrics can be developed based on alignment with the mission needs.    
+The goals are aspirational statements designed for senior government leaders, agency executives, and agency ICAM program leadership responsible for setting program strategy.  The objectives are action areas where agency execution strategies, action plans, and performance metrics can be developed based on alignment with the mission needs.    
 
 The visual includes three goals, each with its own objectives. 
 
