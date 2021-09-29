@@ -9,7 +9,7 @@ sticky_sidenav: true
 
 [![Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for the Attribute Exchange service in Federation.](../../assets/arch/usecases/Federation-AttributeExchange.png){:align="right" style="padding-left:15px"}](../../assets/arch/usecases/Federation-AttributeExchange.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-Federal employees and contractors often need to access protected services managed by other federal agencies. Federation is the means by which an agency can accept authentication assertions and associated identity attributes from systems within their agency and at other agencies. This allows federal employees and contractors from across agencies access protected resources and streamlines the user’s experience.
+Federal employees and contractors often need to access protected services managed by other federal agencies. Federation is the means by which an agency can accept authentication assertions and associated identity attributes from systems within their agency and at other agencies. This allows federal employees and contractors from across agencies to access protected resources and streamlines the user’s experience.
   
 Agencies can pass assertions to share attributes about employees and contractors.
 
@@ -48,11 +48,11 @@ td {
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>4. Agency B grants access</strong> <br> <a href="../../assets/arch/usecases/8-4.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/8-4.png" width="250" alt="A diagram showing Agency B access control system granting access to an employee or contractor from Agency A."></a></td>
-    <td style="border:0px;"> Agency B consumes the assertion data, optionally correlating it with an established account or local identity and makes an access control decision.<br><br>The Agency B system redirects the employee or contractor to the federated service.</td>
+    <td style="border:0px;"> Agency B consumes the assertion data, optionally correlating it with an established account or local identity, and makes an access control decision.<br><br>The Agency B system redirects the employee or contractor to the federated service.</td>
   </tr>
 </table>
 
 ## Examples
 
 - I want to allow other federal agencies' employees and contractors (who meet specific requirements) to access some of my agency’s resources, which facilitates cross-government collaboration and information sharing.
-- An employee or contractor from Agency A visits a shared service operated by Agency B to service all Federal government users. At the homepage, the employee/contractor selects their Agency A icon and is redirected to their Agency A SSO portal. They log in using their Agency A managed credentials and are redirected back to the Agency B shared service.
+- An employee or contractor from Agency A visits a shared service operated by Agency B to service all federal government users. At the homepage, the employee/contractor selects their Agency A icon and is redirected to their Agency A SSO portal. They log in using their Agency A managed credentials and are redirected back to the Agency B shared service.
