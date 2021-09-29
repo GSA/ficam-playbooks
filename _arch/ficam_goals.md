@@ -29,5 +29,5 @@ The visual includes three goals, each with its own objectives.
 **Goal 3:  Provide enterprise-level solutions within agencies to improve operations and promote cost-effective and efficient use of resources.**
 - 3.1 - Streamline ICAM governance and program management within each agency to optimize execution, ensure consistency, and align intent across the enterprise.
 - 3.2 - Evaluate, rationalize, and migrate to modern, cloud-smart solutions for ICAM services. 
-- 3.3 - Promote interoperability and efficiency across the federal government by buying and building ICAM solutions that use open, commercially-adopted standards.  
+- 3.3 - Promote interoperability and efficiency across the federal government by buying and building ICAM solutions that use open, commercially adopted standards.  
 
