@@ -7,18 +7,14 @@ sticky_sidenav: true
 sidenav: fpkitools
 
 subnav:
-  - text: What is the Card Conformance Tool (CCT)?
-    href: '#what-is-the-card-conformance-tool-(CCT)?'
   - text: Submitting a CCT Test Results Package
     href: '#submitting-a-cct-test-results-package'  
   - text: Resources
     href: '#resources'
   
 ---
-
 **Last Update**: May 10, 2021
 
-# What is the Card Conformance Tool (CCT)?
 The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"} is a GSA managed, Java tool hosted on GitHub that can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model per current releases of related standards, including:
 
 - [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"}: PIV of Federal Employees and Contractors
