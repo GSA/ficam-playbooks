@@ -25,7 +25,7 @@ subnav:
     href: ../federate/
 ---
 
-These use cases are designed for ICAM Enterprise Architects and business owners, and describe some of the most common ICAM business processes.
+These use cases are designed for ICAM Enterprise Architects and business owners and describe some of the most common ICAM business processes.
 
 Each use case includes a high-level summary of the scenario, individuals and systems involved in the use case, illustrations that show the required steps to achieve the end goal, and an icon that indicates the practice area and the service with which the use case most closely aligns.
 
