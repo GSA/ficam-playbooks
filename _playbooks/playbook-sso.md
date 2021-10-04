@@ -65,8 +65,8 @@ This playbook was developed by the General Services Administration Office of Gov
 ## Federal Cybersecurity Requirements
 The [federal cybersecurity requirements](https://uscode.house.gov/view.xhtml?req=6+USC+1523:+Federal+cybersecurity+requirements){:target="_blank"}{:rel="noopener noreferrer"} listed below include a driver for SSO:
 
-(b) Cybersecurity requirements at agencies
-(1) In general
+(b) Cybersecurity requirements at agencies<br>
+(1) In general<br>
 Consistent with policies, standards, guidelines, and directives on information security under subchapter II of chapter 35 of title 44 and the standards and guidelines promulgated under section 11331 of title 40 and except as provided in paragraph (2), not later than 1 year after December 18, 2015, the head of each agency shall-
 
 (A) identify sensitive and mission critical data stored by the agency consistent with the inventory required under the first subsection (c) (relating to the inventory of major information systems) and the second subsection (c) (relating to the inventory of information systems) of section 3505 of title 44;
@@ -132,6 +132,8 @@ Table 3. Key Enterprise SSO Risks
 | Assertion Validation | Each application validates that the assertions it receives are from a trusted source and appropriate for its sub-domain, functionality, and required attributes. |
 
 {% include alert-error.html heading="Cyberattacks" content="Targeted cyberattacks may pose a heightened risk to your agency’s IT assets, such as enterprise directories, identity stores, and Enterprise SSO servers. Your SSO should be managed and monitored as part of your agency’s cybersecurity program and in coordination with the DHS CDM initiative." %} 
+
+Users who are trained to enter their credentials without thinking can unintentionally supply them to a malicious credential prompt. Don’t ask users to provide their credentials if the security posture of their sessions has not changed.
 
 ## 1.3 Build the Business Case
 With any project, a business case is used to capture the strategic, business, and technical benefits from a project. Use examples in Table 4 below to craft your business case. The main benefits include:
