@@ -21,38 +21,10 @@ subnav:
     href: '#Scope'
   - text: DIRA Process
     href: '#dira-process'
-  - text: Step 1
-    href: '#step-1'
-  - text: Step 2
-    href: '#step-2'
-  - text: Step 3
-    href: '#step-3'
-  - text: Step 4
-    href: '#step-4'
-  - text: Step 5
-    href: '#step-5'
   - text: Agency Process Plays
     href: '#agency-process-plays'
-  - text: Play 1
-    href: '#play-1'
-  - text: Play 2
-    href: '#play-2'
-  - text: Play 3
-    href: '#play-3'
-  - text: Play 4
-    href: '#play-4'
-  - text: Play 5
-    href: '#play-5'
-  - text: Play 6
-    href: '#play-6'
   - text: NIST SP 800-63 Updates
     href: '#nist-sp-800-63-updates'
-  - text: Why Was the SP Updated?
-    href: '#why-was-the-sp-updated' 
-  - text: What Has Changed?
-    href: 'what-has-changed'
-  - text: Mix and Match Assurance Levels
-    href: 'mix-and-match-assurance-levels'
 ---
 
 # Introduction
