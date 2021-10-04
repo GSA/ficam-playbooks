@@ -41,7 +41,7 @@ The operational status for each Federal Agency or affiliate connected to the Fed
 | Government Printing Office | FBCA | No Issues |
 | IdenTrust NFI | FBCA | No Issues |
 | WidePoint/ORC NFI | FBCA | No Issues |
-| SAFE BioPharma Bridge | FBCA | No Issues |
+| SAFE Identity Bridge | FBCA | No Issues |
 | STRAC Bridge | FBCA | No Issues |
 | TSCP Bridge | FBCA | No Issues |
 | US Patent and Trademark Office (PTO) | FBCA | No Issues |
@@ -87,7 +87,7 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | Federal Bridge CA G4 | FBCA | 100	| 100 |
 | GPO PCA | FBCA | 100 | 99.95 |
 | IdenTrust Global Common Root CA 1 | FBCA | 100 | 99.87 |
-| SAFE Identity CA	| FBCA | 100 | 99.94 |
+| SAFE Identity Bridge CA	| FBCA | 100 | 99.94 |
 | STRAC Bridge Root Certification Authority	| FBCA | 99.96 | 99.97 |
 | Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 100 | 99.99 |
 | TSCP SHA256 Bridge CA	| FBCA | 100 | 97.85 |
