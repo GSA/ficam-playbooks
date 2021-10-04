@@ -62,6 +62,25 @@ These are key terms used throughout this document.
 ## Disclaimer
 This playbook was developed by the General Services Administration Office of Government-wide Policy (GSA OGP) with input from federal IT practitioners. This document shouldn’t be interpreted as official policy or mandated action, and doesn’t provide authoritative definitions for IT terms. Instead, this playbook supplements existing federal IT policies and builds upon the [Office of Management and Budget Memorandum 19-17 (OMB M-19-17), Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, as well as existing federal identity guidance and playbooks. Privileged user access (e.g., superusers, domain administrators) is out of scope for this playbook.
 
+## Federal Cybersecurity Requirements
+The [federal cybersecurity requirements](https://uscode.house.gov/view.xhtml?req=6+USC+1523:+Federal+cybersecurity+requirements){:target="_blank"}{:rel="noopener noreferrer"} listed below include a driver for SSO:
+
+(b) Cybersecurity requirements at agencies
+(1) In general
+Consistent with policies, standards, guidelines, and directives on information security under subchapter II of chapter 35 of title 44 and the standards and guidelines promulgated under section 11331 of title 40 and except as provided in paragraph (2), not later than 1 year after December 18, 2015, the head of each agency shall-
+
+(A) identify sensitive and mission critical data stored by the agency consistent with the inventory required under the first subsection (c) (relating to the inventory of major information systems) and the second subsection (c) (relating to the inventory of information systems) of section 3505 of title 44;
+
+(B) assess access controls to the data described in subparagraph (A), the need for readily accessible storage of the data, and individuals' need to access the data;
+
+(C) encrypt or otherwise render indecipherable to unauthorized users the data described in subparagraph (A) that is stored on or transiting agency information systems;
+
+**(D) implement a single sign-on trusted identity platform for individuals accessing each public website of the agency that requires user authentication, as developed by the Administrator of General Services in collaboration with the Secretary; and**
+
+(E) implement identity management consistent with section 7464 of title 15, including multi-factor authentication, for-<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) remote access to an agency information system; and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) each user account with elevated privileges on an agency information system.
+
 # Centralize Application Access in Five Steps
 An Enterprise SSO service centralizes authentication to applications across a federal agency. It provides a single portal or access point for multiple agency applications, consolidates authentication policies, and extends multi-factor authentication to applications that do not support it. This reduces the cost of identity-related help desk tickets and other tasks. In other words, an SSO service provides a centralized access method for agencies and potentially other federal agency applications. This playbook outlines five steps when implementing an Enterprise SSO service.
 
