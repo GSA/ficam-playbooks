@@ -398,4 +398,4 @@ The revised guidance provides individual assurance levels that can be mixed and 
 -	Enhanced privacy, and 
 -	Reduced risk.
 
-[![Insert Signature Line]({{site.baseurl}}/assets/piv/word-signature-1.png)]({{site.baseurl}}/assets/piv/word-signature-1.png){:target="_blank"}{:rel="noopener noreferrer"}
+
