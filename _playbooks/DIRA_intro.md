@@ -399,8 +399,3 @@ The revised guidance provides individual assurance levels that can be mixed and 
 -	Reduced risk.
 
 
-[![Figure 12 explains where the Digital Identity Guidelines information can be found.](../../assets/playbooks/DIRA_intro_DIRAFigure12.png)](../../assets/playbooks/DIRA_intro_DIRAFigure12.png){:target="_blank"}{:rel="noopener noreferrer"}
-
-[![Insert Signature Line]({{site.baseurl}}/assets/piv/word-signature-1.png)]({{site.baseurl}}/assets/piv/word-signature-1.png){:target="_blank"}{:rel="noopener noreferrer"}
-
-[![Figure 12 explains where the Digital Identity Guidelines information can be found.]{{site.baseurl}}/assets/playbooks/DIRA/DIRAFigure12.png)]({{site.baseurl}}/assets/playbooks/DIRA/DIRAFigure12.png){:target="_blank"}{:rel="noopener noreferrer"}
