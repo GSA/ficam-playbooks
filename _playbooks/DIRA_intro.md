@@ -398,4 +398,4 @@ The revised guidance provides individual assurance levels that can be mixed and 
 -	Enhanced privacy, and 
 -	Reduced risk.
 
-
+[![Basic components required to perform single sign-on]({{site.baseurl}}/assets/playbooks/DIRAFigure12.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure12.png){:target="_blank"}{:rel="noopener noreferrer"}
