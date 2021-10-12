@@ -319,9 +319,4 @@ signwordofr:
 DIRA:
   - text: Introduction
     href: /DIRA/
-  - text: Process
-    href: /DIRA/process/
-  - text: Plays
-    href: /DIRA/plays/
-  - text: Updates
-    href: /DIRA/updates/
+
