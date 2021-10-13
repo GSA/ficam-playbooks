@@ -6,7 +6,7 @@ type: Markdown
 permalink: dw/ 
 # Exmple: pm/ for landing pages choose a friendly permalink which is easy to share and remember
 sticky_sidenav: true
-sidenav: 
+sidenav: dw
 # Look at _data/navigation.yml to create sidenav - Example: pm
 # If you have headers in your doc, you can create a 2nd level navigation with subnav:
 
