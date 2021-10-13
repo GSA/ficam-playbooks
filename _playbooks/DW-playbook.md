@@ -1,11 +1,9 @@
 ---
-# This section is called the front matter, remove the comments in your page template.
 layout: page
-collection: 
-# Collection Name Matching (look at config.yml for collection names)
-title: Page title 
-# Example: ICAM Program Management Guide Introduction
-permalink: Page Link 
+collection: playbooks
+title: Digital Worker Identity Playbook 
+type: Markdown
+permalink: dw/ 
 # Exmple: pm/ for landing pages choose a friendly permalink which is easy to share and remember
 sticky_sidenav: true
 sidenav: 
