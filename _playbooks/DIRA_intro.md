@@ -4,13 +4,13 @@ layout: page
 navtitle: Digital Identity Risk Assessment Playbook
 title: Digital Identity Risk Assessment Playbook
 collection: playbooks
-pubdate: 09/2020
+pubdate: 2020-09
 date: September, 13, 2021
 type: Markdown
-permalink: /DIRA/
+permalink: /playbooks/dira
 description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
 sticky_sidenav: true
-sidenav: DIRA
+sidenav: dira
 
 subnav:
   - text: Purpose
@@ -26,6 +26,8 @@ subnav:
   - text: NIST SP 800-63 Updates
     href: '#nist-sp-800-63-updates'
 ---
+
+This playbook reflects the contributions of the Digital Identity Risk Assessment working group of the Identity, Credential and Access Management Subcommittee (ICAMSC).  The working group was co-chaired by members from the Internal Revenue Service (IRS) and the Environmental Protection Agency (EPA). Contributions were made by the members of services or agencies representing the Center of Medicare and Medicaid Services (CMS), Department of Defense (DOD), Department of Health and Human Services (HHS), Department of Homeland Security (DHS), Department of Justice (DOJ), Department of the Treasury (USDT), Department of Transportation (DOT), and General Services Administration (GSA). 
 
 # Introduction
 
