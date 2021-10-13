@@ -19,8 +19,8 @@ subnav:
     href: '#how-to-use-this-playbook'
   - text: Scope
     href: '#Scope'
-  - text: DIRA Process
-    href: '#dira-process'
+  - text: High-Level DIRA Process
+    href: '#high-level-dira-process'
   - text: Agency Process Plays
     href: '#agency-process-plays'
   - text: NIST SP 800-63 Updates
@@ -49,9 +49,9 @@ NIST publishes implementation guides (for more information, refer to [NIST Speci
 ## How to Use This Playbook
 
 This playbook is divided into three major sections. Read the entire playbook or jump directly to the section that will help your agency.
-- High-Level DIRA Process - A step-by-step guide on how to approach a DIRA process for each agency.
-- Agency Process Plays - Six plays to create efficient and consistent processes. For example, Play #4 includes a shortcut decision tree for a streamlined DIRA for some applications.
-- Updates - Information about updates to NIST Special Publication 800-63. 
+- [High-Level DIRA Process](#high-level-dira-process) - A step-by-step guide on how to approach a DIRA process for each agency.
+- [Agency Process Plays](#agency-process-plays) - Six plays to create efficient and consistent processes. For example, Play #4 includes a shortcut decision tree for a streamlined DIRA for some applications.
+- [NIST SP 800-63 Updates](#nist-sp-800-63-updates) - Information about updates to NIST Special Publication 800-63. 
 
 ## Scope
 
@@ -69,7 +69,7 @@ This playbook does not apply to:
 - Federation Assurance Level 3 solutions (working group members determined that Federation Assurance Level 3 was complex and not widely supported in commercial products and implementations; the working group decided the Federation Assurance Level 3 explanations were better served by agency technical exchanges or deferred to details included in NIST Special Publications); or
 - National security systems (NSS) (refer to Federal Information Security Modernization Act of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283, December 8, 2014).
 
-# DIRA Process
+# High-Level DIRA Process
 
 The DIRA process begins when a new application or system is identified or a time-driven or event-driven reassessment is triggered. Once it is determined that a DIRA is needed, application data is identified, collected, and analyzed to determine the assurance levels, and produce a Digital Identity Assessment Statement (DIAS), as shown in Figure 1.
 
