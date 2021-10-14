@@ -275,7 +275,7 @@ Formalize the results of the assessment process with a Digital Identity Acceptan
 
 The [Digital Identity Acceptance Statement template](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.   
 
-The [Digital Identity Acceptance Statement template](/docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies. 
+The [Digital Identity Acceptance Statement template](/../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies. 
 
 ## Step 5: Reassess
 
