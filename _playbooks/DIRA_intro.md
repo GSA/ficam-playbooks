@@ -275,6 +275,8 @@ Formalize the results of the assessment process with a Digital Identity Acceptan
 
 The [Digital Identity Acceptance Statement template](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.   
 
+The [Digital Identity Acceptance Statement template](/docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies. 
+
 ## Step 5: Reassess
 
 A digital identity reassessment may be time-driven or event-driven and applies to a reassessment of the DIRA.
