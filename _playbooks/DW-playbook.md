@@ -2,13 +2,13 @@
 layout: page
 collection: playbooks
 title: Digital Worker Identity Playbook 
+pubdate: 2021-01
+date: October 14, 2021
 type: Markdown
 permalink: dw/ 
-# Exmple: pm/ for landing pages choose a friendly permalink which is easy to share and remember
+description: The Digital Worker Identity Playbook is a practical guide to manage digital worker identities.
 sticky_sidenav: true
 sidenav: dw
-# Look at _data/navigation.yml to create sidenav - Example: pm
-# If you have headers in your doc, you can create a 2nd level navigation with subnav:
 
 subnav:
   - text: About this Repository
