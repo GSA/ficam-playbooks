@@ -18,7 +18,7 @@ subnav:
   - text: How to Use This Playbook
     href: '#how-to-use-this-playbook'
   - text: Scope
-    href: '#Scope'
+    href: '#scope'
   - text: High-Level DIRA Process
     href: '#high-level-dira-process'
   - text: Agency Process Plays
