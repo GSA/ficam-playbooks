@@ -9,27 +9,43 @@ sidenav: pivnetwork
 subnav:
   - text: Windows
     href: '#windows'
+  - text: Trust Stores
+    href: '#trust-stores'
+  - text: Network Misconfigurations
+    href: '#network-miconfigurations'
+  - text: Account Linking
+    href: '#account-linking'
+  - text: Helpful Tools
+    href: '#helpful-tools'
+
 
 ---
 
 
 #Windows
 
-[Initial Brain Dump - 07232021]
+## Trust Stores
+PKI based mutual authentication issues often arrive when one or both parties (host and/or client) are not capable of establishing trust with each others certificates.  Given the path discovery and validation (PDVAL) processes that takes place on both party's machines this can be due to multiple scenarios with either trust store to include the following:
 
-1. Trust Store Management Issues
-   - NTAuth does not contain issuing CA certificate
-   - NTAuth does not contain issuer of DC certifciate
-   - User workstation unable to validate PIV certificate
-   - Domain Controller unable to validate PIV certificate 
-   - User workstation unable to validate DC certificate
-   - Domain Controller unable to validate its own certificate (expiration)
+   - Domain Controller (Host)
+      - Domain Controller unable to validate PIV certificate
+      - NTAuth does not contain PIV root CA certificate
+      - NTAuth does not contain PIV intermediate or issuing CA certificate
+      - Domain Controller unable to validate its own certificate (expiration) 
+   - User Workstation (Client)
+      - User workstation unable to validate PIV certificate 
+      - NTAuth does not contain DC root CA certificate
+      - NTAuth does not contain DC intermediate or issuing CA certificate
 
-2. Network Configurations
+
+## Network Misconfigurations
+Due to required security controls many networks appliances are equiped with stringent IP whitelists that may be blocking publicly avaialble PKI resources such as Authority Information Access (AIA) points, Credential Revocation List (CRL) distrobution points, or Online Certificate Status Protocol (OCSP) responder addresses.
+
    - CRL/OCSP/AIA traffic blocked
    - Tuning related misconfiguration 
 
-3. Account Linkinking 
+## Account Linkinking 
    - AltSecID or upn imporperly formatted
 
+## Helpful Tools
 
