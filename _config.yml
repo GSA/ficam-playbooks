@@ -63,7 +63,7 @@ primary_navigation:
 #        url: /playbooks/
 #      - name: Digital Identity Risk Assessment (DIRA)
 #        url: /playbooks/dira/
-#      - name: Digital Worker
+#      - name: Digital Worker Identity
 #        url: /playbooks/dw/
 #      - name: Enterprise Single Sign-On
 #        url: /playbooks/sso/
