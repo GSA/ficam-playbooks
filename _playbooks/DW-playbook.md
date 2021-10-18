@@ -35,11 +35,11 @@ subnav:
 
 [text here]
 
-## Key Terms - Don't put in sidenav
+## Key Terms 
 
 [text here]
 
-## Disclaimer - Don't put in sidenav
+## Disclaimer 
 
 [text here]
 
@@ -51,15 +51,15 @@ subnav:
 
 [text here]
 
-## 1.1 Ensure Proper Oversight - Don't put in sidenav
+## 1.1 Ensure Proper Oversight 
 
 [text here]
 
-## 1.2 Score Risk Impact - Don't put in sidenav
+## 1.2 Score Risk Impact 
 
 [text here]
 
-## 1.3 Determine Adverse Impact Level - Don't put in sidenav
+## 1.3 Determine Adverse Impact Level 
 
 [text here]
 
@@ -67,11 +67,11 @@ subnav:
 
 [text here]
 
-## 2.1 Assign a Sponsor and Custodian - Don't put in sidenav
+## 2.1 Assign a Sponsor and Custodian 
 
 [text here]
 
-## 2.2 Validate Worker Access - Don't put in sidenav
+## 2.2 Validate Worker Access 
 
 [text here]
 
@@ -79,11 +79,11 @@ subnav:
 
 [text here]
 
-## 3.1 Capture and Store Identity Management Data Elements - Don't put in sidenav
+## 3.1 Capture and Store Identity Management Data Elements 
 
 [text here]
 
-## 3.2 Capture and Store Identity Governance Data Elements - Don't put in sidenav
+## 3.2 Capture and Store Identity Governance Data Elements 
 
 [text here]
 
