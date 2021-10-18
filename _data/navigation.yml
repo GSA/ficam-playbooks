@@ -317,6 +317,6 @@ signwordofr:
 # DIRA Playbook
 
 DIRA:
-  - text: Introduction
+  - text: Digital Identity Risk Assessment Playbook
     href: /DIRA/
 
