@@ -6,126 +6,100 @@ pubdate: 2021-01
 date: October 14, 2021
 type: Markdown
 permalink: dw/ 
-description: The Digital Worker Identity Playbook is a practical guide to manage digital worker identities.
+description: The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.
 sticky_sidenav: true
 sidenav: dw
 
 subnav:
-  - text: About this Repository
-    href: '#about-this-repository'
-  - text: Open an Issue
-    href: '#open-an-issue'
-  - text: Add a Page
-    href: '#add-a-page'
-  - text: Submit a Page
-    href: '#submit-a-page'
-  - text: Edit a Page
-    href: '#edit-a-page'
+  - text: Executive Summary
+    href: '#executive-summary'
+  - text: A Three-Step Process for Digital Worker Identity Management
+    href: '#a-three-step-process-for-digital-worker-identity-management'
+  - text: Step 1. Determine the Impact
+    href: '#step-1-determine-the-impact'
+  - text: Step 2. Create an Identity
+    href: '#Step-2-create-an-identity'
+  - text: Step 3. Provision an Identity
+    href: '#step-3-provision-an-identity'
+  - text: Conclusion
+    href: '#conclusion'
+  - text: Appendix A. Digital Worker Impact Evaluation Factors
+    href: '#appendix-a-digital-worker-impact-evaluation-factors'
+  - text: Appendix B. Critical Case Study
+    href: '#appendix-b-critical-case-study'
+  - text: Appendix C. Low Case Study
+    href: '#appendix-c-low-case-study'
 ---
 
-Markdown is a simple way of writing and formatting.  The formats can be used across many different platforms including for websites and documents.  We created a sample template to help you with your page. 
+# Executive Summary
 
-Review information on [how to contribute](https://playbooks.idmanagement.gov/contribute/) and how to [Add a New Page](https://playbooks.idmanagement.gov/contribute/#add-a-page).
-If you want to learn more about markdown formatting: https://guides.github.com/features/mastering-markdown/
+[text here]
 
-You can copy and paste this template into a new page, and use the sample markdown. 
+## Key Terms - Don't put in sidenav
 
-You probably noticed this block at the top of the page.  
+[text here]
 
-layout: default 
-title: Title of the Page
-permalink: /template/
+## Disclaimer - Don't put in sidenav
 
-This block at the top of the page, called Front Matter, is used for website navigation when your guide is posted.  Update the _Title of the Page_ and the _/template/_ 
+[text here]
 
-For more information on using different jekyll format or web design features:
-- Federalist Jekyll - https://github.com/18F/federalist-uswds-jekyll/blob/main/README.md
-- U.S. Web Design Standard - https://designsystem.digital.gov
-- U.S. Web Design Standard Jekyll - https://github.com/18F/uswds-jekyll
+# A Three-Step Process for Digital Worker Identity Management
 
-## Overview
+[text here]
 
-To begin your guide, briefly state its purpose in one to two sentences for an Overview.  You may include information on the intended audience, the intended outcome of the guide, and any other information that would help the user to understand the guide.
+# Step 1. Determine the Impact
 
-Then add a table of contents link for each section. For example:
+[text here]
 
-* [Section 1 Title](#words-in-section1-title-separated-by-dashes)
-* [Section 2 Title](#words-in-section2-title-separated-by-dashes)
-* [Section 3 Title](#words-in-section3-title-separated-by-dashes)
+## 1.1 Ensure Proper Oversight - Don't put in sidenav
 
-We propose these sections for most guides:
+[text here]
 
-## Before You get Started
-This section should tell the user what to prepare before starting a set of procedures. Explain any assumptions as bulleted lists. Clearly state the hardware and software requirements. 
+## 1.2 Score Risk Impact - Don't put in sidenav
 
-## Procedure 1
-This section should tell the user how to achieve the goal. Explain all steps simply and don't try to recreate other resources that are easily found.  Focus on the government and what can be unique when implementing or executing.
+[text here]
 
-## Procedure 2
-This section should tell the user how to achieve the goal. Explain all steps simply and don't try to recreate other resources that are easily found.  Focus on the government and what can be unique when implementing or executing. 
+## 1.3 Determine Adverse Impact Level - Don't put in sidenav
 
-Here are sample markdown formats for you:
+[text here]
 
-Headings use the hash sign with a space. 
+# Step 2. Create an Identity
 
-## This Is a Second-Level Heading
-### This is a third-level heading
-#### This is a fourth-level heading
+[text here]
 
+## 2.1 Assign a Sponsor and Custodian - Don't put in sidenav
 
-### Number List Items
+[text here]
 
-1. Step 1 of procedure. (Indent 2 spaces, enter a number, and add 1 space.) 
-2. Step 2 of procedure.
+## 2.2 Validate Worker Access - Don't put in sidenav
 
-### Bullet List Items
+[text here]
 
-* Bullet 1 (Indent 2 spaces, enter an asterisk, and add 1 space.)
-* Bullet 2
+# Step 3. Provision an Identity
 
-### Bold and Italics
+[text here]
 
-* Use double asterisks to bold a word:  **bold**.
-* Use underscores to create italics:  _italics_.
+## 3.1 Capture and Store Identity Management Data Elements - Don't put in sidenav
 
-### Code Blocks
+[text here]
 
-To create a code block, use spaces, backticks (```), and Returns in this order: 
+## 3.2 Capture and Store Identity Governance Data Elements - Don't put in sidenav
 
-* 4 spaces plus 3 backticks (```) to start the code block 
-* A Return
-* Type or paste in the code that the user needs to enter for a specific step
-* Another Return
-* 4 spaces plus 3 backticks to end the code block
-* Another Return
+[text here]
 
-For example:
+# Conclusion
 
-   ```
-   Text within three backticks for code or command line samples
-   ```
+[text here]
 
-### Code Comments
+# Appendix A. Digital Worker Impact Evaluation Factors
 
-Code comments will be invisible in a webpage view, but others will be able to see the comment in GitHub Markdown. <!--For example, this code denotes a comment. It will not appear on a webpage but can be used as a reference for others viewing the file.-->
+[text here]
 
-### Images
+# Appendix B. Critical Case Study
 
-To insert an image into your Page, upload the image file to the **/img/** folder in the GitHub repository.  Then at the image insertion point in your page, add these formats to link to the image.
+[text here]
 
-![This is what I want a screen reader to say for 508 compliance]({{site.baseurl}}/img/imagename.png)
+# Appendix C. Low Case Study
 
-![Text for an image aligned right goes here]({{site.baseurl}}/img/imagename.png){:align="right"}
+[text here]
 
-![Text for another image aligned left goes here]({{site.baseurl}}/img/anotherimagename.png){:style="float:left;width:25%;"}
-
-
-### Links to Other Documents
-
-To link to useful references, information:
-
-[This is what I want my link to say]({{site.baseurl}}/insertlink/)
-
-To link to a document, or to another website, you need to always open the link in a new window: 
-
-[This is what I want my link to say](https://www.governmentagency.gov){:target="_blank"}{:rel="noopener noreferrer"}.
