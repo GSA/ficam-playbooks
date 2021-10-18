@@ -317,33 +317,11 @@ signwordofr:
 # DIRA Playbook
 
 DIRA:
-  - text: Introduction
+  - text: Digital Identity Risk Assessment Playbook
     href: /DIRA/
-  - text: Process
-    href: /DIRA/process/
-  - text: Plays
-    href: /DIRA/plays/
-  - text: Updates
-    href: /DIRA/updates/
     
 # DW Playbook
 
 dw:
-  - text: Executive Summary
-    href: '#executive-summary'
-  - text: A Three-Step Process for Digital Worker Identity Management
-    href: '#a-three-step-process-for-digital-worker-identity-management'
-  - text: Step 1. Determine the Impact
-    href: '#step-1-determine-the-impact'
-  - text: Step 2. Create an Identity
-    href: '#Step-2-create-an-identity'
-  - text: Step 3. Provision an Identity
-    href: '#step-3-provision-an-identity'
-  - text: Conclusion
-    href: '#conclusion'
-  - text: Appendix A. Digital Worker Impact Evaluation Factors
-    href: '#appendix-a-digital-worker-impact-evaluation-factors'
-  - text: Appendix B. Critical Case Study
-    href: '#appendix-b-critical-case-study'
-  - text: Appendix C. Low Case Study
-    href: '#appendix-c-low-case-study'
+  - text: Digital Worker Identity Playbook
+    href: /dw/
