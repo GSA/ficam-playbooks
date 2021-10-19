@@ -36,17 +36,9 @@ subnav:
 [text here]
 
 | Role | Description | Responsibilities |
-| ------------------------ | ------------ | ------------------ |
-| Sponsor | ●	Responsible for digital worker compliance<br> 
-●	A federal government employee.| Effects of an error or accident are minimal, resulting in negligible, if any, impacts on organizational operations, finances, assets, individuals, other organizations, or the nation. |
-
-| Role | Description | Responsibilities |
-| ------------------------ | ------------ | ------------------ |
-| Sponsor | ●	Responsible for digital worker compliance<br> ●	A federal government employee.| Effects of an error or accident are minimal, resulting in negligible, if any, impacts on organizational operations, finances, assets, individuals, other organizations, or the nation. |
-| 0-35 | **Low** | Effects of an error or accident are minimal, resulting in negligible, if any, impacts on organizational operations, finances, assets, individuals, other organizations, or the nation. |
-
-
-
+| -------------------- | ------------ | ------------------ |
+| Sponsor | ● Responsible for digital worker compliance<br>● A federal government employee | ● Assign roles and responsibilities to govern the digital worker, such as a primary and backup custodian. <br>● Field digital worker inquiries from agency or other government entity leaders.<br>● Oversee who has access to the digital worker. |
+| Custodian | ● Responsible for digital worker day-to-day operational management<br>● A federal government employee or contractor | ● Hold a comparable level of access as the digital worker.<br>● Complete initial and routine training in digital worker management and security.<br>● Rotate digital worker password or authenticators.<br>● Maintain digital worker access.<br>● Oversee retraining or tuning of an underlying model.<br>● Track and monitor digital worker data input and output. |
 
 
 
