@@ -35,6 +35,23 @@ subnav:
 
 [text here]
 
+| Role | Description | Responsibilities |
+| ------------------------ | ------------ | ------------------ |
+| Sponsor | ●	Responsible for digital worker compliance<br> 
+●	A federal government employee.| Effects of an error or accident are minimal, resulting in negligible, if any, impacts on organizational operations, finances, assets, individuals, other organizations, or the nation. |
+
+| Role | Description | Responsibilities |
+| ------------------------ | ------------ | ------------------ |
+| Sponsor | ●	Responsible for digital worker compliance<br> ●	A federal government employee.| Effects of an error or accident are minimal, resulting in negligible, if any, impacts on organizational operations, finances, assets, individuals, other organizations, or the nation. |
+| 0-35 | **Low** | Effects of an error or accident are minimal, resulting in negligible, if any, impacts on organizational operations, finances, assets, individuals, other organizations, or the nation. |
+
+
+
+
+
+
+
+
 ## Key Terms 
 
 [text here]
