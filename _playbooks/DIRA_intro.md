@@ -3,7 +3,6 @@
 layout: page
 navtitle: Digital Identity Risk Assessment Playbook
 title: Digital Identity Risk Assessment Playbook
-collection: playbooks
 pubdate: 2020-09
 date: September, 13, 2021
 type: Markdown
