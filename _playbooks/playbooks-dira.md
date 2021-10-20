@@ -13,17 +13,33 @@ sidenav: dira
 
 subnav:
   - text: Introduction
-    href: '#introduction' 
-  - text: Purpose
-    href: '#purpose'
-  - text: How to Use This Playbook
-    href: '#how-to-use-this-playbook'
-  - text: Scope
-    href: '#scope'
+    href: '#introduction'
   - text: High-Level DIRA Process
     href: '#high-level-dira-process'
+  - text: Step 1. Identify Users, Transactions, and Roles
+    href: '#step-1-identify-users-transactions-and-roles'
+  - text: Step 2. Identify Risks and Assurance Levels
+    href: '#step-2-identify-risks-and-assurance-levels'
+  - text: Step 3. Determine Steps to Meet Assurance Levels
+    href: '#step-3-determine-steps-to-meet-assurance-levels'
+  - text: Step 4. Finalize Digital Identity Acceptance Statement
+    href: '#step-4-finalize-digital-identity-acceptance-statement'
+  - text: Step 5. Reassess
+    href: '#step-5-reassess'
   - text: Agency Process Plays
     href: '#agency-process-plays'
+  - text: Play 1. Streamline Risk Management and Assessment Processes
+    href: '#play-1-streamline-risk-management-and-assessment-processes'
+  - text: Play 2. Add Context for the Mission
+    href: '#play-2-add-context-for-the-mission'
+  - text: Play 3: Use Templates
+    href: '#play-3-use-templates'
+  - text: Play 4. Shortcut Decision Trees
+    href: '#play-4-shortcut-decision-trees'
+  - text: Play 5. Leverage Existing Agency Tools
+    href: '#play-5-leverage-existing-agency-tools'
+  - text: Play 6. Less Is More
+    href: '#play-6-less-is-more'
   - text: NIST SP 800-63 Updates
     href: '#nist-sp-800-63-updates'
 ---
@@ -87,7 +103,7 @@ A high-level DIRA process includes five steps:
 4)	Finalize Digital Identity Assessment Statement
 5)	Reassess
 
-## Step 1: Identify Users, Transactions, and Roles 
+## Step 1. Identify Users, Transactions, and Roles 
 
 The first step is to identify the users and transaction information as well as the functional and business roles of the application.
 There are many definitions to categorize users within the federal government, such as:  
@@ -141,7 +157,7 @@ Table 2 provides examples of user types, transactions, and roles.
 | Non-organizational | Public user | Public user (User Type) applies for federal government employment (Transaction)|
 | Non-organizational | Public user | Public user (User Type) retrieves tax information (personally identifiable information [PII]) (Transaction)|
 
-## Step 2: Identify Risks and Assurance Levels 
+## Step 2. Identify Risks and Assurance Levels 
 
 Determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.  
 
@@ -249,7 +265,7 @@ Figure 7 is an example of a decision tree of the risk assessment process flow th
 
 {% include alert-info.html heading="Key Point" content="The results of a DIRA do not change established credential processes. The results inpact the various credentials at a level can be used (e.g., if a DIRA arrives at IAL2, this allows the use of IAL2 but does not change the requirement of downgrading an IAL3 process to an IAL2 process)." %}
 
-## Step 3: Determine Steps to Meet Assurance Levels
+## Step 3. Determine Steps to Meet Assurance Levels
 
 Analyze available technology and solutions at your agency, determine if they are sufficient enough to meet the application needs, and identify what you need to implement. Use data and agency enterprise defined needs when choosing solutions, including:
 - Number of users by community of users;
@@ -270,13 +286,13 @@ Figure 8 depicts all the steps for implementing a DIRA.
 
 <p align="center"><b>Figure 8: Six-Step Process Displaying Requirements for Implementing a DIRA</b></p>
 
-## Step 4: Finalize Digital Identity Acceptance Statement
+## Step 4. Finalize Digital Identity Acceptance Statement
 
 Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels. Refer to NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 5.5, Digital Identity Acceptance Statement. 
 
 The [Digital Identity Acceptance Statement template](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.  
 
-## Step 5: Reassess
+## Step 5. Reassess
 
 A digital identity reassessment may be time-driven or event-driven and applies to a reassessment of the DIRA.
 
@@ -293,7 +309,7 @@ If an event triggers a security impact analysis, an agency may perform a DIRA ou
 
 This section introduces six plays for your agency to create efficient and consistent processes for a DIRA. 
 
-## Play 1: Streamline Risk Management and Assessment Processes
+## Play 1. Streamline Risk Management and Assessment Processes
 
 The Risk Management Framework (RMF) forms the basis of your agency application Assessment and Authorization (A&A) lifecycle. A DIRA process integrates into the routine phases of the RMF to streamline processes and enables efficient reuse of application and agency resources. Figure 9 shows an alignment of this playbook’s example DIRA process steps with the RMF. 
 
@@ -322,7 +338,7 @@ Figure 11 provides additional details about the DIRA process.
 
 <p align="center"><b>Figure 11: Details of DIRA Process Flow from Data Collection Phase to Ongoing Assessment Phase</b></p>
 
-## Play 2: Add Context for the Mission
+## Play 2. Add Context for the Mission
 
 Context is powerful when assessing risks, making agency risk decisions, and engaging across multi-disciplinary agency stakeholders. Standard and general government-wide policies set the foundation for many agency activities but are written for broad mission areas. Translate user types, transactions, DIRA impact levels, and risk statements into words that are applicable and useful to your agency. 
 
@@ -349,7 +365,7 @@ Table 5 provides an example of how two agencies apply context to Transactions an
 | Personal Safety | Serious injury or death | Physical injury or death could occur | Organizational User | Employee or agency-contractor exports data for use outside of the system | Impact depends on whether the application provides access to law enforcement information that identifies a confidential informant (i.e., improperly disclosing a confidential criminal informant’s identity puts them in physical danger) |
 | Harm to Agency Programs or Public Interests | Adverse effect on organizational operations | The agency’s mission essential functions is adversely impacted | Non-Organizational User | Individual retrieves tax information (PII) | Impact depends on the application’s function and its importance  to agency operations |
 
-## Play 3: Use Templates 
+## Play 3. Use Templates 
 
 It’s a best practice that agencies develop standardized templates to promote consistency in procedures for digital identity risk assessments. Example templates can be as simple as: 
 -	Visual informational guides for what a DIRA is,
@@ -359,7 +375,7 @@ It’s a best practice that agencies develop standardized templates to promote c
 
 The [Digital Identity Acceptance Statement template](../../docs/playbooks-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies. 
 
-## Play 4: Shortcut Decision Trees
+## Play 4. Shortcut Decision Trees
 
 All federal applications that perform digital transactions and require identity proofing or authentication require a Digital Identity Acceptance Statement, regardless of how the system is hosted. However, not all federal applications require the full example DIRA process and efforts.
 
@@ -375,11 +391,11 @@ Table 6 provides an example shortcut guide for determining whether to perform a 
 | Data and other resources are intended for public release. Doesn’t include any controlled unclassified information, but allows public users to create accounts to better support the public user’s experience. | Yes | Doesn’t require proof of a real-life identity (IA 1). Single or multi-factor authentication (AAL1).| 
 | Allows public users to input and access their own personally identifiable information (PII) or protected health information (PHI) for informational purposes.  The information isn’t required to be verified. The application doesn’t allow public users to access anyone else’s PII or PHI. | Yes | Doesn’t require proof of a real-life identity (IAL1). Multi-factor authentication (AAL2). | 
 
-## Play 5: Leverage Existing Agency Tools
+## Play 5. Leverage Existing Agency Tools
 
 Leverage existing tools at your agency to automate and create repeatable and consistent DIRA processes. For example, one agency integrated the DIRA process into its Governance Risk and Compliance (GRC) tool. The agency was able to simplify integration with the Risk Management Framework (RMF) lifecycle and support the inclusion of the DIAS with other system artifacts. Agencies that use commercial GRC tools should consider integrating DIRAs into the workflows. 
 
-## Play 6: Less Is More
+## Play 6. Less Is More
 
 A common assumption when building or buying applications for missions is that all users need accounts. Take the opportunity during the DIRA process to consider the application processes and functionality needed. Consider the mission, applications needs, and the two example questions below: 
 1.	Do all users need accounts?  
