@@ -263,7 +263,7 @@ Figure 7 is an example of a decision tree of the risk assessment process flow th
 
 <p align="center"><b>Figure 7: Federation Assurance Level Decision Tree</b></p>
 
-{% include alert-info.html heading="Key Point" content="The results of a DIRA do not change established credential processes. The results inpact the various credentials at a level can be used (e.g., if a DIRA arrives at IAL2, this allows the use of IAL2 but does not change the requirement of downgrading an IAL3 process to an IAL2 process)." %}
+{% include alert-info.html heading="Key Point" content="The results of a DIRA do not change established credential processes. The results impact the various credentials at a level can be used (e.g., if a DIRA arrives at IAL2, this allows the use of IAL2 but does not change the requirement of downgrading an IAL3 process to an IAL2 process)." %}
 
 ## Step 3. Determine Steps to Meet Assurance Levels
 
