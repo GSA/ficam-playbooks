@@ -360,7 +360,7 @@ It’s a best practice that agencies develop standardized templates to promote c
 -	Simple spreadsheets or digital surveys, and 
 -	Digital Identity Acceptance Statements. 
 
-The [Digital Identity Acceptance Statement template](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies. 
+The [Digital Identity Acceptance Statement template](../../docs/playbooks-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies. 
 
 ## Play 4: Shortcut Decision Trees
 
