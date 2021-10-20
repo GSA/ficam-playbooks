@@ -1,6 +1,6 @@
 ---
-
 layout: page
+collections: playbooks
 navtitle: Digital Identity Risk Assessment Playbook
 title: Digital Identity Risk Assessment Playbook
 pubdate: 2020-09
@@ -274,9 +274,7 @@ Figure 8 depicts all the steps for implementing a DIRA.
 
 Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels. Refer to NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 5.5, Digital Identity Acceptance Statement. 
 
-The [Digital Identity Acceptance Statement template](../../docs/playbooks-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.  
-
-The [Digital Identity Acceptance Statement template](assets/playbooks/playbooks-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.  
+The [Digital Identity Acceptance Statement template](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.  
 
 ## Step 5: Reassess
 
