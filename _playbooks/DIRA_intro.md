@@ -152,7 +152,7 @@ Determine the digital identity risk for each assurance category by assessing the
 
 The risks and impact assessment considers the risks to both the agency and the user for the transactions. The risk to one can be significant while not negatively impacting the other at all. It’s common for government applications to have different assurance levels based on differing impacts and risks for each community of users and transactions.
 
-{% include alert-info.html heading="Key Point" content="The impact categories and definitions used in the DIRA process are the same used to determine the _overall_ application system categorization for impacts to confidentiality, integrity, and availability (a FIPS 199 assessment).<br><br>However, your overall application system categorization (FIPS 199) is often _different_ than the risks and impacts for the identity and authenticator assurance levels for communities of users and transactions for the DIRA." %}
+{% include alert-info.html heading="Key Point" content="The impact categories and definitions used in the DIRA process are the same used to determine the overall application system categorization for impacts to confidentiality, integrity, and availability (a FIPS 199 assessment).<br><br>However, your overall application system categorization (FIPS 199) is often different than the risks and impacts for the identity and authenticator assurance levels for communities of users and transactions for the DIRA." %}
 
 Table 3 lists the six impact categories to use. This table is a guideline for categorizing the risks and impacts involved in your application users and transactions.
 
@@ -275,7 +275,9 @@ Figure 8 depicts all the steps for implementing a DIRA.
 
 Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels. Refer to NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 5.5, Digital Identity Acceptance Statement. 
 
-The [Digital Identity Acceptance Statement template](../../docs/playbooks-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.   
+The [Digital Identity Acceptance Statement template](../../docs/playbooks-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.  
+
+The [Digital Identity Acceptance Statement template](assets/playbooks/playbooks-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.  
 
 ## Step 5: Reassess
 
