@@ -23,6 +23,8 @@ subnav:
     href: ../../piv/network/localca/
   - text: Authentication Assurance
     href: ../../piv/network/auth/
+  - text: Common Problems and Solutions
+    href: ../../piv/network/solutions/
 ---
 
 These Network Authentication guides will help you configure your Windows _network domain_ for smartcard logon using PIV credentials.
