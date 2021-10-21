@@ -70,7 +70,7 @@ After PKI events are captured you can then filter CAPI2 logs to identify specifi
   - Verify Revocation: this can indicate either an inability to download CRL or verify an OCSP response or a lack of availaiblity for live revocation information
   - Verify Chain Policy: this indicates that the certificate may not have a directly expressed or mapped certificate policy verifiable up to the trust anchor
 
-Do note that CAPI2 logs will include _all_ PKI and X.509 events, to include things like TLS certificate validation for user visited websites, or other things like validation of code signing certificates for software updates.  As a result, it may be a challenge to pinpoint specific error assoicated with smartcard logon; however, you can also filter results by event sources, in which case selecting Winlogon, may be able to target more useful errors.
+Do note that CAPI2 logs will include **all** PKI and X.509 events, to include things like TLS certificate validation for user visited websites, or other things like validation of code signing certificates for software updates.  As a result, it may be a challenge to pinpoint specific error assoicated with smartcard logon; however, you can also filter results by event sources, in which case selecting **Winlogon**, may be able to target more useful errors.
 
 [![Screenshot of the CAPI2 Operational Event Filter capability]({{site.baseurl}}/assets/piv/CAPI2_log_filtering.png){:style="float:left"}]({{site.baseurl}}/assets/piv/CAPI2_log_filtering.png){:target="_blank"}{:rel="noopener noreferrer"}
 
