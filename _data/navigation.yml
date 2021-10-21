@@ -3,7 +3,7 @@
 arch:
   - text: Introduction
     href: /arch/
-  - text: Goals and Objectives
+  - text: Goals & Objectives
     href: /arch/goals/
   - text: Services Framework
     href: /arch/services/
@@ -11,7 +11,7 @@ arch:
     href: /arch/usecases/
   - text: System Component Examples
     href: /arch/components/
-  - text: Standards and Policies
+  - text: Standards & Policies
     href: /arch/standards/
 
 archservices:
