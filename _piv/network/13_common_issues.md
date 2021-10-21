@@ -16,8 +16,6 @@ subnav:
     href: '#account-linking'
   - text: Helpful Tools
     href: '#helpful-tools'
-  - text: Windows
-    href: '#windows'
 
 
 ---
@@ -35,19 +33,26 @@ PKI based mutual authentication issues often arrive when one or both parties (ho
       - NTAuth does not contain DC root CA certificate
       - NTAuth does not contain DC intermediate or issuing CA certificate
 
+In these instances you may want to view the other end-entity certificate on the opposite machine and check the certifiation path to determine if there are errors in path validation.  If errors are encountered, you may have to modify each trust store (Root and Intermeidate CAs) to include the needed CAs from trust path.
 
 ## Network Misconfigurations
-Due to required security controls many networks appliances are equiped with stringent IP whitelists that may be blocking publicly avaialble PKI resources such as Authority Information Access (AIA) points, Credential Revocation List (CRL) distrobution points, or Online Certificate Status Protocol (OCSP) responder addresses.
+Due to required security controls many networks appliances are equiped with stringent IP whitelists that may be blocking publicly avaialble PKI resources such as Authority Information Access (AIA) points, Credential Revocation List (CRL) distrobution points, or Online Certificate Status Protocol (OCSP) responder addresses.  Common issues related to network limitations may include:
 
    - Revocation data such as CRL or OCSP traffic being blocked
    - Path buidling data such as SIA or AIA traffic being blocked
    - [Tuning](/../tuning){:target="_blank"} related misconfiguration such as CRL download time limits
 
-## Account Linkinking 
-   - AltSecID or upn imporperly formatted
+You may need to coordinate with your network or active directory administrators to allow traffic to/from certain IP addresses or make changes to relevant group policies as needed.
+
+## Account Linking 
+Sometimes, even though hosts and clients might be able to complete mutual PKI authentication as designed, other downstream issues may arise that can prevent successful PIV use for network access.  Primarily these issues may lie with unique identification of the credential and its correlation to a network account.  Some of specific issues with unique identification may include:
+
+  - AltSecID or User Principal Name (UPN) imporperly formatted
+  - User selects improper certificate during authentication
+
+You can visit our [network account](/../account){:target="_blank"} page for additional guidance in these situations.
 
 ## Helpful Tools
-###Windows
 
 Microsoft Windows based systems have the ability to record logs associated with PKI and X.509 based events, called CryptoAPI v2.0 or CAPI2.  This utility can be very helpful when enabled on a domain controller host or a client machine in identifying issues with PKI processes.  
 
