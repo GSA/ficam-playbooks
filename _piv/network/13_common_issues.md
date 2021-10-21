@@ -22,9 +22,6 @@ subnav:
 
 ---
 
-
-#Windows
-
 ## Trust Stores
 PKI based mutual authentication issues often arrive when one or both parties (host and/or client) are not capable of establishing trust with each others certificates.  Given the path discovery and validation (PDVAL) processes that takes place on within both parties, potential errors can be due to multiple scenarios with either machine to include the following:
 
@@ -51,6 +48,7 @@ Due to required security controls many networks appliances are equiped with stri
 
 ## Helpful Tools
 ###Windows
+
 Microsoft Windows based systems have the ability to record logs associated with PKI and X.509 based events, called CryptoAPI v2.0 or CAPI2.  This utility can be very helpful when enabled on a domain controller host or a client machine in identifying issues with PKI processes.  
 
 In order to enable CAPI2 logging on a Windows system, use the following steps (these may vary by Windows OS or Server version):
@@ -58,8 +56,15 @@ In order to enable CAPI2 logging on a Windows system, use the following steps (t
   2. Launch Event Viewer --> expand the Applications and Services Logs folder --> expand the Microsoft folder --> expand the Windows folder --> expand the CAPI2 folder --> select the Operational Llog
   3. Under the Actions pane --> select "Enable Log" option
 
+[![Screenshot of the CAPI2 Operational Event Viewer]({{site.baseurl}}/assets/piv/CAPI2_logging.png){:style="float:left"}]({{site.baseurl}}/assets/piv/CAPI2_logging.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 Once the CAPI2 logs are enabled you may need to view the log properties to ensure the log limit is modified to capture logs relevant to your local IT administration policies or procedures, and that they are properly archvied, if needed.
 
-After PKI events are captured you can then filter CAPI2 logs to identify specific issues you may be experiencing.  Helpful filtering options can include only viewing PKI errors and limiting the results to specific users or computers.
+After PKI events are captured you can then filter CAPI2 logs to identify specific issues you may be experiencing.  Helpful filtering options can include only viewing PKI errors and limiting the results to specific users or computers.  Some common errors seen in CAPI2 logs can include:
+  - Build Chain: this can indicate improperly configured trust stores or inability to fetch AIA or SIA certifiate bundles from the internet
+  - Verify Revocation: this can indicate either an inability to download CRL or verify an OCSP response or a lack of availaiblity for live revocation information
+  - Verify Chain Policy: this indicates that the certificate may not have a directly expressed or mapped certificate policy verifiable up to the trust anchor
+
+[![Screenshot of the CAPI2 Operational Event Filter capability]({{site.baseurl}}/assets/piv/CAPI2_log_filtering.png){:style="float:left"}]({{site.baseurl}}/assets/piv/CAPI2_log_filtering.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 For additional information on CAPI2 logging you can view the following [Microsoft article](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc749296(v=ws.10)?redirectedfrom=MSDN){:target="_blank"}{:rel="noopener noreferrer"}.
