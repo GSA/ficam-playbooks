@@ -7,52 +7,52 @@ sticky_sidenav: true
 sidenav: fpki
 
 subnav:
-  - text: What is the Federal PKI?
+  - text: What Is the Federal PKI?
     href: '#what-is-the-federal-pki'
-  - text: What is an example of an identity certificate?
+  - text: What Is an Example of an Identity Certificate?
     href: '#what-is-an-example-of-an-identity-certificate'
-  - text: Why should agencies use certificates from the Federal PKI?
+  - text: Why Should Agencies Use Certificates from the Federal PKI?
     href: '#why-should-agencies-use-certificates-from-the-federal-pki'
-  - text: Why is the Federal PKI important?
+  - text: Why Is the Federal PKI Important?
     href: '#why-is-the-federal-pki-important'
-  - text: Where can I find the Policies and Standards?
+  - text: Where Can I Find the Policies and Standards?
     href: '#where-can-i-find-the-policies-and-standards'
 ---
 
-Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI (_Federal PKI_).  
+Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI (Federal PKI).  
 
 These guides are [open source](https://github.com/gsa/ficam-playbooks){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
 
-### What is the Federal PKI?
+### What Is the Federal PKI?
 
-The Federal PKI is a network of Certification Authorities (CAs) that issue:
+The Federal PKI is a network of certification authorities (CAs) that issue:
 
 - PIV credentials and person identity certificates
 - PIV-Interoperable credentials and person identity certificates
 - Other person identity certificates
 - A small number of federal enterprise device identity certificates
 
-The participating Certification Authorities and the policies, processes, and auditing of all the participants are collectively referred to as the _Federal Public Key Infrastructure (FPKI_ or _Federal PKI)_.
+The participating certification authorities and the policies, processes, and auditing of all the participants are collectively referred to as the _Federal Public Key Infrastructure (FPKI_ or _Federal PKI)_.
 
-The Federal PKI includes U.S. Federal, State, Local, Tribal, Territorial, and International Governments, as well as commercial organizations, that work together to provide services for the benefit of the Federal Government.
+The Federal PKI includes U.S. federal, state, local, tribal, territorial, and international governments, as well as commercial organizations, that work together to provide services for the benefit of the federal government.
 
-Use the [FPKI Graph](../fpki/tools/fpkigraph/) to see the relationships between the Certification Authorities in the Federal PKI ecosystem. It graphically depicts how each Certification Authority links to another, through cross-certificates, subordinate certificates, or Bridge CAs.
+Use the [FPKI Graph](../fpki/tools/fpkigraph/) to see the relationships between the certification authorities in the Federal PKI ecosystem. It graphically depicts how each certification authority links to another through cross-certificates, subordinate certificates, or bridge CAs.
 
-### What is an example of an identity certificate?
+### What Is an Example of an Identity Certificate?
 A PIV certificate is a simple example.  Although there are many types of identity certificates, it's easiest to explain **PIV** certificates since you might have one:
 
-* Identity certificates are issued and digitally signed by a _Certification Authority_.  
-* The _Certification Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certification Authority_. The _Intermediate Certification Authority's certificate_ was issued by another _Certification Authority_.  
-* This process of issuing and signing continues until there is one _Certification Authority_ that is called the _Root Certification Authority_.
+* Identity certificates are issued and digitally signed by a _certification authority_.  
+* The _certification authority_ that issued and digitally signed your PIV certificates is called an _intermediate certification authority_. The _intermediate certification authority's certificate_ was issued by another _certification authority_.  
+* This process of issuing and signing continues until there is one _certification authority_ that is called the _root certification authority_.
 
 [![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-The full process of proving identity when issuing certificates, auditing the Certification Authorities, and the cryptographic protections of the digital signatures establish the _basis of Trust_.
+The full process of proving identity when issuing certificates, auditing the certification authorities, and the cryptographic protections of the digital signatures establish the _basis of trust_.
 
-For the U.S. Federal Government Executive Branch agencies, there is one Root Certification Authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of Intermediate Certification Authorities and Bridged Certification Authorities. [A graph of the Federal PKI, including the business communities](../tools/fpkigraph/)
+For the U.S. federal government Executive Branch agencies, there is one root certification authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of intermediate certification authorities and bridged certification authorities. See [a graph of the Federal PKI, including the business communities](../tools/fpkigraph/).
 
 
-### Why should agencies use certificates from the Federal PKI?
+### Why Should Agencies Use Certificates from the Federal PKI?
 
 All federal agencies should use the Federal PKI for:
 
@@ -72,19 +72,19 @@ The Federal PKI provides four core technical capabilities:
 These four core capabilities are made possible by leveraging digital certificates; their policies, standards, and processes; and a mission-critical trust infrastructure. 
 
 
-### Why is the Federal PKI important?
+### Why Is the Federal PKI Important?
 
-The Federal PKI is important to federal agencies, other government entities, and businesses that need access to federal facilities or participate in delivering Federal Government services.    
+The Federal PKI is important to federal agencies, other government entities, and businesses that need access to federal facilities or participate in delivering federal government services.    
 
 |**Benefit**|**Description**|
 |-----------|---------------|
 |**Security**| Improved facilities, network, and application access through cryptography-based, federated authentication. Federal PKI credentials reduce the possibility of data breaches that can result from using weak credentials, such as username and password. Specifically, the Federal PKI closes security gaps in user identification and authentication, encryption of sensitive data, and data integrity. |
-|**Compliance**| Using the Federal PKI means compliance with several Executive Orders, laws (e.g., FISMA, E-Government Act), initiatives, and standards. The Federal PKI verifies that participating Certification Authorities are audited and operated in a secure manner.|
+|**Compliance**| Using the Federal PKI means compliance with several Executive Orders, laws (e.g., FISMA, E-Government Act), initiatives, and standards. The Federal PKI verifies that participating certification authorities are audited and operated in a secure manner.|
 |**Interoperability**| Improved interoperability with other federal agencies and non-federal organizations that trust Federal PKI certificates. The Federal PKI helps reduce the need for issuing multiple credentials to users.|
-|**Return on Investment**| The Federal PKI improves business processes and efficiencies.  For example, leveraging digital signing, encryption, and non-repudiation allows federal agencies to migrate from manual processing to automated processing, especially around document processing/sharing, and communications between two or more federal employees for internal efficiency and effectiveness.  
+|**Return on Investment**| The Federal PKI improves business processes and efficiencies.  For example, leveraging digital signing, encryption, and non-repudiation allows federal agencies to migrate from manual processing to automated processing, especially around document processing/sharing, and enhances communications between two or more federal employees for internal efficiency and effectiveness.  
 
 
-### Where can I find the Policies and Standards?
+### Where Can I Find the Policies and Standards?
 
 * [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the U.S. Federal Root Certification Authority.
 * [X.509 Certificate and CRL Profiles for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for certificates and CRLs issued under COMMON.
