@@ -94,3 +94,11 @@ The FICAM Architecture was created in 2009 to provide a common ICAM segment arch
 In 2015, ICAM experts from across the federal government collaborated on an updated FICAM Architecture.  This update was intended to be more concise, easy to understand, and visually appealing while reflecting the latest updates in cybersecurity, enterprise architecture, and ICAM policy and technology.
 
 This site contains the current 2020 update for the FICAM Architecture.  The FICAM Roadmap and Implementation Guidance v2.0 is superseded by both the FICAM Architecture updates and other complementary modernized playbooks developed by ICAM committees across government. 
+
+_________________________________
+
+The following diagram is a high-level view of the ICAM practice areas and supporting elements. 
+
+[![A color-coded diagram that has three large connected boxes and two small auxillary boxes. The three large boxes include definitions and diagrams for Identity, Credential, and Access Management, and the two small boxes include definitions for Federation and Governance.](../../assets/arch/intro_ConceptualDiagram.png)](../../assets/arch/intro_ConceptualDiagram.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+The FICAM Architecture includes government-wide enterprise architecture views with the flexibility to support each agency’s unique business or mission needs. Use the FICAM Architecture as a tool to continuously improve upon your agency’s approach and align with federal security and privacy initiatives.
