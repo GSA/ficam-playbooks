@@ -13,13 +13,13 @@ sticky_sidenav: true
 category: Archive
 
 subnav: 
-  - text: What was the change?
+  - text: What Was the Change?
     href: '#what-was-the-change'
-  - text: What certification authorities were impacted?
+  - text: What Certification Authorities Were Impacted?
     href: '#what-certification-authorities-were-impacted'
-  - text: What should I do?
+  - text: What Should I Do?
     href: '#what-should-i-do'
-  - text: Who can I contact for help or more information?
+  - text: Who Can I Contact for Help or More Information?
     href: '#who-can-i-contact-for-help-or-more-information'
   - text: Additional Resources
     href: '#additional-resources'
@@ -29,13 +29,13 @@ Federal PKI teams performed two actions to remove fifty-nine (59) certification 
 
 This announcement provides details related to the CAs affected by this change. 
 
-## What was the change?
+## What Was the Change?
 
 - **February 28, 2019:** Federal PKI issued a cross-certificate from the Federal Bridge CA 2016 to DigiCert Federated ID L3 CA. 
   - The issuance of the new cross-certificate was to ensure operations for three (3) electronic prescriptions for controlled substance (EPCS) systems were not immediately impacted by the planned revocation of the Federal Bridge CA 2016 / DigiCert Federated ID CA-1 cross-certificate.  
 - **March 4, 2019:** Federal PKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to DigiCert Federated ID CA-1 CA.   
 
-## What certification authorities were impacted?
+## What Certification Authorities Were Impacted?
 The following CAs are still **active** and may be used for the intended purposes.  These CAs no longer have a trust relationship with - or are required to be audited for - Federal PKI compliance.  
 
 Each CA is listed by common name with a link to additional CA certificate details in the [Additional Resources](#additional-resources) section. 
@@ -117,7 +117,7 @@ Each CA is listed by common name with a link to additional CA certificate detail
 - [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)  
 
 
-## What should I do?
+## What Should I Do?
 A majority of mission operational use cases will never encounter certificates issued from these CAs.   Certificates from these CAs are primarily used for nationwide healthcare information systems and electronic health records.  
 
 You can remove these CAs from trust list configurations used for the following purposes: 
@@ -130,13 +130,13 @@ You can remove these CAs from trust list configurations used for the following p
 Removing the CAs from these trust list configurations may improve performance and reduce maintenance overhead.  
 
 
-## Who can I contact for help or more information?  
+## Who Can I Contact for Help or More Information?  
 Email us at fpki@gsa.gov
 
 ## Additional Resources
 Details of each CA affected by this change are listed below.  You can also download files with copies of the CA certificates.   
 
-To download PEM files with these CA certificates:  
+Do the following To download PEM files with these CA certificates:  
 
 CA Certificates _Issued By_ |Download PEM File|
 ---|---|
