@@ -102,7 +102,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 <br>
 [![A .gif that shows the distribution and verification steps performed with Microsoft Group Policy Object (GPO)](../../../assets/fpki/gpo.gif){:style="width:85%;"}](../../../assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-### Use third-party configuration management tools
+### Use Third-Party Configuration Management Tools
 
 {% include alert-warning.html content="To follow these steps, you must have Enterprise Administrator privileges for the Domain. You will need to run these commands from an agency domain controller." %}
 
