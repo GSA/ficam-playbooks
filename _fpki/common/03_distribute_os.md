@@ -113,7 +113,7 @@ You can use third-party configuration management tools, such as BigFix.
         certutil -f -addstore root “fcpcag2.crt”
     ```
 
-### Use Microsoft Certificate Manager for unmanaged devices
+### Use Microsoft Certificate Manager for Unmanaged Devices
 
 To distribute the FCPCA G2 to unmanaged devices:
 
@@ -137,7 +137,7 @@ To distribute the FCPCA G2 to unmanaged devices:
 
 ## macOS Solutions
 
-### Create, distribute, and install an Apple configuration profile
+### Create, Distribute, and Install an Apple Configuration Profile
 
 For **macOS and [iOS](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)** government-furnished devices, you can use Apple configuration profiles (XML files) to distribute and automatically install the FCPCA G2.  
 
@@ -145,7 +145,7 @@ These steps describe how to create, distribute, and install profiles using Apple
 
 {% include alert-warning.html content="Only System or mobile device management (MDM) administrators should create, distribute, and install Apple configuration profiles." %} 
 
-### Create an Apple configuration profile
+### Create an Apple Configuration Profile
 
 1. As an administrator, [download and verify](../obtain-and-verify/) a copy of the FCPCA G2 to your device.   
 2. Download and install *Configurator 2* from the Apple App Store.
@@ -245,7 +245,7 @@ To use this profile, copy the XML information and save it as a `.mobileconfig` f
 </plist>
 ``` 
 
-### Distribute an Apple configuration profile
+### Distribute an Apple Configuration Profile
 
 {% include alert-warning.html content="Only System or MDM Administrators should use these steps. You should never email an Apple configuration profile to someone outside your agency's domain." %} 
 
@@ -258,7 +258,7 @@ You can use Apple's _Configurator 2_ to distribute your Apple configuration prof
 - [Share via over-the-air delivery and configuration from an MDM server (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. Third-party applications are also available.
 > ***For iOS only**&nbsp;&mdash;&nbsp;If you download and install the FCPCA G2 from an email or an intranet website, you will need to _manually enable SSL trust for FCPCA G2_. This is not needed if you use Configurator 2 with over-the-air (OTA) methods or an MDM enrollment profile to install the FCPCA G2. (See [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2).)
 
-### Install an Apple configuration profile
+### Install an Apple Configuration Profile
 
 We recommend using an automated method to install Apple configuration profiles on government-furnished Apple devices (for example, a desktop configuration management or MDM tool), which will distribute FCPCA G2. (If you have questions about third-party products, email us at fpkirootupdate@gsa.gov.)
 
@@ -324,7 +324,7 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 
 ## iOS Solutions
 
-### Install FCPCA G2 Using an Apple configuration profile in iOS
+### Install FCPCA G2 Using an Apple Configuration Profile in iOS
 You can use Apple configuration profiles to install the FCPCA G2 on both macOS and iOS devices. 
 
 Review the [Apple configuration profiles](#install-an-apple-configuration-profile) guidance for instructions.
@@ -372,7 +372,7 @@ This option works for **iOS** devices only.
 
 ## Linux and Unix Solutions
 
-### Debian-based kernels
+### Debian-Based Kernels
 
 1. Launch the command line.
 
@@ -399,7 +399,7 @@ This option works for **iOS** devices only.
 <br>
 
 
-### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
+### Red Hat Enterprise Linux, CentOS, and Other Non-Debian-Based Kernels
 
 1. Launch the command line.
 
