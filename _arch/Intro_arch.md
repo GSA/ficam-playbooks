@@ -7,13 +7,13 @@ sidenav: arch
 sticky_sidenav: true
 
 subnav:
-  - text: What is the FICAM Architecture?
+  - text: What Is the FICAM Architecture?
     href: '#what-is-the-ficam-architecture'
-  - text: What is ICAM?
+  - text: What Is ICAM?
     href: '#what-is-icam'
-  - text: Who is the FICAM Architecture for?
+  - text: Who Is the FICAM Architecture for?
     href: '#who-is-the-ficam-architecture-for'
-  - text: What is the History of the FICAM Architecture Background?
+  - text: What Is the History of the FICAM Architecture Background?
     href: '#what-is-the-history-of-the-ficam-architecture-background'
 ---
 
