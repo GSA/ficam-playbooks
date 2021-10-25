@@ -23,7 +23,7 @@ When a user authenticates to your network and you've enabled Single Sign-on to a
 - A PIV credential
 - An alternate authenticator  
   
-You need to know the type of authenticator to implement increasingly granular authorization policies, and grant or deny a user access to information available from applications and shared network resources. 
+You need to know the type of authenticator to implement increasingly granular authorization policies and to grant or deny a user access to information available from applications and shared network resources. 
 
 To grant a user access, based on the type of authenticator used, you can use a Windows Active Directory (AD) feature called _Authentication Mechanism Assurance (AMA)_. AMA allows you to add a group membership identifier to the user’s Kerberos token.
 
@@ -34,7 +34,7 @@ AMA is available for domains operating on Windows Server 2008 R2 and later versi
 ## Implementation
 You can use this PowerShell script [CertificateIssuanceOIDs.ps1](https://github.com/GSA/ficam-scripts-public/tree/master/_ama){:target="_blank"}{:rel="noopener noreferrer"} to import and set up a list of certificate issuance policies. This script:
 
-- Contains a list of certificate issuance policy object identifiers (OIDs) used by U.S. Federal Government agencies
+- Contains a list of certificate issuance policy object identifiers (OIDs) used by U.S. federal government agencies
 - Creates security groups with the same names as the policies 
 - Links the policies to the security groups
 
@@ -97,7 +97,7 @@ To test the output on your network domain, log in with your PIV credential and c
 
 A federal employee authenticates to the agency's intranet using a PIV credential and attempts to access an application hosted by a different federal agency. 
  
-- The application is restricted to allow access by only users who have authenticated with a valid PIV Authentication Certificate. 
+- The application is restricted to allow access only for users who have authenticated with a valid PIV Authentication certificate. 
 - All other users are denied access to the application. 
  
 This federal employee successfully accesses the other federal agency's application with minimal inputs. The employee is successful because:
@@ -119,15 +119,15 @@ During and after the employee's logon to the network, the following steps were e
 2.  The user is successfully authenticated with the valid SAML assertion
 2.  The other federal agency's application is configured to allow access to only those users who have authenticated using a PIV credential 
 
-In this Use Case and steps, the user did **not** have to authenticate directly with a PIV credential to the other agency's application.  A federation model was used.    
+In this use case and steps, the user did **not** have to authenticate directly with a PIV credential to the other agency's application.  A federation model was used.    
 
-{% include alert-info.html content="One example for viewing this implementation pattern is Max.gov.  If you click on the upper right-hand Login button, you'll see the Max.gov LOGIN page. The bottom section allows you to click on an agency icon.  Each of these icons redirects the user back to that agency's Federation Service." %}
+{% include alert-info.html content="One example for viewing this implementation pattern is Max.gov.  If you click the upper left-hand Login button, you'll see the Max.gov Login page. The bottom section allows you to select an agency.  Each of these icons redirects the user back to that agency's Federation Service." %}
 
 ### Authentication Pass-Through for Integrated Windows Authentication
 
 A federal employee authenticates to his/her agency's intranet using a PIV credential and attempts to access a local SharePoint site. 
 
-- The SharePoint site is restricted to allow access to only those users who have authenticated with a PIV Authentication Certificate. 
+- The SharePoint site is restricted to allow access only for those users who have authenticated with a PIV Authentication certificate. 
 - All other users are denied access to the SharePoint site. 
  
 The federal employee successfully accesses the local SharePoint site. 
