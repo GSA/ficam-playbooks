@@ -13,7 +13,7 @@ subnav:
     href: ../../piv/engineer/ssh/
 ---
 
-PIV engineering guides are for engineers configuring agency infrastructure, servers, and enterprise applications for authentication. The guides are focused on U.S. federal government implementations. 
+PIV Engineering Guides are for engineers configuring agency infrastructure, servers, and enterprise applications for authentication. The guides are focused on U.S. federal government implementations. 
 
 {% include alert-info.html heading="Are you trying to solve a problem?" content="Your colleagues have likely encountered or solved the same problem.  Engineering guides exist across government.  This site's purpose is to organize tips from agency engineers, help link to .gov or .mil information available, and provide a common site for collaboration." %}
 
