@@ -11,9 +11,9 @@ subnav:
     href: ../../piv/user-guide/outlook
 ---
 
-PIV user guides are intended for end users looking to extend use of their PIV card beyond smart card authentication. The guides are focused on US Federal Government implementations. 
+PIV User Guides are intended for end users looking to extend use of their PIV card beyond smart card authentication. The guides are focused on U.S. federal government implementations. 
 
-{% include alert-info.html heading="Are you trying to solve a problem?" content="Your colleagues have likely encountered or solved the same problem.  User guides exist across government.  The purpose for this site is to organize tips from agency engineers, help link to .gov or .mil information available, and provide a common site for collaboration." %}
+{% include alert-info.html heading="Are you trying to solve a problem?" content="Your colleagues have likely encountered or solved the same problem.  User guides exist across government.  This site's purpose is to organize tips from agency engineers, help link to .gov or .mil information available, and provide a common site for collaboration." %}
 
 You can find additional guides across agency websites by using a few simple methods: 
 
