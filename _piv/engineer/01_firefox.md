@@ -19,11 +19,11 @@ subnav:
       href: '#test-authentication'
 ---
 
-You may need to configure Firefox to enable your agency users to log into web applications using their PIV credentials. This can be tricky because Firefox supports a protocol (PKCS #11) that is not always natively supported by operating systems or OS default drivers. 
+You may need to configure Firefox to enable your agency users to log into web applications using their PIV credentials. This can be tricky because Firefox supports a protocol (PKCS #11) that is not always natively supported by operating systems (OS) or OS default drivers. 
 
-This guide will help you to configure Firefox by using an open source software package.  In addition to open source solutions, commercial software may be used. 
+This guide will help you configure Firefox by using an open source software package.  In addition to open source solutions, commercial software may be used. 
 
-{% include alert-info.html heading="PKCS #11" content="Are you interested in learning more? Search for PKCS #11 for other resources available." %} 
+{% include alert-info.html heading="PKCS #11" content="Are you interested in learning more? Search online for PKCS #11 to find other available resources." %} 
 
 ## Install and Test OpenSC
 OpenSC will enable a user's PIV credential to work with Firefox and some signing and encryption applications.
@@ -32,7 +32,7 @@ First, you will need to install and test **OpenSC**. OpenSC has installers for m
 
 * [View instructions and installation procedures for OpenSC](https://github.com/OpenSC/OpenSC/wiki/){:target="_blank"}{:rel="noopener noreferrer"}
 
-When installing OpenSC, you need to consider some items that are specific for the U.S. Government: 
+When installing OpenSC, you need to consider some items that are specific for the U.S. federal government: 
 
 * You will need to download and install either the 64-bit or 32-bit version of OpenSC, depending on the OS.
 * You do not need to install the full packages for OpenSC.<!--No need to be more specific?-->
@@ -57,12 +57,12 @@ Launch **_Firefox_** and load a new _Security Device_ (i.e., the Security Device
 | **Linux**  | /usr/lib/ | pkcs11.so | 
 | **Ubuntu** | /usr/lib/x86_64-linux-gnu/ | opensc-pkcs11.so |
 
-* Click _Open_ and verify that the module has been loaded. Then, click _OK_ to return to the _Privacy & Security_ options.
+* Click _Open_ and verify that the module has been loaded. Then click _OK_ to return to the _Privacy & Security_ options.
 
 ### Import PIV Issuer Certificate
 * Click the _View Certificates_ button. If prompted, enter your PIV credential PIN.
 * Click the _Authorities_ tab from the top navigation.
-* Click the _Import_ button to import a copy of your PIV credential issuer's Certification Authority (CA) certificate. When prompted, trust the certificate for identifying websites _and_ email users.
+* Click the _Import_ button to import a copy of your PIV credential issuer's certification authority (CA) certificate. When prompted, trust the certificate for identifying websites _and_ email users.
 * Click _OK_ and restart _Firefox_.
 
 ### Test Authentication
