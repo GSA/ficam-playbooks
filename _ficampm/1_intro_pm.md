@@ -7,17 +7,17 @@ sticky_sidenav: true
 sidenav: pm
 ---
 
-The *ICAM Program Management Guide* explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture](../../arch/){:target="_blank"}{:rel="noopener noreferrer"}. In this guide, you'll find content for ICAM program managers who need agency-level planning guides to drive adoption of ICAM services within their organizations, as well as how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
+The **ICAM Program Management Guides** explain how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture](../../arch/){:target="_blank"}{:rel="noopener noreferrer"}. In these guides, you'll find content for ICAM program managers who need agency-level planning guides to drive adoption of ICAM services within their organizations. You'll also find information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
 
-This guide answers the most common ICAM program organization and management questions, including:
+These guides answer the most common ICAM program organization and management questions, including:
 
 - How can I establish governance to ensure ICAM alignment at the agency level?
 - Who are my key ICAM stakeholders?
 - What best practices support ICAM implementation?
 
-The guide is organized by sections, each of which describes an essential feature of ICAM program management, including recommendations and lessons learned from agencies who have implemented ICAM programs.
+The guides are organized by sections, each of which describes an essential feature of ICAM program management, including recommendations and lessons learned from agencies who have implemented ICAM programs.
 
-The content for this guide is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](https://www.idmanagement.gov/docs/roadmap-ficam.pdf)
+The content for these guides is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](https://www.idmanagement.gov/docs/roadmap-ficam.pdf)
 
 ## What Is ICAM Program Management?
 
@@ -27,7 +27,7 @@ An agency's Identity, Credential, and Access Management (ICAM) program requires 
 
 ## Primary Components
 
-The following list includes the necessary components of a federal ICAM program. This guide offers advice for each component:
+The following list includes the necessary components of a federal ICAM program. These guides offer advice for each component:
 
 - [**Program Governance and Leadership**](../pm/governance/) - Establish operational policies and requirements.
 - [**Workstreams**](../pm/workstreams/) - Categorize tasks and assign them to the proper resources.
