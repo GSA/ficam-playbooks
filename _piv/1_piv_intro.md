@@ -42,7 +42,7 @@ First, we cover the basics of PIV credentials, including:
 -   The basics of getting started with PIV credentials; and
 -   Using PIV for network authentication (smart card logon). 
 
-We also cover applications and guidance for developers and users——which need your input!  
+We also cover applications and guidance for developers and users—which need your input!  
 {% include alert-success.html heading = "Share your expertise" content="Please contribute and share your lessons for configuring systems or applications, tuning considerations, code, common challenges, troubleshooting errors, and anything else you think would be helpful for your colleagues." %}
 
 ## Why Is PIV Usage Important?
