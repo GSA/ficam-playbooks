@@ -6,22 +6,22 @@ pubdate: 2018-07
 date: July 17, 2018
 category: Digitally Sign
 type: Markdown
-permalink: playbooks/signfedregister/
+permalink: /playbooks/signfedregister/
 description: This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
 sticky_sidenav: true
 sidenav: signwordofr
 
 subnav:
   - text: Add Invisible Digital Signatures in MS Word
-    href: /signfedregister/#add-invisible-digital-signatures-in-ms-word
+    href: '#add-invisible-digital-signatures-in-ms-word'
   - text: Multiple Digital Signatories in MS Word
-    href: /signfedregister/#multiple-digital-signatories-in-ms-word
+    href: '#multiple-digital-signatories-in-ms-word'
   - text: Remove Invisible Digital Signatures in MS Word
-    href: /signfedregister/#remove-invisible-digital-signatures-in-ms-word
+    href: '#remove-invisible-digital-signatures-in-ms-word'
   - text: View Signature Certificate in MS Word
-    href: /signfedregister/#view-signature-certificate-in-ms-word
+    href: '#view-signature-certificate-in-ms-word'
   - text: FAQs
-    href: /signfedregister/#faqs
+    href: '#faqs'
 ---
 
 This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
