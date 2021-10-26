@@ -141,7 +141,9 @@ See https://support.apple.com/en-us/HT208372 for additional information
 
 ### OpenSC
 
-You can use OpenSC on your macOS computer to authenticate to a remote server with your PIV/CAC card.  
+You can use OpenSC on your macOS computer to authenticate to a remote server with your PIV/CAC card.
+
+{% include alert-warning.html heading = "Use OpenSC Version Greater Than 0.20.0 to avoid Authentication Errors" content="If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like "ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED"." %}
 
 1. Install [OpenSC](https://www.github.com/OpenSC/OpenSC/wiki/Download-latest-OpenSC-stable-release){:target="_blank"}{:rel="noopener noreferrer"}. 
 2. Insert your PIV/CAC into your card reader.
