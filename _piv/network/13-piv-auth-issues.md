@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: piv
-title: Troubleshooting PIV Auth Issues
+title: Troubleshooting PIV Authentication Issues
 permalink: piv/network/solutions/
 sticky_sidenav: true
 sidenav: pivnetwork
@@ -67,6 +67,8 @@ After PKI events are captured you can then filter CAPI2 logs to identify specifi
   - Build Chain: this can indicate improperly configured trust stores or inability to fetch AIA or SIA certifiate bundles from the internet
   - Verify Revocation: this can indicate either an inability to download CRL or verify an OCSP response or a lack of availaiblity for live revocation information
   - Verify Chain Policy: this indicates that the certificate may not have a directly expressed or mapped certificate policy verifiable up to the trust anchor
+
+{% include alert-warning.html heading = "CAPIT2 Logging" content="CAPI2 logs will include all PKI and X.509 events, to include things like web certificate validation, code signing certificates for software updates, and Microsoft trust store updates." %} 
 
 Do note that CAPI2 logs will include **all** PKI and X.509 events, to include things like:
 - TLS certificate validation for user visited websites.
