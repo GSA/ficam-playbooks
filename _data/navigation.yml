@@ -318,10 +318,10 @@ signwordofr:
 
 DIRA:
   - text: Digital Identity Risk Assessment Playbook
-    href: /DIRA/
+    href: /playbooks/dira/
     
 # DW Playbook
 
 dw:
   - text: Digital Worker Identity Playbook
-    href: /dw/
+    href: playbooks/dw/
