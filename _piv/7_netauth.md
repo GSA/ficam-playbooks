@@ -23,7 +23,7 @@ subnav:
     href: ../../piv/network/localca/
   - text: Authentication Assurance
     href: ../../piv/network/auth/
-  - text: Common Problems and Solutions
+  - text: Troubleshooting PIV Auth Issues
     href: ../../piv/network/solutions/
 ---
 
