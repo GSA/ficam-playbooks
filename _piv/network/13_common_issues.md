@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: piv
-title: Common Issues and Solutions
+title: Troubleshooting PIV Auth Issues
 permalink: piv/network/solutions/
 sticky_sidenav: true
 sidenav: pivnetwork
@@ -16,12 +16,10 @@ subnav:
     href: '#account-linking'
   - text: Helpful Tools
     href: '#helpful-tools'
-
-
 ---
 
 ## Trust Stores
-PKI based mutual authentication issues often arrive when one or both parties (host and/or client) are not capable of establishing trust with each others certificates.  Given the path discovery and validation (PDVAL) processes that takes place on within both parties, potential errors can be due to multiple scenarios with either machine to include the following:
+PKI based mutual authentication issues often arrive when a host (e.g., a domain contoller) and client (e.g., a workstation) are not capable of establishing trust.  Given the path discovery and validation (PDVAL) processes take place within both machines, potential errors due to multiple scenarios with either machine.
 
    - Domain Controller (Host)
       - Domain Controller unable to validate PIV certificate
@@ -40,7 +38,7 @@ Due to required security controls many networks appliances are equiped with stri
 
    - Revocation data such as CRL or OCSP traffic being blocked
    - Path buidling data such as SIA or AIA traffic being blocked
-   - [Tuning](/../tuning){:target="_blank"} related misconfiguration such as CRL download time limits
+   - [Network Tuning](/../network/tuning){:target="_blank"} related misconfiguration such as CRL download time limits
 
 You may need to coordinate with your network or active directory administrators to allow traffic to/from certain IP addresses or make changes to relevant group policies as needed.
 
@@ -50,7 +48,7 @@ Sometimes, even though hosts and clients might be able to complete mutual PKI au
   - AltSecID or User Principal Name (UPN) imporperly formatted
   - User selects improper certificate during authentication
 
-You can visit our [network account](/../account){:target="_blank"} page for additional guidance in these situations.
+You can visit our [network account](/../network/account){:target="_blank"} page for additional guidance in these situations.
 
 ## Helpful Tools
 
@@ -70,7 +68,12 @@ After PKI events are captured you can then filter CAPI2 logs to identify specifi
   - Verify Revocation: this can indicate either an inability to download CRL or verify an OCSP response or a lack of availaiblity for live revocation information
   - Verify Chain Policy: this indicates that the certificate may not have a directly expressed or mapped certificate policy verifiable up to the trust anchor
 
-Do note that CAPI2 logs will include **all** PKI and X.509 events, to include things like TLS certificate validation for user visited websites, or other things like validation of code signing certificates for software updates.  As a result, it may be a challenge to pinpoint specific error assoicated with smartcard logon; however, you can also filter results by event sources, in which case selecting **Winlogon**, may be able to target more useful errors.
+Do note that CAPI2 logs will include **all** PKI and X.509 events, to include things like:
+- TLS certificate validation for user visited websites.
+- code signing certificates for software updates.
+- Microsoft trust store updates.
+
+As a result, it may be a challenge to pinpoint specific error assoicated with smartcard logon; however, you can also filter results by event sources, in which case selecting **Winlogon**, may be able to target more useful errors.
 
 [![Screenshot of the CAPI2 Operational Event Filter capability]({{site.baseurl}}/assets/piv/CAPI2_log_filtering.png){:style="float:left"}]({{site.baseurl}}/assets/piv/CAPI2_log_filtering.png){:target="_blank"}{:rel="noopener noreferrer"}
 
