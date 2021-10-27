@@ -251,8 +251,8 @@ dw:
 
 signword:
   - text: Digitally Sign a Microsoft Word Document
-    href: /signword/
+    href: /playbooks/signword/
 
 signwordofr:
   - text: Digitally Signing Documents for Submission to Office of the Federal Register
-    href: /signfedregister/
+    href: /playbooks/signfedregister/
