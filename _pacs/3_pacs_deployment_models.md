@@ -55,4 +55,4 @@ Here are some key E-PACS advantages to consider:
     * System security assessment and accreditation
 
 	
-The next section, *[Aligning Facility Security Level (FSL) and Authentication](../alignfslandauth/)*, explains the processes needed to prepare for a PACS deployment and offers more detail related to the FIPS 201-approved PIV authentication mechanisms.
+The next section, [Aligning Facility Security Level (FSL) and Authentication](../alignfslandauth/), explains the processes needed to prepare for a PACS deployment and offers more detail related to the FIPS 201-approved PIV authentication mechanisms.
