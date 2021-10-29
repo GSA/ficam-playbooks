@@ -24,7 +24,7 @@ subnav:
     href: /signfedregister/#faqs
 ---
 
-This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
+This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register (OFR) using your PIV credential or similar digital certificate.
 
 The digital signatory of a document MUST be the same person whose name is typed in the signature block.  The names must match exactly or meet the accepted standards listed in the DDH, Ch. 1.  To verify the name as applied to the digital certificate, follow the instructions below in the [View Signature Certificate in MS Word](#view-signature-certificate-in-ms-word) section.
 
@@ -39,7 +39,7 @@ Do NOT use the _Insert Signature_ function (under the **INSERT** tab in the **Wo
 {% include alert-warning.html content = "IMPORTANT: The following instructions apply to MS Word 2013. The signing process for other MS Word versions (e.g., 2010, 2016, Office 365) may vary somewhat. If you have trouble with the signing process, contact OFR at ofrtechgroup@gpo.gov or (202) 741-6020 or your IT support." %}
 
 1. Open your MS Word document in Word. Any changes must be saved before signing.
-2. If you have a purchased PKI credential installed on your computer, proceed to Step 3. Otherwise, insert your Federal Government-issued Personal Identity Verification (PIV) card into your card reader.
+2. If you have a purchased PKI credential installed on your computer, proceed to Step 3. Otherwise, insert your federal government-issued Personal Identity Verification (PIV) card into your card reader.
 3. Click the **File** tab.<br />
    [![Add Dig Sign]({{site.baseurl}}/assets/piv/ofr_word_add_digital_signature_1.PNG){:style="width:70%;"}]({{site.baseurl}}/assets/piv/ofr_word_add_digital_signature_1.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 4. Click **Info**.
@@ -50,7 +50,7 @@ Do NOT use the _Insert Signature_ function (under the **INSERT** tab in the **Wo
 8. Select a **Commitment Type** from the pull-down menu.
 9. In the **Purpose for signing this document**, type the purpose or leave blank.
 10. To ensure the correct certificate is used, click the **Change** button.
-11. In the Certification Selection box, there may be multiple certificates.  Select the first **unexpired** certificate with your name;  then _Click here to view the certificate properties_.<br />
+11. In the Certification Selection box, there may be multiple certificates.  Select the first **unexpired** certificate with your name. Then click the **Click here to view the certificate properties** link.<br />
     [![OFR Windows Security Certificate Type]({{site.baseurl}}/assets/piv/ofr_windows_sec_piv_or_purch_cert.png){:style="width:80%;"}]({{site.baseurl}}/assets/piv/ofr_windows_sec_piv_or_purch_cert.png){:target="_blank"}{:rel="noopener noreferrer"}
 12. The **Certificate Details** box appears. Go to the _Details_ tab and scroll down to _Key Usage_.  Single-click on it.  The lower text box should now display “Digital Signature, Non-Repudiation” (for PIV card certificate) or “Digital Signature” (for a purchased certificate).  If it does, then this is the right certificate. Click **OK** to close the window and proceed with signing.<br />
     [![OFR Certificate Details]({{site.baseurl}}/assets/piv/ofr_certificate_details.png){:style="width:60%;"}]({{site.baseurl}}/assets/piv/ofr_certificate_details.png){:target="_blank"}{:rel="noopener noreferrer"}
