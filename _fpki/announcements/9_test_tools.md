@@ -30,4 +30,4 @@ For more information, see the following web sites:
      - Support page: [https://cpct.app.cloud.gov/help/](https://cpct.app.cloud.gov/help/){:target="_blank"}{:rel="noopener noreferrer"}  
 
 ## Who can I contact for help or more information?
-Email us at fpki at gsa.gov.
+Email us at <span>fpki</span><span>@</span><span>gsa</span><span>.</span><span>gov</span>.
