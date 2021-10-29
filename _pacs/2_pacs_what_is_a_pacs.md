@@ -46,4 +46,4 @@ Characteristics of NIST SP 800-116, Revision 1, compliant systems include, but a
 - Use components listed on the GSA FIPS 201 Approved Products List (APL).
 
 
-The next section, *[PACS Deployment Models](../pacs/)*, describes common deployment models for PACS.
+The next section, [PACS Deployment Models](../pacs/), describes common deployment models for PACS.
