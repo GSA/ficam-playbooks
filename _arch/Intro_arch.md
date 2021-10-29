@@ -2,7 +2,7 @@
 layout: page
 collection: arch
 title: Federal ICAM Architecture Introduction
-permalink: arch/
+permalink: /arch/
 sidenav: arch
 sticky_sidenav: true
 
@@ -55,7 +55,7 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
     <td class="tg-0pky"><span style="font-weight:bold">Identity Management</span> is how an agency collects, verifies, and manages attributes to establish and maintain enterprise identities for employees and contractors.</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="../../assets/arch/intro_ICAM-Credential.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/intro_ICAM-Credential.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management." width="125"></a><br></td>
+    <td class="tg-0pky"><a href="../../assets/arch/intro_⁮ICAM-Credential.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/intro_⁮ICAM-Credential.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management." width="125"></a><br></td>
     <td class="tg-0pky"><span style="font-weight:bold">Credential Management</span> is how an agency issues, manages, and revokes credentials bound to enterprise identities.</td>
   </tr>
   <tr>
