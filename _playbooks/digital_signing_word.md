@@ -59,7 +59,7 @@ This guide will walk you through the steps for digitally signing a document in M
 8. If this is the _wrong_ certificate, click **OK**. Then click **More Choices** to see other certificates. Select another certificate and repeat these steps until you find the correct certificate. <br/> 
 [![Sign Box]({{site.baseurl}}/assets/piv/word-signature-19.png)]({{site.baseurl}}/assets/piv/word-signature-19.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-9. Click the **Sign** button to sign the document. Insert your PIV card into the card reader. Enter your Smart Card (PIV) PIN and click **OK**.<br/>
+9. Click the **Sign** button to sign the document. Insert your PIV card into the card reader. Enter your smart card (PIV) PIN and click **OK**.<br/>
 [![PIV PIN]({{site.baseurl}}/assets/piv/word-signature-5.png)]({{site.baseurl}}/assets/piv/word-signature-5.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 10. _The **Signature Confirmation** box tells you that Word saved your digital signature._ Click **OK**. <br/>
@@ -83,7 +83,7 @@ You can add an _invisible digital signature_ to prevent your name from appearing
 4. Select a **Commitment Type**, such as _created and approved this document_, and then click **Sign**.<br/>
 [![Sign Document]({{site.baseurl}}/assets/piv/word-signature-10.png)]({{site.baseurl}}/assets/piv/word-signature-10.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-5. Insert your PIV card into the card reader. Enter your Smart Card (PIV) PIN and click **OK**.<br/>
+5. Insert your PIV card into the card reader. Enter your smart card (PIV) PIN and click **OK**.<br/>
 [![PIV PIN]({{site.baseurl}}/assets/piv/word-signature-5.png)]({{site.baseurl}}/assets/piv/word-signature-5.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 6. _The **Signature Confirmation** box tells you that Word saved your digital signature._ Click **OK**.<br/>
@@ -91,12 +91,12 @@ You can add an _invisible digital signature_ to prevent your name from appearing
 
 ## Add Multiple Digital Signatures Using Signature Lines
 
-Once you digitally sign a document, you can have others also digitally sign it. (**Note:**&nbsp;&nbsp; If you are the first approver, you should create the signature lines for all of the approvers. Then, send the document to the second approver.)
+Once you digitally sign a document, you can have others also digitally sign it. (**Note:**&nbsp;&nbsp; If you are the first approver, you should create the signature lines for all of the approvers. Then send the document to the second approver.)
 
-1. If you are the second (or other) approver, open the document you've received. Double-click your signature line to sign. Follow Steps 4-10 from [Add a Digital Signature Using a Signature Line](#add-a-digital-signature-using-a-signature-line). <br/>
+1. If you are the second (or other) approver, open the document you've received. Double-click your signature line to sign. Follow Steps 4 through 10 from [Add a Digital Signature Using a Signature Line](#add-a-digital-signature-using-a-signature-line). <br/>
 [![Signature Line]({{site.baseurl}}/assets/piv/word-signature-1.png)]({{site.baseurl}}/assets/piv/word-signature-1.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-3. _A **Signature Setup** pop-up box appears._ Enter your information in the text fields and click **OK**<br/>
+3. _A **Signature Setup** pop-up box appears._ Enter your information in the text fields and click **OK**.<br/>
 [![Signature Setup]({{site.baseurl}}/assets/piv/word-signature-13.png)]({{site.baseurl}}/assets/piv/word-signature-13.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 4. Double-click your _signature line_.<br/> 
@@ -107,7 +107,7 @@ Once you digitally sign a document, you can have others also digitally sign it. 
 6. Next, look at the **Signing as:** field. _You should see your name and certificate information._ If you don't, click the **Change** button to select a different certificate and click **Sign**.<br/>
 [![Signature Box]({{site.baseurl}}/assets/piv/word-signature-4.png)]({{site.baseurl}}/assets/piv/word-signature-4.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-7. Insert your PIV card and enter your Smart Card (PIV) PIN. Click **OK**.<br/>
+7. Insert your PIV card and enter your smart card (PIV) PIN. Click **OK**.<br/>
 [![Certificate PIN]({{site.baseurl}}/assets/piv/word-signature-5.png)]({{site.baseurl}}/assets/piv/word-signature-5.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 8. _The **Signature Confirmation** box tells you that Word saved your digital signature._ Click **OK**. <br/>
