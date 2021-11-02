@@ -17,14 +17,14 @@ subnav:
      href: '#auto-enroll-domain-controllers-using-group-policy-object-(gpo)'
 ---
 
-This page provides some tips for using a local certification authority to issue a domain controller certificate.  This is for local Microsoft CAs. Other platforms may be used and have different procedures.    
+This page provides some tips for using a local certification authority (CA) to issue a domain controller certificate.  This is for local Microsoft CAs. Other platforms may be used and have different procedures.    
 
-{% include alert-info.html content="These procedures are accurate for using Microsoft 2012 Server, Standard Edition, for CA and Domain Controller servers as of March 2017." %}  
+{% include alert-info.html content="These procedures are accurate for using Microsoft 2012 Server, Standard Edition, for CA and domain controller servers as of March 2017." %}  
 
 ## Prerequisites  
 
   * The server that hosts the CA must be joined to the domain.
-  * The CA should **never** reside on the same server(s) that are acting as Domain Controller(s).
+  * The CA should **never** reside on the same server(s) that are acting as domain controller(s).
   * You must be an Enterprise Administrator in the domain to perform these steps.
 
 ## Install CA Role
@@ -78,4 +78,4 @@ The domain controller(s) certificate must contain valid information. These steps
   5. Replicate the group policy. Use the command: **_gpupdate /force_** at the command line, or wait for the group policy to replicate based on your replication time and settings.
   6. Open **MMC.exe -&gt; File -&gt; Add/Remove Snap-in -&gt; Certificates -&gt; Computer account -&gt; Local computer**. 
   
-  If successful, you will see a new Domain Controller certificate in the **_Certificate (Local Computer) -&gt; Personal -&gt; Certificates folder_**. At the **Certificate Template** tab, you will also see a certificate generated with the custom certificate template.
+  If successful, you will see a new domain controller certificate in the **_Certificate (Local Computer) -&gt; Personal -&gt; Certificates folder_**. At the **Certificate Template** tab, you will also see a certificate generated with the custom certificate template.

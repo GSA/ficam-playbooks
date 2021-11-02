@@ -22,13 +22,13 @@ subnav:
 
 Did you know that PIV cards contain digital certificates intended to help users send secure email? In general, "secure email" refers to digitally signed and/or encrypted emails.  Digitally signed emails give us confidence that the individual who claimed to send a message actually did (non-repudiation) and that the message was not modified while in transit (integrity).  Encrypted emails prevent the message from being read by unintended recipients (confidentiality).  
 
-The following guide will walk users through configuring Outlook to leverage the digital signature and key management certificates found on their PIV to enable secure email. Be aware that by default, Outlook will only allow siganture and encryption of emails provided the configured email address on the client is same email address as encoded on a PIV.
+The following guide will walk you through configuring Outlook to leverage the digital signature and key management certificates found on your PIV to enable secure email. Be aware that by default, Outlook will only allow siganture and encryption of emails provided the configured email address on the client is same email address as encoded on a PIV.
 
 ## Configure Outlook to Send Secure Email
 
-The following steps were written using Microsoft Outlook 2016. 
+The following steps pertain to Microsoft Outlook 2016. 
 
-1. Insert your PIV card into your computer's smart card reader.
+1. Insert your PIV card in your computer's smart card reader.
 2. Browse to **File** -> **Options** -> **Trust Center** -> **Trust Center Settings...** and select **Email Security**.
 3. Click **Settings...** beneath the *Encrypted Email* heading.
 4. Click **New** to create a new security preference.
@@ -48,9 +48,9 @@ The following steps were written using Microsoft Outlook 2016.
 
 ### Publish your Certificates to the Global Address List
 
-The Global Address List (GAL) is a shared, enterprise-wide contact directory in Microsoft Outlook.  Publishing your certificates to the Global Address List will add your encryption certificate to an enterprise address book, making it easier for other agency users to send you an encrypted email.
+The Global Address List (GAL) is a shared, enterprise-wide contact directory in Microsoft Outlook.  Publishing your certificates to the GAL will add your encryption certificate to an enterprise address book, making it easier for other agency users to send you an encrypted email.
 
-1. Insert your PIV card into your computer's smart card reader.
+1. Insert your PIV card in your computer's smart card reader.
 2. Browse to **File** -> **Options** -> **Trust Center** -> **Trust Center Settings** and select **Email Security**.
 3. Click **Publish to GAL...** beneath the *Digital IDs (Certificates)* heading.
 4. Click **OK** when warned about Outlook publishing your default security certificates to the Global Address List.
@@ -107,7 +107,7 @@ PIV users may received and store encrypted emails througout their tenure in an o
 1. Select an encrypted email
 2. Enter your PIV card PIN or private key password when prompted
 
-**Note:** Your orgnaization may not recover previously issued encryption keys onto your PIV, instead they may maintain a seperate key recovery service. Please reach out to your local IT department to determine if you can recover retired key management keys.
+**Note:** Your organization may not recover previously issued encryption keys onto your PIV; instead, it may maintain a seperate key recovery service. Please reach out to your local IT department to determine if you can recover retired key management keys.
 
 ## Other Helpful References
 

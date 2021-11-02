@@ -29,5 +29,5 @@ For more information, see the following web sites:
      - URL: [https://cpct.app.cloud.gov/](https://cpct.app.cloud.gov/){:target="_blank"}{:rel="noopener noreferrer"} 
      - Support page: [https://cpct.app.cloud.gov/help/](https://cpct.app.cloud.gov/help/){:target="_blank"}{:rel="noopener noreferrer"}  
 
-## Who can I contact for help or more information?
+## Who Can I Contact for Help or More Information?
 Email us at fpki at gsa.gov.

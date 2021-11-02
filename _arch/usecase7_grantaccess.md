@@ -18,7 +18,7 @@ This use case describes the steps to authenticate individuals and authorize acce
 In this use case, an Access Control System (ACS) Administrator needs to grant access to an employee or contractor who has an enterprise identity and active credential and needs to access a logical or physical resource. These steps assume the employee or contractor already has credentials to support authentication as well as the access entitlements to support authorization decisions.
 
 - *Authentication* - I want to verify the claimed unique identity of a given employee or contractor  so that the system can verify the right individual is attempting to access an agency service. 
-- *Authorization* - I want to allow access for only employees and contractors that meet established requirements, so that only the people who should have access do have access.
+- *Authorization* - I want to allow access for only employees and contractors that meet established requirements so that only the people who should have access do have access.
 
 [![Icon Key for the diagrams that follow.](../../assets/arch/usecases/7-IconKey.png)](../../assets/arch/usecases/7-IconKey.png){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -33,7 +33,7 @@ td {
 
 <table>
   <tr>
-    <td style="width:250px;border:0px;"><strong>1. Access Attempt</strong> <br> <a href="../../assets/arch/usecases/7-1.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/7-1.png" width="250" alt="A diagram showing an employee or contractor attempting to access a agency service through an access control system."></a></td>
+    <td style="width:250px;border:0px;"><strong>1. Access attempt</strong> <br> <a href="../../assets/arch/usecases/7-1.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/7-1.png" width="250" alt="A diagram showing an employee or contractor attempting to access a agency service through an access control system."></a></td>
     <td style="border:0px;">An employee or contractor attempts to access an agency service.</td>
   </tr>
   <tr>
