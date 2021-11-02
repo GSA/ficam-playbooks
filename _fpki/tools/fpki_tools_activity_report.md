@@ -15,7 +15,7 @@ subnav:
       href: '#repository-availability'
 ---
 
-Updated: October 4, 2021
+Updated: November 1, 2021
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -71,7 +71,7 @@ The following certificates are planned for a certificate action in the near futu
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| FPKIMA | Entrust Managed Services NFI Root CA | Federal Bridge CA | Serial: 178c7357fae941b2a242f0d219fd0fef1560787e      Hash:d45ccedd462a2e2718627eeb6e013fc0a0dc6940 | 10/29/23 | Renew |
+| FPKIMA | Entrust Managed Services NFI Root CA | Federal Bridge CA | Serial: 178c7357fae941b2a242f0d219fd0fef1560787e      Hash:d45ccedd462a2e2718627eeb6e013fc0a0dc6940 | 10/29/23 | Renew  11/3/21|
 
 
 ## Repository Availability 
@@ -86,11 +86,11 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | Exostar Federated Identity Service Root CA | FBCA	| 100 |	99.99 |
 | Federal Bridge CA G4 | FBCA | 100	| 100 |
 | GPO PCA | FBCA | 100 | 99.95 |
-| IdenTrust Global Common Root CA 1 | FBCA | 100 | 99.87 |
-| SAFE Identity Bridge CA	| FBCA | 100 | 99.94 |
-| STRAC Bridge Root Certification Authority	| FBCA | 99.96 | 99.97 |
-| Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 100 | 99.99 |
-| TSCP SHA256 Bridge CA	| FBCA | 100 | 97.85 |
+| IdenTrust Global Common Root CA 1 | FBCA | 100 | 99.88 |
+| SAFE Identity Bridge CA	| FBCA | 100 | 99.86 |
+| STRAC Bridge Root Certification Authority	| FBCA | 100 | 99.97 |
+| Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 89.11 | 81.71 |
+| TSCP SHA256 Bridge CA	| FBCA | 71.38 | 95.43 |
 | USPTO_INTR_CA1 | FBCA	| 100 | 99.95 |
 | WidePoint NFI Root 2	| FBCA	| 100 |	100 |
 | DigiCert SSP CA - G5	| FCPCA	| 100 |	99.10 |
@@ -99,7 +99,7 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | Federal Common Policy CA G2 | FCPCA | 100 | 100 |
 | ORC SSP 4	| FCPCA	| 100 | 100 |
 | Symantec SSP Intermediate CA - G4	| FCPCA | 100 | 98.71 |
-| U.S. Department of State AD Root CA | FCPCA | 98.19 | 99.85 |
+| U.S. Department of State AD Root CA | FCPCA | 100 | 99.85 |
 | US Treasury Root CA | FCPCA | 100 | 100 |
 | Verizon SSP CA A2 | FCPCA	| 100 | 99.96 |
 
