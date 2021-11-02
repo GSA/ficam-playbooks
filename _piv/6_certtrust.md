@@ -28,7 +28,7 @@ The full process of proving identity when issuing the certificates, auditing the
 
 [![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/piv/certificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/piv/certificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-For the U.S. federal government Executive Branch agencies, there is one root CA named _Federal Common Policy Certificate Authority G2 (FCPCAG2 or COMMON)_ and there are dozens of intermediate CAs.  The U.S. federal government has also established trust with other CAs that serve business communities, state and local government communities, and international government communities.
+For the federal government Executive Branch agencies, there is one root CA named _Federal Common Policy Certificate Authority G2 (FCPCAG2 or COMMON)_ and there are dozens of intermediate CAs.  The federal government has also established trust with other CAs that serve business communities, state and local government communities, and international government communities.
 
 The participating CAs are subject to policies, processes, and auditing collectively referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}
 
