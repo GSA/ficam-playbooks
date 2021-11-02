@@ -32,7 +32,9 @@ First, you will need to install and test **OpenSC**. OpenSC has installers for m
 
 * [View instructions and installation procedures for OpenSC](https://github.com/OpenSC/OpenSC/wiki/){:target="_blank"}{:rel="noopener noreferrer"}
 
-When installing OpenSC, you need to consider some items that are specific for the U.S. federal government: 
+When installing OpenSC, you need to consider some items that are specific for the federal government: 
+
+{% include alert-warning.html heading = "Use OpenSC Version Greater Than 0.20.0 to avoid Authentication Errors" content="If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED." %}
 
 * You will need to download and install either the 64-bit or 32-bit version of OpenSC, depending on the OS.
 * You do not need to install the full packages for OpenSC.<!--No need to be more specific?-->
