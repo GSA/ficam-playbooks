@@ -32,7 +32,7 @@ Unlike identities, credentials can expire. If an enterprise identity continues p
 
 ## Credential Management Services
 
-The Credential Management services in the federal ICAM architecture include Sponsorship, Registration, Generation & Issuance, Maintenance, and Revocation.
+The Credential Management services in the FICAM architecture include Sponsorship, Registration, Generation & Issuance, Maintenance, and Revocation.
 
 [![A green box with the Credential Management service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/CredentialManagementServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/CredentialManagementServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
 
