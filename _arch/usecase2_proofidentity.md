@@ -2,7 +2,7 @@
 layout: page
 title: 2. Proof an Identity
 collection: arch
-permalink: arch/proofidentity/
+permalink: /arch/proofidentity/
 sidenav: archusecases
 sticky_sidenav: true
 ---
