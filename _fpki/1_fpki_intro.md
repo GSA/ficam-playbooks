@@ -19,7 +19,7 @@ subnav:
     href: '#where-can-i-find-the-policies-and-standards'
 ---
 
-Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI (Federal PKI).  
+Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI.
 
 These guides are [open source](https://github.com/gsa/ficam-playbooks){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
 
