@@ -1,4 +1,4 @@
-FROM ruby:2.6.6
+FROM ruby:3.0
 
 RUN apt-get update && \
   apt-get install --reinstall -y locales && \
