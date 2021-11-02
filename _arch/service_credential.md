@@ -17,7 +17,7 @@ The following are types of authenticators:
 
 - Something you know, like a password or PIN.
 - Something you have, like a private key or One-Time Password (OTP) generator.
-- Something you have on or in your body, like a fingerprint or iris. 
+- Something you are, like a fingerprint or iris. 
 
 The Authenticator Assurance Level (AAL) determines the authenticators associated with a credential. Federal government-wide policy requires a minimum Authenticator Assurance 
 Level 2 for employees and contractors.
