@@ -9,9 +9,9 @@ sticky_sidenav: true
 
 [![Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance service.](../../assets/arch/usecases/Credential-Maintenance.png){:align="right" style="padding-left:15px"}](../../assets/arch/usecases/Credential-Maintenance.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-A derived credential is a credential derived from an existing credential, with a different form factor, such as a credential on a mobile device. Derived credentials have the same IAL as the existing credential, and the same or lower AAL.
+A derived credential is a credential derived from an existing credential, with a different form factor, such as a credential on a mobile device. Derived credentials have the same IAL as the existing credential and the same or lower AAL.
 
-When an employee or contractor requires authentication, but cannot leverage an existing credential, they can use a derived credential. To be eligible for a derived credential, the employee or contractor must already have a valid credential with Authenticator Assurance Level (AAL) 2 or 3.
+When an employee or contractor requires authentication but cannot leverage an existing credential, they can use a derived credential. To be eligible for a derived credential, the employee or contractor must already have a valid credential with Authenticator Assurance Level (AAL) 2 or 3.
 
 ---
 

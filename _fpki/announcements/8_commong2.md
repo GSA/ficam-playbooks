@@ -12,13 +12,13 @@ sticky_sidenav: true
 sidenav: fpkiactiveannouncements
 
 subnav:
-    - text: What will be impacted?
+    - text: What Will Be Impacted?
       href: '#what-will-be-impacted'
-    - text: When will this change take place?
+    - text: When Will This Change Take Place?
       href: '#when-will-this-change-take-place'
-    - text: What should I do?
+    - text: What Should I Do?
       href: '#what-should-i-do'
-    - text: Who can I contact for help or more information?
+    - text: Who Can I Contact for Help or More Information?
       href: '#who-can-i-contact-for-help-or-more-information'
 ---
 
@@ -28,7 +28,7 @@ In **October 2020**, the Federal Government created a new Federal Public Key Inf
 
 Between December 2020 and June 2021, the CAs signed by the old root will be migrated to be signed by this new root: Federal Common Policy CA G2.  Once the migration is complete, the old root will be decommissioned.  
 
-## What will be impacted?
+## What Will Be Impacted?
 
 **This change will affect all federal agencies** and will have an impact on the following services:
 
@@ -37,7 +37,7 @@ Between December 2020 and June 2021, the CAs signed by the old root will be migr
 - User digital signatures that leverage PIV or similar credentials 
 - Other applications leveraging the Federal Common Policy CA as a root
 
-## When will this change take place?
+## When Will This Change Take Place?
 Tentative time-line:
 - **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) created the new Federal Common Policy CA G2 root 
 - **October 15, 2020**: The FPKIMA team issued a cross certificate from the Federal Common Policy CA G2 to the Federal Bridge CA G4
@@ -45,7 +45,7 @@ Tentative time-line:
 - **December 2020 to June 2021**: All agencies will need to transition from using the old Federal Common Policy CA as the root to the new Federal Common Policy CA G2 *(approximately six months)*
 - **June 2021**: The FPKIMA team will decommission the old Federal Common Policy CA 
 
-## What should I do?
+## What Should I Do?
 
 {% include alert-info.html content="We are collaborating with CISA on a series of webinars to communicate the upcoming changes and answer your questions.  Email fpkirootupdate@gsa.gov to be notified of future events." %} 
 
@@ -53,5 +53,5 @@ To prevent issues, agencies **must** distribute the Federal Common Policy CA G2 
 
 To prepare for the Federal Common Policy CA update, read our guide [here]({{ site.baseurl }}/common).
 
-## Who can I contact for help or more information?
+## Who Can I Contact for Help or More Information?
 Email us at fpkirootupdate@gsa.gov. 

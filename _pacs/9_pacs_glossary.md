@@ -20,7 +20,7 @@ The process of granting or denying specific requests to:
 
 ### Access Point 
 
-An access point can be a door, turnstile, or other physical barrier, where granting access can be electronically controlled.
+An access point can be a door, turnstile, or other physical barrier where granting access can be electronically controlled.
 
 
 ### Authentication
@@ -34,7 +34,7 @@ Authentication systems are often categorized by the number of factors that they 
 
 - Something you know (for example, a password)
 - Something you have (for example, an ID badge or a cryptographic key)
-- Something you are (for example, a thumb print or other biometric data)
+- Something you are (for example, a thumbprint or other biometric data)
 
 Authentication systems that incorporate all three factors are stronger than systems that only incorporate one or two of the factors.	
 
@@ -81,17 +81,17 @@ The process of determining if a credential is valid, which can include the follo
 
 ### Certificate Revocation List 
 
-A list of revoked public key certificates created and digitally signed by a Certification Authority.	
+A list of revoked public key certificates created and digitally signed by a certification authority.	
 
 
 ### Identity Management System (IDMS) 
 
-Identity management system comprised of one or more systems or applications that manages the identity verification, validation, and issuance process.
+A system comprising one or more systems or applications that manages the identity verification, validation, and issuance process.
 
 
 ### Identity Registration
 
-The process of making a person’s identity known to the PIV system, associating a unique identifier with that identity, and collecting and recording the person’s relevant attributes into the system.
+The process of making a person’s identity known to the PIV system, associating a unique identifier with that identity, and collecting and recording the person’s relevant attributes in the system.
 
 
 ### Identity Verification 
@@ -125,14 +125,14 @@ A PIV authentication mechanism that is implemented by an asymmetric key challeng
 
 ### Provisioning
 
-Specifying for each identity both the credential used (for example, a PIV, CAC, or PIV-I card) and the privileges granted to access specific resources (for example, a particular facility, door, or access point), and ensuring that complex set of rules is enforced.
+The process of specifying for each identity both the credential used (for example, a PIV, CAC, or PIV-I card) and the privileges granted to access specific resources (for example, a particular facility, door, or access point), and ensuring that a complex set of rules is enforced.
 
 
 ### SYM-CAK
 
-The SYM-CAK is an authentication mechanism based on the optional symmetric card authentication key. As the name implies, the purpose of the SYM-CAK authentication mechanism is to authenticate the credential and thereby the credential holder.
+An authentication mechanism based on the optional symmetric card authentication key. As the name implies, the purpose of the SYM-CAK authentication mechanism is to authenticate the credential and thereby the credential holder.
 
 
 ### Validation
 
-The process of determining that an identity credential was legitimately issued and is still valid, that is, the credential has not expired or been revoked.
+The process of determining that an identity credential was legitimately issued and is still valid (that is, the credential has not expired or been revoked).

@@ -22,26 +22,26 @@ There are two account linking attributes to choose from:
 
 It's not possible to configure a domain to use *both* altSecurityIdentities *and* User Principal Name mapping. You must choose **one** of these options and configure its use for *all* domain users.
 
-### altSecurityIdentities approach
+### altSecurityIdentities Approach
 - Each PIV credential can be associated with **more than one** account.
      - This flexibility allows for the association of a single PIV credential certificate to an individual's end-user and privileged user account(s).
 - Users are presented with an additional field during network authentication to identify which account the user wants to access. This field is known as the _User Name Hint_.
-     - The User Name Hint informs Windows which account the user is trying to log into if the mapped certificate is associated with multiple accounts.
-     - Entering a User Name Hint is optional if the user's PIV Authentication certificate UPN matches their Windows Logon name.
+     - The User Name Hint informs Windows which account the user is trying to log in to if the mapped certificate is associated with multiple accounts.
+     - Entering a User Name Hint is optional if the user's PIV Authentication certificate UPN matches their Windows logon name.
 - You can choose from one of [six options](#2-link-the-piv-authentication-certificate) to map a certificate to a given account.
-- There is more flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials.
+- There is more flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable (PIV-I) credentials.
 
-### User Principal Name approach
+### User Principal Name Approach
 - Each PIV credential can only be associated with **one** account.
 - The UPN value from the _Subject Alternate Name_ in the PIV Authentication certificate is required.
 - There is no flexibility for associating the PIV credential to separate privileged accounts.
-- There is less flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials.
+- There is less flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-I credentials.
 
 
 ## Transitioning from UPN Mapping to altSecurityIdentities Mapping 
 If you have a large network with many domains, you should carefully plan the migration from User Principal Name to the altSecurityIdentities account linking method.  
 
-{% include alert-warning.html heading = "Use of UPN by Applications" content="You may find that you have many applications that rely upon User Principal Name values.  There is no need to remove existing or stop populating new User Principal Name values in your transition to altSecurityIdentities." %} 
+{% include alert-warning.html heading = "Use of UPN by Applications" content="You may find that you have many applications that rely on User Principal Name values.  There is no need to remove existing or stop populating new User Principal Name values in your transition to altSecurityIdentities." %} 
 
 There are three steps to implement altSecurityIdentities account linking:
   1. [Link the PIV Authentication Certificate](#1-link-the-piv-authentication-certificate)
@@ -80,7 +80,7 @@ The following steps are useful if you only need to update a small number of user
  -  Click **Apply** and then **OK**
 
 **B. Use Automation** <br>
-If designing an automated process to transition users from Principal Name to altSecurityIdentities mapping, consider the following functionality:  
+If you are designing an automated process to transition users from Principal Name to altSecurityIdentities mapping, consider the following functionality:  
 - Load and process multiple certificates at once (for example, reading a directory of user certificates)
 - Extract the UPN from each certificate and ensure a corresponding user record exists in Active Directory
 - For certificates that contain a UPN that matches a record in Active Directory:
@@ -95,7 +95,7 @@ If designing an automated process to transition users from Principal Name to alt
 #### 2. Enable User Name Hints
 You need to enable _User Name Hints_ for your network domain.  This will modify the logon prompts for _Windows_ workstations and servers joined to the network domain.  Your users will be prompted to provide both the PIV credential PIN value and a User Name Hint value.
 
-{% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows Logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a href=\"https://playbooks.idmanagement.gov/piv/identifiers/\" target=\"_blank\">Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
+{% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a href=\"https://playbooks.idmanagement.gov/piv/identifiers/\" target=\"_blank\">Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
 
 ##### User Name Hint Setting
 
@@ -119,7 +119,7 @@ To transition from UPN mapping to altSecurityIdentities account linking, you wil
 - **Type:** DWORD
 - **Data (Value):** 00000000
 
-This setting tells your network domain: _I don't always want to use the Subject Alternate Name values for my user certificates._  More information on the setting is available [here.](https://technet.microsoft.com/en-us/library/ff520074(WS.10).aspx){:target="_blank"}{:rel="noopener noreferrer"}
+This setting tells your network domain _I don't always want to use the Subject Alternate Name values for my user certificates._  More information on the setting is available [here.](https://technet.microsoft.com/en-us/library/ff520074(WS.10).aspx){:target="_blank"}{:rel="noopener noreferrer"}
 
 It's possible to revert to UPN account linking by removing the registry setting above.
 

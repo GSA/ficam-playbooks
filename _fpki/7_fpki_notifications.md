@@ -76,7 +76,7 @@ Subject:  FPKI System Notification - System Name
 - Change description  
 - Contact email  
 - If the change is a new or revoked CA certificate, include the CA Certificate hash (sha1 thumbprint), Issuer and Subject DNs  
-- If the change is a new URI, include the new CDP, AIA, SIA or OCSP value  
+- If the change is a new URI, include the new CDP, AIA, SIA, or OCSP value  
 
 
 

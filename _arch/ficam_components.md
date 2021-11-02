@@ -22,11 +22,11 @@ subnav:
       
 ---
 
-Component examples include sample enterprise ICAM tools (e.g., solutions, applications, and software) aligned with ICAM service areas that illustrate ICAM functionality at an agency. The component examples are designed for enterprise architects, security engineers, and solution architects to facilitate discussions regarding the technology solutions to integrate with enterprise applications, and the business requirements.
+Component examples include sample enterprise ICAM tools (e.g., solutions, applications, and software) aligned with ICAM service areas that illustrate ICAM functionality at an agency. The component examples are designed for enterprise architects, security engineers, and solution architects to facilitate discussions regarding the technology solutions to integrate with enterprise applications and the business requirements.
 
 The systems components are representative examples only. Some solutions chosen by your agency may span across more than one service area. 
 
-The following figure is an example for a small selection of system components only.  You can modify the graphic and incorporate as-is and target state system components for enterprise roadmap planning.
+The following figure is an example for a small selection of system components only.  You can modify the graphic or incorporate it as is and target state system components for enterprise roadmap planning.
 
 [![A diagram that shows example components for each service area, and relationships between practice areas.]({{site.baseurl}}/assets/arch/ComponentExamples.png)]({{site.baseurl}}/assets/arch/ComponentExamples.png){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -38,23 +38,23 @@ Authoritative sources systems components may include:
 - Human Resource systems such as payroll, time and attendance, and benefits administration
 - Agency or government-wide Learning Management Systems
 - Agency or government-wide Personnel Security systems for security and suitability
-- Directory services including on-premise or cloud-based directory services
+- Directory services, including on-premise or cloud-based directory services
 - Other external or internal sources
 
 ## Identity Management Systems
-Identity Management Systems are how an agency manages the identity lifecycle. 
+Identity management systems are how an agency manages the identity lifecycle. 
 
-Identity management systems components may include:
+Identity management system components may include:
 
-- Identity lifecycle management services including provisioning and workflow 
+- Identity lifecycle management services, including provisioning and workflow 
 - Role management or role manager applications
 - Identity correlation or aggregation
 - Directory management
 
 ## Access Management Systems
-Access Management Systems are how an agency leverages credentials to authenticate individuals and authorize access to protected resources.
+Access management systems are how an agency leverages credentials to authenticate individuals and authorize access to protected resources.
 
-Access management systems components may include:
+Access management system components may include:
 
 - Enterprise single sign-on (eSSO) applications
 - Web access management applications
@@ -69,12 +69,12 @@ Access management systems components may include:
 
 
 ## Credential Management Systems
-Credential Management Systems are how an agency manages an authentication token bound to an identity.
+Credential management systems are how an agency manages an authentication token bound to an identity.
 
-Credential management systems components may include:
+Credential management system components may include:
 
 - PIV credential service provider solutions
-- Other, non-PKI, credential service provider solutions 
+- Other non-PKI credential service provider solutions 
 - Federated certification authorities
 - Private certification authorities
 - Key management services 

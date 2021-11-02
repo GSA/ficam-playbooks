@@ -28,13 +28,13 @@ The pages that follow explain how to establish a formal identity management gove
 - [Create a Governance Body](#program-governance-body)
 - [Create a Program Management Office (PMO)](#program-management-office)
 
-You don't have to start from scratch. Instead, model your agency's ICAM governance structure after existing programs. See the [Governance Examples and Guidance](../examples/) section for agency steering committee and PMO examples, as well as other authorities to consider.
+You don't have to start from scratch. Instead, model your agency's ICAM governance structure after existing programs. See the [Governance Examples and Guidance](../examples/) section for agency steering committee and PMO examples as well as other authorities to consider.
 
 {% include alert-info.html heading="Governance Body vs. Program Management Office" content="Governance bodies provide top-down leadership support and guidance across the programs within an agency, while Program Management Offices provide operational support for the day-to-day execution of the tasks within the program." %}
 
 ## Program Governance Body
 
-You can create an Identity, Credential, and Access Management (ICAM) program governance body (for example, an Executive Steering Committee) to oversee your ICAM projects and workstreams and align ICAM services and management with your agency's mission. The agency's executive leadership will charter the governance body.
+You can create an ICAM program governance body (for example, an Executive Steering Committee) to oversee your ICAM projects and workstreams and align ICAM services and management with your agency's mission. The agency's executive leadership will charter the governance body.
 
 An ICAM program governance body can include the following personnel:
 
@@ -68,7 +68,7 @@ We recommend you create a charter to govern the roles and responsibilities of yo
 
 ### Component Governance
 
-A component agency's interdisciplinary team is usually comprised of the agency's ICAM-related program managers and information technology (IT) experts. This team's purpose is to provide ICAM-related recommendations to the governance body to help drive the ICAM program's success via a bottom-up approach.
+A component agency's interdisciplinary team usually comprises the agency's ICAM-related program managers and information technology (IT) experts. This team's purpose is to provide ICAM-related recommendations to the governance body to help drive the ICAM program's success via a bottom-up approach.
 
 These groups leverage their experience and business context to provide the governance body with strategies, insights, and lessons learned around the following subjects:
 
@@ -80,7 +80,7 @@ These groups leverage their experience and business context to provide the gover
 
 In addition to a program governance body, you can support the execution and operation of projects and workstreams with a Program Management Office (PMO).
 
-An Identity, Credential, and Access Management (ICAM) PMO complements the program governance body. Some agencies may not require both a program governance body and a PMO; however, larger agencies may need to separate governance and operational responsibility for effective ICAM operations. A PMO ensures individual components of the ICAM program operate efficiently and achieve the expected results within the defined budget and schedule.
+An ICAM PMO complements the program governance body. Some agencies may not require both a program governance body and a PMO; however, larger agencies may need to separate governance and operational responsibility for effective ICAM operations. A PMO ensures individual components of the ICAM program operate efficiently and achieve the expected results within the defined budget and schedule.
 
 For a PMO to be effective, it must:
 
@@ -93,17 +93,17 @@ For a PMO to be effective, it must:
 
 The PMO will typically be responsible for the following functions:
 
-- Coordinate implementation efforts across ICAM stakeholders and component agency programs, for example:
+- Coordinating implementation efforts across ICAM stakeholders and component agency programs. For example:
     - Identity management
     - Credentialing 
     - Access management: physical access control systems (PACS)
     - Access management: application access
     - Personnel security
-- Maintain an enterprise ICAM perspective to ensure all component agency programs align with organizational objectives.
-- Serve as a centralized point of contact for ICAM questions, issues, and concerns.
-- Plan for and secure program funding to execute ICAM capabilities.
-- Handle communications and outreach to both internal and external stakeholders.
-- Manage and resolve program risks and issues across agency office, component, or bureau boundaries.
+- Maintaining an enterprise ICAM perspective to ensure all component agency programs align with organizational objectives.
+- Serving as a centralized point of contact for ICAM questions, issues, and concerns.
+- Planning for and securing program funding to execute ICAM capabilities.
+- Handling communications and outreach to both internal and external stakeholders.
+- Managing and resolving program risks and issues across agency office, component, or bureau boundaries.
 
 If your agency separates physical and logical security into separate offices, consider forming an ICAM guidance body with representation from each office to serve the function of a PMO.
 

@@ -27,7 +27,7 @@ This guide uses open-source options:
 
 Commercial solutions are also available.
 
-{% include alert-info.html content = "Your PIV/CAC credential contains an authentication certificate key pair (public and private) for smart-card logon. Using a PIV/CAC key pair is very similar to using a self-signed key pair for SSH. " %}
+{% include alert-info.html content = "Your PIV/CAC credential contains an authentication certificate key pair (public and private) for smart card logon. Using a PIV/CAC key pair is very similar to using a self-signed key pair for SSH. " %}
 
 {% include alert-info.html content = "Your Chief Information Security Officer must determine that security controls are in place and approve SSH scenarios. You should also review your agency's policies and use your physical or virtual jump servers to restrict users from using SSH directly from workstations." %} 
 
@@ -190,7 +190,7 @@ You can use OpenSC on your macOS computer to authenticate to a remote server wit
 
 {% include alert-warning.html content = "Server administrators must have root privileges for these steps." %}
  
-{% include alert-info.html content = "The following SSH configurations are examples only. Other options are available, including Pluggable Authentication Modules (PAM) that look up user accounts and authorizations through directories. You can automate account set-ups by using centralized configuration management tools that can push or remove authorized_keys." %}
+{% include alert-info.html content = "The following SSH configurations are examples only. Other options are available, including Pluggable Authentication Modules (PAM) that look up user accounts and authorizations through directories. You can automate account setups by using centralized configuration management tools that can push or remove authorized_keys." %}
 
 By default, SSH keys are read from the _.ssh/authorized_keys_ file in your home directory. 
 

@@ -45,5 +45,5 @@ td {
 
 ## Examples
 
-- I want to indicate that an employee or contractor requires and is allowed access to an agency service, so that they can access the service when needed.
-- An employee is hired to be part of the financial review team and requires access to financial applications. The employee has a role assigned to their enterprise identity record, and associated with their identity attributes. 
+- I want to indicate that an employee or contractor requires and is allowed access to an agency service so that they can access the service when needed.
+- An employee is hired to be part of the financial review team and requires access to financial applications. The employee has a role assigned to their enterprise identity record and associated with their identity attributes. 
