@@ -96,7 +96,7 @@ The process of making a person’s identity known to the PIV system, associating
 
 ### Identity Verification 
 
-The process of confirming or denying that a claimed identity is correct by comparing the credentials (something you know, something you have, something you have on or in your body) of a person requesting access with those previously proven and stored in the PIV credential or system and associated with the identity being claimed.
+The process of confirming or denying that a claimed identity is correct by comparing the credentials (something you know, something you have, something you are) of a person requesting access with those previously proven and stored in the PIV credential or system and associated with the identity being claimed.
 
 
 ### Interoperability 
