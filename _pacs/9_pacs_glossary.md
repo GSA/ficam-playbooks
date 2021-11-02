@@ -34,7 +34,7 @@ Authentication systems are often categorized by the number of factors that they 
 
 - Something you know (for example, a password)
 - Something you have (for example, an ID badge or a cryptographic key)
-- Something you have on or in your body (for example, a thumbprint or other biometric data)
+- Something you are (for example, a thumbprint or other biometric data)
 
 Authentication systems that incorporate all three factors are stronger than systems that only incorporate one or two of the factors.	
 
