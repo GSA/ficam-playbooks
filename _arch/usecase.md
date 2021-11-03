@@ -2,7 +2,7 @@
 layout: page
 title:  Use Cases
 collection: arch
-permalink: arch/usecases/
+permalink: /arch/usecases/
 sidenav: arch
 sticky_sidenav: true
 
