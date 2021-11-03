@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Group Policies and Enforcement
-permalink: piv/network/group/
+permalink: /piv/network/group/
 sticky_sidenav: true
 sidenav: pivnetwork
 
