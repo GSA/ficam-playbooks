@@ -414,11 +414,15 @@ Reconsider the business process carefully and validate the current and future de
 
 # Policy, Standards, and Guidance
 
-[text and table here from DIRA PDF Appendix A]
+This section provides links to the federal laws, policies, standards and other guidance that impact and shape DIRA implementations.  NIST also publishes useful [Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"} for agencies, and an [Implementation Resource](https://www.nist.gov/system/files/documents/2020/07/02/SP-800-63-3-Implementation-Resources_07012020.pdf){:target="_blank"}{:rel="noopener noreferrer"} for solution developers. 
+
+[Table here from DIRA PDF Appendix A]
 
 # NIST Special Publication 800-63-3 Requirements Traceability Matrix
 
-[text and table here from DIRA PDF Appendix C]
+This section includes both normative requirements and informative references from NIST SP 800-63-3: Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included.  The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development. 
+
+[Table here from DIRA PDF Appendix C]
 
 # NIST SP 800-63 Updates
 
