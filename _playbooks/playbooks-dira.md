@@ -40,6 +40,10 @@ subnav:
     href: '#play-5-leverage-existing-agency-tools'
   - text: Play 6. Less Is More
     href: '#play-6-less-is-more'
+  - text: Policy, Standards, and Guidance
+    href: '#policy-standards-and-guidance'
+  - text: NIST Special Publication 800-63-3 Requirements Traceability Matrix
+    href: '#nist-special-publication-800-63-3-requirements-traceability-matrix'
   - text: NIST Special Publication 800-63 Updates
     href: '#nist-sp-800-63-updates'
 ---
@@ -407,6 +411,14 @@ Reconsider the business process carefully and validate the current and future de
 -	Make most of the information requested optional.
 
 {% include alert-info.html heading="Key Point" content="Some public, business, or partner users may only interact with the government process and application once a year or less.<br><br> Revisit your process and application, and allow users to complete the transaction once before opting in to create an account." %}
+
+# Policy, Standards, and Guidance
+
+[text and table here from DIRA PDF Appendix A]
+
+# NIST Special Publication 800-63-3 Requirements Traceability Matrix
+
+[text and table here from DIRA PDF Appendix C]
 
 # NIST SP 800-63 Updates
 
