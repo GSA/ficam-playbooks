@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Local Certification Authority
-permalink: piv/network/localca/
+permalink: /piv/network/localca/
 sticky_sidenav: true
 sidenav: pivnetwork
 
