@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: What Is a Physical Access Control System?
-permalink: pacs/what-is-pacs/
+permalink: /pacs/what-is-pacs/
 sticky_sidenav: true
 sidenav: pacs
 
