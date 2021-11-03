@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Domain Controllers
-permalink: piv/network/dc/
+permalink: /piv/network/dc/
 sticky_sidenav: true
 sidenav: pivnetwork
 
