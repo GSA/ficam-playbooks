@@ -2,7 +2,7 @@
 layout: page
 title: GSA Certificate Profile Conformance Tool
 collection: fpki
-permalink: fpki/tools/cpct/
+permalink: /fpki/tools/cpct/
 sticky_sidenav: true
 sidenav: fpkitools
 ---
