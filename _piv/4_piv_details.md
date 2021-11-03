@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Details
-permalink: piv/details/
+permalink: /piv/details/
 sticky_sidenav: true
 sidenav: piv
 
