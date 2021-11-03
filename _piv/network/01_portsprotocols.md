@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Network Ports and Protocols
-permalink: piv/network/ports/
+permalink: /piv/network/ports/
 sticky_sidenav: true
 sidenav: pivnetwork
 
