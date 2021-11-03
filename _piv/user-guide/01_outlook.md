@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Configure Outlook for Secure Email
-permalink: piv/user-guide/outlook/
+permalink: /piv/user-guide/outlook/
 sticky_sidenav: true
 sidenav: pivuser
 
