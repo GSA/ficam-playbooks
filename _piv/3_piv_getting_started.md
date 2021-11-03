@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Getting Started Using a PIV
-permalink: piv/gettingstarted/
+permalink: /piv/gettingstarted/
 sticky_sidenav: true
 sidenav: piv
 
