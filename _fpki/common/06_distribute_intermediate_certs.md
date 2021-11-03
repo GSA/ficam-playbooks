@@ -2,7 +2,7 @@
 layout: page 
 title: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/certificates/
+permalink: /fpki/common/certificates/
 sticky_sidenav: true
 sidenav: fpkicommon
 
