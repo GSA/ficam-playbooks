@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Network Tuning
-permalink: piv/network/tuning/
+permalink: /piv/network/tuning/
 sticky_sidenav: true
 sidenav: pivnetwork
 
