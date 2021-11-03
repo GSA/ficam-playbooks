@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Account Linking
-permalink: piv/network/account/
+permalink: /piv/network/account/
 sticky_sidenav: true
 sidenav: pivnetwork
 
