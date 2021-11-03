@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Introduction to PIV User Guides
-permalink: piv/user-guide/
+permalink: /piv/user-guide/
 sticky_sidenav: true
 sidenav: piv
 
