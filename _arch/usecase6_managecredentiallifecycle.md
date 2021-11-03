@@ -11,8 +11,8 @@ sticky_sidenav: true
 
 Active credentials require regular maintenance. This use case describes the most common credential maintenance activities:
 
-- **[Reset a credential](#reset-a-credential)** - An employee or contractor forgets the password or PIN associated with a credential, and requests a reset.
-- **[Renew a credential](#renew-a-credential)** - An employee or contractor’s credential is expiring or their identity information changes, so they request a replacement credential. You must renew a credential prior to the expiration date, otherwise the employee or contractor must go through the issuance process again.
+- **[Reset a credential](#reset-a-credential)** - An employee or contractor forgets the password or PIN associated with a credential and requests a reset.
+- **[Renew a credential](#renew-a-credential)** - An employee or contractor’s credential is expiring or their identity information changes, so they request a replacement credential. You must renew a credential prior to the expiration date; otherwise, the employee or contractor must go through the issuance process again.
 - **[Revoke a credential](#revoke-a-credential)** - An employee or contractor is no longer eligible for their credential (like separating from the issuing agency). The sponsor, supervisor, or administrator requests a revocation of all associated credentials and enterprise accounts.
 
 You should periodically review your employee or contractors’ eligibility for credentials to identify potential orphaned data.
@@ -39,7 +39,7 @@ td {
 <table>
   <tr>
     <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br> <a href="../../assets/arch/usecases/6-Reset-1.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Reset-1.png" width="250" alt="A diagram showing an employee or contractor initiating a password or pin reset request to an enterprise identity management system."></a></td>
-    <td style="border:0px;">An employee or contractor forgets their password or PIN, and requests a reset.<br><br>If the request is valid, the identity management system approves the request.</td>
+    <td style="border:0px;">An employee or contractor forgets their password or PIN and requests a reset.<br><br>If the request is valid, the identity management system approves the request.</td>
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>2. Issue a reset</strong> <br> <a href="../../assets/arch/usecases/6-Reset-2.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Reset-2.png" width="250" alt="A diagram showing an enterprise identity management system issueing a password or pin reset to an employee or contracter."></a></td>
@@ -67,7 +67,7 @@ In this use case, an administrator needs to issue a new credential to replace on
   </tr>
     <tr>
     <td style="width:250px;border:0px;"><strong>3. Replace the credential</strong> <br> <a href="../../assets/arch/usecases/6-Renew-3.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Renew-3.png" width="250" alt="A diagram showing an enterprise identity management system issueing a new credential to an employee or contracter."></a></td>
-    <td style="border:0px;">The system issues a new credential to the employee or contractor, and updates the associated enterprise identity record.</td>
+    <td style="border:0px;">The system issues a new credential to the employee or contractor and updates the associated enterprise identity record.</td>
   </tr>
 </table>
 
@@ -93,7 +93,7 @@ In this use case, an administrator needs to revoke an active credential.
 
 ## Examples
 
-- An employee or contractor may have attempted to use a credential and input the PIN information incorrectly several times up to an agency defined limit, and has locked their account or credential.  The employee or contractor requests a PIN reset.  The employee or contractor is directed to an unlock service; has to verify information again to prove they are the same person issued the original credential; and follows prompts to unlock their credential, generating a new PIN in the process.
-- *Reset* - I want to verify the identity of an employee or contractor that has already been issued a credential, and reset their PIN or password so that they can continue to access enterprise resources.
-- *Renew* - I want to verify the identity and eligibility of an employee or contractor, with a previously issued credential that is near expiration, so that they may be issued a new enterprise credential to keep their ability to access enterprise resources.
-- *Revoke* - I want to remove access to enterprise resources for an employee or contractor, so that they can no longer use the protected resource. 
+- An employee or contractor may have attempted to use a credential and input the PIN information incorrectly several times up to an agency-defined limit and has locked their account or credential.  The employee or contractor requests a PIN reset.  The employee or contractor is directed to an unlock service; has to verify information again to prove they are the same person issued the original credential; and follows prompts to unlock their credential, generating a new PIN in the process.
+- *Reset* - I want to verify the identity of an employee or contractor that has already been issued a credential and reset their PIN or password so that they can continue to access enterprise resources.
+- *Renew* - I want to verify the identity and eligibility of an employee or contractor, who has a previously issued credential that is near expiration, so that they may be issued a new enterprise credential to maintain their ability to access enterprise resources.
+- *Revoke* - I want to remove access to enterprise resources for an employee or contractor so that they can no longer use the protected resource. 

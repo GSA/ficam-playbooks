@@ -44,11 +44,11 @@ td {
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>2. Verify the identity information</strong> <br> <a href="../../assets/arch/usecases/2-2.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/2-2.png" width="250" alt="A diagram showing an administrator verifying information presented by an employee or contractor."></a></td>
-    <td style="border:0px;"><strong>IAL2</strong> - The administrator confirms the information provided is valid and current by comparing photo identification to the individual, or confirming contact information, ensuring it matches the provided documentation. <br><br><strong>IAL3</strong> - The administrator verifies all information with the issuing organization. <br> <i>Result:</i> The individual’s identity has been successfully proofed at IAL2, or IAL3. </td>
+    <td style="border:0px;"><strong>IAL2</strong> - The administrator confirms the information provided is valid and current by comparing photo identification to the individual, or confirming contact information, ensuring it matches the provided documentation. <br><br><strong>IAL3</strong> - The administrator verifies all information with the issuing organization. <br> <i>Result:</i> The individual’s identity has been successfully proofed at IAL2 or IAL3. </td>
   </tr>
 </table>
 
 ## Examples
 
-- I want to proof the identity of an employee or contractor to verify that the individual is who she says she is, so that she can be issued a unique enterprise credential.
-- Prospective employee or contractor has filled out their information in an HR system and requires IAL3 proofing, and minimum background investigations. The prospective employee/contractor is then scheduled for in-person proofing. The prospective employee/contractor brings required identity documentation, where the information is verified using approved documentation and biometrics are captured.
+- I want to proof the identity of an employee or contractor to verify that the individual is who she says she is so that she can be issued a unique enterprise credential.
+- A prospective employee or contractor has filled out their information in an HR system and requires IAL3 proofing and minimum background investigations. The prospective employee/contractor is then scheduled for in-person proofing. The prospective employee/contractor brings required identity documentation; the information is verified using approved documentation and biometrics are captured.

@@ -19,7 +19,7 @@ subnav:
 \">intermediate CA certificate details</a>, including download locations." %}
 
 
-## Do I need to distribute the intermediate CA certificates?
+## Do I Need to Distribute the Intermediate CA Certificates?
 
 ### Operating Systems
 
@@ -45,15 +45,15 @@ Example applications with custom trust stores that may require intermediate CA c
 - Mozilla products (for example, Firefox or Thunderbird)
 - OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
 
-## Which certificates do I need to distribute?
+## Which Certificates Do I Need to Distribute?
 
 Identify which, if any, of the intermediate CA certificates issued by the Federal Common Policy CA are currently being distributed across your agency. 
 
-A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead distributing the new certificates issued by the Federal Common Policy G2. 
+A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead of distributing the new certificates issued by the Federal Common Policy G2. 
 
 If you're not sure which [intermediate CA certificates issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) you need to distribute, consider distributing all of them or email us for help at fpkirootupdate@gsa.gov.
 
-## How do I distribute the intermediate CA certificates?
+## How Do I Distribute the Intermediate CA Certificates?
 
 Recommended solutions for distributing intermediate CA certificates are listed below.
 
@@ -91,7 +91,7 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 
 {% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple configuration profiles." %} 
 
-#### Create an Apple configuration profile
+#### Create an Apple Configuration Profile
 
 1. As an administrator, download and verify the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.   
 2. Download and install *Configurator 2* from the Apple App Store.
@@ -109,7 +109,7 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 [![The following video shows you how to create an Apple configuration profile.](../../../assets/fpki/create_profile.gif){:style="width:85%;"}](../../../assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
-### Use Linux command line
+### Use Linux Command Line
 
 The steps to distribute an intermediate CA certificate are the same as the steps to distribute a [root CA certificate](../distribute-os/#linux-and-unix-solutions).
 
@@ -119,7 +119,7 @@ The steps to distribute an intermediate CA certificate are the same as the steps
 
 <br>
 
-### Certificates issued by the Federal Common Policy CA G2
+### Certificates Issued By the Federal Common Policy CA G2
 
 The following certificates are published in the Federal Common Policy CA G2 certificate's Subject Information Access extension bundle located at http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c.
 

@@ -189,6 +189,7 @@ exclude:
   - node_modules
   - Gemfile
   - Gemfile.lock
+  - docker-compose.yml
 
 assets:
   sources:

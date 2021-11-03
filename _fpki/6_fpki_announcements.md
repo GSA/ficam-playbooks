@@ -13,7 +13,7 @@ subnav:
     href: ../announcements/2019fpkimigration/
 ---
 
-These announcements and hot topic concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
+These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
 
 <table class="usa-table--borderless">
   <thead class="usa-sr">
