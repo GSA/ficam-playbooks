@@ -2,7 +2,7 @@
 layout: page 
 title: 3. Distribute the certificate to operating systems
 collection: fpki
-permalink: fpki/common/distribute-os/
+permalink: /fpki/common/distribute-os/
 sticky_sidenav: true
 sidenav: fpkicommon
 
