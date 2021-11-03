@@ -2,7 +2,7 @@
 layout: page 
 title: 2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate
 collection: fpki
-permalink: fpki/common/obtain-and-verify/
+permalink: /fpki/common/obtain-and-verify/
 sticky_sidenav: true
 sidenav: fpkicommon
 
