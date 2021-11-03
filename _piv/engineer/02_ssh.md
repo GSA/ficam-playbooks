@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Enable SSH
-permalink: piv/engineer/ssh/
+permalink: /piv/engineer/ssh/
 sticky_sidenav: true
 sidenav: pivengineer
 
