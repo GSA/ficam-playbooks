@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: PIV Overview
-permalink: piv/basics/
+permalink: /piv/basics/
 sticky_sidenav: true
 sidenav: piv
 
