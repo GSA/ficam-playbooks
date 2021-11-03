@@ -2,7 +2,7 @@
 layout: page
 title: Credential Management
 collection: arch
-permalink: arch/credential/
+permalink: /arch/credential/
 sidenav: archservices
 sticky_sidenav: true
 ---
