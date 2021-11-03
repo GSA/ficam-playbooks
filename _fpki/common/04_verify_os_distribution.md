@@ -2,7 +2,7 @@
 layout: page 
 title: 4. Verify operating system distribution
 collection: fpki
-permalink: fpki/common/verify-os-distribution/
+permalink: /fpki/common/verify-os-distribution/
 sticky_sidenav: true
 sidenav: fpkicommon
 
