@@ -2,7 +2,7 @@
 layout: page 
 title: 7. Migrate to the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/migrate/
+permalink: /fpki/common/migrate/
 sticky_sidenav: true
 sidenav: fpkicommon
 
