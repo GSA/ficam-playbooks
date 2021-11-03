@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: ICAM Program Management Introduction
-permalink: pm/
+permalink: /pm/
 sticky_sidenav: true
 sidenav: pm
 ---
