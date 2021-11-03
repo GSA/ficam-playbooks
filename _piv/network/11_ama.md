@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Authentication Assurance
-permalink: piv/network/auth/
+permalink: /piv/network/auth/
 sticky_sidenav: true
 sidenav: pivnetwork
 
