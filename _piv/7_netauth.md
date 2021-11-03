@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Introduction to Network Authentication Guides
-permalink: piv/network/
+permalink: /piv/network/
 sticky_sidenav: true
 sidenav: piv
 
