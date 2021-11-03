@@ -2,7 +2,7 @@
 layout: page
 collection: arch
 title: Federal ICAM Architecture Introduction
-permalink: arch/
+permalink: /arch/
 sidenav: arch
 sticky_sidenav: true
 
