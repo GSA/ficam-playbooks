@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: FPKI Certification Authorities Overview
-permalink: fpki/ca/
+permalink: /fpki/ca/
 sticky_sidenav: true
 sidenav: fpki
 
