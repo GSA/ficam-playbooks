@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Identifiers
-permalink: piv/identifiers/
+permalink: /piv/identifiers/
 sticky_nav: true
 sidenav: piv
 ---
