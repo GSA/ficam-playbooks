@@ -2,7 +2,7 @@
 layout: page 
 title: Federal PKI Activity Report
 collection: fpki
-permalink: fpki/tools/fpkiar/
+permalink: /fpki/tools/fpkiar/
 sticky_sidenav: true
 sidenav: fpkitools
 
