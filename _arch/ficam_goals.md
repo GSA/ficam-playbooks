@@ -2,7 +2,7 @@
 layout: page
 collection: arch
 title: Goals and Objectives
-permalink: arch/goals/
+permalink: /arch/goals/
 sidenav: arch
 ---
 
