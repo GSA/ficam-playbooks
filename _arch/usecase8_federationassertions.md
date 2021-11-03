@@ -2,7 +2,7 @@
 layout: page
 title: 8. Accept Federation Assertions
 collection: arch
-permalink: arch/federate/
+permalink: /arch/federate/
 sidenav: archusecases
 sticky_sidenav: true
 ---
