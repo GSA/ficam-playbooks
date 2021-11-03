@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: macOS Considerations
-permalink: piv/network/mac/
+permalink: /piv/network/mac/
 sticky_sidenav: true
 sidenav: pivnetwork
 
