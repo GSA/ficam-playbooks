@@ -2,7 +2,7 @@
 layout: page 
 title: Frequently Asked Questions
 collection: fpki
-permalink: fpki/common/faq/
+permalink: /fpki/common/faq/
 sticky_sidenav: true
 sidenav: fpkicommon
 ---
