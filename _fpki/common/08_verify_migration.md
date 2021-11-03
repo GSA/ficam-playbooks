@@ -2,7 +2,7 @@
 layout: page 
 title: 8. Verify migration to the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/verify-migration/
+permalink: /fpki/common/verify-migration/
 sticky_sidenav: true
 sidenav: fpkicommon
 
