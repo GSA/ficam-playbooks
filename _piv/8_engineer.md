@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Introduction to PIV Engineering Guides
-permalink: piv/engineer/
+permalink: /piv/engineer/
 sticky_sidenav: true
 sidenav: piv
 
