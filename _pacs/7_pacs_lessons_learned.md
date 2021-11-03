@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Lessons Learned
-permalink: pacs/lessonslearned/
+permalink: /pacs/lessonslearned/
 sticky_sidenav: true
 sidenav: pacs
 
