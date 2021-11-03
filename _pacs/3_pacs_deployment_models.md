@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: PACS Deployment Models
-permalink: pacs/pacs/
+permalink: /pacs/pacs/
 sticky_sidenav: true
 sidenav: pacs
 
