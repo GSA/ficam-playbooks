@@ -2,7 +2,7 @@
 layout: page 
 title: 5. Distribute the certificate to applications
 collection: fpki
-permalink: fpki/common/distribute-apps/
+permalink: /fpki/common/distribute-apps/
 sticky_sidenav: true
 sidenav: fpkicommon
 ---
