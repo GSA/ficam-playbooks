@@ -2,7 +2,7 @@
 layout: page
 title: GSA Card Conformance Tool
 collection: fpki
-permalink: fpki/tools/cct/
+permalink: /fpki/tools/cct/
 sticky_sidenav: true
 sidenav: fpkitools
 
