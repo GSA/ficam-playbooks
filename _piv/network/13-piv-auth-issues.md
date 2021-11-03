@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Troubleshooting PIV Authentication Issues
-permalink: piv/network/solutions/
+permalink: /piv/network/solutions/
 sticky_sidenav: true
 sidenav: pivnetwork
 
