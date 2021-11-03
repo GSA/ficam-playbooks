@@ -418,6 +418,12 @@ This section provides links to the federal laws, policies, standards and other g
 
 [Table here from DIRA PDF Appendix A]
 
+**Table 7: DIRA Implementation Policy, Standards, and Guidance**
+| Short Name | Full Name and Publication Date | 
+| ----------- | ------------------------- | 
+| [NIST SP 800-63-3] | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3; [Digital Identity Guidelines]( https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}, June 22, 2017 | 
+
+
 # NIST Special Publication 800-63-3 Requirements Traceability Matrix
 
 This section includes both normative requirements and informative references from NIST SP 800-63-3: Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included.  The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development. 
