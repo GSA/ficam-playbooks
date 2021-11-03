@@ -2,7 +2,7 @@
 layout: page
 title: Services Framework
 collection: arch
-permalink: arch/services/
+permalink: /arch/services/
 sticky_sidenav: true
 sidenav: arch
 
