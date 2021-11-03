@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Procurements
-permalink: pacs/procure/
+permalink: /pacs/procure/
 sticky_sidenav: true
 sidenav: pacs
 
