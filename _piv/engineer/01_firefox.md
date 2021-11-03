@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Configure Firefox
-permalink: piv/engineer/firefox/
+permalink: /piv/engineer/firefox/
 sticky_sidenav: true
 sidenav: pivengineer
 
