@@ -2,7 +2,7 @@
 layout: page
 title: 1. Create and Maintain an Identity
 collection: arch
-permalink: arch/createidentity/
+permalink: /arch/createidentity/
 sidenav: archusecases
 sticky_sidenav: true
 ---
