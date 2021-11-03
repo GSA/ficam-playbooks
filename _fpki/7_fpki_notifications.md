@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: System Changes and Notifications
-permalink: fpki/notifications/
+permalink: /fpki/notifications/
 sidenav: fpki
 sticky_sidenav: true
 
