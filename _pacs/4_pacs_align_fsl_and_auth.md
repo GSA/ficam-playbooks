@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Aligning Facility Security Level (FSL) and Authentication
-permalink: pacs/alignfslandauth/
+permalink: /pacs/alignfslandauth/
 sticky_sidenav: true
 sidenav: pacs
 
