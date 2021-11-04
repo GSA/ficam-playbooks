@@ -414,9 +414,7 @@ Reconsider the business process carefully and validate the current and future de
 
 # Policy, Standards, and Guidance
 
-This section provides links to the federal laws, policies, standards and other guidance that impact and shape DIRA implementations.  NIST also publishes useful [Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"} for agencies, and an [Implementation Resource](https://www.nist.gov/system/files/documents/2020/07/02/SP-800-63-3-Implementation-Resources_07012020.pdf){:target="_blank"}{:rel="noopener noreferrer"} for solution developers. 
-
-[Table here from DIRA PDF Appendix A]
+This section provides links to the federal laws, policies, standards and other guidance that impact and shape DIRA implementations.  NIST also publishes useful [Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"} for agencies, and [Implementation Resources](https://www.nist.gov/system/files/documents/2020/07/02/SP-800-63-3-Implementation-Resources_07012020.pdf){:target="_blank"}{:rel="noopener noreferrer"} for solution developers. 
 
 **Table 7: DIRA Implementation Policy, Standards, and Guidance**
 
@@ -424,7 +422,7 @@ This section provides links to the federal laws, policies, standards and other g
 | ------------------------- | ------------------------- | 
 | NIST SP 800-63-3   | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3; [Digital Identity Guidelines](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}, June 22, 2017 |
 | NIST SP 800-63-3A   | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3; [Digital Identity Guidelines: Enrollment and Identity Proofing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-3.pdf){:target="_blank"}{:rel="noopener noreferrer"}, June 22, 2017 | 
-| NIST SP 800-63-3B   | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3; [Digital Identity Guidelines: Authentication and Lifecycle](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf){:target="_blank"}{:rel="noopener noreferrer"}, June 2017 | 
+| NIST SP 800-63-3B   | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3; [Digital Identity Guidelines: Authentication and Lifecycle Management](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf){:target="_blank"}{:rel="noopener noreferrer"}, June 2017 | 
 | NIST SP 800-63-3C   | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3; [Digital Identity Guidelines: Federation and Assertions](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63c.pdf){:target="_blank"}{:rel="noopener noreferrer"}, June 22, 2017| 
 | FISMA   | Federal Information Security Modernization Act of 2014, [44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283](https://www.congress.gov/bill/113th-congress/senate-bill/2521){:target="_blank"}{:rel="noopener noreferrer"}, December 8, 2014 | 
 | HSPD-12   | Department of Homeland Security, Homeland Security Presidential Directive 12: [Policy for a Common Identification Standard for Federal Employees and Contractors](https://www.dhs.gov/homeland-security-presidential-directive-12){:target="_blank"}{:rel="noopener noreferrer"}, August 27, 2004 | 
