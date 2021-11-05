@@ -507,5 +507,8 @@ The revised guidance provides individual assurance levels that can be mixed and 
 -	Enhanced privacy, and 
 -	Reduced risk.
 
+# Footnotes
+
+[footnotes here]
 
 
