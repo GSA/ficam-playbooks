@@ -19,7 +19,7 @@ If your agency identifies problems during data collection and analysis, you shou
 
 ## Governance Services
 
-The Governance services in the Federal ICAM architecture include Identity Governance, Analytics, and Mitigation.
+The Governance services in the FICAM architecture include Identity Governance, Analytics, and Mitigation.
 
 [![A navy box with the Governance service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/GovernanceServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/GovernanceServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
 

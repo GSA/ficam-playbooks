@@ -9,7 +9,7 @@ sticky_sidenav: true
 
 [![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service.]({{site.baseurl}}/assets/arch/usecases/Identity-Creation.png){:align="right" style="padding-left:15px"}]({{site.baseurl}}/assets/arch/usecases/Identity-Creation.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-When you onboard an employee or contractor at your agency, you collect identity information from the individual, and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.
+When you onboard an employee or contractor at your agency, you collect identity information from the individual and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.
 
 ---
 
@@ -57,4 +57,4 @@ td {
 
 ## Example
 
-I want to create a new enterprise identity, so that an individual may be established as a federal employee or contractor that will need to be identity proofed, credentialed, and granted access to agency services.
+I want to create a new enterprise identity so that an individual may be established as a federal employee or contractor that will need to be identity proofed, credentialed, and granted access to agency services.

@@ -41,7 +41,7 @@ Authorization is how you decide whether you should allow someone to access an ag
 - Access an agency website.
 - Enter an agency facility or location.
 
-Usually, authorization occurs immediately after authentication. When you log in to a service, you present your credentials, and the service confirms your credentials are valid (authentication) and grants or denies you access based on your assigned permissions (authorization).
+Usually, authorization occurs immediately after authentication. When you log in to a service, you present your credentials and the service confirms your credentials are valid (authentication) and grants or denies you access based on your assigned permissions (authorization).
 
 Authorizations are based on four models:
 
@@ -56,7 +56,7 @@ Identity proofing is how you establish an identity. Authentication is how you co
 
 ## Access Management Services
 
-The Access Management services in the Federal ICAM architecture include Policy Administration, Entitlements Management, Authentication, Authorization, and Privileged Access Management.
+The Access Management services in the federal ICAM architecture include Policy Administration, Entitlements Management, Authentication, Authorization, and Privileged Access Management.
 
 [![A blue box with the Access Management service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/AccessManagementServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/AccessManagementServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
 

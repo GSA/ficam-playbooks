@@ -9,7 +9,7 @@ sticky_sidenav: true
 
 [![Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for the Attribute Exchange service in Federation.]({{site.baseurl}}/assets/arch/usecases/Federation-AttributeExchange.png){:align="right" style="padding-left:15px"}]({{site.baseurl}}/assets/arch/usecases/Federation-AttributeExchange.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-Federal employees and contractors often need to access protected services managed by other federal agencies. Federation is the means by which an agency can accept authentication assertions and associated identity attributes from systems within their agency and at other agencies. This allows federal employees and contractors from across agencies access protected resources and streamlines the user’s experience.
+Federal employees and contractors often need to access protected services managed by other federal agencies. Federation is the means by which an agency can accept authentication assertions and associated identity attributes from systems within their agency and at other agencies. This allows federal employees and contractors from across agencies to access protected resources and streamlines the user’s experience.
   
 Agencies can pass assertions to share attributes about employees and contractors.
 
@@ -55,4 +55,4 @@ td {
 ## Examples
 
 - I want to allow other federal agencies' employees and contractors (who meet specific requirements) to access some of my agency’s resources, which facilitates cross-government collaboration and information sharing.
-- An employee or contractor from Agency A visits a shared service operated by Agency B to service all Federal government users. At the homepage, the employee/contractor selects their Agency A icon and is redirected to their Agency A SSO portal. They log in using their Agency A managed credentials and are redirected back to the Agency B shared service.
+- An employee or contractor from Agency A visits a shared service operated by Agency B to service all federal government users. At the homepage, the employee/contractor selects their Agency A icon and is redirected to their Agency A SSO portal. They log in using their Agency A managed credentials and are redirected back to the Agency B shared service.
