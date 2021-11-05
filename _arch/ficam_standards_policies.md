@@ -2,7 +2,7 @@
 layout: page
 collection: arch
 title: Standards and Policies
-permalink: arch/standards/
+permalink: /arch/standards/
 sidenav: arch
 sticky_sidenav: true
 
@@ -105,8 +105,8 @@ Each section of this page lists documents in reverse chronological order, with t
 <a href="https://csrc.nist.gov/publications/detail/sp/800-79/2/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-79-2: Guidelines for the Authorization of PIV Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)**</a> (PDF, July 2015)<br/>
 > The guideline specifies the assessment for the reliability of issuers of PIV credentials and Derived PIV credentials. The reliability of an issuer is of utmost importance when a federal agency is required to trust the identity credentials of individuals that were created and issued by another federal agency.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53 Rev. 4: Security and Privacy Controls for Federal Information Systems and Organizations**</a> (PDF, January 2015)<br/>
-> This guideline provides a catalog of security and privacy controls for federal information systems and organizations and a process for selecting controls to protect organizational operations, assets, individuals, other organizations, and the nation from a diverse set of threats.
+<a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53 Rev. 5: Security and Privacy Controls for Federal Information Systems and Organizations**</a> (PDF, December 2020)<br/>
+> This guideline provides a catalog of security and privacy controls for federal information systems and organizations and a process for selecting controls to protect organizational operations, assets, individuals, other organizations, and the Nation from a diverse set of threats.
 
 <a href="https://csrc.nist.gov/publications/detail/sp/800-53a/rev-4/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53A Rev. 4: Assessing Security and Privacy Controls in Federal Information Systems and Organizations - Building Effective Security Assessment Plans**</a> (PDF, December 2014)<br/>
 > This guideline provides a set of procedures for conducting assessments of security controls and privacy controls employed within federal information systems and organizations. The assessment procedures, executed at various phases of the system development lifecycle, are consistent with the security and privacy controls in NIST SP 800-53, Revision 4.

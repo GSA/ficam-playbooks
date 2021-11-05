@@ -2,9 +2,10 @@
 layout: page
 title: Credential Management
 collection: arch
-permalink: arch/credential/
+permalink: /arch/credential/
 sidenav: archservices
 sticky_sidenav: true
+
 ---
 
 [![A green box with the list of Credential Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/CredentialManagementServices.png){:align="right" style="padding-left:30px"}]({{site.baseurl}}/assets/arch/services/CredentialManagementServices.png){:target="_blank"}{:rel="noopener noreferrer"}
