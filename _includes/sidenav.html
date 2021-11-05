@@ -26,7 +26,7 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
     {% endfor %}
   </ul>
   <br>
-  {% assign pdf = site.playbooks %}
+  {% assign playbooks = site.playbooks %}
     {% for playbook in playbooks %}
       {% if playbook.pdf == true %}
         <ul class="usa-button-list usa-unstyled-list">
