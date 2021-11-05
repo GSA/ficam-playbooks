@@ -40,13 +40,13 @@ subnav:
     href: '#play-5-leverage-existing-agency-tools'
   - text: Play 6. Less Is More
     href: '#play-6-less-is-more'
-  - text: Appendix A: Policy, Standards, and Guidance
+  - text: Appendix A. Policy, Standards, and Guidance
     href: '#appendix-a-policy-standards-and-guidance'
-  - text: Appendix B: Examples and Templates
+  - text: Appendix B. Examples and Templates
     href: '#appendix-b-examples-and-templates'
-  - text: Appendix C: NIST Special Publication 800-63-3, Requirements Traceability Matrix
+  - text: Appendix C. NIST Special Publication 800-63-3, Requirements Traceability Matrix
     href: '#appendix-c-nist-special-publication-800-63-3-requirements-traceability-matrix'
-  - text: Appendix D: Updates to NIST Special Publication 800-63 
+  - text: Appendix D. Updates to NIST Special Publication 800-63 
     href: '#appendix-d-updates-to-nist-special-publication-800-63'
   - text: Footnotes 
     href: '#footnotes'
