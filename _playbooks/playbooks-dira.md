@@ -491,5 +491,5 @@ The revised guidance provides individual assurance levels that can be mixed and 
 -	Enhanced privacy, and 
 -	Reduced risk.
 
-Trying superscript<sup>1</sup> in text
+
 
