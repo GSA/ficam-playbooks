@@ -40,12 +40,16 @@ subnav:
     href: '#play-5-leverage-existing-agency-tools'
   - text: Play 6. Less Is More
     href: '#play-6-less-is-more'
-  - text: Policy, Standards, and Guidance
-    href: '#policy-standards-and-guidance'
-  - text: NIST Special Publication 800-63-3 Requirements Traceability Matrix
-    href: '#nist-special-publication-800-63-3-requirements-traceability-matrix'
-  - text: NIST Special Publication 800-63 Updates
-    href: '#nist-sp-800-63-updates'
+  - text: Appendix A: Policy, Standards, and Guidance
+    href: '#appendix-a-policy-standards-and-guidance'
+  - text: Appendix B: Examples and Templates
+    href: '#appendix-b-examples-and-templates'
+  - text: Appendix C: NIST Special Publication 800-63-3, Requirements Traceability Matrix
+    href: '#appendix-c-nist-special-publication-800-63-3-requirements-traceability-matrix'
+  - text: Appendix D: Updates to NIST Special Publication 800-63 
+    href: '#appendix-d-updates-to-nist-special-publication-800-63'
+  - text: Footnotes 
+    href: '#footnotes'
 ---
 
 This playbook reflects the contributions of the Digital Identity Risk Assessment working group of the Identity, Credential and Access Management Subcommittee (ICAMSC).  The working group was co-chaired by members from the Internal Revenue Service (IRS) and the Environmental Protection Agency (EPA). Contributions were made by the members of services or agencies representing the Center of Medicare and Medicaid Services (CMS), Department of Defense (DOD), Department of Health and Human Services (HHS), Department of Homeland Security (DHS), Department of Justice (DOJ), Department of the Treasury (USDT), Department of Transportation (DOT), and General Services Administration (GSA). 
@@ -412,11 +416,9 @@ Reconsider the business process carefully and validate the current and future de
 
 {% include alert-info.html heading="Key Point" content="Some public, business, or partner users may only interact with the government process and application once a year or less.<br><br> Revisit your process and application, and allow users to complete the transaction once before opting in to create an account." %}
 
-# Policy, Standards, and Guidance
+# Appendix A: Policy, Standards, and Guidance
 
 This section provides links to the federal laws, policies, standards and other guidance that impact and shape DIRA implementations.  NIST also publishes useful [Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"} for agencies, and [Implementation Resources](https://www.nist.gov/system/files/documents/2020/07/02/SP-800-63-3-Implementation-Resources_07012020.pdf){:target="_blank"}{:rel="noopener noreferrer"} for solution developers. 
-
-**Table 7: DIRA Implementation Policy, Standards, and Guidance**
 
 |    Short Name   | Full Name and Publication Date | 
 | ------------------------- | ------------------------- | 
@@ -438,11 +440,25 @@ This section provides links to the federal laws, policies, standards and other g
 | NIST SP 800-53A   | NIST Special Publication 800-53A, Revision 4, [Assessing Security and Privacy Controls in Federal Information Systems and Organizations: Building Effective Security Assessment Plans](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53Ar4.pdf){:target="_blank"}{:rel="noopener noreferrer"}, July 2008; Updated December 18, 2014| 
 | NIST RMF Overview   | NIST [Risk Management Framework Overview](https://csrc.nist.gov/projects/risk-management/about-rmf){:target="_blank"}{:rel="noopener noreferrer"}, November 30, 2016| 
 
-# NIST Special Publication 800-63-3 Requirements Traceability Matrix
+# Appendix B: Examples and Templates
 
-This section includes both normative requirements and informative references from NIST SP 800-63-3: Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included.  The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development. 
+[App B intro text here]
 
-**Table 8: NIST SP 800-63-3 Requirements Traceability Matrix**
+## 1. Decision Tree Examples
+
+[text and figures here]
+
+## 2. Process Flow Examples
+
+[text and figures here]
+
+## 3. Digital Identity Acceptance Statement Example Template
+
+[text and DIAS document link here]
+
+# Appendix C: NIST Special Publication 800-63-3, Requirements Traceability Matrix
+
+This appendix includes both normative requirements and informative references from NIST SP 800-63-3: Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included.  The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development. 
 
 | Requirement | Section | Playbook Consideration |
 | ----------- | ------------------------- | -------------- |
@@ -459,7 +475,7 @@ This section includes both normative requirements and informative references fro
 | Agencies shall implement procedures to document both the justification for any departure from normative requirements and detail the compensating control(s) employed. | 5.4 | Supports the proposed process step to standardize Digital Identity Acceptance Statements and the examples provided by agencies. |
 | In analyzing risks, agencies shall consider all of the expected direct and indirect results of an authentication failure, including the possibility that there will be more than one failure or harms to more than one person or organization.<br><br>The definitions of potential impacts contain some relative terms, like “serious” or “minor,” whose meaning will depend on context. The agency should consider the context and the nature of the persons or entities affected to decide the relative significance of these harms. Over time, the meaning of these terms will become more definite as agencies gain practical experience with these issues. The analysis of harms to agency programs or other public interests depends strongly on the context; the agency should consider these issues with care. | 6 | Supports the proposed play to add context when determining risk with application owners and business teams. |
 
-# NIST Special Publication 800-63 Updates
+# Appendix D: Updates to NIST Special Publication 800-63
 
 In June 2017, NIST replaced Special Publication 800-63-2: Electronic Authentication Guideline with Special Publication 800-63-3: Digital Identity Guidelines. The new standard provides agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. It outlines the digital identity risk assessment methodology that federal agencies must implement. 
 
