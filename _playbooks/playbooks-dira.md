@@ -50,6 +50,8 @@ subnav:
     href: '#appendix-c-nist-special-publication-800-63-3-requirements-traceability-matrix'
   - text: Appendix D. Updates to NIST Special Publication 800-63 
     href: '#appendix-d-updates-to-nist-special-publication-800-63'
+  - text: Pre-Draft Call for Comments on NIST Special Publication 800-63-3
+    href: '#Pre-draft-call-for-comments-on-nist-special-publication-800-63-3'
   - text: Footnotes 
     href: '#footnotes'
 ---
@@ -511,7 +513,7 @@ The revised guidance provides individual assurance levels that can be mixed and 
 -	Enhanced privacy, and 
 -	Reduced risk.
 
-## Pre-Draft Call for Comments on NIST Special Publication 800-63-3
+# Pre-Draft Call for Comments on NIST Special Publication 800-63-3
 
 In June 2020, NIST released a pre-draft call for comments to update NIST Special Publication 800-63-3.
 
