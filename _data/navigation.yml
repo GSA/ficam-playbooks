@@ -201,8 +201,6 @@ pacs:
     href: /pacs/pacs/
   - text: Aligning Facility Security Level and Authentication
     href: /pacs/alignfslandauth/
-  - text: Self-Assessment Tool
-    href: /pacs/tool/
   - text: Procurements
     href: /pacs/procure/
   - text: Training
