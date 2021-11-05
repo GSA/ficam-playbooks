@@ -491,7 +491,7 @@ NIST’s Digital Identity Guidelines identify the implementation requirements fo
 
 <p align="center"><b>Figure 12: Digital Identity Guideline Information Locations</b></p>
 
-## Why Why the Update to NIST Special Publication 800-63-3?
+## Why the Update to NIST Special Publication 800-63-3?
 
 NIST Special Publication 800-63-3 was updated to do the following: 
 -	Implement Executive Order 13681: Improving the Security of Consumer Financial Transactions. 
