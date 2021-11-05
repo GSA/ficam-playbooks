@@ -26,13 +26,14 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
     {% endfor %}
   </ul>
   <br>
-  {% assign pdf = page.pdf %}
-  {% if pdf == true %}
-    <button class="usa-button"><a href="{{ pdf.pdflocation }}" target="_blank" rel="noopener noreferrer">Download a PDF</a></button> <br><br>
-    <ul class="usa-button-list usa-unstyled-list">
-      <li>
-        <a class="usa-button" target="_blank" href="{{ site.baseurl}}/{{ pdf.pdflocation }}">Download as a PDF</a>
-      </li>
-    </ul>
-  {% endif %}
+  {% assign pdf = site.playbooks %}
+    {% for playbook in playbooks %}
+      {% if playbook.pdf == true %}
+        <ul class="usa-button-list usa-unstyled-list">
+          <li>
+            <a class="usa-button" target="_blank" href="{{ site.baseurl}}/{{ playbook.pdflocation }}">Download as a PDF</a>
+          </li>
+        </ul>
+      {% endif %}
+    {% endif %}
 </nav>
