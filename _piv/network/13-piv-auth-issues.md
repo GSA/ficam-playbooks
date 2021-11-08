@@ -21,10 +21,12 @@ subnav:
 This document describes the troubleshooting process for PIV Authentication errors to support personnel responsible for troubleshooting PIV access issues.
 
 Because PIV leverages PKI certificates for logical access, all PIV authentication is mutual PKI authentication. Web sites use client authenticated TLS, while other systems such as Active Directory may use different mechanisms. However, all mutual PKI authentication involves four checks:
-Can the server and client both prove they control their respective private keys?
-Are the server and client certificates issued from a trusted authority?
-Are the server and client certificates still valid? That is, are they expired or revoked?
-Is the mapping between the identifier in the certificate and the account identifier in the system still accurate?
+
+1. Can the server and client both prove they control their respective private keys?
+2. Are the server and client certificates issued from a trusted authority?
+3. Are the server and client certificates still valid? That is, are they expired or revoked?
+4.Is the mapping between the identifier in the certificate and the account identifier in the system still accurate?
+
 A failure in each of these steps will display different systems in different areas. This guide will show where support personnel can locate these errors.
 
 ## Validating Private Key Access
