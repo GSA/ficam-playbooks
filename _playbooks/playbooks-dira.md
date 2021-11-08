@@ -182,7 +182,7 @@ Determine the digital identity risk for each assurance category by assessing the
 
 The risks and impact assessment considers the risks to both the agency and the user for the transactions. The risk to one can be significant while not negatively impacting the other at all. It’s common for government applications to have different assurance levels based on differing impacts and risks for each community of users and transactions.
 
-{% include alert-info.html heading="Key Point" content="The impact categories and definitions used in the DIRA process are the same used to determine the overall application system categorization for impacts to confidentiality, integrity, and availability (a FIPS 199 assessment).<br><br>However, your overall application system categorization (FIPS 199) is often different than the risks and impacts for the identity and authenticator assurance levels for communities of users and transactions for the DIRA." %}
+{% include alert-info.html heading="Key Point" content="The impact categories and definitions used in the DIRA process are the same used to determine the _overall_ application system categorization for impacts to confidentiality, integrity, and availability (a FIPS 199 assessment).<br><br>However, your overall application system categorization (FIPS 199) is often _different_ than the risks and impacts for the identity and authenticator assurance levels for communities of users and transactions for the DIRA." %}
 
 Table 3 lists the six impact categories to use. This table is a guideline for categorizing the risks and impacts involved in your application users and transactions.
 
@@ -210,7 +210,7 @@ At Identity Assurance Level 1 (IAL1), the application may or may not require pro
 {% include alert-info.html heading="Key Point" content="The risks and impacts of excessive information collection for identity proofing needs to be strongly considered for each community of users and the transactions.<br><br>For public users and other non-organizational users, privacy benefits and privacy principles are key factors to consider.<br><br>Application owners and agency processes need to include the Senior Agency Official for Privacy to define the risks, impact levels, and the Identity Assurance Levels 
 ." %}
 
-Figure 2 explains the three Identity Assurance Levels in example terms of the information validated and verified during the identity proofing process<sup>12</sup>. 
+Figure 2 explains the three Identity Assurance Levels in _example_ terms of the information validated and verified during the identity proofing process<sup>12</sup>. 
 
 [![Figure 2 is a building block figure. A user is on the right of the figure and to the left of the user are different data elements provided by a user. Each IAL includes addition data to increase the assurance. IAL 1 data includes Display Name & Email Address. IAL 2 data includes confirmed through record checks through virtual or in-person, address of record, and real name & email address. IAL 3 data includes confirmed through record checks and in-person, biometric, address of record, and real name & email address.]({{site.baseurl}}/assets/playbooks/DIRAFigure2.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure2.png){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -228,28 +228,26 @@ At Authenticator Assurance Level 1 (AAL1), a user might only use a username and 
 
 {% include alert-info.html heading="Key Point" content="Two-factor authentication is rapidly becoming the expected default for applications.<br><br>Recurring public and other non-organizational users may want to create an account. Agencies and application owners should strongly consider always allowing and providing two-factor options.<br><br>For employees and other organizational government users, two-factor authentication is a government-wide policy requirement." %}
 
-Figure 4 explains the concept of the three Authenticator Assurance Levels in example terms of the authentication (refer to NIST Special Publication 800-63-3B: Digital Identity Guidelines, Authentication and Lifecycle Management, Section 4, Authenticator Assurance Level requirements).
+Figure 3 explains the concept of the three Authenticator Assurance Levels in _example_ terms of the authentication<sup>15</sup>. 
 
-[![This figure is a building block figure. A user is on the right of the figure and to the left of the user are different authenticator elements used to log in. Each AAL includes an authentication factor to increase the assurance. AAL 1 includes a single factor. AAL 2 includes two factors. AAL 3 includes two factor with cryptographic hardware.]({{site.baseurl}}/assets/playbooks/DIRAFigure4.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure4.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![This figure is a building block figure. A user is on the right of the figure and to the left of the user are different authenticator elements used to log in. Each AAL includes an authentication factor to increase the assurance. AAL 1 includes a single factor. AAL 2 includes two factors. AAL 3 includes two factor with cryptographic hardware.]({{site.baseurl}}/assets/playbooks/DIRAFigure3.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure3.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-<p align="center"><b>Figure 4: Authenticator Assurance Levels</b></p>
+<p align="center"><b>Figure 3: Authenticator Assurance Levels</b></p>
 
-Figure 5 is an example of the risk assessment process flow that defines the Authenticator Assurance Levels for the community of users and transactions in Step 1. Additional decision trees can be found in NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 6, Selecting Assurance Levels. The decision tree in Figure 5 is another example used by federal agencies.
-
-[![Figure 5 is a decision tree to select an appropriate Authenticator Assurance Level (AAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, specify the risks (to the agency or the subject) of providing the digital service (i.e., a false claimant using an identity that is not theirs) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select AAL3. If no, did you assess moderate for personal safety? If yes, select AAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select AAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select AAL2. If no, are you making personal data accessible? If yes, select AAL2. If no, select AAL1. Reassess the AAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.]({{site.baseurl}}/assets/playbooks/DIRAFigure5.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure5.png){:target="_blank"}{:rel="noopener noreferrer"}
-
-<p align="center"><b>Figure 5: Authenticator Assurance Level Decision Tree</b></p>
+Appendix B. Examples and Templates includes an example of the risk assessment process flow that defines the Authenticator Assurance Levels for the community of users and transactions in Step 1<sup>16</sup>. 
 
 ### Federation Assurance
 
-Federation Assurance Levels (FALs) indicate the assertion protocol used by an application to communicate identity and authenticator information. FALs protect information about the authenticated user. They mitigate risks if a malicious actor in the transaction changes or replays the information. 
+Federation Assurance Levels (FALs) indicate the assertion protocol used by an application to communicate identity and authenticator information. FALs protect information about the _authenticated user_. They mitigate risks if a malicious actor in the transaction changes or replays the information. 
 
 {% include alert-info.html heading="Key Point" content="Federation is an advanced topic with many different acronyms and terms.<br><br>Use outcome-based examples and demonstrations with application owners and business teams to help identify the FALs." %}
 
-This playbook explains FALs with the outcomes first before explaining the high level requirements and the risk process (refer to NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 7, Federation Considerations for additional federation outcomes to consider. To determine if your application requires a FAL, consider the following questions:
+This playbook explains FALs with the outcomes first before explaining the high level requirements and the risk process<sup>17</sup>. To determine if your application requires an FAL, consider the following questions:
+
+For existing applications and defined users and transactions (Step 1):
 
 For _existing_ applications and defined users and transactions (Step 1):
--	Is the application integrated with any type of agency enterprise single sign-on solution? 
+-	Is the application integrated with any type of _agency enterprise_ single sign-on solution? 
 -	Is the application integrated with any government or commercial identity provider?
 -	For organizational government users and transactions, is the application integrated with an employee’s network logon? 
 
@@ -260,19 +258,15 @@ If your agency and application owner answers “Yes” to any of these questions
 
 {% include alert-info.html heading="Key Point" content="Applications that don’t implement a federated capability document the rationale in the final Digital Identity Acceptance Statement.<br><br>FAL1 and FAL2 are good for most use cases across the federal government. Agencies and application owners should consider implementations based on the community of users and transactions." %}
 
-FALs are implemented using standard-based protocols across the federal government. These protocols are commonly used in many applications and transactions globally and are routinely supported in commercial off-the-shelf (COTS), native cloud software-as-a-service, and consumer and enterprise mobile applications. Each FAL defines minimum requirements for how the integrations are performed and the requirements if the user’s information is passed between applications. For example, for some implementations, the federation assurance levels map to commonly used federation protocols such as OpenID Connect (OIDC) and Security Assertion Markup Language (SAML). How those implementations are done maps to the increasing FAL options. 
+FALs are implemented using standard-based protocols across the federal government. These protocols are commonly used in many applications and transactions globally and are routinely supported in commercial off-the-shelf (COTS), native cloud software-as-a-service, and consumer and enterprise mobile applications. Each FAL defines _minimum_ requirements for how the integrations are performed and the requirements if the user’s information is passed between applications. For example, for some implementations, the federation assurance levels map to commonly used federation protocols such as OpenID Connect (OIDC) and Security Assertion Markup Language (SAML). How those implementations are done maps to the increasing FAL options. 
 
-Figure 6 explains the concept of the three Federation Assurance Levels in example terms. Refer to NIST Special Publication 800-63-3C: Digital Identity Guidelines, Federation and Assertions for the detailed requirements on Federation, Assertions, and Federation Assurance Level implementations.
+Figure 4 explains the concept of the three Federation Assurance Levels in _example_ terms<sup>18</sup>. 
 
-[![This is a building block figure. On the left of the figure, there are a pair of hands shaking to represent an application sharing information. To the right of the shaking hands are blocks aligned under an FAL. There are increasing elements required under each successive FAL. FAL 1 includes a signed assertion. FAL 2 includes a signed and encrypted assertion. FAL 3 includes a signed and encrypted assertion with a re-verify authentication.]({{site.baseurl}}/assets/playbooks/DIRAFigure6.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure6.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![This is a building block figure. On the left of the figure, there are a pair of hands shaking to represent an application sharing information. To the right of the shaking hands are blocks aligned under an FAL. There are increasing elements required under each successive FAL. FAL 1 includes a signed assertion. FAL 2 includes a signed and encrypted assertion. FAL 3 includes a signed and encrypted assertion with a re-verify authentication.]({{site.baseurl}}/assets/playbooks/DIRAFigure4.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure4.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-<p align="center"><b>Figure 6: Federation Assurance Levels</b></p>
+<p align="center"><b>Figure 4: Federation Assurance Levels</b></p>
 
-Figure 7 is an example of a decision tree of the risk assessment process flow that defines the Federation Assurance Levels for the communities of users and transactions in Step 1. Additional decision trees can be found in NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 6, Selecting Assurance Levels. The decision tree in Figure 7 is another example used by federal agencies. 
-
-[![Figure 7 is a decision tree to select an appropriate Federation Assurance Level (FAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, are you federating? If no, a FAL assessment is not required. If yes, specify the risks (to the agency or the subject) of providing the digital service (i.e., an identity assertion is compromised) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select FAL3. If no, did you assess moderate for personal safety? If yes, select FAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select FAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select FAL2. If no, are you making personal data accessible? If yes, select FAL2. If no, are you using a front channel? If yes, select FAL2. If no, select FAL1. Reassess the FAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.]({{site.baseurl}}/assets/playbooks/DIRAFigure7.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure7.png){:target="_blank"}{:rel="noopener noreferrer"}
-
-<p align="center"><b>Figure 7: Federation Assurance Level Decision Tree</b></p>
+Appendix B. Examples and Templates includes an example of a decision tree of the risk assessment process flow that defines the Federation Assurance Levels for the communities of users and transactions in Step 1<sup>19</sup>.  
 
 {% include alert-info.html heading="Key Point" content="The results of a DIRA do not change established credential processes. The results impact the various credentials at a level can be used (e.g., if a DIRA arrives at IAL2, this allows the use of IAL2 but does not change the requirement of downgrading an IAL3 process to an IAL2 process)." %}
 
@@ -283,7 +277,7 @@ Analyze available technology and solutions at your agency, determine if they are
 - User experience (UX) and usability (for non-organizational users i.e., public, business, partner); and
 - Direct and indirect benefits to reuse enterprise-level chosen solutions, including consolidated support desks.
 
-Your agency may determine alternatives to the NIST-recommended guidance for the assessed assurance levels (refer to NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 5.4, Risk Acceptance and Compensating Controls) based on:  
+Your agency may determine alternatives to the NIST-recommended guidance for the assessed assurance levels based on:<sup>20</sup>  
 - Your mission,
 - Your risk tolerance,
 - Your existing business processes,
@@ -291,17 +285,11 @@ Your agency may determine alternatives to the NIST-recommended guidance for the 
 - The availability of data that provides similar mitigations to those described in the Digital Identity Guidelines, or
 - Other capabilities unique to the agency.
 
-Figure 8 depicts all the steps for implementing a DIRA. 
-
-[![Figure8 is a flowchart depicting 18 steps for performing a Digital Identity Risk Assessment. Steps 1 through 3 are under the column heading Data Collection. Steps 4 and 5 are under the column heading Analysis. Steps 6 through 10 are under the column heading Review. Steps 11 through 13 are under the column heading Implementation Determination. Steps 14 and 15 are under the column heading Concurrence. Steps 16 through 18 are under the column headig Ongoing Assessment. Below the first through fifth columns there is a bar labeled Outputs. The outputs are as follows Column 1 Transaction Data, Column 2 Provisional xALs for Review, Column 3 Assessed xALs, Column 4 Implementation x ALs, Column 5 Approved Digital Identity Acceptance Statement.]({{site.baseurl}}/assets/playbooks/DIRAFigure8.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure8.png){:target="_blank"}{:rel="noopener noreferrer"}
-
-<p align="center"><b>Figure 8: Six-Step Process Displaying Requirements for Implementing a DIRA</b></p>
-
 ## Step 4. Finalize Digital Identity Acceptance Statement
 
-Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels. Refer to NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 5.5, Digital Identity Acceptance Statement. 
+Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels<sup>21</sup>. 
 
-The [Digital Identity Acceptance Statement template](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies.  
+An example of a [DIAS](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} is included in Appendix B. Examples and Templates.  
 
 ## Step 5. Reassess
 
@@ -310,10 +298,10 @@ A digital identity reassessment may be time-driven or event-driven and applies t
 {% include alert-info.html heading="Key Point" content="Reassess digital identity risk annually or more often for higher impact categories and transactions. A time-based assessment drives alignment with modernization initiatives, changes to technology, and changes to policies." %}
 
 If an event triggers a security impact analysis, an agency may perform a DIRA outside the normal continuous monitoring cycle. Significant changes requiring a digital identity reassessment include changes in:
-- Core mission or business functions,
-- Purpose or nature of a system,
-- Risk environment,
-- How information, including PII, is processed, or
+- Core mission or business functions;
+- Purpose or nature of a system;
+- Risk environment;
+- How information, including PII, is processed; or
 - How information is processed, stored, or transmitted by the system.
 
 # Agency Process Plays
