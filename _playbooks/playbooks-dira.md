@@ -461,11 +461,11 @@ This section includes additional example process flow diagrams used by some agen
 
 ## 3. Digital Identity Acceptance Statement Example Template
 
-[text and DIAS document link here]
+This [Digital Identity Acceptance Statement template](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} is provided as one sample for agencies.   
 
 # Appendix C. NIST Special Publication 800-63-3, Requirements Traceability Matrix
 
-This appendix includes both normative requirements and informative references from NIST SP 800-63-3: Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included.  The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development. 
+This appendix includes both normative requirements and informative references from NIST SP 800-63-3 Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included. The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development. 
 
 | Requirement | Section | Playbook Consideration |
 | ----------- | ------------------------- | -------------- |
@@ -484,7 +484,7 @@ This appendix includes both normative requirements and informative references fr
 
 # Appendix D. Updates to NIST Special Publication 800-63
 
-In June 2017, NIST replaced Special Publication 800-63-2: Electronic Authentication Guideline with Special Publication 800-63-3: Digital Identity Guidelines. The new standard provides agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. It outlines the digital identity risk assessment methodology that federal agencies must implement. 
+In June 2017, NIST replaced the Electronic Authentication Guideline<sup>24</sup> with the Digital Identity Guidelines<sup>25</sup>. The new standard provides agencies increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. It outlines the digital identity risk assessment methodology that federal agencies must implement. 
 
 NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.
 
@@ -495,7 +495,7 @@ NIST’s Digital Identity Guidelines identify the implementation requirements fo
 ## Why the Update to NIST Special Publication 800-63-3?
 
 NIST Special Publication 800-63-3 was updated to do the following: 
--	Implement Executive Order 13681: Improving the Security of Consumer Financial Transactions. 
+-	Implement Executive Order 13681: Improving the Security of Consumer Financial Transactions<sup>26</sup> 
 -	Align with the current market
 -	Promote innovation
 -	Simplify and provide clearer guidance
