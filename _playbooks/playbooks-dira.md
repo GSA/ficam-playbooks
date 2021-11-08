@@ -244,8 +244,6 @@ Federation Assurance Levels (FALs) indicate the assertion protocol used by an ap
 
 This playbook explains FALs with the outcomes first before explaining the high level requirements and the risk process.<sup>17</sup> To determine if your application requires an FAL, consider the following questions:
 
-For existing applications and defined users and transactions (Step 1):
-
 For _existing_ applications and defined users and transactions (Step 1):
 -	Is the application integrated with any type of _agency enterprise_ single sign-on solution? 
 -	Is the application integrated with any government or commercial identity provider?
