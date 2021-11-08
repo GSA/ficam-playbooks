@@ -520,6 +520,32 @@ In June 2020, NIST released a pre-draft call for comments to update NIST Special
 
 # Footnotes
 
-[footnotes here]
+1.	A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet.
+2.	A Digital Identity Risk Assessment is a method of applying Digital Identity Risk Management required by OMB Memorandum 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management, and NIST Special Publication 800-63-3 Digital Identity Guidelines.
+3.	For more information, refer to NIST Special Publication 800-63-3 Digital Identity Guidelines.
+4.	NIST Special Publication 800-63-3 Digital Identity Guidelines, Frequently Asked Questions.
+5.	Pursuant to 0MB Circular A-130, "information system" means a discrete set of information resources organized for the collection, processing, maintenance, use, sharing, dissemination, or disposition of information. System and application are used synonymously throughout this playbook.
+6.	Refer to NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 2.3, A Few Limitations.
+7.	The working group members determined Federation Assurance Level 3 was complex and not widely supported in commercial products and implementations. The working group decided the Federation Assurance Level 3 explanations were better served by agency technical exchanges or deferred to details included in NIST Special Publications. 
+8.	Federal Information Security Modernization Act of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283, December 8, 2014.
+9.	Refer to NIST Special Publication 800-63-3 Digital Identity Guidelines, Appendix A, Definitions and Abbreviations.
+10.	Personal data is personally identifiable information (PII). As defined by OMB Circular A-130, PII is information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specific individual.
+11.	Agencies collecting identity information as part of identity proofing may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules.
+12.	Refer to NIST Special Publication 800-63-3A Digital Identity Guidelines, Enrollment and Identity Proofing, Section 4, Identity Assurance Level Requirements (page 5) for the detailed requirements of the identity proofing processes.
+13.	Additional decision trees are in NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 6, Selecting Assurance Levels. 
+14.	Examples only. Refer to NIST Special Publication 800-63-3B Digital Identity Guidelines, Authentication and Lifecycle Management. Section 4 Authenticator Assurance Level requirements.
+15.	Refer to NIST Special Publication 800-63-3B Digital Identity Guidelines, Authentication and Lifecycle Management., Section 4, Authenticator Assurance Level requirements.
+16.	Additional decision trees can be found in NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 6, Selecting Assurance Levels. This decision tree is another example used by federal agencies. 
+17.	See NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 7, Federation Considerations for additional federation outcomes to consider.
+18.	Refer to NIST Special Publication 800-63-3C Digital Identity Guidelines, Federation and Assertions for the detailed requirements on Federation, Assertions, and Federation Assurance Level implementations.
+19.	Additional decision trees can be found in NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 6 Selecting Assurance Levels. This decision tree is another example used by federal agencies.
+20.	NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 5.4, Risk Acceptance and Compensating Controls.
+21.	NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 5.5, Digital Identity Acceptance Statement.
+22.	Federal Information Processing Standards Publication 199 (FIPS 199) Standards for Security Categorization of Federal Information and Information Systems, Section 3, Categorization of Information and Information Systems (page 1). 
+23.	Satisfied by the full PIV issuance processes, in accordance with government-wide policy and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors.
+24.	NIST Special Publication 800-63-2 Electronic Authentication Guideline.
+25.	NIST Special Publication 800-63-3 Digital Identity Guidelines.
+26.	Executive Order 13681, Improving the Security of Consumer Financial Transactions.
+
 
 
