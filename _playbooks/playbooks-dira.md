@@ -272,7 +272,7 @@ Appendix B. Examples and Templates includes an example of a decision tree of the
 
 Analyze available technology and solutions at your agency, determine if they are sufficient enough to meet the application needs, and identify what you need to implement. Use data and agency enterprise defined needs when choosing solutions, including:
 - Number of users by community of users;
-- User experience (UX) and usability (for non-organizational users i.e., public, business, partner); and
+- User experience (UX) and usability (for non-organizational users (i.e., public, business, partner)); and
 - Direct and indirect benefits to reuse enterprise-level chosen solutions, including consolidated support desks.
 
 Your agency may determine alternatives to the NIST-recommended guidance for the assessed assurance levels based on:<sup>20</sup>  
