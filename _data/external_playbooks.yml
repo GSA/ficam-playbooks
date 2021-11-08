@@ -25,3 +25,9 @@
   pubdate: 2011-12
   description: The FICAM Roadmap contains processes, procedures, and considerations for planning and managing identity, credential, and access management programs. Note, the enterprise architecture section has been superseded by the FICAM Architecture.
   url: https://www.idmanagement.gov/docs/roadmap-ficam.pdf
+
+- title: ICAM Governance Framework Version 1.0
+  type: PDF
+  pubdate: 2021-09
+  description: The ICAM Governance Framework is a tool to help agencies build and improve agency ICAM governance structures, processes, and policies. 
+  url: /docs/playbook-identity-governance-framework.pdf

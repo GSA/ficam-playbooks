@@ -27,7 +27,7 @@
 
 - notice_date: October 25, 2021  
   change_type: OCSP Outage
-  system: Entrust Managed Serivces SSP OCSP Service
+  system: Entrust Managed Services SSP OCSP Service
   change_description: Between approximately 9 A.M ON October 24, 2021 and 10:00 A.M on October 25, 2021, users reported errors with the Entrust Managed Services SSP OCSP Service (OCSP response Next Update time was in the past.) 
   contact: support at entrust dot com   
   ocsp_uri: ocsp.managed.entrust.com, ocspproofs.managed.entrust.com
