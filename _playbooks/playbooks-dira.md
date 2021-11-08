@@ -58,7 +58,7 @@ subnav:
 
 # Acknowledgements
 
-This playbook reflects the contributions of the Digital Identity Risk Assessment working group of the Identity, Credential and Access Management Subcommittee (ICAMSC). The working group was co-chaired by members from the Internal Revenue Service (IRS) and the Environmental Protection Agency (EPA). Contributions were made by the members of services or agencies representing the Center of Medicare and Medicaid Services (CMS), Department of Defense (DoD), Department of Health and Human Services (HHS), Department of Homeland Security (DHS), Department of Justice (DOJ), Department of the Treasury (USDT), Department of Transportation (DOT), and the General Services Administration (GSA). 
+This playbook reflects the contributions of the Digital Identity Risk Assessment working group of the Identity, Credential and Access Management Subcommittee (ICAMSC). The working group was co-chaired by members from the Internal Revenue Service (IRS) and the Environmental Protection Agency (EPA). Contributions were made by the members of services or agencies representing the Center of Medicare and Medicaid Services (CMS), Department of Defense (DOD), Department of Health and Human Services (HHS), Department of Homeland Security (DHS), Department of Justice (DOJ), Department of the Treasury (USDT), Department of Transportation (DOT), and General Services Administration (GSA). 
 
 # Introduction
 
@@ -106,18 +106,18 @@ The following sections describe a basic DIRA process and provide plays to help y
 
 # High-Level DIRA Process
 
-The DIRA process begins when a new application or system is identified or a time-driven or event-driven reassessment is triggered. Once it is determined that a DIRA is needed, application data is identified, collected, and analyzed to determine the assurance levels, and produce a Digital Identity Assessment Statement (DIAS), as shown in Figure 1.
+The DIRA process begins when a new application or system is identified or a time-driven or event-driven reassessment is triggered. Once it is determined that a DIRA is needed, application data is identified, collected, and analyzed to determine the assurance levels and produce a Digital Identity Assessment Statement (DIAS), as shown in Figure 1.
 
 [![This is a circle figure with five steps. The DIRA process starts at the top of the circle when a new application or system is identified or when a time or event-based reassessment is triggered. Step 1 is Identify User, Transactions, and Roles. Step 2 is Identify Risks and Assurance Levels. Step 3 is Determine Steps to Meet Assurance Levels. Step 4 is Finalize Digital Identify  Assessment Statement. Step 5 is Reassess. Return back to Step 1 based on new application or event trigger.]({{site.baseurl}}/assets/playbooks/DIRAFigure1.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure1.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 <p align="center"><b>Figure 1: Example DIRA Process</b></p>
 
 A high-level DIRA process includes five steps:
-1)	Identify Users, Transactions, and Roles
-2)	Identify Risks and Assurance Levels
-3)	Determine Steps to Meet Assurance Levels
-4)	Finalize Digital Identity Assessment Statement
-5)	Reassess
+1)	Identify Users, Transactions, and Roles(#step-1-identify-users-transactions-and-roles)
+2)	Identify Risks and Assurance Levels(#step-2-identify-risks-and-assurance-levels)
+3)	Determine Steps to Meet Assurance Levels(#step-3-determine-steps-to-meet-assurance-levels)
+4)	Finalize Digital Identity Assessment Statement(#step-4-finalize-digital-identity-acceptance-statement)
+5)	Reassess(#step-5-reassess)
 
 ## Step 1. Identify Users, Transactions, and Roles 
 
@@ -140,8 +140,7 @@ First, identify the user types and communities of users the application supports
 | Organizational | An employee or individual the organization deems to have equivalent status of an employee | Internal agency enterprise users, including employees and direct support contractors <br><br>Other federal government agency users |
 | Non-organizational | All users other than organizational users (i.e., the general public or guests) | U.S. state, local, and tribal agency users<br><br>Non-profit, business, or commercial users<br><br>Public or other users |
 
-Next, identify each transaction the communities of users can perform in the application. 
-Per NIST Special Publication 800-63-3: Digital Identity Guidelines, Appendix A, Definitions and Abbreviations, a transaction  is “... a discrete event between a user and a system that supports a business or programmatic purpose. A government digital system may have multiple categories or types of transactions, which may require separate analysis within the overall digital identity risk assessment.” 
+A transaction<sup>9</sup> is “... a discrete event between a user and a system that supports a business or programmatic purpose. A government digital system may have multiple categories or types of transactions, which may require separate analysis within the overall digital identity risk assessment.” 
 
 Application owners and the information security team collaborate to identify, analyze, and assess the digital transactions of the application. Examples of transactions and transaction types are phrased as actions on data: Create, Read, Modify, Delete. 
 
@@ -204,24 +203,20 @@ Identity Assurance Levels define the processes and solutions used to identity pr
 -	Identity Assurance is: “Are you who you say you are?”
 -	Impacts are: “What are the risks to the government or to you if you aren’t?”
 	
-Defining the IALs for each community of users and transactions from Step 1 is one of the more challenging aspects of a DIRA. The final IAL correlates to how much personal data (personal data is Personally Identifiable Information [PII]. As defined by OMB Circular A-130, PII is information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specific individual) is validated and verified for that user during the identity proofing process. Agencies collecting identity information as part of identity proofing may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules. 
+Defining the IALs for each community of users and transactions from Step 1 is one of the more challenging aspects of a DIRA. The final IAL correlates to how much personal data<sup>10</sup> is validated and verified for that user during the identity proofing process<sup>11</sup>.  
 
 At Identity Assurance Level 1 (IAL1), the application may or may not require proofing. If an application requires input, a user may only need to provide a real or fictitious name for display purposes and an email address to receive notifications. The information may be self-asserted by the user and doesn’t need to be verified. At Identity Assurance Level 2 (IAL2) or 3 (IAL3), increasingly more personal information about the user needs to be validated and verified either remotely, supervised remotely, or in person. At IAL2, a real name, an email address, and an address of record are confirmed through record checks remotely or in person. At IAL3, a biometric is captured and the user must be verified in person.
 
 {% include alert-info.html heading="Key Point" content="The risks and impacts of excessive information collection for identity proofing needs to be strongly considered for each community of users and the transactions.<br><br>For public users and other non-organizational users, privacy benefits and privacy principles are key factors to consider.<br><br>Application owners and agency processes need to include the Senior Agency Official for Privacy to define the risks, impact levels, and the Identity Assurance Levels 
 ." %}
 
-Figure 2 explains the three Identity Assurance Levels in example terms of the information validated and verified during the identity proofing process. Refer to NIST Special Publication 800-63-3A: Digital Identity Guidelines, Enrollment and Identity Proofing, Section 4, Identity Assurance Level Requirements (page 5) for the detailed requirements of the identity proofing processes.
+Figure 2 explains the three Identity Assurance Levels in example terms of the information validated and verified during the identity proofing process<sup>12</sup>. 
 
 [![Figure 2 is a building block figure. A user is on the right of the figure and to the left of the user are different data elements provided by a user. Each IAL includes addition data to increase the assurance. IAL 1 data includes Display Name & Email Address. IAL 2 data includes confirmed through record checks through virtual or in-person, address of record, and real name & email address. IAL 3 data includes confirmed through record checks and in-person, biometric, address of record, and real name & email address.]({{site.baseurl}}/assets/playbooks/DIRAFigure2.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure2.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 <p align="center"><b>Figure 2: Identity Assurance Levels</b></p>
 
-Figure 3 is an example of a decision tree of the risk assessment process flow that defines the Identity Assurance Levels for the communities of users and transactions in Step 1. Additional decision trees are in NIST Special Publication 800-63-3: Digital Identity Guidelines, Section 6, Selecting Assurance Levels.
-
-[![Figure 3 is a decision tree to select an appropriate Identity Assurance Level (IAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, do you need any Personally Identifiable Information (PII) or Protected health information (PHI)? If no, select IAL1. If yes, do you need the PII/PHI to be validated? If no, select IAL1. If yes or if you don’t know, specify the risks (to the agency or the subject) of providing the digital service (i.e., a person falsely claiming an identity) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select IAL3. If no, did you assess moderate for personal safety? If yes, select IAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select IAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select IAL2. If no, are you making personal data accessible? If yes, select IAL2. If no, select IAL1. Reassess the IAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.]({{site.baseurl}}/assets/playbooks/DIRAFigure3.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure3.png){:target="_blank"}{:rel="noopener noreferrer"}
-
-<p align="center"><b>Figure 3: Identity Assurance Level Decision Tree</b></p>
+Appendix B. Examples and Templates includes an example of a decision tree of the risk assessment process flow that defines the Identity Assurance Levels for the communities of users and transactions in Step 1<sup>13</sup>. 
 
 ### Authenticator Assurance
 
@@ -229,7 +224,7 @@ Authenticator Assurance Levels define the strength of the authentication process
 -	Authenticator Assurance is: “Is this the same user as before?”
 -	Impacts are: “What are the risks to the government or to you if you are not the same user as before?”
 
-At Authenticator Assurance Level 1 (AAL1), a user might only use a username and password. At Authenticator Assurance Level 2 (AAL2), a user has two factors, including a factor such as a one-time password (OTP) managed by a mobile application on a personal or government mobile phone (refer to NIST Special Publication 800-63-3B: Digital Identity Guidelines, Authentication and Lifecycle Management, Section 4, Authenticator Assurance Level requirements). 
+At Authenticator Assurance Level 1 (AAL1), a user might only use a username and password. At Authenticator Assurance Level 2 (AAL2) a user has two factors, including a factor such as a one-time password (OTP) managed by a mobile application on a personal or government mobile phone<sup>14</sup>. 
 
 {% include alert-info.html heading="Key Point" content="Two-factor authentication is rapidly becoming the expected default for applications.<br><br>Recurring public and other non-organizational users may want to create an account. Agencies and application owners should strongly consider always allowing and providing two-factor options.<br><br>For employees and other organizational government users, two-factor authentication is a government-wide policy requirement." %}
 
