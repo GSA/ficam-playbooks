@@ -18,8 +18,23 @@ subnav:
     href: '#helpful-tools'
 ---
 
+This document describes the troubleshooting process for PIV Authentication errors to support personnel responsible for troubleshooting PIV access issues. 
+
+Because PIV leverages PKI certificates for logical access, all PIV authentication is mutual PKI authentication. Web sites use client authenticated TLS, while other systems such as Active Directory may use different mechanisms. However, all mutual PKI authentication involves four checks:
+Can the server and client both prove they control their respective private keys?
+Are the server and client certificates issued from a trusted authority?
+Are the server and client certificates still valid? That is, are they expired or revoked?
+Is the mapping between the identifier in the certificate and the account identifier in the system still accurate?
+A failure in each of these steps will display different systems in different areas. This guide will show where support personnel can locate these errors.
+
+## Validating Private Key Access
+TODO: Identify errors
+Client - Wrong Pin, or issue with authentication to card
+Server - missing key or incorrect private key password - server usually will not start - 500 error
+
+## Validating that certificates are issued from a trusted authority
 ## Trust Stores
-PKI-based mutual authentication errors occur when a server (e.g., a domain controller) and client (e.g., a workstation) cannot establish trust between themselves. Since path discovery and validation (PDVAL) processes occur within both machines, potential errors may arise on either end of the connection.
+PKI-based mutual authentication errors often occur when a server (e.g., a domain controller) and client (e.g., a workstation) cannot establish trust between themselves. Since path discovery and validation (PDVAL) processes occur within both machines, potential errors may arise on either end of the connection.
 
    - Server errors
       - Server unable to validate the client's PIV certificate
@@ -43,6 +58,10 @@ In highly secure environments, firewalls or other network devices may block thes
 
 You may need to coordinate with your network or active directory administrators to allow traffic to/from specific IP addresses or make changes to relevant group policies as required.
 
+## Verifying certificate validity
+TODO: Same as Trusted?
+
+## Verifying link between certificate subject and system account
 ## Account Linking 
 Sometimes, even though servers and clients complete mutual PKI authentication successfully, other issues arise that prevent the successful use of PIV credentials.  Frequently, the issue is a problem with the mapping between the identifier in the PIV certificate and the local account identifier for the user.  Some common, specific issues with identifier mapping include:
 
@@ -57,8 +76,8 @@ Microsoft Windows-based systems record logs associated with PKI and X.509 based 
 
 To enable CAPI2 logging on a Windows system, use the following steps (these may vary by Windows OS or Server version):
   1. Start button --> Windows System folder --> select Windows Administrative Tools (alternatively, press the Start button and type "Event Viewer")
-  2. Launch Event Viewer --> expand the Applications and Services Logs folder --> expand the Microsoft folder --> expand the Windows folder --> expand the CAPI2 folder --> select the Operational Llog
-  3. Under the Actions pane --> select "Enable Log" option
+  2. Launch Event Viewer --> expand the Applications and Services Logs folder --> expand the Microsoft folder --> expand the Windows folder --> expand the CAPI2 folder --> select the Operational Log
+  3. Under the Actions pane --> select the "Enable Log" option
 
 [![Screenshot of the CAPI2 Operational Event Viewer]({{site.baseurl}}/assets/piv/CAPI2_logging.png){:style="float:left"}]({{site.baseurl}}/assets/piv/CAPI2_logging.png){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -69,7 +88,7 @@ After CAPI2 logs are enabled, you can explore them to identify specific issues. 
   - Verify Revocation: this can indicate either an inability to download CRL or verify an OCSP response or a lack of availability for live revocation information
   - Verify Chain Policy: this indicates that the certificate may not have a directly expressed or mapped certificate policy verifiable up to the trust anchor
 
-{% include alert-warning.html heading = "CAPI2 Logging" content="CAPI2 logs will consist of all PKI and X.509 events, to include things like web certificate validation, code signing certificates for software updates, and Microsoft trust store updates." %} 
+{% include alert-warning.html heading = "CAPI2 Logging" content=" CAPI2 logs will consist of all PKI and X.509 events, to include things like web certificate validation, code signing certificates for software updates, and Microsoft trust store updates." %} 
 
 Do note that CAPI2 logs will include **all** PKI and X.509 events, such as:
 - TLS certificate validation for user visited websites.
