@@ -420,15 +420,44 @@ This section provides links to the federal laws, policies, standards and other g
 
 # Appendix B. Examples and Templates
 
-[App B intro text here]
+This appendix provides examples and templates of existing resources to help establish or improve DIRA processes. It includes the following sections:
+
+1. Decision Tree Examples
+2. Process Flow Examples 
+3. Digital Identity Acceptance Statement Example and Template
+
 
 ## 1. Decision Tree Examples
 
-[text and figures here]
+This section includes additional example risk assessment decision trees used by some agencies for the Digital Identity Risk Assessment for transactions. Original source decision trees are in NIST Special Publication 800-63-3 [Digital Identity Guidelines](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-3.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Section 6, Selecting Assurance Levels.  
+
+[![Figure 6 is a decision tree to select an appropriate Identity Assurance Level (IAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, do you need any Personally Identifiable Information (PII) or Protected health information (PHI)? If no, select IAL1. If yes, do you need the PII/PHI to be validated? If no, select IAL1. If yes or if you don’t know, specify the risks (to the agency or the subject) of providing the digital service (i.e., a person falsely claiming an identity) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select IAL3. If no, did you assess moderate for personal safety? If yes, select IAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select IAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select IAL2. If no, are you making personal data accessible? If yes, select IAL2. If no, select IAL1. Reassess the IAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.]({{site.baseurl}}/assets/playbooks/DIRAFigure6.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure6.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 6: Identity Assurance Level Decision Tree</b></p>
+
+[![Figure 7 is a decision tree to select an appropriate Authenticator Assurance Level (AAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, specify the risks (to the agency or the subject) of providing the digital service (i.e., a false claimant using an identity that is not theirs) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select AAL3. If no, did you assess moderate for personal safety? If yes, select AAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select AAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select AAL2. If no, are you making personal data accessible? If yes, select AAL2. If no, select AAL1. Reassess the AAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.]({{site.baseurl}}/assets/playbooks/DIRAFigure7.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure7.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 7: Authenticator Assurance Level Decision Tree</b></p>
+
+[![Figure 8 is a decision tree to select an appropriate Federation Assurance Level (FAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, are you federating? If no, a FAL assessment is not required. If yes, specify the risks (to the agency or the subject) of providing the digital service (i.e., an identity assertion is compromised) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select FAL3. If no, did you assess moderate for personal safety? If yes, select FAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select FAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select FAL2. If no, are you making personal data accessible? If yes, select FAL2. If no, are you using a front channel? If yes, select FAL2. If no, select FAL1. Reassess the FAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.]({{site.baseurl}}/assets/playbooks/DIRAFigure8.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure8.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 8: Federation Assurance Level Decision Tree</b></p>
 
 ## 2. Process Flow Examples
 
-[text and figures here]
+This section includes additional example process flow diagrams used by some agencies for the Digital Identity Risk Assessment processes.  Choose and reuse any process flow that works best for your agency.
+
+[![Figure 9 is a graphic representation of the digital identity risk assessment process. Step 1 is Determine User Type. Step 2 is Define Transactions. Step 3 is Determine Impact Level for Transactions. Step 4 is Determine Assurance Levels. Step 5 is Map Transactions to Roles. Step 6 is Implement the Technology. Step 7 is Validate Requirements. Step 8 is Perform Periodic Reassessments.]({{site.baseurl}}/assets/playbooks/DIRAFigure9.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure9.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 9: DIRA Process from Data Collection to Ongoing Assessment</b></p>
+
+[![Figure 10 is an arrow shaped graphic that depicts the six phases of the DIRA process flow. The first phase is Data Collection. The second phase is Analysis. The third phase is Review. The fourth phase is Implementation Determination. The fifth phase is Concurrence. The sixth phase is Ongoing Assessment. There is an arrow head pointing right on the right side of the sixth phase.]({{site.baseurl}}/assets/playbooks/DIRAFigure10.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure10.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 10: Explains in a More Detailed Way the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase</b></p>
+
+[![Figure 11 is a flowchart depicting 18 steps for performing a Digital Identity Risk Assessment. Steps 1 through 3 are under the column heading Data Collection. Steps 4 and 5 are under the column heading Analysis. Steps 6 through 10 are under the column heading Review. Steps 11 through 13 are under the column heading Implementation Determination. Steps 14 and 15 are under the column heading Concurrence. Steps 16 through 18 are under the column headig Ongoing Assessment. Below the first through fifth columns there is a bar labeled Outputs. The outputs are as follows Column 1 Transaction Data, Column 2 Provisional xALs for Review, Column 3 Assessed xALs, Column 4 Implementation x ALs, Column 5 Approved Digital Identity Acceptance Statement.]({{site.baseurl}}/assets/playbooks/DIRAFigure11.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure11.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 11: Explains a Six-Step Process of What is Required to Implement a DIRA</b></p>
 
 ## 3. Digital Identity Acceptance Statement Example Template
 
