@@ -216,7 +216,7 @@ Figure 2 explains the three Identity Assurance Levels in _example_ terms of the 
 
 <p align="center"><b>Figure 2: Identity Assurance Levels</b></p>
 
-Appendix B. Examples and Templates includes an example of a decision tree of the risk assessment process flow that defines the Identity Assurance Levels for the communities of users and transactions in Step 1.<sup>13</sup> 
+[Appendix B. Examples and Templates](#appendix-b-examples-and-templates) includes an example of a decision tree of the risk assessment process flow that defines the Identity Assurance Levels for the communities of users and transactions in Step 1.<sup>13</sup> 
 
 ### Authenticator Assurance
 
@@ -234,7 +234,7 @@ Figure 3 explains the concept of the three Authenticator Assurance Levels in _ex
 
 <p align="center"><b>Figure 3: Authenticator Assurance Levels</b></p>
 
-Appendix B. Examples and Templates includes an example of the risk assessment process flow that defines the Authenticator Assurance Levels for the community of users and transactions in Step 1.<sup>16</sup> 
+[Appendix B. Examples and Templates](#appendix-b-examples-and-templates) includes an example of the risk assessment process flow that defines the Authenticator Assurance Levels for the community of users and transactions in Step 1.<sup>16</sup> 
 
 ### Federation Assurance
 
@@ -264,7 +264,7 @@ Figure 4 explains the concept of the three Federation Assurance Levels in _examp
 
 <p align="center"><b>Figure 4: Federation Assurance Levels</b></p>
 
-Appendix B. Examples and Templates includes an example of a decision tree of the risk assessment process flow that defines the Federation Assurance Levels for the communities of users and transactions in Step 1.<sup>19</sup>  
+[Appendix B. Examples and Templates](#appendix-b-examples-and-templates) includes an example of a decision tree of the risk assessment process flow that defines the Federation Assurance Levels for the communities of users and transactions in Step 1.<sup>19</sup>  
 
 {% include alert-info.html heading="Key Point" content="The results of a DIRA do not change established credential processes. The results impact the various credentials at a level can be used (e.g., if a DIRA arrives at IAL2, this allows the use of IAL2 but does not change the requirement of downgrading an IAL3 process to an IAL2 process)." %}
 
@@ -357,7 +357,7 @@ It’s a best practice that agencies develop standardized templates to promote c
 -	Simple spreadsheets or digital surveys, and 
 -	Digital Identity Acceptance Statements. 
 
-Appendix B. Examples and Templates contains a few example templates provided by agencies. 
+[Appendix B. Examples and Templates](#appendix-b-examples-and-templates) contains a few example templates provided by agencies. 
 
 ## Play 4. Shortcut Decision Trees
 
