@@ -310,32 +310,19 @@ This section introduces six plays for your agency to create efficient and consis
 
 ## Play 1. Streamline Risk Management and Assessment Processes
 
-The Risk Management Framework (RMF) forms the basis of your agency application Assessment and Authorization (A&A) lifecycle. A DIRA process integrates into the routine phases of the RMF to streamline processes and enables efficient reuse of application and agency resources. Figure 9 shows an alignment of this playbook’s example DIRA process steps with the RMF. 
+The Risk Management Framework (RMF) forms the basis of your agency application Assessment and Authorization (A&A) lifecycle. A DIRA process integrates into the routine phases of the RMF to streamline processes and enables efficient reuse of application and agency resources. Figure 5 shows an alignment of this playbook’s example DIRA process steps with the RMF. 
 
-[![Figure 9 is a graphic representation of the DIRA process aligned with the NIST Risk Management Framework Phase. There are three concentric circles. Continuous monitoring on the outermost circle with continuous arrows representing a continuous process. The two inner circles represent the NIST RMF process aligned with DIRA. DIRA Step 1 Identify Users, Transactions, and Roles aligns with RMF Phase Categorize System. DIRA Step 2 Identify Risks and Assurance Levels aligns with RMF Phase Selecting Controls. DIRA Step 3 Determine steps to Meet Assurance Levels aligns with RMF Phase Implement Controls. DIRA Step 4 Finalize digital identity assessment statement aligns with RMF Phase Assess Controls. There is no DIRA Step that aligns with RMF Phase Authorize. DIRA Step 5 Reassess aligns with RMF Phase Monitor.etermine Assurance Levels. Step 5 is Map Transactions to Roles. Step 6 is Implement the Technology. Step 7 is Validate Requirements. Step 8 is Perform Periodic Reassessments.]({{site.baseurl}}/assets/playbooks/DIRAFigure9.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure9.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![Figure 5 is a graphic representation of the DIRA process aligned with the NIST Risk Management Framework Phase. There are three concentric circles. Continuous monitoring on the outermost circle with continuous arrows representing a continuous process. The two inner circles represent the NIST RMF process aligned with DIRA. DIRA Step 1 Identify Users, Transactions, and Roles aligns with RMF Phase Categorize System. DIRA Step 2 Identify Risks and Assurance Levels aligns with RMF Phase Selecting Controls. DIRA Step 3 Determine steps to Meet Assurance Levels aligns with RMF Phase Implement Controls. DIRA Step 4 Finalize digital identity assessment statement aligns with RMF Phase Assess Controls. There is no DIRA Step that aligns with RMF Phase Authorize. DIRA Step 5 Reassess aligns with RMF Phase Monitor.]({{site.baseurl}}/assets/playbooks/DIRAFigure5.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure5.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-<p align="center"><b>Figure 9: Example DIRA Process Steps in Risk Management Framework Phase</b></p>
+<p align="center"><b>Figure 5: Example DIRA Process Steps in Risk Management Framework Phase</b></p>
 
-Step 1 of the example DIRA process happens in the Categorize phase. When categorizing a system (refer to Federal Information Processing Standards Publication 199 (FIPS 199):
-Standards for Security Categorization of Federal Information and Information Systems, Section 3, Categorization of Information and Information Systems), application owners and security officers identify overall system data types and assign impact levels for each of the confidentiality, integrity, and availability security objectives.  
+Step 1 of the example DIRA process happens in the Categorize phase. When categorizing a system,<sup>22</sup> application owners and security officers identify overall system data types and assign impact levels for each of the confidentiality, integrity, and availability security objectives.  
 
 A Privacy Threshold Analysis (PTA) is typically included in this phase. The identification of the DIRA IALs, AALs, and FALs directly correlates to the collection of PII; who has access to what information; whether information is self-asserted or verified; and the risks of excessive identity proofing. 
 
 {% include alert-info.html heading="Key Point" content="Align Step 1 in a DIRA process with the Categorize System phase of the Risk Management Framework." %}
 
 Meanwhile, Step 4 of the example DIRA process aligns with the Assessment phase. The Digital Identity Acceptance Statement must include the IALs, AALs, and FALs where the application was assessed and the implementations made.  
-
-Figure 10 explains the DIRA process through the Assessment phase.
-
-[![Figure 10 is a graphic representation of the digital identity risk assessment process. Step 1 is Determine User Type. Step 2 is Define Transactions. Step 3 is Determine Impact Level for Transactions. Step 4 is Determine Assurance Levels. Step 5 is Map Transactions to Roles. Step 6 is Implement the Technology. Step 7 is Validate Requirements. Step 8 is Perform Periodic Reassessments.]({{site.baseurl}}/assets/playbooks/DIRAFigure10.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure10.png){:target="_blank"}{:rel="noopener noreferrer"}
-
-<p align="center"><b>Figure 10: DIRA Process from Data Collection to Ongoing Assessment</b></p>
-
-Figure 11 provides additional details about the DIRA process.  
-
-[![Figure 11 is an arrow shaped graphic that depicts the six phases of the DIRA process flow. The first phase is Data Collection. The second phase is Analysis. The third phase is Review. The fourth phase is Implementation Determination. The fifth phase is Concurrence. The sixth phase is Ongoing Assessment. There is an arrow head pointing right on the right side of the sixth phase.]({{site.baseurl}}/assets/playbooks/DIRAFigure11.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure11.png){:target="_blank"}{:rel="noopener noreferrer"}
-
-<p align="center"><b>Figure 11: Details of DIRA Process Flow from Data Collection Phase to Ongoing Assessment Phase</b></p>
 
 ## Play 2. Add Context for the Mission
 
@@ -372,7 +359,7 @@ It’s a best practice that agencies develop standardized templates to promote c
 -	Simple spreadsheets or digital surveys, and 
 -	Digital Identity Acceptance Statements. 
 
-The [Digital Identity Acceptance Statement template](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} provides an example DIAS for agencies. 
+Appendix B. Examples and Templates contains a few example templates provided by agencies. 
 
 ## Play 4. Shortcut Decision Trees
 
@@ -385,7 +372,7 @@ Table 6 provides an example shortcut guide for determining whether to perform a 
 | Application Characteristics | DIRA Required? | Minimum NIST SP 800-63 IAL, AAL, FAL Levels |
 | ---------------------- | ------------ | ------------------ |
 | The application has no external network connectivity, is physically isolated, and is located in a protected space. | No | N/A | 
-| The application leverages the agency enterprise single sign on (SSO)/enterprise access manager for authentication of employees and contractors. | Yes | Requires proof of identity (IAL3; satisfied by the full PIV issuance processes, in accordance with government-wide policy and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors). Multi-factor authentication to agency application (AAL2) federation between agency applications (FAL2).<br><br> Additionally, requires affiliation as a federal employee or contractor. | 
+| The application leverages the agency enterprise single sign on (SSO)/enterprise access manager for authentication of employees and contractors. | Yes | Requires proof of identity (IAL3)<sup>23</sup>. Multi-factor authentication to agency application (AAL2) federation between agency applications (FAL2).<br><br> Additionally, requires affiliation as a federal employee or contractor. | 
 | Data and other resources available are approved for public release, are intended to be freely shared, and public users aren’t required to create accounts to access this information.<br><br>Examples include:<br>• Agency primary websites (i.e., www.gsa.gov)<br>• Informational websites<br>• Open government APIs | No | Public users don’t create accounts or login. <br><br>Agency-affiliated privileged users with permissions to edit content still require higher IAL and a minimum AAL2 (two-factor). | 
 | Data and other resources are intended for public release. Doesn’t include any controlled unclassified information, but allows public users to create accounts to better support the public user’s experience. | Yes | Doesn’t require proof of a real-life identity (IA 1). Single or multi-factor authentication (AAL1).| 
 | Allows public users to input and access their own personally identifiable information (PII) or protected health information (PHI) for informational purposes.  The information isn’t required to be verified. The application doesn’t allow public users to access anyone else’s PII or PHI. | Yes | Doesn’t require proof of a real-life identity (IAL1). Multi-factor authentication (AAL2). | 
@@ -398,14 +385,14 @@ Leverage existing tools at your agency to automate and create repeatable and con
 
 A common assumption when building or buying applications for missions is that all users need accounts. Take the opportunity during the DIRA process to consider the application processes and functionality needed. Consider the mission, applications needs, and the two example questions below: 
 1.	Do all users need accounts?  
-2.	How many users are regularly recurring returning users? 
+2.	How many users are regularly _recurring returning_ users? 
 
 Reconsider the business process carefully and validate the current and future designs using data on the returning users, transaction volumes, and privacy principles. 
--	Design the business process for the user to submit information without requiring an account,
+-	Design the business process for the user to submit information _without requiring_ an account,
 -	Limit the information required to create the account, and
 -	Make most of the information requested optional.
 
-{% include alert-info.html heading="Key Point" content="Some public, business, or partner users may only interact with the government process and application once a year or less.<br><br> Revisit your process and application, and allow users to complete the transaction once before opting in to create an account." %}
+{% include alert-info.html heading="Key Point" content="Some public, business, or partner users may only interact with the government process and application once a year _or less_.<br><br> Revisit your process and application, and allow users to complete the transaction once before opting in to create an account." %}
 
 # Appendix A. Policy, Standards, and Guidance
 
