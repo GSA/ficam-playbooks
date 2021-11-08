@@ -390,7 +390,7 @@ Reconsider the business process carefully and validate the current and future de
 -	Limit the information required to create the account, and
 -	Make most of the information requested optional.
 
-{% include alert-info.html heading="Key Point" content="Some public, business, or partner users may only interact with the government process and application once a year _or less_.<br><br> Revisit your process and application, and allow users to complete the transaction once before opting in to create an account." %}
+{% include alert-info.html heading="Key Point" content="Some public, business, or partner users may only interact with the government process and application once a year or less.<br><br> Revisit your process and application, and allow users to complete the transaction once before opting in to create an account." %}
 
 # Appendix A. Policy, Standards, and Guidance
 
