@@ -113,11 +113,11 @@ The DIRA process begins when a new application or system is identified or a time
 <p align="center"><b>Figure 1: Example DIRA Process</b></p>
 
 A high-level DIRA process includes five steps:
-1. Identify Users, Transactions, and Roles(#step-1-identify-users-transactions-and-roles)
-2. Identify Risks and Assurance Levels(#step-2-identify-risks-and-assurance-levels)
-3. Determine Steps to Meet Assurance Levels(#step-3-determine-steps-to-meet-assurance-levels)
-4. Finalize Digital Identity Assessment Statement(#step-4-finalize-digital-identity-acceptance-statement)
-5. Reassess(#step-5-reassess)
+1. [Identify Users, Transactions, and Roles](#step-1-identify-users-transactions-and-roles)
+2. [Identify Risks and Assurance Levels](#step-2-identify-risks-and-assurance-levels)
+3. [Determine Steps to Meet Assurance Levels](#step-3-determine-steps-to-meet-assurance-levels)
+4. [Finalize Digital Identity Assessment Statement](#step-4-finalize-digital-identity-acceptance-statement)
+5. [Reassess](#step-5-reassess)
 
 ## Step 1. Identify Users, Transactions, and Roles 
 
