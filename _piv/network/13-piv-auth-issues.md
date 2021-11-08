@@ -25,7 +25,7 @@ Because PIV leverages PKI certificates for logical access, all PIV authenticatio
 1. Can the server and client both prove they control their respective private keys?
 2. Are the server and client certificates issued from a trusted authority?
 3. Are the server and client certificates still valid? That is, are they expired or revoked?
-4.Is the mapping between the identifier in the certificate and the account identifier in the system still accurate?
+4. Is the mapping between the identifier in the certificate and the account identifier in the system still accurate?
 
 A failure in each of these steps will display different systems in different areas. This guide will show where support personnel can locate these errors.
 
@@ -70,7 +70,7 @@ TODO: Same as Trusted?
 
 ## Verifying link between certificate subject and system account
 
-## Account Linking
+### Account Linking
 
 Sometimes, even though servers and clients complete mutual PKI authentication successfully, other issues arise that prevent the successful use of PIV credentials.  Frequently, the issue is a problem with the mapping between the identifier in the PIV certificate and the local account identifier for the user.  Some common, specific issues with identifier mapping include:
 
