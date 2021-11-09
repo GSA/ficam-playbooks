@@ -446,7 +446,7 @@ This section includes additional example process flow diagrams used by some agen
 
 [![Figure 9 is a graphic representation of the digital identity risk assessment process. Step 1 is Determine User Type. Step 2 is Define Transactions. Step 3 is Determine Impact Level for Transactions. Step 4 is Determine Assurance Levels. Step 5 is Map Transactions to Roles. Step 6 is Implement the Technology. Step 7 is Validate Requirements. Step 8 is Perform Periodic Reassessments.]({{site.baseurl}}/assets/playbooks/DIRAFigure9.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure9.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-<p align="center"><b>Figure 9: DIRA Process from Data Collection to Ongoing Assessment</b></p>
+<p align="center"><b>Figure 9: Explains the DIRA Process from Data Collection to Ongoing Assessment</b></p>
 
 [![Figure 10 is an arrow shaped graphic that depicts the six phases of the DIRA process flow. The first phase is Data Collection. The second phase is Analysis. The third phase is Review. The fourth phase is Implementation Determination. The fifth phase is Concurrence. The sixth phase is Ongoing Assessment. There is an arrow head pointing right on the right side of the sixth phase.]({{site.baseurl}}/assets/playbooks/DIRAFigure10.png)]({{site.baseurl}}/assets/playbooks/DIRAFigure10.png){:target="_blank"}{:rel="noopener noreferrer"}
 
