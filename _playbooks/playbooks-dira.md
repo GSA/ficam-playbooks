@@ -4,7 +4,7 @@ collections: playbooks
 navtitle: Digital Identity Risk Assessment Playbook
 title: Digital Identity Risk Assessment Playbook
 pubdate: 09/2020
-date: September, 13, 2021
+date: September 13, 2021
 type: Markdown
 permalink: /playbooks/dira/
 description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
@@ -287,7 +287,7 @@ Your agency may determine alternatives to the NIST-recommended guidance for the 
 
 Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels.<sup>21</sup> 
 
-An example of a [DIAS](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} is included in Appendix B. Examples and Templates.  
+An example of a [DIAS](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} is included in [Appendix B. Examples and Templates](#appendix-b-examples-and-templates).  
 
 ## Step 5. Reassess
 
