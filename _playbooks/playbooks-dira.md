@@ -535,7 +535,7 @@ In June 2020, NIST released a pre-draft call for comments to update NIST Special
 12.	Refer to NIST Special Publication 800-63-3A Digital Identity Guidelines, Enrollment and Identity Proofing, Section 4, Identity Assurance Level Requirements (page 5) for the detailed requirements of the identity proofing processes.
 13.	Additional decision trees are in NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 6, Selecting Assurance Levels. 
 14.	Examples only. Refer to NIST Special Publication 800-63-3B Digital Identity Guidelines, Authentication and Lifecycle Management. Section 4 Authenticator Assurance Level requirements.
-15.	Refer to NIST Special Publication 800-63-3B Digital Identity Guidelines, Authentication and Lifecycle Management., Section 4, Authenticator Assurance Level requirements.
+15.	Refer to NIST Special Publication 800-63-3B Digital Identity Guidelines, Authentication and Lifecycle Management, Section 4, Authenticator Assurance Level requirements.
 16.	Additional decision trees can be found in NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 6, Selecting Assurance Levels. This decision tree is another example used by federal agencies. 
 17.	See NIST Special Publication 800-63-3 Digital Identity Guidelines, Section 7, Federation Considerations for additional federation outcomes to consider.
 18.	Refer to NIST Special Publication 800-63-3C Digital Identity Guidelines, Federation and Assertions for the detailed requirements on Federation, Assertions, and Federation Assurance Level implementations.
