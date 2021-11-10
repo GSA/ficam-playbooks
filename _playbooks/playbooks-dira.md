@@ -56,7 +56,7 @@ subnav:
     href: '#footnotes'
 ---
 
-Download a [PDF version](../../docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"} of the Digital Identity Risk Assessment playbook.
+Download a [PDF version](../../docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"} of the Digital Identity Risk Assessment Playbook.
 
 # Acknowledgements
 
