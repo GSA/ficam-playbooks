@@ -25,6 +25,20 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: November 10, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: TSCP SHA256 Bridge CA 
+  change_description: The TSCP Bridge CA reissued a certificate to Carillon Federal Services PIV-I CA2.
+  contact: info at tscp dot org
+  ca_certificate_hash: 323a07c5c7d59bc9c5e24282fc06393456827e3a
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA2, OU=Certification Authorities, O=Carillon Federal Services Inc., C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
+  ocsp_uri: N/A
+  
 - notice_date: October 25, 2021  
   change_type: OCSP Outage
   system: Entrust Managed Services SSP OCSP Service
