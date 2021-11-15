@@ -38,6 +38,7 @@ subnav:
 [trying out DW md tables here as I build them]
 
 ***Table 2. Potential Adverse Impact Levels** 
+
 | Impact Score | Potential Adverse Impact | Description |
 | ------------------------ | ------------ | ------------------ |
 | 0-35 | **Low** | Effects of an error or accident are minimal, resulting in negligible, if any, impacts on organizational operations, finances, assets, individuals, other organizations, or the nation. |
