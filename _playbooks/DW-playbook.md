@@ -39,8 +39,8 @@ subnav:
 
 **Table 6. Identity Management System (IDMS) Data Fields (DF)**
 
-|   ID   | IDMS Field Name | Field Type | Additional Guidance |
-| ----------- || ------------ | ----------- | ------------ | 
+|&nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;| IDMS Field Name | Field Type | Additional Guidance |
+| ----------- | ------------ | ----------- | ------------ | 
 | DF-1 | **Digital Worker**<br>_(new field)_ | Boolean<br>_e.g., Checkbox, True/False, yes/no, etc._ | _Denote if this is (Yes/True) or is not (No/False) a digital worker._ |
 | DF-2 | **Agency unique user ID**<br>_(existing field)_ | Text<br>_Recommend using “DW” or other uniqueness element followed by the identifier based on agency naming conventions._ | _Use a distinguishing and standard naming convention for digital workers. This isn’t a card holder unique identifier (CHUID) or related to PIV._ |
 | DF-3 | **First Name** and **Last Name**<br>_(existing fields)_ | Text<br>_**First name:** group function<br>**Last name:** “DW” followed by a numerical value_ | _Use agency naming convention if IDMS requires first and last name. The first name field should be completed with the group function (e.g., Technology Division, CFO) and the last name field should be completed with “DW” followed by a numerical value corresponding with the sequential order in which the digital worker was built within the associated group function._ |
