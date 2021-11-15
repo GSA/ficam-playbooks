@@ -400,7 +400,7 @@ Reconsider the business process carefully and validate the current and future de
 
 This section provides links to the federal laws, policies, standards and other guidance that impact and shape DIRA implementations.  NIST also publishes useful [Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"} for agencies, and [Implementation Resources](https://www.nist.gov/system/files/documents/2020/07/02/SP-800-63-3-Implementation-Resources_07012020.pdf){:target="_blank"}{:rel="noopener noreferrer"} for solution developers. 
 
-| &nbsp;&nbsp;&nbsp;Short Name&nbsp;&nbsp;&nbsp; | Full Name and Publication Date | 
+| &nbsp;&nbsp;&nbsp;&nbsp;Short Name&nbsp;&nbsp;&nbsp;&nbsp; | Full Name and Publication Date | 
 | ------------------------- | ------------------------- | 
 | NIST SP 800-63-3   | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3; [Digital Identity Guidelines](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}, June 22, 2017 |
 | NIST SP 800-63-3A   | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3A; [Digital Identity Guidelines: Enrollment and Identity Proofing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf){:target="_blank"}{:rel="noopener noreferrer"}, June 22, 2017 | 
