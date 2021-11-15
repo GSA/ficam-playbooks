@@ -37,10 +37,15 @@ subnav:
 
 [trying out DW md tables here as I build them]
 
-| Role | Description | Responsibilities |
-| -------------------- | ------------ | ------------------ |
-| Sponsor | ● Responsible for digital worker compliance<br>● A federal government employee | ● Assign roles and responsibilities to govern the digital worker, such as a primary and backup custodian. <br>● Field digital worker inquiries from agency or other government entity leaders.<br>● Oversee who has access to the digital worker. |
-| Custodian | ● Responsible for digital worker day-to-day operational management<br>● A federal government employee or contractor | ● Hold a comparable level of access as the digital worker.<br>● Complete initial and routine training in digital worker management and security.<br>● Rotate digital worker password or authenticators.<br>● Maintain digital worker access.<br>● Oversee retraining or tuning of an underlying model.<br>● Track and monitor digital worker data input and output. |
+| Sponsorship (SP) ID<sup>5</sup> | Action | Low | Moderate | High | Critical |
+| ----------- | ------------ | ----------- | ------------ | ----------- | ------------ |
+| SP-1 | **Document a business need for the digital worker.** | N/A | ✓ | ✓ | ✓ |
+| SP-2 | **Assign an organizational sponsor for the digital worker.** | N/A | ✓ | ✓ | ✓<br>Suggested CIO, CISO, or equivalent |
+| SP-3 | **Sponsor acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A | ✓<br>Recertify sponsor annually | ✓<br>Recertify sponsor annually | ✓<br>Recertify sponsor every six months |
+| SP-4 | **Sponsor assigns the custodian of the digital worker.** | N/A | ✓ | ✓ | ✓ |
+| SP-5 | **Notify the custodian of his or her responsibility by the sponsor.** | N/A | ✓ | ✓ | ✓ |
+| SP-6 | **Confirm the custodian acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A | ✓<br> Recertify custodian annually | ✓<br> Recertify custodian annually | ✓<br> Recertify custodian every six months |
+
 
 
 
