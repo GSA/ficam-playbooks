@@ -401,7 +401,7 @@ Reconsider the business process carefully and validate the current and future de
 This section provides links to the federal laws, policies, standards and other guidance that impact and shape DIRA implementations.  NIST also publishes useful [Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"} for agencies, and [Implementation Resources](https://www.nist.gov/system/files/documents/2020/07/02/SP-800-63-3-Implementation-Resources_07012020.pdf){:target="_blank"}{:rel="noopener noreferrer"} for solution developers. 
 
 | Short Name | Full Name and Publication Date | 
-| -------------------------------- | ------------------------- | 
+| ----------------------------------- | ------------------------- | 
 | NIST SP 800-63-3 | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3; [Digital Identity Guidelines](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}, June 22, 2017 |
 | NIST SP 800-63-3A | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3A; [Digital Identity Guidelines: Enrollment and Identity Proofing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf){:target="_blank"}{:rel="noopener noreferrer"}, June 22, 2017 | 
 | NIST SP 800-63-3B | National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63-3B; [Digital Identity Guidelines: Authentication and Lifecycle Management](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf){:target="_blank"}{:rel="noopener noreferrer"}, June 2017 | 
@@ -418,7 +418,7 @@ This section provides links to the federal laws, policies, standards and other g
 | NIST SP 800-37 | NIST Special Publication 800-37, Revision 2, [Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf){:target="_blank"}{:rel="noopener noreferrer"}, December 2018 | 
 | NIST SP 800-53-4 | NIST Special Publication 800-53, Revision 4, [Security and Privacy Controls for Federal Information Systems and Organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf){:target="_blank"}{:rel="noopener noreferrer"}, April 2013; Updated January 22, 2015 | 
 | NIST SP 800-53A | NIST Special Publication 800-53A, Revision 4, [Assessing Security and Privacy Controls in Federal Information Systems and Organizations: Building Effective Security Assessment Plans](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53Ar4.pdf){:target="_blank"}{:rel="noopener noreferrer"}, July 2008; Updated December 18, 2014| 
-| &nbsp;&nbsp;&nbsp;&nbsp;NIST RMF Overview&nbsp;&nbsp;&nbsp;&nbsp; | NIST [Risk Management Framework Overview](https://csrc.nist.gov/projects/risk-management/about-rmf){:target="_blank"}{:rel="noopener noreferrer"}, November 30, 2016| 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NIST RMF Overview&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | NIST [Risk Management Framework Overview](https://csrc.nist.gov/projects/risk-management/about-rmf){:target="_blank"}{:rel="noopener noreferrer"}, November 30, 2016| 
 
 # Appendix B. Examples and Templates
 
