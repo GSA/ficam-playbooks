@@ -40,12 +40,12 @@ subnav:
 **Table 6. Identity Management System (IDMS) Data Fields (DF)**
 
 |   ID   | IDMS Field Name | Field Type | Additional Guidance |
-| ----------- | ------------ | ----------- | ------------ | 
-| DF-1 &nbsp; &nbsp; &nbsp; | **Digital Worker**<br>_(new field)_ | Boolean<br>_e.g., Checkbox, True/False, yes/no, etc._ | _Denote if this is (Yes/True) or is not (No/False) a digital worker._ |
-| DF-2| **Agency unique user ID**<br>_(existing field)_ | Text<br>_Recommend using “DW” or other uniqueness element followed by the identifier based on agency naming conventions._ | _Use a distinguishing and standard naming convention for digital workers. This isn’t a card holder unique identifier (CHUID) or related to PIV._ |
+| :-----------: | ------------ | ----------- | ------------ | 
+| DF-1 | **Digital Worker**<br>_(new field)_ | Boolean<br>_e.g., Checkbox, True/False, yes/no, etc._ | _Denote if this is (Yes/True) or is not (No/False) a digital worker._ |
+| DF-2 | **Agency unique user ID**<br>_(existing field)_ | Text<br>_Recommend using “DW” or other uniqueness element followed by the identifier based on agency naming conventions._ | _Use a distinguishing and standard naming convention for digital workers. This isn’t a card holder unique identifier (CHUID) or related to PIV._ |
 | DF-3 | **First Name** and **Last Name**<br>_(existing fields)_ | Text<br>_**First name:** group function<br>**Last name:** “DW” followed by a numerical value_ | _Use agency naming convention if IDMS requires first and last name. The first name field should be completed with the group function (e.g., Technology Division, CFO) and the last name field should be completed with “DW” followed by a numerical value corresponding with the sequential order in which the digital worker was built within the associated group function._ |
 | DF-4 | **Digital Worker Sponsor Name**<br>_(new field[s])_ | Text<br>_Recommend the individual’s full name (generally first and last name)_ | _Specify the sponsor of the digital worker._ |
-| DF-5| **Digital Worker Custodian Name**<br>_(new field[s])_ | Text<br>_Recommend the individual’s full name (generally first and last name)_ | _Specify the custodian of the digital worker._ |
+| DF-5 | **Digital Worker Custodian Name**<br>_(new field[s])_ | Text<br>_Recommend the individual’s full name (generally first and last name)_ | _Specify the custodian of the digital worker._ |
 | DF-6 | **Digital Worker Description**<br>_(optional new field)_ | Text(250)<br>_Recommend including a brief description of the digital worker (e.g., the type of AI used, the purpose, and actions of the digital worker)_ | _Provide a short description of what the digital worker does and the type of digital technology used._ |
 | DF-7 | **Responsible Organization**<br>_(optional new field)_ | Text<br>_Include the name of the organization according to the official agency organizational chart_ | _Specify the name of the responsible agency organization or group._ |
 
