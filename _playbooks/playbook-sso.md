@@ -62,25 +62,6 @@ These are key terms used throughout this document.
 ## Disclaimer
 This playbook was developed by the General Services Administration Office of Government-wide Policy (GSA OGP) with input from federal IT practitioners. This document shouldn’t be interpreted as official policy or mandated action, and doesn’t provide authoritative definitions for IT terms. Instead, this playbook supplements existing federal IT policies and builds upon the [Office of Management and Budget Memorandum 19-17 (OMB M-19-17), Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, as well as existing federal identity guidance and playbooks. Privileged user access (e.g., superusers, domain administrators) is out of scope for this playbook.
 
-## Federal Cybersecurity Requirements
-The [federal cybersecurity requirements](https://uscode.house.gov/view.xhtml?req=6+USC+1523:+Federal+cybersecurity+requirements){:target="_blank"}{:rel="noopener noreferrer"} listed below include a driver for SSO:
-
-(b) Cybersecurity requirements at agencies<br>
-(1) In general<br>
-Consistent with policies, standards, guidelines, and directives on information security under subchapter II of chapter 35 of title 44 and the standards and guidelines promulgated under section 11331 of title 40 and except as provided in paragraph (2), not later than 1 year after December 18, 2015, the head of each agency shall-
-
-(A) identify sensitive and mission critical data stored by the agency consistent with the inventory required under the first subsection (c) (relating to the inventory of major information systems) and the second subsection (c) (relating to the inventory of information systems) of section 3505 of title 44;
-
-(B) assess access controls to the data described in subparagraph (A), the need for readily accessible storage of the data, and individuals' need to access the data;
-
-(C) encrypt or otherwise render indecipherable to unauthorized users the data described in subparagraph (A) that is stored on or transiting agency information systems;
-
-**(D) implement a single sign-on trusted identity platform for individuals accessing each public website of the agency that requires user authentication, as developed by the Administrator of General Services in collaboration with the Secretary; and**
-
-(E) implement identity management consistent with section 7464 of title 15, including multi-factor authentication, for-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) remote access to an agency information system; and<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) each user account with elevated privileges on an agency information system.
-
 # Centralize Application Access in Five Steps
 An Enterprise SSO service centralizes authentication to applications across a federal agency. It provides a single portal or access point for multiple agency applications, consolidates authentication policies, and extends multi-factor authentication to applications that do not support it. This reduces the cost of identity-related help desk tickets and other tasks. In other words, an SSO service provides a centralized access method for agencies and potentially other federal agency applications. This playbook outlines five steps when implementing an Enterprise SSO service.
 
@@ -91,7 +72,7 @@ An Enterprise SSO service centralizes authentication to applications across a fe
 5. [Federate application access](#step-5-federate-application-access) with other federal executive agency applications or other federal executive agency employees and contractors. Reuse existing federal employee or contractor identities, rather than repeat the process to establish a new identity for each application. Federating access includes establishing legal and technical agreements with partner organizations.
 
 # Step 1: Gain Enterprise Support
-A centralized authentication service can benefit your entire agency, improving the end user experience and your agency’s security posture. As you build a business case, capture the strategic benefits tied to specific business benefits. It’s important to explain the purpose in the context of business objectives to gain support from agency executives and secure a funding source. Each strategic benefit may include a different agency program to collaborate with. Conducting a cost benefit analysis may help identify a funding source and gain further support.
+A centralized authentication service can benefit your entire agency, improving the end user experience and your agency’s security posture. As you build a business case, capture the strategic benefits tied to specific business benefits. It’s important to explain the purpose in the context of business objectives to gain support from agency executives and secure a funding source. Each strategic benefit may include a different agency program to collaborate with. Conducting a cost benefit analysis may help identify a funding source and gain further support. Federal cybersecurity requirements outlined in [6 USC 1523](https://uscode.house.gov/view.xhtml?req=6+USC+1523:+Federal+cybersecurity+requirements){:target="_blank"}{:rel="noopener noreferrer"} reference each head of agency to implement a single sign-on trusted identity platform.
 
 ## 1.1 Understand the Fundamentals
 SSO is a technology pattern used to centralize authentication among multiple applications. The data is exchanged using an assertion protocol. The two main types of assertion protocols used in SSO are Security Assertion Markup Language (SAML) and OpenID Connect (OIDC). Table 1 provides a brief description of each protocol. This playbook focuses primarily on SAML and OIDC because they’re modern, vendor-neutral standards supported by almost all modern cloud applications. While this playbook does not describe how each protocol is designed, your SSO product or vendor should explain how their product supports each protocol.
@@ -502,23 +483,23 @@ Agency mission areas may submit documentation of their assurance level and attri
 
 This document may be incorporated as an annex or appendix to the Authority to Operate (ATO) for each of the participating IT applications and identity providers.
 
-# Appendix A. Troubleshooting Federated Single Sign-On
-Once Federated SSO has been configured, software issues or changes in the environment can cause a working configuration to stop working. When this occurs, support personnel should use the following steps to identify the cause and restore access.
+# Appendix A. Troubleshooting Single Sign-On
+Software issues or changes in the environment can cause a working configuration to stop working. When this occurs, SSO administrators can use the following steps to identify the cause and restore access.
 
-## A.1. Test a known good app
-When a user reports that they are unable to access a federated application, they may blame the federation infrastructure when the problem actually lies in the end application they are trying to access. Support personnel should try an app that is known to work in order to distinguish app issues from federation infrastructure issues. Ideally, the support team should have a barebones, skeletal app which will allow them, and the user to validate federation infrastructure.
+## 1. Check SSO and application logs
+Authentication errors usually create a log entry in the SSO or the application. This error could help identify a root cause, but oftentimes errors may not be specific or clear. Since SSO often involves authentication to external applications, this may require some coordination with other entities.
 
-## A.2  Check SSO and application logs
-If it appears that the application is working, the next step is to examine the logs generated by the SSO application, as well as the logs generated by the application receiving the SSO token. Since Federation often involves authentication to external applications, this may require some coordination with other entities. 
+## 2. Check network routing
+Sometimes it's the simple things. If users are reporting that they can't access an application, make sure that there isn't a network outage or a firewall issue.
 
-## A.3  Check network routing
-Sometimes it's the simple things. If your users are reporting that they can't access an application, make sure that there isn't a network outage, or a firewall creating problems.
+## 3. Test a known good app
+When a user reports that they are unable to access an application, they may blame the SSO infrastructure when the problem actually lies in the end application. SSO administrators should try an app that is known to work in order to distinguish app issues from SSO infrastructure issues. Ideally, the administrator team should have a sample application which will allow them, and the user to validate SSO access.
 
-## A.4  Check Certificates
-For assertions that are signed by the federation gateway, an expired certificate can cause the assertions to not be trusted. If access is failing for an application or a set of applications, confirm that the certificate has not been expired. This may be recorded as an error by the end applications.
+## 4. Check Certificates
+For signed assertions, an expired certificate can cause the assertions to not be trusted. If access is failing for an application or a set of applications, confirm that the certificate is not expired. This may be recorded as an error by the end applications.
 
-## A.5  Check application configuration
-Changes in the configuration of the application receiving and processing the assertions are another frequent cause of federation errors. This may be due to an application upgrade, or to an inadvertant change by an application administrator. Again, this configuration error should show up in the application logs, but the errors may not be very clear.
+## 5. Check application configuration
+Changes in the configuration of the application assertion receiving and processing are a frequent error cause. This may be due to an application upgrade, or to an inadvertent change by an application administrator. This configuration error should show up in the application logs, but the errors may not be very clear.
 
-## A.6  Collect assertion data and use assertion analysis tools
-Finally, if there are no other apparent issues, it may be necessary to inspect the SAML assertion for encoding or other errors. While these errors are not common, they do occur and can result in very subtle errors that are difficult to troubleshoot.
+## 6. Collect assertion data and use assertion analysis tools
+Finally, if there are no other apparent issues, it may be necessary to inspect the assertion for encoding or other errors. While these errors are not common, they do occur and can result in very subtle errors that are difficult to troubleshoot.
