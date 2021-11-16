@@ -31,7 +31,7 @@ Any CA in the FPKI may be referred to as a _Federal PKI CA_. The two highest lev
 
 COMMON serves as the _root_ and _trust anchor_ for the _intermediate_ and _issuing_ CAs operated by federal government Executive Branch agencies.
 
-{% include alert-info.html content="<strong>Public trust for websites</strong><br>A new effort is in the planning stages to establish another federal government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the federal government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
+{% include alert-info.html content="<strong>Public trust for websites</strong><br>A new effort is in the planning stages to establish another federal government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the federal government's new certificate policy for this <a href="https://github.com/uspki/policies" target="_blank" rel="noopener noreferrer">Public Trust effort</a>. %}
 
 ### Federal Common Policy Certification Authority
 
