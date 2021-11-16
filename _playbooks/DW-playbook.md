@@ -41,13 +41,13 @@ subnav:
 **Table 4. Sponsorship Process (SP)**
 
 | &nbsp;&nbsp;&nbsp;ID<sup>5</sup>&nbsp; | Action&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
-| ----------- | ------------ | ----------- | ------------ | ----------- | ------------ |
+| ----------- | ------------ | ----------- | :------------: | :-----------: | :------------: |
 | SP-1 | **Document a business need for the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
 | SP-2 | **Assign an organizational sponsor for the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b><br>Suggested CIO, CISO, or equivalent |
-| SP-3 | **Sponsor acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A | <p align="center"><b>✓</b></p>Recertify sponsor annually | <p align="center"><b>✓</b></p>Recertify sponsor annually |<p align="center"><b>✓</b></p>Recertify sponsor every six months |
-| SP-4 | **Sponsor assigns the custodian of the digital worker.** | N/A | <p align="center"><b>✓</b></p> | <p align="center"><b>✓</b></p> | <p align="center"><b>✓</b></p> |
-| SP-5 | **Notify the custodian of his or her responsibility by the sponsor.** | N/A | <p align="center"><b>✓</b></p> | <p align="center"><b>✓</b></p> | <p align="center"><b>✓</b></p> |
-| SP-6 | **Confirm the custodian acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A |<p align="center"><b>✓</b></p>Recertify custodian annually | <p align="center"><b>✓</b></p>Recertify custodian annually |<p align="center"><b>✓</b></p>Recertify custodian every six months |
+| SP-3 | **Sponsor acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A | <b>✓</b><br>Recertify sponsor annually | <b>✓</b><br>Recertify sponsor annually | <b>✓</b><br>Recertify sponsor every six months |
+| SP-4 | **Sponsor assigns the custodian of the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
+| SP-5 | **Notify the custodian of his or her responsibility by the sponsor.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
+| SP-6 | **Confirm the custodian acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A | <b>✓</b><br>Recertify custodian annually | <b>✓</b><br>Recertify custodian annually | <b>✓</b><br>Recertify custodian every six months |
 
 
 
