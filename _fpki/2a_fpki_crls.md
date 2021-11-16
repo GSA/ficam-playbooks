@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: Federal Common and Federal Bridge
-permalink: fpki/certsandcrls/
+permalink: /fpki/certsandcrls/
 sticky_sidenav: true
 sidenav: fpkicas
 

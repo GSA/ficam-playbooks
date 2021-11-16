@@ -123,27 +123,15 @@ The steps to distribute an intermediate CA certificate are the same as the steps
 
 The following certificates are published in the Federal Common Policy CA G2 certificate's Subject Information Access extension bundle located at http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c.
 
-- [Do I Need to Distribute the Intermediate CA Certificates?](#do-i-need-to-distribute-the-intermediate-ca-certificates)
-  - [Operating Systems](#operating-systems)
-  - [Applications](#applications)
-- [Which Certificates Do I Need to Distribute?](#which-certificates-do-i-need-to-distribute)
-- [How Do I Distribute the Intermediate CA Certificates?](#how-do-i-distribute-the-intermediate-ca-certificates)
-  - [Use Microsoft Group Policy Object](#use-microsoft-group-policy-object)
-  - [Use Apple Configuration Profile](#use-apple-configuration-profile)
-    - [Create an Apple Configuration Profile](#create-an-apple-configuration-profile)
-  - [Use Linux Command Line](#use-linux-command-line)
-  - [Certificates Issued By the Federal Common Policy CA G2](#certificates-issued-by-the-federal-common-policy-ca-g2)
-    - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
-    - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
-    - [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
-    - [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
-    - [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
-    - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
-    - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
-    - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
-    - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
-  - [Certificates issued to the Federal Common Policy CA G2](#certificates-issued-to-the-federal-common-policy-ca-g2)
-    - [Issued by: Federal Bridge CA G4](#issued-by-federal-bridge-ca-g4)
+  - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
+  - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
+  - [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
+  - [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
+  - [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
+  - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
+  - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
+  - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
+  - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
 
 {% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that are <b>unable</b> to perform dynamic path validation.  Learn more in the <a href=\"{{site.baseurl}}/fpki/common/faq/#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2\" target=\"_blank\">FAQ</a>." %}
 

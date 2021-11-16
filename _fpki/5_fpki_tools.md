@@ -2,21 +2,21 @@
 layout: page
 collection: fpki
 title: Useful Tools
-permalink: fpki/tools/
+permalink: /fpki/tools/
 sticky_sidenav: true
 sidenav: fpki
 
 subnav:
     - text: Federal PKI Graph
-      href: ../tools/fpkigraph/
+      href: {{site.baseurl}}/fpki/tools/fpkigraph/
     - text: Federal PKI Activity Report
-      href: ../tools/fpkiar/
+      href: {{site.baseurl}}/fpki/tools/fpkiar/
     - text: CITE Participation Guide
-      href: ../tools/citeguide/
+      href: {{site.baseurl}}/fpki/tools/citeguide/
     - text: Card Conformance Tool
-      href: ../tools/cct/
+      href: {{site.baseurl}}/fpki/tools/cct/
     - text: Certificate Profile Conformance Tool
-      href: ../tools/cpct/
+      href: {{site.baseurl}}/fpki/tools/cpct/
       
 ---
 

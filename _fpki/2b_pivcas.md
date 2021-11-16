@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: PIV CAs and Agencies
-permalink: fpki/pivcas-and-agencies/
+permalink: /fpki/pivcas-and-agencies/
 sticky_sidenav: true
 sidenav: fpkicas
 

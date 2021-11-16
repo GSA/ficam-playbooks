@@ -24,4 +24,3 @@ Collaborate across agency teams to identify applications that rely on custom tru
 <br>
 
 Next, determine if you need to [distribute the CA certificates issued by the FCPCA G2]({{site.baseurl}}/fpki/common/certificates/).
-
