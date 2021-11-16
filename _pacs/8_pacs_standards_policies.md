@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Standards, Policies, and Guidance
-permalink: pacs/standards/
+permalink: /pacs/standards/
 sticky_sidenav: true
 sidenav: pacs
 

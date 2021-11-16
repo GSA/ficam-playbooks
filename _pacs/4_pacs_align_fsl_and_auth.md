@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Aligning Facility Security Level (FSL) and Authentication
-permalink: pacs/alignfslandauth/
+permalink: /pacs/alignfslandauth/
 sticky_sidenav: true
 sidenav: pacs
 
@@ -34,7 +34,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 
 {% include alert-info.html content="These federal standards provide guidance for assessing FSL, including how to categorize site risks:<br> - <a href=\"https://www.dhs.gov/publication/isc-risk-management-process\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard </a> <br> - <a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access. </a>" %}
 
-![](../../assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
+![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
 - When you inventory critical assets, also document any challenges to secure them.  <br><br>Examples of critical assets include:
     - People
     - Information systems and IT infrastructure
@@ -46,7 +46,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
     - Impact on national security from potential asset loss, compromise, or damage
     - Cost of replacing the asset
     
-![](../../assets/img/check-box.png){:style="float:center"} &nbsp; **Assess site, critical asset risks, and risks to tenant agencies' assets**
+![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Assess site, critical asset risks, and risks to tenant agencies' assets**
 - Examples of potential risks to a site and its critical assets include: 
     - Site mission(s) (those of the agency, its organizations, and tenant agencies)
     - Site “symbolism” (public perception of the agency, its organizations, tenant agencies, or missions)
@@ -61,7 +61,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
     - Sensitivity - Does it contain classified or sensitive information?
     - Likelihood - What is the probability of loss, compromise, or damage?
     
-![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize each asset by risk impact level**
+![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize each asset by risk impact level**
 - [FIPS 199](https://csrc.nist.gov/publications/detail/fips/199/final){:target="_blank"}{:rel="noopener noreferrer"} defines three (3) impact levels on organizations and people (that is, a loss of confidentiality, integrity, or availability): 
    
 |Impact Level | Description |
@@ -70,7 +70,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 | *Moderate* | The loss of confidentiality, integrity, or availability could have a **serious** adverse effect on organizational operations, organizational assets, or individuals.| 
 |*High* | The loss of confidentiality, integrity, or availability could have a **severe or catastrophic** adverse effect on organizational operations, organizational assets, or individuals. |
 
-![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Create a site map of categorized assets**
+![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Create a site map of categorized assets**
 - This map will help you determine each security area's minimum security level.
 
 
@@ -82,7 +82,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 
 {% include alert-info.html content="Agencies may use different terms for their security areas; however, each agency should establish its criteria for authentication mechanisms, according to <a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a>." %}
 
-![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize security areas**
+![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize security areas**
 - Once you've inventoried and mapped assets by risk and impact level, it's time to categorize security areas.
 - NIST SP 800-116, Revision 1, defines three (3) security area categories: 
 
@@ -100,7 +100,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 
 {% include alert-info.html content="<a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a> recommends the following method to determine authentication factors for Exclusion, Limited and Controlled security areas." %}
 
-![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Determine authentication factors required for security area categories**
+![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Determine authentication factors required for security area categories**
 - Once you have categorized all security area categories, you will select the minimum number of authentication factors (1, 2, or 3) needed to access and safeguard the facility:
 
 | Category| Minimum Number of Factors | Description|
@@ -114,16 +114,16 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 
 {% include alert-info.html content="<a href=\"https://csrc.nist.gov/publications/detail/fips/201/2/final\" target=\"_blank\" rel=\"noopener noreferrer\">FIPS 201-2</a>, Personal Identity Verification (PIV) of Federal Employees and Contractors, defines authentication mechanisms at four assurance levels (Little or No, Some, High, and Very High)." %}
 
-![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanism for each security area**
+![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanism for each security area**
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
 - FIPS 201-2 specifies these authentication mechanisms for PIV credentials:
-    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)](../glossary/#pki-auth){:target="_blank"} 
-    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)](../glossary/#pki-cak){:target="_blank"} 
-    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)](../glossary/#sym-cak){:target="_blank"} 
-    - Unattended authentication using off-card biometric comparisons [(BIO)](../glossary/#bio){:target="_blank"} 
-    - Attended authentication using off-card biometric comparisons [(BIO-A)](../glossary/#bio-a){:target="_blank"} 
-    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))](../glossary/#bio-a){:target="_blank"} 
-    - Authentication using on-card biometric comparisons [(OCC-AUTH)](../glossary/#occ-auth){:target="_blank"} 
+    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/pacs/glossary/#pki-auth){:target="_blank"} 
+    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/pacs/glossary/#pki-cak){:target="_blank"} 
+    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/pacs/glossary/#sym-cak){:target="_blank"} 
+    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/pacs/glossary/#bio){:target="_blank"} 
+    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"} 
+    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"} 
+    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/pacs/glossary/#occ-auth){:target="_blank"} 
 
 
 The table below gives the possible authentication mechanisms for the three (3) security area categories defined by NIST SP 800-116, Revision 1:
@@ -138,6 +138,6 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 {% include alert-info.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA)." %}
 
-Visit the [PIV Guide](../../piv/cert-trust/) to learn more about certificate trust.
+Visit the [PIV Guide]({{site.baseurl}}/piv/cert-trust/) to learn more about certificate trust.
 
-The next section, [Procurements](../procure/), describes the processes and resources needed for a PACS procurement.
+The next section, [Procurements]({{site.baseurl}}/pacs/procure/), describes the processes and resources needed for a PACS procurement.

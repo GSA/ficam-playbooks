@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Glossary
-permalink: pacs/glossary/
+permalink: /pacs/glossary/
 sticky_sidenav: true
 sidenav: pacs
 ---
