@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: What Is a Physical Access Control System?
-permalink: pacs/what-is-pacs/
+permalink: /pacs/what-is-pacs/
 sticky_sidenav: true
 sidenav: pacs
 
@@ -22,7 +22,7 @@ The following table defines common PACS components:
 | **Component** | **Description** |
 |----------------|----------|
 | **Access point** | Entrance point or physical barrier where an employee or contractor interacts with the PACS. Example access points include turnstiles, gates, and locking doors. |
-| **PIV credential** | Federal employees and contractors use [Personal Identity Verification (PIV) credentials](../../piv/basics/){:target="_blank"} to *physically access* federal facilities and *logically access* federal information systems. |
+| **PIV credential** | Federal employees and contractors use [Personal Identity Verification (PIV) credentials]({{site.baseurl}}/piv/basics/){:target="_blank"} to *physically access* federal facilities and *logically access* federal information systems. |
 | **Credential reader and keypad** | The reader provides power to and reads data from a PIV credential. The reader also sends this data to a control panel to authenticate the PIV credential and request access authorization. Employees and contractors may need to enter a PIN into the keypad and add a biometric, depending on the facility's security classification and risk levels. | 
 | **Biometric reader** | Captures biometric data (for example, fingerprint or iris scan) and verifies it against the PIV credential's biometric data. |
 | **Control panel** | Receives the credential data sent by the reader and verifies its presence in the credential holder data repository. It then makes an access decision and transmits authorization data to the access control server and access point.  |
@@ -49,4 +49,4 @@ The FIPS 201 Evalutation Program in collaboration with the [PACS Modernization W
 - [PACS Assessment Toolkit Version 1.0](https://www.idmanagement.gov/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 
-The next section, [PACS Deployment Models](../pacs/), describes common deployment models for PACS.
+The next section, [PACS Deployment Models]({{site.baseurl}}/pacs/pacs/), describes common deployment models for PACS.
