@@ -38,17 +38,18 @@ subnav:
 [trying out DW md tables here as I build them]
 
 
-**Table 5. Validation (VD) Process**
+**Table 6. Identity Management System (IDMS) Data Fields**
 
-| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp; | Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
-| ----------- | ------------ | ----------- | :------------: | :-----------: | :------------: |
-| VD-1 | **Validate the digital worker role employs least privilege necessary to accomplish its task.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
-| VD-2 | **Validate the digital worker role doesn’t create separation of duty conflicts for the digital worker or any human users.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
-| VD-3 | **Validate the digital worker has undergone a code review prior to release. Additional code reviews are required for any code changes at higher impact.** | N/A | <b>✓</b><br>Following major changes to code | <b>✓</b><br>Following any changes to code | <b>✓</b><br>Following any changes to code |
-| VD-4| **Validate the digital worker has undergone review of ethics according to applicable government and/or agency standards** | N/A | N/A | <b>✓</b><br>Conduct initial review and annual periodic review | <b>✓</b><br>Conduct initial review and periodic review every six months |
-| VD-5 | **Validate the digital worker has undergone review for bias according to applicable government standards.** | N/A | <b>✓</b><br>Conduct initial bias review | <b>✓</b><br>Conduct initial bias review and annual periodic review | <b>✓</b><br>Conduct initial bias review and periodic review every six months |
-| VD-6 | **Validate the sponsor has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification every six months |
-| VD-7| **Validate the custodian has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification every six months |
+| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp; | IDMS Field Name | Field Type | Additional Guidance |
+| ----------- | ------------ | ----------- | ------------ | 
+| DF-1 | **Digital Worker**<br>_(new field)_ | Boolean<br>_e.g., Checkbox, True/False, yes/no, etc._ | _Denote if this is (Yes/True) or is not (No/False) a digital worker._ |
+| DF-2 | **Agency unique user ID**<br>_(existing field)_ | Text<br>_Recommend using “DW” or other uniqueness element followed by the identifier based on agency naming conventions._ | _Use a distinguishing and standard naming convention for digital workers. This isn’t a card holder unique identifier (CHUID) or related to PIV._ |
+| DF-3| **First Name** and **Last Name**<br>_(existing fields)_ | Text<br>_**First name:** group function<br>**Last name:** “DW” followed by a numerical value_ | _Use agency naming convention if IDMS requires first and last name. The first name field should be completed with the group function (e.g., Technology Division, CFO) and the last name field should be completed with “DW” followed by a numerical value corresponding with the sequential order in which the digital worker was built within the associated group function._ |
+| DF-4 | **Digital Worker Sponsor Name**<br>_(new field[s])_ | Text<br>_Recommend the individual’s full name (generally first and last name)_ | _Specify the sponsor of the digital worker._ |
+| DF-5 | **Digital Worker Custodian Name**<br>_(new field[s])_ | Text<br>_Recommend the individual’s full name (generally first and last name)_ | _Specify the custodian of the digital worker._ |
+| DF-6 | **Digital Worker Description**<br>_(optional new field)_ | Text (250)<br>_Recommend including a brief description of the digital worker (e.g., the type of AI used, the purpose, and actions of the digital worker)_ | _Provide a short description of what the digital worker does and the type of digital technology used._ |
+| DF-7 | **Responsible Organization**<br>_(optional new field)_ | Text<br>_Include the name of the organization according to the official agency organizational chart_ | _Specify the name of the responsible agency organization or group._ |
+
 
 
 
