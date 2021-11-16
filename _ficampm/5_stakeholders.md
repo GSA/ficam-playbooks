@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: Stakeholder Management
-permalink: pm/stakeholders/
+permalink: /pm/stakeholders/
 sidenav: pm
 sticky_sidenav: true
 

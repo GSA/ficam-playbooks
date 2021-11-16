@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: Privacy Considerations
-permalink: pm/privacy/
+permalink: /pm/privacy/
 sticky_sidenav: true
 sidenav: pm
 

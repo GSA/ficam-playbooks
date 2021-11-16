@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: Workstreams
-permalink: pm/workstreams/
+permalink: /pm/workstreams/
 sidenav: pm
 sticky_sidenav: true
 
