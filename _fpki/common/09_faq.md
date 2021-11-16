@@ -9,23 +9,31 @@ sidenav: fpkicommon
  
 {% include alert-warning.html heading="Heads-up! " content="The Federal PKI Management Authority has completed the revocation of the certificates issued by the Federal Common Policy CA.  If you are encountering any issues, please review our solutions for <a href=\"#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2\">Windows</a> and <a href=\"#how-do-i-configure-my-unmanaged-macos-device-to-trust-the-new-federal-common-policy-ca-g2\">macOS</a>.  If these solutions do not address your problem, please escalate to your agency or component help desk for additional support.  Agency or component help desks that need support can contact fpkirootupdate@gsa.gov." %} 
 
-- [Will my PIV credentials break or need to be updated or replaced when this change occurs](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs)
+- [Will my PIV credentials break or need to be updated or replaced when this change occurs?](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs)
 - [Is the Federal Common Policy CA changing?](#is-the-federal-common-policy-ca-changing)
 - [When will this change happen?](#when-will-this-change-happen)
 - [When will the certificates issued by the Federal Common Policy CA get revoked?](#when-will-the-certificates-issued-by-the-federal-common-policy-ca-get-revoked)
+    - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
+    - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
+    - [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
+    - [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
+    - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
+    - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
+    - [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
+    - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
 - [Which types of systems will this change affect?](#which-types-of-systems-will-this-change-affect)
 - [Which operating systems will this change affect?](#which-operating-systems-will-this-change-affect)
 - [What happens if I don’t distribute the FCPCA G2?](#what-happens-if-i-dont-distribute-the-fcpca-g2)
-- [What errors can occur in Windows if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-windows-if-i-dont-distribute-the-fcpca-g2)
-- [What errors can occur in macOS if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-macos-if-i-dont-distribute-the-fcpca-g2)
-- [What errors can occur in iOS if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-ios-if-i-dont-distribute-the-fcpca-g2)
+- [What errors can occur in Windows if I don't distribute the FCPCA G2?](#what-errors-can-occur-in-windows-if-i-dont-distribute-the-fcpca-g2)
+- [What errors can occur in macOS if I don't distribute the FCPCA G2?](#what-errors-can-occur-in-macos-if-i-dont-distribute-the-fcpca-g2)
+- [What errors can occur in iOS if I don't distribute the FCPCA G2?](#what-errors-can-occur-in-ios-if-i-dont-distribute-the-fcpca-g2)
 - [How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?](#how-can-i-verify-that-the-fcpca-g2-has-been-successfully-distributed-to-my-workstation-or-device)
-- [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
+- [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#my-agency-gets-piv-cards-from-issuer-name-i-wont-be-affected-by-this-change-right)
 - [Why aren't some Entrust Federal Shared Service Provider issued PIV credential certificates chaining to FCPCA G2?](#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2)
 - [Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
 - [How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2)
-- [How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-macos-device-to-trust-the-new-federal-common-policy-ca-g2) 
-- [How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-ios-device-to-trust-the-new-federal-common-policy-ca-g2) 
+- [How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-macos-device-to-trust-the-new-federal-common-policy-ca-g2)
+- [How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-ios-device-to-trust-the-new-federal-common-policy-ca-g2)
 - [How do I configure the Firefox web browser to trust the new Federal Common Policy CA G2?](#how-do-i-configure-the-firefox-web-browser-to-trust-the-new-federal-common-policy-ca-g2)
 
 
@@ -34,7 +42,7 @@ sidenav: fpkicommon
 
 No. PIV credentials will *not* be affected by this change.  For example, the graphic below shows the current and future state of certificate validation for a PIV credential issued by the USAccess Program.  Although two certificates in the chain are being updated, the PIV credential certificates are *not* affected. 
 <br>
-[![current_and_future_state](../../../assets/fpki/FCPCA_G2_Transition.jpg)](../../../assets/fpki/FCPCA_G2_Transition.jpg){:target="_blank"}{:rel="noopener noreferrer"}
+[![current_and_future_state]({{site.baseurl}}/assets/fpki/FCPCA_G2_Transition.jpg)]({{site.baseurl}}/assets/fpki/FCPCA_G2_Transition.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Is the Federal Common Policy CA changing?
 
@@ -181,48 +189,48 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     [![error_navigation](../../../assets/fpki/error_navigation.png)](../../../assets/fpki/error_navigation.png){:target="_blank"}{:rel="noopener noreferrer"}
+     [![error_navigation]({{site.baseurl}}/fpki/common/assets/fpki/error_navigation.png)]({{site.baseurl}}/assets/fpki/error_navigation.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     [![error_piv_auth](../../../assets/fpki/error_piv_auth.png)](../../../assets/fpki/error_piv_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+     [![error_piv_auth]({{site.baseurl}}/assets/fpki/error_piv_auth.png)]({{site.baseurl}}/assets/fpki/error_piv_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:*
      <br>
      <br>
-     [![error_sig_val](../../../assets/fpki/error_sig_val.png)](../../../assets/fpki/error_sig_val.png){:target="_blank"}{:rel="noopener noreferrer"}
+     [![error_sig_val]({{site.baseurl}}/assets/fpki/error_sig_val.png)]({{site.baseurl}}/assets/fpki/error_sig_val.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## What errors can occur in macOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     [![safari_untrusted_ssl](../../../assets/fpki/safari_untrusted_ssl.png){:style="width:85%;"}](../../../assets/fpki/safari_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
+     [![safari_untrusted_ssl]({{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     [![safari_untrusted_auth](../../../assets/fpki/safari_untrusted_auth.png){:style="width:85%;"}](../../../assets/fpki/safari_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+     [![safari_untrusted_auth]({{site.baseurl}}/assets/fpki/safari_untrusted_auth.png){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/safari_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     [![chrome_untrusted_ssl](../../../assets/fpki/chrome_untrusted_ssl.png){:style="width:85%;"}](../../../assets/fpki/chrome_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
+     [![chrome_untrusted_ssl]({{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     [![chrome_untrusted_auth](../../../assets/fpki/chrome_untrusted_auth.png){:style="width:85%;"}](../../../assets/fpki/chrome_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+     [![chrome_untrusted_auth]({{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## What errors can occur in iOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     <a href="../../../assets/fpki/ios_safari_untrusted_ssl.png" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_safari_untrusted_ssl.png" height="600" alt="ios_safari_untrusted_ssl"></a>
+     <a href="{{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png" height="600" alt="ios_safari_untrusted_ssl"></a>
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     <a href="../../../assets/fpki/ios_chrome_untrusted_ssl.png" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_chrome_untrusted_ssl.png" height="600" alt="ios_chrome_untrusted_ssl"></a>
+     <a href="{{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png" height="600" alt="ios_chrome_untrusted_ssl"></a>
 
 ## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
 
-Please review the steps to [verify distribution of the FCPCA G2](../verify-os-distribution/).
+Please review the steps to [verify distribution of the FCPCA G2]({{site.baseurl}}/fpki/common/verify-os-distribution/).
 
 ## My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?
 
@@ -234,11 +242,11 @@ This change *does* affect how federal enterprise workstations and devices valida
 
 Entrust Federal Shared Service Provider (SSP) PIV credential certificates issued before August 13, 2019, chain through an older version of the Entrust Managed Services Root CA on their way to the Federal Common Policy CA than certificates issued since.  This older version of the Entrust Managed Services Root CA will not receive a certificate from the Federal Common Policy CA G2.
 
-To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you should distribute [this](../../certs/Entrust_Managed_Services_Root_CA_Link.cer) "link certificate" as an intermediate CA certificate.  The link certificate allows workstations to build a path from the older Entrust Managed Services Root CA to the current version, which has been issued a certificate by the Federal Common Policy CA G2.  Review how to distribute intermediate CA certificates [here](../certificates/).
+To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you should distribute [this]({{site.baseurl}}/fpki/certs/Entrust_Managed_Services_Root_CA_Link.cer) "link certificate" as an intermediate CA certificate.  The link certificate allows workstations to build a path from the older Entrust Managed Services Root CA to the current version, which has been issued a certificate by the Federal Common Policy CA G2.  Review how to distribute intermediate CA certificates [here]({{site.baseurl}}/fpki/common/certificates/).
 
 The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk (" <span style="color:red">*</span>.")
 
-[![Link Certificate Path](../../../assets/fpki/link-cert-path.png)](../../../assets/fpki/link-cert-path.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![Link Certificate Path]({{site.baseurl}}/assets/fpki/link-cert-path.png)]({{site.baseurl}}/assets/fpki/link-cert-path.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
 
@@ -250,7 +258,7 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 
 ## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?
 1. Download a copy of the FCPCA G2 certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
-2. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices](../../certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
+2. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices]({{site.baseurl}}/fpki/certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
 3. Update your Trust Store:
      - Click **Start**, type **certmgr.msc**, and press **Enter**.
      - Right-click **Trusted Root Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
@@ -273,38 +281,38 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 
 **Note:** The following .gif demonstrates the distribution steps outlined above.
 <br>
-[![configure unmanaged device](../../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}](../../../assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![configure unmanaged device]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ## How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA G2?
-1. Download a copy of [fpki-unmanaged-bundle.mobileconfig](../../certs/fpki-unmanaged-bundle.mobileconfig)
+1. Download a copy of [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/fpki/certs/fpki-unmanaged-bundle.mobileconfig)
 2. Browse to and double-click on your copy of fpki-unmanaged-bundle.mobileconfig. 
 3. Navigate to **System Preferences** -> **Profiles**
 4. Verify the profile contents and click **Install** (twice) 
 
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using an Apple configuration profile on macOS.
 <br>
-[![A video that shows the steps to install an Apple configuration profile on macOS](../../../assets/fpki/macos-unmanaged.gif){:style="width:85%;"}](../../../assets/fpki/macos-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![A video that shows the steps to install an Apple configuration profile on macOS]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ## How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA G2?
 1. Launch **Safari**.
-2. Navigate to a copy of the [fpki-unmanaged-bundle.mobileconfig](../../certs/fpki-unmanaged-bundle.mobileconfig)
+2. Navigate to a copy of the [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/fpki/certs/fpki-unmanaged-bundle.mobileconfig)
 > System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
 3. Click **Allow**.<br>
 4. Navigate to **Settings** -> **General** -> **Profile** 
 5. Select the "Distribute FCPCAG2 and Intermediate CA Certificates" profile
 6. Select **More Details** and select the certificate entry for the FCPCA G2
-7. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](../obtain-and-verify).
+7. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value]({{site.baseurl}}/fpki/common/obtain-and-verify).
 8. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
 9. When prompted, enter your device **passcode**.
 10. Click **Install** in the upper right corner, and **Install** again.
 11. Click **Done**.
-12. Enable [full trust for the FCPCA G2](../distribute-os/#enable-full-trust-for-fcpca-g2).
+12. Enable [full trust for the FCPCA G2]({{site.baseurl}}/fpki/common/distribute-os/#enable-full-trust-for-fcpca-g2).
 
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using the Safari web browser.
 <br>
-<a href="../../../assets/fpki/ios_safari_configuration-unmanaged.gif" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_safari_configuration-unmanaged.gif" height="600" alt="A video that shows the steps to install a mobile configuration file in the Safari web browser"></a>
+<a href="{{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif" height="600" alt="A video that shows the steps to install a mobile configuration file in the Safari web browser"></a>
 
 ## How do I configure the Firefox web browser to trust the new Federal Common Policy CA G2?
 The following steps will allow Firefox to use the underlying operating system trust store.  Follow these steps only after distributing the Federal Common Policy CA G2 to your Windows or macOS device.
@@ -315,5 +323,5 @@ The following steps will allow Firefox to use the underlying operating system tr
 
 **Note:**&nbsp;&nbsp;The following video shows you how to configure the Firefox web browser to trust the certificates included in the operating system trust store.
 <br>
-<a href="../../../assets/fpki/configure-firefox.gif" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/configure-firefox.gif" height="90%" width="90%" alt="A video that shows the steps to configure the Firefox web browser"></a>
+<a href="{{site.baseurl}}/assets/fpki/configure-firefox.gif" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/configure-firefox.gif" height="90%" width="90%" alt="A video that shows the steps to configure the Firefox web browser"></a>
 

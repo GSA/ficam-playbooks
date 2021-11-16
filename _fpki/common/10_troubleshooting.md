@@ -2,7 +2,7 @@
 layout: page 
 title: Troubleshooting Procedures
 collection: fpki
-permalink: fpki/common/troubleshooting/
+permalink: /fpki/common/troubleshooting/
 sticky_sidenav: true
 sidenav: fpkicommon
 ---
@@ -10,11 +10,22 @@ sidenav: fpkicommon
 {% include alert-success.html content="This page presents common issues and troubleshooting procedures related to the Federal PKI Root CA migration.  We encourage <b>only</b> Domain or System Administrators follow the procedures listed on this page.  If you need help or have any questions, email us at fpkirootupdate@gsa.gov." %} 
  
 ## Windows Troubleshooting
-- [How come my workstation isn't chaining to FCPCA G2?](#how-come-my-workstation-isnt-chaining-to-fcpca-g2)
-- [How come I can't login to an application or website with my PIV after migrating to FCPCA G2?](#how-come-i-cant-login-to-an-application-or-website-with-my-piv-after-migrating-to-fcpca-g2)
-- [How can I verify network configurations aren't preventing certificate validation?](#how-can-i-verify-network-configurations-arent-preventing-certificate-validation)
-- [Is there any logging I can enable to help verify what's going on?](#is-there-any-logging-i-can-enable-to-help-verify-whats-going-on)
-- [Are there any useful commands that I should be familiar with?](#are-there-any-useful-commands-that-i-should-be-familiar-with)
+- [Windows Troubleshooting](#windows-troubleshooting)
+- [macOS Troubleshooting](#macos-troubleshooting)
+- [iOS Troubleshooting](#ios-troubleshooting)
+- [Solutions](#solutions)
+  - [Windows](#windows)
+    - [How come my workstation isn't chaining to FCPCA G2?](#how-come-my-workstation-isnt-chaining-to-fcpca-g2)
+    - [How come I can't login to an application or website with my PIV after migrating to FCPCA G2?](#how-come-i-cant-login-to-an-application-or-website-with-my-piv-after-migrating-to-fcpca-g2)
+    - [How can I verify network configurations aren't preventing certificate validation?](#how-can-i-verify-network-configurations-arent-preventing-certificate-validation)
+    - [Is there any logging I can enable to help verify what's going on?](#is-there-any-logging-i-can-enable-to-help-verify-whats-going-on)
+    - [Are there any useful commands that I should be familiar with?](#are-there-any-useful-commands-that-i-should-be-familiar-with)
+  - [macOS](#macos)
+    - [How come my workstation isn't chaining to FCPCA G2?](#how-come-my-workstation-isnt-chaining-to-fcpca-g2-1)
+    - [How come I can't login to an application or website with my PIV after migrating to FCPCA G2?](#how-come-i-cant-login-to-an-application-or-website-with-my-piv-after-migrating-to-fcpca-g2-1)
+    - [Are there any useful commands that I should be familiar with?](#are-there-any-useful-commands-that-i-should-be-familiar-with-1)
+  - [iOS](#ios)
+    - [Why am I seeing TLS certificate errors?](#why-am-i-seeing-tls-certificate-errors)
 
 ## macOS Troubleshooting
 - [How come my workstation isn't chaining to FCPCA G2?](#how-come-my-workstation-isnt-chaining-to-fcpca-g2)

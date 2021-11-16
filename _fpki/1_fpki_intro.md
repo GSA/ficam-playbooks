@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: Federal Public Key Infrastructure Guide Introduction
-permalink: fpki/
+permalink: /fpki/
 sticky_sidenav: true
 sidenav: fpki
 
@@ -36,7 +36,7 @@ The participating certification authorities and the policies, processes, and aud
 
 The Federal PKI includes U.S. federal, state, local, tribal, territorial, and international governments, as well as commercial organizations, that work together to provide services for the benefit of the federal government.
 
-Use the [FPKI Graph](../fpki/tools/fpkigraph/) to see the relationships between the certification authorities in the Federal PKI ecosystem. It graphically depicts how each certification authority links to another through cross-certificates, subordinate certificates, or bridge CAs.
+Use the [FPKI Graph]({{site.baseurl}}/fpki/tools/fpkigraph/) to see the relationships between the certification authorities in the Federal PKI ecosystem. It graphically depicts how each certification authority links to another through cross-certificates, subordinate certificates, or bridge CAs.
 
 ### What Is an Example of an Identity Certificate?
 A PIV certificate is a simple example.  Although there are many types of identity certificates, it's easiest to explain **PIV** certificates since you might have one:
@@ -49,7 +49,7 @@ A PIV certificate is a simple example.  Although there are many types of identit
 
 The full process of proving identity when issuing certificates, auditing the certification authorities, and the cryptographic protections of the digital signatures establish the _basis of trust_.
 
-For the U.S. federal government Executive Branch agencies, there is one root certification authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of intermediate certification authorities and bridged certification authorities. See [a graph of the Federal PKI, including the business communities](../fpki/tools/fpkigraph/).
+For the U.S. federal government Executive Branch agencies, there is one root certification authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of intermediate certification authorities and bridged certification authorities. See [a graph of the Federal PKI, including the business communities]({{site.baseurl}}/fpki/tools/fpkigraph/).
 
 
 ### Why Should Agencies Use Certificates from the Federal PKI?

@@ -27,9 +27,9 @@ An agency's Identity, Credential, and Access Management (ICAM) program requires 
 
 The following list includes the necessary components of an ICAM program.
 
-- [**Program Governance and Leadership**]({{site.baseurl}}//pm/governance/) - Establish operational policies and requirements.
-- [**Workstreams**]({{site.baseurl}}//pm/workstreams/) - Categorize tasks and assign them to the proper resources.
-- [**Stakeholder Management**]({{site.baseurl}}//pm/stakeholders/) - Identify and communicate with stakeholders.
-- [**Communication Plan**]({{site.baseurl}}//pm/comm/) - Define and appropriately communicate program objectives and goals.
-- [**Performance Management**]({{site.baseurl}}//pm/performance/) - Measure and report progress, effectiveness, and improvements.
-- [**Privacy Requirements**]({{site.baseurl}}//pm/privacy/) - Manage risks associated with handling personally identifiable information (PII).
+- [**Program Governance and Leadership**]({{site.baseurl}}/pm/governance/) - Establish operational policies and requirements.
+- [**Workstreams**]({{site.baseurl}}/pm/workstreams/) - Categorize tasks and assign them to the proper resources.
+- [**Stakeholder Management**]({{site.baseurl}}/pm/stakeholders/) - Identify and communicate with stakeholders.
+- [**Communication Plan**]({{site.baseurl}}/pm/comm/) - Define and appropriately communicate program objectives and goals.
+- [**Performance Management**]({{site.baseurl}}/pm/performance/) - Measure and report progress, effectiveness, and improvements.
+- [**Privacy Requirements**]({{site.baseurl}}/pm/privacy/) - Manage risks associated with handling personally identifiable information (PII).

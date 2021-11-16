@@ -2,7 +2,7 @@
 layout: page 
 title: 2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate
 collection: fpki
-permalink: fpki/common/obtain-and-verify/
+permalink: /fpki/common/obtain-and-verify/
 sticky_sidenav: true
 sidenav: fpkicommon
 
@@ -44,7 +44,7 @@ To verify your copy of FCPCA G2, use one of these options:
 
 **Note:** The following .gif shows you how to verify your copy of FCPCA G2 on Microsoft Server 2016.
 <br>
-[![A .gif that shows the verification steps performed on Microsoft Server 2016](../../../assets/fpki/verify.gif){:style="width:100%;"}](../../../assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![A .gif that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/assets/fpki/verify.gif){:style="width:100%;"}]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 <br>
 
@@ -60,7 +60,7 @@ To verify your copy of FCPCA G2, use one of these options:
 
 **Note:** The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina (10.15).
 <br>
-[![The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina 10.15](../../../assets/fpki/download_and_verify.gif){:style="width:85%;"}](../../../assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina 10.15]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### On Linux/Unix: Use the Command Line
@@ -73,4 +73,4 @@ To verify your copy of FCPCA G2, use one of these options:
 
 <br>
 
-Next, [distribute the Federal Common Policy CA G2 certificate as an operating system trusted root](../distribute-os/).
+Next, [distribute the Federal Common Policy CA G2 certificate as an operating system trusted root]({{site.baseurl}}fpki/common/distribute-os/).
