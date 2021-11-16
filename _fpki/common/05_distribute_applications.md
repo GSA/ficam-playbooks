@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: fpkicommon
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\"  target="_blank" rel="noopener">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target="_blank" rel="noopener">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
 
 Many, but not all, software applications leverage the underlying operating system [trust store]({{site.baseurl}}/fpki/trust-stores/) to verify whether a certificate should be trusted. 
 
@@ -19,7 +19,7 @@ Collaborate across agency teams to identify applications that rely on custom tru
 - OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
 
 
-{% include alert-warning.html content="<strong>Important!</strong> Depending on how these applications are configured, it's likely you'll also need to distribute the <a href=\"{{site.baseurl}}/fpki/common/certificates/\"  target="_blank" rel="noopener">intermediate CA certificates</a> issued by the FCPCA G2." %}
+{% include alert-warning.html content="<strong>Important!</strong> Depending on how these applications are configured, it's likely you'll also need to distribute the <a href="{{site.baseurl}}/fpki/common/certificates/">intermediate CA certificates</a> issued by the FCPCA G2." %}
 
 <br>
 
