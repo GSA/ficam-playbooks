@@ -38,18 +38,17 @@ subnav:
 [trying out DW md tables here as I build them]
 
 
-**Table 4. Sponsorship Process (SP)**
+**Table 5. Validation (VD) Process**
 
-| &nbsp;&nbsp;&nbsp;ID<sup>5</sup>&nbsp; | Action&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
+| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp; | Action&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
 | ----------- | ------------ | ----------- | :------------: | :-----------: | :------------: |
-| SP-1 | **Document a business need for the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
-| SP-2 | **Assign an organizational sponsor for the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b><br>Suggested CIO, CISO, or equivalent |
-| SP-3 | **Sponsor acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A | <b>✓</b><br>Recertify sponsor annually | <b>✓</b><br>Recertify sponsor annually | <b>✓</b><br>Recertify sponsor every six months |
-| SP-4 | **Sponsor assigns the custodian of the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
-| SP-5 | **Notify the custodian of his or her responsibility by the sponsor.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
-| SP-6 | **Confirm the custodian acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A | <b>✓</b><br>Recertify custodian annually | <b>✓</b><br>Recertify custodian annually | <b>✓</b><br>Recertify custodian every six months |
-
-
+| VD-1 | **Validate the digital worker role employs least privilege necessary to accomplish its task.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
+| VD-2 | **Validate the digital worker role doesn’t create separation of duty conflicts for the digital worker or any human users.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
+| VD-3 | **Validate the digital worker has undergone a code review prior to release. Additional code reviews are required for any code changes at higher impact.** | N/A | <b>✓</b><br>Following major changes to code | <b>✓</b><br>Following any changes to code | <b>✓</b><br>Following any changes to code |
+| VD-4| **Validate the digital worker has undergone review of ethics according to applicable government and/or agency standards** | N/A | N/A | <b>✓</b><br>Conduct initial review and annual periodic review | <b>✓</b><br>Conduct initial review and periodic review every six months |
+| VD-5 | **Validate the digital worker has undergone review for bias according to applicable government standards.** | N/A | <b>✓</b><br>Conduct initial bias review | <b>✓</b><br>Conduct initial bias review and annual periodic review | <b>✓</b><br>Conduct initial bias review and periodic review every six months |
+| VD-6 | **Validate the sponsor has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification every six months |
+| VD-7| **Validate the custodian has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification every six months |
 
 
 
