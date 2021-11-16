@@ -40,7 +40,7 @@ subnav:
 
 **Table 6. Identity Management System (IDMS) Data Fields**
 
-| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp; | IDMS Field Name | Field Type | Additional Guidance |
+| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp; | IDMS Field Name&nbsp;&nbsp; | Field Type | Additional Guidance |
 | ----------- | ------------ | ----------- | ------------ | 
 | DF-1 | **Digital Worker**<br>_(new field)_ | Boolean<br>_e.g., Checkbox, True/False, yes/no, etc._ | _Denote if this is (Yes/True) or is not (No/False) a digital worker._ |
 | DF-2 | **Agency unique user ID**<br>_(existing field)_ | Text<br>_Recommend using “DW” or other uniqueness element followed by the identifier based on agency naming conventions._ | _Use a distinguishing and standard naming convention for digital workers. This isn’t a card holder unique identifier (CHUID) or related to PIV._ |
