@@ -3,7 +3,7 @@ layout: page
 title: New Test Tools Available
 pubDate: May 18, 2021
 collection: fpki
-permalink: fpki/announcements/test-tools/
+permalink: /fpki/announcements/test-tools/
 description: Release announcement for the Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
 category: Active
 sticky_sidenav: true
@@ -13,8 +13,8 @@ sidenav: fpkiactiveannouncements
 
 GSA has created two tools to streamline Federal PKI Annual Review testing with remote evaluation capabilities.
 
--	[**Card Conformance Tool (CCT)**](../../tools/cct/) - a GSA managed Java tool which validates that Personal Identity Verification (PIV) and PIV-Interoperable (PIV-I) smart cards are compliant with key standards.
--	[**Certificate Profile Conformance Tool (CPCT)**](../../tools/cpct/) - a web site application that analyzes certificates for conformance to a specific Federal PKI profile document version and certificate profile.
+-	[**Card Conformance Tool (CCT)**]({{site.baseurl}}//tools/cct/) - a GSA managed Java tool which validates that Personal Identity Verification (PIV) and PIV-Interoperable (PIV-I) smart cards are compliant with key standards.
+-	[**Certificate Profile Conformance Tool (CPCT)**]({{site.baseurl}}//tools/cpct/) - a web site application that analyzes certificates for conformance to a specific Federal PKI profile document version and certificate profile.
   
 The tools enable entity representatives to perform testing directly, with results verified by the GSA FIPS 201 Evaluation Program support team. Benefits include:
 -	Preemptive identification of possible issues during development and maintenance, and 

@@ -2,7 +2,7 @@
 layout: page 
 title: 1. Prepare to migrate to the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/prepare-to-migrate/
+permalink: /fpki/common/prepare-to-migrate/
 sticky_sidenav: true
 sidenav: fpkicommon
 ---

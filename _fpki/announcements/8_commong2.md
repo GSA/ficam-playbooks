@@ -5,7 +5,7 @@ date: 10/12/2020
 archiveDate: 10/11/2021
 removeDate: 10/11/2023
 collection: fpki
-permalink: fpki/announcements/common-g2-update/
+permalink: /fpki/announcements/common-g2-update/
 description: Details on the Federal Common Policy CA G2 timeline and actions agencies need to perform.
 category: Active
 sticky_sidenav: true
