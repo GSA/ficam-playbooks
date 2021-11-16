@@ -133,7 +133,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
   - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
   - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
 
-{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that are <b>unable</b> to perform dynamic path validation.  Learn more in the <a href=\"{{site.baseurl}}/fpki/common/faq/#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2/\" target=\"_blank\">FAQ</a>." %}
+{% include alert-success.html content="The intermediate certification authorities (CAs) with certificates issued by the Federal Common Policy CA (FCPCA) were issued new certificates by the Federal Common Policy CA G2 (FCPCA G2) to support the migration to the new Federal PKI trust anchor.  <b>Depending on agency configurations, you might need to distribute these certificates to systems and applications</b>.  <br><br>This page will help you understand <a href=\"#do-i-need-to-distribute-the-intermediate-ca-certificates\">when to distribute the intermediate CA certificates</a>, <a href=\"#which-certificates-do-i-need-to-distribute\">which certificates to distribute</a>, and <a href=\"#how-do-i-distribute-the-intermediate-ca-certificates\">recommended solutions</a>.  This page also lists <a href=\"#certificates-issued-by-the-federal-common-policy-ca-g2\">intermediate CA certificate details</a>, including download locations." %}
 
 
 #### Issued to: Federal Bridge CA G4

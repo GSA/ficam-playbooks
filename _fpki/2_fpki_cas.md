@@ -14,9 +14,9 @@ subnav:
   - text: All Federal PKI Certification Authorities
     href: '#all-federal-pki-certification-authorities'
   - text: Federal Common and Federal Bridge Certificate Details
-    href: {{site.baseurl}}/fpki/certsandcrls/
+    href: ../fpki/certsandcrls/
   - text: PIV CAs and Agencies
-    href: {{site.baseurl}}/fpki/pivcas-and-agencies/
+    href: ../fpki/pivcas-and-agencies/
 ---
 
 A **_certification authority_** is a system that issues digital certificates. These digital certificates are based on _cryptography_ and follow the X.509 standards defined for information security.
@@ -31,7 +31,7 @@ Any CA in the FPKI may be referred to as a _Federal PKI CA_. The two highest lev
 
 COMMON serves as the _root_ and _trust anchor_ for the _intermediate_ and _issuing_ CAs operated by federal government Executive Branch agencies.
 
-{% include alert-info.html content="<strong>Public trust for websites</strong><br>A new effort is in the planning stages to establish another federal government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the federal government's new certificate policy for this <a href="https://github.com/uspki/policies" target="_blank" rel="noopener noreferrer">Public Trust effort</a>. %}
+{% include alert-info.html content="<strong>Public trust for websites</strong><br>A new effort is in the planning stages to establish another federal government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the federal government's new certificate policy for this public trust effort at https://github.com/uspki/policies." %}
 
 ### Federal Common Policy Certification Authority
 

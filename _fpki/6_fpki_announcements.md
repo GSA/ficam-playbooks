@@ -8,9 +8,9 @@ sidenav: fpki
 
 subnav:
   - text: Active
-    href: {{site.baseurl}}/fpki/announcements/test-tools/
+    href: ../fpki/announcements/test-tools/
   - text: Archived
-    href: {{site.baseurl}}/fpki/announcements/2019fpkimigration/
+    href: ../fpki/announcements/2019fpkimigration/
 ---
 
 These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
