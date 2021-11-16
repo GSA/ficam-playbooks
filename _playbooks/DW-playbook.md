@@ -37,14 +37,13 @@ subnav:
 
 [trying out DW md tables here as I build them]
 
-***Table 2. Potential Adverse Impact Levels** 
 
-| Impact Score | Potential Adverse Impact | Description |
-| ------------------------ | ------------ | ------------------ |
-| 0-35 | **Low** | Effects of an error or accident are minimal, resulting in negligible, if any, impacts on organizational operations, finances, assets, individuals, other organizations, or the nation. |
-| 36-55 | **Moderate** | Effects of an error or accident are limited and may result in minor or temporary impact on organizational missions/business functions, organizational assets, or the nation. This includes increased difficulty in performing business operations in a timely manner, with sufficient confidence, or within planned resource constraints; minor damage to agency image, reputation, or trust; minor financial loss to the agency or other organizations; and/or noncompliance with applicable laws or regulations. |
-| 56-90 | **High** | Effects of an error or accident are wide-ranging and could result in serious or long-term impact on organizational missions/business functions, organizational assets, or the nation. This includes significant financial losses for the agency; substantially reduced capacity to conduct mission critical business; loss of PII, Business Identifiable Information, or PHI; and/or damage to agency image or reputation. |
-| 91+ | **Critical** | Effects of an error or accident are extensive and will have severe or catastrophic impact on organizational missions/business functions, assets, or the nation. This includes major financial losses for the agency or other organizations, loss of government continuity of operations or ability to conduct mission critical business, life-threatening injury or loss of life, and/or harm to national security. |
+**Table 3. Sponsor and Custodian Responsibilities** 
+
+| Role | Description | Responsibilities |
+| -------------------- | ------------ | ------------------ |
+| Sponsor | ● Responsible for digital worker compliance; and<br>● A federal government employee. | ● Assign roles and responsibilities to govern the digital worker, such as a primary and backup custodian; <br>● Field digital worker inquiries from agency or other government entity leaders; and<br>● Oversee who has access to the digital worker. |
+| Custodian | ● Responsible for digital worker day-to-day operational management; and<br>● A federal government employee or contractor. | ● Hold a comparable level of access as the digital worker;<br>● Complete initial and routine training in digital worker management and security;<br>● Rotate digital worker password or authenticators;<br>● Maintain digital worker access;<br>● Oversee retraining or tuning of an underlying model; and<br>● Track and monitor digital worker data input and output. |
 
 
 
