@@ -36,6 +36,11 @@ February 12, 2021
 
 This playbook is a collaboration between the Identity, Credential, and Access Management Subcommittee of the Federal Chief Information Security Officer (CISO) Council and the General Services Administration Office of Government-wide Policy identity Assurance and Trusted Access Division
 
+| Version Number | Date | Change Description |
+| :----------: | :-------: | -------- |
+| 1.0 | 2/12/21 | Initial Draft |
+| 1.1 | 11/16/21 | Add SSO US code reference. Added Appendix A of SSO troubleshooting steps. |
+
 # Executive Summary
 The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federal agencies implement or modernize an SSO service for federal employee access to government applications. SSO is a component of Identity, Credential, and Access Management (ICAM) that agencies use to centralize access to applications. SSO enables end users to log in to multiple applications using extensible multi-factor authentication options. It also extends capabilities for applications that don’t natively support multi-factor authentication. Other benefits of Enterprise SSO include: 
 
