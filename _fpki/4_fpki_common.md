@@ -9,26 +9,26 @@ sidenav: fpki
 
 subnav:
   - text: 1. Prepare to migrate to the Federal Common Policy CA G2
-    href: {{site.baseurl}}/fpki/common/prepare-to-migrate/
+    href: ../fpki/common/prepare-to-migrate/
   - text: 2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate
-    href: {{site.baseurl}}/fpki/common/obtain-and-verify/
+    href: ../fpki/common/obtain-and-verify/
   - text: 3. Distribute the certificate to operating systems
-    href: {{site.baseurl}}/fpki/common/distribute-os/
+    href: ../fpki/common/distribute-os/
   - text: 4. Verify operating system distribution
-    href: {{site.baseurl}}/fpki/common/verify-os-distribution/
+    href: ../fpki/common/verify-os-distribution/
   - text: 5. Distribute the certificate to applications
-    href: {{site.baseurl}}/fpki/common/distribute-apps/
+    href: ../fpki/common/distribute-apps/
   - text: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2
-    href: {{site.baseurl}}/fpki/common/certificates/
+    href: ../fpki/common/certificates/
   - text: 7. Migrate to the Federal Common Policy CA G2
-    href: {{site.baseurl}}/fpki/common/migrate/
+    href: ../fpki/common/migrate/
   - text: 8. Verify migration to the Federal Common Policy CA G2
-    href: {{site.baseurl}}/fpki/common/verify-migration/
+    href: ../fpki/common/verify-migration/
   - text: Frequently Asked Questions
-    href: {{site.baseurl}}/fpki/common/faq/
+    href: ../fpki/common/faq/
 ---
 
-{% include alert-warning.html heading="Heads-up!" content="The Federal PKI Management Authority has completed the revocation of the certificates issued by the Federal Common Policy CA.  If you encounter any issues, please review the contents of this playbook, including the <a href=\"{{site.baseurl}}/fpki/common/faq/\" target=\"_blank\">Frequently Asked Questions</a> page." %} 
+{% include alert-warning.html heading="Heads-up!" content="The Federal PKI Management Authority completed the Federal Common Policy CA certificate revocation activites.  If you encounter any issues, please review the contents of this playbook, including the <a href=\"{{site.baseurl}}/fpki/common/faq/\" target=\"_blank\">Frequently Asked Questions</a> page." %} 
 
 The federal government recently deployed the **Federal Common Policy CA (FCPCA) G2**, a new Federal Public Key Infrastructure (FPKI) root certification authority (CA). As the existing Federal Common Policy CA reaches the end of its planned service life, FCPCA G2 will roll out incrementally and serve as the new trust anchor for the Federal PKI. Below, you'll find important dates and steps for a successful operational transition to the FCPCA G2 trust anchor.
 

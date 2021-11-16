@@ -37,7 +37,7 @@ Verify that the certificate hash matches the SHA-256 Thumbprint in the certifica
 
 **Note:**&nbsp;&nbsp;This video shows you how to download and verify a copy of COMMON for **macOS**.
 <br>
-[![This video shows you how to download and verify a copy of COMMON for macOS](../../../assets/fpki/download_and_verify.gif){:style="width:85%;"}](../../../assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![This video shows you how to download and verify a copy of COMMON for macOS]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Redistribute COMMON
@@ -70,7 +70,7 @@ These steps will help you to create, distribute, and install profiles using Appl
 
 **Note:**&nbsp;&nbsp;This video shows you how to create an Apple Configuration Profile. The steps and example below also show you how to do this.<br><br>This profile can be reused.
 <br>
-[![This video shows you how to create an Apple Configuration Profile. The steps and example below also show you how to do this.](../../../assets/fpki/create_profile.gif){:style="width:85%;"}](../../../assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![This video shows you how to create an Apple Configuration Profile. The steps and example below also show you how to do this.]({{site.baseurl}}/assets/fpki/create_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 <p align="center">
@@ -173,7 +173,7 @@ We recommend using an automated method to install Apple Configuration Profiles o
 You can also manually install a profile. 
 
 **Note:**&nbsp;&nbsp;This video shows you how to manually install an Apple Configuration Profile on **macOS**.
-[![This video shows you how to manually install an Apple Configuration Profile on macOS](../../../assets/fpki/manual_install_profile.gif){:style="width:85%;"}](../../../assets/fpki/manual_install_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![This video shows you how to manually install an Apple Configuration Profile on macOS]({{site.baseurl}}/assets/fpki/manual_install_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/manual_install_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 #### Install COMMON Using Command Line
@@ -190,7 +190,7 @@ You can also manually install a profile.
     
 **Note:**&nbsp;&nbsp;This video shows you how to install COMMON using the command line.
 <br>
-[![This video shows you how to install COMMON using the command line](../../../assets/fpki/install_command_line.gif){:style="width:85%;"}](../../../assets/fpki/install_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![This video shows you how to install COMMON using the command line]({{site.baseurl}}/assets/fpki/install_command_line.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/install_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 #### Install COMMON Using Apple Keychain Access
@@ -213,7 +213,7 @@ You can use one of these methods to install COMMON by using Apple Keychain Acces
 
 **Note:**&nbsp;&nbsp;This video shows you how to install COMMON by using the Apple Keychain Access import process.
 <br>
-[![This video shows you how to install COMMON by using the Apple Keychain Access import process.](../../../assets/fpki/keychain_gui_admin.gif){:style="width:85%;"}](../../../assets/fpki/keychain_gui_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![This video shows you how to install COMMON by using the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ##### Login Keychain
@@ -226,7 +226,7 @@ You can use one of these methods to install COMMON by using Apple Keychain Acces
 
 **Note:**&nbsp;&nbsp;This video shows non-administrators how to install COMMON by using<br>the Apple Keychain Access import process.
 <br>
-[![This video shows non-administrators how to install COMMON by using<br>the Apple Keychain Access import process.](../../../assets/fpki/keychain_gui_non_admin.gif){:style="width:85%;"}](../../../assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![This video shows non-administrators how to install COMMON by using<br>the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### iOS Solutions

@@ -44,7 +44,7 @@ The following steps pertain to Microsoft Outlook 2016.
 
 **Note:** The following screenshot shows an example of a completed security preference configuration.
 
-[![A completed security preference configuration](../../../assets/piv/outlook-certificate-configuration.png){:style="width:85%;"}](../../../assets/piv/outlook-certificate-configuration.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A completed security preference configuration]({{site.baseurl}}/assets/piv/outlook-certificate-configuration.png){:style="width:85%;"}]({{site.baseurl}}/assets/piv/outlook-certificate-configuration.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Publish your Certificates to the Global Address List
 
@@ -59,7 +59,7 @@ The Global Address List (GAL) is a shared, enterprise-wide contact directory in 
 
 **Note:** The following screenshot shows the location of the **Publish to GAL...** button.
 
-[![The Publish to GAL button is located in the Trust Center](../../../assets/piv/outlook-certificate-configuration-publish-gal.png){:style="width:85%;"}](../../../assets/piv/outlook-certificate-configuration-publish-gal.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![The Publish to GAL button is located in the Trust Center]({{site.baseurl}}/assets/piv/outlook-certificate-configuration-publish-gal.png){:style="width:85%;"}]({{site.baseurl}}/assets/piv/outlook-certificate-configuration-publish-gal.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Send a Signed Email
 1. Compose an email.
@@ -70,7 +70,7 @@ The Global Address List (GAL) is a shared, enterprise-wide contact directory in 
 
 **Note:** The following screenshot shows a signed email.
 
-[![A signed email](../../../assets/piv/outlook-certificate-configuration-signed-email.png){:style="width:85%;"}](../../../assets/piv/outlook-certificate-configuration-signed-email.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A signed email]({{site.baseurl}}/assets/piv/outlook-certificate-configuration-signed-email.png){:style="width:85%;"}]({{site.baseurl}}/assets/piv/outlook-certificate-configuration-signed-email.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Send an Encrypted Email
 1. Compose an email.
@@ -80,13 +80,13 @@ The Global Address List (GAL) is a shared, enterprise-wide contact directory in 
 
 **Note:** It's common practice to sign a message when encrypting it, as observed below.
 
-[![A signed and encrypted email](../../../assets/piv/outlook-certificate-configuration-encrypted-email.png){:style="width:85%;"}](../../../assets/piv/outlook-certificate-configuration-encrypted-email.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A signed and encrypted email]({{site.baseurl}}/assets/piv/outlook-certificate-configuration-encrypted-email.png){:style="width:85%;"}]({{site.baseurl}}/assets/piv/outlook-certificate-configuration-encrypted-email.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Manually Import a User's Encryption Certificate
 
 When sending an encrypted email, the message is encrypted using the public key in the intended recipient's certificate.  If Outlook cannot find the intended recipient's public key through the [Global Address List](#publish-your-certificates-to-the-global-address-list), you may need to load it manually.
 
-1. Obtain a copy of the intended recipient's [Key Management](../../details/#understand-piv-certificates) certificate (you may need to ask the intended recipient to export and share their certificate with you)
+1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/piv/details/#understand-piv-certificates) certificate (you may need to ask the intended recipient to export and share their certificate with you)
 2. Click the **Home** tab.
 3. Click the **Address Book**.
 4. Select **File** -> **New Entry**.
@@ -98,7 +98,7 @@ When sending an encrypted email, the message is encrypted using the public key i
 
  **Note:** The following screenshot shows a certificate loaded into a contact entry.
 
-[![A completed contact entry.](../../../assets/piv/outlook-certificate-configuration-contact-entry.png){:style="width:85%;"}](../../../assets/piv/outlook-certificate-configuration-contact-entry.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A completed contact entry.]({{site.baseurl}}/assets/piv/outlook-certificate-configuration-contact-entry.png){:style="width:85%;"}]({{site.baseurl}}/assets/piv/outlook-certificate-configuration-contact-entry.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Decrypt an Email
 
