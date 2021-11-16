@@ -31,7 +31,7 @@ subnav:
     href: '#step-5-federate-application-access'
 ---
 
-Version 1.0  
+Version 1.1  
 February 12, 2021
 
 This playbook is a collaboration between the Identity, Credential, and Access Management Subcommittee of the Federal Chief Information Security Officer (CISO) Council and the General Services Administration Office of Government-wide Policy identity Assurance and Trusted Access Division
