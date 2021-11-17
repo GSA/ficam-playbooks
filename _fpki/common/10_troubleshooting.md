@@ -2,7 +2,7 @@
 layout: page 
 title: Troubleshooting Procedures
 collection: fpki
-permalink: /fpki/common/troubleshooting/
+# permalink: /fpki/common/troubleshooting/
 sticky_sidenav: true
 sidenav: fpkicommon
 ---
