@@ -38,12 +38,15 @@ subnav:
 [trying out DW md tables here as I build them]
 
 
-**Table 8. Factor 1 Criteria Details**
+**Table 9. Factor 1 Criteria Details**
 
-| Criteria&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Details | Score |
-| ----------------------------- | ---------------------- | --------------------- | 
-| **1a)** Attended | An attended digital worker operates under constant supervision and attendance by a human, likely operating on the user interface level (e.g., either on the user’s computer desktop or a separate computer attended by the human, typically acting on behalf of a human user). | 0 |
-| **1b)** Unattended | An unattended digital worker doesn’t operate under supervision or attendance by a human. A human doesn’t  oversee the direct action of the digital worker technology. The tool operates out of sight, including (but not limited to) on a virtual machine, through API calls, etc. | 10 |
+| Criteria | Details | Score |
+| ----------- | ---------------------- | --------------------- | 
+| **2a)** Data available to the public (either without a user account or with unvetted user account) | The digital worker only works with/has access to data that’s fully available for use and access by the general public. It includes all information available on public forums (open websites and networks) and  all information that the public may access through the setup of unvetted user accounts (e.g., a citizen can use an unvetted account to access Centers for Disease Control "public" data). | 0 |
+| **2b)** Agency operational data, CUI, or data on individuals (no PII) in low volumes | The digital worker works with/has access to data that isn’t for public consumption, including CUI, intellectual property owned by the government or outside organizations, and information related to agency operations. | 5 |
+| **2c)** PII and PHI | The digital worker works with/has access to public data, agency operational data, and PII or PHI.<br><br>This is a “trigger” criterion, meaning if the digital worker meets this criterion, it automatically should be in at least a High potential adverse impact level according to the scale in Table 1. | 55|
+| **2d)** Agency critical operational data or data that could impact life, health, or safety of individuals/systems relied upon for health and safety; or very high volumes of agency operational data | The digital worker works with/has access to data that could have catastrophic effects if made public, such as information about mission-critical agency operations, or information that impacts the life, health, and safety of individuals.<br><br> This is a “trigger” criterion, meaning if the digital worker meets this criterion, it automatically should be in a Critical potential adverse impact level according to the scale in Table 1. | 90 |
+
 
 
 
