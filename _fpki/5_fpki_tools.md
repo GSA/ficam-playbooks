@@ -8,15 +8,15 @@ sidenav: fpki
 
 subnav:
     - text: Federal PKI Graph
-      href: ../fpki/tools/fpkigraph/
+      href: ../tools/fpkigraph/
     - text: Federal PKI Activity Report
-      href: ../fpki/tools/fpkiar/
+      href: ../tools/fpkiar/
     - text: CITE Participation Guide
-      href: ..fpki/tools/citeguide/
+      href: ../tools/citeguide/
     - text: Card Conformance Tool
-      href: ../fpki/tools/cct/
+      href: ../tools/cct/
     - text: Certificate Profile Conformance Tool
-      href: ../fpki/tools/cpct/
+      href: ../tools/cpct/
       
 ---
 
