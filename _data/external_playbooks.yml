@@ -8,12 +8,6 @@
   description: The Digital Worker Identity Playbook is a practical guide to assess the risk of using digital workers and recommended identity-based mitigation.
   url: /docs/playbook-digital-worker.pdf
 
-- title: Digital Identity Risk Assessment Playbook
-  type: PDF
-  pubdate: 2020-09
-  description: The Digital Identity Risk Assessment playbook is a six-step playbook to complete a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
-  url: /docs/playbook-dira.pdf
-
 - title: Federal Identity, Credential, and Access Management Roadmap Version 2.0
   type: PDF
   pubdate: 2011-12
