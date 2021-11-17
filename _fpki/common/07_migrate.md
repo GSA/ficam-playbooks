@@ -2,7 +2,7 @@
 layout: page 
 title: 7. Migrate to the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/migrate/
+permalink: /fpki/common/migrate/
 sticky_sidenav: true
 sidenav: fpkicommon
 
@@ -37,7 +37,7 @@ To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal t
 
 ## Disable Distribution of the FCPCA G1
 
-Reference the distribution mechanisms [here](../distribute-os/) to review the ways the FCPCA certificate **could** be distributed across your enterprise. Disable all existing distribution mechanisms. Sample procedures to disable the distribution of the FCPCA G1 are listed below using:
+Reference the distribution mechanisms [here]({{site.baseurl}}/fpki/common/distribute-os/) to review the ways the FCPCA certificate **could** be distributed across your enterprise. Disable all existing distribution mechanisms. Sample procedures to disable the distribution of the FCPCA G1 are listed below using:
 
 - [Microsoft Certutil](#if-the-fcpca-was-distributed-using-microsoft-certutil)
 - [Microsoft Group Policy Object (GPO)](#if-the-fcpca-was-distributed-using-a-microsoft-gpo)
@@ -109,7 +109,7 @@ Use one of the methods below to distrust the FCPCA G1.
     ```
 	
 Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Server 2016.
-[![Sample Steps](../../../assets/fpki/distrust-gpo.gif){:style="width:85%;"}](../../../assets/fpki/distrust-gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![Sample Steps]({{site.baseurl}}/assets/fpki/distrust-gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/distrust-gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
 <br>
 
 <br>
@@ -130,7 +130,7 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
     
 **Note:**&nbsp;&nbsp;This video shows you how to remove the FCPCA G1 certificate using the command line.
 <br>
-[![This video shows you how to remove the FCPCA G1 certificate using the command line.](../../../assets/fpki/remove_command_line.gif){:style="width:85%;"}](../../../assets/fpki/remove_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![This video shows you how to remove the FCPCA G1 certificate using the command line.]({{site.baseurl}}/assets/fpki/remove_command_line.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/remove_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Use Linux Command Line
@@ -199,6 +199,6 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
 
 <br>
 
-Finally, [verify migration to the FCPCA G2](../verify-migration/).
+Finally, [verify migration to the FCPCA G2]({{site.baseurl}}/fpki/common/verify-migration/).
 
 

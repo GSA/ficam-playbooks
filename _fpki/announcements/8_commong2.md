@@ -5,7 +5,7 @@ date: 10/12/2020
 archiveDate: 10/11/2021
 removeDate: 10/11/2023
 collection: fpki
-permalink: fpki/announcements/common-g2-update/
+permalink: /fpki/announcements/common-g2-update/
 description: Details on the Federal Common Policy CA G2 timeline and actions agencies need to perform.
 category: Active
 sticky_sidenav: true
@@ -51,7 +51,7 @@ Tentative time-line:
 
 To prevent issues, agencies **must** distribute the Federal Common Policy CA G2 root certificate as a trusted Root Certification Authority to workstations and servers.
 
-To prepare for the Federal Common Policy CA update, read our guide [here]({{ site.baseurl }}/common).
+To prepare for the Federal Common Policy CA update, read our guide [here]({{ site.baseurl }}/fpki/common).
 
 ## Who Can I Contact for Help or More Information?
 Email us at fpkirootupdate@gsa.gov. 

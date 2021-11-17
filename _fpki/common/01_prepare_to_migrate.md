@@ -2,7 +2,7 @@
 layout: page 
 title: 1. Prepare to migrate to the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/prepare-to-migrate/
+permalink: /fpki/common/prepare-to-migrate/
 sticky_sidenav: true
 sidenav: fpkicommon
 ---
@@ -126,5 +126,4 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
 </table>
 
-
-Get started today! [Obtain and verify a copy of the FCPCA G2 certificate](../obtain-and-verify/).
+Get started today! [Obtain and verify a copy of the FCPCA G2 certificate]({{site.baseurl}}/fpki/common/obtain-and-verify/).

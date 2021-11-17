@@ -2,7 +2,7 @@
 layout: page 
 title: Federal PKI Activity Report
 collection: fpki
-permalink: fpki/tools/fpkiar/
+permalink: /fpki/tools/fpkiar/
 sticky_sidenav: true
 sidenav: fpkitools
 
@@ -19,9 +19,9 @@ Updated: November 1, 2021
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
-- [FPKI Affiliate Status Summary](#fpki-affiliate-status-summary)
-- [FPKI Management Authority Certificate Activity](#fpkima-certificate-activity)
-- [FPKI Repository Availability](#repository-availability)
+- [Federal Agency and Affiliate PKI Status Summary](#federal-agency-and-affiliate-pki-status-summary)
+- [FPKIMA Certificate Activity](#fpkima-certificate-activity)
+- [Repository Availability](#repository-availability)
 
 Resolve issues by contacting one of the teams:  
 

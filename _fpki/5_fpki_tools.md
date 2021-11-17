@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: Useful Tools
-permalink: fpki/tools/
+permalink: /fpki/tools/
 sticky_sidenav: true
 sidenav: fpki
 

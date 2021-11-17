@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: FPKI Certification Authorities Overview
-permalink: fpki/ca/
+permalink: /fpki/ca/
 sticky_sidenav: true
 sidenav: fpki
 
@@ -31,19 +31,19 @@ Any CA in the FPKI may be referred to as a _Federal PKI CA_. The two highest lev
 
 COMMON serves as the _root_ and _trust anchor_ for the _intermediate_ and _issuing_ CAs operated by federal government Executive Branch agencies.
 
-{% include alert-info.html content="<strong>Public trust for websites</strong><br>A new effort is in the planning stages to establish another federal government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the federal government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
+{% include alert-info.html content="<strong>Public trust for websites</strong><br>A new effort is in the planning stages to establish another federal government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the federal government's new certificate policy for this public trust effort at https://github.com/uspki/policies." %}
 
 ### Federal Common Policy Certification Authority
 
-The _Federal Common Policy CA_ may be referred to as the _FCPCAG2_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the federal government, the FCPCAG2 supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials](../../piv#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
+The _Federal Common Policy CA_ may be referred to as the _FCPCAG2_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the federal government, the FCPCAG2 supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials]({{site.baseurl}}/piv#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
 
-A few commercial vendors include the FCPCAG2 root certificate in the commercial-off-the-shelf (COTS) products' [trust stores](../trust-stores/). This enables federal government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCAG2 root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
+A few commercial vendors include the FCPCAG2 root certificate in the commercial-off-the-shelf (COTS) products' [trust stores]({{site.baseurl}}/fpki/trust-stores/). This enables federal government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCAG2 root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
 
 {% include alert-warning.html content="The FCPCAG2 root certificate is included in the trust stores for some platforms such as Adobe. Other platforms, such as Microsoft, Mozilla, and Apple, do not include the FCPCA by default. " %}
 
 ### Federal Bridge Certification Authority
 
-<a href="../../assets/fpki/intro_fbca-logo.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/fpki/intro_fbca-logo.png" width="180" align="left" alt="FPKI Federal Bridge Logo"></a>
+<a href="{{site.baseurl}}/assets/fpki/intro_fbca-logo.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/intro_fbca-logo.png" width="180" align="left" alt="FPKI Federal Bridge Logo"></a>
 
 The current Federal Bridge Certification Authority (FBCA) is the _**Federal Bridge CA G4**_.
 
@@ -53,7 +53,7 @@ The CAs with certificates signed by the Federal Bridge CA G4 are _cross-certifie
 
 ### All Federal PKI Certification Authorities
 
-<a href="../../assets/fpki/intro_participatingCAsV3.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/fpki/intro_participatingCAsV3.png" width="200" align="left" alt="FPKI Participating CAs"></a>
+<a href="{{site.baseurl}}/assets/fpki/intro_participatingCAsV3.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/intro_participatingCAsV3.png" width="200" align="left" alt="FPKI Participating CAs"></a>
 
 A CA that is part of the FPKI is called a _participating certification authority_. 
 

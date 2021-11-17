@@ -6,7 +6,7 @@ archiveDate: 03/30/2020
 removeDate: 03/30/2022
 collection: fpki
 category: Migration
-permalink: fpki/announcements/2019fpkimigration/
+permalink: /fpki/announcements/2019fpkimigration/
 description: Information related to the upcoming migration.
 sidenav: fpkiarchivedannouncements
 sticky_sidenav: true

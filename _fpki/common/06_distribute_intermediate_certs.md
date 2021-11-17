@@ -2,7 +2,7 @@
 layout: page 
 title: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/certificates/
+permalink: /fpki/common/certificates/
 sticky_sidenav: true
 sidenav: fpkicommon
 
@@ -101,17 +101,17 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 6. Browse to and select the certificates you want to distribute.
 7. (*Optional*) Add additional agency-specific configurations or customizations. 
 8. Click **File** > **Save** to save your profile to your preferred location. 
-9. Follow the steps to [distribute](../distribute-os/#distribute-an-apple-configuration-profile) the profile to macOS and iOS devices across your enterprise.
+9. Follow the steps to [distribute]({{site.baseurl}}/fpki/common/distribute-os/#distribute-an-apple-configuration-profile) the profile to macOS and iOS devices across your enterprise.
 
 **Note:**&nbsp;&nbsp;The following video shows you how to create an Apple configuration profile. 
 
 <br>
-[![The following video shows you how to create an Apple configuration profile.](../../../assets/fpki/create_profile.gif){:style="width:85%;"}](../../../assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![The following video shows you how to create an Apple configuration profile.]({{site.baseurl}}/assets/fpki/create_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Use Linux Command Line
 
-The steps to distribute an intermediate CA certificate are the same as the steps to distribute a [root CA certificate](../distribute-os/#linux-and-unix-solutions).
+The steps to distribute an intermediate CA certificate are the same as the steps to distribute a [root CA certificate]({{site.baseurl}}/fpki/common/distribute-os/#linux-and-unix-solutions).
 
 <br>
 
@@ -123,17 +123,17 @@ The steps to distribute an intermediate CA certificate are the same as the steps
 
 The following certificates are published in the Federal Common Policy CA G2 certificate's Subject Information Access extension bundle located at http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c.
 
-- [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
-- [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
-- [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
-- [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
-- [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
-- [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
-- [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
-- [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
-- [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
+  - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
+  - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
+  - [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
+  - [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
+  - [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
+  - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
+  - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
+  - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
+  - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
 
-{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that are <b>unable</b> to perform dynamic path validation.  Learn more in the <a href=\"../faq/#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2\" target=\"_blank\">FAQ</a>." %}
+{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that are <b>unable</b> to perform dynamic path validation. Learn more on our Frequently Asked Questions page." %}
 
 
 #### Issued to: Federal Bridge CA G4
@@ -145,7 +145,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Serial Number | 234200beaa6dada658f53b403f418295290cae82  |
 | SHA-1 Thumbprint | 97db351e069964297a82040eb760c9cc1d74ba33 |
 | SHA-256 Thumbprint | 74383CA1BB648F96EFE9E6ECADB5A8A359E7DF9BA262EF7C02BD004EAB3895F4  |
-| Download Location | Click [here](../../certs/federal_bridge_ca_g4.cer)|
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/federal_bridge_ca_g4.cer)|
 
 #### Issued to: U.S. Department of State AD Root CA
 
@@ -156,7 +156,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Serial Number | 27634fd321cbfd8c7efc0aeb02876f63da4c0c09 |
 | SHA-1 Thumbprint | 9b3849f7047964a6654988054956e478ccb75ded |
 | SHA-256 Thumbprint | 9744734dbd34f28d3c87a9094387388e7623a272437c612e88d251138c1db93c |
-| Download Location | Click [here](../../certs/US_Department_of_State_AD_Root_CA.cer)|
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/US_Department_of_State_AD_Root_CA.cer)|
 
 #### Issued to: US Treasury Root CA
 
@@ -167,7 +167,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Serial Number | 2013db2cd30dd29d17edc48535c5e00d8916cf02 |
 | SHA-1 Thumbprint | d7d298927d339efa414f2565923e28b98acd970a |
 | SHA-256 Thumbprint | 209ce84f4b4811542c5c4754a73a9c272ae1458c04493c89c74ed6773aca553f |
-| Download Location | Click [here](../../certs/US_Treasury_Root_CA.cer)|
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/US_Treasury_Root_CA.cer)|
 
 #### Issued to: DigiCert Federal SSP Intermediate CA - G5
 
@@ -178,7 +178,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Serial Number | 24bc168f9ccb30cfcef8f0a58f26f10181869266 |
 | SHA-1 Thumbprint | 9aecfbe2de8aea49d220bbf799172c00527fe756 |
 | SHA-256 Thumbprint | ea86e0baf55eef020ed58196af865f2fa72a77d1be70a779b65a9cbf0b5ee3f2 |
-| Download Location | Click [here](../../certs/DigiCert_Federal_SSP_Intermediate_CA_-_G5.cer)|
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/DigiCert_Federal_SSP_Intermediate_CA_-_G5.cer)|
 
 #### Issued to: Symantec SSP Intermediate CA - G4
 
@@ -189,7 +189,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Serial Number | 262bd1f025c8af37334545666ea6c9ea946c2c34 |
 | SHA-1 Thumbprint | 4c40f62b5c3f13533a8f8a1d44f8b027aaa0fd3d |
 | SHA-256 Thumbprint | 09d3f1a7d2e0be1a8d043fdf5d16bf8bf18e0dff2f397f27b0b8ee962de59de5 |
-| Download Location | Click [here](../../certs/Symantec_SSP_Intermediate_CA_-_G4.cer)|
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/Symantec_SSP_Intermediate_CA_-_G4.cer)|
 
 #### Issued to: Entrust Managed Services Root CA
 
@@ -200,7 +200,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Serial Number | 215e78d99648b021c6394a6566d8e00f46a1e595 |
 | SHA-1 Thumbprint | 07f5dc58f83778d5b5738a988292c00a674a0f40 |
 | SHA-256 Thumbprint | e3d6b1b33d0a5df0630b32bf17f9fb632b0471a6cac561f164aa6429ef0699a1 |
-| Download Location | Click [here](../../certs/Entrust_Managed_Services_Root_CA.cer) |
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/Entrust_Managed_Services_Root_CA.cer) |
 
 #### Issued to: Verizon SSP CA A2
 
@@ -211,7 +211,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Serial Number | 25fca834ada24a4455a2db0ff4cef7c411198e3a |
 | SHA-1 Thumbprint | b2167fd38ff47bb910d8dcc32fcc3b7b63a09ff7 |
 | SHA-256 Thumbprint | 226508d2a1c926a7092218e743ccd01bab8273291feef66941691592fa7c12b8 |
-| Download Location | Click [here](../../certs/Verizon_SSP_CA_A2.cer)|
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/Verizon_SSP_CA_A2.cer)|
 
 #### Issued to: ORC SSP 4
 
@@ -222,7 +222,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Serial Number | 20a0e513367881559a5e7d20d35fa7c6739a42ab |
 | SHA-1 Thumbprint | 3e6610b03daca9fa07e1093b60ccb8927c42d83b  |
 | SHA-256 Thumbprint | 7cd7f21d04beb99d9f833be8697138e3ad4e11313897ee573c066132d21ab5f8 |
-| Download Location | Click [here](../../certs/ORC_SSP_4.cer)|
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/ORC_SSP_4.cer)|
 
 #### Issued to: WidePoint ORC SSP CA 5
 
@@ -233,13 +233,13 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Serial Number | 210b3f17db750e616eb25f3f0b4933e5a98c449b |
 | SHA-1 Thumbprint | 80f4731a60fd5f2eb0468d0629310daa50ad210d |
 | SHA-256 Thumbprint | 70200179049bdc8cbe94b4880730609489f324f2a770477f7c1859401e644c72 |
-| Download Location | Click [here](../../certs/WidePoint_ORC_SSP_5.cer)|
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/WidePoint_ORC_SSP_5.cer)|
 
 <br>
 
 ### Certificates issued to the Federal Common Policy CA G2
 
-Distrusting the certificate below will prevent workstations from building a path from the Federal Common Policy CA G2, through the Federal Bridge CA G4, to the Federal Common Policy CA or any other root.  For more on how to distrust a certificate, click [here](../migrate/#distrust-the-fcpca-g1).
+Distrusting the certificate below will prevent workstations from building a path from the Federal Common Policy CA G2, through the Federal Bridge CA G4, to the Federal Common Policy CA or any other root.  For more on how to distrust a certificate, click [here]({{site.baseurl}}/fpki/common/migrate/#distrust-the-fcpca-g1).
 
 #### Issued by: Federal Bridge CA G4
 
@@ -250,9 +250,9 @@ Distrusting the certificate below will prevent workstations from building a path
 | Serial Number | 129217e6c9126fd816babe02d9192ae2b519e231 |
 | SHA-1 Thumbprint | edf2d373f4c56b5186087300638e3c5660c9a090 |
 | SHA-256 Thumbprint | 0b658c27727dfd6cd47e378ae2390ea376d9708ecf4b06775f8ee7bc50119991 |
-| Download Location | Click [here](../../certs/Federal_Common_Policy_CA_G2_from_FBCAG4.cer)|
+| Download Location | Click [here]({{site.baseurl}}/fpki/certs/Federal_Common_Policy_CA_G2_from_FBCAG4.cer)|
 
 <br>
 
 
-Next, [migrate to the FCPCA G2](../migrate/).
+Next, [migrate to the FCPCA G2]({{site.baseurl}}/fpki/common/migrate/).
