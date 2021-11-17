@@ -10,23 +10,23 @@ site.baseurl: site.baseurl
 
 subnav:
   - text: 1. Prepare to migrate to the Federal Common Policy CA G2
-    href: ../fpki/common/prepare-to-migrate/
+    href: ../common/prepare-to-migrate/
   - text: 2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate
-    href: ../fpki/common/obtain-and-verify/
+    href: ../common/obtain-and-verify/
   - text: 3. Distribute the certificate to operating systems
-    href: ../fpki/common/distribute-os/
+    href: ../common/distribute-os/
   - text: 4. Verify operating system distribution
-    href: ../fpki/common/verify-os-distribution/
+    href: ../common/verify-os-distribution/
   - text: 5. Distribute the certificate to applications
-    href: ../fpki/common/distribute-apps/
+    href: ../common/distribute-apps/
   - text: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2
-    href: ../fpki/common/certificates/
+    href: ../common/certificates/
   - text: 7. Migrate to the Federal Common Policy CA G2
-    href: ../fpki/common/migrate/
+    href: ../common/migrate/
   - text: 8. Verify migration to the Federal Common Policy CA G2
-    href: ../fpki/common/verify-migration/
+    href: ../common/verify-migration/
   - text: Frequently Asked Questions
-    href: ../fpki/common/faq/
+    href: ../common/faq/
 ---
 
 {% include alert-warning.html heading="Heads-up!" content="The Federal PKI Management Authority has completed the revocation of the certificates issued by the Federal Common Policy CA.  If you encounter any issues, please review the contents of this playbook, including the <a href=\"../common/faq/\" target=\"_blank\">Frequently Asked Questions</a> page." %} 
