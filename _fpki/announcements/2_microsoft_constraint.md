@@ -4,7 +4,6 @@ title: Federal Common Policy CA Removal from Microsoft Trust Store Impact
 pubDate: 05/18/2018
 archiveDate: 05/19/2019
 removeDate: 05/19/2021
-# Removed permalink so it is no searchable
 collection: fpki
 category: Microsoft
 description: UUpcoming changes regarding Microsoft's remove of the U.S. Government Root CA.
