@@ -58,6 +58,14 @@ subnav:
 
 Download a [PDF version](../../docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"} of the Digital Identity Risk Assessment Playbook.
 
+Version 1.1  
+September 2020
+
+| Version Number | Date | Change Description |
+| :----------: | :-------: | -------- |
+| 1.0 | 09/20 | Initial Draft |
+| 1.1 | 11/17/21 | Made formatting changes. Inserted Key Point box at the end of Step 2. |
+
 # Acknowledgements
 
 This playbook reflects the contributions of the Digital Identity Risk Assessment working group of the Identity, Credential, and Access Management Subcommittee (ICAMSC). The working group was co-chaired by members from the Internal Revenue Service (IRS) and the Environmental Protection Agency (EPA). Contributions were made by the members of services or agencies representing the Center of Medicare and Medicaid Services (CMS), Department of Defense (DOD), Department of Health and Human Services (HHS), Department of Homeland Security (DHS), Department of Justice (DOJ), Department of the Treasury (USDT), Department of Transportation (DOT), and General Services Administration (GSA). 
