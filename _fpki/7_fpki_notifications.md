@@ -24,7 +24,7 @@ The communication of changes, and planned or unplanned system outages, is requir
 
 System **outages** - either through a planned maintenance activity or unplanned event - may also be posted on this page, and may trigger the Incident Management process.    
 
-To report a change **or** system outage not listed below, please email fpki at gsa dot gov.
+To report a change **or** system outage not listed below, please email <span>fpki</span><span>@</span><span>gsa</span><span>.</span><span>gov</span>.
 
 ## Notifications
 
@@ -65,7 +65,7 @@ System notifications can be submitted via either GitHub or email.
   - Enter the information and click 'Submit new issue' to submit the notification.
 
 #### Submit Notification via Email
-The notification can also be emailed to fpki at gsa dot gov. The email should contain the following information.
+The notification can also be emailed to <span>fpki</span><span>@</span><span>gsa</span><span>.</span><span>gov</span>. The email should contain the following information.
 
 Subject:  FPKI System Notification - System Name 
   

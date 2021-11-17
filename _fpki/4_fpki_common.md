@@ -62,6 +62,6 @@ This change affects *all federal agencies* and the following services:
 
 ## Need Help?
 
-View the [Frequently Asked Questions]({{site.baseurl}}/fpki/common/faq/) page for more information, or email us at fpkirootupdate at gsa dot gov.
+View the [Frequently Asked Questions]({{site.baseurl}}/fpki/common/faq/) page for more information, or email us at fpkirootupdate at gsa.gov.
 
 

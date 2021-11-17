@@ -326,7 +326,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </table>
 
 
-{% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at GSA dot gov or call 1-855-482-4348." %}
+{% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at gsa.gov or call 1-855-482-4348." %}
 
 
 
