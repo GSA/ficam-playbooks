@@ -44,7 +44,7 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
 <br><br>
 [![PuTTY Configuration Window]({{site.baseurl}}/assets/piv/ssh-putty-cac-1.png){:style="float:left"}]({{site.baseurl}}/assets/piv/ssh-putty-cac-1.png){:target="_blank"}{:rel="noopener noreferrer"}
 <br><br>
-4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates](../../details/#understand-piv-certificates/).
+4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/piv/details/#understand-piv-certificates/).
 <br><br>
 [![Add CAPI Cert - #2]({{site.baseurl}}/assets/piv/winSCP-5.PNG)]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 <br>
@@ -88,7 +88,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 <br>
 [![Add CAPI Cert - #1]({{site.baseurl}}/assets/piv/winSCP-4.PNG)]({{site.baseurl}}/assets/piv/winSCP-4.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 <br>
-8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates](../../piv/details/#understanding-piv-certificates){:target="_blank"}.)
+8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/piv/details/#understanding-piv-certificates){:target="_blank"}.)
 <br>
 [![Add CAPI Cert - #2]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:style="width:48%;"}]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 <br>

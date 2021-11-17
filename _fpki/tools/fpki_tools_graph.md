@@ -2,7 +2,7 @@
 layout: pagegraph
 title: Federal PKI Graph
 collection: fpki
-permalink: fpki/tools/fpkigraph/
+permalink: /fpki/tools/fpkigraph/
 sticky_sidenav: true
 sidenav: fpkitools
 ---

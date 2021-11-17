@@ -2,12 +2,12 @@
 layout: page
 collection: ficampm
 title: ICAM Program Management Introduction
-permalink: pm/
+permalink: /pm/
 sticky_sidenav: true
 sidenav: pm
 ---
 
-The **ICAM Program Management Playbook** explain how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture](../../arch/){:target="_blank"}{:rel="noopener noreferrer"}. You'll find content for ICAM program managers who need agency-level planning best practices to drive adoption of ICAM services within their organizations. You'll also find information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
+The **ICAM Program Management Playbook** explain how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture]({{site.baseurl}}/arch/){:target="_blank"}{:rel="noopener noreferrer"}. You'll find content for ICAM program managers who need agency-level planning best practices to drive adoption of ICAM services within their organizations. You'll also find information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
 
 The ICAM PM Playbook will answer the most common ICAM program organization and management questions, including:
 
@@ -27,9 +27,9 @@ An agency's Identity, Credential, and Access Management (ICAM) program requires 
 
 The following list includes the necessary components of an ICAM program.
 
-- [**Program Governance and Leadership**](../pm/governance/) - Establish operational policies and requirements.
-- [**Workstreams**](../pm/workstreams/) - Categorize tasks and assign them to the proper resources.
-- [**Stakeholder Management**](../pm/stakeholders/) - Identify and communicate with stakeholders.
-- [**Communication Plan**](../pm/comm/) - Define and appropriately communicate program objectives and goals.
-- [**Performance Management**](../pm/performance/) - Measure and report progress, effectiveness, and improvements.
-- [**Privacy Requirements**](../pm/privacy/) - Manage risks associated with handling personally identifiable information (PII).
+- [**Program Governance and Leadership**]({{site.baseurl}}/pm/governance/) - Establish operational policies and requirements.
+- [**Workstreams**]({{site.baseurl}}/pm/workstreams/) - Categorize tasks and assign them to the proper resources.
+- [**Stakeholder Management**]({{site.baseurl}}/pm/stakeholders/) - Identify and communicate with stakeholders.
+- [**Communication Plan**]({{site.baseurl}}/pm/comm/) - Define and appropriately communicate program objectives and goals.
+- [**Performance Management**]({{site.baseurl}}/pm/performance/) - Measure and report progress, effectiveness, and improvements.
+- [**Privacy Requirements**]({{site.baseurl}}/pm/privacy/) - Manage risks associated with handling personally identifiable information (PII).

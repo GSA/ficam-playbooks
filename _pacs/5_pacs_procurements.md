@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Procurements
-permalink: pacs/procure/
+permalink: /pacs/procure/
 sticky_sidenav: true
 sidenav: pacs
 
@@ -326,7 +326,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </table>
 
 
-{% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at GSA dot gov or call 1-855-482-4348." %}
+{% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at gsa.gov or call 1-855-482-4348." %}
 
 
 
@@ -342,5 +342,5 @@ Agency staff are encouraged to participate in steps where their roles are listed
 - [GSA’s eBuy](https://www.ebuy.gsa.gov/ebuy/){:target="_blank"}{:rel="noopener noreferrer"} RFQ online system enables you to post requirements, obtain quotes, and issue orders electronically. 
 - Approved [Certified System Engineer ICAM PACS (CSEIP) List]( https://www.securetechalliance.org/activities-cseip-registry/){:target="_blank"}{:rel="noopener noreferrer"}.  Agencies must use FIPS 201-approved integrators and other contractors. The "lead designer" for FIPS 201-approved integrators must possess a Certified System Engineer ICAM PACS (CSEIP) certification or be certified by another federally recognized certification program.    
 
-The next section, *[Training](../train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
+The next section, *[Training]({{site.baseurl}}/pacs/train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
 

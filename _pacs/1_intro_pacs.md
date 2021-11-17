@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Physical Access Control System Guide Introduction
-permalink: pacs/
+permalink: /pacs/
 sticky_sidenav: true
 sidenav: pacs
 ---
@@ -14,4 +14,4 @@ The **Physical Access Control System (PACS) Guides** will help you understand co
 ## Acknowledgment
 We want to thank the Secure Technology Alliance, especially the members of the Access Control Council, for contributions to the PACS Guides and permission to reuse content from their presentations and the *How to Plan, Procure and Deploy a pacs-Enabled Physical Access Control System* webinar training.  
 
-Lets get started with [What Is a PACS](../pacs/what-is-pacs/), which describes physical access control system components and compliance.
+Lets get started with [What Is a PACS]({{site.baseurl}}/pacs/what-is-pacs/), which describes physical access control system components and compliance.

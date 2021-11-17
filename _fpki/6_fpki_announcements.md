@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: Announcements
-permalink: fpki/announcements/
+permalink: /fpki/announcements/
 sticky_sidenav: true
 sidenav: fpki
 

@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Standards, Policies, and Guidance
-permalink: pacs/standards/
+permalink: /pacs/standards/
 sticky_sidenav: true
 sidenav: pacs
 
@@ -75,11 +75,11 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_](https://www.idmanagement.gov/docs/pacs-piv-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014.
 
-[_Personal Identity Verification Interoperability for Issuers_](https://www.idmanagement.gov/docs/pacs-piv-i-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017.
+[_Personal Identity Verification Interoperability for Issuers_](https://www.idmanagement.gov/docs/fpki-pivi-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017.
 
 [_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, ISC, 2nd Edition, November 2016.
 
-[_Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS)_](https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf){:target="_blank"}, Version 1.0, December 2020.
+[_Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS)_](https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 1.0, December 2020.
 
 [*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 3.0, February 26, 2021.
 

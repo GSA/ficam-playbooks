@@ -187,8 +187,6 @@ fpkiarchivedannouncements:
     href: /fpki/announcements/2019digicert/
   - text: Removal of Health CAs from Federal PKI (2019) ##  Mar 2022
     href: /fpki/announcements/2019removal/
-  - text: Federal Common Policy CA Removal from Apple Trust Stores Impact (2018) ## Sept 2021
-    href: /fpki/announcements/2018applepkichanges/
 
 #PACS Navigation
 

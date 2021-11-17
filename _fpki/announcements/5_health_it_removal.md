@@ -6,7 +6,7 @@ archiveDate: 03/04/2020
 removeDate: 03/04/2022
 collection: fpki
 category: Removal
-permalink: fpki/announcements/2019removal/
+permalink: /fpki/announcements/2019removal/
 description: This announcement provides information related to the Health IT CAs removed from the Federal PKI.
 sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
@@ -136,14 +136,6 @@ Email us at fpki@gsa.gov
 ## Additional Resources
 Details of each CA affected by this change are listed below.  You can also download files with copies of the CA certificates.   
 
-Do the following To download PEM files with these CA certificates:  
-
-CA Certificates _Issued By_ |Download PEM File|
----|---|
-CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA |[Download ](../../docs/issuedByDigiCertFederatedIDCA-1.pem){:target="_blank"}| 
-CA Certificates _Issued By_ DigiCert Federated Trust CA |[Download ](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}|
-CA Certificates _Issued By_ DigiCert Federated Trust CA-1 |[Download ](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}|
-CA Certificates _Issued By_ Orion Health Direct Secure Messaging CA |[Download ](../../docs/issuedByOrionHealthDirectSecureMessagingCA.pem){:target="_blank"}|
  
 #### CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA
 

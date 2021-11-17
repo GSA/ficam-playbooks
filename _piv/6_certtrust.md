@@ -32,7 +32,7 @@ For the federal government Executive Branch agencies, there is one root CA named
 
 The participating CAs are subject to policies, processes, and auditing collectively referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}
 
-The [FPKI Graph](../../fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"} is an interactive chart of the Federal Public Key Infrastructure CAs, including cross-certified business communities.
+The [FPKI Graph]({{site.baseurl}}/fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"} is an interactive chart of the Federal Public Key Infrastructure CAs, including cross-certified business communities.
 
 
 ## Certificate Chains

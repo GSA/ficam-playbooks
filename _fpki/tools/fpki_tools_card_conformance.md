@@ -2,7 +2,7 @@
 layout: page
 title: GSA Card Conformance Tool
 collection: fpki
-permalink: fpki/tools/cct/
+permalink: /fpki/tools/cct/
 sticky_sidenav: true
 sidenav: fpkitools
 
@@ -22,7 +22,7 @@ The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/release
 - [NIST SP 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}: Biometric Specifications for Personal Identity Verification
 - [NIST SP 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}: Cryptographic Algorithms and Key Sizes for Personal Identity Verification
 
-The CCT, in conjunction with the [Certificate Profile Conformance Tool (CPCT)](../cpct), also facilitates remote PIV and PIV-I testing in support of FPKI [annual reviews](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}, reducing travel and resource time and costs. To request an official report on your CPCT and CCT results, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form](https://www.idmanagement.gov/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} and send it with outputs and testing artifacts to fips201ep at gsa.gov.
+The CCT, in conjunction with the [Certificate Profile Conformance Tool (CPCT)]({{site.baseurl}}/fpki/tools/cpct), also facilitates remote PIV and PIV-I testing in support of FPKI [annual reviews](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}, reducing travel and resource time and costs. To request an official report on your CPCT and CCT results, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form](https://www.idmanagement.gov/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} and send it with outputs and testing artifacts to fips201ep at gsa.gov.
 
 You can [download the latest version of the CCT here](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 

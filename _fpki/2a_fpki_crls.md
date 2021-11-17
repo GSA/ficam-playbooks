@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: Federal Common and Federal Bridge
-permalink: fpki/certsandcrls/
+permalink: /fpki/certsandcrls/
 sticky_sidenav: true
 sidenav: fpkicas
 
@@ -26,23 +26,11 @@ When downloading **any** certificate file from the list below, please verify the
 |**Federal Common Policy CA G2**|**Information**|
 |-----------|---------------|
 | Federal Common Policy CA G2 Root Certificate | http://repo.fpki.gov/fcpca/fcpcag2.crt |
-| Distinguished Name 						| **cn=Federal Common Policy CA G2, ou=FPKI, o=U.S. Government, c=US** |
-| sha1 Thumbprint							| 99 B4 25 1E 2E EE 05 D8 29 2E 83 97 A9 01 65 29 3D 11 60 28 |
-| Certificate Revocation List				| http://repo.fpki.gov/fcpca/fcpcag2.crl					|
-| P7C file - Issued By						| http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c	|
-| P7C file - Issued To						| http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c	|
-
-### Federal Common Policy CA
-
-|**Federal Common Policy CA**|**Information**|
-|-----------|---------------|
-| Federal Common Policy CA Root Certificate | http://http.fpki.gov/fcpca/fcpca.crt |
-| Distinguished Name 						| **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** |
-| sha1 Thumbprint							| 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
-| Certificate Revocation List				| http://http.fpki.gov/fcpca/fcpca.crl							|
-| P7C file - Issued By						| http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c	|
-| P7C file - Issued To						| http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c	|
-
+| Distinguished Name | **cn=Federal Common Policy CA G2, ou=FPKI, o=U.S. Government, c=US** |
+| sha1 Thumbprint | 99 B4 25 1E 2E EE 05 D8 29 2E 83 97 A9 01 65 29 3D 11 60 28 |
+| Certificate Revocation List | http://repo.fpki.gov/fcpca/fcpcag2.crl |
+| P7C file - Issued By | http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c	|
+| P7C file - Issued To | http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c	|
 
 ### Federal Bridge CA G4
 
