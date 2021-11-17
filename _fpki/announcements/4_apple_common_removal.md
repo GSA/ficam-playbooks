@@ -79,9 +79,6 @@ You can mitigate the risk to government missions, intranets, applications, and g
 
 {% include alert-info.html content="If you are unsure whether your applications will be affected, email us at fpki@gsa.gov." %} 
 
-## What Should I Do?
-{% include apple_trust_store_installation.md %}
-
 ## Frequently Asked Questions
 
 ### 1.&nbsp;&nbsp;Is PIV network login impacted?
