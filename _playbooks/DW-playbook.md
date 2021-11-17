@@ -38,14 +38,13 @@ subnav:
 [trying out DW md tables here as I build them]
 
 
-**Table 10. Factor 3 Criteria Details** 
+**Table 11. Factor 4 Criteria Details**
 
 | Criteria | Details | Score |
 | ----------- | ---------------------- | --------------------- | 
-| **3a)** No internal intranet or external Internet connection | The digital worker doesn’t have access to any internal or external networks. | 0 |
-| **3b)** Either internal intranet access only OR external Internet access (but not both) | The digital worker only has access to internal networks and operates fully inside the agency’s firewall; the digital worker only has access to external networks, operating outside the firewall.| 5 |
-| **3c)** Internal and external network access (i.e., Internet and intranet) | The digital worker has access to both internal networks and external networks (i.e., can cross the agency’s firewall). | 10|
-
+| **4a)** Output impacts general internal business operations, but not for critical processes or decisions | The output of the digital worker is used solely for and/or may impact internal organizational business processes, operations, and decisions. However, the output isn’t used in critical organizational processes; if it is, then this would fall under criterion 4c.| 5 |
+| **4b)** Output impacts outside organizations in general business operations or public reporting, but not for critical processes or decisions | The output of the digital worker is used for and/or may impact external organizational business processes, operations, and decisions. Additionally, the output may be used in public reporting GAO audits. However, the output shouldn’t be used in critical organizational processes; if it is, then this would fall under criterion 4c. | 25 |
+| **4c)** Output impacts mission critical organization operations of the agency or other organizations, health or safety of individuals, national economic stability, national security, critical infrastructure, or similarly consequential operations | The output of the digital worker is used for and/or may impact mission critical operations of an organization, health and safety of individuals, national economic stability, national security, critical national infrastructure, or other similarly consequential operations. <br><br> This is a “trigger” criterion, meaning if the digital worker meets this criteria, it automatically should be in a Critical potential adverse impact level according to the scale in Table 1. | 90 |
 
 
 
