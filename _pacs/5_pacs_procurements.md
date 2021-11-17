@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Procurements
-permalink: pacs/procure/
+permalink: /pacs/procure/
 sticky_sidenav: true
 sidenav: pacs
 
@@ -38,7 +38,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
  </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>1. Identify agency’s need to procure or upgrade a PACS.</b></td>
+  <td colspan="2" class="what"><b>1. Identify your agency’s need to procure or upgrade a PACS.</b></td>
   <td>ENG</td>
   <td><b><u>PM</u></b></td>
   <td><b><u>PO</u></b></td>
@@ -73,7 +73,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 	<li>Document a high-level project purpose, scope, and goals.</li>
 	<li>Determine the PACS deployment model required for the project's scope.</li>
 	<li>Identify what standards and requirements need to be addressed (for example, HSPD-12, FIPS 201-2, NIST SP 800-116, Revision 1).</li>
-	<li>Estimate project duration.</li>
+	<li>Estimate the project's duration.</li>
   </ul>
   </td>
 </tr>
@@ -92,7 +92,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
   <ul>
 	<li>Identify your required and optional stakeholders and request their participation.</li>
 	<li>Include national, regional, state, and local stakeholders.</li>
-	<li>Involve stakeholders from agency Information Technology (IT) teams (for example, architect/engineers, network engineers, security, infrastructure services, directory services, web services).</li>
+	<li>Involve stakeholders from agency information technology (IT) teams (for example, architect/engineers, network engineers, security, infrastructure services, directory services, web services).</li>
 	<li>Involve agency facility and personnel support organizations (for example, physical security, building operations, Human Resources).</li>
   </ul>
   </td>
@@ -162,7 +162,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
   <td colspan="7">
   <ul>
 	<li>For details, see <a href="{{site.baseurl}}/pacs/alignfslandauth/" target="_blank">Aligning FSL and Authentication Mechanism</a>.</li>
-	<li>The FSL assessment and chosen PIV authentication mechanisms will form the basis for the PACS requirements document/specification, as well as affect the SOW and project costs.</li>
+	<li>The FSL assessment and chosen PIV authentication mechanisms will form the basis for the PACS requirements document/specification as well as affect the SOW and project costs.</li>
 	<li>The sample survey questions below will help you assess the FSL of each facility and select the right PIV authentication mechanisms:
 	<ul>
 		<li>Who will use a facility’s PACS? Include all possible users.</li>
@@ -201,7 +201,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
   <td colspan="7">
   <ul>
 	<li>When documenting PACS requirements, it’s critical to solicit input from your stakeholders.</li>
-	<li>Organize requirements into clear categories (for example, technical, performance, and operational) to help stakeholder’s give targeted feedback.</li>
+	<li>Organize requirements into clear categories (for example, technical, performance, and operational) to help stakeholders give targeted feedback.</li>
   </ul>
   </td>
 </tr>
@@ -275,7 +275,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 		<li>Identify members of the evaluation committee.</li>
 		<li>Establish evaluation criteria for bid review.</li>
 		<li>Identify how well proposed integrator solutions meet your needs.</li>
-		<li>Document the award rationale and announce contract award decision.</li>
+		<li>Document the award rationale and announce the contract award decision.</li>
 		<li>Upon request, provide a brief explanation of the award rationale to unsuccessful bidder(s).</li>
 	</ul>
 	</li>
@@ -326,7 +326,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </table>
 
 
-{% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at GSA dot Gov or call 1-855-482-4348." %}
+{% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at gsa.gov or call 1-855-482-4348." %}
 
 
 
@@ -342,5 +342,5 @@ Agency staff are encouraged to participate in steps where their roles are listed
 - [GSA’s eBuy](https://www.ebuy.gsa.gov/ebuy/){:target="_blank"}{:rel="noopener noreferrer"} RFQ online system enables you to post requirements, obtain quotes, and issue orders electronically. 
 - Approved [Certified System Engineer ICAM PACS (CSEIP) List]( https://www.securetechalliance.org/activities-cseip-registry/){:target="_blank"}{:rel="noopener noreferrer"}.  Agencies must use FIPS 201-approved integrators and other contractors. The "lead designer" for FIPS 201-approved integrators must possess a Certified System Engineer ICAM PACS (CSEIP) certification or be certified by another federally recognized certification program.    
 
-The next section, *[Training](../train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
+The next section, *[Training]({{site.baseurl}}/pacs/train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
 

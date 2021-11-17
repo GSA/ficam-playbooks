@@ -2,7 +2,7 @@
 layout: page
 title: Identity Management
 collection: arch
-permalink: arch/identity/
+permalink: /arch/identity/
 sidenav: archservices
 sticky_sidenav: true
 ---
@@ -15,7 +15,7 @@ An enterprise identity record is the set of attributes, or characteristics, that
 - Your identity within your agency’s Human Resources (HR) system is different from your personal identity at your bank.
 - A person’s identity as a government contractor is different from their identity as an Army Reservist.
 
-Your identity remains the same over time, though it evolves as your attributes change, such as when you get a promotion, change your name, receive additional training, or retire.
+Although your identity remains the same over time, it evolves as your attributes change, such as when you get a promotion, change your name, receive additional training, or retire.
 
 Agencies should manage identity attributes as centrally as possible and distribute them as needed. The following are some examples of identity attributes:
 

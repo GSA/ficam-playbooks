@@ -6,10 +6,10 @@ archiveDate: 09/12/2019
 removeDate: 09/12/2021
 collection: fpki
 category: Apple
-permalink: fpki/announcements/2018applepkichanges/
+# permalink: /fpki/announcements/2018applepkichanges/
 description: Upcoming changes regarding Apple's remove of the U.S. Government Root CA.
 sidenav: fpkiarchivedannouncements
-category: Archived
+category: Removed
 sticky_sidenav: true
 
 subnav:
@@ -79,9 +79,6 @@ You can mitigate the risk to government missions, intranets, applications, and g
 
 {% include alert-info.html content="If you are unsure whether your applications will be affected, email us at fpki@gsa.gov." %} 
 
-## What Should I Do?
-{% include apple_trust_store_installation.md %}
-
 ## Frequently Asked Questions
 
 ### 1.&nbsp;&nbsp;Is PIV network login impacted?
@@ -91,11 +88,10 @@ Yes.
 Please see [What Will Be Impacted?](#what-will-be-impacted). 
 
 ## Additional Resources
-1. [COMMON Removal from Microsoft Certificate Trust List](../fpki/announcements/2018mspkichanges/){:target="_blank"}
 1. [macOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT202858){:target="_blank"}
-1. [iOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT204132){:target="_blank"}
-1. [tvOS Available Trusted Root Certificates](https://support.apple.com/en-us/HT207231){:target="_blank"}
-1. [Apple Keychains](https://developer.apple.com/documentation/security/keychain_services){:target="_blank"}
-1. [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}
-1. [Over-the-Air Profile Delivery and Configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
-1. [Mobile Device Management Best Practices](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}
+2. [iOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT204132){:target="_blank"}
+3. [tvOS Available Trusted Root Certificates](https://support.apple.com/en-us/HT207231){:target="_blank"}
+4. [Apple Keychains](https://developer.apple.com/documentation/security/keychain_services){:target="_blank"}
+5. [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}
+6. [Over-the-Air Profile Delivery and Configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
+7. [Mobile Device Management Best Practices](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}

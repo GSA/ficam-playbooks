@@ -5,10 +5,9 @@ pubDate: 05/18/2018
 archiveDate: 05/19/2019
 removeDate: 05/19/2021
 collection: fpki
-permalink: fpki/announcements/2018mspkichanges/
 category: Microsoft
 description: UUpcoming changes regarding Microsoft's remove of the U.S. Government Root CA.
-category: Archived
+category: Removed
 sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
 
@@ -66,11 +65,6 @@ When Microsoft removes COMMON, government users of Windows will receive errors. 
 This change will also impact partner users that rely on COMMON. For example, a Department of Defense employee sending a digitally signed email to a business partner.
 
 You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
-
-## What Should I Do?
-
-{% include microsoft_trust_store_installation.md %}
-
 
 ## How Can I Test?
 

@@ -27,7 +27,7 @@ This guide uses open-source options:
 
 Commercial solutions are also available.
 
-{% include alert-info.html content = "Your PIV/CAC credential contains an authentication certificate key pair (public and private) for smart-card logon. Using a PIV/CAC key pair is very similar to using a self-signed key pair for SSH. " %}
+{% include alert-info.html content = "Your PIV/CAC credential contains an authentication certificate key pair (public and private) for smart card logon. Using a PIV/CAC key pair is very similar to using a self-signed key pair for SSH. " %}
 
 {% include alert-info.html content = "Your Chief Information Security Officer must determine that security controls are in place and approve SSH scenarios. You should also review your agency's policies and use your physical or virtual jump servers to restrict users from using SSH directly from workstations." %} 
 
@@ -44,7 +44,7 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
 <br><br>
 [![PuTTY Configuration Window]({{site.baseurl}}/assets/piv/ssh-putty-cac-1.png){:style="float:left"}]({{site.baseurl}}/assets/piv/ssh-putty-cac-1.png){:target="_blank"}{:rel="noopener noreferrer"}
 <br><br>
-4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates](../../details/#understand-piv-certificates/).
+4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/piv/details/#understand-piv-certificates/).
 <br><br>
 [![Add CAPI Cert - #2]({{site.baseurl}}/assets/piv/winSCP-5.PNG)]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 <br>
@@ -88,7 +88,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 <br>
 [![Add CAPI Cert - #1]({{site.baseurl}}/assets/piv/winSCP-4.PNG)]({{site.baseurl}}/assets/piv/winSCP-4.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 <br>
-8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates](../../piv/details/#understanding-piv-certificates){:target="_blank"}.)
+8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/piv/details/#understanding-piv-certificates){:target="_blank"}.)
 <br>
 [![Add CAPI Cert - #2]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:style="width:48%;"}]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 <br>
@@ -141,7 +141,9 @@ See https://support.apple.com/en-us/HT208372 for additional information
 
 ### OpenSC
 
-You can use OpenSC on your macOS computer to authenticate to a remote server with your PIV/CAC card.  
+You can use OpenSC on your macOS computer to authenticate to a remote server with your PIV/CAC card.
+
+{% include alert-warning.html heading = "Use OpenSC Version Greater Than 0.20.0 to avoid Authentication Errors" content="If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED." %}
 
 1. Install [OpenSC](https://www.github.com/OpenSC/OpenSC/wiki/Download-latest-OpenSC-stable-release){:target="_blank"}{:rel="noopener noreferrer"}. 
 2. Insert your PIV/CAC into your card reader.
@@ -188,7 +190,7 @@ You can use OpenSC on your macOS computer to authenticate to a remote server wit
 
 {% include alert-warning.html content = "Server administrators must have root privileges for these steps." %}
  
-{% include alert-info.html content = "The following SSH configurations are examples only. Other options are available, including Pluggable Authentication Modules (PAM) that look up user accounts and authorizations through directories. You can automate account set-ups by using centralized configuration management tools that can push or remove authorized_keys." %}
+{% include alert-info.html content = "The following SSH configurations are examples only. Other options are available, including Pluggable Authentication Modules (PAM) that look up user accounts and authorizations through directories. You can automate account setups by using centralized configuration management tools that can push or remove authorized_keys." %}
 
 By default, SSH keys are read from the _.ssh/authorized_keys_ file in your home directory. 
 
