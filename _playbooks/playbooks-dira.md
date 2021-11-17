@@ -3,7 +3,7 @@ layout: page
 collections: playbooks
 navtitle: Digital Identity Risk Assessment Playbook
 title: Digital Identity Risk Assessment Playbook
-pubdate: 09/2020
+pubdate: 2020-09
 date: September 13, 2021
 type: Markdown
 permalink: /playbooks/dira/
@@ -42,14 +42,14 @@ subnav:
 ---
 
 Version 1.1  
-September 2020
+September 13, 2020
 
 <a href="../../assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
 <a href="../../assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 09/01/20 | Initial Draft |
+| 1.0 | 09/13/20 | Initial Draft |
 | 1.1 | 11/17/21 | Inserted Key Point box at the end of Step 2. |
 
 # Acknowledgements
