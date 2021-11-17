@@ -8,6 +8,8 @@ date: September 13, 2021
 type: Markdown
 permalink: /playbooks/dira/
 description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
+pdf: true
+pdflocation: "docs/playbook-dira.pdf"
 sticky_sidenav: true
 sidenav: dira
 
@@ -56,15 +58,13 @@ subnav:
     href: '#footnotes'
 ---
 
-Download a [PDF version](../../docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"} of the Digital Identity Risk Assessment Playbook.
-
 Version 1.1  
 September 2020
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 09/20 | Initial Draft |
-| 1.1 | 11/17/21 | Made formatting changes. Inserted Key Point box at the end of Step 2. |
+| 1.0 | 09/01/20 | Initial Draft |
+| 1.1 | 11/17/21 | Inserted Key Point box at the end of Step 2. |
 
 # Acknowledgements
 
@@ -278,7 +278,7 @@ Figure 4 explains the concept of the three Federation Assurance Levels in _examp
 
 [Appendix B. Examples and Templates](#appendix-b-examples-and-templates) includes an example of a decision tree of the risk assessment process flow that defines the Federation Assurance Levels for the communities of users and transactions in Step 1.<sup>19</sup>  
 
-{% include alert-info.html heading="Key Point" content="The results of a DIRA do not change established credential processes. The results impact the various credentials at a level can be used (e.g., if a DIRA arrives at IAL2, this allows the use of IAL2 but does not change the requirement of downgrading an IAL3 process to an IAL2 process)." %}
+{% include alert-info.html heading="Key Point" content="The DIRA provides a minimum level and does not change established credentialing proceses. For example, if a DIRA arrives at AAL2, agency leadership may decice to allow an AAL2 credential but it should not downgrade or alter an AAL3 credentialing process to AAL2." %}
 
 ## Step 3. Determine Steps to Meet Assurance Levels
 
