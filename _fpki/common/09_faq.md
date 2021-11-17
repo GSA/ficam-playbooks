@@ -189,7 +189,7 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     [![error_navigation]({{site.baseurl}}/fpki/common/assets/fpki/error_navigation.png)]({{site.baseurl}}/assets/fpki/error_navigation.png){:target="_blank"}{:rel="noopener noreferrer"}
+     [![error_navigation]({{site.baseurl}}/assets/fpki/error_navigation.png)]({{site.baseurl}}/assets/fpki/error_navigation.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:*
      <br>
