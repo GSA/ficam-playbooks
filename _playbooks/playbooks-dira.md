@@ -18,9 +18,9 @@ subnav:
     href: '#high-level-dira-process'
   - text: Step 1. Identify Users, Transactions, and Roles
     href: '#step-1-identify-users-transactions-and-roles'
-  - text: Step 2. Identify Risks and Assurance Levels
+  - text: Step 2. Identify Risks
     href: '#step-2-identify-risks-and-assurance-levels'
-  - text: Step 3. Determine Steps to Meet Assurance Levels
+  - text: Step 3. Determine Steps
     href: '#step-3-determine-steps-to-meet-assurance-levels'
   - text: Step 4. Finalize DIAS
     href: '#step-4-finalize-digital-identity-acceptance-statement'
@@ -36,7 +36,7 @@ subnav:
     href: '#play-3-use-templates'
   - text: Play 4. Shortcut Trees
     href: '#play-4-shortcut-decision-trees'
-  - text: Play 5. Leverage Existing Tools
+  - text: Play 5. Leverage Tools
     href: '#play-5-leverage-existing-agency-tools'
   - text: Play 6. Less Is More
     href: '#play-6-less-is-more'
@@ -44,12 +44,10 @@ subnav:
     href: '#appendix-a-policy-standards-and-guidance'
   - text: Appendix B. Examples and Templates
     href: '#appendix-b-examples-and-templates'
-  - text: Appendix C. NIST Special Publication 800-63-3, Requirements Traceability Matrix
+  - text: Appendix C. NIST SP 800-63-3 RTM
     href: '#appendix-c-nist-special-publication-800-63-3-requirements-traceability-matrix'
-  - text: Appendix D. Updates to NIST Special Publication 800-63 
+  - text: Appendix D. NIST SP 800-63 Updates
     href: '#appendix-d-updates-to-nist-special-publication-800-63'
-  - text: Pre-Draft Call for Comments on NIST Special Publication 800-63-3
-    href: '#pre-draft-call-for-comments-on-nist-special-publication-800-63-3'
   - text: Footnotes 
     href: '#footnotes'
 ---
@@ -518,10 +516,6 @@ The revised guidance provides individual assurance levels that can be mixed and 
 -	Greater user experience, 
 -	Enhanced privacy, and 
 -	Reduced risk.
-
-# Pre-Draft Call for Comments on NIST Special Publication 800-63-3
-
-In June 2020, NIST released a pre-draft call for comments to update NIST Special Publication 800-63-3.
 
 # Footnotes
 
