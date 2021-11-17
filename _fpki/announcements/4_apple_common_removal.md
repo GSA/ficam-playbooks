@@ -6,7 +6,7 @@ archiveDate: 09/12/2019
 removeDate: 09/12/2021
 collection: fpki
 category: Apple
-permalink: /fpki/announcements/2018applepkichanges/
+# permalink: /fpki/announcements/2018applepkichanges/
 description: Upcoming changes regarding Apple's remove of the U.S. Government Root CA.
 sidenav: fpkiarchivedannouncements
 category: Archived
