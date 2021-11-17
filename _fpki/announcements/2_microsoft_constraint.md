@@ -66,10 +66,11 @@ This change will also impact partner users that rely on COMMON. For example, a D
 
 You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
 
+<!---
 ## What Should I Do?
 
 {% include microsoft_trust_store_installation.md %}
-
+--->
 
 ## How Can I Test?
 
