@@ -8,6 +8,7 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
     {% for link in include.links %}
       {% assign _href = link.href %}
       {% assign _current = false %}
+      {% assign playbooks = site.playbooks %}
       {% if link.href == page.url or link.href == page.permalink %}
         {% assign _current = true %}
       {% endif %}
@@ -22,16 +23,15 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
         {% include subnav.html links=page.subnav %}
       </ul>
       {% endif %}
+      {% for playbook in playbooks %}
+        {% if playbook.pdf == true %}
+          <ul class="usa-list usa-list--unstyled">
+            <li><a class="usa-button" target="_blank" href="{{ site.baseurl}}/{{ playbook.pdflocation }}">Download as a PDF</a></li>
+          </ul>
+        {% endif %}
+    {% endfor %}
     </li>
     {% endfor %}
   </ul>
   <br>
-  {% assign playbooks = site.playbooks %}
-    {% for playbook in playbooks %}
-      {% if playbook.pdf == true %}
-        <ul class="usa-list usa-list--unstyled">
-          <li><a class="usa-button" target="_blank" href="{{ site.baseurl}}/{{ playbook.pdflocation }}">Download as a PDF</a></li>
-        </ul>
-      {% endif %}
-    {% endfor %}
 </nav>
