@@ -73,8 +73,6 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 ### Use LANDesk 2016
 
-**Note:**&nbsp;&nbsp;If your agency uses a version later than LANDesk 2016, please see [Ivanti: Install Root Certificates on Windows](https://help.ivanti.com/ap/help/en_US/fd/4.4/Content/FileDirector/Admin/3_Clients/Install_Root_Certificate_on_Windows.htm){:target="_blank"}{:rel="noopener noreferrer"}.<br>
-
 1. Open *LANDesk 2016*:&nbsp;&nbsp;**Start** > **LANDesk Management** > **Desktop Manager**.
 2. Create a custom registry data item:&nbsp;&nbsp;**Tools** > **Reporting/Monitoring** > **Manage software list**.
 3. Expand **Custom Data**, and click **Registry items**.
