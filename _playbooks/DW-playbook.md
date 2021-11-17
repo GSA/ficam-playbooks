@@ -40,15 +40,15 @@ subnav:
 
 **Table 7. Identity Governance Data Elements**
  
-| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp; | Data Element | Additional Guidance |
-| ----------- | ------------ | ----------- | ------------ | 
+| &nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Data Element | Additional Guidance |
+| ----------- | ------------ | ----------- | 
 | DF-8 | **Digital Worker Sponsor Date of Last Acknowledgement** | _Specify the date the sponsor acknowledged responsibility for the digital worker. Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
-| DF-9 | ** Digital Worker Date of Sponsor Acknowledgement Recertification**<br>_(optional)_ | _Track when the sponsor acknowledgement must be recertified. This can be tracked as a formula based on the last acknowledgement date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
-| DF-10 | ** Level of Potential Adverse Impact** | _Specify the level of potential adverse impact as determined using the methodology in section 3.2 of this document. Limited response<br><br>(e.g., “Low”, “Moderate,” “High,” or “Critical”)._ |
-| DF-11 | ** Digital Worker Date of Last Custodian Acknowledgement** | _Specify the date the custodian acknowledged responsibility for the digital worker. Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
-| DF-12 | ** Digital Worker Date of Custodian Acknowledgement Recertification**<br>_(optional)_ | _Track when the custodian acknowledgement must be recertified. This can be tracked as a formula based on the last acknowledgement date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
-| DF-13 | ** Approved Source Internet Protocol (IP) Address Range**<br>_( only for High and Critical) | _Specify the range of source IP addresses on which the digital worker may operate._ |
-| DF-14 | ** Code Review Completion Date**<br>_(optional)_ | _Specify the code review completion date (refer to VD-3 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-9 | **Digital Worker Date of Sponsor Acknowledgement Recertification**<br>_(optional)_ | _Track when the sponsor acknowledgement must be recertified. This can be tracked as a formula based on the last acknowledgement date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
+| DF-10 | **Level of Potential Adverse Impact** | _Specify the level of potential adverse impact as determined using the methodology in section 3.2 of this document. Limited response (e.g., “Low”, “Moderate,” “High,” or “Critical”)._ |
+| DF-11 | **Digital Worker Date of Last Custodian Acknowledgement** | _Specify the date the custodian acknowledged responsibility for the digital worker. Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-12 | **Digital Worker Date of Custodian Acknowledgement Recertification**<br>_(optional)_ | _Track when the custodian acknowledgement must be recertified. This can be tracked as a formula based on the last acknowledgement date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
+| DF-13 | **Approved Source Internet Protocol (IP) Address Range**<br>_( only for High and Critical)_ | _Specify the range of source IP addresses on which the digital worker may operate._ |
+| DF-14 | **Code Review Completion Date**<br>_(optional)_ | _Specify the code review completion date (refer to VD-3 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
 
 
 
