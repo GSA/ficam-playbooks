@@ -9,7 +9,6 @@ type: Markdown
 permalink: /playbooks/dira/
 description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
 pdf: "docs/playbook-dira.pdf"
-pdflocation: "docs/playbook-dira.pdf"
 sticky_sidenav: true
 sidenav: dira
 
