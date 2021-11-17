@@ -14,8 +14,6 @@ sticky_sidenav: true
 sidenav: dira
 
 subnav:
-  - text: High-Level DIRA Process
-    href: '#high-level-dira-process'
   - text: Step 1. Identify Users, Transactions, and Roles
     href: '#step-1-identify-users-transactions-and-roles'
   - text: Step 2. Identify Risks
@@ -26,8 +24,6 @@ subnav:
     href: '#step-4-finalize-digital-identity-acceptance-statement'
   - text: Step 5. Reassess
     href: '#step-5-reassess'
-  - text: Agency Process Plays
-    href: '#agency-process-plays'
   - text: Play 1. Streamline RMF
     href: '#play-1-streamline-risk-management-and-assessment-processes'
   - text: Play 2. Add Context
@@ -40,16 +36,6 @@ subnav:
     href: '#play-5-leverage-existing-agency-tools'
   - text: Play 6. Less Is More
     href: '#play-6-less-is-more'
-  - text: Appendix A. Policy, Standards, and Guidance
-    href: '#appendix-a-policy-standards-and-guidance'
-  - text: Appendix B. Examples and Templates
-    href: '#appendix-b-examples-and-templates'
-  - text: Appendix C. NIST SP 800-63-3 RTM
-    href: '#appendix-c-nist-special-publication-800-63-3-requirements-traceability-matrix'
-  - text: Appendix D. NIST SP 800-63 Updates
-    href: '#appendix-d-updates-to-nist-special-publication-800-63'
-  - text: Footnotes 
-    href: '#footnotes'
 ---
 
 Version 1.1  
