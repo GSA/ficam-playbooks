@@ -14,10 +14,6 @@ sticky_sidenav: true
 sidenav: dira
 
 subnav:
-  - text: Acknowledgements
-    href: '#acknowledgements'
-  - text: Introduction
-    href: '#introduction'
   - text: High-Level DIRA Process
     href: '#high-level-dira-process'
   - text: Step 1. Identify Users, Transactions, and Roles
@@ -26,21 +22,21 @@ subnav:
     href: '#step-2-identify-risks-and-assurance-levels'
   - text: Step 3. Determine Steps to Meet Assurance Levels
     href: '#step-3-determine-steps-to-meet-assurance-levels'
-  - text: Step 4. Finalize Digital Identity Acceptance Statement
+  - text: Step 4. Finalize DIAS
     href: '#step-4-finalize-digital-identity-acceptance-statement'
   - text: Step 5. Reassess
     href: '#step-5-reassess'
   - text: Agency Process Plays
     href: '#agency-process-plays'
-  - text: Play 1. Streamline Risk Management and Assessment Processes
+  - text: Play 1. Streamline RMF
     href: '#play-1-streamline-risk-management-and-assessment-processes'
-  - text: Play 2. Add Context for the Mission
+  - text: Play 2. Add Context
     href: '#play-2-add-context-for-the-mission'
   - text: Play 3. Use Templates
     href: '#play-3-use-templates'
-  - text: Play 4. Shortcut Decision Trees
+  - text: Play 4. Shortcut Trees
     href: '#play-4-shortcut-decision-trees'
-  - text: Play 5. Leverage Existing Agency Tools
+  - text: Play 5. Leverage Existing Tools
     href: '#play-5-leverage-existing-agency-tools'
   - text: Play 6. Less Is More
     href: '#play-6-less-is-more'
