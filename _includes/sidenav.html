@@ -23,12 +23,11 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
         {% include subnav.html links=page.subnav %}
       </ul>
       {% endif %}
-      {% for playbook in playbooks %}
-        {% if playbook.pdf == true %}
-          <ul class="usa-list usa-list--unstyled">
-            <li><a class="usa-button" target="_blank" href="{{ site.baseurl}}/{{ playbook.pdflocation }}">Download as a PDF</a></li>
-          </ul>
-        {% endif %}
+      {% if _current and page.pdf %}
+      <ul class="usa-list usa-list--unstyled">
+        <li><a class="usa-button" target="_blank" href="{{ site.baseurl}}/{{ playbook.pdf }}">Download as a PDF</a></li>
+      </ul>
+      {% endif %}
     {% endfor %}
     </li>
     {% endfor %}
