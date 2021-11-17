@@ -49,6 +49,10 @@ subnav:
 | DF-12 | **Digital Worker Date of Custodian Acknowledgement Recertification**<br>_(optional)_ | _Track when the custodian acknowledgement must be recertified. This can be tracked as a formula based on the last acknowledgement date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
 | DF-13 | **Approved Source Internet Protocol (IP) Address Range**<br>_( only for High and Critical)_ | _Specify the range of source IP addresses on which the digital worker may operate._ |
 | DF-14 | **Code Review Completion Date**<br>_(optional)_ | _Specify the code review completion date (refer to VD-3 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-15 | **Ethics Review Completion Date** | _Specify the digital worker ethics review completion date (refer to VD-4 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-16 | **Next Ethics Review Date**<br>_(optional)_ | _Track when the next ethics review date must be conducted. This can be tracked as a formula based on the last ethics review date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
+| DF-17 | **Digital Worker Bias Review Completion Date** | _Specify the digital worker bias review completion date (refer to VD-5 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-18 | **Next Bias Review Date**<br>_(optional)_ | _Track when the next bias review date must be conducted. This can be tracked as a formula based on the last bias review date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
 
 
 
