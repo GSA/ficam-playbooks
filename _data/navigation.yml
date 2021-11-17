@@ -252,5 +252,5 @@ signword:
     href: /playbooks/signword/
 
 signwordofr:
-  - text: Digitally Signing Documents for Submission to Office of the Federal Register
-    href: /playbooks/signfedregister/
+  - text: Digitally Signing Documents for Office of the Federal Register Submission
+    href: /signfedregister/

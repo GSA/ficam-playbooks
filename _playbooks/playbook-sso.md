@@ -10,8 +10,7 @@ type: Markdown
 permalink: /playbooks/sso/
 description: The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.
 sticky_sidenav: true
-pdf: true
-pdflocation: "docs/playbook-sso.pdf"
+pdf: "docs/playbook-sso.pdf"
 sidenav: sso
 
 subnav:
@@ -35,6 +34,9 @@ subnav:
 
 Version 1.1  
 February 12, 2021
+
+<a href="../../assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
+<a href="../../assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
 
 This playbook is a collaboration between the Identity, Credential, and Access Management Subcommittee of the Federal Chief Information Security Officer (CISO) Council and the General Services Administration Office of Government-wide Policy identity Assurance and Trusted Access Division
 
