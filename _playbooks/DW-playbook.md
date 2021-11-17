@@ -40,7 +40,7 @@ subnav:
 
 **Table 8. Factor 1 Criteria Details**
 
-| Criteria&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Details | Score |
+| Criteria&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Details | Score |
 | ----------------------------- | ---------------------- | --------------------- | 
 | **1a)** Attended | An attended digital worker operates under constant supervision and attendance by a human, likely operating on the user interface level (e.g., either on the user’s computer desktop or a separate computer attended by the human, typically acting on behalf of a human user). | 0 |
 | **1b)** Unattended | An unattended digital worker doesn’t operate under supervision or attendance by a human. A human doesn’t  oversee the direct action of the digital worker technology. The tool operates out of sight, including (but not limited to) on a virtual machine, through API calls, etc. | 10 |
