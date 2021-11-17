@@ -66,12 +66,6 @@ This change will also impact partner users that rely on COMMON. For example, a D
 
 You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
 
-<!---
-## What Should I Do?
-
-{% include microsoft_trust_store_installation.md %}
---->
-
 ## How Can I Test?
 
 Testing by government teams did not allow locally administered certificate stores to override the Microsoft CTL distributed settings.  The decision was made to remove COMMON entirely from Microsoft's trust store.  No further testing on overriding the CTL settings will be conducted. 
