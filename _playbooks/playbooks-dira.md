@@ -263,7 +263,7 @@ Figure 4 explains the concept of the three Federation Assurance Levels in _examp
 
 [Appendix B. Examples and Templates](#appendix-b-examples-and-templates) includes an example of a decision tree of the risk assessment process flow that defines the Federation Assurance Levels for the communities of users and transactions in Step 1.<sup>19</sup>  
 
-{% include alert-info.html heading="Key Point" content="The DIRA provides a minimum level and does not change established credentialing proceses. For example, if a DIRA arrives at AAL2, agency leadership may decice to allow an AAL2 credential but it should not downgrade or alter an AAL3 credentialing process to AAL2." %}
+{% include alert-info.html heading="Key Point" content="The DIRA provides a minimum level and does not change established credentialing processes. For example, if a DIRA arrives at AAL2, agency leadership may decide to allow an AAL2 credential but it should not downgrade or alter an AAL3 credentialing process to AAL2." %}
 
 ## Step 3. Determine Steps to Meet Assurance Levels
 
