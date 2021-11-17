@@ -29,6 +29,8 @@ subnav:
     href: '#step-4-integrate-applications-for-agency-use'
   - text: Step 5. Federate Application Access
     href: '#step-5-federate-application-access'
+  - text: Appendix A. Troubleshooting Single Sign-On
+    href: '#appendix-a-troubleshooting-single-sign-on'
 ---
 
 Version 1.1  
