@@ -82,6 +82,16 @@ The three-step process outlined below is a structured, iterative approach with d
 
 <p align="center"><b>Figure 1. A Three-Step Process for Digital Worker Identity Management</b></p>
 
+[Step 1: Determine the impact](#step-1-determine-the-impact) to decide whether to establish a digital worker identity. Much like the human worker, a digital worker should undergo a similar vetting process before being granted network or application access. Not all digital workers may require a unique identity. Work with the agency's ICAM governance structure[^2] to:
+-	Create or expand the agency ICAM governance structure and policies for digital worker identity management oversight;
+-	Score risk using the Digital Worker Impact Assessment; and
+-	Identify a digital worker adverse impact level.[^3] 
+
+The Digital Worker Impact Evaluation Matrix is a scoring tool. It uses six factors to score the risk of a digital worker's scope and access. Agencies can use the risk score to determine an overall adverse impact level. 
+
+{% include alert-info.html heading="Key Point" content="Agencies may decide that digital workers with low adverse impact levels do not require a digital identity. If an agency’s policy demands that all digital workers require a digital identity, they should follow the Moderate level process." %}
+
+
 # Step 1. Determine the Impact
 
 [text here]
