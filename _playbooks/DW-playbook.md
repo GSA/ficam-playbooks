@@ -38,13 +38,26 @@ subnav:
 [trying out DW md tables here as I build them]
 
 
-**Table 13. Factor 6 Criteria Details**
+**Table 14. Critical Case Study Digital Worker Impact Evaluation Matrix**
 
-| Criteria | Details | Score |
-| ----------- | ---------------------- | --------------------- | 
-| **6a)** Digital worker develops insights, but does not take action on its insights | The digital worker develops insights but doesn’t take separate action based on the insights. (e.g., a digital worker is used to diagnose a patient based on medical history data fed to a machine learning algorithm, then the digital worker only provides a diagnosis recommendation and doesn’t take any additional actions.) | 0 |
-| **6b)** Digital worker develops insights and acts on the insights after human review | The digital worker is used first to develop insights. A human then reviews the insight and either edits or approves the insight. (e.g., a digital worker is used to diagnose a patient based on medical history data, then the tool will use the data to develop a diagnosis and recommended treatment [insight]. The doctor will review the diagnosis and recommended treatment. If the doctor disagrees with the insight, they will amend it; if the doctor agrees, they will approve it. Then, the digital worker administers the treatment to the patient.) | 5 |
-| **6c)** Digital worker develops insight and acts on the insights without human review or approval before the action is taken | The tool develops insights and then uses the insight to determine a course of action. The tool proceeds with this action without human review of the initial insight. (e.g., a digital worker recommends a diagnosis and treatment based on data from the patient’s medical history. The digital worker acts on this recommendation by administering treatment to the patient without a doctor’s intermediary review.) | 10 |
+| Digital Worker Impact Evaluation Matrix |     | 
+| ------------------------ | ------------ | 
+| **Factor 1 - Is the digital worker attended or unattended?** | **Score** | 
+| ● Unattended | 10 |
+| **Factor 2 - What is the highest level of sensitive data access?** |     | 
+| ● PII and/or PHI | 55 | 
+| **Factor 3 - Does the digital worker have network access?** |     | 
+| ● Either internal intranet access only OR external Internet access (not both) | 5 | 
+| **Factor 4 - What is the impact of the digital worker output?** |     | 
+| ● Output impacts mission critical organization operations of the agency or other organizations, health or safety of individuals, national economic stability, national security, critical infrastructure, or similarly consequential operations | 90 | 
+| **Factor 5 - What system account privileges are required to perform the task?** |     | 
+| ● Standard system account(s) (roles limited by the business function) | 10 |
+| **Factor 6 - Does the digital worker act on its own insights?** |     | 
+| ● Digital worker develops insights, but doesn’t take action on its insights | 0 | 
+| **Total Score** | **170** |
+| **Digital Worker Adverse Impact Level** | **Critical** | 
+
+
 
 
 
