@@ -38,26 +38,21 @@ subnav:
 [trying out DW md tables here as I build them]
 
 
-**Table 14. Critical Case Study Digital Worker Impact Evaluation Matrix**
+**Table 15. Critical Case Study Sponsorship and Validation**
 
-| Digital Worker Impact Evaluation Matrix |     | 
-| ------------------------ | ------------ | 
-| **Factor 1 - Is the digital worker attended or unattended?** | **Score** | 
-| ● Unattended | 10 |
-| **Factor 2 - What is the highest level of sensitive data access?** |     | 
-| ● PII and/or PHI | 55 | 
-| **Factor 3 - Does the digital worker have network access?** |     | 
-| ● Either internal intranet access only OR external Internet access (not both) | 5 | 
-| **Factor 4 - What is the impact of the digital worker output?** |     | 
-| ● Output impacts mission critical organization operations of the agency or other organizations, health or safety of individuals, national economic stability, national security, critical infrastructure, or similarly consequential operations | 90 | 
-| **Factor 5 - What system account privileges are required to perform the task?** |     | 
-| ● Standard system account(s) (roles limited by the business function) | 10 |
-| **Factor 6 - Does the digital worker act on its own insights?** |     | 
-| ● Digital worker develops insights, but doesn’t take action on its insights | 0 | 
-| **Total Score** | **170** |
-| **Digital Worker Adverse Impact Level** | **Critical** | 
-
-
+|     | **Hospital Digital Worker Sponsorship (SP)** |
+| ------------------------ | :------------: | 
+| **&nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;** | **Critical Actions** | 
+| SP-1 | The business owner documents the business need to use a digital worker. | 
+| SP-2<br> SP-3 | The CISO reviews the business need and assigns the systems Information Security System Manager (ISSM) as sponsor. The CISO notifies the ISSM and the ISSM electronically signs an acknowledgement letter every six months. | 
+| SP-4<br> SP-5 | As sponsor, the ISSM assigns and notifies the contractor maintaining the digital worker of their responsibility as custodian. | 
+| SP-6 | The contractor, as custodian, acknowledges their assignment and responsibility every six months. | 
+|     | **Hospital Digital Worker Validation (VD)** |
+| VD-1 | The ISSM, as sponsor, reviews the digital worker design document with the ISSO to verify a level of access that employs least privilege. They verify a standard system account is necessary. | 
+| VD-2 | The ISSM and ISSO validate the standard system account does not create a separation of duty conflict with a human user. | 
+| VD-3 | The ISSM verifies a code review was conducted with the business owner and sets a reminder to verify the code review every six months. | 
+| VD-4<br> VD-5 | The ISSM verifies with the ethics office that the digital worker output is in line with agency ethics and bias standards and sets a reminder to verify with the ethics office every six months. | 
+| VD-6<br> VD-7 | The ISSM and contractor, as sponsor and custodian, recertify acknowledgement of responsibility for the digital worker and set a reminder to conduct this action every six months. | 
 
 
 
