@@ -31,31 +31,6 @@ subnav:
 
 # Executive Summary
 
-[text here]
-
-[trying out DW md tables here as I build them]
-
-
-**Table 17. Low Case Study Digital Worker Impact Evaluation Matrix**
-
-| Digital Worker Impact Evaluation Matrix |     | 
-| ------------------------ | ------------ | 
-| **Factor 1 - Is the digital worker attended or unattended?** | **Score** | 
-| ● Unattended | 10 |
-| **Factor 2 - What is the highest level of sensitive data access?** |     | 
-| ● Data available to the public (either without a user account or with unvetted user account) | 0 | 
-| **Factor 3 - Does the digital worker have network access?** |     | 
-| ● Internal and external network access (i.e., Internet and intranet) | 10 | 
-| **Factor 4 - What is the impact of the digital worker output?** |     | 
-| ● Output impacts general internal business operations, but not for critical processes or decisions | 5| 
-| **Factor 5 - What system account privileges are required to perform the task?** |     | 
-| ● Standard system account(s) (roles limited by the business function) | 10 |
-| **Factor 6 - Does the digital worker act on its own insights?** |     | 
-| ● Digital worker develops insights, but doesn’t take action on its insights | 0 | 
-| **Total Score** | **35** |
-| **Digital Worker Adverse Impact Level** | **Low** | 
-
-
 
 
 
