@@ -38,33 +38,24 @@ subnav:
 [trying out DW md tables here as I build them]
 
 
-**Table 16. Critical Case Study Data Fields**
+**Table 17. Low Case Study Digital Worker Impact Evaluation Matrix**
 
-|      | **Identity Management System Data Fields (DF)** |     |
-| ----- | ----- | ------------ | 
-| DF-1 | **Digital Worker** _(new field)_ | True |
-| DF-2 | **Agency unique user ID** _(existing field)_ | Diagnosis.DW01@agency.gov |
-| DF-3 | **First Name** and **Last Name** _(existing fields)_ | Diagnosis DW01 |
-| DF-4 | **Digital Worker Sponsor Name** _(new field[s])_ | Jane ISSM |
-| DF-5 | **Digital Worker Custodian Name** _(new field[s])_ | Stacy Contractor |
-| DF-6 | **Digital Worker Description** _(optional new field)_ | N/A |
-| DF-7 | **Responsible Organization** _(optional new field)_ | Patient Health Division |
-|      | **Additional Identity Governance Data Fields** |     |
-| DF-8 | **DW Sponsor Acknowledgement Date** | 09/1/2020 |
-| DF-9 | **DW Sponsor Acknowledgement Recertification<br>Date** _(optional)_ | 02/1/2021 |
-| DF-10 | **DW Level of Potential Adverse Impact** | Critical |
-| DF-11 | **DW Custodian Acknowledgement Date** | 09/10/2020 |
-| DF-12 | **DW Custodian Acknowledgement Recertification<br>Date** _(optional)_ | 02/10/2021 |
-| DF-13 | **DW Approved Source Internet Protocol (IP)<br>Address Range** _(only for High and Critical)_ | 192.168.0.0/16 |
-| DF-14 | **DW Code Review Completion Date** _(optional)_ | 07/04/2020 |
-| DF-15 | **DW Next Code Review Date** _(optional)_ | 01/04/2021 |
-| DF-16 | **DW Ethics Review Completion Date** | 07/11/2020 |
-| DF-17 | **DW Next Ethics Review Date** _(optional)_ | 01/11/2021 |
-| DF-18 | **DW Bias Review Completion Date** | 07/11/2020 |
-| DF-19 | **DW Next Bias Review Date** _(optional)_ | 01/11/2021 |
-
-
-
+| Digital Worker Impact Evaluation Matrix |     | 
+| ------------------------ | ------------ | 
+| **Factor 1 - Is the digital worker attended or unattended?** | **Score** | 
+| ● Unattended | 10 |
+| **Factor 2 - What is the highest level of sensitive data access?** |     | 
+| ● Data available to the public (either without a user account or with unvetted user account) | 0 | 
+| **Factor 3 - Does the digital worker have network access?** |     | 
+| ● Internal and external network access (i.e., Internet and intranet) | 10 | 
+| **Factor 4 - What is the impact of the digital worker output?** |     | 
+| ● Output impacts general internal business operations, but not for critical processes or decisions | 5| 
+| **Factor 5 - What system account privileges are required to perform the task?** |     | 
+| ● Standard system account(s) (roles limited by the business function) | 10 |
+| **Factor 6 - Does the digital worker act on its own insights?** |     | 
+| ● Digital worker develops insights, but doesn’t take action on its insights | 0 | 
+| **Total Score** | **35** |
+| **Digital Worker Adverse Impact Level** | **Low** | 
 
 
 
