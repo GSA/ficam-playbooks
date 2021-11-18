@@ -1,6 +1,6 @@
 ---
 layout: page
-collection: playbooks
+collections: playbooks
 navtitle: Digital Worker Identity Playbook 
 title: Digital Worker Identity Playbook 
 pubdate: 2021-01
@@ -24,12 +24,9 @@ subnav:
     href: '#step-3-provision-an-identity'
   - text: Conclusion
     href: '#conclusion'
-  - text: Appendix A. Digital Worker Impact Evaluation Factors
+  - text: References
     href: '#appendix-a-digital-worker-impact-evaluation-factors'
-  - text: Appendix B. Critical Case Study
-    href: '#appendix-b-critical-case-study'
-  - text: Appendix C. Low Case Study
-    href: '#appendix-c-low-case-study'
+    
 ---
 
 # Executive Summary
@@ -129,6 +126,8 @@ subnav:
 # Appendix C. Low Case Study
 
 [text here]
+
+# Footnotes
 
 [text here]
 
