@@ -57,7 +57,7 @@ This playbook reflects the contributions of the Digital Identity Risk Assessment
 
 # Introduction
 
-Digital identity represents each individual engaged in an online transaction. However, an individual’s real-life identity may not be known when used to access a digital service.<sup>1</sup> Identity proofing helps establish that the individual is who they claim to be. Digital authentication provides reasonable risk-based assurances that the individual accessing the application is the same individual who previously accessed the service.  This playbook is a method to apply the National Institute of Standards and Technology (NIST) Special Publication 800-63-3 Digital Identity Guidelines. Federal agencies can perform a Digital Identity Risk Assessment (DIRA) to determine the appropriate identity, authenticator, or federation level outlined to access an application.
+Digital identity represents each individual engaged in an online transaction. However, an individual’s real-life identity may not be known when used to access a digital service.[^1] Identity proofing helps establish that the individual is who they claim to be. Digital authentication provides reasonable risk-based assurances that the individual accessing the application is the same individual who previously accessed the service.  This playbook is a method to apply the National Institute of Standards and Technology (NIST) Special Publication 800-63-3 Digital Identity Guidelines. Federal agencies can perform a Digital Identity Risk Assessment (DIRA) to determine the appropriate identity, authenticator, or federation level outlined to access an application.
 
 ## Purpose
 
@@ -510,7 +510,7 @@ The revised guidance provides individual assurance levels that can be mixed and 
 
 # Footnotes
 
-1.	A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet.
+[^1]:	A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet.
 2.	A Digital Identity Risk Assessment is a method of applying Digital Identity Risk Management required by OMB Memorandum 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management, and NIST Special Publication 800-63-3 Digital Identity Guidelines.
 3.	For more information, refer to NIST Special Publication 800-63-3 Digital Identity Guidelines.
 4.	NIST Special Publication 800-63-3 Digital Identity Guidelines, Frequently Asked Questions.
