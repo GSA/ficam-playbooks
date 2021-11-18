@@ -19,7 +19,7 @@ subnav:
   - text: Step 1. Determine the Impact
     href: '#step-1-determine-the-impact'
   - text: Step 2. Create an Identity
-    href: '#Step-2-create-an-identity'
+    href: '#step-2-create-an-identity'
   - text: Step 3. Provision an Identity
     href: '#step-3-provision-an-identity'
   - text: Conclusion
@@ -82,7 +82,7 @@ The three-step process outlined below is a structured, iterative approach with d
 
 <p align="center"><b>Figure 1. A Three-Step Process for Digital Worker Identity Management</b></p>
 
-[Step 1: Determine the impact](#step-1-determine-the-impact) to decide whether to establish a digital worker identity. Much like the human worker, a digital worker should undergo a similar vetting process before being granted network or application access. Not all digital workers may require a unique identity. Work with the agency's ICAM governance structure[^2] to:
+[Step 1. Determine the impact](#step-1-determine-the-impact) to decide whether to establish a digital worker identity. Much like the human worker, a digital worker should undergo a similar vetting process before being granted network or application access. Not all digital workers may require a unique identity. Work with the agency's ICAM governance structure[^2] to:
 -	Create or expand the agency ICAM governance structure and policies for digital worker identity management oversight;
 -	Score risk using the Digital Worker Impact Assessment; and
 -	Identify a digital worker adverse impact level.[^3] 
@@ -91,6 +91,11 @@ The Digital Worker Impact Evaluation Matrix is a scoring tool. It uses six facto
 
 {% include alert-info.html heading="Key Point" content="Agencies may decide that digital workers with low adverse impact levels do not require a digital identity. If an agency’s policy demands that all digital workers require a digital identity, they should follow the Moderate level process." %}
 
+[Step 2. Create an identity](step-2-create-an-identity) that complies with the agency ICAM policies. A digital worker is assigned a sponsor and custodian that maintains the digital worker processes. The sponsorship process creates and assigns digital worker oversight roles and responsibilities for a sponsor and a custodian. After appointing a sponsor and custodian, follow security best practices when validating a digital worker level of access. Best practices include employing least privilege, separation of duties, and regular access recertification, similar to human workers.
+
+[Step 3. Provision an identity](#step-3-provision-an-identity) in the agency enterprise identity management systems. After assigning a sponsor, custodian, and validating access, capture the appropriate data elements in the digital worker identity record. These data elements enable the agency to appropriately catalog and monitor digital workers through the identity lifecycle.
+
+This playbook should aid agencies in integrating digital worker identity management processes into existing enterprise identity management policies.
 
 # Step 1. Determine the Impact
 
