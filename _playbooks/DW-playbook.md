@@ -51,10 +51,10 @@ subnav:
 | DF-7 | **Responsible Organization** _(optional new field)_ | Patient Health Division |
 |      | **Additional Identity Governance Data Fields** |     |
 | DF-8 | **DW Sponsor Acknowledgement Date** | 09/1/2020 |
-| DF-9 | **DW Sponsor Acknowledgement Recertification Date** _(optional)_ | 02/1/2021 |
+| DF-9 | **DW Sponsor Acknowledgement Recertification<br>Date** _(optional)_ | 02/1/2021 |
 | &nbsp;DF-10&nbsp;&nbsp;&nbsp;&nbsp; | **DW Level of Potential Adverse Impact** | Critical |
 | &nbsp;DF-11&nbsp;&nbsp;&nbsp;&nbsp; | **DW Custodian Acknowledgement Date** | 09/10/2020 |
-| &nbsp;DF-12&nbsp;&nbsp;&nbsp;&nbsp; | **DW Custodian Acknowledgement Recertification Date** _(optional)_ | 02/10/2021 |
+| &nbsp;DF-12&nbsp;&nbsp;&nbsp;&nbsp; | **DW Custodian Acknowledgement Recertification<br>Date** _(optional)_ | 02/10/2021 |
 | &nbsp;DF-13&nbsp;&nbsp;&nbsp;&nbsp; | **DW Approved Source Internet Protocol (IP)<br>Address Range** _(only for High and Critical)_ | 192.168.0.0/16 |
 | &nbsp;DF-14&nbsp;&nbsp;&nbsp;&nbsp; | **DW Code Review Completion Date** _(optional)_ | 07/04/2020 |
 | &nbsp;DF-15&nbsp;&nbsp;&nbsp;&nbsp; | **DW Next Code Review Date** _(optional)_ | 01/04/2021 |
