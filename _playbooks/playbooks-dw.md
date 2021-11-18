@@ -76,7 +76,11 @@ This playbook was developed by the General Services Administration Office of Gov
 
 # A Three-Step Process for Digital Worker Identity Management
 
-[text here]
+The three-step process outlined below is a structured, iterative approach with discrete actions to create a digital worker identity management process. _CIO and CISO offices_ are the intended audience for this guide. Use this guide to write, update, or enhance existing enterprise identity management policies. Agencies are encouraged to tailor these steps to meet organizational structures, unique requirements, and mission needs. 
+
+[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. Below 1 Determine the impact is text that lists 1.1 Ensure Proper Oversight, 1.2 Score Risk Impact, and 1.3 Determine Adverse Impact Level. Below 2 Create an Identity is text that lists 2.1 Assign a Sponsor and Custodian and 2.2 Validate Worker Access. Below 3 Provision an Identity is text that lists 3.1 Capture and Store Identity Management Data Elements and 3.2 Capture and Store Identity Governance Data Elements.]({{site.baseurl}}/assets/playbooks/dw-process.png)]({{site.baseurl}}/assets/playbooks/dw-process.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 1. A Three-Step Process for Digital Worker Identity Management</b></p>
 
 # Step 1. Determine the Impact
 
