@@ -97,7 +97,7 @@ The Digital Worker Impact Evaluation Matrix is a scoring tool. It uses six facto
 
 This playbook should aid agencies in integrating digital worker identity management processes into existing enterprise identity management policies.
 
-[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 1 Determine the Impact is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-1.png)]({{site.baseurl}}/assets/playbooks/dw-step-1.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 1 Determine the Impact is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-one.png)]({{site.baseurl}}/assets/playbooks/dw-step-one.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 # Step 1. Determine the Impact
 
