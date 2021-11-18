@@ -97,13 +97,15 @@ The Digital Worker Impact Evaluation Matrix is a scoring tool. It uses six facto
 
 This playbook should aid agencies in integrating digital worker identity management processes into existing enterprise identity management policies.
 
+[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 1 Determine the Impact is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-1.png)]({{site.baseurl}}/assets/playbooks/dw-step-1.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 # Step 1. Determine the Impact
 
-[text here]
+Ensure digital worker identity management has proper governance, score the function of the digital worker across six categories, and then use the risk score to arrive at an adverse impact level. For this step, we use the Digital Worker Impact Evaluation Matrix (Table 1).
 
 ## 1.1 Ensure Proper Oversight 
 
-[text here]
+The ICAM governance structure ensures enterprise identity management policies are updated to include digital worker management and use. For ICAM oversight and program management examples, see the [ICAM Program Management Playbook](https://playbooks.idmanagement.gov/pm/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ## 1.2 Score Risk Impact 
 
