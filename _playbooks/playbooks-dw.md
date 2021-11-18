@@ -29,6 +29,19 @@ subnav:
     
 ---
 
+Version 1.1  
+January 5, 2021
+
+<a href="../../assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
+<a href="../../assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+
+This playbook is a collaboration between the Identity, Credential, and Access Management Subcommittee of the Federal Chief Information Security Officer (CISO) Council and the General Services Administration Office of Government-wide Policy identity Assurance and Trusted Access Division
+
+| Version Number | Date | Change Description |
+| :----------: | :-------: | -------- |
+| 1.0 | 1/5/21 | Initial Draft |
+| 1.1 | 11/18/21 | Renumbered tables |
+
 # Executive Summary
 
 
