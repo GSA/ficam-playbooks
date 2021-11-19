@@ -8,6 +8,7 @@ date: October 14, 2021
 type: Markdown
 permalink: /playbooks/dw/ 
 description: The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.
+pdf: "docs/playbook-digital-worker.pdf"
 sticky_sidenav: true
 sidenav: dw
 
