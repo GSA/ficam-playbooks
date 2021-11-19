@@ -309,11 +309,84 @@ Agencies may store and track identity governance data elements in an existing sy
 
 # Conclusion
 
-[text here]
+Digital worker identity management requires new government-wide policies and guidance tailored to digital workers' unique functional and security considerations. Government-wide adoption and implementation of this playbook provide agencies distinct actions on how to manage and maintain their digital workforce.
+
+-	**Step 1:** The Digital Worker Impact Evaluation Matrix helps agencies determine whether to establish an identity for a digital worker based on its potential level of adverse impact.
+-	**Step 2:** New sponsorship and validation processes establish digital worker accountability and confirms it will only act as programmed.
+-	**Step 3:** New identity management and identity governance data elements support an agency's ability to manage and monitor through the identity lifecycle.
+
+This playbook is iterative, and agencies are encouraged to collaborate, share best practices, and share lessons learned. Consider joining a federal committee and community of practice to learn and engage in digital worker identity management.
 
 # Appendix A. Digital Worker Impact Evaluation Factors
 
-[text here]
+This section provides a detailed breakdown of the information contained in Table 1, the Digital Worker Impact Evaluation Matrix.
+
+**Factor 1 – Is the digital worker attended or unattended?**<br>
+This factor assesses whether the digital worker is attended and overseen by a human worker in completing its operations.
+
+**Table 8. Factor 1 Criteria Details**
+
+| Criteria&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Details | Score |
+| ----------------------------- | ---------------------- | --------------------- | 
+| **1a)** Attended | An attended digital worker operates under constant supervision and attendance by a human, likely operating on the user interface level (e.g., either on the user’s computer desktop or a separate computer attended by the human, typically acting on behalf of a human user). | 0 |
+| **1b)** Unattended | An unattended digital worker doesn’t operate under supervision or attendance by a human. A human doesn’t  oversee the direct action of the digital worker technology. The tool operates out of sight, including (but not limited to) on a virtual machine, through API calls, etc. | 10 |
+
+**Factor 2 – What is the highest level of data access by the digital worker?**<br>
+This factor assesses the impact-based sensitivity of data accessed by the digital worker to determine the potential adverse impact related to unauthorized disclosure of information and changing or destruction of information.
+
+**Table 9. Factor 2 Criteria Details**
+
+| Criteria | Details | Score |
+| ----------- | ---------------------- | --------------------- | 
+| **2a)** Data available to the public (either without a user account or with unvetted user account) | The digital worker only works with/has access to data that’s fully available for use and access by the general public. It includes all information available on public forums (open websites and networks) and  all information that the public may access through the setup of unvetted user accounts (e.g., a citizen can use an unvetted account to access Centers for Disease Control "public" data). | 0 |
+| **2b)** Agency operational data, CUI, or data on individuals (no PII) in low volumes | The digital worker works with/has access to data that isn’t for public consumption, including CUI, intellectual property owned by the government or outside organizations, and information related to agency operations. | 5 |
+| **2c)** PII and PHI | The digital worker works with/has access to public data, agency operational data, and PII or PHI.<br><br>This is a “trigger” criterion, meaning if the digital worker meets this criterion, it automatically should be in at least a High potential adverse impact level according to the scale in Table 1. | 55|
+| **2d)** Agency critical operational data or data that could impact life, health, or safety of individuals/systems relied upon for health and safety; or very high volumes of agency operational data | The digital worker works with/has access to data that could have catastrophic effects if made public, such as information about mission-critical agency operations or information that impacts the life, health, and safety of individuals.<br><br> This is a “trigger” criterion, meaning if the digital worker meets this criterion, it automatically should be in a Critical potential adverse impact level according to the scale in Table 1. | 90 |
+
+**Factor 3 – Does the digital worker have access to internal and/or external networks?**<br>
+This factor assesses what type of networks the digital worker accesses. There are different levels of potential impact depending on whether access is granted to internal networks, external networks, or both.
+
+**Table 10. Factor 3 Criteria Details**
+
+| Criteria | Details | Score |
+| ----------- | ---------------------- | --------------------- | 
+| **3a)** No internal intranet or external Internet connection | The digital worker doesn’t have access to any internal or external networks. | 0 |
+| **3b)** Either internal intranet access only OR external Internet access (but not both) | The digital worker only has access to internal networks and operates fully inside the agency’s firewall; the digital worker only has access to external networks, operating outside the firewall.| 5 |
+| **3c)** Internal and external network access (i.e., Internet and intranet) | The digital worker has access to both internal networks and external networks (i.e., can cross the agency’s firewall). | 10 |
+
+**Factor 4 – What is the impact of the output generated by the digital worker?**<br>
+This factor assesses the potential worst-case scenario impact of the output the digital worker generates on different stakeholder groups: internal organizational impact; external organizational impact; and critical, pervasive impacts across organizations, government, or society.
+
+**Table 11. Factor 4 Criteria Details**
+
+| Criteria | Details | Score |
+| ----------- | ---------------------- | --------------------- | 
+| **4a)** Output impacts general internal business operations, but not for critical processes or decisions | The output of the digital worker is used solely for and/or may impact internal organizational business processes, operations, and decisions. However, the output isn’t used in critical organizational processes; if it is, then this would fall under criterion 4c.| 5 |
+| **4b)** Output impacts outside organizations in general business operations or public reporting, but not for critical processes or decisions | The output of the digital worker is used for and/or may impact external organizational business processes, operations, and decisions. Additionally, the output may be used in public reporting GAO audits. However, the output shouldn’t be used in critical organizational processes; if it is, then this would fall under criterion 4c. | 25 |
+| **4c)** Output impacts mission critical organization operations of the agency or other organizations, health or safety of individuals, national economic stability, national security, critical infrastructure, or similarly consequential operations | The output of the digital worker is used for and/or may impact mission critical operations of an organization, health and safety of individuals, national economic stability, national security, critical national infrastructure, or other similarly consequential operations.<br><br>This is a “trigger” criterion, meaning if the digital worker meets this criteria, it automatically should be in a Critical potential adverse impact level according to the scale in Table 1. | 90 |
+
+**Factor 5 – What type of system account privileges does the digital worker require?**<br>
+This factor assesses the type and level of system account access that the digital worker requires to complete its tasks. Privileged access, especially for multiple systems, creates higher potential adverse impact than standard user accounts or no account use at all.
+
+**Table 12. Factor 5 Criteria Details**
+
+| Criteria | Details | Score |
+| ----------- | ---------------------- | --------------------- | 
+| **5a)** No system accounts used | The digital worker doesn’t have any system accounts that are used to access databases, web applications, etc. | 0 |
+| **5b)** Standard system account(s) (Roles limited by the business function) | The digital worker uses one or more system accounts that have a login (e.g., username, password, multi-factor authentication) to access databases, web applications, etc. The user privileges within the system account(s) are standard business user roles and have no system administrator privileges. The standard user roles are defined by the agencies and may include any combination of the following: read, write, execute, and delete. | 10 |
+| **5c)** System admin account (privileged access) | The technology uses one or more system accounts that have a login (e.g., username, password, multi-factor authentication) to access databases, web applications, etc. Select this criterion if the digital worker will, or may need to have, access to systems or web applications with admin or otherwise, privileged access. If there are multiple system or web application accounts used by a technology, then only one may be admin or privileged access, as defined by the agency, and may include any combination of the following: read, write, execute, and delete.<br><br> This is a “trigger” criterion, meaning if the digital worker meets this criterion, it automatically should be in at least a Moderate potential adverse impact level according to the scale in Table 1. | 35 |
+| **5d)** Multiple system admin accounts (multiple privileged access roles) | The digital worker uses one or more system accounts that have a login (e.g., username, password, multi-factor authentication) to access databases, web applications, etc. Select this criterion if the digital worker will, or may need to have, access to systems or web applications with admin or some sort of privileged access. Additionally, select this criterion if the digital worker requires, or may in the future require, admin or privileged access to multiple systems or web applications, as defined by the agency, and may include any combination of the following: read, write, execute, and delete.<br><br>This is a “trigger” criterion, meaning if the digital worker meets this criterion, it automatically should be in at least a Moderate potential adverse impact level according to the scale in Table 1. | 40 |
+
+**Factor 6 – Does the digital worker act on its own insights?**<br>
+This factor assesses the extent to which a human is involved in approving the decisions of digital workers. Digital workers that generate insights and then use those insights to make decisions or complete actions are seen as having a greater potential adverse impact compared to digital workers that only generate insights or that generate insights but have a human review before completing a subsequent action.
+
+**Table 13. Factor 6 Criteria Details**
+
+| Criteria | Details | Score |
+| ----------- | ---------------------- | --------------------- | 
+| **6a)** Digital worker develops insights but does not take action on its insights | The digital worker develops insights but doesn’t take separate action based on the insights. (e.g., a digital worker is used to diagnose a patient based on medical history data fed to a machine learning algorithm, then the digital worker only provides a diagnosis recommendation and doesn’t take any additional actions.) | 0 |
+| **6b)** Digital worker develops insights and acts on the insights after human review | The digital worker is used first to develop insights. A human then reviews the insight and either edits or approves the insight. (e.g., a digital worker is used to diagnose a patient based on medical history data, then the tool will use the data to develop a diagnosis and recommended treatment [insight]. The doctor will review the diagnosis and recommended treatment. If the doctor disagrees with the insight, they will amend it; if the doctor agrees, they will approve it. Then, the digital worker administers the treatment to the patient.) | 5 |
+| **6c)** Digital worker develops insight and acts on the insights without human review or approval before the action is taken | The tool develops insights and then uses the insight to determine a course of action. The tool proceeds with this action without human review of the initial insight. (e.g., a digital worker recommends a diagnosis and treatment based on data from the patient’s medical history. The digital worker acts on this recommendation by administering treatment to the patient without a doctor’s intermediary review.) | 10 |
 
 # Appendix B. Critical Case Study
 
