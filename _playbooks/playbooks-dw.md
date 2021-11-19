@@ -244,7 +244,7 @@ Use Table 5 for specific validation actions aligned with adverse impact level.
 
 **Table 5. Validation (VD) Process**
 
-| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp; | Action&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
+| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp; | Action&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
 | ----------- | ------------ | ----------- | :------------: | :-----------: | :------------: |
 | VD-1 | **Validate the digital worker role employs least privilege necessary to accomplish its task.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
 | VD-2 | **Validate the digital worker role doesn’t create separation of duty conflicts for the digital worker or any human users.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
