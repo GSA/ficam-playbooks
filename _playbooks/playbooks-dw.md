@@ -390,7 +390,77 @@ This factor assesses the extent to which a human is involved in approving the de
 
 # Appendix B. Critical Case Study
 
-[text here]
+A government hospital uses a digital worker to diagnose patients. 
+-	The digital worker uses an unattended machine learning algorithm on internal networks.
+-	It works with the patient’s medical history, diagnostic test results, and thousands of previous patient outcome data sets containing PHI
+-	The digital worker develops a diagnosis and recommends a treatment.
+-	The digital worker uses only a standard user account during its tasks.
+
+**Table 14. Critical Case Study Digital Worker Impact Evaluation Matrix**
+
+| Digital Worker Impact Evaluation Matrix |     | 
+| ------------------------ | ------------ | 
+| **Factor 1 - Is the digital worker attended or unattended?** | **Score** | 
+| ● Unattended | 10 |
+| **Factor 2 - What is the highest level of sensitive data access?** |     | 
+| ● PII and/or PHI | 55 | 
+| **Factor 3 - Does the digital worker have network access?** |     | 
+| ● Either internal intranet access only OR external Internet access (not both) | 5 | 
+| **Factor 4 - What is the impact of the digital worker output?** |     | 
+| ● Output impacts mission critical organization operations of the agency or other organizations, health or safety of individuals, national economic stability, national security, critical infrastructure, or similarly consequential operations | 90 | 
+| **Factor 5 - What system account privileges are required to perform the task?** |     | 
+| ● Standard system account(s) (roles limited by the business function) | 10 |
+| **Factor 6 - Does the digital worker act on its own insights?** |     | 
+| ● Digital worker develops insights, but doesn’t take action on its insights | 0 | 
+| **Total Score** | **170** |
+| **Digital Worker Adverse Impact Level** | **Critical** | 
+
+This digital worker impact level is Critical. It has the potential to cause severe or catastrophic impact. The overarching risk in this case study is the digital worker recommendation impacting an individual's health and safety and access to PHI.
+
+The hospital digital worker in this case study has a _critical_ adverse impact level. We follow the below activities to assign a sponsor and custodian and validate the digital worker access and process.
+
+**Table 15. Critical Case Study Sponsorship and Validation**
+
+|     | **Hospital Digital Worker Sponsorship (SP)** |
+| ------------------------ | :------------: | 
+| **&nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;** | **Critical Actions** | 
+| SP-1 | The business owner documents the business need to use a digital worker. | 
+| SP-2<br> SP-3 | The CISO reviews the business need and assigns the systems Information Security System Manager (ISSM) as sponsor. The CISO notifies the ISSM and the ISSM electronically signs an acknowledgement letter every six months. | 
+| SP-4<br> SP-5 | As sponsor, the ISSM assigns and notifies the contractor maintaining the digital worker of their responsibility as custodian. | 
+| SP-6 | The contractor, as custodian, acknowledges their assignment and responsibility every six months. | 
+|     | **Hospital Digital Worker Validation (VD)** |
+| VD-1 | The ISSM, as sponsor, reviews the digital worker design document with the ISSO to verify a level of access that employs least privilege. They verify a standard system account is necessary. | 
+| VD-2 | The ISSM and ISSO validate the standard system account does not create a separation of duty conflict with a human user. | 
+| VD-3 | The ISSM verifies a code review was conducted with the business owner and sets a reminder to verify the code review every six months. | 
+| VD-4<br> VD-5 | The ISSM verifies with the ethics office that the digital worker output is in line with agency ethics and bias standards and sets a reminder to verify with the ethics office every six months. | 
+| VD-6<br> VD-7 | The ISSM and contractor, as sponsor and custodian, recertify acknowledgement of responsibility for the digital worker and set a reminder to conduct this action every six months. | 
+
+After the sponsorship and validation activities are complete and documented, the hospital digital worker identity was created and provisioned. Identity management data fields are captured in the directory service. The identity governance data fields are captured in an agency security assessment tool.
+
+**Table 16. Critical Case Study Data Fields**
+
+|      | **Identity Management System Data Fields (DF)** |     |
+| ----- | ----- | ------------ | 
+| DF-1 | **Digital Worker** _(new field)_ | True |
+| DF-2 | **Agency unique user ID** _(existing field)_ | Diagnosis.DW01@agency.gov |
+| DF-3 | **First Name** and **Last Name** _(existing fields)_ | Diagnosis DW01 |
+| DF-4 | **Digital Worker Sponsor Name** _(new field[s])_ | Jane ISSM |
+| DF-5 | **Digital Worker Custodian Name** _(new field[s])_ | Stacy Contractor |
+| DF-6 | **Digital Worker Description** _(optional new field)_ | N/A |
+| DF-7 | **Responsible Organization** _(optional new field)_ | Patient Health Division |
+|      | **Additional Identity Governance Data Fields** |     |
+| DF-8 | **DW Sponsor Acknowledgement Date** | 09/1/2020 |
+| DF-9 | **DW Sponsor Acknowledgement Recertification<br>Date** _(optional)_ | 02/1/2021 |
+| DF-10 | **DW Level of Potential Adverse Impact** | Critical |
+| DF-11 | **DW Custodian Acknowledgement Date** | 09/10/2020 |
+| DF-12 | **DW Custodian Acknowledgement Recertification<br>Date** _(optional)_ | 02/10/2021 |
+| DF-13 | **DW Approved Source Internet Protocol (IP)<br>Address Range** _(only for High and Critical)_ | 192.168.0.0/16 |
+| DF-14 | **DW Code Review Completion Date** _(optional)_ | 07/04/2020 |
+| DF-15 | **DW Next Code Review Date** _(optional)_ | 01/04/2021 |
+| DF-16 | **DW Ethics Review Completion Date** | 07/11/2020 |
+| DF-17 | **DW Next Ethics Review Date** _(optional)_ | 01/11/2021 |
+| DF-18 | **DW Bias Review Completion Date** | 07/11/2020 |
+| DF-19 | **DW Next Bias Review Date** _(optional)_ | 01/11/2021 |
 
 # Appendix C. Low Case Study
 
