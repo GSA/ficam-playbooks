@@ -97,9 +97,9 @@ The Digital Worker Impact Evaluation Matrix is a scoring tool. It uses six facto
 
 This playbook should aid agencies in integrating digital worker identity management processes into existing enterprise identity management policies.
 
-[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 1 Determine the Impact is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-one.png)]({{site.baseurl}}/assets/playbooks/dw-step-one.png){:target="_blank"}{:rel="noopener noreferrer"}
-
 # Step 1. Determine the Impact
+
+[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 1 Determine the Impact is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-one.png)]({{site.baseurl}}/assets/playbooks/dw-step-one.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Ensure digital worker identity management has proper governance, score the function of the digital worker across six categories, and then use the risk score to arrive at an adverse impact level. For this step, we use the Digital Worker Impact Evaluation Matrix (Table 1).
 
@@ -194,9 +194,9 @@ The four adverse impact levels represent a different scale of harm a digital wor
 | 56-90 | **High** | Effects of an error or accident are wide-ranging and could result in serious or long-term impact on organizational missions/business functions, organizational assets, or the nation. This includes significant financial losses for the agency; substantially reduced capacity to conduct mission critical business; loss of PII, Business Identifiable Information, or PHI; and/or damage to agency image or reputation. |
 | 91+ | **Critical** | Effects of an error or accident are extensive and will have severe or catastrophic impact on organizational missions/business functions, assets, or the nation. This includes major financial losses for the agency or other organizations, loss of government continuity of operations or ability to conduct mission critical business, life-threatening injury or loss of life, and/or harm to national security. |
 
-[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 2 Create an Identity is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-two.png)]({{site.baseurl}}/assets/playbooks/dw-step-two.png){:target="_blank"}{:rel="noopener noreferrer"}
-
 # Step 2. Create an Identity
+
+[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 2 Create an Identity is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-two.png)]({{site.baseurl}}/assets/playbooks/dw-step-two.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Once your agency has determined the digital worker’s level of potential adverse impact, a digital worker identity is created, if needed. The identity process includes sponsorship and validation activities based on the adverse impact level from Step 1. 
 
@@ -219,7 +219,7 @@ Recertification or access reviews are assessed periodically if access privileges
 
 **Table 4. Sponsorship (SP) Process**
 
-| &nbsp;&nbsp;&nbsp;ID[^5]&nbsp; | Action&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
+| &nbsp;&nbsp;&nbsp;ID&nbsp;[^5] | Action&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
 | ----------- | ------------ | ----------- | :------------: | :-----------: | :------------: |
 | SP-1 | **Document a business need for the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
 | SP-2 | **Assign an organizational sponsor for the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b><br>Suggested CIO, CISO, or equivalent |
@@ -258,9 +258,9 @@ Use Table 5 for specific validation actions aligned with adverse impact level.
 
 {% include alert-info.html heading="Key Point" content="VD-3, VD-4, and VD-5 are validating the code, ethics, and bias reviews that have been conducted. It is up to the individual agencies to ensure a standard for conducting such reviews is followed. Agency representatives, such as the sponsor or custodian, should collaborate within a community of practice to capture best practices on how to perform the various reviews in Step 2.2." %}
 
-[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 3 Provision an Identity is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-three.png)]({{site.baseurl}}/assets/playbooks/dw-step-three.png){:target="_blank"}{:rel="noopener noreferrer"}
-
 # Step 3. Provision an Identity
+
+[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 3 Provision an Identity is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-three.png)]({{site.baseurl}}/assets/playbooks/dw-step-three.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Capture the appropriate digital worker data elements. These attributes are stored in the agency IDMS or other systems.
 
