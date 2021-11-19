@@ -132,23 +132,90 @@ The ICAM governance structure ensures enterprise identity management policies ar
 </thead>
 </table>
 
-
-
 ## 1.2 Score Risk Impact 
 
-[text here]
+A risk score is calculated across six factors based on worker autonomy, content handled, type of access, and privileges required.
+
+Each factor has an associated score, and the sum of these six-factor scores is the overall impact score. If multiple criteria within a factor apply to a digital worker, agencies should select the criterion with the highest score.
+
+**Table 1. Digital Worker Impact Evaluation Matrix**[^4]
+
+| Score each factor based on the most applicable scenario |     | 
+| ------------------------ | ------------ | 
+| **Factor 1 - Is the digital worker attended or unattended?** | **Score** | 
+| ● Attended | 0 | 
+| ● Unattended | 10 |
+| **Factor 2 - What is the highest level of data access by the digital worker?** |     | 
+| ● Data available to the public (either without a user account or with unvetted user account) | 0 | 
+| ● Agency operational data, controlled unclassified information (CUI), or data on individuals in low volumes. Doesn’t contain personally identifiable information (PII) or personal health information (PHI). | 5 |
+| ● PII and/or PHI | 55 | 
+| ● Agency critical operational data or data that could impact life, health, or safety of individuals/systems relied upon for health and safety; or very high volumes of agency operational data | 90 |
+| **Factor 3 - Does the digital worker have access to internal and/or external networks?** |     | 
+| ● No internal intranet or external Internet connection | 0 | 
+| ● Either internal intranet access only OR external Internet access (not both) | 5 |
+| ● Internal and external network access (i.e., Internet and intranet) | 10 | 
+| **Factor 4 - What is the impact of the digital worker output?** |     | 
+| ● Output impacts general internal business operations, but not for critical processes or decisions | 5 | 
+| ● Output impacts outside organizations in general business operations or public reporting (e.g., public facing websites or chatbots), but not for critical processes or decisions | 25 |
+| ● Output impacts mission critical organization operations of the agency or other organizations, health or safety of individuals, national economic stability, national security, critical infrastructure, or similarly consequential operations | 90 | 
+| **Factor 5 - What type of system account privileges does the digital worker require?** |     | 
+| ● No system accounts used | 0 | 
+| ● Standard system account(s) (roles limited by the business function) | 10 |
+| ● System admin account (privileged access) | 35 | 
+| ● Multiple system admin accounts (multiple privileged access roles) | 40 |
+| **Factor 6 - Does the digital worker act on its own insights?** |     | 
+| ● Digital worker develops insights, but doesn’t take action on its insights | 0 | 
+| ● Digital worker develops insights and acts on the insights after human review | 5 |
+| ● Digital worker develops insights and acts on the insights without human review or approval before the action is taken | 10 | 
 
 ## 1.3 Determine Adverse Impact Level 
 
-[text here]
+The adverse impact level is the potential magnitude of harm a digital worker can cause the organization, assets, individuals, other organizations, and the United States' economic and national security interests. Specific impacts include: 
+-	unauthorized disclosure;
+-	change or destruction of information;
+-	harm or endangerment of human life;
+-	loss of access to information systems; or 
+-	damage to high-value assets.
+
+The four adverse impact levels represent a different scale of harm a digital worker may cause.
+-	Low;
+-	Moderate; 
+-	High; and 
+-	Critical. 
+
+{% include alert-info.html heading="Key Point" content="The Potential Adverse Impact Levels are grounded in NIST Special Publication 800-30 and are a recommendation. Agencies may adjust or tailor the levels to fit their individual risk levels or descriptions." %}
+
+**Table 2. Potential Adverse Impact Levels**
+
+| Impact Score | Potential Adverse Impact | Description |
+| ------------------------ | ------------ | ------------------ |
+| 0-35 | **Low** | Effects of an error or accident are minimal, resulting in negligible, if any, impacts on organizational operations, finances, assets, individuals, other organizations, or the nation. |
+| 36-55 | **Moderate** | Effects of an error or accident are limited and may result in minor or temporary impact on organizational missions/business functions, organizational assets, or the nation. This includes increased difficulty in performing business operations in a timely manner, with sufficient confidence, or within planned resource constraints; minor damage to agency image, reputation, or trust; minor financial loss to the agency or other organizations; and/or noncompliance with applicable laws or regulations. |
+| 56-90 | **High** | Effects of an error or accident are wide-ranging and could result in serious or long-term impact on organizational missions/business functions, organizational assets, or the nation. This includes significant financial losses for the agency; substantially reduced capacity to conduct mission critical business; loss of PII, Business Identifiable Information, or PHI; and/or damage to agency image or reputation. |
+| 91+ | **Critical** | Effects of an error or accident are extensive and will have severe or catastrophic impact on organizational missions/business functions, assets, or the nation. This includes major financial losses for the agency or other organizations, loss of government continuity of operations or ability to conduct mission critical business, life-threatening injury or loss of life, and/or harm to national security. |
+
+[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 2 Create an Identity is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-two.png)]({{site.baseurl}}/assets/playbooks/dw-step-two.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 # Step 2. Create an Identity
 
-[text here]
+Once your agency has determined the digital worker’s level of potential adverse impact, a digital worker identity is created, if needed. The identity process includes sponsorship and validation activities based on the adverse impact level from Step 1. 
 
 ## 2.1 Assign a Sponsor and Custodian 
 
-[text here]
+The sponsorship process allows agencies to assign specific roles and responsibilities for oversight of digital workers. The agency’s ICAM governance structure ensures the sponsorship process actions are completed; however, it is up to the individual agencies to define how a sponsor and custodian are assigned. 
+
+**Table 3. Sponsor and Custodian Responsibilities**
+
+| Role | Description | Responsibilities |
+| -------------------- | ------------ | ------------------ |
+| Sponsor | ● Responsible for digital worker compliance; and<br>● A federal government employee. | ● Assign roles and responsibilities to govern the digital worker, such as a primary and backup custodian; <br>● Field digital worker inquiries from agency or other government entity leaders; and<br>● Oversee who has access to the digital worker. |
+| Custodian | ● Responsible for digital worker day-to-day operational management; and<br>● A federal government employee or contractor. | ● Hold a comparable level of access as the digital worker;<br>● Complete initial and routine training in digital worker management and security;<br>● Rotate digital worker password or authenticators;<br>● Maintain digital worker access;<br>● Oversee retraining or tuning of an underlying model; and<br>● Track and monitor digital worker data input and output. |
+
+### Industry Best Practice
+
+Recertification or access reviews are assessed periodically if access privileges are still needed to complete a task and a minimum recommendation is required to  verify and validate access. The recommended intervals in Table 4 for sponsor and custodian acknowledgment should be considered a minimum acceptable standard. Agencies may adjust the recertification frequency, but should meet or exceed the recommended intervals. When certifying human access to IT platforms, specific systems and applications may impact the frequency of necessary certifications. Agencies should assess the platforms that digital workers have access to and use this to help evaluate certification frequency.
+
+{% include alert-info.html heading="Key Point" content="Agencies may decide that digital workers with low adverse impact levels do not require a digital identity. If an agency’s policy demands that all digital workers require a digital identity, they should follow the Moderate level process." %}
 
 ## 2.2 Validate Worker Access 
 
