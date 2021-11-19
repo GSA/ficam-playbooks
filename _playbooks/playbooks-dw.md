@@ -467,7 +467,7 @@ After the sponsorship and validation activities are complete and documented, the
 A digital worker helps the General Services Administration gather data on COVID-19.
 -	The digital worker is unattended, uses a standard system account, and has internal and external network access.
 -	The digital worker pulls data from public state government websites to aggregate and populate a Geographic Information System map.
--	The output isn’t decision critical and provides insights with no actions.
+-	The output isn’t decision critical and provides insights with no actions.<br><br>
 
 **Table 17. Low Case Study Digital Worker Impact Evaluation Matrix**
 
