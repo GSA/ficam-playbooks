@@ -217,9 +217,43 @@ Recertification or access reviews are assessed periodically if access privileges
 
 {% include alert-info.html heading="Key Point" content="Agencies may decide that digital workers with low adverse impact levels do not require a digital identity. If an agency’s policy demands that all digital workers require a digital identity, they should follow the Moderate level process." %}
 
+**Table 4. Sponsorship (SP) Process**
+
+| &nbsp;&nbsp;&nbsp;ID[^5]&nbsp; | Action&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
+| ----------- | ------------ | ----------- | :------------: | :-----------: | :------------: |
+| SP-1 | **Document a business need for the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
+| SP-2 | **Assign an organizational sponsor for the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b><br>Suggested CIO, CISO, or equivalent |
+| SP-3 | **Sponsor acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A | <b>✓</b><br>Recertify sponsor annually | <b>✓</b><br>Recertify sponsor annually | <b>✓</b><br>Recertify sponsor every six months |
+| SP-4 | **Sponsor assigns the custodian of the digital worker.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
+| SP-5 | **Notify the custodian of his or her responsibility by the sponsor.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
+| SP-6 | **Confirm the custodian acknowledges responsibility for the digital worker on an initial and routine basis.** | N/A | <b>✓</b><br>Recertify custodian annually | <b>✓</b><br>Recertify custodian annually | <b>✓</b><br>Recertify custodian every six months |
+
 ## 2.2 Validate Worker Access 
 
-[text here]
+Validation actions record the activities to ensure the digital worker continues to behave as expected throughout its lifecycle. The agency’s ICAM governance structure is responsible for ensuring the validation process actions are completed and tracked, but the individual agencies must define a process that fits the agency's mission needs and requirements. Validation is based on the following factors as a starting point. Agencies may include other mission specific review factors as needed. 
+
+1.	**Employ least privilege (VD-1).** Like a human worker, a digital worker should have the lowest access required to complete its task. The sponsor should review the use of an elevated account before initially granting it or upgrading an account already in use.
+2.	**Separation of duties (VD-2)** is a principle that prevents any single person or entity from completing all the functions in a critical or sensitive process. It is designed to “prevent fraud, theft, and errors.” The sponsor should review that the digital worker role does not create a separation of duty conflict. If there is a conflict, document the exception.
+3.	**Code review (VD-3).** Digital worker code may include worker logic and decision-making processes. Include design or other system documentation as part of code review for reasoning and decision-making intent.
+4.	**Ethics and bias review (VD-4 and VD-5).** While government-wide standards for ethics and bias are in development, agencies should define their own ethics standards or collaborate with other agencies that align with the agency mission.
+5.	**Recertification acknowledgement (VD-6 and VD-7).** Recertification is the act of reviewing access on a periodic basis. It should occur on an annual or bi-annual schedule based on the adverse impact level.
+
+{% include alert-info.html heading="Key Point" content="Existing validation activities can be leveraged and integrated into the digital worker validation process. Even though there are no activities for low impact, reassess a digital worker impact level every time there is a code change or update to ensure the impact level has not changed." %}
+
+Use Table 5 for specific validation actions aligned with adverse impact level.
+
+**Table 5. Validation (VD) Process**
+
+| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp; | Action&nbsp;&nbsp;&nbsp; | Low | Moderate | High | Critical |
+| ----------- | ------------ | ----------- | :------------: | :-----------: | :------------: |
+| VD-1 | **Validate the digital worker role employs least privilege necessary to accomplish its task.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
+| VD-2 | **Validate the digital worker role doesn’t create separation of duty conflicts for the digital worker or any human users.** | N/A | <b>✓</b> | <b>✓</b> | <b>✓</b> |
+| VD-3 | **Validate the digital worker has undergone a code review prior to release. Additional code reviews are required for any code changes at higher impact.** | N/A | <b>✓</b><br>Following major changes to code | <b>✓</b><br>Following any changes to code | <b>✓</b><br>Following any changes to code |
+| VD-4| **Validate the digital worker has undergone review of ethics according to applicable government and/or agency standards** | N/A | N/A | <b>✓</b><br>Conduct initial review and annual periodic review | <b>✓</b><br>Conduct initial review and periodic review every six months |
+| VD-5 | **Validate the digital worker has undergone review for bias according to applicable government standards.** | N/A | <b>✓</b><br>Conduct initial bias review | <b>✓</b><br>Conduct initial bias review and annual periodic review | <b>✓</b><br>Conduct initial bias review and periodic review every six months |
+| VD-6 | **Validate the sponsor has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification every six months |
+| VD-7| **Validate the custodian has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification every six months |
+
 
 # Step 3. Provision an Identity
 
