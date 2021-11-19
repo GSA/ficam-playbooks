@@ -254,18 +254,58 @@ Use Table 5 for specific validation actions aligned with adverse impact level.
 | VD-6 | **Validate the sponsor has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification every six months |
 | VD-7| **Validate the custodian has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification every six months |
 
+{% include alert-info.html heading="Key Point" content="SP-3 is a similar but separate activity than VD-6. In SP-3 the sponsor acknowledges their role and responsibilities initially and reacknowledges them every six months. VD-6 is validation of the acknowledgement. Perform each action together or separately, but they are tracked separately for flexibility." %}
+
+{% include alert-info.html heading="Key Point" content="VD-3, VD-4, and VD-5 are validating the code, ethics, and bias reviews that have been conducted. It is up to the individual agencies to ensure a standard for conducting such reviews is followed. Agency representatives, such as the sponsor or custodian, should collaborate within a community of practice to capture best practices on how to perform the various reviews in Step 2.2." %}
+
+[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 3 Provision an Identity is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-three.png)]({{site.baseurl}}/assets/playbooks/dw-step-three.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 # Step 3. Provision an Identity
 
-[text here]
+Capture the appropriate digital worker data elements. These attributes are stored in the agency IDMS or other systems.
 
 ## 3.1 Capture and Store Identity Management Data Elements 
 
-[text here]
+_Identity management system data elements_ are identification and sponsorship elements. They include information to uniquely identify a digital worker or whom to contact for more details. Agencies usually store Identity management data elements in an identity management system or directory and should be required for any digital worker with a unique identity regardless of adverse impact level. Table 6 provides guidance and recommended data fields to capture the necessary digital worker identity elements.
+
+**Table 6. Identity Management System (IDMS) Data Fields**
+
+| &nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp; | IDMS Field Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Field Type | Additional Guidance |
+| ----------- | ------------ | ----------- | ------------ | 
+| DF-1 | **Digital Worker**<br>_(new field)_ | Boolean<br>_e.g., Checkbox, True/False, yes/no, etc._ | _Denote if this is (Yes/True) or is not (No/False) a digital worker._ |
+| DF-2 | **Agency unique user ID**<br>_(existing field)_ | Text<br>_Recommend using “DW” or other uniqueness element followed by the identifier based on agency naming conventions._ | _Use a distinguishing and standard naming convention for digital workers. This isn’t a card holder unique identifier (CHUID) or related to PIV._ |
+| DF-3 | **First Name** and<br> **Last Name**<br>_(existing fields)_ | Text<br>_**First name:** group function<br>**Last name:** “DW” followed by a numerical value_ | _Use agency naming convention if IDMS requires first and last name. The first name field should be completed with the group function (e.g., Technology Division, CFO) and the last name field should be completed with “DW” followed by a numerical value corresponding with the sequential order in which the digital worker was built within the associated group function._ |
+| DF-4 | **Digital Worker Sponsor Name**<br>_(new field[s])_ | Text<br>_Recommend the individual’s full name (generally first and last name)_ | _Specify the sponsor of the digital worker._ |
+| DF-5 | **Digital Worker Custodian Name**<br>_(new field[s])_ | Text<br>_Recommend the individual’s full name (generally first and last name)_ | _Specify the custodian of the digital worker._ |
+| DF-6 | **Digital Worker Description**<br>_(optional new field)_ | Text (250)<br>_Recommend including a brief description of the digital worker (e.g., the type of AI used, the purpose, and actions of the digital worker)_ | _Provide a short description of what the digital worker does and the type of digital technology used._ |
+| DF-7 | **Responsible Organization**<br>_(optional new field)_ | Text<br>_Include the name of the organization according to the official agency organizational chart_ | _Specify the name of the responsible agency organization or group._ |
 
 ## 3.2 Capture and Store Identity Governance Data Elements 
 
-[text here]
+_Identity governance data elements_ validate and recertify access. They include information used to report on digital worker access and  include information on:
+
+-	Acknowledgment date;
+-	Recertification date;
+-	Adverse impact level; and
+-	Other completion or acknowledgment dates.
+
+Agencies may store and track identity governance data elements in an existing system like an identity governance or directory management tool. The agency should develop an appropriate method or process to track these elements if one doesn’t exist.
+
+**Table 7. Identity Governance Data Elements**
+ 
+| &nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Data Element | Additional Guidance |
+| ----------- | ------------ | ----------- | 
+| DF-8 | **Digital Worker Sponsor Date of Last Acknowledgement** | _Specify the date the sponsor acknowledged responsibility for the digital worker. Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-9 | **Digital Worker Date of Sponsor Acknowledgement Recertification**<br>_(optional)_ | _Track when the sponsor acknowledgement must be recertified. This can be tracked as a formula based on the last acknowledgement date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
+| DF-10 | **Level of Potential Adverse Impact** | _Specify the level of potential adverse impact as determined using the methodology in section 3.2 of this document. Limited response (e.g., “Low”, “Moderate,” “High,” or “Critical”)._ |
+| DF-11 | **Digital Worker Date of Last Custodian Acknowledgement** | _Specify the date the custodian acknowledged responsibility for the digital worker. Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-12 | **Digital Worker Date of Custodian Acknowledgement Recertification**<br>_(optional)_ | _Track when the custodian acknowledgement must be recertified. This can be tracked as a formula based on the last acknowledgement date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
+| DF-13 | **Approved Source Internet Protocol (IP) Address Range**<br>_( only for High and Critical)_ | _Specify the range of source IP addresses on which the digital worker may operate._ |
+| DF-14 | **Code Review Completion Date**<br>_(optional)_ | _Specify the code review completion date (refer to VD-3 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-15 | **Ethics Review Completion Date** | _Specify the digital worker ethics review completion date (refer to VD-4 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-16 | **Next Ethics Review Date**<br>_(optional)_ | _Track when the next ethics review date must be conducted. This can be tracked as a formula based on the last ethics review date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
+| DF-17 | **Digital Worker Bias Review Completion Date** | _Specify the digital worker bias review completion date (refer to VD-5 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-18 | **Next Bias Review Date**<br>_(optional)_ | _Track when the next bias review date must be conducted. This can be tracked as a formula based on the last bias review date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
 
 # Conclusion
 
