@@ -394,7 +394,7 @@ A government hospital uses a digital worker to diagnose patients.
 -	The digital worker uses an unattended machine learning algorithm on internal networks.
 -	It works with the patient’s medical history, diagnostic test results, and thousands of previous patient outcome data sets containing PHI
 -	The digital worker develops a diagnosis and recommends a treatment.
--	The digital worker uses only a standard user account during its tasks.
+-	The digital worker uses only a standard user account during its tasks.<br><br>
 
 **Table 14. Critical Case Study Digital Worker Impact Evaluation Matrix**
 
@@ -464,7 +464,31 @@ After the sponsorship and validation activities are complete and documented, the
 
 # Appendix C. Low Case Study
 
-[text here]
+A digital worker helps the General Services Administration gather data on COVID-19.
+-	The digital worker is unattended, uses a standard system account, and has internal and external network access.
+-	The digital worker pulls data from public state government websites to aggregate and populate a Geographic Information System map.
+-	The output isn’t decision critical and provides insights with no actions.
+
+**Table 17. Low Case Study Digital Worker Impact Evaluation Matrix**
+
+| Digital Worker Impact Evaluation Matrix |     | 
+| ------------------------ | ------------ | 
+| **Factor 1 - Is the digital worker attended or unattended?** | **Score** | 
+| ● Unattended | 10 |
+| **Factor 2 - What is the highest level of sensitive data access?** |     | 
+| ● Data available to the public (either without a user account or with unvetted user account) | 0 | 
+| **Factor 3 - Does the digital worker have network access?** |     | 
+| ● Internal and external network access (i.e., Internet and intranet) | 10 | 
+| **Factor 4 - What is the impact of the digital worker output?** |     | 
+| ● Output impacts general internal business operations, but not for critical processes or decisions | 5| 
+| **Factor 5 - What system account privileges are required to perform the task?** |     | 
+| ● Standard system account(s) (roles limited by the business function) | 10 |
+| **Factor 6 - Does the digital worker act on its own insights?** |     | 
+| ● Digital worker develops insights, but doesn’t take action on its insights | 0 | 
+| **Total Score** | **35** |
+| **Digital Worker Adverse Impact Level** | **Low** | 
+
+This digital worker impact level is Low. Its effect of an error or accident is minimal, resulting in negligible impacts. Low does not require a unique identity for a digital worker. The impact level is documented and a reminder is set to reassess the impact level with any code change. 
 
 # Footnotes
 
