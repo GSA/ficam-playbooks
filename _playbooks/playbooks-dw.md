@@ -492,5 +492,10 @@ This digital worker impact level is Low. Its effect of an error or accident is m
 
 # Footnotes
 
-[text here]
+[^1]: Digital worker is not synonymous with non-person entity (NPE), as NPE encompasses all entities with a digital identity including organizations, hardware devices, software applications, and information artifacts.
+[^2]: OMB Memorandum 19-17 instructs federal agencies to designate an integrated agency-wide ICAM office, team, or other governance structure in support of its Enterprise Risk Management capability to effectively govern and enforce ICAM efforts.
+[^3]: The adverse impact levels are grounded in NIST Special Publication 800-30, Guide for Conducting Risk Assessments, but do not align with it. Agencies can adjust the impact levels to match agency risk tolerance.
+[^4]: For more information on the methodology used to develop the Digital Worker Evaluation Matrix, see Appendix A.
+[^5]: The ID number is specific to this playbook and does not map or correlate to requirements in other federal security publications.
+
 
