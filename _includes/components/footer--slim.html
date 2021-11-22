@@ -25,7 +25,7 @@
             <ul class="grid-row grid-gap">
               {% for _link in footer_links %}
               <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                <a class="usa-footer__primary-link" href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
+                <a class="usa-footer__primary-link" href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}" target="_blank" rel="noopener noreferrer">
                   {{ _link.text }}
                 </a>
               </li>
@@ -41,7 +41,7 @@
               {% for _link in contact_links %}
                 <div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto">
                   <div class="usa-footer__contact-info">
-                    <a href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
+                    <a href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}" target="_blank" rel="noopener noreferrer">
                       {{ _link.text }}
                     </a>
                   </div>

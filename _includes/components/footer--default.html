@@ -83,7 +83,7 @@
                 <div class="usa-footer__contact-info grid-row grid-gap">
                 {% for _link in contact_links %}
                     <div class="grid-col-auto">
-                      <a href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
+                      <a href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}" target="_blank" rel="noopener noreferrer">
                         {{ _link.text }}
                       </a>
                     </div>

@@ -3,7 +3,7 @@
 arch:
   - text: Introduction
     href: /arch/
-  - text: Goals & Objectives
+  - text: Goals and Objectives
     href: /arch/goals/
   - text: Services Framework
     href: /arch/services/
@@ -11,7 +11,7 @@ arch:
     href: /arch/usecases/
   - text: System Component Examples
     href: /arch/components/
-  - text: Standards & Policies
+  - text: Standards and Policies
     href: /arch/standards/
 
 archservices:
@@ -166,12 +166,14 @@ fpkitools:
   - text: Certificate Profile Conformance Tool
     href: /fpki/tools/cpct/
 
+## Move to Archived after one year
+
 fpkiactiveannouncements:
   - text: Back to FPKI Guide
     href: /fpki/announcements/
-  - text: New Test Tools Available ## May 2021
+  - text: New Test Tools Available (2021) ## May 2022
     href: /fpki/announcements/test-tools/
-  - text: Federal Common Policy CA G2 Update (2020) ## Oct 2020
+  - text: Federal Common Policy CA G2 Update (2020) ## Oct 2022
     href: /fpki/announcements/common-g2-update/
 
 ## Remove Announcements older than three years
@@ -179,20 +181,12 @@ fpkiactiveannouncements:
 fpkiarchivedannouncements:
   - text: Back to FPKI Guide
     href: /fpki/announcements/
-  - text: Upcoming Migration of Federal PKI Certificate Repository Services (2019) ## Apr 2019
+  - text: Upcoming Migration of Federal PKI Certificate Repository Services (2019) ## Apr 2022
     href: /fpki/announcements/2019fpkimigration/
-  - text: DigiCert CA Decommissioning (2019) ## Mar 2019
+  - text: DigiCert CA Decommissioning (2019) ## Mar 2022
     href: /fpki/announcements/2019digicert/
-  - text: Removal of Health CAs from Federal PKI (2019) ##  Mar 2019
+  - text: Removal of Health CAs from Federal PKI (2019) ##  Mar 2022
     href: /fpki/announcements/2019removal/
-  - text: Federal Common Policy CA Removal from Apple Trust Stores Impact (2018)
-    href: /fpki/announcements/2018applepkichanges/
-  - text: Chrome Certificate Transparency Requirements (2018)
-    href: /fpki/announcements/2018chromect/
-  - text: Federal Common Policy CA Removal from Microsoft Trust Store Impact (2018)
-    href: /fpki/announcements/2018mspkichanges/
-  - text: Chrome TLS Certificate Lifetime Requirement (2018)
-    href: /fpki/announcements/2018tlslifetime/
 
 #PACS Navigation
 
@@ -237,32 +231,7 @@ pm:
     href: /pm/examples/
 
 ## Other Site Navigation
-    
-policy:
-  - text: Contact Us
-    href: /contact/
-  - text: About Us
-    href: /about/
-  - text: Help Us Improve Our Content
-    href: /contribute/
-  - text: Privacy Policy
-    href: /privacy-policy/
-  - text: Website Policy and Procedures
-    href: /website-policy/
-  - text: Public Domain License
-    href: /license/
 
-footer:
-  - text: FICAM Architecture
-    href: /arch/
-  - text: FICAM Program Management
-    href: /pm/
-  - text: Federal PKI (FPKI)
-    href: /fpki/
-  - text: Personal Identity Verification (PIV)
-    href: /piv/
-  - text: Physical Access Control Systems (PACS)
-    href: /pacs/
 
 # Playbooks Navigation
 
@@ -277,51 +246,11 @@ sso:
 dw:
   - text: Digital Worker Identity Playbook
     href: /playbooks/dw/
-    
-# Digital Signature Guides Navigation
 
 signword:
   - text: Digitally Sign a Microsoft Word Document
-    href: /signword/
-  - text: Add a Digital Signature Using a Signature Line
-    href: /signword/#add-a-digital-signature-using-a-signature-line
-  - text: Add an Invisible Digital Signature
-    href: /signword/#add-an-invisible-digital-signature
-  - text: Add Multiple Digital Signatures Using Signature Lines
-    href: /signword/#add-multiple-digital-signatures-using-signature-lines
-  - text: Add Multiple Invisible Digital Signatures
-    href: /signword/#add-multiple-invisible-digital-signatures
-  - text: View Digital Signatures
-    href: /signword/#view-digital-signatures
-  - text: Remove a Digital Signature
-    href: /signword/#remove-a-digital-signature
-  - text: Verify Digital Signature Settings
-    href: /signword/#verify-digital-signature-settings
-  - text: Additional Resources
-    href: /signword/#additional-resources
-    
+    href: /playbooks/signword/
+
 signwordofr:
-  - text: Digitally Signing Documents for Submission to Office of the Federal Register
+  - text: Digitally Signing Documents for Office of the Federal Register Submission
     href: /signfedregister/
-  - text: Add Invisible Digital Signatures in MS Word
-    href: /signfedregister/#add-invisible-digital-signatures-in-ms-word
-  - text: Multiple Digital Signatories in MS Word
-    href: /signfedregister/#multiple-digital-signatories-in-ms-word
-  - text: Remove Invisible Digital Signatures in MS Word
-    href: /signfedregister/#remove-invisible-digital-signatures-in-ms-word
-  - text: View Signature Certificate in MS Word
-    href: /signfedregister/#view-signature-certificate-in-ms-word
-  - text: FAQs
-    href: /signfedregister/#faqs
-
-# DIRA Playbook
-
-DIRA:
-  - text: Digital Identity Risk Assessment Playbook
-    href: /playbooks/dira/
-    
-# DW Playbook
-
-dw:
-  - text: Digital Worker Identity Playbook
-    href: /playbooks/dw/

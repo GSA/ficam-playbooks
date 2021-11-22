@@ -2,7 +2,7 @@
 layout: page 
 title: 7. Migrate to the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/migrate/
+permalink: /fpki/common/migrate/
 sticky_sidenav: true
 sidenav: fpkicommon
 
@@ -21,7 +21,7 @@ To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal t
 1. [**disable enterprise distribution**](#disable-distribution-of-the-fcpca-g1) of the FCPCA G1 as a _trusted root_ CA certificate, and
 2. [**distrust**](#distrust-the-fcpca-g1) the FCPCA G1.
 
-{% include alert-warning.html content="<strong>Heads up!</strong> Test the following steps in a controlled environment <strong>before</strong> you deploy them across your enterprise. If you do not successfully distribute the FCPCA G2 certificate before you begin these steps, you may cause a <strong>denial-of-service</strong>, impacting smartcard logon for your applications and systems." %}
+{% include alert-warning.html content="<strong>Heads up!</strong> Test the following steps in a controlled environment <strong>before</strong> you deploy them across your enterprise. If you do not successfully distribute the FCPCA G2 certificate before you begin these steps, you may cause a <strong>denial-of-service</strong>, impacting smart card logon for your applications and systems." %}
 
 
 **FCPCA G1 certificate details**
@@ -35,9 +35,9 @@ To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal t
 | SHA-256 Thumbprint | 89 4e bc 0b 23 da 2a 50 c0 18 6b 7f 8f 25 ef 1f 6b 29 35 af 32 a9 45 84 ef 80 aa f8 77 a3 a0 6e |
 
 
-## Disable distribution of the FCPCA G1
+## Disable Distribution of the FCPCA G1
 
-Reference the distribution mechanisms [here](../distribute-os/) to review the ways the FCPCA certificate **could** be distributed across your enterprise. Disable all existing distribution mechanisms. Sample procedures to disable the distribution of the FCPCA G1 are listed below using:
+Reference the distribution mechanisms [here]({{site.baseurl}}/fpki/common/distribute-os/) to review the ways the FCPCA certificate **could** be distributed across your enterprise. Disable all existing distribution mechanisms. Sample procedures to disable the distribution of the FCPCA G1 are listed below using:
 
 - [Microsoft Certutil](#if-the-fcpca-was-distributed-using-microsoft-certutil)
 - [Microsoft Group Policy Object (GPO)](#if-the-fcpca-was-distributed-using-a-microsoft-gpo)
@@ -46,7 +46,7 @@ Reference the distribution mechanisms [here](../distribute-os/) to review the wa
 
 <br>
 
-### If the FCPCA was distributed using Microsoft Certutil
+### If the FCPCA Was Distributed Using Microsoft Certutil
 {% include alert-warning.html content="You must have enterprise administrator privileges for the domain to perform these steps. You must run these commands from an agency domain controller." %}
 
 1. Navigate to **Server Manager**.
@@ -59,7 +59,7 @@ Reference the distribution mechanisms [here](../distribute-os/) to review the wa
 
 <br>
 
-### If the FCPCA was distributed using a Microsoft GPO
+### If the FCPCA Was Distributed Using a Microsoft GPO
 {% include alert-warning.html content="You must have enterprise administrator privileges for the domain to perform these steps. You must run these commands from an agency domain controller." %}
 
 1. Navigate to **Server Manager**.
@@ -70,7 +70,7 @@ Reference the distribution mechanisms [here](../distribute-os/) to review the wa
 
 <br>
 
-### If the FCPCA was distributed using an Apple configuration profile
+### If the FCPCA Was Distributed Using an Apple Configuration Profile
 1. Identify how the profile is being distributed across the enterprise (e.g., over-the-air profile delivery or from an MDM server)
 2. Use local knowledge to disable the distribution.  If you are having trouble with a specific product, email us at fpkirootupdate@gsa.gov.
 
@@ -109,7 +109,7 @@ Use one of the methods below to distrust the FCPCA G1.
     ```
 	
 Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Server 2016.
-[![Sample Steps](../../../assets/fpki/distrust-gpo.gif){:style="width:85%;"}](../../../assets/fpki/distrust-gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![Sample Steps]({{site.baseurl}}/assets/fpki/distrust-gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/distrust-gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
 <br>
 
 <br>
@@ -118,7 +118,7 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
 
 {% include alert-info.html content="macOS handles certificate distrust differently than Windows does.  The steps below distrust the FCPCA G1 certificate by deleting it from the System and Login Keychains.  The absence of the FCPCA G1 certificate from the Keychains results in the certificate not being trusted by the workstation. Only system administrators should follow these steps." %}
 
-**Note:** Many Mobile Device Management (MDM) platforms allow administrators to push the command below across an enterprise, rather than running it on individual workstations. _Use automation wherever possible_.
+**Note:** Many Mobile Device Management (MDM) platforms allow administrators to push the command below across an enterprise rather than running it on individual workstations. _Use automation wherever possible_.
 
 1. Click the **Spotlight** icon and search for *Terminal*.
 2. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
@@ -130,12 +130,12 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
     
 **Note:**&nbsp;&nbsp;This video shows you how to remove the FCPCA G1 certificate using the command line.
 <br>
-[![This video shows you how to remove the FCPCA G1 certificate using the command line.](../../../assets/fpki/remove_command_line.gif){:style="width:85%;"}](../../../assets/fpki/remove_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![This video shows you how to remove the FCPCA G1 certificate using the command line.]({{site.baseurl}}/assets/fpki/remove_command_line.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/remove_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Use Linux Command Line
 
-#### Debian-based kernels
+#### Debian-Based Kernels
 
 1. Launch the command line.
 
@@ -167,7 +167,7 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
 
 <br>
 
-#### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
+#### Red Hat Enterprise Linux, CentOS, and other Non-Debian-Based Kernels
 
 1. Launch the command line.
 
@@ -199,6 +199,6 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
 
 <br>
 
-Finally, [verify migration to the FCPCA G2](../verify-migration/).
+Finally, [verify migration to the FCPCA G2]({{site.baseurl}}/fpki/common/verify-migration/).
 
 

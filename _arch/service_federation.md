@@ -2,7 +2,7 @@
 layout: page
 title: Federation
 collection: arch
-permalink: arch/federation/
+permalink: /arch/federation/
 sidenav: archservices
 sticky_sidenav: true
 ---
@@ -22,7 +22,7 @@ Federation has many different applications, including:
 > An individual can use their agency-issued credential containing an internal identifier(s) to directly log in to a different agency’s online service. The    online service registers the identifier(s) in their system for future use.
 
 ## Federation Services
-The Federation services in the Federal ICAM architecture include Policy Alignment, Authentication Broker, and Attribute Exchange.
+The Federation services in the FICAM architecture include Policy Alignment, Authentication Broker, and Attribute Exchange.
 
 [![A gray box with the Federation service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/FederationServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/FederationServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
 

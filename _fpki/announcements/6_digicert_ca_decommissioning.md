@@ -6,7 +6,7 @@ archiveDate: 03/20/2020
 removeDate: 03/02/2022
 collection: fpki
 category: Decommission
-permalink: fpki/announcements/2019digicert/
+permalink: /fpki/announcements/2019digicert/
 description: Information related to the DigiCert CAs affected by this change.
 sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
@@ -31,5 +31,5 @@ The following CAs are planned for revocation and decommissioning:
 | 7bc54c654c3a41d738d48ac17ab603af | Eid Passport LRA Content Signer CA 3 | Symantec Class 3 SSP Intermediate CA - G3 |
 | 404d442e9c097771209218ac534936c3 | Eid Passport LRA Device 2 CA | Symantec Class 3 SSP Intermediate CA - G3 |
 
-## Who can I contact for help or more information?  
+## Who Can I Contact for Help or More Information?  
 Email us at fpki@gsa.gov.
