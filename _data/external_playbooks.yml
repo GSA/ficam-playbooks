@@ -2,12 +2,6 @@
 # FICAM-produced playbooks located in the /_playbooks/ and PDF versions in /assets/playbooks folder.
 # Newest on top
 
-- title: Digital Worker Identity Playbook
-  type: PDF
-  pubdate: 2021-01
-  description: The Digital Worker Identity Playbook is a practical guide to assess the risk of using digital workers and recommended identity-based mitigation.
-  url: /docs/playbook-digital-worker.pdf
-
 - title: Federal Identity, Credential, and Access Management Roadmap Version 2.0
   type: PDF
   pubdate: 2011-12
