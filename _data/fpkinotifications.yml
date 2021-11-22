@@ -25,6 +25,21 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: November 22, 2021
+  change_type: CRL Outage
+  start_datetime:
+  end_datetime:
+  system: Department of State PKI
+  change_description: The CRL available at the http distroubiton point listed below and issued by the U.S Department of State AD High Assurance CA became stagnant as of 10 AM ET on Sunday, November 21st. The assoicated OCSP and LDAP CRL are still valid for current revocation information.
+  contact: fpki at gsa dot gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: N/A
+  ca_certificate_subject: CN = U.S. Department of State AD High Assurance CA, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = state, DC = sbu
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIHACA-1.crl
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder
+  
 - notice_date: November 15, 2021
   change_type: CA Certificate Issuance
   start_datetime:
