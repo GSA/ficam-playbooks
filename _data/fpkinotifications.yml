@@ -30,7 +30,7 @@
   start_datetime:
   end_datetime:
   system: Department of State PKI
-  change_description: The CRL available at the http distrobuiton point listed below and issued by the U.S Department of State AD High Assurance CA became stagnant between 10 AM ET on Sunday, November 21st and 1 PM ET on Monday NOvember 22nd. The associated OCSP and LDAP CRL are still valid for current revocation information.
+  change_description: The CRL available at the http distrobuiton point listed below and issued by the U.S Department of State AD High Assurance CA became stagnant between 10 AM ET on Sunday, November 21st and 1 PM ET on Monday November 22nd. During this time, the associated OCSP and LDAP CRL were still valid for current revocation information.
   contact: fpki at gsa dot gov
   ca_certificate_hash: N/A
   ca_certificate_issuer: N/A
