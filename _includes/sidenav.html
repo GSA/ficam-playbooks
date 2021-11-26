@@ -29,7 +29,7 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
   <br>
   {% if _current and page.pdf%}
     <ul class="usa-list usa-list--unstyled">
-      <li><a class="usa-button" target="_blank" href="{{ site.baseurl}}/{{ page.pdf }}">Download as a PDF</a></li>
+      <li><a class="usa-button" target="_blank" rel="noopener noreferrer" href="{{ site.baseurl}}/{{ page.pdf }}">Download as a PDF</a></li>
     </ul>
    {% endif %}
 </nav>

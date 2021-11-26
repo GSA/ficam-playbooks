@@ -35,8 +35,9 @@ subnav:
 Version 1.1  
 February 12, 2021
 
-<a href="../../assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
-<a href="../../assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+<a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="({{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
+<a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="({{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+
 
 This playbook is a collaboration between the Identity, Credential, and Access Management Subcommittee of the Federal Chief Information Security Officer (CISO) Council and the General Services Administration Office of Government-wide Policy identity Assurance and Trusted Access Division
 
@@ -55,7 +56,7 @@ The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federa
 5. Improving security posture - Quickly resolve unauthorized access actions by centralizing authentication and monitoring activity.
 
 Agencies can use this playbook to centralize application access for agency employees and contractors or federate access with other federal executive agencies. Updates to this playbook may include federating outside of the federal executive branch, but it is not included in this current version.
-This playbook outlines a five-step process to implement or modernize an Enterprise SSO service aligned with the [Federal Identity, Credential, and Access Management (FICAM) architecture](../../arch/){:target="_blank"}. This playbook is designed for identity program managers and enterprise and application architects interested in modernizing their access management systems for federal employee access to internal or external applications. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning. 
+This playbook outlines a five-step process to implement or modernize an Enterprise SSO service aligned with the [Federal Identity, Credential, and Access Management (FICAM) architecture](({{site.baseurl}}/arch/){:target="_blank"}{:rel="noopener noreferrer"}. This playbook is designed for identity program managers and enterprise and application architects interested in modernizing their access management systems for federal employee access to internal or external applications. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning. 
 
 ## Key Terms
 These are key terms used throughout this document.
@@ -189,7 +190,7 @@ With any project, a business case is used to capture the strategic, business, an
 
 {% include alert-success.html heading="Best Practice - Building the Business Case" content="When building a business case, include qualitative aspects on how Enterprise SSO can improve user experience and security, a return on investment, and a cost-benefit analysis. Combining cost analysis (quantitative justification) and qualitative aspects may help obtain leadership support and funding." %} 
 
-Coordinate the business case development with your agency ICAM governance structure. The ICAM governance structure should oversee your ICAM projects and work streams and align ICAM services and management with your agency’s mission. For ICAM oversight and program management examples, see the [FICAM Program Management Guide](../../pm/){:target="_blank"}.
+Coordinate the business case development with your agency ICAM governance structure. The ICAM governance structure should oversee your ICAM projects and work streams and align ICAM services and management with your agency’s mission. For ICAM oversight and program management examples, see the [FICAM Program Management Guide]({{site.baseurl}}/pm/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ## 1.4 Identify the Target State
 Establish a realistic and achievable “to be” target state for your agency at key intervals (such as at one, three, and five years). Sometimes system impact level, access or credential requirements, or other factors can affect whether applications can integrate with your service. All applications are written differently, in different languages, at different times, for different purposes. Not all agency applications may support an assertion protocol.  Your agency implementation should provide a range of compatible options, which will help  realize the highest return on investment from the start.
@@ -212,7 +213,7 @@ You may find efficiencies and scaling opportunities based on the below list. Thi
 - Where the application resides (e.g., on-premise, cloud-based, or third-party hosted), or
 - Budget cycle and financial priorities (e.g., cost savings).
 
-For example, the [Digital Identity Risk Assessment (DIRA) Playbook](../../docs/playbook-dira.pdf){:target="_blank"} provides a process for identity risk analysis that includes both an application’s level of data sensitivity and its user population (shown in Figure 2). The results are documented in a Digital Identity Assessment Statement (DIAS) which includes the identity, authenticator, and federal assurance level, which agencies can use and integrate as part of their overall Risk Management Framework (RMF) and FISMA processes. 
+For example, the [Digital Identity Risk Assessment (DIRA) Playbook](({{site.baseurl}}/docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"} provides a process for identity risk analysis that includes both an application’s level of data sensitivity and its user population (shown in Figure 2). The results are documented in a Digital Identity Assessment Statement (DIAS) which includes the identity, authenticator, and federal assurance level, which agencies can use and integrate as part of their overall Risk Management Framework (RMF) and FISMA processes. 
 
 Figure 2. DIRA Process
 
@@ -259,7 +260,7 @@ In addition to system integration, the architecture review should include:
 - Application level processes for new user community support.
 
 Figure 3 provides a view of an example architecture, including where the Enterprise SSO is located within that architecture, and other potential integration points. 
-For additional information related to the architecture, visit the [FICAM Architecture Playbook Systems Component Examples](../../arch/components){:target="_blank"}.
+For additional information related to the architecture, visit the [FICAM Architecture Playbook Systems Component Examples]({{site.baseurl}}/arch/components){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Figure 3. Example system components for an agency enterprise ICAM program
 
