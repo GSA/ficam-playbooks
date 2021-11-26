@@ -88,7 +88,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 <br>
 [![Add CAPI Cert - #1]({{site.baseurl}}/assets/piv/winSCP-4.PNG)]({{site.baseurl}}/assets/piv/winSCP-4.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 <br>
-8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/piv/details/#understanding-piv-certificates){:target="_blank"}.)
+8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/piv/details/#understanding-piv-certificates){:target="_blank"}{:rel="noopener noreferrer"}.)
 <br>
 [![Add CAPI Cert - #2]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:style="width:48%;"}]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 <br>

@@ -47,7 +47,7 @@ var GexfJS = {
             "edgeOff" : "Î‘Ï€ÏŒÎºÏ$Ï…ÏˆÎ· Î±ÎºÎ¼ÏŽÎ½",
             "zoomIn" : "ÎœÎµÎ³Î­Î¸Ï…Î½ÏƒÎ·",
             "zoomOut" : "Î£Î¼Î¯ÎºÏ$Ï…Î½ÏƒÎ·",
-            "browserErr" : 'ÎŸ Ï€ÎµÏ$Î¹Î·Î³Î·Ï„Î®Ï‚ ÏƒÎ±Ï‚ Î´ÎµÎ½ Î¼Ï€Î¿Ï$ÎµÎ¯ Î½Î± ÎµÎ¼Ï†Î±Î½Î¯ÏƒÎµÎ¹ ÏƒÏ‰ÏƒÏ„Î¬ Î±Ï…Ï„Î® Ï„Î· ÏƒÎµÎ»Î¯Î´Î±.<br />Î£Î±Ï‚ Ï€Ï$Î¿Ï„ÎµÎ¯Î½Î¿Ï…Î¼Îµ Î½Î± Ï‡Ï$Î·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¹Î®ÏƒÎµÏ„Îµ Ï„Î·Î½ Ï„ÎµÎ»ÎµÏ…Ï„Î±Î¯Î± Î­ÎºÎ´Î¿ÏƒÎ· Ï„Î¿Ï… <a href="http://www.mozilla.com/" target="_blank" rel="noopener noreferrer">Firefox</a> Î® Ï„Î¿Ï… <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>'
+            "browserErr" : 'ÎŸ Ï€ÎµÏ$Î¹Î·Î³Î·Ï„Î®Ï‚ ÏƒÎ±Ï‚ Î´ÎµÎ½ Î¼Ï€Î¿Ï$ÎµÎ¯ Î½Î± ÎµÎ¼Ï†Î±Î½Î¯ÏƒÎµÎ¹ ÏƒÏ‰ÏƒÏ„Î¬ Î±Ï…Ï„Î® Ï„Î· ÏƒÎµÎ»Î¯Î´Î±.<br />Î£Î±Ï‚ Ï€Ï$Î¿Ï„ÎµÎ¯Î½Î¿Ï…Î¼Îµ Î½Î± Ï‡Ï$Î·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¹Î®ÏƒÎµÏ„Îµ Ï„Î·Î½ Ï„ÎµÎ»ÎµÏ…Ï„Î±Î¯Î± Î­ÎºÎ´Î¿ÏƒÎ· Ï„Î¿Ï… <a href="http://www.mozilla.com/" target="_blank" rel="noopener noreferrer">Firefox</a> Î® Ï„Î¿Ï… <a href="http://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">>Chrome</a>'
         },
         "en" : {
             "search" : "Search nodes",

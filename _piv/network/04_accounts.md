@@ -95,7 +95,7 @@ If you are designing an automated process to transition users from Principal Nam
 #### 2. Enable User Name Hints
 You need to enable _User Name Hints_ for your network domain.  This will modify the logon prompts for _Windows_ workstations and servers joined to the network domain.  Your users will be prompted to provide both the PIV credential PIN value and a User Name Hint value.
 
-{% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a href=\"https://playbooks.idmanagement.gov/piv/identifiers/\" target=\"_blank\">Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
+{% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a href=\"https://playbooks.idmanagement.gov/piv/identifiers/\" target=\"_blank\" rel=\"noopener noreferrer\"}>Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
 
 ##### User Name Hint Setting
 

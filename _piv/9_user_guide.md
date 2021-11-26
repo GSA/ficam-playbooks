@@ -21,6 +21,6 @@ You can find additional guides across agency websites by using a few simple meth
 2. Search on the Internet: include the _server_ or _application_ or _topic_ and add "+x509"
 3. Search on Max.gov:  [Max.gov](https://max.gov){:target="_blank"}{:rel="noopener noreferrer"} requires you to log in.  Try searching for the topic or guide.   
 
-If you don't find what you're looking for, open an [Issue]({{site.repourl}}/issues/new){:target="_blank"}.  We can help look through the archives of guides that haven't been posted yet or help you send a request to the government listserves.  
+If you don't find what you're looking for, open an [Issue]({{site.repourl}}/issues/new){:target="_blank{:rel="noopener noreferrer"}.  We can help look through the archives of guides that haven't been posted yet or help you send a request to the government listserves.  
 
-Your contributions are encouraged and welcome! You can [contribute](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} to this effort or open an [Issue]({{site.repourl}}/issues/new){:target="_blank"} to discuss a need you may have for a guide.
+Your contributions are encouraged and welcome! You can [contribute](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} to this effort or open an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to discuss a need you may have for a guide.
