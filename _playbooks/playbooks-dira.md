@@ -43,8 +43,8 @@ subnav:
 Version 1.1  
 September 13, 2020
 
-<a href="../../assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
-<a href="../../assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+<a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
+<a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
@@ -284,7 +284,7 @@ Your agency may determine alternatives to the NIST-recommended guidance for the 
 
 Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels.<sup>21</sup> 
 
-An example of a [DIAS](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} is included in [Appendix B. Examples and Templates](#appendix-b-examples-and-templates).  
+An example of a [DIAS]({{site.baseurl}}/docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} is included in [Appendix B. Examples and Templates](#appendix-b-examples-and-templates).  
 
 ## Step 5. Reassess
 
@@ -455,7 +455,7 @@ This section includes additional example process flow diagrams used by some agen
 
 ## 3. Digital Identity Acceptance Statement Example Template
 
-This [Digital Identity Acceptance Statement template](../../docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} is provided as one sample for agencies.   
+This [Digital Identity Acceptance Statement template]({{site.baseurl}}/docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} is provided as one sample for agencies.   
 
 # Appendix C. NIST Special Publication 800-63-3, Requirements Traceability Matrix
 
