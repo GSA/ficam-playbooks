@@ -12,9 +12,10 @@ site, this is the place to do it.
     <meta name="robots" content="noindex, nofollow">
   {% endunless %}
   
+  <!-- Including unsafe inline for the fpki graph negates having a CSP.
   <meta http-equiv="Content-Security-Policy" content="
   default-src 'self';
-  script-src 'report-sample' 'self' 'nonce-348fcnj576' https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js https://www.google-analytics.com/analytics.js;
+  script-src 'report-sample' 'self' 'unsafe-inline' https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js https://www.google-analytics.com/analytics.js;
   style-src 'report-sample' 'self'; 
   object-src 'none';
   base-uri 'self';
@@ -28,6 +29,7 @@ site, this is the place to do it.
   prefetch-src 'self';
   form-action 'self' https://search.usa.gov;
   worker-src 'none';">
+-->
 
   <!-- can't be set in meta %}
   frame-ancestors 'self';
