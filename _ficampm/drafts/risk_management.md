@@ -83,7 +83,7 @@ A risk assessment helps you determine the security needed for information system
 
 ## Apply the Risk Management Framework
 
-Your agency's information systems must meet Federal Information Security Management Act (FISMA) requirements, including the IT Risk Management Framework (RMF) defined in [NIST SP-800-37](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-37r1.pdf){:target="_blank"}. The RMF helps you build information security capabilities into your agency's information systems, so you can monitor the real-time security status of those systems and provide relevant information to agency leadership to make risk-based decisions.
+Your agency's information systems must meet Federal Information Security Management Act (FISMA) requirements, including the IT Risk Management Framework (RMF) defined in [NIST SP-800-37](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-37r1.pdf){:target="_blank"}{:rel="noopener noreferrer"}. The RMF helps you build information security capabilities into your agency's information systems, so you can monitor the real-time security status of those systems and provide relevant information to agency leadership to make risk-based decisions.
 
 ## Manage Accountability and Control
 
@@ -91,7 +91,7 @@ Management accountability is the expectation that managers are responsible for e
 
 ### Use ICAM-Specific Evaluation Criteria
 
-You should model your criteria after the [FICAM Architecture](https://arch.idmanagement.gov){:target="_blank"} for controlling ICAM program costs and increasing efficiency. The performance architecture defines clear areas for managing and evaluating program alignment with the FICAM Architecture by identifying quantitative measures for evaluating ICAM program success.
+You should model your criteria after the [FICAM Architecture](https://arch.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} for controlling ICAM program costs and increasing efficiency. The performance architecture defines clear areas for managing and evaluating program alignment with the FICAM Architecture by identifying quantitative measures for evaluating ICAM program success.
 
 Use the following criteria as a starting point to evaluate your ICAM program:
 
@@ -101,6 +101,6 @@ Use the following criteria as a starting point to evaluate your ICAM program:
 - Streamlining of provisioning and authentication services through enterprise capabilities.
 - Coordination of ICAM program management and investment across supporting projects.
 
-[OMB Memorandum M-16-17](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2016/m-16-17.pdf){:target="_blank"} includes, as a control, separation of duties for various functions. An enterprise Logical Access Control System (LACS) service can detect conflicts and recommend corrective actions. You can also use your LACS as an enterprise auditor, providing more visibility to control access to systems and sensitive information and to evaluate compliance with policy and applicable law across the enterprise.
+[OMB Memorandum M-16-17](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2016/m-16-17.pdf){:target="_blank"}{:rel="noopener noreferrer"} includes, as a control, separation of duties for various functions. An enterprise Logical Access Control System (LACS) service can detect conflicts and recommend corrective actions. You can also use your LACS as an enterprise auditor, providing more visibility to control access to systems and sensitive information and to evaluate compliance with policy and applicable law across the enterprise.
 
 [Back to top](#)

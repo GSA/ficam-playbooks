@@ -144,12 +144,12 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 3b. Go to a website using an FPKI certificate; and record results. Suggested websites:
 
 Websites Chained to COMMON
-- [PKI.Treasury.gov](https://pki.treasury.gov){:target="_blank"} - Treasury Root CA-issued (COMMON-chained)
-- [ako.us.army.mil](https://ako.us.army.mil/){:target="_blank"} - DoD Root CA 3-issued (COMMON-chained)
+- [PKI.Treasury.gov](https://pki.treasury.gov){:target="_blank"}{:rel="noopener noreferrer"} - Treasury Root CA-issued (COMMON-chained)
+- [ako.us.army.mil](https://ako.us.army.mil/){:target="_blank"}{:rel="noopener noreferrer"} - DoD Root CA 3-issued (COMMON-chained)
 
 Websites Not-Chained to Common
-- [MAX.gov](https://max.gov/){:target="_blank"} - Entrust Root CA-issued (non-COMMON-chained)
-- [NIST.gov](https://csrc.nist.gov/){:target="_blank"} - DigiCert Root CA-issued (non-COMMOM-chained)
+- [MAX.gov](https://max.gov/){:target="_blank"}{:rel="noopener noreferrer"} - Entrust Root CA-issued (non-COMMON-chained)
+- [NIST.gov](https://csrc.nist.gov/){:target="_blank"}{:rel="noopener noreferrer"} - DigiCert Root CA-issued (non-COMMOM-chained)
 
 (% include alert-info.html content="Verify the certificate details and note the validation path and any errors. For _no CTL entry_, Chrome warning pages may vary depending on the certificate, but an Edge warning should say Error Code: DLG_FLAGS_INVALID_CA." %)
 

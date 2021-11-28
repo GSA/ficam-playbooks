@@ -29,7 +29,7 @@ subnav:
     href: ../common/faq/
 ---
 
-{% include alert-warning.html heading="Heads-up!" content="The Federal PKI Management Authority has completed the revocation of the certificates issued by the Federal Common Policy CA.  If you encounter any issues, please review the contents of this playbook, including the <a href=\"../common/faq/\" target=\"_blank\">Frequently Asked Questions</a> page." %} 
+{% include alert-warning.html heading="Heads-up!" content="The Federal PKI Management Authority has completed the revocation of the certificates issued by the Federal Common Policy CA.  If you encounter any issues, please review the contents of this playbook, including the <a href=\"../common/faq/\" target=\"_blank\" rel=\"noopener noreferrer\">Frequently Asked Questions</a> page." %} 
 
 The federal government recently deployed the **Federal Common Policy CA (FCPCA) G2**, a new Federal Public Key Infrastructure (FPKI) root certification authority (CA). As the existing Federal Common Policy CA reaches the end of its planned service life, FCPCA G2 will roll out incrementally and serve as the new trust anchor for the Federal PKI. Below, you'll find important dates and steps for a successful operational transition to the FCPCA G2 trust anchor.
 
