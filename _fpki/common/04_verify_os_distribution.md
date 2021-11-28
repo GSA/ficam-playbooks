@@ -17,7 +17,7 @@ subnav:
     href: '#linux-and-unix-solutions'
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to verify the distribution of a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to verify the distribution of a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
 
 To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been distributed to your agency's workstations and devices, use one of these options:
 
@@ -46,7 +46,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 ### Use BigFix
 
-1. Download the BigFix Enterprise Suite (.bes) analysis file: [*FPKIRootG2Detection.bes*]({{site.baseurl}}/fpki/common/FPKIRootG2Detection.bes){:target="_blank"}.
+1. Download the BigFix Enterprise Suite (.bes) analysis file: [*FPKIRootG2Detection.bes*]({{site.baseurl}}/fpki/common/FPKIRootG2Detection.bes){:target="_blank"}{:rel="noopener noreferrer"}.
 
 2. Use Certutil or another tool to verify the .bes file's SHA-256 hash (*required*):
 

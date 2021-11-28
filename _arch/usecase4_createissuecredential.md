@@ -19,7 +19,7 @@ In this use case, an administrator needs to issue a credential to an employee or
 
 **Note:** The preferred credential for employees and contractors is a PIV card. For cases where you cannot issue a PIV card, you must use a combination of factors to reach at least an Authenticator Assurance Level 2 (AAL2) credential.
 
-For more information about authentication and AALs, see <a href="https://pages.nist.gov/800-63-3/" target="_blank">NIST SP 800-63-B</a> (Section 4).
+For more information about authentication and AALs, see <a href="https://pages.nist.gov/800-63-3/" target="_blank" rel="noopener noreferrer">NIST SP 800-63-B</a> (Section 4).
 
 [![Icon Key for the diagrams that follow.]({{site.baseurl}}/assets/arch/usecases/4-IconKey.png)]({{site.baseurl}}/assets/arch/usecases/4-IconKey.png){:target="_blank"}{:rel="noopener noreferrer"}
 

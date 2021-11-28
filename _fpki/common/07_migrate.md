@@ -13,7 +13,7 @@ subnav:
     href: '#distrust-the-fcpca-g1'
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
 
 For the purpose of these steps, we refer to the existing Federal Common Policy CA (FCPCA) as *FCPCA G1*.
 

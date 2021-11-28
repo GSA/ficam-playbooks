@@ -161,7 +161,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>For details, see <a href="{{site.baseurl}}/pacs/alignfslandauth/" target="_blank">Aligning FSL and Authentication Mechanism</a>.</li>
+	<li>For details, see <a href="{{site.baseurl}}/pacs/alignfslandauth/" target="_blank" rel="noopener noreferrer">Aligning FSL and Authentication Mechanism</a>.</li>
 	<li>The FSL assessment and chosen PIV authentication mechanisms will form the basis for the PACS requirements document/specification as well as affect the SOW and project costs.</li>
 	<li>The sample survey questions below will help you assess the FSL of each facility and select the right PIV authentication mechanisms:
 	<ul>
@@ -253,7 +253,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>You can reuse the <a href="https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf" target="_blank">Enabling Strong Authentication with PIV Cards: PKI in PACS Recommended Procurement Language for RFPs Version 1.1</a>. For help with Requests for Quotations (RFQs), see <a href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer"> GSA’s eBuy RFQ Online Tool</a>.</li>
+	<li>You can reuse the <a href="https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf" target="_blank" rel="noopener noreferrer">Enabling Strong Authentication with PIV Cards: PKI in PACS Recommended Procurement Language for RFPs Version 1.1</a>. For help with Requests for Quotations (RFQs), see <a href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer"> GSA’s eBuy RFQ Online Tool</a>.</li>
   </ul>
   </td>
 </tr>
