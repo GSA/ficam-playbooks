@@ -59,7 +59,7 @@ The following certificates were issued or published to the FPKI Trust Infrastruc
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- |
-| N/A |  |  |  |  | 
+| FPKIMA | Entrust Managed Services NFI Root CA | Federal Bridge CA | Serial: 178c7357fae941b2a242f0d219fd0fef1560787e      Hash:d45ccedd462a2e2718627eeb6e013fc0a0dc6940 | 11/3/21 | 
 
 The following certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
@@ -71,7 +71,7 @@ The following certificates are planned for a certificate action in the near futu
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| FPKIMA | Entrust Managed Services NFI Root CA | Federal Bridge CA | Serial: 178c7357fae941b2a242f0d219fd0fef1560787e      Hash:d45ccedd462a2e2718627eeb6e013fc0a0dc6940 | 10/29/23 | Renew  11/3/21|
+| N/A |  |  |  |  |  |
 
 
 ## Repository Availability 
