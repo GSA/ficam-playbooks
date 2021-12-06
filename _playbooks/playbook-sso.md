@@ -213,7 +213,7 @@ You may find efficiencies and scaling opportunities based on the below list. Thi
 - Where the application resides (e.g., on-premise, cloud-based, or third-party hosted), or
 - Budget cycle and financial priorities (e.g., cost savings).
 
-For example, the [Digital Identity Risk Assessment (DIRA) Playbook](({{site.baseurl}}/docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"} provides a process for identity risk analysis that includes both an application’s level of data sensitivity and its user population (shown in Figure 2). The results are documented in a Digital Identity Assessment Statement (DIAS) which includes the identity, authenticator, and federal assurance level, which agencies can use and integrate as part of their overall Risk Management Framework (RMF) and FISMA processes. 
+For example, the [Digital Identity Risk Assessment (DIRA) Playbook]({{site.baseurl}}/docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"} provides a process for identity risk analysis that includes both an application’s level of data sensitivity and its user population (shown in Figure 2). The results are documented in a Digital Identity Assessment Statement (DIAS) which includes the identity, authenticator, and federal assurance level, which agencies can use and integrate as part of their overall Risk Management Framework (RMF) and FISMA processes. 
 
 Figure 2. DIRA Process
 
