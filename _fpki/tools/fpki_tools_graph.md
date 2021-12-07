@@ -6,7 +6,7 @@ permalink: /fpki/tools/fpkigraph/
 sticky_sidenav: true
 sidenav: fpkitools
 ---
-**Last Update**: November 29, 2021
+**Last Update**: December 06, 2021
 {% include graph.html %}
 
 The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs.  
