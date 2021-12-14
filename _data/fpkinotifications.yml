@@ -25,6 +25,21 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: December 13, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  end_datetime:
+  system: DoD Interoperability Root CA 2
+  change_description: The DoD Interoperability Root CA 2 issued a certificate to the DoD Root CA 3; however, it will not be published in public repositories until January 14.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 49:cb:e9:33:15:18:72:e1:7c:8e:ae:7f:0a:ba:97:fb:61:0f:64:77
+  ca_certificate_issuer: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US
+  cdp_uri: http://crl.disa.mil/crl/DODINTEROPERABILITYROOTCA2.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c
+  sia_uri: http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA2_IB.p7c
+  ocsp_uri: http://ocsp.disa.mil/
+
 - notice_date: November 22, 2021
   change_type: CRL Outage
   start_datetime:
