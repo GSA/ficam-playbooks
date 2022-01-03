@@ -12,7 +12,7 @@ subnav:
   - text: Commonly Used Trust Stores
     href: '#what-are-the-most-commonly-used-trust-stores'
   - text: Adobe Trust Store
-    href: '#what-federal-pki-certificate-policies-are-trusted-by-adobe-and-how-do-i-see-them'
+    href: '#what-federal-pki-certificate-policies-are-trusted-by-adobe-and-how-do-i-view-them'
 ---
 
 This is a high-level overview of trust stores (also called *certificate stores* or *key stores*) and a list of commonly used trust stores and settings. 
