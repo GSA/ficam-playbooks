@@ -15,7 +15,7 @@ subnav:
     href: '#what-federal-pki-certificate-policies-are-trusted-by-adobe-and-how-do-i-view-them'
 ---
 
-This is a high-level overview of trust stores (also called *certificate stores* or *key stores*) and a list of commonly used trust stores and settings. 
+This page provides a high-level overview of PKI trust stores (also called *certificate stores* or *key stores*). It also has a list of public trust stores and settings. 
 
 ### What Is a Trust Store?
 Millions of public key certificates are issued to people and devices around the world. Certificates constantly change as some are revoked and others are issued&mdash;far too many for you to maintain an up-to-date list.  
