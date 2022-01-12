@@ -27,7 +27,7 @@ A vendor may also have a public trust program that allows PKI operators to submi
 
 A public trust store program refers to the collection of root certification authority (CA) certificates that are included and distributed by default in many operating systems, browsers, or applications (referred to as application trust store for simplicity). The public root CAs contained in these trust stores must comply with the root stores requirements, including any specific compliance requirements such as a third party audit or specific operational requirements. For more information on public certificates, see the [CIO Council policy on HTTPS](https://https.cio.gov/certificates/){:target="_blank"}{:rel="noopener noreferrer"}.
 
-### What Are the Most Commonly Used Trust Stores?
+### What Are the Most Common Public Trust Stores?
 Operating systems, browsers, and some commercial software operate public trust stores. 
 
 The table below lists some common public trust stores. All applications that use PKI use a trust store, but not all applications’ trust stores are managed by a formal program. The applications in this table manage a formal program. If the Federal Common Policy CA G2 (FCPCAG2) (i.e., COMMON) root certificate is included in a trust store and distributed by _default_, the _Includes FCPCAG2 (COMMON)?_ column below will say _Yes_.  
