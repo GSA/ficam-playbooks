@@ -40,6 +40,19 @@
   sia_uri: N/A
   ocsp_uri: http://ocsp.disa.mil/
 
+- notice_date: January 18, 2022
+  change_type: Intent to Perform CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4  
+  change_description: The Federal Bridge CA G4 intends to issue a cross certificate to the STRAC Bridge Root Certification Authority between 1/20/2022 and 1/31/2022.
+  contact: fpki dash help at gsa.gov 
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN = STRAC Bridge Root Certification Authority, OU = STRAC PKI Trust Infrastructure, O = STRAC, C = US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: N/A
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: N/A
+
 - notice_date: December 13, 2021
   change_type: CA Certificate Issuance
   start_datetime:
