@@ -34,7 +34,7 @@
   contact: dodpke at mail dot mil
   ca_certificate_hash: N/A
   ca_certificate_issuer: N/A
-  ca_certificate_subject: Multiple DoD CAs
+  ca_certificate_subject: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
   cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
   aia_uri: N/A
   sia_uri: N/A
