@@ -25,6 +25,21 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: January 18, 2022
+  change_type: CRL Outage
+  start_datetime:
+  end_datetime:
+  system: Department of Defense PKI
+  change_description: Starting Friday, January 15, 2022 and continuing through the present, relying parties have reported receiving intermittent 404 errors when attempting to connect to DoD PKI CRL distribution point for DoD Root CA 3 at the URL below.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: N/A
+  ca_certificate_subject: Multiple DoD CAs
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil/
+
 - notice_date: December 13, 2021
   change_type: CA Certificate Issuance
   start_datetime:
