@@ -119,8 +119,6 @@ collections:
   playbooks:
     output: true
     permalink: /playbooks/:path/
-  guides:
-    output: true
   pages:
     output: true
     permalink: /:path/

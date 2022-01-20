@@ -1,6 +1,5 @@
 ---
 layout: page
-navtitle: Digitally Signing Documents for Submission to Office of the Federal Register
 title: Digitally Sign an Office of the Federal Register Document
 pubdate: 2018-07
 date: July 17, 2018

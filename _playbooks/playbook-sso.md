@@ -1,7 +1,6 @@
 ---
 layout: page
 collection: playbooks
-navtitle: Enterprise Single Sign-On Playbook
 title: Enterprise Single Sign-On Playbook
 category: sso
 pubdate: 2021-02

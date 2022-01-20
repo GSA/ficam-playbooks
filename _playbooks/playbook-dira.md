@@ -1,7 +1,6 @@
 ---
 layout: page
-collections: playbooks
-navtitle: Digital Identity Risk Assessment Playbook
+collection: playbooks
 title: Digital Identity Risk Assessment Playbook
 pubdate: 2020-09
 date: September 13, 2021

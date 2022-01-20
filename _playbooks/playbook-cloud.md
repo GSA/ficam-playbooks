@@ -1,7 +1,6 @@
 ---
 layout: page
 collection: playbooks
-navtitle: Cloud Identity Playbook
 title: Cloud Identity Playbook
 pubdate: 2022-01
 date: January 25, 2022
@@ -93,9 +92,6 @@ Table 1. Stakeholder Table
 
 The Cloud Identity Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee, in collaboration with the Federal Chief Information Officer Council Cloud & Infrastructure Community of Practice, developed this Playbook. U.S. Federal Executive Branch agencies can use this Playbook to plan Cloud Identity services related to the [FICAM Architecture Services Framework]({{site.baseurl}}/arch/]services/){:target="_blank"}{:rel="noopener noreferrer"}. This Playbook is not official policy, mandated action, or provides authoritative information technology terms. It includes best practices to supplement existing federal policies and builds upon [Executive Order 14028](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}, [Office of Management and Budget Memorandum 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, and existing FICAM guidance and playbooks. Subject areas with intersecting scopes, such as cloud operating models, Federal Risk and Authorization Management Program (FedRAMP), and enterprise governance, are considered only to the extent that they relate to ICAM services delivered in a cloud service model. Privileged access management (e.g., superusers, domain administrators) is out of scope for this Playbook.
 
-#
-
-
 # Cloud Identity 101
 
 Identity is foundational to security both on-premises and within cloud environments. It is the first touchpoint to access data and impacts user experience.In cloud environments, application access acts as a perimeter for protecting applications and workloads where traditionally these were network-based defenses. In this Playbook, on-premises is defined as an agency operating identity services on agency-owned and maintained infrastructure.
@@ -152,7 +148,7 @@ Table 3. IDaaS Migration Starting Point
 
 There are two potential paths to an IDaaS migration; 1) hybrid migration or 2)full migration.
 
-[![A system architecture showing how a hybrid migration. The on-premises is retained and connected to an IDaaS through a federation assertion or data replication.]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A system architecture showing how a hybrid migration. The on-premises components are retained and connected to an IDaaS through a federation assertion or data replication.]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Figure 3. Hybrid Migration with On-Premises Identity Provider
 
@@ -165,10 +161,9 @@ This hybrid migration scenario retains specific components on-premises while add
 
 An agency may choose this scenario if it has requirements for an on-premises Active Directory or Identity Provider capability. In this scenario, an agency may integrate cloud applications with an IDaaS while maintaining on-premises application access with the on-premises Identity Provider.
 
-| ![](RackMultipart20220120-4-1ksu41d_html_86c85152274fe545.png) | **Myth Busted - It&#39;s Cloud or Nothing** Most agencies that utilize an IDaaS are operating in a hybrid configuration. |
-| --- | --- |
+{% include alert-success.html heading="Myth Busted - It's Cloud or Nothing" content="Most agencies that utilize an IDaaS are operating in a hybrid configuration." %} 
 
-#### ![](RackMultipart20220120-4-1ksu41d_html_49f120f07e99bdd4.png)
+[![A system architecture showing how a full migration. The on-premises components are fully replaced with an IDaaS.]({{site.baseurl}}/assets/playbooks/cloud-full-migration.png]({{site.baseurl}}/assets/playbooks/cloud-full-migration.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Figure 4. Full Migration to IDaaS
 

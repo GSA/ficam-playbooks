@@ -235,6 +235,10 @@ pm:
 
 # Playbooks Navigation
 
+cloud:
+  - text: Cloud Identity Playbook
+    href: /playbooks/cloud/
+
 dira:
   - text: Digital Identity Risk Assessment (DIRA) Playbook
     href: /playbooks/dira/
@@ -254,7 +258,3 @@ signword:
 signfedregister:
   - text: Digitally Signing Documents for Office of the Federal Register Submission
     href: /playbooks/signfedregister/
-
-cloud:
-  - text: Cloud Identity Playbook
-    href: /playbooks/cloud/
