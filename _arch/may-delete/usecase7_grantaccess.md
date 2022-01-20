@@ -2,7 +2,7 @@
 layout: page
 title: 7. Grant Access
 collection: arch
-permalink: /arch/grantaccess/
+## permalink: /arch/grantaccess/
 sidenav: archusecases
 sticky_sidenav: true
 ---

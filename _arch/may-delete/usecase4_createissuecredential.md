@@ -2,7 +2,7 @@
 layout: page
 title: 4. Create and Issue a Credential
 collection: arch
-permalink: /arch/usecredential/
+## permalink: /arch/usecredential/
 sidenav: archusecases
 sticky_sidenav: true
 ---

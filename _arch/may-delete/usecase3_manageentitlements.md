@@ -2,7 +2,7 @@
 layout: page
 title: 3. Manage the Entitlements Lifecycle
 collection: arch
-permalink: /arch/manageaccess/
+## permalink: /arch/manageaccess/
 sidenav: archusecases
 sticky_sidenav: true
 ---

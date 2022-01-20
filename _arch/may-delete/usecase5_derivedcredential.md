@@ -2,7 +2,7 @@
 layout: page
 title: 5. Issue a Derived Credential
 collection: arch
-permalink: /arch/derivecredential/
+## permalink: /arch/derivecredential/
 sidenav: archusecases
 sticky_sidenav: true
 ---

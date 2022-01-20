@@ -2,7 +2,7 @@
 layout: page
 title: 6. Manage the Credential Lifecycle
 collection: arch
-permalink: /arch/managecredential/
+## permalink: /arch/managecredential/
 sidenav: archusecases
 sticky_sidenav: true
 ---

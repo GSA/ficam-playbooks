@@ -5,6 +5,7 @@ title: System Component Examples
 permalink: /arch/components/
 sidenav: arch
 sticky_sidenav: true
+pdf: "docs/ficam-arch.pdf"
 
 subnav:
     - text: Authoritative Sources
