@@ -2,7 +2,7 @@
 layout: page
 title: Governance
 collection: arch
-permalink: /arch/governance/
+## permalink: /arch/governance/
 sidenav: archservices
 sticky_sidenav: true
 ---

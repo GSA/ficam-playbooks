@@ -4,6 +4,7 @@ collection: arch
 title: Goals and Objectives
 permalink: /arch/goals/
 sidenav: arch
+pdf: "docs/ficam-arch.pdf"
 ---
 
 These Goals and Objectives identify the aims and outcomes of a federal agency enterprise ICAM program.  The goals and objectives are for ICAM functions and map to government-wide policies, cross-agency priorities, and strategic government initiatives.  

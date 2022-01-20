@@ -2,7 +2,7 @@
 layout: page
 title: Federation
 collection: arch
-permalink: /arch/federation/
+## permalink: /arch/federation/
 sidenav: archservices
 sticky_sidenav: true
 ---

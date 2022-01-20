@@ -2,7 +2,7 @@
 layout: page
 title: Identity Management
 collection: arch
-permalink: /arch/identity/
+## permalink: /arch/identity/
 sidenav: archservices
 sticky_sidenav: true
 ---

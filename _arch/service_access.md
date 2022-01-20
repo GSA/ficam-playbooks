@@ -2,7 +2,7 @@
 layout: page
 title: Access Management
 collection: arch
-permalink: /arch/access/
+## permalink: /arch/access/
 sidenav: archservices
 sticky_sidenav: true
 ---

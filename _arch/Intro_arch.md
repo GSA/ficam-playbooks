@@ -6,6 +6,7 @@ permalink: /arch/
 pdf: "docs/ficam-arch.pdf"
 sidenav: arch
 sticky_sidenav: true
+pdf: "docs/ficam-arch.pdf"
 
 subnav:
   - text: What Is the FICAM Architecture?
