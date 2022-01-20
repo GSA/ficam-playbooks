@@ -251,6 +251,10 @@ signword:
   - text: Digitally Sign a Microsoft Word Document
     href: /playbooks/signword/
 
-signwordofr:
+signfedregister:
   - text: Digitally Signing Documents for Office of the Federal Register Submission
-    href: /signfedregister/
+    href: /playbooks/signfedregister/
+
+cloud:
+  - text: Cloud Identity Playbook
+    href: /playbooks/cloud/
