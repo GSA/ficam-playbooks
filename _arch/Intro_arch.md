@@ -3,7 +3,6 @@ layout: page
 collection: arch
 title: Federal ICAM Architecture Introduction
 permalink: /arch/
-pdf: "docs/ficam-arch.pdf"
 sidenav: arch
 sticky_sidenav: true
 pdf: "docs/ficam-arch.pdf"
