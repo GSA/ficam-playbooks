@@ -25,6 +25,49 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: January 18, 2022
+  change_type: CRL Outage
+  start_datetime:
+  end_datetime:
+  system: Department of Defense PKI
+  change_description: Starting Friday, January 15, 2022 and continuing through the present, relying parties have reported receiving intermittent 404 errors when attempting to connect to DoD PKI CRL distribution point for DoD Root CA 3 at the URL below.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: N/A
+  ca_certificate_subject: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil/
+
+- notice_date: January 18, 2022
+  change_type: Intent to Perform CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4  
+  change_description: The Federal Bridge CA G4 intends to issue a cross certificate to the STRAC Bridge Root Certification Authority between 1/20/2022 and 1/31/2022.
+  contact: fpki dash help at gsa.gov 
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN = STRAC Bridge Root Certification Authority, OU = STRAC PKI Trust Infrastructure, O = STRAC, C = US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: N/A
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: N/A
+
+- notice_date: December 13, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  end_datetime:
+  system: DoD Interoperability Root CA 2
+  change_description: The DoD Interoperability Root CA 2 issued a certificate to the DoD Root CA 3; however, it will not be published in public repositories until January 14.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 49:cb:e9:33:15:18:72:e1:7c:8e:ae:7f:0a:ba:97:fb:61:0f:64:77
+  ca_certificate_issuer: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US
+  cdp_uri: http://crl.disa.mil/crl/DODINTEROPERABILITYROOTCA2.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c
+  sia_uri: http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA2_IB.p7c
+  ocsp_uri: http://ocsp.disa.mil/
+
 - notice_date: November 22, 2021
   change_type: CRL Outage
   start_datetime:
