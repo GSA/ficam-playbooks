@@ -30,7 +30,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a1" class="usa-accordion__content usa-prose">
-    <p><a href="/assets/arch/usecases/Identity-Creation.png" target="_blank" rel="noopener noreferrer"><img src="/assets/arch/usecases/Identity-Creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px" /></a></p>
+    <p><a href="{{site.baseurl}}/assets/arch/usecases/Identity-Creation.png" target="_blank" rel="noopener noreferrer"><img src="{site.baseurl}}/assets/arch/usecases/Identity-Creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px" /></a></p>
     <p>When you onboard an employee or contractor at your agency, you collect identity information from the individual and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
