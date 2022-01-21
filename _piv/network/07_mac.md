@@ -37,12 +37,12 @@ This [Apple Platform Deployment guide](https://support.apple.com/guide/deploymen
 
 ## Local Account Pairing
 Local Account Pairing is a user-prompted process.
-1. Insert the PIV card into a card reader connected to the macOS device
+1. Insert the PIV card into a card reader connected to the macOS device.
 2. A series of prompts direct the user to pair the PIV card to the local account. The user will need administrative access to complete the process.
 3. Provide the PIV PIN and then log out.
 4. Insert the PIV and provide the PIN to log back in.
 
-For See [this Apple Platform Deployment guide](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"} for more information on local account pairing.
+See [this Apple Platform Deployment guide](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"} for more information on local account pairing.
 
 ## Windows Domain Account Pairing
 Most departments and agencies already maintain processes to map PIV attributes to Active Directory domain accounts. This playbook also provides guidance on the different models that can be used to [link domain accounts to PIV certificate attributes]({{site.baseurl}}piv/network/account/){:target="_blank"}.
@@ -56,25 +56,25 @@ Ensure the following prerequisites are complete or ready:
 
 ### Step 1. Disable Local Account Pairing
 The local pairing interface must be disabled. To disable the local pairing dialog:
-1. Open the Terminal app
-2. Type the following 
+1. Open the Terminal app.
+2. Type the following: 
 ```
 sudo defaults write /Library/Preferences/com.apple.security.smartcard UserPairing -bool NO
 ```
-3. When prompted, enter the administrator password
+3. When prompted, enter the administrator password.
 
 ### Step 2. Write the Property List
-A property list or plist maps smart card attributes to a Windows domain account. The most common configuration is to map the NT Principal Name in the PIV Authentication certificate Subject Alternative Name to the userPrincipalName attribute in Active Directory. The following image provides the contents of a configuration file that extracts the NT Principal Name from a PIV to match against a directory AltSecID in support of an authentication event.
+A property list, or plist, maps smart card attributes to a Windows domain account. The most common configuration is to map the NT Principal Name in the PIV Authentication certificate Subject Alternative Name to the userPrincipalName attribute in Active Directory. The following image provides the contents of a configuration file that extracts the NT Principal Name from a PIV to match against a directory AltSecID in support of an authentication event.
 
 [![PList configuration for extracting a domain account identifier from a PIV]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:style="float:left"}]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Agencies may want to apply [additional smart card configuration] (https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"} settings. Additional options may include:
-- allowSmartCard - must be set to TRUE to allow the device to leverage smartcards for multiple functions (authentication, digital signing) 
-- enforceSmartCard - can be set to TRUE to ensure that smartcard authentication is made mandatory at initial logon, authorization, and unlocking from screensaver mode
-- tokenRemovalAction - if set to "1," enables the screensaver when a smartcard is physically removed from the device.
-- UserPairing - can be set to FALSE to prevent the pairing dialogue from appearing on smartcard insertion.
-- oneCardPerUser - can be set to FALSE for users who may have multiple acceptable smartcards (e.g., PIV and alternative tokens).
-- checkCertificateTrust - can be an integer between 0 and 3:
+- allowSmartCard - Must be set to TRUE to allow the device to leverage smartcards for multiple functions (authentication, digital signing). 
+- enforceSmartCard - Can be set to TRUE to ensure that smartcard authentication is made mandatory at initial logon, authorization, and unlocking from screensaver mode
+- tokenRemovalAction - If set to "1," enables the screensaver when a smartcard is physically removed from the device.
+- UserPairing - Can be set to FALSE to prevent the pairing dialogue from appearing on smartcard insertion.
+- oneCardPerUser - Can be set to FALSE for users who may have multiple acceptable smartcards (e.g., PIV and alternative tokens).
+- checkCertificateTrust - Can be an integer between 0 and 3:
     - 0 - turns off certificate trust checking
     - 1 - turns on trust checking, but does not conduct revocation checking
     - 2 - turns on trust checking, and a 'soft' revocation check is conducted where 'valid' and 'unknown' are treated the same
