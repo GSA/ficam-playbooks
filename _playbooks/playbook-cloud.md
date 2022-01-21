@@ -3,7 +3,7 @@ layout: page
 collection: playbooks
 title: Cloud Identity Playbook
 pubdate: 2022-01
-date: January 25, 2022
+date: January 20, 2022
 type: Markdown
 permalink: /playbooks/cloud/
 description: This Cloud Identity Playbook is a practical guide to assist federal agencies as they start to or further expand the use of workforce ICAM Services in a cloud operating model.
