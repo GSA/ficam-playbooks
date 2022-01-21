@@ -159,7 +159,7 @@ Figure 3. Hybrid Migration with On-Premises Identity Provider
 This hybrid migration scenario retains specific components on-premises while adding additional IDaaS capabilities. This may include a combination of two approaches.
 
 1. Keep Active Directory and integrate with an IDaaS through a data sync or replication.
-2. Federae the on-premises Identity Provider with an IDaaS.
+2. Federate the on-premises Identity Provider with an IDaaS.
 
 An agency may choose this scenario if it has requirements for an on-premises Active Directory or Identity Provider capability. In this scenario, an agency may integrate cloud applications with an IDaaS while maintaining on-premises application access with the on-premises Identity Provider.
 
