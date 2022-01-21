@@ -3,10 +3,9 @@ layout: page
 collection: playbooks
 title: Cloud Identity Playbook
 pubdate: 2022-01
-date: January 25, 2022
 type: Markdown
 permalink: /playbooks/cloud/
-description: This Cloud Identity Playbook is a practical guide to assist federal agencies as they start to or further expand the use of workforce ICAM Services in a cloud operating model.
+description: The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.
 pdf: "docs/playbook-cloud.pdf"
 sticky_sidenav: true
 sidenav: cloud
@@ -30,14 +29,17 @@ subnav:
     href: '#appendix-a-policies-standards-and-guidance'
   - text: Appendix B. Acronyms
     href: '#appendix-b-acronyms'
-
 ---
 
 Version 1.0  
-January 25, 2022
+January 20, 2022
 
-<a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="({{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
-<a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="({{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+<a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
+<a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+
+| Version Number | Date | Change Description |
+| :----------: | :-------: | -------- |
+| 1.0 | 01/20/22 | Initial Draft |
 
 # Executive Summary
 
@@ -90,7 +92,7 @@ Table 1. Stakeholder Table
 
 ## Disclaimer
 
-The Cloud Identity Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee, in collaboration with the Federal Chief Information Officer Council Cloud & Infrastructure Community of Practice, developed this Playbook. U.S. Federal Executive Branch agencies can use this Playbook to plan Cloud Identity services related to the [FICAM Architecture Services Framework]({{site.baseurl}}/arch/]services/){:target="_blank"}{:rel="noopener noreferrer"}. This Playbook is not official policy, mandated action, or provides authoritative information technology terms. It includes best practices to supplement existing federal policies and builds upon [Executive Order 14028](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}, [Office of Management and Budget Memorandum 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, and existing FICAM guidance and playbooks. Subject areas with intersecting scopes, such as cloud operating models, Federal Risk and Authorization Management Program (FedRAMP), and enterprise governance, are considered only to the extent that they relate to ICAM services delivered in a cloud service model. Privileged access management (e.g., superusers, domain administrators) is out of scope for this Playbook.
+The Cloud Identity Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee, in collaboration with the Federal Chief Information Officer Council Cloud & Infrastructure Community of Practice, developed this Playbook. U.S. Federal Executive Branch agencies can use this Playbook to plan Cloud Identity services related to the [FICAM Architecture Services Framework]({{site.baseurl}}/arch/services/){:target="_blank"}{:rel="noopener noreferrer"}. This Playbook is not official policy, mandated action, or provides authoritative information technology terms. It includes best practices to supplement existing federal policies and builds upon [Executive Order 14028](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}, [Office of Management and Budget Memorandum 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, and existing FICAM guidance and playbooks. Subject areas with intersecting scopes, such as cloud operating models, Federal Risk and Authorization Management Program (FedRAMP), and enterprise governance, are considered only to the extent that they relate to ICAM services delivered in a cloud service model. Privileged access management (e.g., superusers, domain administrators) is out of scope for this Playbook.
 
 # Cloud Identity 101
 
@@ -98,7 +100,7 @@ Identity is foundational to security both on-premises and within cloud environme
 
 Transitioning to an 'as-a-service' model allows federal agencies to buy capabilities rather than invest in infrastructure. The most common Cloud Identity example is Identity as a Service (IDaaS). An IDaaS is typically an Identity Provider (IdP) that offers a Single Sign-On (SSO), Multi-Factor Authentication (MFA), and directory services in a single platform. The IdP also provides assertions that include identity and authentication information to an application to authorize access. For more information on Single Sign-On, see the [SSO Playbook]({{site.baseurl}}/playbooks/sso/){:target="_blank"}{:rel="noopener noreferrer"}.
 
-[![Basic components required to perform single sign-on]({{site.baseurl}}/assets/playbooks/sso-overview.png)]({{site.baseurl}}/assets/playbooks/sso-overview.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![Basic components required to perform single sign-on.]({{site.baseurl}}/assets/playbooks/sso-overview.png)]({{site.baseurl}}/assets/playbooks/sso-overview.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Figure 1. Enterprise SSO Overview
 
@@ -116,7 +118,7 @@ Table 2. Differences between On-Premises Identity Provider and IDaaS
 
 The adoption of cloud services adds challenges as well. Cloud services operate on a shared responsibility model. Some of the responsibility is with the cloud service provider and some with the agency customer. **Data classification and ICAM is always an agency customer responsibility in all cloud service models.** In no case should someone consider the cloud secure simply because the cloud provider is responsible for security. Principles such as least privilege, role-based access, multi-factor authentication (MFA), and the risk are always an agency customer responsibility, no matter the cloud service model.
 
-[![A chart showing how responsibilities are shared between an agency customer and a cloud service provider. ICAM is always an Agency Customer responsibility.]({{site.baseurl}}/assets/playbooks/cloud-shared-model.png]({{site.baseurl}}/assets/playbooks/cloud-shared-model.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A chart showing how responsibilities are shared between an agency customer and a cloud service provider. ICAM is always an Agency Customer responsibility.]({{site.baseurl}}/assets/playbooks/cloud-shared-model.png)]({{site.baseurl}}/assets/playbooks/cloud-shared-model.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Figure 2. Shared Responsibility Model
 
@@ -148,7 +150,7 @@ Table 3. IDaaS Migration Starting Point
 
 There are two potential paths to an IDaaS migration; 1) hybrid migration or 2)full migration.
 
-[![A system architecture demonstrating a hybrid migration. The on-premises components are retained and connected to an IDaaS through a federation assertion or data replication.]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A system architecture demonstrating a hybrid migration. The on-premises components are retained and connected to an IDaaS through a federation assertion or data replication.]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png)]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Figure 3. Hybrid Migration with On-Premises Identity Provider
 
@@ -163,13 +165,13 @@ An agency may choose this scenario if it has requirements for an on-premises Act
 
 {% include alert-success.html heading="Myth Busted - It's Cloud or Nothing" content="Most agencies that utilize an IDaaS are operating in a hybrid configuration." %} 
 
-[![A system architecture demonstrating a full migration. The on-premises components are fully replaced with an IDaaS.]({{site.baseurl}}/assets/playbooks/cloud-full-migration.png]({{site.baseurl}}/assets/playbooks/cloud-full-migration.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A system architecture demonstrating a full migration. The on-premises components are fully replaced with an IDaaS.]({{site.baseurl}}/assets/playbooks/cloud-full-migration.png)]({{site.baseurl}}/assets/playbooks/cloud-full-migration.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Figure 4. Full Migration to IDaaS
 
 #### Full Migration
 
-The full migration scenario replaces all on-premises Identity Provider components with an IDaaS. This scenario includes replacing Active Directory and Active Directory Federation Services with an IDaaS. An agency may need an alternative solution for PIV desktop authentication, which Active Directory typically handles. An alternative solution may include using a comparable phishing-resistant authenticator as mentioned in the draft [OMB Federal Zero Trust Strategy](https://zerotrust.cyber.gov/).
+The full migration scenario replaces all on-premises Identity Provider components with an IDaaS. This scenario includes replacing Active Directory and Active Directory Federation Services with an IDaaS. An agency may need an alternative solution for PIV desktop authentication, which Active Directory typically handles. An alternative solution may include using a comparable phishing-resistant authenticator as mentioned in the draft [OMB Federal Zero Trust Strategy](https://zerotrust.cyber.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 {% include alert-warning.html heading="Business Challenge - PIV Authentication in Full Migration Scenario" content="One common challenge faced by many agencies is IDaaS support for certificate-based authentication and desktop authentication. Many FedRAMP IDaaS support some form of certificate-based authentication. As of this writing, there is no current replacement for PIV desktop authentication that doesn't include operating an Active Directory domain." %} 
 
@@ -177,7 +179,7 @@ The pros and cons of each approach are dependent on an agency's architecture, bu
 
 ### Generate and Share User Stories
 
-[Writing Effective User Stories](https://tech.gsa.gov/guides/effective_user_stories/){:target="_blank"}{:rel="noopener noreferrer"} is essential to understanding the user's purpose. Having descriptive summaries and detailed acceptance criteria will help your team know when a user story is considered complete or done. See this modified example from the [GSA Chief Technology Officer Office](https://tech.gsa.gov/guides/user_story_example/){:target="_blank"}{:rel="noopener noreferrer"}:
+[Writing Effective User Stories](https://tech.gsa.gov/guides/effective_user_stories/){:target="_blank"}{:rel="noopener noreferrer"} is essential to understanding the user's purpose. Having descriptive summaries and detailed acceptance criteria will help your team know when a user story is considered complete or done. See this modified example from the GSA Chief Technology Officer Office:
 
 <table>
   <thead>
@@ -333,7 +335,7 @@ Many agencies face similar challenges when adopting IDaaS. This section includes
 
 Agencies can use IDaaS to create a global identity (also referred to as a master user record) within an agency and across cloud and on-premises environments. **Enterprise identity awareness is a zero trust capability.**
 
-1. **Automate Identity**. One unique feature of IDaaS is the potential to automate manual processes. For example, automatically suspend a user's account after 14 or 30 days of inactivity. Leverage API integrations to automate lifecycle management processes with other IT Tools. For example, integrate IDaaS with an IT Service Management tool to track and audit permissions. Learn about [System for Cross-domain Identity Management](http://www.simplecloud.info/){:target="_blank"}{:rel="noopener noreferrer"}, an open standard used by IDaaS and other cloud tools to automate user provisioning. **Automating identity processes is a zero trust capability.**
+1. **Automate Identity**. One unique feature of IDaaS is the potential to automate manual processes. For example, automatically suspend a user's account after 14 or 30 days of inactivity. Leverage API integrations to automate lifecycle management processes with other IT Tools. For example, integrate IDaaS with an IT Service Management tool to track and audit permissions. Learn about [System for Cross-domain Identity Management](http://www.simplecloud.info/){:target="_blank"}{:rel="noopener noreferrer"}, an open standard used by IDaaS and other cloud tools to automate user provisioning. **Automating identity processes is a mature zero trust capability.**
 2. **Accurate Directory Information**. Before starting an IDaaS project, ensure correct source directory information. An IDaaS will replicate your on-premises directories to a cloud directory and may even support bi-directional information updates. At a minimum, most cloud directories support one-way sync to the cloud directory. It is better to clean your directory before rather than after replication.
 3. **Virtual Directory**. Not all cloud application access is equal. Consider using a virtual directory to create unique personas for specific applications based on existing directory information. A virtual directory aggregates identity data from a variety of sources. For example, an application requires a particular attribute such as citizenship which is not in the directory record. An agency can use a virtual directory to create a unique application persona with data combined from various identity or data repositories. An IDaaS may support a virtual directory capability and act as a master user record.
 4. **Entitlement Management.** Most cloud applications and platforms implement role-based entitlement management. Permissions are managed based on a user in a group rather than individually. Groups may consist of unique roles such as government administrator, contractor administrator, contributor, or reader. All users in a group inherit the same permissions. Entitlement management is as easy as removing the user from that group.
@@ -369,7 +371,7 @@ A primary IDaaS capability is a centralized policy enforcement point that may in
 
 ### Governance
 
-Identity governance includes both program oversight and technical controls. **Agencies should focus on fully automated technical controls as a zero trust capability.**
+Identity governance includes both program oversight and technical controls. Agencies should investigate automating technical governance controls when and if cost effective and necessary based on a risk assessment.
 
 1. **Certify Access**. Access certification or recertification is the process of an application owner or a manager attesting to someone's access and can be an automated or manual process. Access certifications should happen more frequently for higher impact applications, such as monthly or quarterly.
 2. **Plan for Contingencies**. Verify IDaaS availability requirements and continuity procedures. Test disaster recovery scenarios regularly. Continuity planning may require collaborating with your IDaaS to identify strategies around geographic outages, denial of service attacks, or other potential outages.
@@ -393,31 +395,31 @@ Federation is the technology, policies, standards, and processes that allow an a
 
 1. **Trust Framework**. Federating across security or organizational boundaries requires a legal agreement and a technical exchange. An agreement between entities should identify each organization's required security and governance processes. Creating a template that includes the format and required attributes is a best practice. See [NISTIR 8149](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"} for more information on trust frameworks.
 
-| **Case Study - Trust Frameworks in Action** The integrity of a Trust Framework is vital when federating with external identities. The trust framework partners should have governance processes that may include a verified accreditation or audit process to ensure the identity proofing, authenticator, and federation assertion meets the intent of NIST Special Publication 800-63-3 requirements. Using a third-party audit service provides the additional assurance of secure and compliant operations. Some examples of trust frameworks include:
+**Trust Frameworks in Action**
+
+The integrity of a Trust Framework is vital when federating with external identities. The trust framework partners should have governance processes that may include a verified accreditation or audit process to ensure the identity proofing, authenticator, and federation assertion meets the intent of NIST Special Publication 800-63-3 requirements. Using a third-party audit service provides the additional assurance of secure and compliant operations. Some examples of trust frameworks include:
 - The Federal Public Key Infrastructure (PKI) Policy Authority enforces a certificate policy, third-party auditing, and implements technical control through the Federal PKI certificate profiles and hierarchy. There are other [non-government PKI trust frameworks](https://www.idmanagement.gov/buy/trust-services/#non-government-pki-trust-framework){:target="_blank"}{:rel="noopener noreferrer"} that interoperate with the Federal PKI. The Federal PKI trust framework ensures federal employee and contractor credentials meet a NIST standard (FIPS 201) and are acceptable to all federal agencies.
 - The Kantara Initiative is a non-government trust framework program. It operates conformity assessment, assurance, and grants trust marks to companies that show conformance to a Kantara standard based on NIST Special Publication 800-63-3. They accredit full identity service providers, component services, and Kantara accredited assessors. An agency may recognize a Kantara trust mark to federate with an external Identity Provider.
-- The DirectTrust Health Information Service Provider is a PKI-based trust framework for healthcare community collaboration.
- |
-| --- |
+- The DirectTrust Health Information Service Provider is a PKI-based trust framework for healthcare community collaboration." %} 
 
 ## Step 4. Test and Deploy Identity Automation
 
 IDaaS products may vary in how they are configured and operated. This section provides technology and vendor agnostic steps to document an existing manual process for automation following a user experience format. Automating tasks may require a combination of native IDaaS capabilities and scripting, API requests, or tool integration.
 
-1. **Document the Process**. The process may include all actions and outcomes from a user perspective. Documenting may follow a similar structure as the use case example provided in [step 1](#step-1-gain-support). Example processes for automation include:
-  1. User account suspension due to inactivity.
-  2. Account provisioning or de-provisioning (onboarding).
-  3. Approve access requests for users in a specific group.
-  4. Report on suspicious activity.
-  5. Credential enrollment.
-  6. PKI Trust store management.
+1. **Document the Process**. The process may include all actions and outcomes from a user perspective. Documenting may follow a similar structure as the use case example provided in [Step 1](#step-1-gain-support). Example processes for automation include:
+   1. User account suspension due to inactivity.
+   2. Account provisioning or de-provisioning (onboarding).
+   3. Approve access requests for users in a specific group.
+   4. Report on suspicious activity.
+   5. Credential enrollment.
+   6. PKI Trust store management.
 2. **Review Process Workflow**. The review may include a whiteboard session or watching a user perform the process. It also includes documenting pain points and dependencies to complete the task. The outcome of this step is a thorough understanding of the process.
 3. **Generate an Automated Approach**. Review the workflow steps for complete or partial automation. Manual activities may include:
-  7. A series of approvals to provision an account, such as employee onboarding.
-  8. Data validation.
-  9. Generating reports.
-  10. Sending reminder emails.
-  11. Testing.
+   1. A series of approvals to provision an account, such as employee onboarding.
+   2. Data validation.
+   3. Generating reports.
+   4. Sending reminder emails.
+   5. Testing.
 4. **Test and Implement Workflow**. After finding an optimal workflow, it is time to test and implement it. If possible, test in a non-production environment. If testing is only available in production, limit the impact to a small community of users or a non-mission critical task.
 
 # Emerging Topics
@@ -426,7 +428,7 @@ The Cloud Identity Working Group discussed two emerging topics: 1) Cloud Infrast
 
 ## Cloud Infrastructure Entitlement Management (CIEM)
 
-Cloud Infrastructure Entitlement Management (CIEM) is a specific tool to manage identities in multi-cloud environments. A primary challenge in managing cloud entitlements is the pervasiveness of understanding entitlement risk. In this context, entitlement risk is the ability of an attacker to exploit how cloud services and resources are connected or extended. This attack technique is called a [Valid Cloud Account privilege escalation in MITRE ATT&amp;CK](https://attack.mitre.org/techniques/T1078/004/){:target="_blank"}{:rel="noopener noreferrer"}. For example, a service account is an NPE account created to perform an automated action with specific privileges. A service account may have administrator privileges and, if compromised, is used by an adversary to conduct malicious activity. A CIEM can identify risk in people, service, and resource entitlements.
+Cloud Infrastructure Entitlement Management (CIEM) is a specific tool to manage identities in multi-cloud environments. A primary challenge in managing cloud entitlements is the pervasiveness of understanding entitlement risk. In this context, entitlement risk is the ability of an attacker to exploit how cloud services and resources are connected or extended. This attack technique is called a [Valid Cloud Account Privilege Escalation in MITRE ATT&CK](https://attack.mitre.org/techniques/T1078/004/){:target="_blank"}{:rel="noopener noreferrer"}. For example, a service account is an NPE account created to perform an automated action with specific privileges. A service account may have administrator privileges and, if compromised, is used by an adversary to conduct malicious activity. A CIEM can identify risk in people, service, and resource entitlements.
 
 1. **People Entitlements** - Permissions for people to perform actions such as change information or access security settings.
 2. **Service Entitlements** - Permissions for services to perform actions on a platform, such as starting or stopping services or performing automated tasks.
@@ -470,7 +472,7 @@ See the [GSA Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_bl
 2. [CISA Zero Trust Maturity Model](https://www.cisa.gov/publication/zero-trust-maturity-model){:target="_blank"}{:rel="noopener noreferrer"}
 3. [Digital Identity Risk Assessment Playbook]({{site.baseurl}}/docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 4. [Data Center and Cloud Optimization Initiative Cloud Strategy Guide](https://community.max.gov/display/Egov/Agency%2BIT%2BModernization%3A%2BEducational%2BResources%2BBuilding%2BBlocks){:target="_blank"}{:rel="noopener noreferrer"}
-5. [Enterprise Single Sign-On Playbook]({{site.baseurl}}/docs/playbook-sso.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+5. [Enterprise Single Sign-On Playbook]({{site.baseurl}}/playbooks/sso/){:target="_blank"}{:rel="noopener noreferrer"}
 6. [FedRAMP Digital Identity Requirements (Version 1.0)](https://s3.amazonaws.com/sitesusa/wp-content/uploads/var/www/html/sites/www/app/wordpress/wp-content/blogs.dir/482/files/2016/06/FedRAMP_Digital_Identity_Requirements_v1.0.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 7. [FICAM Architecture]({{site.baseurl}}/arch/){:target="_blank"}{:rel="noopener noreferrer"}
 8. [ICAM Governance Framework]({{site.baseurl}}/docs/playbook-identity-governance-framework.pdf){:target="_blank"}{:rel="noopener noreferrer"}
