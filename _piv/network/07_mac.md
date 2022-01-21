@@ -26,42 +26,42 @@ As federal IT networks and systems expand, especially in light of recent Bring-Y
 
 ## Choose an Authentication Option
 Agencies have two options to enforce smart card authentication in macOS.
-Local Account Pairing - For a non-domain joined macOS account, an agency may enable local account pairing. This method pairs a smart card to the local macOS user account and requires its use for desktop authentication. No domain or Kerberos architecture is needed.
-Windows Domain User Account - For a windows domain-joined device, an agency can map smart card attributes to an Active Directory account. This method involves creating a plist configuration file and disabling local pairing on the macOS device.
+1. Local Account Pairing - For a non-domain joined macOS account, an agency may enable local account pairing. This method pairs a smart card to the local macOS user account and requires its use for desktop authentication. No domain or Kerberos architecture is needed.
+2. Windows Domain User Account - For a windows domain-joined device, an agency can map smart card attributes to an Active Directory account. This method involves creating a plist configuration file and disabling local pairing on the macOS device.
+
 Agencies may additionally choose a machine or user-based enforcement which disables all password-based authentication.
-Machine-Based Enforcement (MBE): This implementation removes the option for password-based authentication in favor of smart card-only authentication for any account accessible by the macOS device (local or network).
-User-Based Enforcement (UBE): This implementation creates an exception to smart card-only authentication for specific users or groups of users (e.g., network admins, device admins, and individuals waived from smart card requirements).
-Apple support provides some additional detail on MBE vs. UBE in the [following article](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}.
-Additional details on [Windows authentication enforcement models]({{site.baseurl}}/piv/network/group/){:target="_blank"} are available in this playbook.
+1. Machine-Based Enforcement (MBE): This implementation removes the option for password-based authentication in favor of smart card-only authentication for any account accessible by the macOS device (local or network).
+2. User-Based Enforcement (UBE): This implementation creates an exception to smart card-only authentication for specific users or groups of users (e.g., network admins, device admins, and individuals waived from smart card requirements).
+
+This [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"} provides some additional detail on MBE vs. UBE. Additional details on [Windows authentication enforcement models]({{site.baseurl}}/piv/network/group/){:target="_blank"}{:rel="noopener noreferrer"} are available in this section of the PIV Playbook.
 
 ## Local Account Pairing
 Local Account Pairing is a user-prompted process.
-Insert the PIV card into a card reader connected to the macOS device
-A series of prompts direct the user to pair the PIV card to the local account. The user will need administrative access to complete the process.
-Provide the PIV PIN and then log out.
-Insert the PIV and provide the PIN to log back in.
-For See [this Apple Platform Deployment guide](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"}
- for more information on local account pairing.
+1. Insert the PIV card into a card reader connected to the macOS device
+2. A series of prompts direct the user to pair the PIV card to the local account. The user will need administrative access to complete the process.
+3. Provide the PIV PIN and then log out.
+4. Insert the PIV and provide the PIN to log back in.
+
+For See [this Apple Platform Deployment guide](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"} for more information on local account pairing.
 
 ## Windows Domain Account Pairing
-
 Most departments and agencies already maintain processes to map PIV attributes to Active Directory network accounts. This playbook also provides guidance on the different models that can be used to [link network accounts to PIV certificate attributes]({{site.baseurl}}piv/network/account/){:target="_blank"}.
 
-This process requires the following prerequisites:
-The person completing this process has administrative privileges on the macOS device.
-The macOS device is joined to the Windows domain.
-Federal PKI and domain controller certificates are distributed and installed on the macOS device key store.
+Ensure the following prerequisites are complete or ready:
+1. The person completing this process has administrative privileges on the macOS device.
+2. The macOS device is joined to the Windows domain.
+3. Federal PKI and domain controller certificates are distributed and installed on the macOS device key store.
 
-{% include alert-warning.html heading="Domain Controller Certificate Trust" content="Many organizations run internal device PKIs that issue their domain controller certificates. Do not assume that installing the FCPCA G2 certificate into macOS keychains will facilitate smartcard login." %}
+{% include alert-warning.html heading="Domain Controller Certificate Trust" content="Many organizations run internal device PKIs that issue their domain controller certificates. Ensure all certificates needed to conduct a smart card domain authentication are distributed to the macOS devices." %}
 
 ### Step 1. Disable Local Account Pairing
 The local pairing interface must be disabled. To disable the local pairing dialog:
-Open the Terminal app
-Type the following 
+1. Open the Terminal app
+2. Type the following 
 ```
 sudo defaults write /Library/Preferences/com.apple.security.smartcard UserPairing -bool NO
 ```
-When prompted, enter the administrator password
+3. When prompted, enter the administrator password
 
 ### Step 2. Write the Property List
 A property list or plist maps smart card attributes to a Windows domain account. The most common configuration is to map the NT Principal Name in the PIV Authentication certificate Subject Alternative Name to the userPrincipalName attribute in Active Directory. The following image provides the contents of a configuration file that extracts the NT Principal Name from a PIV to match against a directory AltSecID in support of an authentication event.
@@ -82,11 +82,12 @@ Agencies may want to apply [additional smart card configuration] (https://develo
 
 ### Step 3. Choose a Deployment Method
 An agency may deploy a plist through various mechanisms.
-Employ third-party Mobile Device Management (MDM) tools
-Leveraging an [Apple specific configuration tool](https://apps.apple.com/us/app/apple-configurator-2/id1037126344?mt=12){:target="_blank"}{:rel="noopener noreferrer"} via the App Store
-Direct configuration profile delivery via an email, webpage, or [over-the-air profile delivery](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}
+1. Employ third-party Mobile Device Management (MDM) tools
+2. Leveraging an [Apple specific configuration tool](https://apps.apple.com/us/app/apple-configurator-2/id1037126344?mt=12){:target="_blank"}{:rel="noopener noreferrer"} via the App Store
+3. Direct configuration profile delivery via an email, webpage, or [over-the-air profile delivery](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}
+
 If remote options above are not available, the administrator may also perform the configuration locally. [configuration commands.](https://support.apple.com/guide/deployment-reference-macos/advanced-smart-card-options-apd2969ad2d7/web){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Helpful References
-[Apple Deployment Guide - Use a smart card in macOS](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"}
-[Apple Deployment Guide - Configure macOS for smart card-only authentication](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
+1. [Apple Deployment Guide - Use a smart card in macOS](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"}
+2. [Apple Deployment Guide - Configure macOS for smart card-only authentication](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
