@@ -5,6 +5,7 @@ title: Federal ICAM Architecture Introduction
 permalink: /arch/
 sidenav: arch
 sticky_sidenav: true
+pdf: "docs/ficam-arch.pdf"
 
 subnav:
   - text: What Is the FICAM Architecture?

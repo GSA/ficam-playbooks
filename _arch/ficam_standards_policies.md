@@ -5,6 +5,7 @@ title: Standards and Policies
 permalink: /arch/standards/
 sidenav: arch
 sticky_sidenav: true
+pdf: "docs/ficam-arch.pdf"
 
 subnav:
   - text: Laws
