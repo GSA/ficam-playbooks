@@ -10,7 +10,7 @@ subnav:
     - text: Choose an Authentication Option
       href: '#choose-an-authentication-option'
     - text: Local Account Pairing
-      href: '#local-account pairing'
+      href: '#local-account-pairing'
     - text: Windows Domain Account Pairing
       href: '#windows-domain-account-pairing'
     - text: Helpful References
