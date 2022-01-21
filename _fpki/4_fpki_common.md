@@ -1,6 +1,5 @@
 ---
 layout: page
-navtitle: Federal Common Policy CA Update
 title: Federal Common Policy CA Update
 collection: fpki
 permalink: /fpki/common/

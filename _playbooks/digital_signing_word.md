@@ -1,7 +1,6 @@
 ---
 layout: page
 collection: piv
-navtitle: Digitally Signing in Microsoft Word
 title: Digitally Sign a Microsoft Word Document
 category: Digitally Sign
 pubdate: 2018-03

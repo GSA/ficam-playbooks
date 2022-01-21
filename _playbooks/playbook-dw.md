@@ -1,7 +1,6 @@
 ---
 layout: page
-collections: playbooks
-navtitle: Digital Worker Identity Playbook 
+collection: playbooks
 title: Digital Worker Identity Playbook 
 pubdate: 2021-01
 date: October 14, 2021
