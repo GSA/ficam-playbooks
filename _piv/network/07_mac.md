@@ -45,7 +45,7 @@ Local Account Pairing is a user-prompted process.
 See [this Apple Platform Deployment guide](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"} for more information on local account pairing.
 
 ## Windows Domain Account Pairing
-Most departments and agencies already maintain processes to map PIV attributes to Active Directory domain accounts. This playbook also provides guidance on the different models that can be used to [link domain accounts to PIV certificate attributes]({{site.baseurl}}piv/network/account/){:target="_blank"}.
+Most departments and agencies already maintain processes to map PIV attributes to Active Directory domain accounts. This playbook also provides guidance on the different models that can be used to [link domain accounts to PIV certificate attributes]({{site.baseurl}}/piv/network/account/){:target="_blank"}.
 
 Ensure the following prerequisites are complete or ready:
 1. The person completing this process has administrative privileges on the macOS device.
@@ -86,7 +86,7 @@ An agency may deploy a plist through various mechanisms.
 2. Leveraging an [Apple specific configuration tool](https://apps.apple.com/us/app/apple-configurator-2/id1037126344?mt=12){:target="_blank"}{:rel="noopener noreferrer"} via the App Store
 3. Direct configuration profile delivery via an email, webpage, or [over-the-air profile delivery](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}
 
-If remote options above are not available, the administrator may also perform the configuration locally. [configuration commands.](https://support.apple.com/guide/deployment-reference-macos/advanced-smart-card-options-apd2969ad2d7/web){:target="_blank"}{:rel="noopener noreferrer"}
+If remote options above are not available, the administrator may also perform the configuration locally. [configuration commands.](https://support.apple.com/guide/deployment/advanced-smart-card-options-dep7b2ede1e3/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Helpful References
 1. [Apple Deployment Guide - Use a smart card in macOS](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"}
