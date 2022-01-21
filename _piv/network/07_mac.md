@@ -69,11 +69,11 @@ A property list, or plist, maps smart card attributes to a Windows domain accoun
 [![PList configuration for extracting a domain account identifier from a PIV]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:style="float:left"}]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Agencies may want to apply [additional smart card configuration] (https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"} settings. Additional options may include:
-- allowSmartCard - Must be set to TRUE to allow the device to leverage smartcards for multiple functions (authentication, digital signing). 
-- enforceSmartCard - Can be set to TRUE to ensure that smartcard authentication is made mandatory at initial logon, authorization, and unlocking from screensaver mode.
-- tokenRemovalAction - If set to "1," enables the screensaver when a smartcard is physically removed from the device.
-- UserPairing - Can be set to FALSE to prevent the pairing dialogue from appearing on smartcard insertion.
-- oneCardPerUser - Can be set to FALSE for users who may have multiple acceptable smartcards (e.g., PIV and alternative tokens).
+- allowSmartCard - Must be set to TRUE to allow the device to leverage smart cards for multiple functions (authentication, digital signing). 
+- enforceSmartCard - Can be set to TRUE to ensure that smart card authentication is made mandatory at initial logon, authorization, and unlocking from screensaver mode.
+- tokenRemovalAction - If set to "1," enables the screensaver when a smart card is physically removed from the device.
+- UserPairing - Can be set to FALSE to prevent the pairing dialogue from appearing on smart card insertion.
+- oneCardPerUser - Can be set to FALSE for users who may have multiple acceptable smart cards (e.g., PIV and alternative tokens).
 - checkCertificateTrust - Can be an integer between 0 and 3:
     - 0 - turns off certificate trust checking
     - 1 - turns on trust checking, but does not conduct revocation checking
