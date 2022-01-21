@@ -70,7 +70,7 @@ A property list, or plist, maps smart card attributes to a Windows domain accoun
 
 Agencies may want to apply [additional smart card configuration] (https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"} settings. Additional options may include:
 - allowSmartCard - Must be set to TRUE to allow the device to leverage smartcards for multiple functions (authentication, digital signing). 
-- enforceSmartCard - Can be set to TRUE to ensure that smartcard authentication is made mandatory at initial logon, authorization, and unlocking from screensaver mode
+- enforceSmartCard - Can be set to TRUE to ensure that smartcard authentication is made mandatory at initial logon, authorization, and unlocking from screensaver mode.
 - tokenRemovalAction - If set to "1," enables the screensaver when a smartcard is physically removed from the device.
 - UserPairing - Can be set to FALSE to prevent the pairing dialogue from appearing on smartcard insertion.
 - oneCardPerUser - Can be set to FALSE for users who may have multiple acceptable smartcards (e.g., PIV and alternative tokens).
