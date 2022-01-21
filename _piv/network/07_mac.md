@@ -45,7 +45,7 @@ Local Account Pairing is a user-prompted process.
 For See [this Apple Platform Deployment guide](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"} for more information on local account pairing.
 
 ## Windows Domain Account Pairing
-Most departments and agencies already maintain processes to map PIV attributes to Active Directory network accounts. This playbook also provides guidance on the different models that can be used to [link network accounts to PIV certificate attributes]({{site.baseurl}}piv/network/account/){:target="_blank"}.
+Most departments and agencies already maintain processes to map PIV attributes to Active Directory domain accounts. This playbook also provides guidance on the different models that can be used to [link domain accounts to PIV certificate attributes]({{site.baseurl}}piv/network/account/){:target="_blank"}.
 
 Ensure the following prerequisites are complete or ready:
 1. The person completing this process has administrative privileges on the macOS device.
@@ -66,7 +66,7 @@ sudo defaults write /Library/Preferences/com.apple.security.smartcard UserPairin
 ### Step 2. Write the Property List
 A property list or plist maps smart card attributes to a Windows domain account. The most common configuration is to map the NT Principal Name in the PIV Authentication certificate Subject Alternative Name to the userPrincipalName attribute in Active Directory. The following image provides the contents of a configuration file that extracts the NT Principal Name from a PIV to match against a directory AltSecID in support of an authentication event.
 
-[![PList configuration for extracting a network account identifier from a PIV]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:style="float:left"}]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![PList configuration for extracting a domain account identifier from a PIV]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:style="float:left"}]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Agencies may want to apply [additional smart card configuration] (https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"} settings. Additional options may include:
 - allowSmartCard - must be set to TRUE to allow the device to leverage smartcards for multiple functions (authentication, digital signing) 
