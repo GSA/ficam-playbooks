@@ -318,7 +318,7 @@ Use your agency's operational value, or the rate of transactions in a given peri
 
 While the Cloud Identity strategy states the path to achieve an outcome, the Cloud Identity policy sets the boundaries to execute the strategy. Likely, your agency may already use some cloud-based identity services. Your Cloud Identity infrastructure should fit within your agency's vision for cloud services, modernization, and cybersecurity efforts. There should be specific call-outs of how ICAM supports those efforts, goals, or objectives in accomplishing your agency's mission. For example, streamline the user experience by consolidating access points. Recommend changes to highlight how ICAM supports your agency's mission and business processes if it does not.
 
-The main strategies or policies to identify are cloud, modernization, and cybersecurity policy or vision (if it exists). For example, in the [Department of Defense (DoD) Modernization Strategy](https://media.defense.gov/2019/Jul/12/2002156622/-1/-1/1/DOD-DIGITAL-MODERNIZATION-STRATEGY-2019.PDF){:target="_blank"}{:rel="noopener noreferrer"}, the DoD has incorporated deploying an end-to-end ICAM infrastructure as an objective of its evolving cybersecurity goal. The DoD then wrote an [ICAM Reference Design](https://dodcio.defense.gov/Portals/0/Documents/Cyber/DoD_Enterprise_ICAM_Reference_Design.pdf){:target="_blank"}{:rel="noopener noreferrer"} to support the objective. With this executive direction and support from Step 1, craft an agency policy to incorporate the following points.
+The main strategies or policies to identify are cloud, modernization, and cybersecurity policy or vision (if it exists). For example, the [Department of Defense Modernization Strategy](https://media.defense.gov/2019/Jul/12/2002156622/-1/-1/1/DOD-DIGITAL-MODERNIZATION-STRATEGY-2019.PDF){:target="_blank"}{:rel="noopener noreferrer"} incorporated deploying an end-to-end ICAM infrastructure as an objective of its evolving cybersecurity goal. The Defense Department then wrote an [ICAM Reference Design](https://dodcio.defense.gov/Portals/0/Documents/Cyber/DoD_Enterprise_ICAM_Reference_Design.pdf){:target="_blank"}{:rel="noopener noreferrer"} to support the objective. With this executive direction and support from Step 1, craft an agency policy to incorporate the following points.
 
 1. **Agency ICAM Governance**. Enforce agency ICAM governance by implementing and maintaining an agency ICAM governance body and program management office. The governance body should include representatives from Information Technology, Human Resources, Finance, Acquisitions, General Counsel, Information and Physical Security, Privacy, and others as needed to deliver ICAM services. For ICAM governance examples, see the [ICAM Governance Framework]({{site.baseurl}}/docs/playbook-identity-governance-framework.pdf){:target="_blank"}{:rel="noopener noreferrer"} and [ICAM Program Management Playbook]({{site.baseurl}}/pm/governance/){:target="_blank"}{:rel="noopener noreferrer"}.
 2. **User Management**. An IDaaS may implement role-based management through groups to make user management easier. Additionally, IDaaS may support more risk-based access control models that incorporate location, time of day, device type, and other attributes as part of a policy enforcement point.
@@ -488,13 +488,18 @@ See the [GSA Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_bl
 
 # Appendix B. Acronyms
 
-| API | Application Programming Interface |
+| Acronym | Definition |
 | --- | --- |
+| API | Application Programming Interface |
 | CI/CD | Continuous Integration/Continuous Delivery |
+| CIEM | Cloud Infrastructure Entitlement Management |
+| DIRA | Digital Identity Risk Assessment |
 | FedRAMP | Federal Risk and Authorization Management Program |
 | FICAM | Federal Identity, Credential, and Access Management |
-| IDaaS | Identity as a Service |
+| FISMA | Federal Information Security Management Act |
 | ICAM | Identity, Credential, and Access Management |
+| IDaaS | Identity as a Service |
+| IdP | Identity Provider |
 | MFA | Multi-Factor Authentication |
 | NIST | National Institute of Standards and Technology |
 | NPE | Non-Person Entity |
@@ -502,3 +507,4 @@ See the [GSA Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_bl
 | PIV | Personal Identity Verification |
 | PKI | Public Key Infrastructure |
 | SSO | Single Sign-On |
+| WebAuthN | Web Authentication |
