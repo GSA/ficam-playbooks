@@ -23,7 +23,7 @@ subnav:
     href: ../../piv/network/localca/
   - text: Authentication Assurance
     href: ../../piv/network/auth/
-  - text: macOS Considerations
+  - text: PIV Auth on macOS
     href: ../../piv/network/mac/
 ---
 
