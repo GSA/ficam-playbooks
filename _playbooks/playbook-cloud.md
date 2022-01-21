@@ -36,7 +36,7 @@ January 20, 2022
 <a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
 <a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
 
-This playbook is a collaboration between the Federal Chief Information Security Officer (CISO) Council Identity, Credential, and Access Management Subcommittee (ICAMSC) and the Federal Chief Information Officer (CIO) Council Cloud and Infrastructure Community of Practice.
+This playbook is a collaboration between the Federal Chief Information Security Officer Council Identity, Credential, and Access Management Subcommittee and the Federal Chief Information Officer Council Cloud and Infrastructure Community of Practice.
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
