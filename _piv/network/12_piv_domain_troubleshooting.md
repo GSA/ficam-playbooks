@@ -71,13 +71,13 @@ To support this scenario, we provide screenshots for common errors that users wi
 
 When a user has selected smart card login, their login screen will appear as below:
 
-![Smart Card Login Screen]({{site.baseurl}}/_assets/images/smart-card-signin.png "Smart Card Login Screen")
+![Smart Card Login Screen]({{site.baseurl}}/assets/playbooks/smart-card-signin.png "Smart Card Login Screen")
 
 ### ISSUE: Invalid PIN for Smart Card {#invalid-pin}
 
 When a user enters an incorrect PIN, they will receive the following error:
 
-![Invalid PIN]({{site.baseurl}}/_assets/images/invalid-pin.png "Invalid PIN")
+![Invalid PIN]({{site.baseurl}}/assets/playbooks/invalid-pin.png "Invalid PIN")
 
 This error indicates the user has incorrectly entered their PIN to authenticate to their smart card.
 
@@ -89,7 +89,7 @@ Direct the user to contact their local support desk to have their PIN reset.
 
 In some cases, a user may have locked their smart card by entering an invalid PIN too many times. In that event, the user will see this error:
 
-![Card blocked]({{site.baseurl}}/_assets/images/card-blocked.png "Card Blocked")
+![Card blocked]({{site.baseurl}}/assets/playbooks/card-blocked.png "Card Blocked")
 
 Issue Resolution:
 
@@ -97,7 +97,7 @@ As before, the solution to this issue is for the user’s local help desk to unl
 
 ### ISSUE: Smart Card Validation not enabled {#validation-not-enabled}
 
- ![Other Error]({{site.baseurl}}/_assets/images/other-error.png "Other Error")
+ ![Other Error]({{site.baseurl}}/assets/playbooks/other-error.png "Other Error")
 
 This error indicates that smart card validation is not an accepted method of access in a windows system.
 
@@ -115,7 +115,7 @@ Scenario: User receives the following message while attempting to log in: “An 
 
 See the screenshot below for an example:
 
-![Common not installed]({{site.baseurl}}/_assets/images/common-not-installed.png "Common not installed")
+![Common not installed]({{site.baseurl}}/assets/playbooks/common-not-installed.png "Common not installed")
 
 Cause: The Common Policy CA is not present or cannot be validated on the Active Directory Server.
 
@@ -131,7 +131,7 @@ For the following steps, we recommend having access to the subscriber’s certif
 
 4. View the path, and ensure it is the path desired that chains up to the Federal Common Policy CA, as shown in the following example:
 
-![Chain to common]({{site.baseurl}}/_assets/images/chain-to-common.png "Chain to common")
+![Chain to common]({{site.baseurl}}/assets/playbooks/chain-to-common.png "Chain to common")
 
 If the certificate does not chain up to the Federal Common Policy CA, a likely cause is that there is an invalid certificate cached in AD in the certificate chain. To verify that this is the case, follow the steps below:
 
@@ -145,7 +145,7 @@ If the certificate does not chain up to the Federal Common Policy CA, a likely c
 
    The following screenshot shows a picture of an invalid certificate trust store entry
 
-   ![Expired certificate in trust store]({{site.baseurl}}/_assets/images/expired-cert-in-trust-store.png "Expired certificate in trust store")
+   ![Expired certificate in trust store]({{site.baseurl}}/assets/playbooks/expired-cert-in-trust-store.png "Expired certificate in trust store")
 
 4. If any certificates are expired, revoked, represent an undesired path, etc, remove them with the following command:
 
@@ -153,7 +153,7 @@ If the certificate does not chain up to the Federal Common Policy CA, a likely c
 
    The following screenshot shows an example:
 
-   ![certutil -delstore example]({{site.baseurl}}/_assets/images/certutil-delstore-example.png "certutil -delstore example")
+   ![certutil -delstore example]({{site.baseurl}}/assets/playbooks/certutil-delstore-example.png "certutil -delstore example")
 
 5. Add the root CA for the desired path to the enterprise NTAuthCA and Root CA Stores:
    certutil -dspublish -f [root certificate file] RootCA
@@ -162,7 +162,7 @@ If the certificate does not chain up to the Federal Common Policy CA, a likely c
 
    certutil -enterprise -addstore NTAuth [root certificate file]
 
-   ![certutil -dspublish example with root]({{site.baseurl}}/_assets/images/certutil-dspublish-root.png "certutil -dspublish example with root")
+   ![certutil -dspublish example with root]({{site.baseurl}}/assets/playbooks/certutil-dspublish-root.png "certutil -dspublish example with root")
 
 6. Add the remaining intermediate certificates in the path to the enterprise NTAuthCA store
 
@@ -172,7 +172,7 @@ If the certificate does not chain up to the Federal Common Policy CA, a likely c
 
    certutil -dspublish -f [intermediate ca x file] NTAuthCA
 
-   ![certutil -delstore example]({{site.baseurl}}/_assets/images/certutil-dspublish-intermediate.png "certutil -delstore example")
+   ![certutil -delstore example]({{site.baseurl}}/assets/playbooks/certutil-dspublish-intermediate.png "certutil -delstore example")
 
 7. Allow some time (up to 8 hours by default) for the new Active Directory Group Policy update containing the new NTAuth certs to propagate throughout the domain.  
    This can be expedited with the following commands on the end user workstation:  
