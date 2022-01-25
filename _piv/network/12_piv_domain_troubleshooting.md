@@ -42,8 +42,10 @@ Additional troubleshooting resources can be found here: [Windows Security troubl
 ## PIV Issues in Kerberos Authentication
 
 PIV Authentication issues can occur for two basic reasons:
-The Client is unable to access the private key or initiate the authentication flow.
-The Server is unable to validate the client certificate or process the request.
+
+* The Client is unable to access the private key or initiate the authentication flow.
+
+* The Server is unable to validate the client certificate or process the request.
 
 This document will identify common problems for both the client and the server.
 
@@ -53,10 +55,10 @@ The following table provides a reference list of the error message documented in
 
 | Error | Section |
 | ----- | ------- |
-| The PIN is incorrect. Try Again | [ ISSUE: Invalid PIN for Smart Card ] (#invalid-pin) |
-| The smart card is blocked | [ ISSUE: Smart card locked ] (#card-locked) |
-| This smart card could not be used. Additional details may be available in the system event log. Please report this error to your administrator. | [ Other Error ] (#validation-not-enabled) |
-| An untrusted certification authority was detected while processing the smart card certificate used for authentication. | [ Common Policy Certificate not installed ] (#common-not-installed) |
+| The PIN is incorrect. Try Again | [ISSUE: Invalid PIN for Smart Card](#invalid-pin) |
+| The smart card is blocked | [ISSUE: Smart card locked](#card-locked) |
+| This smart card could not be used. Additional details may be available in the system event log. Please report this error to your administrator. | [Smart Card Validation not enabled](#validation-not-enabled) |
+| An untrusted certification authority was detected while processing the smart card certificate used for authentication. | [Common Policy Certificate not installed](#common-not-installed) |
 
 ## Client Issues Preventing Domain Authentication
 
@@ -95,7 +97,7 @@ As before, the solution to this issue is for the user’s local help desk to unl
 
 ### ISSUE: Smart Card Validation not enabled {#validation-not-enabled}
 
- ![Other Error]({{site.baseurl}}/assets/playbooks/other-error.png "Other Error")
+ ![Other Error]({{site.baseurl}}/assets/playbooks/other-error.png "Smart Card Validation Error")
 
 This error indicates that smart card validation is not an accepted method of access in a windows system.
 
@@ -179,4 +181,4 @@ If the certificate does not chain up to the Federal Common Policy CA, a likely c
 
    certutil -pulse
 
-8.Once Group Policy has been pushed out to clients, the issue should be resolved.  
+8. Once Group Policy has been pushed out to clients, the issue should be resolved.  
