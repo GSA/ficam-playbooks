@@ -1,3 +1,5 @@
+# This file captures sidenavigation
+
 ## Architecture Navigation
 
 arch:
@@ -89,6 +91,8 @@ pivnetwork:
     href: /piv/network/localca/
   - text: Authentication Assurance
     href: /piv/network/auth/
+  - text: PIV Auth on macOS
+    href: /piv/network/mac/
 
 pivengineer:
   - text: Back to PIV Guide
@@ -235,6 +239,10 @@ pm:
 
 # Playbooks Navigation
 
+cloud:
+  - text: Cloud Identity Playbook
+    href: /playbooks/cloud/
+
 dira:
   - text: Digital Identity Risk Assessment (DIRA) Playbook
     href: /playbooks/dira/
@@ -251,6 +259,6 @@ signword:
   - text: Digitally Sign a Microsoft Word Document
     href: /playbooks/signword/
 
-signwordofr:
+signfedregister:
   - text: Digitally Signing Documents for Office of the Federal Register Submission
-    href: /signfedregister/
+    href: /playbooks/signfedregister/

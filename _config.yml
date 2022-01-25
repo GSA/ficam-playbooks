@@ -61,12 +61,6 @@ primary_navigation:
 #    children:
 #      - name: Playbooks Overview
 #        url: /playbooks/
-#      - name: Digital Identity Risk Assessment (DIRA)
-#        url: /playbooks/dira/
-#      - name: Digital Worker Identity
-#        url: /playbooks/dw/
-#      - name: Enterprise Single Sign-On
-#        url: /playbooks/sso/
 
 secondary_navigation:
   - name: Contact Us
@@ -119,8 +113,6 @@ collections:
   playbooks:
     output: true
     permalink: /playbooks/:path/
-  guides:
-    output: true
   pages:
     output: true
     permalink: /:path/
