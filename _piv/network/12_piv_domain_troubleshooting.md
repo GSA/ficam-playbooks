@@ -33,7 +33,7 @@ The basic flow of a PKINIT exchange involves four steps:
 3. The client validates the AS-REP. If it is valid, the client extracts the TGT from the message, and sends a Ticket Granting Service Request (“TGS-REQ”) to the Domain Controller.
 4. The Domain Controller validates the TGS-REQ. If it is valid, a Ticket Granting Service Response (“TGS-REP”) is provided to the client. The client then uses the service ticket in the TGS-REP for workstation access.
 
-![PKInit Flow]({{site.baseurl}}/_assets/images/pkinit-flow.png "PKInit Flow")
+![PKInit Flow]({{site.baseurl}}/assets/images/pkinit-flow.png "PKInit Flow")
 
 In this document, we are focusing on issues related to PIV authentication specifically. Therefore, we have focused on just the first two steps of the protocol exchange (AS-REQ and AS-REP).
 
