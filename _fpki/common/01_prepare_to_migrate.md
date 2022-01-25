@@ -7,7 +7,6 @@ sticky_sidenav: true
 sidenav: fpkicommon
 ---
  
-
 Use the checklist below to prepare your agency for the migration to the Federal Common Policy CA (FCPCA) G2.  The checklist highlights activities as they relate to the following roles:
 - **ENG** - Information technology engineers and system administrators
 - **APP** - Application developers and owners
