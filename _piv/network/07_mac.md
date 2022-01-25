@@ -81,13 +81,14 @@ Agencies may want to apply [additional smart card configuration](https://develop
     - 3 - turns on trust checking, and a 'hard' revocation check is conducted where the response must contain a 'valid' status to allow the authentication to proceed
 
 ### Step 3. Choose a Deployment Method
-An agency may deploy a plist through various mechanisms.
+An agency may deploy a plist through various remote mechanisms.
 1. Employ third-party Mobile Device Management (MDM) tools
 2. Leveraging an [Apple specific configuration tool](https://apps.apple.com/us/app/apple-configurator-2/id1037126344?mt=12){:target="_blank"}{:rel="noopener noreferrer"} via the App Store
 3. Direct configuration profile delivery via an email, webpage, or [over-the-air profile delivery](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}
 
-If remote options above are not available, the administrator may also perform the configuration locally. [configuration commands.](https://support.apple.com/guide/deployment/advanced-smart-card-options-dep7b2ede1e3/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
+If a remote deployment it not availabler, the administrator may also perform the configuration locally following Step 1 and 2.
 
 ## Helpful References
 1. [Apple Deployment Guide - Use a smart card in macOS](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"}
 2. [Apple Deployment Guide - Configure macOS for smart card-only authentication](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
+3. [Apple Deployment Guide - Smart card advanced configuration commands](https://support.apple.com/guide/deployment/advanced-smart-card-options-dep7b2ede1e3/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
