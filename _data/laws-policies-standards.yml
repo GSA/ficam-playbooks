@@ -1,5 +1,5 @@
 # List of Laws, Policies, and Standards.
-# For category, use always use workforce or citizen identity and other words aligned with FICAM services.
+# For category, always use workforce or citizen identity. Use other words aligned with FICAM services framework.
 
 - longName: OMB Memo 21-04 - Modernizing Access to and Consent for Disclosure of Records Subject to the Privacy Act 
   shortName: OMB Memo 21-04
@@ -8,8 +8,8 @@
   description: This Memorandum provides guidance for Federal agencies to modernize the processes by which individuals may request access to, and consent to the disclosure of, records protected under the Privacy Act of 1974.
   category: Citizen Identity, Remote Identity Proofing, Authentication 
   url: https://www.whitehouse.gov/wp-content/uploads/2020/11/M-21-04.pdf
-  
-  - longName: OMB Memo 20-19 - Harnessing Technology to Support Mission Continuity
+
+- longName: OMB Memo 20-19 - Harnessing Technology to Support Mission Continuity
   shortName: OMB Memo 20-19
   published: 03/22/2020
   fy: 2020
