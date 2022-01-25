@@ -57,8 +57,8 @@ The following table provides a reference list of the error message documented in
 | ----- | ------- |
 | The PIN is incorrect. Try Again | [ISSUE: Invalid PIN for Smart Card](#invalid-pin) |
 | The smart card is blocked | [ISSUE: Smart card locked](#card-locked) |
-| This smart card could not be used. Additional details may be available in the system event log. Please report this error to your administrator. | [Smart Card Validation not enabled](#validation-not-enabled) |
-| An untrusted certification authority was detected while processing the smart card certificate used for authentication. | [Common Policy Certificate not installed](#common-not-installed) |
+| This smart card could not be used. Additional details may be available in the system event log. Please report this error to your administrator. | [ISSUE: Smart Card Validation not enabled](#validation-not-enabled) |
+| An untrusted certification authority was detected while processing the smart card certificate used for authentication. | [ISSUE: Common Policy Certificate not installed](#common-not-installed) |
 
 ## Client Issues Preventing Domain Authentication
 
