@@ -18,8 +18,6 @@ subnav:
     href: '#helpful-tools'
 ---
 
-# PIV Domain Authentication Troubleshooting
-
 ## Introduction
 
 This document describes the troubleshooting process for PIV Authentication errors to support personnel responsible for resolving PIV access issues.
@@ -37,9 +35,9 @@ The basic flow of a PKINIT exchange involves four steps:
 
 In this document, we are focusing on issues related to PIV authentication specifically. Therefore, we have focused on just the first two steps of the protocol exchange (AS-REQ and AS-REP).
 
-General information about troubleshooting Kerberos Service authentication can be found here: Appendix D: Kerberos and LDAP Troubleshooting Tips | Microsoft Docs. This document identifies the most common authentication issues for PIV authentication in the domain context.
+General information about troubleshooting Kerberos Service authentication can be found here: [Kerberos and LDAP Troubleshooting Tips] <https://docs.microsoft.com/en-us/previous-versions/tn-archive/bb463167(v=technet.10)>. This document identifies the most common authentication issues for PIV authentication in the domain context.
 
-Additional troubleshooting resources can be found here: Windows Security overview - Windows Server | Microsoft Docs. On the left hand side of the page, look for “Kerberos authentication”. This site contains several articles related to general kerberos problems and solutions.
+Additional troubleshooting resources can be found here: [Windows Security troubleshooting documentation for Windows Server] <https://docs.microsoft.com/en-us/troubleshoot/windows-server/windows-security/windows-security-overview>. On the left hand side of the page, look for “Kerberos authentication”. This site contains several articles related to general kerberos problems and solutions.
 
 ## PIV Issues in Kerberos Authentication
 
