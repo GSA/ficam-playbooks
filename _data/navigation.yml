@@ -89,7 +89,7 @@ pivnetwork:
     href: /piv/network/localca/
   - text: Authentication Assurance
     href: /piv/network/auth/
-  - text: Mac OS Considerations
+  - text: PIV Auth on macOS
     href: /piv/network/mac/
 
 pivengineer:
