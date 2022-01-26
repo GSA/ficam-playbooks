@@ -2,10 +2,10 @@
 layout: page
 collection: playbooks
 title: Privileged User Playbook
+pubdate: 2022-02
 type: Markdown
-pubdate: 09/2021
 permalink: /playbooks/pam/
-description: This document provides federal agencies with guidance to manage its privileged users by mitigating the inherent risks associated with this population through the use of Identity, Credential, and Access Management (ICAM).
+description: This Playbook provides federal agencies with best practices in managing it's privileged user community.
 sticky_sidenav: true
 sidenav: pam
 
@@ -37,15 +37,15 @@ subnav:
   {% assign categories = categories | push: category | uniq | sort %}
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
+  
+Version 1.0  
+February 15, 2021
 
 <a href="../../assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
 <a href="../../assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a>
 <a href="../../assets/img/logo-cisa.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/img/logo-cisa.png" width="64" height='64' align="left" alt="U.S. Department of Homeland Security Cybersecurity and Infrastructure Security Agency Logo"></a><br><br><br>
 
-This playbook is a collaboration between the General Services Administration (GSA) through the Federal CIO Council and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA)
-  
-Version 1.0  
-Last Updated: August xx, 2021
+This playbook is a collaboration between the General Services Administration Office of Government-wide Policy identity Assurance and Trusted Access Division, Federal Chief Information Security Officer Council ICAM SubCommittee, and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA) Continuous Diagnostic and Mitigation (CDM) Program.
 
 # Executive Summary
 The Privileged User Playbook is a practical guide to **help federal agencies implement and manage a privileged user program**. Privileged users are a special user type that perform security-related duties. A privileged user program enables an agency to identify, track, monitor, and audit privileged users and accounts, effectively decreasing the cyber risk and impact on an agency's mission. **Unwanted behavior or compromise of privileged accounts are also responsible for the most high-profile federal security breaches**. It is a critical Identity, Credential, and Access Management capability to identify privileged users and access to high value assets. As part of agency insider threat programs, agencies can use this playbook to define privileged user program requirements and capabilities.
@@ -121,7 +121,7 @@ Understanding insider threat classifications and unwanted behavior supports an a
 
 ### Agency Governance
 
-In most agencies, a PAM Program is subordinate to or interacts with multiple other agency programs.
+In most agencies, a Privileged User Program is subordinate to or interacts with multiple other agency programs.
 - **High Value Asset** - [OMB Memo 19-03](https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf){:target="_blank"}{:rel="noopener noreferrer"} outlines requirements to identify, track, and manage an agencies most critical assets. [Amplifying guidance from CISA](https://www.cisa.gov/sites/default/files/publications/Securing%20High%20Value%20Assets_Version%201.1_July%202018_508c.pdf){:target="_blank"}{:rel="noopener noreferrer"} recommended using unique accounts, logging key security events, and implementing multi-factor authentication for all HVA users, but particularly privileged users.
 - **Insider Threat** - Include programs to detect and prevent the unauthorized disclosure of sensitive information. An insider threat program consists of capabilities that provide access to information; centralized information integration, analysis, and response; employee insider threat awareness training; and the monitoring of user activity on government computers.
 - **Cybersecurity / ICAM** - Responsible for identity, credential, and access management services and coordination.
@@ -218,26 +218,26 @@ The DHS Continuous Diagnostics and Mitigation (CDM) Program is one example of a 
 Identity management is how an agency collects, verifies, and manages attributes for a privileged user. An agency should only grant entitlements that the privileged user needs to perform assigned duties by leveraging segregation of duties, thus enforcing least privilege.
 
 1. **Identify Cybersecurity Workforce Position** that outlines the appropriate responsibilities and duties. Use the [NIST Workforce Framework for Cybersecurity](https://niccs.cisa.gov/about-niccs/workforce-framework-cybersecurity-nice-framework-work-roles){:target="_blank"}{:rel="noopener noreferrer"} to identify appropriate roles.
-2. **Personnel Security Vetting and Privileged User Agreement** verified by the Personnel Security Office and Privileged User Program Manager on an initial and continuing basis. The security office verifies that the existing background, suitability or fitness checks are valid and adequate. When conducting these checks, an agency should implement a consistent approach that enforces background checks that are commensurate to the privileged user’s level of risk as determined by an agency’s risk assessment (e.g. some trusted roles may require a security clearance based on their level of access). A Privileged User Agreement should also be signed by the user on a reoccurring basis. This may also be a called a rules of behavior or privileged appointment letter. This agreement highlights the responsibilities of the privileged user and acceptable rules of behavior. See [Appendix B: Privileged User Agreement for an agreement template](#appendix-b-privileged-user-agreement) An agency’s Privileged User Agreement may also include training requirements such as annual insider threat, security awareness, and tailored privileged user procedure training.
-3. **Enforce Least Privileges** for a privileged user to perform their duties. If possible, implement just-in-time provisioning or implement a capability to check-out an account or password. This may also include creating custom administrator accounts scoped for the duty such as an application administrator vice a global administrator, if possible. 
-4. **Manage Administrator Lifecycle** to ensure access is removed when an privileged user role changes or they are off-boarded. Accounts should be suspended or terminated within 24 hours or shorter time-frame based on security controls or risk determination.
+2. **Personnel Security Vetting and Privileged User Agreement** are complete verified by the Personnel Security Office and Privileged User Program Manager on an initial and continuing basis. The security office verifies that the existing background, suitability or fitness checks are valid and adequate. When conducting these checks, an agency should implement a consistent approach that enforces background checks that are commensurate to the privileged user’s level of risk as determined by an agency’s risk assessment (e.g. some trusted roles may require a security clearance based on their position of trust). A Privileged User Agreement should also be signed by the user on a reoccurring basis. This may also be a called a rules of behavior or privileged appointment letter. This agreement highlights the responsibilities of the privileged user and acceptable rules of behavior. See [Appendix B: Privileged User Agreement for an agreement template](#appendix-b-privileged-user-agreement) 
+3. **Conduct Periodic Training** to ensure privileged users are away of their responsibilities and system changes. An agency’s Privileged User Agreement may also include training requirements such as annual insider threat, security awareness, and tailored privileged user procedure training. Privilege users should receive initial and continuing training on the following topics:
+   1. Privilege access security principles.
+   2. Disaster recovery and business continuity procedures.
+   3. Current and pending architecture changes, system characteristics, and hardware and software components.
+4. **Enforce Least Privileges** to only allow access to what is needed to perform their duty. If possible, implement just-in-time provisioning or implement a capability to check-out an account or password. This may also include creating custom administrator accounts scoped for the duty such as an application administrator vice a global administrator. 
+5. **Manage Administrator Lifecycle** Implement and follow lifecycle management practices:
+   1. Provision user access as needed.
+   2. Conduct access reviews every thirty days or less based on a risk determination. Modify privileges as needed. 
+   3. De-provision users within 24 hours or shorter when access is no longer needed, their role changes, or the user leaves the organization.
 
 {% include alert-info.html heading="Identity Assurance Level 3" content="Privileged users most likely require the highest level of identity proofing. The PIV identity proofing process is comparable to Identity Assurance Level 3." %} 
 
-Training frequency is an important aspect of a privileged user program. Privilege users should receive initial and continuing training on the following topics:
-- Privilege access security principles.
-- Disaster recovery and business continuity procedures.
-- System characteristics and software components.
-
-Additionally, privilege users should be notified of any changes to a system they can access.
-
 ### Privileged Credential Management
-Credential management is how an agency issues, manages, and revokes privileged credentials. Agencies should user **unique, Authenticator Assurance Level 3 credentials** per each privileged user. This may include a PIV card or other two factor, cryptographic hardware authenticator identified in [NIST Special Publication 800-63-3B](https://pages.nist.gov/800-63-3/sp800-63b.html)
+Credential management is how an agency issues, manages, and revokes privileged credentials. Agencies should issue **unique, Authenticator Assurance Level 3 credentials** per each privileged user. This may include a PIV card or other two factor, cryptographic hardware authenticator identified in [NIST Special Publication 800-63-3B](https://pages.nist.gov/800-63-3/sp800-63b.html)
 
 1. **Enforce Multi-factor Authentication (MFA)** for all administrator access. This may include a combination of factors as outlined in NIST Special Publication 800-63-3B.
-2. **If used, Rotate Passwords** using a check-in/check-put capability, if possible. It is inevitable that some systems or applications must use a username and password. For those systems that do, it is a best practice to use a password vaulting tool and rotate passwords so the privileged user does not have access to the password. The password vault should be configured for Authenticator Assurance Level 3 MFA.
+2. **Where MFA Is Not Supported, Rotate Passwords** using a check-in/check-put capability. It is inevitable that some systems or applications must use a username and password. For those systems that do, it is a best practice to use a password vaulting tool and rotate passwords so the privileged user does not have access to the password. The password vault should be configured for Authenticator Assurance Level 3 access.
 
-{% include alert-info.html heading="Authenticator Assurance Level 3" content="Privileged users most likely require the highest level of credential. A PIV card may not work in all use cases. Consider the best Authenticator Assurance Level 3 credential for each type of access." %}
+{% include alert-info.html heading="Authenticator Assurance Level 3" content="Privileged users most likely require the highest level of credential. A PIV card may not work in all use cases. Consider the best Authenticator Assurance Level 3 credential for each type of access use case." %}
 
 For enterprise resources authenticating with Windows Active Directory, an agency may manage privilege user access with a user's PIV card. An agency may map the same PIV authentication certificate to multiple accounts using altSecurityIdentities and username hints. See the [PIV Guide section on Account Linking](https://playbooks.idmanagement.gov/piv/network/account/) for step-by-step actions to enable this feature.
 
