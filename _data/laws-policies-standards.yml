@@ -16,3 +16,11 @@
   description: In response to the national emergency for COVID-19, agencies are directed to use the breadth of available technology capabilities to fulfill service gaps and deliver mission outcomes. 
   category: Workforce Identity, Remote Access, PACS, PIV Fingerprinting, PIV Reissuance, Alternative Credential
   url: https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-19.pdf
+  
+- longName: OMB Memo 22-09 - Moving the U.S. Government Toward Zero Trust Cybersecurity Principles
+  shortName: OMB Memo 22-09
+  published: 01/26/2022
+  fy: 2022
+  description: This memorandum sets forth a Federal zero trust architecture (ZTA) strategy, requiring agencies to meet specific cybersecurity standards and objectives by the end of Fiscal Year (FY) 2024 in order to reinforce the Government’s defenses against increasingly sophisticated and persistent threat campaigns. 
+  category: Workforce Identity, Citizen Identity, Zero Trust, MFA, Phishing-Resistant, Centralized Idenity System, Password, Privileged Access Management, ABAC
+  url: https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf
