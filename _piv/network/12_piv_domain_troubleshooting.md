@@ -6,16 +6,6 @@ permalink: piv/network/troubleshooting/
 sticky_sidenav: true
 sidenav: pivnetwork
 
-subnav:
-
-  - text: Trust Stores
-    href: '#trust-stores'
-  - text: Network Misconfigurations
-    href: '#network-miconfigurations'
-  - text: Account Linking
-    href: '#account-linking'
-  - text: Helpful Tools
-    href: '#helpful-tools'
 ---
 
 ## Introduction
