@@ -47,7 +47,7 @@ To build but not serve the site, run:
 
 `docker-compose run ruby bundle exec jekyll build`
 
-## Public domain
+### Public domain
 
 This project is in the worldwide [public domain](/_pages/license.md/). 
 
