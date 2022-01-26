@@ -10,45 +10,44 @@ sidenav: pivnetwork
 
 ## Introduction
 
-This document describes the troubleshooting process for PIV Authentication errors to support personnel responsible for resolving PIV access issues.
+This playbook describes the troubleshooting process for PIV authentication errors to support personnel responsible for resolving PIV access issues.
 Background
-User authentication in a windows environment is based on the Kerberos protocol. PIV Authentication in a windows environment leverages a kerberos extension called PKINIT.
+User authentication in a Windows environment is based on the Kerberos protocol. PIV authentication in a Windows environment leverages a Kerberos extension called PKINIT.
 
 The basic flow of a PKINIT exchange involves four steps:
 
-1. The client sends an Authentication Service Request (“AS-REQ”) which provides a copy of the client public key certificate as well as a signature proving possession of the client private key.
-2. The server validates the AS-REQ, including performing full PDVAL of the client certificate. If the AS-REQ is valid, the server will provide an Authentication Service Response (“AS-REP”) which includes a Kerberos Ticket Granting Ticket (“TGT”)
-3. The client validates the AS-REP. If it is valid, the client extracts the TGT from the message, and sends a Ticket Granting Service Request (“TGS-REQ”) to the Domain Controller.
+1. The client sends an Authentication Service Request (“AS-REQ”), which provides a copy of the client public key certificate as well as a signature proving possession of the client private key.
+2. The server validates the AS-REQ, including performing full Path Discovery and Validation of the client certificate. If the AS-REQ is valid, the server will provide an Authentication Service Response (“AS-REP”) which includes a Kerberos Ticket Granting Ticket (“TGT”).
+3. The client validates the AS-REP. If it is valid, the client extracts the TGT from the message and sends a Ticket Granting Service Request (“TGS-REQ”) to the Domain Controller.
 4. The Domain Controller validates the TGS-REQ. If it is valid, a Ticket Granting Service Response (“TGS-REP”) is provided to the client. The client then uses the service ticket in the TGS-REP for workstation access.
 
 ![PKInit Flow]({{site.baseurl}}/assets/playbooks/pkinit-flow.png "PKInit Flow")
 
-In this document, we are focusing on issues related to PIV authentication specifically. Therefore, we have focused on just the first two steps of the protocol exchange (AS-REQ and AS-REP).
+In this playbook, we focus on issues related to PIV authentication specifically. Therefore, we have focused on just the first two steps of the protocol exchange (AS-REQ and AS-REP).
 
-General information about troubleshooting Kerberos Service authentication can be found here: [Kerberos and LDAP Troubleshooting Tips](https://docs.microsoft.com/en-us/previous-versions/tn-archive/bb463167(v=technet.10)). This document identifies the most common authentication issues for PIV authentication in the domain context.
+General information about troubleshooting Kerberos Service authentication can be found here: [Kerberos and LDAP Troubleshooting Tips](https://docs.microsoft.com/en-us/previous-versions/tn-archive/bb463167(v=technet.10)). This playbook identifies the most common authentication issues for PIV authentication in the domain context.
 
-Additional troubleshooting resources can be found here: [Windows Security troubleshooting documentation for Windows Server](https://docs.microsoft.com/en-us/troubleshoot/windows-server/windows-security/windows-security-overview). On the left hand side of the page, look for “Kerberos authentication”. This site contains several articles related to general kerberos problems and solutions.
+Additional troubleshooting resources can be found here: [Windows Security troubleshooting documentation for Windows Server](https://docs.microsoft.com/en-us/troubleshoot/windows-server/windows-security/windows-security-overview). On the left hand side of the page, look for “Kerberos authentication.” The site contains several articles related to general Kerberos problems and solutions.
 
 ## PIV Issues in Kerberos Authentication
 
-PIV Authentication issues can occur for two basic reasons:
+PIV authentication issues can occur for two basic reasons:
 
-* The Client is unable to access the private key or initiate the authentication flow.
+* The client is unable to access the private key or initiate the authentication flow.
+* The server is unable to validate the client certificate or process the request.
 
-* The Server is unable to validate the client certificate or process the request.
-
-This document will identify common problems for both the client and the server.
+This playbook identifies common problems for both the client and the server.
 
 ## PIV Authentication Errors
 
-The following table provides a reference list of the error message documented in this guide and identifies the section of the document which is present the possible causes and solutions:
+The following table provides a reference list of the error messages documented in this playbook and includes links to possible causes and solutions for the issue:
 
 | Error | Section |
 | ----- | ------- |
 | The PIN is incorrect. Try Again | [ISSUE: Invalid PIN for Smart Card](#invalid-pin) |
-| The smart card is blocked | [ISSUE: Smart card locked](#card-locked) |
-| This smart card could not be used. Additional details may be available in the system event log. Please report this error to your administrator. | [ISSUE: Smart Card Validation not enabled](#validation-not-enabled) |
-| An untrusted certification authority was detected while processing the smart card certificate used for authentication. | [ISSUE: Common Policy Certificate not installed](#common-not-installed) |
+| The smart card is blocked | [ISSUE: Smart Card Locked](#card-locked) |
+| This smart card could not be used. Additional details may be available in the system event log. Please report this error to your administrator. | [ISSUE: Smart Card Validation Not Enabled](#validation-not-enabled) |
+| An untrusted certification authority was detected while processing the smart card certificate used for authentication. | [ISSUE: Common Policy Certificate Not Installed](#common-not-installed) |
 
 ## Client Issues Preventing Domain Authentication
 
@@ -75,7 +74,7 @@ Issue Resolution:
 
 Direct the user to contact their local support desk to have their PIN reset.
 
-### ISSUE: Smart card locked {#card-locked}
+### ISSUE: Smart Card Locked {#card-locked}
 
 In some cases, a user may have locked their smart card by entering an invalid PIN too many times. In that event, the user will see this error:
 
@@ -85,7 +84,7 @@ Issue Resolution:
 
 As before, the solution to this issue is for the user’s local help desk to unlock their card and reset the PIN.
 
-### ISSUE: Smart Card Validation not enabled {#validation-not-enabled}
+### ISSUE: Smart Card Validation Not Enabled {#validation-not-enabled}
 
  ![Other Error]({{site.baseurl}}/assets/playbooks/other-error.png "Smart Card Validation Error")
 
@@ -99,7 +98,7 @@ In this section, we will identify common client authentication problems and the 
 
 ### Trust Store Misconfiguration
 
-#### ISSUE: Common policy certificate not installed in trust store
+#### ISSUE: Common Policy Certificate Not Installed in Trust Store
 
 Scenario: User receives the following message while attempting to log in: “An untrusted certification authority was detected while processing the smart card certificate used for authentication.”
 
@@ -111,19 +110,19 @@ Cause: The Common Policy CA is not present or cannot be validated on the Active 
 
 Issue Resolution:
 
-For the following steps, we recommend having access to the subscriber’s certificate. If it’s not possible to get the subscriber’s certificate, any certificate issued from the appropriate Certificate Authority will work.
+For the following steps, we recommend having access to the subscriber’s certificate. If it is not possible to get the subscriber’s certificate, any certificate issued from the appropriate certification authority (CA) will work.
 
 1. Ensure correct certificate chain:
 
 2. Use command certutil -scinfo and provide PIN entry until available certificates are shown. View presented certificates to determine association with smart card logon.
 
-3. Open certview for end-user identity cert with smartcard logon extended key usage by double-clicking on the certificate.
+3. Open certview for end-user identity cert with smart card logon extended key usage by double-clicking on the certificate.
 
-4. View the path, and ensure it is the path desired that chains up to the Federal Common Policy CA, as shown in the following example:
+4. View the path and ensure it is the path desired that chains up to the Federal Common Policy CA, as shown in the following example:
 
 ![Chain to common]({{site.baseurl}}/assets/playbooks/chain-to-common.png "Chain to common")
 
-If the certificate does not chain up to the Federal Common Policy CA, a likely cause is that there is an invalid certificate cached in AD in the certificate chain. To verify that this is the case, follow the steps below:
+If the certificate does not chain up to the Federal Common Policy CA, there is probably an invalid certificate cached in AD in the certificate chain. To verify that this is the case, follow the steps below:
 
 1. Log in to the domain controller as an enterprise admin. We recommend using the “Run as Administrator” option to ensure that the commands work.
 
@@ -137,7 +136,7 @@ If the certificate does not chain up to the Federal Common Policy CA, a likely c
 
    ![Expired certificate in trust store]({{site.baseurl}}/assets/playbooks/expired-cert-in-trust-store.png "Expired certificate in trust store")
 
-4. If any certificates are expired, revoked, represent an undesired path, etc, remove them with the following command:
+4. If any certificates are expired, revoked, represent an undesired path, etc., remove them with the following command:
 
    certutil -enterprise -delstore NTAuth [certificate serial number]
 
