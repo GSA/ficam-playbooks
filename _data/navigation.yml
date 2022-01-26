@@ -93,7 +93,7 @@ pivnetwork:
     href: /piv/network/auth/
   - text: PIV Auth on macOS
     href: /piv/network/mac/
-  - text: PIV Auth Troubleshooting
+  - text: Troubleshooting PIV Authentication Issues
     href: /piv/network/troubleshooting/
 
 pivengineer:
