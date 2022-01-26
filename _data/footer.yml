@@ -40,7 +40,7 @@ logos:
   - src: /assets/img/logo-gsa.png
     alt: General Services Administration
     href: https://www.gsa.gov
-  - src: /assets/img/logo-cio.png
+  - src: /assets/img/logo-cio-white.png
     alt: Federal CIO Council
     href: https://www.cio.gov
 
@@ -69,11 +69,11 @@ contact:
   heading: How We Use Your Data
   contact_links:
      - text: Privacy Policy
-       href: /privacy-policy/
+       href: https://www.idmanagement.gov/privacy-policy/
      - text: Website Policy
-       href: /website-policy/
+       href: https://www.idmanagement.gov/website-policy/
      - text: License
-       href: /license/
+       href: https://www.idmanagement.gov/license/
   #  - text: (800) CALL-GOVT
   #    href: tel:1-800-555-5555
   #  - text: info@agency.gov

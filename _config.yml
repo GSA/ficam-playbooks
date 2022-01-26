@@ -61,20 +61,14 @@ primary_navigation:
 #    children:
 #      - name: Playbooks Overview
 #        url: /playbooks/
-#      - name: Digital Identity Risk Assessment (DIRA)
-#        url: /playbooks/dira/
-#      - name: Digital Worker
-#        url: /playbooks/dw/
-#      - name: Enterprise Single Sign-On
-#        url: /playbooks/sso/
 
 secondary_navigation:
   - name: Contact Us
-    url: /contact/
+    url: https://www.idmanagement.gov/contact-us/
   - name: About Us
-    url: /about/
+    url: https://www.idmanagement.gov/about-us/
   - name: Contribute
-    url: /contribute/
+    url: https://www.idmanagement.gov/contribute/
 
 # Search.gov configuration
 #
@@ -116,17 +110,9 @@ collections:
   piv:
     output: true
     permalink: /piv/:path/
-  buy:
-    output: true
-    permalink: /buy/:path/
   playbooks:
     output: true
     permalink: /playbooks/:path/
-  sell:
-    output: true
-    permalink: /sell/:path/
-  guides:
-    output: true
   pages:
     output: true
     permalink: /:path/
@@ -195,6 +181,7 @@ exclude:
   - node_modules
   - Gemfile
   - Gemfile.lock
+  - docker-compose.yml
 
 assets:
   sources:

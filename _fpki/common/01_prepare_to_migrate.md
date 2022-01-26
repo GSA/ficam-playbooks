@@ -2,12 +2,11 @@
 layout: page 
 title: 1. Prepare to migrate to the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/prepare-to-migrate/
+permalink: /fpki/common/prepare-to-migrate/
 sticky_sidenav: true
 sidenav: fpkicommon
 ---
  
-
 Use the checklist below to prepare your agency for the migration to the Federal Common Policy CA (FCPCA) G2.  The checklist highlights activities as they relate to the following roles:
 - **ENG** - Information technology engineers and system administrators
 - **APP** - Application developers and owners
@@ -126,5 +125,4 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
 </table>
 
-
-Get started today! [Obtain and verify a copy of the FCPCA G2 certificate](../obtain-and-verify/).
+Get started today! [Obtain and verify a copy of the FCPCA G2 certificate]({{site.baseurl}}/fpki/common/obtain-and-verify/).

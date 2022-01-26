@@ -2,7 +2,7 @@
 layout: page 
 title: Federal PKI Activity Report
 collection: fpki
-permalink: fpki/tools/fpkiar/
+permalink: /fpki/tools/fpkiar/
 sticky_sidenav: true
 sidenav: fpkitools
 
@@ -15,13 +15,13 @@ subnav:
       href: '#repository-availability'
 ---
 
-Updated: June 18, 2021
+Updated: January 4, 2022
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
-- [FPKI Affiliate Status Summary](#fpki-affiliate-status-summary)
-- [FPKI Management Authority Certificate Activity](#fpkima-certificate-activity)
-- [FPKI Repository Availability](#repository-availability)
+- [Federal Agency and Affiliate PKI Status Summary](#federal-agency-and-affiliate-pki-status-summary)
+- [FPKIMA Certificate Activity](#fpkima-certificate-activity)
+- [Repository Availability](#repository-availability)
 
 Resolve issues by contacting one of the teams:  
 
@@ -41,7 +41,7 @@ The operational status for each Federal Agency or affiliate connected to the Fed
 | Government Printing Office | FBCA | No Issues |
 | IdenTrust NFI | FBCA | No Issues |
 | WidePoint/ORC NFI | FBCA | No Issues |
-| SAFE BioPharma Bridge | FBCA | No Issues |
+| SAFE Identity Bridge | FBCA | No Issues |
 | STRAC Bridge | FBCA | No Issues |
 | TSCP Bridge | FBCA | No Issues |
 | US Patent and Trademark Office (PTO) | FBCA | No Issues |
@@ -59,22 +59,22 @@ The following certificates were issued or published to the FPKI Trust Infrastruc
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- |
-| N/A |  |  |  |  | 
+| N/A | | | | | 
 
 The following certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| FPKIMA | US Treasury Root CA | Federal Common Policy CA | Serial: 6405 Hash: 5a87922b5eaf1d63198a951b2ab6f59b2f16c131 | 8/29/21 | Revocation 6/10 |
-| FPKIMA | US Treasury Root CA | Federal Common Policy CA | Serial: 734b Hash: 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2 | 8/14/22| Revocation 6/10 |
-| FPKIMA | Entrust Managed Services Root CA | Federal Common Policy CA | Serial: 2e26 Hash: 39c1d3b64e756a3267bfe5fecb103da892ca0611 | 7/30/25 | Revocation 6/17 |
-| FPKIMA | Entrust Managed Services Root CA | Federal Common Policy CA | Serial: 734a Hash: a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9 | 8/14/29 | Revocation 6/17 |
+| N/A |  |  |  |  |
 
 The following certificates are planned for a certificate action in the near future, dates to be determined based on availability.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| N/A |  |  |  |  |  |
+| DigiCert | DigiCert Federated ID L3 CA | Federal Bridge CA G4 | Serial:17eaffeebc2f01cf5538b875d6b6b584fa88e27f      Hash:28f059e2dffac9de78fb7a1670c082dad2522d3b | 2/28/22 | Renew |
+| STRAC | STRAC Bridge Root Certification Authority | Federal Bridge CA G4 | Serial:1232058ae7987cc9ff3daa78c7b80813b840e12d     Hash:c6d4d588000e823cfaf2ecf551ebcd3827fd71b6 | 2/14/22 | Renew |
+| DigiCert | TBD - DigiCert Federated ID L3 CA | Federal Bridge CA G4 | Serial:TBD      Hash:TBD |   | New CA (Rekey) |
+| DigiCert | DigiCert Federal SSP Intermediate CA - G6 | Federal Common Policy CA G2 | Serial:TBD      Hash:TBD |   | New CA (Rekey) |
 
 
 ## Repository Availability 
@@ -82,28 +82,29 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 
 | Federal Agency or Affiliate CA | FPKIMA CA | Last 30 days | Average |
 | ------------------------------ | --------- | ------------ | ------- |
-| CertiPath Bridge CA - G2	| FBCA | 100 | 99.997 |
-| CertiPath Bridge CA - G3 | FBCA | 100 | 99.98 |
-| DigiCert Federated ID L3 CA | FBCA | 100 | 99.995 |
-| DoD Interoperability Root CA 2 | FBCA	| 100 | 100 |
+| CertiPath Bridge CA - G3 | FBCA | 100 | 100 |
+| DigiCert Federated ID L3 CA | FBCA | 100 | 100 |
+| DigiCert Class 3 SSP Intermediate CA - G4	| FBCA | 100 | 100 |
+| DoD Interoperability Root CA 2 | FBCA	| 99.93 | 99.89 |
 | Entrust Managed Services NFI Root CA | FBCA |	100 | 100 |
-| Exostar Federated Identity Service Root CA | FBCA	| 100 |	99.987 |
+| Exostar Federated Identity Service Root CA | FBCA	| 100 |	100 |
 | Federal Bridge CA G4 | FBCA | 100	| 100 |
-| GPO PCA | FBCA | 100 | 99.838 |
-| IdenTrust Global Common Root CA 1 | FBCA | 100 | 99.987 |
-| SAFE Bridge CA 02	| FBCA | 100 | 99.942 |
-| STRAC Bridge Root Certification Authority	| FBCA | 100 | 99.952 |
-| Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 100 | 99.599 |
-| TSCP SHA256 Bridge CA	| FBCA | 100 | 99.992 |
-| USPTO_INTR_CA1 | FBCA	| 100 | 99.949 |
-| WidePoint NFI Root 2	| FBCA	| 100 |	99.992 |
-| DigiCert SSP CA - G5	| FCPCA	| 100 |	99.998 |
-| Entrust Managed Services Root CA	| FCPCA	| 100 | 99.998 |
+| GPO PCA | FBCA | 99.78 | 99.98 |
+| IdenTrust Global Common Root CA 1 | FBCA | 100 | 99.88 |
+| SAFE Identity Bridge CA	| FBCA | 100 | 100 |
+| STRAC Bridge Root Certification Authority	| FBCA | 99.96 | 99.97 |
+| Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 100 | 81.74 |
+| TSCP SHA256 Bridge CA	| FBCA | 100 | 95.43 |
+| USPTO_INTR_CA1 | FBCA	| 100 | 99.95 |
+| WidePoint NFI Root 2	| FBCA	| 100 |	100 |
+| DigiCert SSP CA - G5	| FCPCA	| 100 |	99.1 |
+| Entrust Managed Services Root CA	| FCPCA	| 100 | 100 |
 | Federal Common Policy CA	| FCPCA	| 100 |	100 |
 | Federal Common Policy CA G2 | FCPCA | 100 | 100 |
-| ORC SSP 4	| FCPCA	| 100 | 99.993 |
-| Symantec SSP Intermediate CA - G4	| FCPCA | 100 | 99.610 |
-| U.S. Department of State AD Root CA | FCPCA | 98.19 | 99.847 |
+| ORC SSP 4	| FCPCA	| 100 | 100 |
+| Symantec SSP Intermediate CA - G4	| FCPCA | 100 | 98.71 |
+| U.S. Department of State AD Root CA | FCPCA | 100 | 100 |
 | US Treasury Root CA | FCPCA | 100 | 100 |
-| Verizon SSP CA A2 | FCPCA	| 100	| 99.964 |
+| Verizon SSP CA A2 | FCPCA	| 99.82 | 99.96 |
+| WidePoint ORC SSP 5	| FCPCA	| 100 | 100 |
 

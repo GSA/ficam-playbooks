@@ -23,6 +23,12 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
       </ul>
       {% endif %}
     </li>
-    {% endfor %}
+   {% endfor %} <!--  End Nav loop -->
+  </ul> <!-- Line at end of nav -->
+  <br> <!-- space for download button -->
+  <ul class="usa-list usa-list--unstyled"></ul>
+   {% if page.pdf %} <!-- display download button if pdf is in the front matter-->
+        <a class="usa-button" target="_blank" rel="noopener noreferrer" href="{{ site.baseurl}}/{{ page.pdf }}">Download as a PDF</a>
+    {% endif %}
   </ul>
 </nav>

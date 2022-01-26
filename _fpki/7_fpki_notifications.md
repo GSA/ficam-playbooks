@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: System Changes and Notifications
-permalink: fpki/notifications/
+permalink: /fpki/notifications/
 sidenav: fpki
 sticky_sidenav: true
 
@@ -24,7 +24,7 @@ The communication of changes, and planned or unplanned system outages, is requir
 
 System **outages** - either through a planned maintenance activity or unplanned event - may also be posted on this page, and may trigger the Incident Management process.    
 
-To report a change **or** system outage not listed below, please email fpki at gsa dot gov.
+To report a change **or** system outage not listed below, please email <span>fpki</span><span>@</span><span>gsa</span><span>.</span><span>gov</span>.
 
 ## Notifications
 
@@ -59,13 +59,13 @@ System notifications can be submitted via either GitHub or email.
 
 #### Submit Notification via GitHub Issue 
 
-  - Select [Add New Notification](https://github.com/GSA/ficam-playbooks/issues/new?title=System%20Notification%20for%3A%20%3CYour%20Organization%3E&body=notice_date%3A%20%0Achange_type%3A%20%20CA%20Certificate%20Issuance%2C%20CA%20Certificate%20Revocation%2C%20New%20CA%2C%20URI%20Change%2C%20System%20Outage%20%0Astart_datetime%3A%20%0Aend_datetime%3A%20%0Asystem%3A%20%0Achange_description%3A%20%0Acontact%3A%20%0Aca_certificate_hash%3A%20%0Aca_certificate_issuer%3A%20%0Aca_certificate_subject%3A%20%0Acdp_uri%3A%20%0Aaia_uri%3A%20%0Asia_uri%3A%20%0Aocsp_uri%3A%0A%20%0A&labels[]=System%20Notification){:target="_blank"}
+  - Select [Add New Notification](https://github.com/GSA/ficam-playbooks/issues/new?title=System%20Notification%20for%3A%20%3CYour%20Organization%3E&body=notice_date%3A%20%0Achange_type%3A%20%20CA%20Certificate%20Issuance%2C%20CA%20Certificate%20Revocation%2C%20New%20CA%2C%20URI%20Change%2C%20System%20Outage%20%0Astart_datetime%3A%20%0Aend_datetime%3A%20%0Asystem%3A%20%0Achange_description%3A%20%0Acontact%3A%20%0Aca_certificate_hash%3A%20%0Aca_certificate_issuer%3A%20%0Aca_certificate_subject%3A%20%0Acdp_uri%3A%20%0Aaia_uri%3A%20%0Asia_uri%3A%20%0Aocsp_uri%3A%0A%20%0A&labels[]=System%20Notification){:target="_blank"}{:rel="noopener noreferrer"}
 
   - This will open a new Issue form with input information for notification information.
   - Enter the information and click 'Submit new issue' to submit the notification.
 
 #### Submit Notification via Email
-The notification can also be emailed to fpki at gsa dot gov. The email should contain the following information.
+The notification can also be emailed to <span>fpki</span><span>@</span><span>gsa</span><span>.</span><span>gov</span>. The email should contain the following information.
 
 Subject:  FPKI System Notification - System Name 
   
@@ -76,7 +76,7 @@ Subject:  FPKI System Notification - System Name
 - Change description  
 - Contact email  
 - If the change is a new or revoked CA certificate, include the CA Certificate hash (sha1 thumbprint), Issuer and Subject DNs  
-- If the change is a new URI, include the new CDP, AIA, SIA or OCSP value  
+- If the change is a new URI, include the new CDP, AIA, SIA, or OCSP value  
 
 
 

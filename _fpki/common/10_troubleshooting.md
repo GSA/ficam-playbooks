@@ -2,7 +2,7 @@
 layout: page 
 title: Troubleshooting Procedures
 collection: fpki
-permalink: fpki/common/troubleshooting/
+# permalink: /fpki/common/troubleshooting/
 sticky_sidenav: true
 sidenav: fpkicommon
 ---
@@ -10,11 +10,22 @@ sidenav: fpkicommon
 {% include alert-success.html content="This page presents common issues and troubleshooting procedures related to the Federal PKI Root CA migration.  We encourage <b>only</b> Domain or System Administrators follow the procedures listed on this page.  If you need help or have any questions, email us at fpkirootupdate@gsa.gov." %} 
  
 ## Windows Troubleshooting
-- [How come my workstation isn't chaining to FCPCA G2?](#how-come-my-workstation-isnt-chaining-to-fcpca-g2)
-- [How come I can't login to an application or website with my PIV after migrating to FCPCA G2?](#how-come-i-cant-login-to-an-application-or-website-with-my-piv-after-migrating-to-fcpca-g2)
-- [How can I verify network configurations aren't preventing certificate validation?](#how-can-i-verify-network-configurations-arent-preventing-certificate-validation)
-- [Is there any logging I can enable to help verify what's going on?](#is-there-any-logging-i-can-enable-to-help-verify-whats-going-on)
-- [Are there any useful commands that I should be familiar with?](#are-there-any-useful-commands-that-i-should-be-familiar-with)
+- [Windows Troubleshooting](#windows-troubleshooting)
+- [macOS Troubleshooting](#macos-troubleshooting)
+- [iOS Troubleshooting](#ios-troubleshooting)
+- [Solutions](#solutions)
+  - [Windows](#windows)
+    - [How come my workstation isn't chaining to FCPCA G2?](#how-come-my-workstation-isnt-chaining-to-fcpca-g2)
+    - [How come I can't login to an application or website with my PIV after migrating to FCPCA G2?](#how-come-i-cant-login-to-an-application-or-website-with-my-piv-after-migrating-to-fcpca-g2)
+    - [How can I verify network configurations aren't preventing certificate validation?](#how-can-i-verify-network-configurations-arent-preventing-certificate-validation)
+    - [Is there any logging I can enable to help verify what's going on?](#is-there-any-logging-i-can-enable-to-help-verify-whats-going-on)
+    - [Are there any useful commands that I should be familiar with?](#are-there-any-useful-commands-that-i-should-be-familiar-with)
+  - [macOS](#macos)
+    - [How come my workstation isn't chaining to FCPCA G2?](#how-come-my-workstation-isnt-chaining-to-fcpca-g2-1)
+    - [How come I can't login to an application or website with my PIV after migrating to FCPCA G2?](#how-come-i-cant-login-to-an-application-or-website-with-my-piv-after-migrating-to-fcpca-g2-1)
+    - [Are there any useful commands that I should be familiar with?](#are-there-any-useful-commands-that-i-should-be-familiar-with-1)
+  - [iOS](#ios)
+    - [Why am I seeing TLS certificate errors?](#why-am-i-seeing-tls-certificate-errors)
 
 ## macOS Troubleshooting
 - [How come my workstation isn't chaining to FCPCA G2?](#how-come-my-workstation-isnt-chaining-to-fcpca-g2)
@@ -36,9 +47,9 @@ In some cases, even after distributing the Federal Common Policy CA G2 as a Trus
 ![validation errors]({{site.baseurl}}/assets/fpki/error-distribute-intermediates.png) 
 
 **Recommended Steps:**
-1. Verify the distribution of the Federal Common Policy CA G2 as a [Trusted Root CA Certificate]({{site.baseurl}}/fpki/common/distribute-os/){:target="_blank"}
-2. Verify the [distrust of the Federal Common Policy CA]({{site.baseurl}}/fpki/common/migrate/#distrust-the-fcpca-g1){:target="_blank"}
-3. Distribute the [intermediate CA certificates issued by the Federal Common Policy CA G2]({{site.baseurl}}/fpki/common/certificates/#certificates-issued-by-the-federal-common-policy-ca-g2){:target="_blank"}
+1. Verify the distribution of the Federal Common Policy CA G2 as a [Trusted Root CA Certificate]({{site.baseurl}}/fpki/common/distribute-os/){:target="_blank"}{:rel="noopener noreferrer"}
+2. Verify the [distrust of the Federal Common Policy CA]({{site.baseurl}}/fpki/common/migrate/#distrust-the-fcpca-g1){:target="_blank"}{:rel="noopener noreferrer"}
+3. Distribute the [intermediate CA certificates issued by the Federal Common Policy CA G2]({{site.baseurl}}/fpki/common/certificates/#certificates-issued-by-the-federal-common-policy-ca-g2){:target="_blank"}{:rel="noopener noreferrer"}
 
 If you're still having problems, email us at fpkirootupdate@gsa.gov.
 
@@ -203,7 +214,7 @@ TLS certificate errors presented to the user in Safari are typically caused by e
 2. An intermediate CA certificate is missing from the device's trust store
 
 **Recommended Steps**:
-1. Verify that ["Full Trust"]({{site.baseurl}}/fpki/common/distribute-os/#enable-full-trust-for-fcpca-g2){:target="_blank_"} is enabled for the Federal Common Policy CA G2
+1. Verify that ["Full Trust"]({{site.baseurl}}/fpki/common/distribute-os/#enable-full-trust-for-fcpca-g2){:target="_blank_"}{:rel="noopener noreferrer"} is enabled for the Federal Common Policy CA G2
 2. Verify that all required intermediate CA certificates are trusted by the device
      - Settings -> General -> Profile
      - Review the list of Configuration Profiles loaded on the device. Specifically, look at any profile which contains digital certificates. 

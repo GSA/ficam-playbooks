@@ -2,28 +2,28 @@
 layout: pagegraph
 title: Federal PKI Graph
 collection: fpki
-permalink: fpki/tools/fpkigraph/
+permalink: /fpki/tools/fpkigraph/
 sticky_sidenav: true
 sidenav: fpkitools
 ---
-**Last Update**: August 09, 2021
+**Last Update**: January 24, 2022
 {% include graph.html %}
 
-The FPKI Graph displays the relationships between the Certification Authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each Certification Authority links to another, through cross-certificates, subordinate certificates, or Bridge CAs.  
+The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs.  
 
-The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown at the center of the Graph, and the rings of dots represent the outbound CAs. 
+The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown at the center of the graph, and the rings of dots represent the outbound CAs. 
 
-- Click on any dot in the Graph to see a CA's inbound and outbound _CA_ certificates.
+- Click on any dot in the graph to see a CA's inbound and outbound _CA_ certificates.
 - _Inbound_ means the CA certificate is signed by the _Inbound_ CA.
 - _Outbound_ means the CA has signed the _Outbound_ CA certificate.
 - The _Search_ function is on the upper right-hand corner. 
 - The _Zoom_ scroll bar is in the upper left-hand corner.
 
-You cannot download the certificates from the Graph. To download the certificates, you need to retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.)    
+You cannot download the certificates from the graph. To download the certificates, you need to retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.)    
 
 ### How the FPKI Graph Works
 
-The Graph uses information published in each CA certificate's AIA and SIA extensions. This is public information:&nbsp;&nbsp;all CAs in the FPKI are required to publish and maintain their AIA certificate bundles.
+The graph uses information published in each CA certificate's AIA and SIA extensions. This is public information:&nbsp;&nbsp;all CAs in the FPKI are required to publish and maintain their AIA certificate bundles.
 
 All CA and End Entity certificates that have a certificate path (trust chain) to COMMON will have an AIA extension in their public certificates. An AIA extension contains a URI where you can find the certificate(s) used to sign that CA or End Entity certificate.  
 
@@ -35,4 +35,4 @@ Most CA certificates will also have an SIA extension with a URI to the CA certif
 
 ### Acknowledgment
 
-The FPKI Graph was built by using the same tools and code as the [Berkley ICSI SSL Notary](https://notary.icsi.berkeley.edu/trust-tree/){:target="_blank"}. 
+The FPKI Graph was built by using the same tools and code as the [Berkley ICSI SSL Notary](https://notary.icsi.berkeley.edu/trust-tree/){:target="_blank"}{:rel="noopener noreferrer"}. 

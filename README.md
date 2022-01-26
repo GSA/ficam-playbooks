@@ -14,7 +14,7 @@ This content is Vendor neutral. Marketing materials for Commercial Products shou
 Contributors should consider the audience when submitting content. Plain language benefits a broad audience. Review your proposed content for use of acronyms and specialized jargon before submitting.
 
 ## How to Contribute
-For information on how to contribute to the site, visit the Contribute page [here](/_pages/contribute.md/).
+For information on how to contribute to the site, visit the [Idmanagement.gov contribute page](https://www.idmanagement.gov/contribute/).
 
 Direct changes and line edits to the content may be submitted by clicking 'Edit this page'. You do not need to install any software to submit content. You can use GitHub's in-browser editor to edit files and submit a request for your changes to be merged.
 

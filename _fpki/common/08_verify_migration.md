@@ -2,7 +2,7 @@
 layout: page 
 title: 8. Verify migration to the Federal Common Policy CA G2
 collection: fpki
-permalink: fpki/common/verify-migration/
+permalink: /fpki/common/verify-migration/
 sticky_sidenav: true
 sidenav: fpkicommon
 
@@ -27,7 +27,7 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 	
 	**Note:** It's okay if different certification authorities appear below the FCPCA G2 for your certificate. 
 
-[![verify_common_migration](../../../assets/fpki/verify-migration-windows.png){:style="width:40%;"}](../../../assets/fpki/verify-migration-windows.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![verify_common_migration]({{site.baseurl}}/assets/fpki/verify-migration-windows.png){:style="width:40%;"}]({{site.baseurl}}/assets/fpki/verify-migration-windows.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Verify Migration on macOS
@@ -38,17 +38,17 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 4. Browse to and select any of the certificates found on your PIV credential (the **Name** column displays your name).
 5. Verify the *This certificate is valid* message appears beneath the certificate details.
 
-[![verify_common_migration](../../../assets/fpki/verify-migration-macos.png){:style="width:70%;"}](../../../assets/fpki/verify-migration-macos.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![verify_common_migration]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:style="width:70%;"}]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Troubleshooting
 
 - If you're building a path to the FCPCA G1
-	- [Verify you have distrusted the FCPCA G1](../migrate/#2-distrust-the-federal-common-policy-ca)
+	- [Verify you have distrusted the FCPCA G1]({{site.baseurl}}/fpki/common/migrate/#2-distrust-the-federal-common-policy-ca)
 - If a path isn't building at all
-	- [Verify your distribution of the FCPCA G2](../verify-os-distribution/)
-	- [Distribute the CA certificates issued by the FCPCA G2](../certificates/)
+	- [Verify your distribution of the FCPCA G2]({{site.baseurl}}/fpki/common/verify-os-distribution/)
+	- [Distribute the CA certificates issued by the FCPCA G2]({{site.baseurl}}/fpki/common/certificates/)
 
 ## Need Help?
 
-View the [Frequently Asked Questions](../faq/) page for more information, or email us at fpkirootupdate@gsa.gov.
+View the [Frequently Asked Questions]({{site.baseurl}}/fpki/common/faq/) page for more information, or email us at fpkirootupdate@gsa.gov.

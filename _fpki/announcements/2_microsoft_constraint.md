@@ -5,10 +5,9 @@ pubDate: 05/18/2018
 archiveDate: 05/19/2019
 removeDate: 05/19/2021
 collection: fpki
-permalink: fpki/announcements/2018mspkichanges/
 category: Microsoft
 description: UUpcoming changes regarding Microsoft's remove of the U.S. Government Root CA.
-category: Archived
+category: Removed
 sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
 
@@ -67,16 +66,11 @@ This change will also impact partner users that rely on COMMON. For example, a D
 
 You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
 
-## What Should I Do?
-
-{% include microsoft_trust_store_installation.md %}
-
-
 ## How Can I Test?
 
 Testing by government teams did not allow locally administered certificate stores to override the Microsoft CTL distributed settings.  The decision was made to remove COMMON entirely from Microsoft's trust store.  No further testing on overriding the CTL settings will be conducted. 
 
-To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing]({{ site.baseurl }}/ctltestprocedures/){:target="_blank"}.
+To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing]({{ site.baseurl }}/ctltestprocedures/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ## Frequently Asked Questions
 
@@ -102,7 +96,7 @@ You can run a report on all issued certificates or, if your agency has an agreem
 
 You can scan your intranet websites in coordination with your CISO teams.  There are existing tools to use, or you can use the DHS NCATS "**pshtt**" tool, which will also check for cipher suites and mis-configurations on the intranet websites:  
 
-- DHS NCATS [**pshtt**](https://github.com/dhs-ncats/pshtt){:target="_blank"} 
+- DHS NCATS [**pshtt**](https://github.com/dhs-ncats/pshtt){:target="_blank"}{:rel="noopener noreferrer"} 
 
 **Note:**&nbsp;&nbsp;This tool will look for not just Federal PKI certificates.  Its outputs will include all certificates and information.
 
@@ -133,7 +127,7 @@ Microsoft Operating Systems use different physical containers and logical views 
 
 It can be confusing--the easiest model is to follow one of the two methods in [What Should I Do?](#what-should-i-do)
 
-To read detailed information on certificate stores, logical views, physical views, and registry locations: [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}
+To read detailed information on certificate stores, logical views, physical views, and registry locations: [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### 7.&nbsp;&nbsp;Do I need to change any trust property for COMMON managed by group policy objects?
 No, trust properties are not set by group policy objects. If your agency currently distributes COMMON through a group policy object, no change is needed.
@@ -142,12 +136,12 @@ No, trust properties are not set by group policy objects. If your agency current
 All Windows versions from Vista forward are affected. 
 
 ### 9.&nbsp;&nbsp;Can I create a custom CTL for our enterprise?
-Yes, a trusted or untrusted, custom CTL can be created for your agency enterprise: [Creating, Signing, and Storing a CTL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379867(v=vs.85).aspx){:target="_blank"}.
+Yes, a trusted or untrusted, custom CTL can be created for your agency enterprise: [Creating, Signing, and Storing a CTL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379867(v=vs.85).aspx){:target="_blank"}{:rel="noopener noreferrer"}.
 
 However, we don't recommend this. Simplicity can help security, and it can be simpler to manage a group policy object than a custom CTL.
 
 ## Additional Resources
 
-1. [Certificate Trust List Overview](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target="_blank"}
-1. [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}
-1. [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/en-us/library/dn265983.aspx){:target="_blank"}
+1. [Certificate Trust List Overview](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target="_blank"}{:rel="noopener noreferrer"}
+1. [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}{:rel="noopener noreferrer"}
+1. [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/en-us/library/dn265983.aspx){:target="_blank"}{:rel="noopener noreferrer"}
