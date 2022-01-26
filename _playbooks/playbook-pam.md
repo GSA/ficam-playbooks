@@ -7,7 +7,7 @@ pubdate: 09/2021
 permalink: /playbooks/pam/
 description: This document provides federal agencies with guidance to manage its privileged users by mitigating the inherent risks associated with this population through the use of Identity, Credential, and Access Management (ICAM).
 sticky_sidenav: true
-sidenav: playbook-pam
+sidenav: pam
 
 subnav:
     - text: Executive Summary
