@@ -44,7 +44,7 @@ The following table provides a reference list of the error messages documented i
 
 | Error | Section |
 | ----- | ------- |
-| The PIN is incorrect. Try Again | [ISSUE: Invalid PIN for Smart Card](#invalid-pin) |
+| The PIN is incorrect. Try again. | [ISSUE: Invalid PIN for Smart Card](#invalid-pin) |
 | The smart card is blocked | [ISSUE: Smart Card Locked](#card-locked) |
 | This smart card could not be used. Additional details may be available in the system event log. Please report this error to your administrator. | [ISSUE: Smart Card Validation Not Enabled](#validation-not-enabled) |
 | An untrusted certification authority was detected while processing the smart card certificate used for authentication. | [ISSUE: Common Policy Certificate Not Installed in Trust Store](#common-not-installed) |
