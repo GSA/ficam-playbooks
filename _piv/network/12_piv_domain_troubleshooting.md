@@ -170,4 +170,4 @@ If the certificate does not chain up to the Federal Common Policy CA, there is p
 
    certutil -pulse
 
-8. Once Group Policy has been pushed out to clients, the issue should be resolved.  
+8. Once the Group Policy has been pushed out to clients, the issue should be resolved.  
