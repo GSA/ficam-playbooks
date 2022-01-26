@@ -6,6 +6,17 @@ permalink: piv/network/troubleshooting/
 sticky_sidenav: true
 sidenav: pivnetwork
 
+subnav:
+    - text: Introduction
+      href: '#introduction'
+    - text: PIV Issues in Kerberos Authentication
+      href: '#piv-issues-in-kerberos-authentication'      
+    - text: PIV Authentication Errors
+      href: '#piv-authentication-errors' 
+    - text: Client Issues Preventing Domain Authentication
+      href: '#client-issues-preventing-domain-authentication'
+    - text: Server Issues Preventing Domain Authentication
+      href: '#server-issues-preventing-domain-authentication' 
 ---
 
 ## Introduction
