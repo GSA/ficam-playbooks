@@ -67,7 +67,7 @@
 - notice_date: January 20, 2022
   change_type: Intent to Perform CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4  
-  change_description: The Federal Bridge CA G4 intends to reissue a cross certificate to the DigiCert Federated ID L3 CA to replace the one that is expiring on 2/28/2022.
+  change_description: The Federal Bridge CA G4 intends to reissue a cross certificate to the DigiCert Federated ID L3 CA between 2/07/2022 and 2/14/2022 to replace the one that is expiring on 2/28/2022.
   contact: fpki dash help at gsa.gov 
   ca_certificate_hash: N/A
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
@@ -95,7 +95,7 @@
 - notice_date: January 18, 2022
   change_type: Intent to Perform CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4  
-  change_description: The Federal Bridge CA G4 intends to issue a cross certificate to the STRAC Bridge Root Certification Authority between 1/20/2022 and 1/31/2022.
+  change_description: The Federal Bridge CA G4 intends to issue a cross certificate to the STRAC Bridge Root Certification Authority between 2/07/2022 and 2/14/2022.
   contact: fpki dash help at gsa.gov 
   ca_certificate_hash: N/A
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
