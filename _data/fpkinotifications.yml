@@ -25,6 +25,19 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: January 28, 2022
+  change_type: CA Certificate Issuance
+  system: TSCP SHA256 Bridge CA 
+  change_description: The TSCP SHA256 Bridge CA issued a cross certificate to the Alexion Pharmaceuticals Certification Authority.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash: 1dbd511e19f04a58c38d603b7919c2d421f65166
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=U.S. TSCP Inc., C=US
+  ca_certificate_subject: CN=Alexion Pharmaceuticals Issue 2 CA, OU=CAs, O=Alexion Pharmaceuticals, C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
+  ocsp_uri: N/A
+
 - notice_date: January 21, 2022
   change_type: Intent to Perform CA Certificate Issuance
   system: TSCP SHA256 Bridge CA 
