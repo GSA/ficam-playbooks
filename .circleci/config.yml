@@ -20,7 +20,7 @@ jobs:
           keys:
             - v2-bundle-{{ checksum "Gemfile.lock" }}
             - v2-bundle-
-      - run: bundle config set path 'vendor/bundle
+      - run: bundle install --path vendor/bundle
       - save_cache:
           key: v2-bundle-{{ checksum "Gemfile.lock" }}
           paths:
