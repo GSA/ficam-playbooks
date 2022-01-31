@@ -1,8 +1,10 @@
+## https://circleci.com/developer/images/image/cimg/ruby#browsers
+
 version: 2
 jobs:
   build:
     docker:
-      - image: cimg/ruby:2.7.2-browsers
+      - image: cimg/ruby:2.7.5-browsers
     steps:
       - checkout
       - restore_cache:
@@ -18,7 +20,7 @@ jobs:
           keys:
             - v2-bundle-{{ checksum "Gemfile.lock" }}
             - v2-bundle-
-      - run: bundle install --path vendor/bundle
+      - run: bundle config set path 'vendor/bundle
       - save_cache:
           key: v2-bundle-{{ checksum "Gemfile.lock" }}
           paths:
