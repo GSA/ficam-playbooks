@@ -36,7 +36,7 @@ The Services Framework is designed for ICAM program managers and information tec
 
 [![An orange box with the list of Identity Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:align="right" style="padding-left:30px"}]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-Identity Management is how an agency collects, verifies, and manages attributes to establish and maintain enterprise identities for federal government employees, contractors, and authorized mission partners. This service does not apply to public or consumer identity management.
+Identity Management is how an agency collects, verifies, and manages attributes and entitlements to establish and maintain enterprise identities for federal government employees, contractors, and authorized mission partners. This service does not apply to public or consumer identity management.
 
 An enterprise identity record is the set of attributes, or characteristics, that describe a person within a given context:
 
@@ -50,6 +50,13 @@ Agencies should manage identity attributes as centrally as possible and distribu
 - *Core identity attributes* - First name, last name, and address of record.
 - *Contact attributes* - Physical location, government phone number, and government email address.
 - *Authorization attributes* - Clearance, training, and job codes.
+
+Entitlements are a specific type of authorization attributes that represent an application permission. Entitlements management is the act of managing those permissions. An agency may group multiple entitlements into a specific role or group to streamline provision and deprovision activities as well as for auditing and reporting. For example, a new employee may require access to ten core enterprise application on the first day of work. An agency can create a new employee group with new employee entitlements and automate provisioning to the ten core applications rather than treat them as individual access requests.
+
+Attributes and entitlements are created or aggregated through a number of manual and automated mechanisms. Mechanisms may include: 
+- Use a Single Sign-On tool to aggregate application access entitlements.
+- Allow employees to update contact attributes in a employee record.
+- Automated integration between a training system and a identity governance and administration tool to create and update annual security training.
 
 Identity proofing is how an agency verifies an enterprise identity. The complexity of this process depends on the Identity Assurance Level (IAL) you require for an identity. Federal agencies require a minimum IAL3 for employees and contractors. For example, a federal employee or contractor presents identity attributes via a driver's license or utility bill. The agency verifies the identity documents and the individual's photo (biometric).
 
@@ -124,9 +131,11 @@ Policy administration is a combination of laws, regulations, rules, and agency p
 - “Grant access to any agency employee or contractor with an authenticated PIV card.”
 - “Grant access to anyone who is a federal employee, GS-12 or higher, cleared Top Secret, trained in first aid, and certified as a project manager.”
 
+One challenge to overcome in providing access services is conducting an application discovery and inventory for both physical and logical access. For logical access, see the [application inventory section of the Single Sign-On Playbook.]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"}
+
 ### Authentication
  
-Authentication is how you verify the claimed identity of someone trying to access an agency resource. Typically, you’ll verify an identity using an authenticator associated with a credential.
+Authentication is how you verify the claimed identity of someone trying to access an agency resource. Typically, you’ll verify an identity using an authenticator associated with a credential. To determine the appropriate authenticator level, use the [Digital Identity Risk Assessment Playbook]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}
 
 Authentication is generally a two-step process:
 
@@ -150,20 +159,19 @@ Authorization is how you decide whether you should allow someone to access an ag
 
 Usually, authorization occurs immediately after authentication. When you log in to a service, you present your credentials and the service confirms your credentials are valid (authentication) and grants or denies you access based on your assigned permissions (authorization).
 
-Authorizations are based on four models:
+Authorizations are based on progressive fine-grained models. The majority of agencies have implement role-based access and are moving towards more fine-grained access such as attribute-based or risk adaptive as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understand how a vendor meets the use case.
 
-- Access Control Lists (ACLs)
-- Role-Based Access Control (RBAC)
-- Policy-Based Access Control (PBAC)
-- Attribute-Based Access Control (ABAC)
+| | Less Fine-Grained | --> | --> | More Fine-Grained |
+| |:----:|:----:|:----:|:----:|
+| Access Model | Access Control Lists (ACLs) | Role-Based Access Control (RBAC) | Attribute-Based Access Control (ABAC)| Risk Adaptive Access Control (RAAC) |
+| Description | A static list of entities with their access rights. | Access based on a user's static pre-defined role. | Access based on a user's assigned attributes which may be static or dynamic. | Access based on dynamic risk factors. |
+| Example | Allow Jane Doe access to email application | Jane Doe is assigned the user role "New Employee" which grants access to email and sharepoint. | Allow Jane Doe to access email if on a government device (device attribute) and in the United States (location attribute). | If Jane Doe is in assigned work location, allow email access from any managed device. If Jane Doe is not in assigned work location, only allow email access from a government device. |
 
 Each of these authorization models has benefits and limitations. The policies and access requirements defined by agency business owners help inform the model used to best suit their needs. More robust access control models, such as ABAC, can help agencies with improved automation and are increasingly adopted by cloud-native and cloud-friendly services.
 
-Identity proofing is how you establish an identity. Authentication is how you confirm the identity. Authorization is how you use the identity.
-
 ### Access Management Services
 
-The Access Management services in the federal ICAM architecture include Policy Administration, Entitlements Management, Authentication, Authorization, and Privileged Access Management.
+The Access Management services in the federal ICAM architecture include Policy Administration, Authentication, Authorization, and Privileged Access Management.
 
 [![A blue box with the Access Management service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/AccessManagementServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/AccessManagementServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -190,7 +198,7 @@ Federation has many different applications, including:
 
 > An individual can use their agency-issued credential containing an internal identifier(s) to directly log in to a different agency’s online service. The    online service registers the identifier(s) in their system for future use.
 
-## Federation Services
+### Federation Services
 The Federation services in the FICAM architecture include Policy Alignment, Authentication Broker, and Attribute Exchange.
 
 [![A gray box with the Federation service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/FederationServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/FederationServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
@@ -211,7 +219,7 @@ To perform effective governance, agencies must collect data about ICAM functions
 
 If your agency identifies problems during data collection and analysis, you should remediate these issues as quickly as possible. Real-time monitoring and risk mitigation is crucial to ensure employees and contractors have only the appropriate access, following the principle of least privilege.
 
-## Governance Services
+### Governance Services
 
 The Governance services in the FICAM architecture include Identity Governance, Analytics, and Mitigation.
 
