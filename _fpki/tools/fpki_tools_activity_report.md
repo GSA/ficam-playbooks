@@ -71,8 +71,8 @@ The following certificates are planned for a certificate action in the near futu
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| DigiCert | DigiCert Federated ID L3 CA | Federal Bridge CA G4 | Serial:17eaffeebc2f01cf5538b875d6b6b584fa88e27f      Hash:28f059e2dffac9de78fb7a1670c082dad2522d3b | 2/28/22 | Renew |
-| STRAC | STRAC Bridge Root Certification Authority | Federal Bridge CA G4 | Serial:1232058ae7987cc9ff3daa78c7b80813b840e12d     Hash:c6d4d588000e823cfaf2ecf551ebcd3827fd71b6 | 2/14/22 | Renew |
+| DigiCert | DigiCert Federated ID L3 CA | Federal Bridge CA G4 | Serial:17eaffeebc2f01cf5538b875d6b6b584fa88e27f      Hash:28f059e2dffac9de78fb7a1670c082dad2522d3b | 2/28/22 | Renew 2/9/2022 |
+| STRAC | STRAC Bridge Root Certification Authority | Federal Bridge CA G4 | Serial:1232058ae7987cc9ff3daa78c7b80813b840e12d     Hash:c6d4d588000e823cfaf2ecf551ebcd3827fd71b6 | 2/14/22 | Renew 2/9/2022 |
 | DigiCert | TBD - DigiCert Federated ID L3 CA | Federal Bridge CA G4 | Serial:TBD      Hash:TBD |   | New CA (Rekey) |
 | DigiCert | DigiCert Federal SSP Intermediate CA - G6 | Federal Common Policy CA G2 | Serial:TBD      Hash:TBD |   | New CA (Rekey) |
 
