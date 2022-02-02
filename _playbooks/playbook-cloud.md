@@ -6,7 +6,6 @@ pubdate: 2022-01
 type: Markdown
 permalink: /playbooks/cloud/
 description: The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.
-pdf: "docs/playbook-cloud.pdf"
 sticky_sidenav: true
 sidenav: cloud
 
@@ -173,7 +172,7 @@ Figure 4. Full Migration to IDaaS
 
 #### Full Migration
 
-The full migration scenario replaces all on-premises Identity Provider components with an IDaaS. This scenario includes replacing Active Directory and Active Directory Federation Services with an IDaaS. An agency may need an alternative solution for PIV desktop authentication, which Active Directory typically handles. An alternative solution may include using a comparable phishing-resistant authenticator as mentioned in the draft [OMB Federal Zero Trust Strategy](https://zerotrust.cyber.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
+The full migration scenario replaces all on-premises Identity Provider components with an IDaaS. This scenario includes replacing Active Directory and Active Directory Federation Services with an IDaaS. An agency may need an alternative solution for PIV desktop authentication, which Active Directory typically handles. An alternative solution may include using a comparable phishing-resistant authenticator as mentioned in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 {% include alert-warning.html heading="Business Challenge - PIV Authentication in Full Migration Scenario" content="One common challenge faced by many agencies is IDaaS support for certificate-based authentication and desktop authentication. Many FedRAMP IDaaS support some form of certificate-based authentication. As of this writing, there is no current replacement for PIV desktop authentication that doesn't include operating an Active Directory domain." %} 
 
@@ -457,8 +456,8 @@ See the [GSA Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_bl
 
 1. [Executive Order 14028 - Improving the Nation's Cybersecurity](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}
 2. [Federal Cloud Smart Strategy](https://cloud.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}
-3. [Office of Management and Budget Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-4. [Draft Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}
+3. [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/){:target="_blank"}{:rel="noopener noreferrer"}
+4. [Office of Management and Budget Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Standards
 
