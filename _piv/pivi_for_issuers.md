@@ -31,3 +31,10 @@ July 27, 2017
 | 2.0 | 11/2016 | ●	Removed most duplicative references to requirements which have been stated in other government documents as authoritative<br>● Updated references to Memorandums, Standards and common terminology<br>● Added clarification for federal agencies on the boundaries of security, auditing and procurement requirements |
 | 2.0.1 | 12/2016 | ● Updated Table 4 to clarify for Legislative and Judicial branches of federal government |
 
+# Executive Summary
+
+(text here)
+
+# Introduction
+
+(text here)
