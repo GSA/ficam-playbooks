@@ -14,8 +14,8 @@ subnav:
       href: '#middleware'
     - text: Middleware definitions
       href: '#middleware-definitions'
-    - text: Next Steps
-      href: '#next-steps'
+    - text: References
+      href: '#appendix-a-technical-information'
 ---
 
 Version 2.0.1  
@@ -80,4 +80,42 @@ July 27, 2017
 
 (text here)
 
+### 2.4.1 Visual Distinction
 
+(text here)
+
+### 2.4.2 Identifier Namespace
+
+(text here)
+
+# 3 Special Considerations for Federal Agencies
+
+(text here)
+
+## 3.1	Auditing Requirements
+
+(text here)
+
+## 3.2 Acquiring PIV-Interoperable Services
+
+(text here)
+
+# Appendix A: Technical Information
+
+(text here)
+
+# Appendix B: Glossary
+
+(table or text here)
+
+# Appendix C: Acronyms
+
+(table here)
+
+# Appendix D: Document References
+
+(text here)
+
+# Footnotes
+
+(text here)
