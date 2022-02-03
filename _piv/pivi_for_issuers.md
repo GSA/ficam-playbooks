@@ -10,11 +10,11 @@ sidenav: piv
 subnav:
     - text: Executive Summary
       href: '#executive-summary'
-    - text: 1 Introduction
+    - text: 1. Introduction
       href: '#1-introduction'
-    - text: 2 Minimum Credential Requirements
+    - text: 2. Minimum Credential Requirements
       href: '#2-minimum-credential-requirements'
-    - text: 3 Special Considerations for Federal Agencies
+    - text: 3. Special Considerations for Federal Agencies
       href: '#3-special-considerations-for-federal-agencies
     - text: References
       href: '#appendix-a-technical-information'
@@ -36,7 +36,7 @@ July 27, 2017
 
 (text here)
 
-# 1 Introduction
+# 1. Introduction
 ## 1.1 Background
 
 (text here)
@@ -53,7 +53,7 @@ July 27, 2017
 
 (text here)
 
-# 2 Minimum Credential Requirements
+# 2. Minimum Credential Requirements
 ## 2.1 Common Terminology for Identity Credentials
 
 (text here)
@@ -90,7 +90,7 @@ July 27, 2017
 
 (text here)
 
-# 3 Special Considerations for Federal Agencies
+# 3. Special Considerations for Federal Agencies
 
 (text here)
 
