@@ -3,7 +3,6 @@ layout: page
 collection: piv
 title: Personal Identity Verification Interoperability for Issuers
 pubdate: 2017-07
-date: September 13, 2021
 permalink: piv/piviforissuers/
 sticky_sidenav: true
 sidenav: piv
@@ -35,6 +34,50 @@ July 27, 2017
 
 (text here)
 
-# Introduction
+# 1 Introduction
+## 1.1 Background
 
 (text here)
+
+## 1.2 Scope
+
+(text here)
+
+## 1.3 Document Objectives
+
+(text here)
+
+## 1.4 Assumptions
+
+(text here)
+
+# 2 Minimum Credential Requirements
+## 2.1 Common Terminology for Identity Credentials
+
+(text here)
+
+## 2.2 Trusted Identity
+
+(text here)
+
+### 2.2.1 PIV-Interoperable Identity Assurance
+
+(text here)
+
+### 2.2.2 PIV-Interoperable Authenticator Assurance
+
+(text here)
+
+### 2.2.3 PIV-Interoperable Suitability Assurance
+
+(text here)
+
+## 2.3 Federal Issuers and Non-Federal Issuers for PIV-Interoperable Credentials
+
+(text here)
+
+## 2.4 Technical Requirements
+
+(text here)
+
+
