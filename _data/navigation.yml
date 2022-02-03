@@ -71,6 +71,8 @@ piv:
     href: /piv/engineer/
   - text: User Guides
     href: /piv/user-guide/
+  - text: Personal Identity Verification Interoperability for Issuers
+    href: piv/piviforissuers/
 
 pivnetwork:
   - text: Back to PIV Guide
