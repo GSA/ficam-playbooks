@@ -108,7 +108,7 @@ July 27, 2017
 
 # Appendix B: Glossary
 
-(table or text here)
+(possibly do glossary like PACS glossary; not in a table)
 
 # Appendix C: Acronyms
 
