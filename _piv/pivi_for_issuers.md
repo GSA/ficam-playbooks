@@ -36,11 +36,15 @@ July 2010
 
 (text here)
 
-**Table 3: Authenticator Assurance of PIV-Interoperable Credentials**
+**Table 6: Federal Public Key Infrastructure Auditing and FISMA ATO Comparison**
 
-| Level of Assurance[^7] | Authenticator Assurance Level [^8] |
-| -------------------- | ------------------------ | 
-| Level of Assurance 4 | Authenticator Assurance Level 3 | 
+|                  | Scenario A: Non-Federal Issuer | Scenario B: Federal Issuer |
+|------------------|--------------------------------------|--------------------------------------|
+| **Type**      | Non-Federal Issuer of PIV-Interoperable Credentials | Federal Issuer of PIV-Interoperable Credentials |
+| **Federal PKI Audits** | 1. Annual Audits for the Certification Authorities directly<br>2. Annual Audits of the services and systems used with the Certification Authorities to collect information and manage credentials<br>3. Submission of sample artifacts for compliance testing | 1. Annual Audits for the Certification Authorities directly<br>2. Annual Audits of the services and systems used with the Certification Authorities to collect information and manage credentials<br>3. Submission of sample artifacts for compliance testing<br>4. Applicable **NIST Special Publication 800-79-2** requirements|
+| **FISMA Authorization to Operate** | | ● Additional security controls<br>● Continuous monitoring<br>● Government Designated Authorizing Official |
+| **Items to be Requested or Produced** | 1. Audit Compliance Letters for Certification Authorities<br><br>2. Audit Compliance Letters for Registration Authority components (inclusive of any Card Management systems) | 1. Audit Compliance Letters for Certification Authorities<br><br>2. Audit Compliance Letters for Registration Authority components (inclusive of any Card Management systems)<br><br>3. Authorization Memorandum issued by and signed by the Government Designated Authorizing Official<br><br>4. Registration Authority Agreements |
+
 
 
 
