@@ -36,6 +36,15 @@ July 2010
 
 (text here)
 
+**Table 1: PIV and PIV-Interoperable Definitions**
+
+| Assurance | Requirements Summary[^2] | PIV | PIV-Interoperable |
+| -------------------- | ------------ | ------------------| ------------------|
+| **Identity Assurance:** The robustness of the identity proofing process and the binding between an authenticator and a specific individual. | 1. In-person proofing<br>2. Capture and verification of two (2) independent identity documents<br>3. Capture of biometrics | Yes | Yes |
+| **Authenticator Assurance:** The robustness of the authentication process, and assurance that the user has possession of the authenticator. | 1. Public key infrastructure key pairs<br>2. Biometric<br>3. Hardware based credential | Yes | Yes |
+| **Suitability Assurance:** The investigative and adjudication processes which enhance the identity assurance. Suitability is associated with a position designation and/or risk assessment for determining an individual is suitable to work for or on behalf of the Federal Government. | ● A minimum of:<br>^^o A favorably adjudicated National Agency Check with Inquiries, or<br>^^o A favorably adjudicated Tier 1 or higher federal background investigation. | Yes | No |
+
+
 # 1. Introduction
 ## 1.1 Background
 
