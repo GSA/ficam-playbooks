@@ -324,3 +324,10 @@ These CA certificates have issued PIV authentication certificates previously and
 - Serial #: 61a90f3e5ff532f9fe6209d931279a82
 - Validity: December 10, 2014 to November 11, 2024
 - SHA-1 Hash: dc5b590800765864587902af983c21a7209be320
+
+#### WidePoint ORC NFI 4
+- Subject: CN = WidePoint ORC NFI 4, OU = Certification Authorities, O = WidePoint, C = US
+- Issuer: CN = WidePoint NFI Root 2, OU = Certification Authorities, O = WidePoint, C = US
+- Serial #: 3581750bd6e26757bcb9e0a4513da84946587ebf
+- Validity: February 18, 2020 to February 18, 2030
+- SHA-1 Hash: 5a95aea990a7aec492134a5b437cf3324f260793
