@@ -308,7 +308,7 @@ There are four primary documents referenced for security controls and audit requ
 
 For auditing, the Federal PKI requires:
 
-* Certification Authorities to be audited
+* Certification Authorities to be _audited_
 * Any Registration Authority systems and processes which are used by the Certification Authority to issue PIV or PIV-Interoperable credentials to be audited
 * Audits must encompass:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	the Security Controls Overlay of **NIST Special Publication 800-53**,<br>
