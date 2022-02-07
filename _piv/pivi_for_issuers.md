@@ -289,11 +289,50 @@ Table 5 outlines the different scenarios for issuers of PIV-Interoperable creden
 
 # 3. Special Considerations for Federal Agencies
 
-(text here)
+Federal agencies have identified the need to clarify the differences between:
+* the auditing performed to maintain compliance with the Federal PKI,
+* the auditing performed and required for PIV or PIV-Interoperable credential issuers to be granted an authorization to operate under the NIST Special Publication 800-79,
+* the Federal Information Security Modernization Act (FISMA) Authorization to Operate, and
+* contracting or procurement requirements.
+
+This section helps clarify these differences and the boundaries for federal agency Chief Information Security Officers.
 
 ## 3.1	Auditing Requirements
 
-(text here)
+There are four primary documents referenced for security controls and audit requirements for the systems used for issuing either PIV or PIV-Interoperable credentials:
+
+1. **NIST Special Publication 800-53** identifies the security control categories to be used for all systems
+2. Federal PKI defines the **Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems**
+3. **NIST Special Publication 800-79-2** identifies operational audits for the PIV credentialing activities
+4. Federal PKI defines the **FPKI Compliance Audit Requirements**
+
+For auditing, the Federal PKI requires:
+
+* Certification Authorities to be audited
+* Any Registration Authority systems and processes which are used by the Certification Authority to issue PIV or PIV-Interoperable credentials to be audited
+* Audits must encompass:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	the Security Controls Overlay of **NIST Special Publication 800-53**,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	the applicable **NIST Special Publication 800-79-2** requirements, and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	the compliance with the Certification Authority’s Certificate Policy and Certification Practices Statements.
+
+The audits are performed by third-party independent auditors and audit results must be submitted to the Federal PKI on a recurring basis. In addition to the third-party independent audits, the Certification Authorities and Registration Authority systems must submit to the Federal PKI on a recurring basis:
+
+* Samples of outputs from the systems for compliance inspection and testing, including:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Samples of all Certificate types issued, and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Samples of any PIV or PIV-Interoperable credentials issued.
+
+These sample artifacts are used to perform compliance inspection on the outputs of the systems in addition to the management, operational, and technical controls which are inspected during the audits. Non-compliant sample artifacts are reported to the Certification Authority, Registration Authority, or federal agency and remediation of non-compliant elements must be addressed or the entities will lose their compliance certification.
+
+The audits and the compliance or non-compliance of the Certification Authority or Registration Authority components are used by the Federal Government, other public sector, international, or commercial entities to assert a number of claims on websites, product documentation materials, memorandums, or contracting documents. These claims often include:
+* Federal PKI Provider
+* PIV Provider
+* PIV-Interoperable Provider
+* Compliance with the Federal PKI
+
+When asserting these claims, the audits and the associated processes and procedures are establishing the capability for federal agencies to trust the outputs of the systems and the credentials issued from the systems.
+
+Figure 2 shows the boundaries of the Federal PKI audit and compliance activities.
+
 
 ## 3.2 Acquiring PIV-Interoperable Services
 
