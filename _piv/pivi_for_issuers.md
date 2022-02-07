@@ -144,7 +144,7 @@ Table 2 identifies the PIV-Interoperable Level of Assurance and Identity Assuran
 
 **Table 2: Identity Assurance of PIV-Interoperable Credentials**
 
-| Level of Assurance[^3] | Identity Assurance Level [^4] |
+| Level of Assurance[^3] | Identity Assurance Level[^4] |
 | -------------------- | ------------------------ | 
 | Level of Assurance 4 | Identity Assurance Level 3 |
 
@@ -179,7 +179,7 @@ Table 3 identifies the PIV-Interoperable Authenticator Assurance levels as mappe
 
 **Table 3: Authenticator Assurance of PIV-Interoperable Credentials**
 
-| Level of Assurance[^7] | Authenticator Assurance Level [^8] |
+| Level of Assurance[^7] | Authenticator Assurance Level[^8] |
 | -------------------- | ------------------------ | 
 | Level of Assurance 4 | Authenticator Assurance Level 3 | 
 
