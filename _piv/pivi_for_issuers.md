@@ -130,14 +130,58 @@ For PIV credentials, individuals are also required to have common, minimum suita
 
 Suitability assurance may not be determined from a PIV-Interoperable credential.
 
-
 ### 2.2.1 PIV-Interoperable Identity Assurance
 
-(text here)
+The Federal Government’s identity assurance requirements are defined in FIPS 201-2 for PIV credentials. The PIV-Interoperable credentials shall adhere to the same identity assurance requirements as PIV credentials. A summation of the identity assurance requirements is defined here for informational purposes only.
+
+* In-person appearance and proofing
+* Verification of two independent identity documents or accounts
+* Capture of biometrics
+
+The full list of requirements for identity assurance for PIV-Interoperable credentials is listed in the **X.509 Certificate Policy for the Federal Bridge Certification Authority.**
+
+Table 2 identifies the PIV-Interoperable Level of Assurance and Identity Assurance levels as mapped to the Office of Management and Budget (OMB) Memorandums and National Institute of Standards and Technology (NIST) Special Publications.
+
+**Table 2: Identity Assurance of PIV-Interoperable Credentials**
+
+| Level of Assurance[^3] | Identity Assurance Level [^4] |
+| -------------------- | ------------------------ | 
+| Level of Assurance 4 | Identity Assurance Level 3 | 
 
 ### 2.2.2 PIV-Interoperable Authenticator Assurance
 
-(text here)
+The PKI certificates are where the identity assurance and authenticator assurance are asserted during use in networks, facilities, and systems. All PIV-Interoperable identity credentials must contain certificates issued from one of the Certification Authorities which operate under the Federal Public Key Infrastructure (Federal PKI) Certificate Policies.
+
+There are two Certificate Policies which govern the Federal PKI Certification Authorities:
+
+* Certificate Policy for the Federal Bridge Certification Authority
+* Certificate Policy for the Federal PKI Common Policy Framework
+
+There are Certification Authorities which operate and are audited for compliance to these Certificate Policies. The Certification Authorities also have Registration Authority services which may be built or operated by third-parties such as federal agencies or commercial service providers. The Registration Authority services encompass the _systems and processes_ where the initial collection of the Personally Identifiable Information (PII) is performed for the PIV or PIV- Interoperable identity assurance and lifecycle management functions.[^5] All Certification Authorities and Registration Authority components are subject to audits for compliance to management, operational, and technical controls specified in their respective Certificate Policies.[^6]
+
+Within this boundary of more than 100 existing and audited Certification Authorities, there are options operated and available for direct use by federal departments within the Executive Branch. There are also Certification Authorities which are operated for non-federal Executive Branch entities including Legislative and Judicial Branch agencies, and State, Local, Tribal, Territorial, International, and Commercial Partners.
+
+The Certificate Policies extension object identifier (OID) contained in the certificates asserts the identity assurance of the person presenting the credential and certificate, how the private keys are stored and managed, and how the certificate should be validated for usage.
+
+However, the Certificate Policies extension OID for the PIV Authentication Certificates is available only to Federal Government organizations. PIV-Interoperable authentication certificates may not assert the PIV Certificate Policies OIDs used for PIV Authentication. Therefore, additional policy defines comparable Certificate Policies’ OIDs that can be trusted by the Federal Government for use in PIV-Interoperable Authentication Certificates.
+
+The **X.509 Certificate Policy for the Federal Bridge Certification Authority** specifies the minimum requirements for the Federal Government to rely on PIV-Interoperable credentials, and includes all requirements for PIV-Interoperable credentials inclusive of:
+
+* Certificate policy extension object identifiers,
+* Clarification on identifier namespaces to be used, and
+* Credential requirements for security and auditing.
+
+All issuers of PIV-Interoperable credentials shall adhere to the requirements for PIV- Interoperable credentials outlined in the **X.509 Certificate Policy for the Federal Bridge Certification Authority.**
+
+Operationally, the Certification Authorities and Registration Authorities that may be subordinate to the **Certificate Policy for the Federal PKI Common Policy Framework** must map their management, security, and operational controls for PIV-Interoperable credentials without needing a _cross-certificate_ directly from the Federal Bridge Certification Authority. Policy mapping may be used; the Certification Authority must receive a certificate from Common Policy Framework which maps the Federal Bridge Certification Authority policy OIDs to the issuing Certification Authority’s OIDs for PIV-Interoperable.
+
+Table 3 identifies the PIV-Interoperable Authenticator Assurance levels as mapped to the Office of Management and Budget (OMB) Memorandums and NIST Special Publications.
+
+**Table 3: Authenticator Assurance of PIV-Interoperable Credentials**
+
+| Level of Assurance[^7] | Authenticator Assurance Level [^8] |
+| -------------------- | ------------------------ | 
+| Level of Assurance 4 | Authenticator Assurance Level 3 | 
 
 ### 2.2.3 PIV-Interoperable Suitability Assurance
 
