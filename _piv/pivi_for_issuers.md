@@ -445,7 +445,43 @@ This appendix provides additional technical information in support of the techni
 
 # Appendix D: Document References
 
-(text here)
+
+**FIPS 201-2:** Personal Identity Verification (PIV) of Federal Employees and Contractors 
+[https://csrc.nist.gov/publications/detail/fips/201/2/archive/2013-09-05](https://csrc.nist.gov/publications/detail/fips/201/2/archive/2013-09-05){:target="_blank"}{:rel="noopener noreferrer"}
+
+**HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors**
+https://www.dhs.gov/homeland-security-presidential-directive-12
+
+**NIST SP 800-37:** Guide for the Security Certification and Accreditation of Federal Information Systems 
+https://csrc.nist.gov/publications/detail/sp/800-37/archive/2004-05-20
+
+**NIST SP 800-63-2:** Electronic Authentication Guideline
+https://csrc.nist.gov/publications/detail/sp/800-63/2/archive/2013-08-29
+
+**NIST SP 800-63-3: ** Digital Identity Guidelines 
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-3.pdf
+
+**NIST SP 800-73-4: ** Interfaces for Personal Identity Verification (4 Parts) 
+https://csrc.nist.gov/publications/detail/sp/800-73/4/archive/2015-05-29
+
+**NIST SP 800-76: ** Biometric Data Specification for Personal Identity Verification
+https://csrc.nist.gov/publications/detail/sp/800-76/archive/2006-02-01
+
+**NIST SP 800-78: ** Cryptographic Algorithms and Key Sizes for Personal Identity Verification 
+https://csrc.nist.gov/publications/detail/sp/800-78/archive/2005-04-25
+
+**NIST SP 800-79-2: ** Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCI’s) and Derived PIV Credential Issuers (DPCI)
+https://csrc.nist.gov/publications/detail/sp/800-79/2/final
+
+**OMB A-130: ** Management of Federal Information Resources 
+https://georgewbush-whitehouse.archives.gov/omb/circulars/a130/a130trans4.html
+
+**X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework**
+https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf
+
+**X.509 Certificate Policy for the Federal Bridge Certification Authority**
+https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf
+
 
 # Footnotes
 
