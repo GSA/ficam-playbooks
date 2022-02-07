@@ -337,6 +337,35 @@ Figure 2 shows the boundaries of the Federal PKI audit and compliance activities
 
 <p align="center"><b>Figure 2: PIV-Interoperable Credentials and Federal Public Key Infrastructure Audit Boundaries</b></p>
 
+A FISMA Authorization to Operate is a separate and distinct assertion. The Federal PKI audits and processes do not assert that there is a Federal Government Designated Authorizing Official or _continuous monitoring_ requirements in place for _all_ Certification Authorities or Registration Authority components.
+
+Although the PIV-Interoperable issuers for non-federal entities may be operated and have continuous monitoring that are commensurate with commercial best practices, the federal agencies are still required to assume responsibility for any government data placed into systems which are bought, built, or used.
+
+Prior to _directly placing_ any PII in a service used to issue and manage PIV-Interoperable credentials or procuring any such service, federal agencies are required to confirm and request:
+
+* Audit Compliance Letters for Federal PKI compliance
+* An ATO Memorandum signed by a Federal Government Designated Authorizing Official (DAO)
+* Confirmation of compliance with continuous monitoring requirements
+ 
+Figure 3 shows the notional system boundaries of the required FISMA ATO for Federal agencies and issuers of PIV-Interoperable credentials.
+
+[![A diagram that displays an icon and label for PIV-I non-federal issuers on the left side of the diagram and an icon and a label for PIV-I federal issuers on the right side of the diagram. Four boxes appear in a grid below the PIV-I non-federal issuers label and four boxes appear in a grid below the PIV-I federal issuers label. The top set of boxes say Certification Authority (PKI). The bottom set of boxes say Registration Cred Mgmt service, proofing, lifecycle. There are arrows vertically and diagonally between the four boxes on the left side of the diagram and there are arrows vertically and diagonally between the four boxes on the right side of the diagram. On the left side of the diagram, the four boxes are labeled Identity Assurance. On the right side of the diagram, the two top boxes are labeled FISMA ATOs and the two bottom boxes are labeled FISMA ATOs. Three PIV-I card icons appear on the left side of the diagram and three PIV-I card icons appear on the right side of the diagram. The PIV-I card icons are labeled Authentication Assurance. On the left side of the diagram, there are arrows pointing from the bottom set of Identity Assurance boxes to the first set of PIV-I card icons. On the right side of the diagram, there are arrows pointing from the bottom set of FISMA ATO boxes to the second sent of PIV-I card icons.]({{site.baseurl}}/assets/piv/pivi-cred-and-fisma-ato.png)]({{site.baseurl}}/assets/piv/pivi-cred-and-fisma-ato.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 3: PIV-Interoperable Credentials and FISMA ATO</b></p>
+
+In addition, federal agencies using PIV-Interoperable services must request from the provider the Registration Authority Agreement. The Registration Authority Agreement must explain how the provider has implemented the credential management and lifecycle management requirements of the PIV-Interoperable Certificate Policy. The contents of the Registration Authority Agreement must be approved by the PIV-Interoperable provider’s policy authority as satisfactorily implementing the requirements, and submitted to the Federal PKI as part of the audit artifacts.
+
+Table 6 summarizes the FKI auditing and FISMA Authority to Operate distinctions.
+
+**Table 6: Federal Public Key Infrastructure Auditing and FISMA ATO Comparison**
+
+|                  | Scenario A: Non-Federal Issuer | Scenario B: Federal Issuer |
+|------------------|--------------------------------------|--------------------------------------|
+| **Type**      | Non-Federal Issuer of PIV-Interoperable Credentials | Federal Issuer of PIV-Interoperable Credentials |
+| **Federal PKI Audits** | 1. Annual Audits for the Certification Authorities directly<br>2. Annual Audits of the services and systems used with the Certification Authorities to collect information and manage credentials<br>3. Submission of sample artifacts for compliance testing | 1. Annual Audits for the Certification Authorities directly<br>2. Annual Audits of the services and systems used with the Certification Authorities to collect information and manage credentials<br>3. Submission of sample artifacts for compliance testing<br>4. Applicable **NIST Special Publication 800-79-2** requirements|
+| **FISMA Authorization to Operate** | | ● Additional security controls<br>● Continuous monitoring<br>● Government Designated Authorizing Official |
+| **Items to be Requested or Produced** | 1. Audit Compliance Letters for Certification Authorities<br><br>2. Audit Compliance Letters for Registration Authority components (inclusive of any Card Management systems) | 1. Audit Compliance Letters for Certification Authorities<br><br>2. Audit Compliance Letters for Registration Authority components (inclusive of any Card Management systems)<br><br>3. Authorization Memorandum issued by and signed by the Government Designated Authorizing Official<br><br>4. Registration Authority Agreements |
+
 ## 3.2 Acquiring PIV-Interoperable Services
 
 (text here)
