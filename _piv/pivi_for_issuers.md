@@ -450,10 +450,10 @@ This appendix provides additional technical information in support of the techni
 [https://csrc.nist.gov/publications/detail/fips/201/2/archive/2013-09-05](https://csrc.nist.gov/publications/detail/fips/201/2/archive/2013-09-05){:target="_blank"}{:rel="noopener noreferrer"}
 
 **HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors**
-https://www.dhs.gov/homeland-security-presidential-directive-12
+[https://www.dhs.gov/homeland-security-presidential-directive-12](https://www.dhs.gov/homeland-security-presidential-directive-12){:target="_blank"}{:rel="noopener noreferrer"}
 
 **NIST SP 800-37:** Guide for the Security Certification and Accreditation of Federal Information Systems 
-https://csrc.nist.gov/publications/detail/sp/800-37/archive/2004-05-20
+[https://csrc.nist.gov/publications/detail/sp/800-37/archive/2004-05-20](https://csrc.nist.gov/publications/detail/sp/800-37/archive/2004-05-20){:target="_blank"}{:rel="noopener noreferrer"}
 
 **NIST SP 800-63-2:** Electronic Authentication Guideline
 https://csrc.nist.gov/publications/detail/sp/800-63/2/archive/2013-08-29
