@@ -232,15 +232,60 @@ Figure 1 is used in later sections of this document to identify the auditing and
 
 ## 2.4 Technical Requirements
 
-(text here)
+Basic technology requirements must be met for identity credentials to interact with the Federal Government’s infrastructure for PIV credentials. PIV-Interoperable credentials must conform to NIST technical specifications for PIV credentials, as defined in:
+* **FIPS 201-2**
+* **NIST Special Publication 800-73-4**
+* **NIST Special Publication 800-78-4**
+* **NIST Special Publication 800-76-2**
+
+Further clarification of the NIST Special Publications is required to address 1) visual distinction and 2) identifiers.
 
 ### 2.4.1 Visual Distinction
 
-(text here)
+PIV-Interoperable credentials shall contain distinctive markings indicating the issuing entity and shall be visually distinct from PIV credentials. Common options for visual distinction include being printed in a horizontal (landscape) layout versus a vertical layout, or displaying PIV-I in one of the optional printed fields. The horizontal (landscape) layout is recommended to promote consistency in visual distinction.
 
 ### 2.4.2 Identifier Namespace
 
-(text here)
+Effective use of PIV and PIV-Interoperable identity credentials requires one or more identifiers to support the interoperability and use in distributed systems across the Federal Government.
+
+PIV credentials include a number of identifiers which can be used to link the credential to accounts in physical access control systems (PACS), networks, and applications. These identifiers include, but are not limited to:
+
+* Card Universally Unique Identifier (Card UUID)
+* Card Holder Unique Identifier (CHUID)
+* Federal Agency Smart Credential Number (FASC-N)
+
+PIV-Interoperable credentials have these same requirements for identifiers. While FIPS 201-2 deprecates the use of the CHUID authentication mechanism, the CHUID and FASC-N remain elements of the PIV Data Model and these elements may still be in use in legacy physical access control systems for account linking purposes.
+
+There are additional challenges for PIV-Interoperable credentials. For example:
+
+* The FASC-N number scheme is a smart number which incorporates a federal agency code.
+* The FASC-N cannot be easily extended to allow sufficient identifier namespace to support PIV-Interoperable credentials issued by NFIs including State, Local, Tribal, Territorial, or Commercial Partners.
+* The **X.509 Certificate Policy for Federal Bridge Certification Authority** does not specifically address Federal Issuers of PIV-Interoperable credentials and FASC-N numbering schema.
+
+For these reasons, the FASC-N requires specific attention for PIV-Interoperable credentials.
+
+Requirements for the FASC-N are:
+
+* NFIs of PIV-Interoperable credentials are required to generate and issue FASC-N values which populate the value “9” for the Agency Code, System Code, and Credential Number:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o This results in fourteen (14) nines: 9999 9999 999999
+
+* Federal Issuers of PIV-Interoperable credentials are strongly encouraged to generate and issue FASC-N values that comply with the requirements for NFIs of PIV- Interoperable credential, including:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Populating the fourteen (14) nines for the Agency Codes, System Codes, and Credential Number: 9999 9999 999999
+
+* Federal Issuers of PIV-Interoperable credentials _may choose_ to generate and issue FASC- N values which contain their assigned Agency Codes,[^10] System Codes, and a Credential Number, in accordance with their PIV Card Issuer Authorization[^11]
+
+* Federal Issuers of PIV-Interoperable credentials who choose to generate and issue FASC- N values which contain their assigned Agency Codes, a System Code, and a Credential Number, shall be aware that:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o Provisioning and use of the federally issued PIV-Interoperable credentials in facility access may be negatively impacted
+
+Table 5 outlines the different scenarios for issuers of PIV-Interoperable credentials, the portion of the FASC-N values impacted, and issues expected to be encountered and mitigated.
+
+**Table 5: FASC-N Values for PIV-Interoperable Credentials and Issues**
+
+| Issuer of PIV- Interoperable | FASC-N Value | Issues |
+| -------------------- | ------------------------ | ------------------------ |
+| **Non-Federal** | Agency Code, System Code, and Credential Number must be all “9”s<br><br>9999 9999 999999 | Departments and agencies with PACS which solely use    FASC-N for account linking should not use PIV- Interoperable credentials for unattended facilities access.<br><br>The PACS should be updated to use the Card UUID value for the account linking. |
+| **Federal** | Agency Code, System Code, and Credential Number strongly encouraged to be all “9”s <br><br>9999 9999 999999 | Departments and agencies with PACS that solely use FASC-N for account linking should not use PIV- Interoperable credentials for unattended facilities access.<br><br>The PACS should be updated to use the Card UUID value for the account linking. |
+| **Federal** | Agency Code, System Code, and Credential Number may be populated <br><br>1300 0002 456859| PACS that use the presence of the “9” values to determine whether the credential is a PIV- Interoperable or PIV credential may reject the federally issued PIV-Interoperable credential during use.<br><br>The PACS may be erroneously checking that the FASC- N is populated with non-“9” values and attempting to validate a PIV certificate extension policy OID instead of the PIV-Interoperable certificate extension policy identifier. <br><br>The PACS should be updated to use the Card UUID value for the account linking. |
 
 # 3. Special Considerations for Federal Agencies
 
