@@ -22,11 +22,11 @@ subnav:
 {% endfor %}
 {% assign branches = branches | uniq | sort %}
 
-The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates.
+The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) and PIV-Interoperable (PIV-I) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates.
 
 ## PIV Issuer Information
 
-{% include alert-info.html content="This table was last updated on <b>May 4, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
+{% include alert-info.html content="This table was last updated on <b>FEbruary  7, 2022</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
 <br>
   
