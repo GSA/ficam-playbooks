@@ -146,7 +146,7 @@ Table 2 identifies the PIV-Interoperable Level of Assurance and Identity Assuran
 
 | Level of Assurance[^3] | Identity Assurance Level [^4] |
 | -------------------- | ------------------------ | 
-| Level of Assurance 4 | Identity Assurance Level 3 | 
+| Level of Assurance 4 | Identity Assurance Level 3 |
 
 ### 2.2.2 PIV-Interoperable Authenticator Assurance
 
@@ -185,11 +185,37 @@ Table 3 identifies the PIV-Interoperable Authenticator Assurance levels as mappe
 
 ### 2.2.3 PIV-Interoperable Suitability Assurance
 
-(text here)
+Suitability assurance is defined as the investigative and adjudication processes which _enhance_ the identity assurance. These processes are used to determine suitability for granting access to federal data, applications, facilities, and networks. Only the Federal Government may determine the fitness or suitability of an individual for access to Federal Government assets.
+
+PIV-Interoperable processes are unable to mirror the suitability assurance processes employed for the PIV credential. PIV-Interoperable credentials assert no suitability assurance in a _baseline, standardized manner._
+
+A Federal Government relying party may associate the PIV-Interoperable credential with additional off-credential information to determine the fitness or suitability of the requested access. Examples of off-credential information could be a record check against investigation databases, an entitlements attribute, or other manual or automated processes.
+
+PIV-Interoperable credentials may be appropriate for situations where an agency has determined that a PIV credential is not warranted, but the individual requires access. Such situations may include, but are not limited to:
+
+* Temporary/seasonal employees, visiting scientists and guest researchers, or contractor personnel requiring access for less than six (6) months;
+* Non-U.S. nationals with insufficient residency in the U.S. to satisfactorily conduct the background investigation; and
+* Personnel operating outside the contiguous U.S. under special risk security considerations, as outlined in FIPS 201-2.
+
+A standardized set of procedures and processes for suitability assurance covering any or all of these possible use cases is outside the scope of this document.
+
+Where suitability is a concern for a federal agency, the agency may require further suitability checks prior to granting any access. This document does not prohibit a suitability and fitness determination from being required by federal departments and agencies prior to issuing a federal PIV-Interoperable credential _or_ granting any access to an individual with a PIV-Interoperable credential.
 
 ## 2.3 Federal Issuers and Non-Federal Issuers for PIV-Interoperable Credentials
 
-(text here)
+For PIV-Interoperable credentials, there may be Federal Issuers and Non-Federal Issuers who participate. Many documents have asserted the term “Non-Federal Issuer” or NFI as synonymous with a PIV-Interoperable credential; the two terms are different and there is a need to clarify the terminology.
+
+Two (2) sample scenarios are outlined in Table 4 to clarify the difference between a NFI and a Federal Issuer of PIV-Interoperable credentials.
+
+**Table 4: Scenarios of a Non-Federal and Federal Issuer of PIV-Interoperable Credentials**
+
+|                  | Scenario A: Non-Federal Issuer | Scenario B: Federal Issuer |
+|------------------|--------------------------------------|--------------------------------------|
+| **Description**      | Federal Agency **A** has affiliates or service providers who have persons who manage data systems, or need access to the federal networks or facilities | Federal Agency **B** has affiliates or persons who manage data systems, or need access to the federal networks or facilities |
+| **Scenario Outline** | Federal Agency A:<br><br>1. Requests partners, affiliates, or service providers to have their contracted or employee personnel obtain PIV-I credentials<br><br>2. Provides the request through a Department or Agency-level Policy, Memorandum, or contract action with the affiliate or service provider<br><br>3. The partner, affiliates, or service provider chooses the PIV-I service or builds their own, and makes any contractual or other arrangements with the PIV-I service | Federal Agency B: <br><br>1. Selects a PIV-I credentialing service to use<br><br>2. Pays for or builds the PIV-I service<br><br>3. Authorizes and directs persons to use a designated PIV-I service and receive PIV-I credentials<br><br>4. Has responsibility for the sponsoring of persons, lifecycle management, and other activities including revoking the credentials after the person terminates any service |
+| **Type**             | _Non-Federal Issuer of PIV-Interoperable Credentials_ | _Federal Issuer of PIV-Interoperable Credentials_ |
+| **Examples**         | ● State, Local, Tribal, and Territorial partners<br>● Aerospace and Defense partners<br>● Financial Services partners | ● Federal Agency B has determined that persons under their authority require PIV- Interoperable credentials to meet a use case where PIV credentials do not apply |
+
 
 ## 2.4 Technical Requirements
 
