@@ -36,14 +36,22 @@ July 2010
 
 (text here)
 
-**Table 6: Federal Public Key Infrastructure Auditing and FISMA ATO Comparison**
+|                  | Technical Requirements | PIV | PIV-Interoperable|
+|------------------|--------------------------------------|:------------:|:----------------------:|
+| **Trust**      | Identity Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Level of Assurance 4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Identity Assurance Level 3 (draft NIST SP 800-63-3) | ● | ● |
+|                        | Authenticator Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Level of Assurance 4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Authenticator Assurance Level 3 (draft NIST SP 800-63-3) | ● | ● |
+|                        | Suitability Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Favorably adjudicated National Agency Check with Inquiries (minimum) or other Tier 1 investigation | ● |    |
+|                        | PIV policy object identifier on PIV Authentication Certificates | ● |    |
+|                        | PIV-I equivalent policy object identifier on PIV-I Authentication Certificates |    | ● |
+|                        | PIV Content Signing object signing certificate | ● |    |
+|                        | PIV-I Content Signing equivalent object signing certificate |    | ● |
+|                        | Card stock certified | ● | ● |
+|                        | PIV Application Identifier (AID) | ● | ● |
+|                        | Command edge and NIST SP 800-85 conformant | ● | ● |
+| **Credential Edge** | NIST SP 800-73-4 conformant GUID present in the CHUID | ● | ● |
+|                        | RFC 4122 conformant UUID required in the GUID data element of the CHUID | ● | ● |
+|                        | RFC 4122 conformant UUID present in the Authentication Certificates | ● | ● |
 
-|                  | Scenario A: Non-Federal Issuer | Scenario B: Federal Issuer |
-|------------------|--------------------------------------|--------------------------------------|
-| **Type**      | Non-Federal Issuer of PIV-Interoperable Credentials | Federal Issuer of PIV-Interoperable Credentials |
-| **Federal PKI Audits** | 1. Annual Audits for the Certification Authorities directly<br>2. Annual Audits of the services and systems used with the Certification Authorities to collect information and manage credentials<br>3. Submission of sample artifacts for compliance testing | 1. Annual Audits for the Certification Authorities directly<br>2. Annual Audits of the services and systems used with the Certification Authorities to collect information and manage credentials<br>3. Submission of sample artifacts for compliance testing<br>4. Applicable **NIST Special Publication 800-79-2** requirements|
-| **FISMA Authorization to Operate** | | ● Additional security controls<br>● Continuous monitoring<br>● Government Designated Authorizing Official |
-| **Items to be Requested or Produced** | 1. Audit Compliance Letters for Certification Authorities<br><br>2. Audit Compliance Letters for Registration Authority components (inclusive of any Card Management systems) | 1. Audit Compliance Letters for Certification Authorities<br><br>2. Audit Compliance Letters for Registration Authority components (inclusive of any Card Management systems)<br><br>3. Authorization Memorandum issued by and signed by the Government Designated Authorizing Official<br><br>4. Registration Authority Agreements |
 
 
 
