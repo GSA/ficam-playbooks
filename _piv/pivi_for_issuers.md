@@ -470,7 +470,7 @@ This appendix provides additional technical information in support of the techni
 **NIST SP 800-78:** Cryptographic Algorithms and Key Sizes for Personal Identity Verification 
 [https://csrc.nist.gov/publications/detail/sp/800-78/archive/2005-04-25](https://csrc.nist.gov/publications/detail/sp/800-78/archive/2005-04-25){:target="_blank"}{:rel="noopener noreferrer"}
 
-**NIST SP 800-79-2:** Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCIs) and Derived PIV Credential Issuers (DPCI)
+**NIST SP 800-79-2:** Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)
 [https://csrc.nist.gov/publications/detail/sp/800-79/2/final](https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}
 
 **OMB A-130:** Management of Federal Information Resources 
