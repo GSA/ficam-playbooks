@@ -72,15 +72,26 @@ Version 2.0 of this document has been updated to:
 *	Update references and terminology, and<br>
 *	Add clarification for federal departments and agencies on the scope of security, auditing, and procurement requirements.
 
-
-
 ## 1.3 Document Objectives
 
-(text here)
+This document provides solutions for overcoming the barriers to federal reliance on identity credentials which are defined as interoperable with PIV. Four specific areas of concern have been identified:
+
+1. **Common terminology for identity credentials and issuers** – To ensure consistency, a lexicon for differentiating a PIV credential from a credential interoperable with PIV infrastructure, and the differences between Non-Federal and Federal Issuers, has been developed.
+2. **Assured identity** – The fundamental purpose of an identity credential is to establish the identity of the credential holder. Therefore, an identity credential must be issued in a federated model and consistent manner which provides the Federal Government with a requisite level of identity assurance.
+3. **Technical requirements** – For identity credentials to be interoperable with the federal PIV infrastructure, basic technological requirements must be met.
+4. **Security and auditing** – The boundaries for auditing and compliance requirements require clarification for federal agencies.
+
+For each of these, a minimum set of requirements is described that will allow identity credentials to technically interoperate with Federal Government PIV systems and be trusted by Federal Government relying parties.
 
 ## 1.4 Assumptions
 
-(text here)
+The following assumptions apply:
+
+1. Federal departments and agencies determine the extent to which they will trust PIV- Interoperable credentials.
+2. Possession of a PIV-Interoperable credential does not infer an access or authorization of any kind.
+3. User privileges and entitlements (Authorization) are determined solely by the Federal Government relying party.
+4. PIV-Interoperable credentials shall not be considered a substitute or alternative credential for populations otherwise subject to PIV requirements.
+
 
 # 2. Minimum Credential Requirements
 ## 2.1 Common Terminology for Identity Credentials
