@@ -310,15 +310,15 @@ For auditing, the Federal PKI requires:
 
 * Certification Authorities to be audited
 * Any Registration Authority systems and processes which are used by the Certification Authority to issue PIV or PIV-Interoperable credentials to be audited
-* Audits must encompass:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	the Security Controls Overlay of **NIST Special Publication 800-53**,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	the applicable **NIST Special Publication 800-79-2** requirements, and
+* Audits must encompass:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	the Security Controls Overlay of **NIST Special Publication 800-53**,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	the applicable **NIST Special Publication 800-79-2** requirements, and<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	the compliance with the Certification Authority’s Certificate Policy and Certification Practices Statements.
 
 The audits are performed by third-party independent auditors and audit results must be submitted to the Federal PKI on a recurring basis. In addition to the third-party independent audits, the Certification Authorities and Registration Authority systems must submit to the Federal PKI on a recurring basis:
 
-* Samples of outputs from the systems for compliance inspection and testing, including:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Samples of all Certificate types issued, and
+* Samples of outputs from the systems for compliance inspection and testing, including:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Samples of all Certificate types issued, and<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Samples of any PIV or PIV-Interoperable credentials issued.
 
 These sample artifacts are used to perform compliance inspection on the outputs of the systems in addition to the management, operational, and technical controls which are inspected during the audits. Non-compliant sample artifacts are reported to the Certification Authority, Registration Authority, or federal agency and remediation of non-compliant elements must be addressed or the entities will lose their compliance certification.
@@ -333,6 +333,9 @@ When asserting these claims, the audits and the associated processes and procedu
 
 Figure 2 shows the boundaries of the Federal PKI audit and compliance activities.
 
+[![A diagram that displays an icon and label for PIV-I non-federal issuers on the left side of the diagram and an icon and a label for PIV-I federal issuers on the right side of the diagram. Four boxes appear in a grid below the PIV-I non-federal issuers label and four boxes appear in a grid below the PIV-I federal issuers label. The top set of boxes say Certification Authority (PKI). The bottom set of boxes say Registration Cred Mgmt service, proofing, lifecycle. There are arrows vertically and diagonally between the four boxes on the left side of the diagram and there are arrows vertically and diagonally between the four boxes on the right side of the diagram. These two sets of four boxes are labeled Identity Assurance. Three PIV-I card icons appear on the left side of the diagram and three PIV-I card icons appear on the right side of the diagram. The PIV-I card icons are labeled Authentication Assurance. There are arrows pointing from the bottom set of Identity Assurance boxes to the two sets of PIV-I card icons. On the left side of the diagram, the Identity Assurance and Authentication sections are labeled Federal PKI Audits.]({{site.baseurl}}/assets/piv/pivi-cred-and-fpki-audit.png)]({{site.baseurl}}/assets/piv/pivi-cred-and-fpki-audit.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 2: PIV-Interoperable Credentials and Federal Public Key Infrastructure Audit Boundaries</b></p>
 
 ## 3.2 Acquiring PIV-Interoperable Services
 
