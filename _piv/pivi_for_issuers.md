@@ -118,7 +118,18 @@ Section 2.2 outlines more information for the identity assurance, authenticator 
 
 ## 2.2 Trusted Identity
 
-(text here)
+The fundamental purpose of an identity credential is to establish a trust foundation based on:
+* the _identity assurance_ of the person, and
+* the _authenticator assurance_ of the credential.
+
+Therefore, the PIV-Interoperable credentials must be issued in a manner that provides the Federal Government with a commensurate level of trust for _identity assurance_ and _authenticator assurance._
+
+For PIV credentials, individuals are also required to have common, minimum suitability assurance defined as:
+
+* a baseline suitability assurance of the person to work for or on behalf of the Federal Government.
+
+Suitability assurance may not be determined from a PIV-Interoperable credential.
+
 
 ### 2.2.1 PIV-Interoperable Identity Assurance
 
