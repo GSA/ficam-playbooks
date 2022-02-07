@@ -60,10 +60,19 @@ A definition for a PIV-_Interoperable_ credential for federal agencies is requir
 *	Security and auditing clarifications, and<br>
 *	Procurement clarifications.
 
-
 ## 1.2 Scope
 
-(text here)
+This document is limited to describing identity credentials that interoperate with the Federal Government PIV infrastructure and may be accepted by the Federal Government for access to data, applications, facilities, and networks.
+
+This document does not address the use cases for when it is appropriate or allowed for federal agencies to directly issue alternate non-PIV credentials for interoperability with PIV to employees, contractors, and affiliates.
+
+Version 2.0 of this document has been updated to:
+
+*	Remove many duplicative references to PIV-Interoperable requirements which have been stated in other government documents as authoritative,<br>
+*	Update references and terminology, and<br>
+*	Add clarification for federal departments and agencies on the scope of security, auditing, and procurement requirements.
+
+
 
 ## 1.3 Document Objectives
 
