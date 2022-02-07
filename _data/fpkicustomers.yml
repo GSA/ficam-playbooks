@@ -172,8 +172,8 @@
  branch: Executive
  agency: National Science Foundation
  credentialProvider: USAccess and XTec
- ssp: Entrust Federal SSP
- ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> 
+ ssp: Entrust Federal SSP and WidePoint ORC NFI
+ ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> and <a href="#widepoint-orc-nfi-4">WidePoint ORC NFI 4</a>
 -
  branch: Executive
  agency: Office of Personnel Management
