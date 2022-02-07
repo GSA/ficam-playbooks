@@ -92,11 +92,29 @@ The following assumptions apply:
 3. User privileges and entitlements (Authorization) are determined solely by the Federal Government relying party.
 4. PIV-Interoperable credentials shall not be considered a substitute or alternative credential for populations otherwise subject to PIV requirements.
 
-
 # 2. Minimum Credential Requirements
 ## 2.1 Common Terminology for Identity Credentials
 
-(text here)
+To ensure consistency, a lexicon for differentiating a Federal Government PIV credential from a PIV-Interoperable credential was developed.
+
+There is a lack of standard terminology to distinguish between characteristics of PIV credentials and PIV-Interoperable credentials in the identity credential space. This can result in confusion, uncertainty, or misunderstanding. This document resolves the terminology problem by proposing a more complete set of identity credential terms and scoping statements that unambiguously describe federal PIV credentials, federally issued PIV-Interoperable credentials, and non-Federally issued PIV-Interoperable credentials.
+
+* **PIV credential** – An identity credential that is fully conformant with Federal Government PIV Standards including _identity assurance,_ _authenticator assurance,_ and _baseline suitability assurance._
+* **PIV-Interoperable credential** – An identity credential that is conformant with the Federal Government PIV Standards for _identity assurance_ and _authenticator assurance._
+
+Table 1 provides a summary of the identity assurance, authenticator assurance, and baseline suitability assurance requirements.
+
+**Table 1: PIV and PIV-Interoperable Definitions**
+
+| Assurance | Requirements Summary[^2] | PIV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | PIV-Interoperable |
+| -------------- | ------------ | ------------------| ------------------|
+| **Identity Assurance:** The robustness of the identity proofing process and the binding between an authenticator and a specific individual. | 1. In-person proofing<br>2. Capture and verification of two (2) independent identity documents<br>3. Capture of biometrics | Yes | Yes |
+| **Authenticator Assurance:** The robustness of the authentication process, and assurance that the user has possession of the authenticator. | 1. Public key infrastructure key pairs<br>2. Biometric<br>3. Hardware based credential | Yes | Yes |
+| **Suitability Assurance:** The investigative and adjudication processes which enhance the identity assurance. Suitability is associated with a position designation and/or risk assessment for determining an individual is suitable to work for or on behalf of the Federal Government. | ● A minimum of:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o A favorably adjudicated _National Agency Check with Inquiries_, or<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o A favorably adjudicated Tier 1 or higher federal background investigation. | Yes | No |
+
+All individuals issued PIV credentials are _required_ to have common, minimum suitability assurance as specified in FIPS 201-2, Section 2.1 Control Objectives. Individuals with PIV- Interoperable credentials assert no suitability assurance in a baseline, standardized manner.
+
+Section 2.2 outlines more information for the identity assurance, authenticator assurance, and suitability assurance.
 
 ## 2.2 Trusted Identity
 
