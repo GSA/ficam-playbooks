@@ -34,26 +34,12 @@ July 2010
 
 # Executive Summary
 
-(text here)
+Federal agencies are interested in issuing and acquiring identity credentials and credential services that are not Personal Identity Verification (PIV) credentials, but are (a) technically interoperable with Federal Government PIV infrastructure, and (b) issued in a manner that allows Federal Government relying parties to trust the credentials. The PIV credential standard, Federal Information Processing Standards (FIPS) 201-2, has requirements[^1] that only federal agencies can meet to issue PIV credentials, requiring needed guidance for Issuers of PIV- Interoperable credentials. Prior guidance for the issuance of PIV-Interoperable credentials neglected to address the issuance of PIV-Interoperable credentials by federal agencies, requiring additional guidance for all issuers.
 
-|                  | Technical Requirements | PIV | PIV-Interoperable|
-|------------------|--------------------------------------|:------------:|:----------------------:|
-| **Trust**      | Identity Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Level of Assurance 4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Identity Assurance Level 3 (draft NIST SP 800-63-3) | ● | ● |
-|                        | Authenticator Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Level of Assurance 4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Authenticator Assurance Level 3 (draft NIST SP 800-63-3) | ● | ● |
-|                        | Suitability Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Favorably adjudicated National Agency Check with Inquiries (minimum) or other Tier 1 investigation | ● |    |
-|                        | PIV policy object identifier on PIV Authentication Certificates | ● |    |
-|                        | PIV-I equivalent policy object identifier on PIV-I Authentication Certificates |    | ● |
-|                        | PIV Content Signing object signing certificate | ● |    |
-|                        | PIV-I Content Signing equivalent object signing certificate |    | ● |
-|                        | Card stock certified | ● | ● |
-|                        | PIV Application Identifier (AID) | ● | ● |
-|                        | Command edge and NIST SP 800-85 conformant | ● | ● |
-| **Credential Edge** | NIST SP 800-73-4 conformant GUID present in the CHUID | ● | ● |
-|                        | RFC 4122 conformant UUID required in the GUID data element of the CHUID | ● | ● |
-|                        | RFC 4122 conformant UUID present in the Authentication Certificates | ● | ● |
+This document provides the guidance needed to assist both Federal Issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) identity credentials in achieving credential
+interoperability with the Federal Government PIV infrastructure. This document’s scope is limited to the issuance of PIV-Interoperable credentials; federal departments and agencies must continue to make their own authorization determination to allow or deny access when a PIV-Interoperable credential is used for authentication.
 
-
-
+This document advocates a set of minimum requirements for PIV-Interoperable credentials that can be trusted by the Federal Government, and details solutions to the four barriers to interoperability that currently challenge Federal government. These four barriers are as follows:
 
 
 # 1. Introduction
