@@ -414,7 +414,34 @@ This appendix provides additional technical information in support of the techni
 
 # Appendix C: Acronyms
 
-(table here)
+| Acronym | Definition |
+|------------------|---------------------------------|
+| CA | Certification Authority |
+| CP | Certificate Policy |
+| CHUID | Card Holder Unique Identifier |
+| FASC-N | Federal Agency Smart Credential-Number |
+| FBCA | Federal Bridge Certification Authority |
+| FIPS | Federal Information Processing Standard |
+| FPKI | Federal Public Key Infrastructure |
+| GSA | General Services Administration |
+| GUID | Global Unique Identification Number |
+| HSPD-12| Homeland Security Presidential Directive 12|
+| LACS | Logical Access Control System |
+| NAC | National Agency Check |
+| NACI | National Agency Check with Written Inquiries |
+| NFI | Non-Federal Issuer |
+| NIST | National Institute of Standards and Technology |
+| OID | Object Identifier |
+| OMB | Office of Management and Budget |
+| OPM | Office of Personnel Management |
+| PACS | Physical Access Control System |
+| PIN | Personal Identification Number |
+| PIV | Personal Identity Verification |
+| PIV-I | Personal Identity Verification-Interoperable |
+| PKI | Public Key Infrastructure |
+| SP | Special Publication |
+| U.S.| United States |
+| UUID | Universally Unique Identifier |
 
 # Appendix D: Document References
 
