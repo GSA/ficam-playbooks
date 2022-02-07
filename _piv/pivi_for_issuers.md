@@ -52,6 +52,8 @@ For additional information concerning this document, please contact icam@gsa.gov
 
 The Federal Government’s reliance (trust) on PIV credentials establishes a baseline for identity assurance, authenticator assurance, and suitability assurance. Federal agencies and issuers of identity credentials have expressed a desire to produce identity credentials that can be interoperable with Federal Government Personal Identity Verification (PIV) infrastructure and could be trusted by the Federal Government for use in authenticating to facilities, networks, and systems.
 
+A definition for a PIV-Interoperable credential for federal agencies is required to address:
+
 ## 1.2 Scope
 
 (text here)
