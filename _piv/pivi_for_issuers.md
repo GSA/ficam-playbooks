@@ -484,4 +484,15 @@ This appendix provides additional technical information in support of the techni
 
 # Footnotes
 
-(text here)
+[^1]: In particular, these requirements are specified in FIPS 201-2 Section 2.1 Control Objectives, related to adjudication of fitness and suitability, and are common minimum personnel assurance for all federal PIV holders.
+[^2]: Requirements are summarized only. For the detailed requirements, reference the source documents outlined in Section 2.2.
+[^3]: As defined in OMB Memorandum 04-04 and NIST Special Publication 800-63-2.
+[^4]: As defined in _draft_ NIST Special Publication 800-63-3. The 800-63 Revision 3 (800-63-3) specifies three levels for identity assurance which are mapped to the four overall levels of assurance.
+[^5]: This includes Card Management Systems and any associated software or hardware components used to collect and manage information used in the issuance and lifecycle management for PIV or PIV-Interoperable credentials. 
+[^6]: The compliance audits may include the Certificate Policies maintained by the Certification Authority which are mapped to the Certificate Policy for the Federal Bridge or the Certificate Policy for the Federal PKI Common Policy Framework.
+[^7]: As defined in OMB Memorandum 04-04 and NIST Special Publication 800-63-2.
+[^8]: As defined in NIST Special Publication 800-63-3. The 800-63 Revision 3 (800-63-3) specifies three levels for authenticator assurance which are mapped to the four overall levels of assurance.
+[^9]: No suitability assurance shown. PIV-Interoperable credentials when issued by either non-federal or federal entities assert no standardized suitability and fitness determinations.
+[^10]: NIST Special Publication 800-87
+[^11]: NIST Special Publication 800-79-2
+
