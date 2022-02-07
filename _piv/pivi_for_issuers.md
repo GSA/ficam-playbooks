@@ -368,15 +368,49 @@ Table 6 summarizes the FKI auditing and FISMA Authority to Operate distinctions.
 
 ## 3.2 Acquiring PIV-Interoperable Services
 
-(text here)
+When contracting either through interagency agreements or commercially sourced services for PIV-Interoperable services, federal agencies may have several choices concerning the extent of the service. As a federally-contracted service storing PII of persons under the authority of the federal agency, all contracts and procurement language must include the requirements to:
+
+* Have an existing FISMA Authorization to Operate or provisions to obtain and maintain an Authorization to Operate
+* Submit to continuous monitoring, inclusive of requirements for penetration testing and vulnerability scanning by the Federal Government
+
+This must be a condition of the contract, and contract language should make it clear that failure to comply with FISMA and other security requirements will result in summary termination of the contract.
+
+A further consideration is the System of Records Notice (SORN). Many agencies should, wherever possible, be able to leverage the SORN associated with the issuance of PIV credentials for the issuance of PIV-Interoperable credentials, since the purpose of PIV-Interoperable issuance is within its scope.
 
 # Appendix A: Technical Information
 
-(text here)
+This appendix provides additional technical information in support of the technical requirements. The following table provides a comparison of the requirements for each credential type.
+
+|                  | Technical Requirements | PIV | PIV-Interoperable|
+|------------------|--------------------------------------|:------------:|:----------------------:|
+| **Trust**      | Identity Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Level of Assurance 4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Identity Assurance Level 3 (draft NIST SP 800-63-3) | ● | ● |
+|                        | Authenticator Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Level of Assurance 4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Authenticator Assurance Level 3 (draft NIST SP 800-63-3) | ● | ● |
+|                        | Suitability Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Favorably adjudicated National Agency Check with Inquiries (minimum) or other Tier 1 investigation | ● |    |
+|                        | PIV policy object identifier on PIV Authentication Certificates | ● |    |
+|                        | PIV-I equivalent policy object identifier on PIV-I Authentication Certificates |    | ● |
+|                        | PIV Content Signing object signing certificate | ● |    |
+|                        | PIV-I Content Signing equivalent object signing certificate |    | ● |
+|                        | Card stock certified | ● | ● |
+|                        | PIV Application Identifier (AID) | ● | ● |
+|                        | Command edge and NIST SP 800-85 conformant | ● | ● |
+| **Credential Edge** | NIST SP 800-73-4 conformant GUID present in the CHUID | ● | ● |
+|                        | RFC 4122 conformant UUID required in the GUID data element of the CHUID | ● | ● |
+|                        | RFC 4122 conformant UUID present in the Authentication Certificates | ● | ● |
 
 # Appendix B: Glossary
 
-(possibly do glossary like PACS glossary; not in a table)
+| Term | Definition |
+|------------------|---------------------------------|
+| Access Control | The process of granting or denying requests to access physical facilities or areas, or logical systems (i.e., computer networks or software applications). See also "Logical Access Control System" and "Physical Access Control System."|
+| Authentication | The process of establishing confidence in the identity of users or information systems.|
+| Authorization | The process of giving individuals access to specific areas or systems based on their authentication.|
+| Biometric | A measurable physical characteristic used to recognize the identity of an individual. Examples include fingerprints and facial images. A biometric system uses biometric data for authentication purposes.|
+| Identity Proofing | The process of providing sufficient information (e.g., driver's license, proof of current address, etc.) to a registration authority, or the process of verifying an individual's information that he or she is that individual and no other.|
+| Logical Access Control System (LACS)| Protection mechanisms that limit users' access to information and restrict access on the system to only what is appropriate for them. These systems may be built into an operating system or application or may be an added system.|
+| National Agency Check with Written Inquiries (NACI)| The basic and minimum investigation required for all new federal employees and contractors, which consists of searches of the OPM Security/Suitability Investigations Index (SII), the Defense Clearance and Investigations Index (DCII), the Federal Bureau of Investigation (FBI) Identification Division's name, fingerprint files, and other files or indices when necessary. This investigation also includes written inquiries and searches of records covering specific areas of an individual's background during the past five (5) years.|
+| Physical Access Control System (PACS)| Protection mechanisms that limit users' access to physical facilities or areas to only what is appropriate for them. These systems typically involve a combination of hardware and software (e.g., a credential reader) and may involve human control (e.g., a security guard).|
+| PIV-Interoperable credential | An identity credential that is conformant with the federal PIV Standards for identity assurance and authentication assurance. |
+| Public Key Infrastructure (PKI) | A service that provides cryptographic keys needed to perform digital signature- based identity verification, and to protect communications and storage of sensitive data.|
 
 # Appendix C: Acronyms
 
