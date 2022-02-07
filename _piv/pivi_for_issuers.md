@@ -355,7 +355,7 @@ Figure 3 shows the notional system boundaries of the required FISMA ATO for Fede
 
 In addition, federal agencies using PIV-Interoperable services must request from the provider the Registration Authority Agreement. The Registration Authority Agreement must explain how the provider has implemented the credential management and lifecycle management requirements of the PIV-Interoperable Certificate Policy. The contents of the Registration Authority Agreement must be approved by the PIV-Interoperable provider’s policy authority as satisfactorily implementing the requirements, and submitted to the Federal PKI as part of the audit artifacts.
 
-Table 6 summarizes the FKI auditing and FISMA Authority to Operate distinctions.
+Table 6 summarizes the FKI auditing and FISMA _Authority to Operate_ distinctions.
 
 **Table 6: Federal Public Key Infrastructure Auditing and FISMA ATO Comparison**
 
