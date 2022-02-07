@@ -216,6 +216,19 @@ Two (2) sample scenarios are outlined in Table 4 to clarify the difference betwe
 | **Type**             | _Non-Federal Issuer of PIV-Interoperable Credentials_ | _Federal Issuer of PIV-Interoperable Credentials_ |
 | **Examples**         | ● State, Local, Tribal, and Territorial partners<br>● Aerospace and Defense partners<br>● Financial Services partners | ● Federal Agency B has determined that persons under their authority require PIV- Interoperable credentials to meet a use case where PIV credentials do not apply |
 
+For these two scenarios:
+* Scenario A is a Non-Federal Issuer
+* Scenario B is a Federal Issuer
+
+Federal agencies may choose to trust and accept the NFI PIV-Interoperable credentials, and acceptance of NFI PIV-Interoperable credentials has financial and interoperability benefits for government-wide purposes.
+
+Figure 1 outlines the identity assurance services and components, the authenticator assurance components, and the NFI versus Federal Issuer distinction. Figure 1 shows two (2) certification authorities and two (2) registration, credential management, identity proofing, and lifecycle service components for each scenario to illustrate that any one individual Certification Authority system may have more than one Registration Authority system, and vice versa.
+
+Figure 1 is used in later sections of this document to identify the auditing and security requirements applied to each scenario.
+
+[![A diagram that displays an icon and label for PIV-I non-federal issuers on the left side of the diagram and an icon and a label for PIV-I federal issuers on the right side of the diagram. Four boxes appear in a grid below the PIV-I non-federal issuers label and four boxes appear in a grid below the PIV-I federal issuers label. The top set of boxes say Certification Authority (PKI). The bottom set of boxes say Registration Cred Mgmt service, proofing, lifecycle. There are arrows vertically and diagonally between the four boxes on the left side of the diagram and there are arrows vertically and diagonally between the four boxes on the right side of the diagram. These two sets of four boxes are labeled Identity Assurance. Three PIV-I card icons appear on the left side of the diagram and three PIV-I card icons appear on the right side of the diagram. The PIV-I card icons are labeled Authentication Assurance. There are arrows pointing from the bottom set of Identity Assurance boxes to the two sets of PIV-I card icons. From the middle PIV-I card icon on the left side of the diagram an arrow points down and to the right to three PIV-I federal issuers icons. The words I can trust the credentials (outputs) appear beside the icons. An arrow points down from the middle from the middle PIV-I card icon on the right side of the diagram to the three PIV-I federal issuers icons.]({{site.baseurl}}/assets/piv/pivi-nonfed-and-fed-issuers.png)]({{site.baseurl}}/assets/piv/pivi-nonfed-and-fed-issuers.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Figure 1: Non-Federal Issuers and Federal Issuers for PIV-Interoperable Credentials[^9]</b></p>
 
 ## 2.4 Technical Requirements
 
