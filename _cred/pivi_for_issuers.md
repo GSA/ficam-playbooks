@@ -1,11 +1,11 @@
 ---
 layout: page
-collection: piv
+collection: cred
 title: Personal Identity Verification Interoperability for Issuers
 pubdate: 2017-07
-permalink: piv/piviforissuers/
+permalink: cred/pivi/
 sticky_sidenav: true
-sidenav: piv
+sidenav: pivi
 
 subnav:
     - text: Executive Summary
