@@ -115,7 +115,7 @@ Table 1 provides a summary of the identity assurance, authenticator assurance, a
 | **Authenticator Assurance:** The robustness of the authentication process, and assurance that the user has possession of the authenticator. | 1. Public key infrastructure key pairs<br>2. Biometric<br>3. Hardware based credential | Yes | Yes |
 | **Suitability Assurance:** The investigative and adjudication processes which enhance the identity assurance. Suitability is associated with a position designation and/or risk assessment for determining an individual is suitable to work for or on behalf of the Federal Government. | A minimum of:<br> A favorably adjudicated _National Agency Check with Inquiries_, or<br> A favorably adjudicated Tier 1 or higher federal background investigation. | Yes | No |
 
-All individuals issued PIV credentials are _required_ to have common, minimum suitability assurance as specified in FIPS 201-2, Section 2.1 Control Objectives. Individuals with PIV- Interoperable credentials assert no suitability assurance in a baseline, standardized manner.
+All individuals issued PIV credentials are _required_ to have common, minimum suitability assurance as specified in [FIPS 201, Section 2.1 Control Objectives](https://pages.nist.gov/FIPS201/FIPS201.html#s-2-1){:target="_blank"}{:rel="noopener noreferrer"}. Individuals with PIV- Interoperable credentials assert no suitability assurance in a baseline, standardized manner.
 
 Section 2.2 outlines more information for the identity assurance, authenticator assurance, and suitability assurance.
 
@@ -135,13 +135,13 @@ Suitability assurance may not be determined from a PIV-Interoperable credential.
 
 ### 2.2.1 PIV-Interoperable Identity Assurance
 
-The Federal Government’s identity assurance requirements are defined in FIPS 201-2 for PIV credentials. The PIV-Interoperable credentials shall adhere to the same identity assurance requirements as PIV credentials. A summation of the identity assurance requirements is defined here for informational purposes only.
+The Federal Government’s identity assurance requirements are defined in FIPS 201 for PIV credentials. The PIV-Interoperable credentials shall adhere to the same identity assurance requirements as PIV credentials. A summation of the identity assurance requirements is defined here for informational purposes only.
 
 * In-person appearance and proofing
 * Verification of two independent identity documents or accounts
 * Capture of biometrics
 
-The full list of requirements for identity assurance for PIV-Interoperable credentials is listed in the **X.509 Certificate Policy for the Federal Bridge Certification Authority.**
+The full list of requirements for identity assurance for PIV-Interoperable credentials is listed in the [X.509 Certificate Policy for the Federal Bridge Certification Authority](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 Table 2 identifies the PIV-Interoperable Level of Assurance and Identity Assurance levels as mapped to the Office of Management and Budget (OMB) Memorandums and National Institute of Standards and Technology (NIST) Special Publications.
 
@@ -198,7 +198,7 @@ PIV-Interoperable credentials may be appropriate for situations where an agency 
 
 * Temporary/seasonal employees, visiting scientists and guest researchers, or contractor personnel requiring access for less than six (6) months;
 * Non-U.S. nationals with insufficient residency in the U.S. to satisfactorily conduct the background investigation; and
-* Personnel operating outside the contiguous U.S. under special risk security considerations, as outlined in FIPS 201-2.
+* Personnel operating outside the contiguous U.S. under special risk security considerations, as outlined in FIPS 201.
 
 A standardized set of procedures and processes for suitability assurance covering any or all of these possible use cases is outside the scope of this document.
 
@@ -236,10 +236,10 @@ Figure 1 is used in later sections of this document to identify the auditing and
 ## 2.4 Technical Requirements
 
 Basic technology requirements must be met for identity credentials to interact with the Federal Government’s infrastructure for PIV credentials. PIV-Interoperable credentials must conform to NIST technical specifications for PIV credentials, as defined in:
-* **FIPS 201-2**
-* **NIST Special Publication 800-73-4**
-* **NIST Special Publication 800-78-4**
-* **NIST Special Publication 800-76-2**
+* **[FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/3/final)**
+* **[NIST Special Publication 800-73](https://csrc.nist.gov/publications/detail/sp/800-73/4/final)**
+* **[NIST Special Publication 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final)**
+* **[NIST Special Publication 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final)**
 
 Further clarification of the NIST Special Publications is required to address 1) visual distinction and 2) identifiers.
 
@@ -448,42 +448,23 @@ This appendix provides additional technical information in support of the techni
 
 # Appendix D: Document References
 
+## Policies
+1. [HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors](https://www.dhs.gov/homeland-security-presidential-directive-12){:target="_blank"}{:rel="noopener noreferrer"}
+2. [OMB A-130: Management of Federal Information Resources](https://www.cio.gov/policies-and-priorities/circular-a-130/){:target="_blank"}{:rel="noopener noreferrer"}
+3. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+4. [X.509 Certificate Policy for the Federal Bridge Certification Authority][https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf]{:target="_blank"}{:rel="noopener noreferrer"}
 
-**FIPS 201-2:** Personal Identity Verification (PIV) of Federal Employees and Contractors 
-[https://csrc.nist.gov/publications/detail/fips/201/2/archive/2013-09-05](https://csrc.nist.gov/publications/detail/fips/201/2/archive/2013-09-05){:target="_blank"}{:rel="noopener noreferrer"}
+## Standards
+1. [FIPS 201: Personal Identity Verification (PIV) of Federal Employees and Contractors](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}
 
-**HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors**
-[https://www.dhs.gov/homeland-security-presidential-directive-12](https://www.dhs.gov/homeland-security-presidential-directive-12){:target="_blank"}{:rel="noopener noreferrer"}
-
-**NIST SP 800-37:** Guide for the Security Certification and Accreditation of Federal Information Systems 
-[https://csrc.nist.gov/publications/detail/sp/800-37/archive/2004-05-20](https://csrc.nist.gov/publications/detail/sp/800-37/archive/2004-05-20){:target="_blank"}{:rel="noopener noreferrer"}
-
-**NIST SP 800-63-2:** Electronic Authentication Guideline
-[https://csrc.nist.gov/publications/detail/sp/800-63/2/archive/2013-08-29](https://csrc.nist.gov/publications/detail/sp/800-63/2/archive/2013-08-29){:target="_blank"}{:rel="noopener noreferrer"}
-
-**NIST SP 800-63-3:** Digital Identity Guidelines 
-[https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-3.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-3.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-
-**NIST SP 800-73-4:** Interfaces for Personal Identity Verification (4 Parts) 
-[https://csrc.nist.gov/publications/detail/sp/800-73/4/archive/2015-05-29](https://csrc.nist.gov/publications/detail/sp/800-73/4/archive/2015-05-29){:target="_blank"}{:rel="noopener noreferrer"}
-
-**NIST SP 800-76:** Biometric Data Specification for Personal Identity Verification
-[https://csrc.nist.gov/publications/detail/sp/800-76/archive/2006-02-01](https://csrc.nist.gov/publications/detail/sp/800-76/archive/2006-02-01){:target="_blank"}{:rel="noopener noreferrer"}
-
-**NIST SP 800-78:** Cryptographic Algorithms and Key Sizes for Personal Identity Verification 
-[https://csrc.nist.gov/publications/detail/sp/800-78/archive/2005-04-25](https://csrc.nist.gov/publications/detail/sp/800-78/archive/2005-04-25){:target="_blank"}{:rel="noopener noreferrer"}
-
-**NIST SP 800-79-2:** Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)
-[https://csrc.nist.gov/publications/detail/sp/800-79/2/final](https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}
-
-**OMB A-130:** Management of Federal Information Resources 
-[https://georgewbush-whitehouse.archives.gov/omb/circulars/a130/a130trans4.html](https://georgewbush-whitehouse.archives.gov/omb/circulars/a130/a130trans4.html){:target="_blank"}{:rel="noopener noreferrer"}
-
-**X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework**
-[https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-
-**X.509 Certificate Policy for the Federal Bridge Certification Authority**
-[https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+## Special Publications
+1. [NIST SP 800-37: Guide for the Security Certification and Accreditation of Federal Information Systems](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final){:target="_blank"}{:rel="noopener noreferrer"}
+2. [NIST SP 800-63: Digital Identity Guidelines](https://csrc.nist.gov/publications/detail/sp/800-63/3/final){:target="_blank"}{:rel="noopener noreferrer"}
+3. [NIST SP 800-73: Interfaces for Personal Identity Verification (4 Parts)](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}
+4. [NIST SP 800-76: Biometric Data Specification for Personal Identity Verification](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}
+5. [NIST SP 800-78: Cryptographic Algorithms and Key Sizes for Personal Identity Verification](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}
+6. [NIST SP 800-79: Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)]
+(https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}
 
 # Footnotes
 
