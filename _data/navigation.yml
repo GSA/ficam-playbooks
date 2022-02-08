@@ -113,7 +113,7 @@ pivuser:
 ## PIV-I
 pivi:
   - text: PIV-I For Issuers
-    href: /pivi/
+    href: /cred/pivi/
 
 ## FPKI Navigation
 
