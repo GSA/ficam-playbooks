@@ -1,5 +1,5 @@
 ---
-layout: page-wide
+layout: page
 collection: cred
 title: Personal Identity Verification Interoperability for Issuers
 pubdate: 2017-07
@@ -10,11 +10,11 @@ sidenav: pivi
 subnav:
   - text: Executive Summary
     href: '#executive-summary'
-  - text: 1. Introduction
+  - text: Introduction
     href: '#1-introduction'
-  - text: 2. Minimum Credential Requirements
+  - text: Minimum Credential Requirements
     href: '#2-minimum-credential-requirements'
-  - text: 3. Special Considerations for Federal Agencies
+  - text: Special Considerations for Federal Agencies
     href: '#3-special-considerations-for-federal-agencies
   - text: References
     href: '#appendix-a-technical-information'
@@ -23,21 +23,24 @@ subnav:
 Version 2.0.1  
 July 2010
 
+This document provides the guidance needed to assist both Federal Issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) identity credentials in achieving credential interoperability with the Federal Government PIV infrastructure. This document’s scope is limited to the issuance of PIV-Interoperable credentials; federal departments and agencies must continue to make their own authorization determination to allow or deny access when a PIV-Interoperable credential is used for authentication.
+
 <a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
 <a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.0 | 07/2010 | Initial Draft |
-| 2.0 | 11/2016 | ●	Removed most duplicative references to requirements which have been stated in other government documents as authoritative<br>● Updated references to Memorandums, Standards and common terminology<br>● Added clarification for federal agencies on the boundaries of security, auditing and procurement requirements |
-| 2.0.1 | 12/2016 | ● Updated Table 4 to clarify for Legislative and Judicial branches of federal government |
+| 2.0 | 11/2016 | - Removed most duplicative references to requirements which have been stated in other government documents as authoritative<br>- Updated references to Memorandums, Standards and common terminology<br>- Added clarification for federal agencies on the boundaries of security, auditing and procurement requirements |
+| 2.0.1 | 12/2016 | Updated Table 4 to clarify for Legislative and Judicial branches of federal government |
 
 # Executive Summary
 
-Federal agencies are interested in issuing and acquiring identity credentials and credential services that are not Personal Identity Verification (PIV) credentials, but are (a) technically interoperable with Federal Government PIV infrastructure, and (b) issued in a manner that allows Federal Government relying parties to trust the credentials. The PIV credential standard, Federal Information Processing Standards (FIPS) 201-2, has requirements[^1] that only federal agencies can meet to issue PIV credentials, requiring needed guidance for Issuers of PIV- Interoperable credentials. Prior guidance for the issuance of PIV-Interoperable credentials neglected to address the issuance of PIV-Interoperable credentials by federal agencies, requiring additional guidance for all issuers.
+Federal agencies are interested in issuing and acquiring identity credentials and credential services that are not Personal Identity Verification (PIV) credentials, but are: 
+1. technically interoperable with Federal Government PIV infrastructure, and 
+2. issued in a manner that allows Federal Government relying parties to trust the credentials. 
 
-This document provides the guidance needed to assist both Federal Issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) identity credentials in achieving credential
-interoperability with the Federal Government PIV infrastructure. This document’s scope is limited to the issuance of PIV-Interoperable credentials; federal departments and agencies must continue to make their own authorization determination to allow or deny access when a PIV-Interoperable credential is used for authentication.
+The PIV credential standard, Federal Information Processing Standards (FIPS) 201-2, has requirements[^1] that only federal agencies can meet to issue PIV credentials, requiring needed guidance for Issuers of PIV- Interoperable credentials. Prior guidance for the issuance of PIV-Interoperable credentials neglected to address the issuance of PIV-Interoperable credentials by federal agencies, requiring additional guidance for all issuers.
 
 This document advocates a set of minimum requirements for PIV-Interoperable credentials that can be trusted by the Federal Government, and details solutions to the four barriers to interoperability that currently challenge Federal government. These four barriers are as follows:
 1. **Common terminology for identity credentials and issuers** – To ensure consistency, a lexicon for differentiating a PIV credential from a credential interoperable with PIV infrastructure, and the differences between Non-Federal and Federal Issuers, has been developed.
@@ -45,7 +48,7 @@ This document advocates a set of minimum requirements for PIV-Interoperable cred
 3. **Technical requirements** – For identity credentials to be interoperable with the federal PIV infrastructure, basic technological requirements must be met.
 4. **Security and auditing** – The boundaries for auditing and compliance requirements require clarification for federal agencies.
 
-For additional information concerning this document, please contact icam@gsa.gov.
+For additional information concerning this document, please contact icam at gsa.gov.
 
 # 1. Introduction
 ## 1.1 Background
@@ -87,7 +90,7 @@ For each of these, a minimum set of requirements is described that will allow id
 
 The following assumptions apply:
 
-1. Federal departments and agencies determine the extent to which they will trust PIV- Interoperable credentials.
+1. Federal departments and agencies determine the extent to which they will trust PIV-Interoperable credentials.
 2. Possession of a PIV-Interoperable credential does not infer an access or authorization of any kind.
 3. User privileges and entitlements (Authorization) are determined solely by the Federal Government relying party.
 4. PIV-Interoperable credentials shall not be considered a substitute or alternative credential for populations otherwise subject to PIV requirements.
@@ -106,11 +109,11 @@ Table 1 provides a summary of the identity assurance, authenticator assurance, a
 
 **Table 1: PIV and PIV-Interoperable Definitions**
 
-| Assurance | Requirements Summary[^2] | PIV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | PIV-Interoperable |
-| -------------- | ------------ | ------------------| ------------------|
+| Assurance | Requirements Summary[^2] | PIV | PIV-I |
+| --------- | ------------ | ---------| -------------|
 | **Identity Assurance:** The robustness of the identity proofing process and the binding between an authenticator and a specific individual. | 1. In-person proofing<br>2. Capture and verification of two (2) independent identity documents<br>3. Capture of biometrics | Yes | Yes |
 | **Authenticator Assurance:** The robustness of the authentication process, and assurance that the user has possession of the authenticator. | 1. Public key infrastructure key pairs<br>2. Biometric<br>3. Hardware based credential | Yes | Yes |
-| **Suitability Assurance:** The investigative and adjudication processes which enhance the identity assurance. Suitability is associated with a position designation and/or risk assessment for determining an individual is suitable to work for or on behalf of the Federal Government. | ● A minimum of:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o A favorably adjudicated _National Agency Check with Inquiries_, or<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o A favorably adjudicated Tier 1 or higher federal background investigation. | Yes | No |
+| **Suitability Assurance:** The investigative and adjudication processes which enhance the identity assurance. Suitability is associated with a position designation and/or risk assessment for determining an individual is suitable to work for or on behalf of the Federal Government. | A minimum of:<br> A favorably adjudicated _National Agency Check with Inquiries_, or<br> A favorably adjudicated Tier 1 or higher federal background investigation. | Yes | No |
 
 All individuals issued PIV credentials are _required_ to have common, minimum suitability assurance as specified in FIPS 201-2, Section 2.1 Control Objectives. Individuals with PIV- Interoperable credentials assert no suitability assurance in a baseline, standardized manner.
 
