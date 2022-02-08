@@ -8,16 +8,16 @@ sticky_sidenav: true
 sidenav: pivi
 
 subnav:
-    - text: Executive Summary
-      href: '#executive-summary'
-    - text: 1. Introduction
-      href: '#1-introduction'
-    - text: 2. Minimum Credential Requirements
-      href: '#2-minimum-credential-requirements'
-    - text: 3. Special Considerations for Federal Agencies
-      href: '#3-special-considerations-for-federal-agencies
-    - text: References
-      href: '#appendix-a-technical-information'
+  - text: Executive Summary
+    href: '#executive-summary'
+  - text: 1. Introduction
+    href: '#1-introduction'
+  - text: 2. Minimum Credential Requirements
+    href: '#2-minimum-credential-requirements'
+  - text: 3. Special Considerations for Federal Agencies
+    href: '#3-special-considerations-for-federal-agencies
+  - text: References
+    href: '#appendix-a-technical-information'
 ---
 
 Version 2.0.1  
