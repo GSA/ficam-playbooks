@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-wide
 collection: cred
 title: Personal Identity Verification Interoperability for Issuers
 pubdate: 2017-07
