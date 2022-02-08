@@ -110,6 +110,11 @@ pivuser:
   - text: Configure Outlook for Secure Email
     href: /piv/user-guide/outlook/
 
+## PIV-I
+ pivi:
+  - text: PIV-I For Issuers
+    href: /pivi/
+
 ## FPKI Navigation
 
 fpki:
