@@ -26,7 +26,7 @@ The page lists the certification authorities *currently* used for Personal Ident
 
 ## PIV Issuer Information
 
-{% include alert-info.html content="This table was last updated on <b>FEbruary  7, 2022</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
+{% include alert-info.html content="This table was last updated on <b>February  7, 2022</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
 <br>
   
