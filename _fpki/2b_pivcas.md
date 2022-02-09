@@ -22,11 +22,11 @@ subnav:
 {% endfor %}
 {% assign branches = branches | uniq | sort %}
 
-The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates.
+The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) and PIV-Interoperable (PIV-I) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates.
 
 ## PIV Issuer Information
 
-{% include alert-info.html content="This table was last updated on <b>May 4, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
+{% include alert-info.html content="This table was last updated on <b>February  7, 2022</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
 <br>
   
@@ -219,6 +219,13 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Validity: January 25, 2017 to January 25, 2027
 - SHA-1 Hash: 671461948b8ef765fe5e1248222af3fcdd457564
 
+#### WidePoint ORC NFI 4
+- Subject: CN = WidePoint ORC NFI 4, OU = Certification Authorities, O = WidePoint, C = US
+- Issuer: CN = WidePoint NFI Root 2, OU = Certification Authorities, O = WidePoint, C = US
+- Serial #: 3581750bd6e26757bcb9e0a4513da84946587ebf
+- Validity: February 18, 2020 to February 18, 2030
+- SHA-1 Hash: 5a95aea990a7aec492134a5b437cf3324f260793
+
 
 ## Maintenance Mode Issuing CA Certificate Details
 These CA certificates have issued PIV authentication certificates previously and are in maintenance mode only.  Agency system administrators may need to include these CAs in configurations. 
@@ -324,3 +331,5 @@ These CA certificates have issued PIV authentication certificates previously and
 - Serial #: 61a90f3e5ff532f9fe6209d931279a82
 - Validity: December 10, 2014 to November 11, 2024
 - SHA-1 Hash: dc5b590800765864587902af983c21a7209be320
+
+
