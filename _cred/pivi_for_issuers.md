@@ -15,7 +15,7 @@ subnav:
   - text: Minimum Credential Requirements
     href: '#2-minimum-credential-requirements'
   - text: Special Considerations for Federal Agencies
-    href: '#3-special-considerations-for-federal-agencies
+    href: '#3-special-considerations-for-federal-agencies'
   - text: References
     href: '#appendix-a-technical-information'
 ---
