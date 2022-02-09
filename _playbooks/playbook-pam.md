@@ -18,8 +18,8 @@ subnav:
       href: '#step-1-develop-program-goals'
     - text: Step 2. Define and Identify
       href: '#step-2-define-and-identify'
-    - text: Step 3. Integrate into ICAM
-      href: '#step-3-integrate-into-icam'
+    - text: Step 3. ICAM Integration
+      href: '#step-3-icam-integration'
     - text: Step 4. Prioritize and Execute
       href: '#step-4-prioritize-and-execute'
     - text: Appendix A. Reference Documents
@@ -48,7 +48,7 @@ February 15, 2021
 This playbook is a collaboration between the General Services Administration Office of Government-wide Policy identity Assurance and Trusted Access Division, Federal Chief Information Security Officer Council ICAM Subcommittee, and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA) Continuous Diagnostic and Mitigation (CDM) Program.
 
 # Executive Summary
-The Privileged User Playbook is a practical guide to **help federal agencies implement and manage a privileged user program**. Privileged users are unique user types that perform security-related duties. A privileged user program enables an agency to identify, track, monitor, and audit privileged users and accounts, effectively decreasing the cyber risk impacting an agency's mission. **Unwanted behavior or compromise of privileged accounts are responsible for the most high-profile federal and private security breaches**. It is a critical Identity, Credential, and Access Management (ICAM) capability to identify privileged users and access to high value assets.
+The Privileged User Playbook is a practical guide to **help federal agencies implement and manage a Privileged User Program**. Privileged users are unique user types that perform security-related duties. A Privileged User Program enables an agency to identify, track, monitor, and audit privileged users and accounts, effectively decreasing the cyber risk impacting an agency's mission. **Unwanted behavior or compromise of privileged accounts are responsible for the most high-profile federal and private security breaches**. It is a critical Identity, Credential, and Access Management (ICAM) capability to identify privileged users and access to high value assets.
 
 There are three prominent use cases to identify a privileged account or user.
 1. Accounts used to manage IT infrastructure, resources of high value assets (HVA), and core systems such as maintenance activities on human resource applications or databases.
@@ -59,11 +59,11 @@ Privileged users are managed as distinct and separate identities to decrease the
 1. These employees and contractors can jeopardize sensitive information or infrastructure, whether knowingly or unknowingly.
 2. Privileged users have the potential to compromise all three core elements of information security: availability, confidentiality, and integrity.
 
-Agencies can use this playbook to help plan and implement a logical privileged user program following government-wide best practices. This playbook includes a four-step process aligned with the [Federal Identity, Credential, and Access Management (FICAM) Architecture](https://playbooks.idmanagement.gov/arch/){:target="_blank"}{:rel= "noopener noreferrer"} designed for **insider threat, ICAM, and risk management professionals interested in identifying best practices for mitigating privileged user risk**. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission, and technical requirements. Other IT program participants, including cybersecurity program managers, may value incorporating this playbook approach in their planning.
+Agencies can use this playbook to help plan and implement a logical Privileged User Program following government-wide best practices. This playbook includes a four-step process aligned with the [Federal Identity, Credential, and Access Management (FICAM) Architecture](https://playbooks.idmanagement.gov/arch/){:target="_blank"}{:rel= "noopener noreferrer"} designed for **insider threat, ICAM, and risk management professionals interested in identifying best practices for mitigating privileged user risk**. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission, and technical requirements. Other IT program participants, including cybersecurity program managers, may value incorporating this playbook approach in their planning.
 
 ## Key Terms
 These are key terms used throughout this document.
-- **Account Compromise** is the unauthorized use of an account, including disclosure, modification, substitution, or use of sensitive information.
+- **Account Compromise** is the unauthorized use of an account to disclosure, modify, substitute, or use sensitive information.
 - **[Insider Threat](https://csrc.nist.gov/glossary/term/insider_threat){:target="_blank"}{:rel= "noopener noreferrer"}** is the potential for an insider will use their authorized access, wittingly or unwittingly, to harm the security of the United States. This threat can include damage to the United States through espionage, terrorism, unauthorized disclosure of national security information, or the loss or degradation of departmental resources or capabilities.
 - **[Functional Privileged User](https://playbooks.idmanagement.gov/docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"}** can access information resources provided by the application and approval workflows such as approving access requests.
 - **[Privileged Account](https://csrc.nist.gov/glossary/term/privileged_account){:target="_blank"}{:rel="noopener noreferrer"}** is a system account used by a privileged user. A privileged account can belong to a single endpoint, domain, database, or application.
@@ -75,12 +75,12 @@ These are key terms used throughout this document.
 This playbook is informative. The General Services Administration Office Government-wide Policy in collaboration with the Department of Homeland Security (DHS) Continuous Diagnostic and Mitigation (CDM) Program and the Federal CISO Council ICAM Subcommittee developed this playbook with input from federal identity and security practitioners. This playbook is limited to high-level guidance specific to privileged users accessing federal government information systems. This playbook shouldn't be interpreted as official policy or mandated action, and doesn't provide authoritative definitions for IT terms. Where appropriate, key terms from the National Institute for Standards and Technology (NIST) or Federal Information Security Management Act (FISMA) are used. This playbook supplements existing Federal IT policies and builds upon the [Office of Management and Budget Memorandum 19-17 - Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel= "noopener noreferrer"} and the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel= "noopener noreferrer"}, as well as existing Federal identity guidance and playbooks.
 
 # Protect Federal Identities and Logical Assets
-Government employees and contractors need elevated access to perform necessary administrative and security functions, yet this carries an inherent risk of insider threat or account compromise. As a result, agencies should implement privilege user controls that mitigate this risk without impeding their ability to carry out assigned job duties. In creating a secure physical and virtual workplace for privileged users, agencies align efforts with the [FICAM Architecture](https://playbooks.idmanagement.gov/arch/){:target="_blank"}{:rel="noopener noreferrer"}. This playbook provides informative guidance to manage federal employee and contractor privileged users by mitigating the inherent risks associated with this population. An agency achieves this outcome through the use of ICAM services. The following are the four primary steps to establish or enhance an agency's privileged user program.
+Government employees and contractors need elevated access to perform necessary administrative and security functions, yet this carries an inherent risk of insider threat or account compromise. As a result, agencies should implement privilege user controls that mitigate this risk without impeding their ability to carry out assigned job duties. In creating a secure physical and virtual workplace for privileged users, agencies align efforts with the [FICAM Architecture](https://playbooks.idmanagement.gov/arch/){:target="_blank"}{:rel="noopener noreferrer"}. This playbook provides informative guidance to manage federal employee and contractor privileged users by mitigating the inherent risks associated with this population. An agency achieves this outcome through the use of ICAM services. The following are the four primary steps to establish or enhance an agency's Privileged User Program.
 
-1. [Develop Program Goals](#1-develop-program-goals) to identify the potential impact and risk to your agency's mission. Agency executives must understand why a privileged user program is essential and the risks associated with elevated access. This step also includes engaging agency stakeholders and government-wide groups.
+1. [Develop Program Goals](#1-develop-program-goals) to identify the potential impact and risk to your agency's mission. Agency executives must understand why a Privileged User Program is essential and the risks associated with elevated access. This step also includes engaging agency stakeholders and government-wide groups.
 2. [Define and Identify](#2-define-and-identify) a privileged user as those people and accounts that have elevated access to an agency's resources. Privileged accounts can be anywhere across a network, system, or cloud. Track and audit privileged user activity regularly.
-3. [Integrate into ICAM](#3-integrate-into-icam) for a holistic management approach. Implementing ICAM best practices and additional countermeasures to prevent privileged user and account misuse, abuse, or compromise can provide comprehensive, integrated protection of agency resources.
-4. [Prioritize and Execute](#4-prioritize-and-execute) services and capabilities. Like most IT initiatives, this is a journey. Threats change, and agencies must adapt. Implementing a privileged user program and technology may require a multi-year project to add capabilities and services based on your agency risk and budget. The DHS CDM Program can help. An agency should leverage existing efforts to achieve information security goals by directing or tailoring playbook steps based on its resources, environment, mission, business needs, and privileged user population.
+3. [Integrate privileged users into ICAM](#3-icam-integration) for a holistic management approach. Implementing ICAM best practices and additional countermeasures to prevent privileged user and account misuse, abuse, or compromise can provide comprehensive, integrated protection of agency resources.
+4. [Prioritize and Execute](#4-prioritize-and-execute) services and capabilities. Like most IT initiatives, this is a journey. Threats change, and agencies must adapt. Implementing a Privileged User Program and technology may require a multi-year project to add capabilities and services based on your agency risk and budget. The DHS CDM Program can help. An agency should leverage existing efforts to achieve information security goals by directing or tailoring playbook steps based on its resources, environment, mission, business needs, and privileged user population.
 
 {% include alert-info.html heading= "Is this Privileged Access Management or Account Security" content=" Different vendors may use a different terms for their product. Some vendors may use the term Privileged Access or Account Management (PAM), Privileged Identity Management (PIM), Privileged Security, or something in-between. For the intent of this playbook, the agnostic privileged user is used to encompass all service areas of ICAM." %}
 
@@ -97,7 +97,7 @@ Privilege compromise comes in two forms:
 2. Account compromise
 
 ### Insider Threat
-Insider threat is a government employee or contractor's accidental, complacent, or malicious actions. A privileged user program is grounded in implementing, monitoring, and reporting insider-based threats. The below table provides the definition and indicators or insider threat classifications.
+Insider threat is a government employee or contractor's accidental, complacent, or malicious actions. A Privileged User Program is grounded in implementing, monitoring, and reporting insider-based threats. The below table provides the definition and indicators or insider threat classifications.
 
 | Insider Threat Classification | Definition | Example |
 | --------------------- | -------------- | ------------ |
@@ -105,20 +105,20 @@ Insider threat is a government employee or contractor's accidental, complacent, 
 |   **Complacent**  |   Overall lax or careless approach to security. | 1. Create user accounts and assign privileges without the appropriate review and approval.<br>2. Share system account passwords. |
 |   **Malicious**   |  Intentionally disrupt, threaten, or endanger an organization's activities or assets. | 1. Unwanted, purposeful disclosure or theft of information.<br>2. Introduce malicious code, malware, Trojan horse, viruses.<br>3. Destroy or modify system audit logs. |
 
-Each category of insider threat is further linked to unwanted behavior.
+### Account Compromise
+An account compromise is the unauthorized use of an account to perform an unwanted behavior. Each category of insider threat and account compromised is linked to unwanted behavior.
 
 | Unwanted Behavior | Definition | Example |
 | ----------------- | ---------- | ------- |
 | **Fraud** | Unwanted use, modification, addition, or deletion of agency's data for personal gain.| On the pretense of fixing corrupt data, a database administrator modifies data without authorization.|
-| **Espionage** | Sharing restricted information to aid a foreign actor or harm the U.S. Government. |  System administrator uses elevated access to retrieve confidential data and sells it to a foreign actor.|
-| **Sabotage** | Purposefully inflicting harm on an organization.| Maintenance worker inserts a Universal Serial Bus (USB) drive into a server to inject malware on behalf of a bad external actor.|
+| **Espionage** | Sharing restricted information to aid a foreign actor or harm the U.S. Government. |  An external actor uses a compromised account to exfiltrate data.|
+| **Sabotage** | Purposefully inflicting harm on an organization.| An external actor uses a phished credential to load ransomware onto a payment system. |
 | **Intellectual Property Theft**| Stealing intangible assets (e.g., discoveries, inventions, designs) from an organization.| Cloud administrator uses elevated access to steal proprietary information.|
 | **Unwanted Information Disclosure**| A communication or physical transfer of information to a recipient who is not authorized to access the information.| System administrator creates a "backdoor" account to access and release classified information inappropriately.|
 
-Understanding insider threat classifications and unwanted behavior support an agency's privileged user program implementation. A combination of procedural and technical measures can help agencies mitigate the range of unwanted behavior. Furthermore, the relationship between the three insider threat classifications and this playbooks aids an agency in the broader effort of fulfilling the insider threat mitigation requirements in the National Insider Threat Policy and relevant Executive Orders.
+Understanding insider threat classifications and unwanted behavior support an agency's Privileged User Program implementation. A combination of procedural and technical measures can help agencies mitigate the range of unwanted behavior. Furthermore, the relationship between the three insider threat classifications and this playbooks aids an agency in the broader effort of fulfilling the insider threat mitigation requirements in the National Insider Threat Policy and relevant Executive Orders.
 
 ### Agency Governance
-
 A Privileged User Program is subordinate to or interacts with multiple other agency programs in most agencies.
 - **High Value Asset** - [OMB Memo 19-03](https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf){:target="_blank"}{:rel="noopener noreferrer"} outlines requirements to identify, track, and manage an agencies most critical assets. [Amplifying guidance from CISA](https://www.cisa.gov/sites/default/files/publications/Securing%20High%20Value%20Assets_Version%201.1_July%202018_508c.pdf){:target="_blank"}{:rel="noopener noreferrer"} recommended using unique accounts, logging key security events, and implementing multi-factor authentication for all HVA users, but particularly privileged users.
 - **Insider Threat** - Include programs to detect and prevent the unauthorized disclosure of sensitive information. An insider threat program consists of capabilities that provide access to information; centralized information integration, analysis, and response; insider threat awareness training; and user activity monitoring on government computers.
@@ -126,11 +126,12 @@ A Privileged User Program is subordinate to or interacts with multiple other age
 - **Continuous Diagnostic and Migration (CDM)** - Cybersecurity tools, integration services, and dashboards to help an agency reduce the attack surface, increase visibility into cybersecurity posture, improve response, and streamline FISMA reporting.
 - **Risk Management** - Identify and track implementation and operation of security controls.
 
+A Privileged User Program should encompass all privileged users within a Chief Information Officer's responsibility including enterprise and mission applications.
+
 {% include alert-info.html heading= "Insider Threat Mitigation" content= "Because of privileged users' elevated access, unwanted behavior by these individuals can significantly compromise agency assets or operations. As a result, privileged user management is a cornerstone of insider threat mitigation." %}
 
 ### Program Objectives
-
-Even though agency missions may differ, the objectives of a privileged user program are relatively similar. The below strategic and tactical objectives are used as a starting point to plan a privileged user program.
+Even though agency missions may differ, the objectives of a Privileged User Program are relatively similar. The below strategic and tactical objectives are used as a starting point to plan a Privileged User Program.
 
 - **Strategic Objectives**
 1. Identify vulnerabilities and risk factors to protect high value assets and other assets.
@@ -153,9 +154,7 @@ Even though agency missions may differ, the objectives of a privileged user prog
 In addition to setting minimum program objectives, an agency should evaluate the risk of all users to its resources by conducting a [Digital Identity Risk Assessment (DIRA)]({{site.baseurl}}/playbooks/dira){:target= "_blank"}. The DIRA process identifies the risk of user transactions and identifies a minimum identity assurance, authenticator assurance, and federation assurance level outlined in [NIST Special Publication 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html){:target= "_blank"}{:rel= "noopener noreferrer"}.
 
 ### Zero Trust Alignment
-NIST Special Publication 800-207 outlines a Zero Trust Architecture that moves defenses from static, network-based perimeters to focus on users, devices, network, application, and data. It shifts the operating model toward dynamic trust decisions (e.g., if a user is on an agency network and a government-furnished device, they are trusted). Within the context of this playbook, step 4 provides recommendations on how to align privileged user program technical measures with a zero trust architecture from five elements.
-
-<include content from zero trust strategy>
+NIST Special Publication 800-207 outlines a Zero Trust Architecture that moves defenses from static, network-based perimeters to focus on users, devices, network, application, and data. It shifts the operating model toward dynamic trust decisions (e.g., if a user is on an agency network and a government-furnished device, they are trusted). Within the context of this playbook, step 4 provides recommendations on how to align Privileged User Program technical measures with a zero trust architecture.
 
 ## Step 2. Define and Identify
 An agency is responsible for managing all user privileges. A subset of an agency's user population may be granted elevated access to execute assigned duties. The individuals entrusted with elevated access constitute an agency's privileged user population.
@@ -181,7 +180,6 @@ Some common characteristics of a privileged user include:
 - Create accounts (especially other privileged accounts).
 
 ### Identify Privileged Accounts Across Platforms and Environments
-
 Once a privileged user is defined, an agency can follow this process to identify its privileged users and resources.
 1. Identify and document mission-critical and sensitive services (most likely your high value asset list) as a starting point. Every IT system has privileged users. Services can be further grouped by: 
 - Hardware
@@ -198,8 +196,7 @@ The Privileged User Program should document each step either manually or automat
 
 [![Privileged accounts can be found on Windows, Unix/Linux, Applications/Cloud, DevOps, and Machine Identities]({{site.baseurl}}/assets/playbooks/pam-identify.png)]({{site.baseurl}}/assets/playbooks/pam-identify.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-## Step 3. Integrate into ICAM
-
+## Step 3. ICAM Integration
 ICAM is the set of tools, policies, and systems that an agency uses to enable the right individual to access the right resources, at the right time, for the right reason in support of federal business objectives. In the context of privileged users, ICAM supports: 
 - Unifying IT services by consolidating various privileged access tools at an enterprise level.
 - Improving access control by tracking and monitoring privileged user accounts and access.
@@ -250,7 +247,15 @@ Access management is how an agency authenticates privileged users and authorizes
 {% include alert-info.html heading= "Preventative and Detective Measures" content=" Preventative measures proactively stop inappropriate behavior through processes such as background investigations, training, rules of behavior, privileged access workstation and other mechanisms. Detective measures identify suspicious activities such as audit logs, keystroke logging, access logs, and account checkout. Agencies should use a combination of both to decrease privilege user risk." %}
 
 ## Step 4. Prioritize and Execute
-**Added Ross Foard, CISA Comments**
+Understand the data flows and access types when designing a Privileged User Program technical reference architecture. The basic components of a privileged user system include:
+
+1. Directory
+
+<< architecture Diagram modified from DoD zero trust and microosft>>
+
+
+
+- map privileged accounts back to a single person. Remove access to both when they move.
 
 1. Inventory systems to focus on those that have a FIPS categorization of High for Confidentiality or Integrity (from Step 2).
 
