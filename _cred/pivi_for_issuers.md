@@ -110,7 +110,7 @@ Table 1 provides a summary of the identity assurance, authenticator assurance, a
 
 **Table 1: PIV and PIV-Interoperable Definitions**
 
-| Assurance | Requirements Summary[^2] | PIV | PIV-I |
+| Assurance | Requirements Summary[^2] | PIV | PIV-Interoperable |
 | --------- | ------------ | ---------| -------------|
 | **Identity Assurance:** The robustness of the identity proofing process and the binding between an authenticator and a specific individual. | 1. In-person proofing<br>2. Capture and verification of two (2) independent identity documents<br>3. Capture of biometrics | Yes | Yes |
 | **Authenticator Assurance:** The robustness of the authentication process, and assurance that the user has possession of the authenticator. | 1. Public key infrastructure key pairs<br>2. Biometric<br>3. Hardware based credential | Yes | Yes |
@@ -118,78 +118,9 @@ Table 1 provides a summary of the identity assurance, authenticator assurance, a
 
 All individuals issued PIV credentials are _required_ to have common, minimum suitability assurance as specified in [FIPS 201 Section 2.1 Control Objectives](https://pages.nist.gov/FIPS201/FIPS201.html#s-2-1){:target="_blank"}{:rel="noopener noreferrer"}. Individuals with PIV- Interoperable credentials assert no suitability assurance in a baseline, standardized manner.
 
-Section 2.2 outlines more information for the identity assurance, authenticator assurance, and suitability assurance.
+Section 2.3 outlines more information for the identity assurance, authenticator assurance, and suitability assurance.
 
-## 2.2 Trusted Identity
-
-The fundamental purpose of an identity credential is to establish a trust foundation based on:
-* the _identity assurance_ of the person, and
-* the _authenticator assurance_ of the credential.
-
-Therefore, the PIV-Interoperable credentials must be issued in a manner that provides the Federal Government with a commensurate level of trust for _identity assurance_ and _authenticator assurance._
-
-For PIV credentials, individuals are also required to have common, minimum suitability assurance defined as:
-
-* a baseline suitability assurance of the person to work for or on behalf of the Federal Government.
-
-Suitability assurance may not be determined from a PIV-Interoperable credential.
-
-### 2.2.1 PIV-Interoperable Identity Assurance
-
-The Federal Government’s identity assurance requirements are defined in FIPS 201 for PIV credentials. The PIV-Interoperable credentials shall adhere to the same identity assurance requirements as PIV credentials. A summation of the identity assurance requirements is defined here for informational purposes only. The PIV-Interoperable credential meets NIST 800-63-3 **Identity Assurance Level 3** requirements.
-
-* In-person appearance and proofing
-* Verification of two independent identity documents or accounts
-* Capture of biometrics
-
-The full list of requirements for identity assurance for PIV-Interoperable credentials is listed in the [X.509 Certificate Policy for the Federal Bridge Certification Authority](https://www.idmanagement.gov/governance/fpkiaudit/#fpki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}.
-
-### 2.2.2 PIV-Interoperable Authenticator Assurance
-
-The PKI certificates are where the identity assurance and authenticator assurance are asserted during use in networks, facilities, and systems. All PIV-Interoperable identity credentials must contain certificates issued from one of the Certification Authorities which operate under the Federal Public Key Infrastructure (Federal PKI) Certificate Policies. The PIV-Interoperable credential is comparable to a NIST 800-63-3 **Authenticator Assurance Level 3** authenticator.
-
-There are two Certificate Policies which govern the Federal PKI Certification Authorities:
-
-* Certificate Policy for the Federal Bridge Certification Authority
-* Certificate Policy for the Federal PKI Common Policy Framework
-
-There are Certification Authorities which operate and are audited for compliance to these Certificate Policies. The Certification Authorities also have Registration Authority services which may be built or operated by third-parties such as federal agencies or commercial service providers. The Registration Authority services encompass the _systems and processes_ where the initial collection of the Personally Identifiable Information (PII) is performed for the PIV or PIV- Interoperable identity assurance and lifecycle management functions.[^3] All Certification Authorities and Registration Authority components are subject to audits for compliance to management, operational, and technical controls specified in their respective Certificate Policies.[^4]
-
-Within this boundary of more than [100 existing and audited Certification Authorities](https://playbooks.idmanagement.gov/fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"}, there are options operated and available for direct use by federal departments within the Executive Branch. There are also Certification Authorities which are operated for non-federal Executive Branch entities including Legislative and Judicial Branch agencies, and State, Local, Tribal, Territorial, International, and Commercial Partners.
-
-The Certificate Policies extension object identifier (OID) contained in the certificates asserts the identity assurance of the person presenting the credential and certificate, how the private keys are stored and managed, and how the certificate should be validated for usage.
-
-However, the Certificate Policies extension OID for the PIV Authentication Certificates is available only to Federal Government organizations. PIV-Interoperable authentication certificates may not assert the PIV Certificate Policies OIDs used for PIV Authentication. Therefore, additional policy defines comparable Certificate Policies’ OIDs that can be trusted by the Federal Government for use in PIV-Interoperable Authentication Certificates.
-
-The **X.509 Certificate Policy for the Federal Bridge Certification Authority** specifies the minimum requirements for the Federal Government to rely on PIV-Interoperable credentials, and includes all requirements for PIV-Interoperable credentials inclusive of:
-
-* Certificate policy extension object identifiers,
-* Clarification on identifier namespaces to be used, and
-* Credential requirements for security and auditing.
-
-All issuers of PIV-Interoperable credentials shall adhere to the requirements for PIV- Interoperable credentials outlined in the **X.509 Certificate Policy for the Federal Bridge Certification Authority.**
-
-Operationally, the Certification Authorities and Registration Authorities that may be subordinate to the **Certificate Policy for the Federal PKI Common Policy Framework** must map their management, security, and operational controls for PIV-Interoperable credentials without needing a _cross-certificate_ directly from the Federal Bridge Certification Authority. Policy mapping may be used; the Certification Authority must receive a certificate from Common Policy Framework which maps the Federal Bridge Certification Authority policy OIDs to the issuing Certification Authority’s OIDs for PIV-Interoperable.
-
-### 2.2.3 PIV-Interoperable Suitability Assurance
-
-Suitability assurance is defined as the investigative and adjudication processes which _enhance_ the identity assurance. These processes are used to determine suitability for granting access to federal data, applications, facilities, and networks. Only the Federal Government may determine the fitness or suitability of an individual for access to Federal Government assets.
-
-PIV-Interoperable processes are unable to mirror the suitability assurance processes employed for the PIV credential. PIV-Interoperable credentials assert no suitability assurance in a _baseline, standardized manner._
-
-A Federal Government relying party may associate the PIV-Interoperable credential with additional off-credential information to determine the fitness or suitability of the requested access. Examples of off-credential information could be a record check against investigation databases, an entitlements attribute, or other manual or automated processes.
-
-PIV-Interoperable credentials may be appropriate for situations where an agency has determined that a PIV credential is not warranted, but the individual requires access. Such situations may include, but are not limited to:
-
-* Temporary/seasonal employees, visiting scientists and guest researchers, or contractor personnel requiring access for less than six (6) months;
-* Non-U.S. nationals with insufficient residency in the U.S. to satisfactorily conduct the background investigation; and
-* Personnel operating outside the contiguous U.S. under special risk security considerations, as outlined in FIPS 201.
-
-A standardized set of procedures and processes for suitability assurance covering any or all of these possible use cases is outside the scope of this document.
-
-Where suitability is a concern for a federal agency, the agency may require further suitability checks prior to granting any access. This document does not prohibit a suitability and fitness determination from being required by federal departments and agencies prior to issuing a PIV-Interoperable credential _or_ granting any access to an individual with a PIV-Interoperable credential.
-
-## 2.3 Federal Issuers and Non-Federal Issuers for PIV-Interoperable Credentials
+## 2.2 Federal Issuers and Non-Federal Issuers for PIV-Interoperable Credentials
 
 For PIV-Interoperable credentials, there may be Federal Issuers and Non-Federal Issuers who participate. Many documents have asserted the term “Non-Federal Issuer” or NFI as synonymous with a PIV-Interoperable credential; the two terms are different and there is a need to clarify the terminology.
 
@@ -217,13 +148,84 @@ Figure 1 is used in later sections of this document to identify the auditing and
 
 [![A diagram that displays an icon and label for PIV-I non-federal issuers on the left side of the diagram and an icon and a label for PIV-I federal issuers on the right side of the diagram. Four boxes appear in a grid below the PIV-I non-federal issuers label and four boxes appear in a grid below the PIV-I federal issuers label. The top set of boxes say Certification Authority (PKI). The bottom set of boxes say Registration Cred Mgmt service, proofing, lifecycle. There are arrows vertically and diagonally between the four boxes on the left side of the diagram and there are arrows vertically and diagonally between the four boxes on the right side of the diagram. These two sets of four boxes are labeled Identity Assurance. Three PIV-I card icons appear on the left side of the diagram and three PIV-I card icons appear on the right side of the diagram. The PIV-I card icons are labeled Authentication Assurance. There are arrows pointing from the bottom set of Identity Assurance boxes to the two sets of PIV-I card icons. From the middle PIV-I card icon on the left side of the diagram an arrow points down and to the right to three PIV-I federal issuers icons. The words I can trust the credentials (outputs) appear beside the icons. An arrow points down from the middle from the middle PIV-I card icon on the right side of the diagram to the three PIV-I federal issuers icons.]({{site.baseurl}}/assets/piv/pivi-nonfed-and-fed-issuers.png)]({{site.baseurl}}/assets/piv/pivi-nonfed-and-fed-issuers.png){:target="_blank"}{:rel="noopener noreferrer"}
 
+## 2.3 Trusted Identity
+
+The fundamental purpose of an identity credential is to establish a trust foundation based on:
+* the _identity assurance_ of the person, and
+* the _authenticator assurance_ of the credential.
+
+Therefore, the PIV-Interoperable credentials must be issued in a manner that provides the Federal Government with a commensurate level of trust for _identity assurance_ and _authenticator assurance._
+
+For PIV credentials, individuals are also required to have common, minimum suitability assurance defined as:
+
+* a baseline suitability assurance of the person to work for or on behalf of the Federal Government.
+
+Suitability assurance may not be determined from a PIV-Interoperable credential.
+
+For Non-Federal Issuers of PIV-Interoperable, the full list of requirements for identity and authenticator assurance for PIV-Interoperable credentials is listed in the [X.509 Certificate Policy for the Federal Bridge Certification Authority](https://www.idmanagement.gov/governance/fpkiaudit/#fpki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}.
+
+For Federal Issuers of PIV-Interoperable, the full list of requirements for identity and authenticator assurance for PIV-Interoperable credentials is listed in the [X.509 Certificate Policy for the Federal Common Policy Framework](https://www.idmanagement.gov/governance/fpkiaudit/#fpki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}.
+
+### 2.3.1 PIV-Interoperable Identity Assurance
+
+The Federal Government’s identity assurance requirements are defined in FIPS 201 for PIV credentials. The PIV-Interoperable credentials shall adhere to the same identity assurance requirements as PIV credentials. A summation of the identity assurance requirements is defined here for informational purposes only which include the following elements.
+
+* In-person appearance and proofing
+* Verification of two independent identity documents or accounts
+* Capture of biometrics
+
+The PIV-Interoperable credential meets NIST 800-63-3 **Identity Assurance Level 3** requirements.
+
+### 2.3.2 PIV-Interoperable Authenticator Assurance
+
+The PKI certificates are where the identity assurance and authenticator assurance are asserted during use in networks, facilities, and systems. All PIV-Interoperable identity credentials must contain certificates issued from one of the Certification Authorities which operate under the Federal Public Key Infrastructure (Federal PKI) Certificate Policies.
+
+There are two Certificate Policies which govern the Federal PKI Certification Authorities:
+
+* Certificate Policy for the Federal Bridge Certification Authority
+* Certificate Policy for the Federal PKI Common Policy Framework
+
+There are Certification Authorities which operate and are audited for compliance to these Certificate Policies. The Certification Authorities also have Registration Authority services which may be built or operated by third-parties such as federal agencies or commercial service providers. The Registration Authority services encompass the _systems and processes_ where the initial collection of the Personally Identifiable Information (PII) is performed for the PIV or PIV- Interoperable identity assurance and lifecycle management functions.[^3] All Certification Authorities and Registration Authority components are subject to audits for compliance to management, operational, and technical controls specified in their respective Certificate Policies.[^4]
+
+Within this boundary of more than [100 existing and audited Certification Authorities](https://playbooks.idmanagement.gov/fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"}, there are options operated and available for direct use by federal departments within the Executive Branch. There are also Certification Authorities which are operated for non-federal Executive Branch entities including Legislative and Judicial Branch agencies, and State, Local, Tribal, Territorial, International, and Commercial Partners.
+
+The Certificate Policies extension object identifier (OID) contained in the certificates asserts the identity assurance of the person presenting the credential and certificate, how the private keys are stored and managed, and how the certificate should be validated for usage.
+
+However, the Certificate Policies extension OID for the PIV Authentication Certificates is available only to Federal Government organizations. PIV-Interoperable authentication certificates may not assert the PIV Certificate Policies OIDs used for PIV Authentication. Therefore, the Certificate Policy for the Federal PKI Common Policy Framework was updated in 2020 to allow a Federal PKI Shared Service Provider to issue PIV-I Authentication Certificates.
+
+The individual certificate policy specifies the minimum requirements for the Federal Government to rely on PIV-Interoperable credentials, and includes all requirements for PIV-Interoperable credentials inclusive of:
+
+* Certificate policy extension object identifiers,
+* Clarification on identifier namespaces to be used, and
+* Credential requirements for security and auditing.
+
+The PIV-Interoperable credential is comparable to a NIST 800-63-3 **Authenticator Assurance Level 3** authenticator.
+
+### 2.3.3 PIV-Interoperable Suitability Assurance
+
+Suitability assurance is defined as the investigative and adjudication processes which _enhance_ the identity assurance. These processes are used to determine suitability for granting access to federal data, applications, facilities, and networks. Only the Federal Government may determine the fitness or suitability of an individual for access to Federal Government assets.
+
+PIV-Interoperable processes are unable to mirror the suitability assurance processes employed for the PIV credential. PIV-Interoperable credentials assert no suitability assurance in a _baseline, standardized manner._
+
+A Federal Government relying party may associate the PIV-Interoperable credential with additional off-credential information to determine the fitness or suitability of the requested access. Examples of off-credential information could be a record check against investigation databases, an entitlements attribute, or other manual or automated processes.
+
+PIV-Interoperable credentials may be appropriate for situations where an agency has determined that a PIV credential is not warranted, but the individual requires access. Such situations may include, but are not limited to:
+
+* Temporary/seasonal employees, visiting scientists and guest researchers, or contractor personnel requiring access for less than six (6) months;
+* Non-U.S. nationals with insufficient residency in the U.S. to satisfactorily conduct the background investigation; and
+* Personnel operating outside the contiguous U.S. under special risk security considerations, as outlined in FIPS 201.
+
+A standardized set of procedures and processes for suitability assurance covering any or all of these possible use cases is outside the scope of this document.
+
+Where suitability is a concern for a federal agency, the agency may require further suitability checks prior to granting any access. This document does not prohibit a suitability and fitness determination from being required by federal departments and agencies prior to issuing a PIV-Interoperable credential _or_ granting any access to an individual with a PIV-Interoperable credential.
+
 ## 2.4 Technical Requirements
 
 Basic technology requirements must be met for identity credentials to interact with the Federal Government’s infrastructure for PIV credentials. PIV-Interoperable credentials must conform to NIST technical specifications for PIV credentials, as defined in:
-* [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/3/final)
-* [NIST Special Publication 800-73](https://csrc.nist.gov/publications/detail/sp/800-73/4/final)
-* [NIST Special Publication 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final)
-* [NIST Special Publication 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final)
+* [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}
+* [NIST Special Publication 800-73](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}
+* [NIST Special Publication 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}
+* [NIST Special Publication 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}
 
 Further clarification of the NIST Special Publications is required to address: 
 1. visual distinction
@@ -299,14 +301,14 @@ For auditing, the Federal PKI requires:
 * Any Registration Authority systems and processes which are used by the Certification Authority to issue PIV or PIV-Interoperable credentials to be _audited_
 * Audits must encompass:<br>
 *   the Security Controls Overlay of **NIST Special Publication 800-53**,<br>
-*   the applicable **NIST Special Publication 800-79-2** requirements, and<br>
+*   the applicable **NIST Special Publication 800-79** requirements, and<br>
 *   the compliance with the Certification Authority’s Certificate Policy and Certification Practices Statements.
 
 The audits are performed by third-party independent auditors and audit results must be submitted to the Federal PKI on an annual basis. In addition to the third-party independent audits, the Certification Authorities and Registration Authority systems must submit to the Federal PKI on a recurring basis:
 
 * Samples of outputs from the systems for compliance inspection and testing, including:<br>
-*   Samples of all Certificate types issued, and<br>
-*   Samples of any PIV or PIV-Interoperable credentials issued.
+* Samples of all Certificate types issued, and<br>
+* Samples of any PIV or PIV-Interoperable credentials issued.
 
 These sample artifacts are used to perform compliance inspection on the outputs of the systems in addition to the management, operational, and technical controls which are inspected during the audits. Non-compliant sample artifacts are reported to the Certification Authority, Registration Authority, or federal agency and remediation of non-compliant elements must be addressed or the entities will lose their compliance certification.
 
@@ -350,7 +352,7 @@ Table 4 summarizes the FKI auditing and FISMA _Authority to Operate_ distinction
 |----------|-------------------------|--------------------------------------|
 | **Type**      | Non-Federal Issuer of PIV-Interoperable Credentials | Federal Issuer of PIV-Interoperable Credentials |
 | **Federal PKI Audits** | 1. Annual Audits for the Certification Authorities directly<br>2. Annual Audits of the services and systems used with the Certification Authorities to collect information and manage credentials<br>3. Submission of sample artifacts for compliance testing | 1. Annual Audits for the Certification Authorities directly<br>2. Annual Audits of the services and systems used with the Certification Authorities to collect information and manage credentials<br>3. Submission of sample artifacts for compliance testing<br>4. Applicable **NIST Special Publication 800-79-2** requirements|
-| **FISMA Authorization to Operate** | N/A | - Additional security controls<br>- Continuous monitoring<br>- Government Designated Authorizing Official |
+| **FISMA Authorization to Operate** | N/A | 1. [NIST SP 800-53 Federal PKI Overlay](https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"}<br>2. Additional security controls<br>3. Continuous monitoring<br>4. Government Designated Authorizing Official |
 | **Items to be Requested or Produced** | 1. Audit Compliance Letters for Certification Authorities<br>2. Audit Compliance Letters for Registration Authority components (inclusive of any Card Management systems) | 1. Audit Compliance Letters for Certification Authorities<br>2. Audit Compliance Letters for Registration Authority components (inclusive of any Card Management systems)<br>3. Authorization Memorandum issued by and signed by the Government Designated Authorizing Official<br>4. Registration Authority Agreements |
 
 ## 3.2 Acquiring PIV-Interoperable Services
@@ -372,94 +374,77 @@ This appendix provides additional technical information in support of the techni
 .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;}
 .tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:0px;color:#444;
   font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:0px;color:#fff;
+.tg th{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:0px;color:#444;
   font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-cly1{text-align:left;vertical-align:middle}
+.tg .tg-nrix{text-align:center;vertical-align:middle}
 .tg .tg-baqh{text-align:center;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-nrix{text-align:center;vertical-align:middle}
 </style>
 <table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0lax">Category</th>
-    <th class="tg-0lax">Technical Requirements</th>
-    <th class="tg-0lax">PIV</th>
-    <th class="tg-0pky">PIV-Interoperable</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-baqh" rowspan="7">Trust</td>
-    <td class="tg-0lax">Identity Assurance Level 3</td>
-    <td class="tg-0lax">&amp;#10003;</td>
-    <td class="tg-0lax">Yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Authenticator Assurance Level 3</td>
-    <td class="tg-0lax">Yes</td>
-    <td class="tg-0pky">Yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Favorably adjudicated National Agency Check with Inquiries (minimum) or other Tier 1 investigation</td>
-    <td class="tg-0lax">Yes</td>
-    <td class="tg-0lax">No</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Authentication Certificate</td>
-    <td class="tg-nrix">PIV OID on PIV Authentication Certificate</td>
-    <td class="tg-nrix">PIV-I OID on PIV-I Authentication Certificate</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Content Signing</td>
-    <td class="tg-cly1">PIV OID on PIV Content Signing Certificate</td>
-    <td class="tg-cly1">PIV OID on PIV-I Content Signing Certificate</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Card Stock Certified</td>
-    <td class="tg-cly1">Yes</td>
-    <td class="tg-cly1">Yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">PIV Application Identifier (AID)</td>
-    <td class="tg-cly1">Yes</td>
-    <td class="tg-cly1">Yes</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh" rowspan="3">Credential Edge</td>
-    <td class="tg-0lax">NIST SP 800-73-4 conformant GUID present in the CHUID</td>
-    <td class="tg-cly1">Yes</td>
-    <td class="tg-cly1">Yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">RFC 4122 conformant UUID required in the GUID data element of the CHUID</td>
-    <td class="tg-cly1">Yes</td>
-    <td class="tg-cly1">Yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">RFC 4122 conformant UUID present in the Authentication Certificate</td>
-    <td class="tg-cly1">Yes</td>
-    <td class="tg-0lax">Yes</td>
-  </tr>
-</tbody>
+  <thead>
+    <tr>
+      <th class="tg-nrix"><strong>Category</strong></th>
+      <th class="tg-nrix"><strong>Technical Requirements</strong></th>
+      <th class="tg-nrix"><strong>PIV</strong></th>
+      <th class="tg-nrix"><strong>PIV-Interoperable</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-baqh" rowspan="7">Trust</td>
+      <td class="tg-0lax">Identity Assurance Level 3</td>
+      <td class="tg-nrix">●</td>
+      <td class="tg-nrix">●</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Authenticator Assurance Level 3</td>
+      <td class="tg-nrix">●</td>
+      <td class="tg-nrix">●</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Favorably adjudicated National Agency Check with Inquiries (minimum) or other Tier 1 investigation</td>
+      <td class="tg-nrix">●</td>
+      <td class="tg-nrix"></td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Authentication Certificate</td>
+      <td class="tg-nrix">PIV OID on PIV Authentication Certificate</td>
+      <td class="tg-nrix">PIV-I OID on PIV-I Authentication Certificate</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Content Signing</td>
+      <td class="tg-nrix">PIV OID on PIV Content Signing Certificate</td>
+      <td class="tg-nrix">PIV-I OID on PIV-I Content Signing Certificate</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">Card Stock Certified</td>
+      <td class="tg-nrix">●</td>
+      <td class="tg-nrix">●</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">PIV Application Identifier (AID)</td>
+      <td class="tg-nrix">●</td>
+      <td class="tg-nrix">●</td>
+    </tr>
+    <tr>
+      <td class="tg-baqh" rowspan="3">Credential Edge</td>
+      <td class="tg-0lax">NIST SP 800-73-4 conformant GUID present in the CHUID</td>
+      <td class="tg-nrix">●</td>
+      <td class="tg-nrix">●</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">RFC 4122 conformant UUID required in the GUID data element of the CHUID</td>
+      <td class="tg-nrix">●</td>
+      <td class="tg-nrix">●</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">RFC 4122 conformant UUID present in the Authentication Certificate</td>
+      <td class="tg-nrix">●</td>
+      <td class="tg-nrix">●</td>
+    </tr>
+  </tbody>
 </table>
-
-| Category | Technical Requirements | PIV | PIV-Interoperable|
-|------------------|--------------------------------------|:------------:|:----------------------:|
-| **Trust**      | Identity Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Level of Assurance 4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Identity Assurance Level 3 (draft NIST SP 800-63-3) | ● | ● |
-|                        | Authenticator Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Level of Assurance 4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Authenticator Assurance Level 3 (draft NIST SP 800-63-3) | ● | ● |
-|                        | Suitability Assurance:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Favorably adjudicated National Agency Check with Inquiries (minimum) or other Tier 1 investigation | ● |    |
-|                        | PIV policy object identifier on PIV Authentication Certificates | ● |    |
-|                        | PIV-I equivalent policy object identifier on PIV-I Authentication Certificates |    | ● |
-|                        | PIV Content Signing object signing certificate | ● |    |
-|                        | PIV-I Content Signing equivalent object signing certificate |    | ● |
-|                        | Card stock certified | ● | ● |
-|                        | PIV Application Identifier (AID) | ● | ● |
-|                        | Command edge and NIST SP 800-85 conformant | ● | ● |
-| **Credential Edge** | NIST SP 800-73-4 conformant GUID present in the CHUID | ● | ● |
-|                        | RFC 4122 conformant UUID required in the GUID data element of the CHUID | ● | ● |
-|                        | RFC 4122 conformant UUID present in the Authentication Certificates | ● | ● |
 
 # Appendix B: Glossary
 
@@ -512,8 +497,8 @@ This appendix provides additional technical information in support of the techni
 ## Policies
 1. [HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors](https://www.dhs.gov/homeland-security-presidential-directive-12){:target="_blank"}{:rel="noopener noreferrer"}
 2. [OMB A-130: Management of Federal Information Resources](https://www.cio.gov/policies-and-priorities/circular-a-130/){:target="_blank"}{:rel="noopener noreferrer"}
-3. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-4. [X.509 Certificate Policy for the Federal Bridge Certification Authority][https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf]{:target="_blank"}{:rel="noopener noreferrer"}
+3. [X.509 Certificate Policy for the Federal Bridge Certification Authority](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Standards
 1. [FIPS 201: Personal Identity Verification (PIV) of Federal Employees and Contractors](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}
@@ -524,8 +509,7 @@ This appendix provides additional technical information in support of the techni
 3. [NIST SP 800-73: Interfaces for Personal Identity Verification (4 Parts)](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}
 4. [NIST SP 800-76: Biometric Data Specification for Personal Identity Verification](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}
 5. [NIST SP 800-78: Cryptographic Algorithms and Key Sizes for Personal Identity Verification](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}
-6. [NIST SP 800-79: Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)]
-(https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}
+6. [NIST SP 800-79: Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)](https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}
 
 # Footnotes
 
