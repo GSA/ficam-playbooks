@@ -51,7 +51,7 @@ Agencies should manage identity attributes as centrally as possible and distribu
 - *Contact attributes* - Physical location, government phone number, and government email address.
 - *Authorization attributes* - Clearance, training, and job codes.
 
-Entitlements are a specific type of authorization attributes that represent an application permission. Entitlements management is the act of managing those permissions. An agency may group multiple entitlements into a specific role or group to streamline provision and deprovision activities as well as for auditing and reporting. For example, a new employee may require access to ten core enterprise application on the first day of work. An agency can create a new employee group with new employee entitlements and automate provisioning to the ten core applications rather than treat them as individual access requests.
+Entitlements are a specific type of authorization attributes that represent an application permission. Entitlements management is the act of managing those permissions. An agency may group multiple entitlements into a specific role or group to streamline provision and deprovision activities as well as for auditing and reporting. For example, a new employee may require access to ten core enterprise applications on the first day of work. An agency can create a new employee group with new employee entitlements and automate provisioning to the ten core applications rather than treat them as individual access requests.
 
 Attributes and entitlements are created or aggregated through a number of manual and automated mechanisms. Mechanisms may include: 
 - Use a Single Sign-On tool to aggregate application access entitlements.
@@ -159,7 +159,7 @@ Authorization is how you decide whether you should allow someone to access an ag
 
 Usually, authorization occurs immediately after authentication. When you log in to a service, you present your credentials and the service confirms your credentials are valid (authentication) and grants or denies you access based on your assigned permissions (authorization).
 
-Authorizations are based on progressive fine-grained models. The majority of agencies have implement role-based access and are moving towards more fine-grained access such as attribute-based or risk adaptive as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understand how a vendor meets the use case.
+Authorizations are based on progressive fine-grained access models. The majority of agencies implement role-based access and are moving towards more fine-grained access such as attribute-based or risk adaptive as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understands how a vendor meets the use case.
 
 | | Less Fine-Grained | --> | --> | More Fine-Grained |
 | |:----:|:----:|:----:|:----:|
