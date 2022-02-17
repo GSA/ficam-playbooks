@@ -65,7 +65,7 @@ primary_navigation:
         url: /sso/
   - name: Governance
     children:
-      - name: Identity Risk Assessment
+      - name: DIRA
         url: /playbooks/dira/
       - name: ICAM Program Management
         url: /pm/
@@ -77,6 +77,8 @@ primary_navigation:
         url: /playbooks/signword/
       - name: Sign Federal Register Document
         url: /playbooks/signfedregister/
+      - name: Sign Email in Outlook
+        url: /piv/user-guide/outlook/
 
 secondary_navigation:
   - name: Contact Us
