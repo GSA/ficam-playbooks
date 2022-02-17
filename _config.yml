@@ -46,37 +46,37 @@ primary_navigation:
     description: FICAM Archtecture
     url: /arch/
   - name: Identity Management
-      children:
-        - name: Cloud Identity
-          url: /playbooks/cloud/
-        - name: Digital Worker
-          url: /playbooks/dw/
+    children:
+      - name: Cloud Identity
+        url: /playbooks/cloud/
+      - name: Digital Worker
+        url: /playbooks/dw/
   - name: Credential Management
-      children:
-        - name: Federal PKI
-          url: /fpki/
-        - name: PIV
-          url: /piv/
+    children:
+      - name: Federal PKI
+        url: /fpki/
+      - name: PIV
+        url: /piv/
   - name: Access Management
-      children:
-        - name: PACS
-          url: /pacs/
-        - name: Single Sign-On
-          url: /sso/
+    children:
+      - name: PACS
+        url: /pacs/
+      - name: Single Sign-On
+        url: /sso/
   - name: Governance
-      children:
-        - name: Identity Risk Assessment
-          url: /playbooks/dira/
-        - name: ICAM Program Management
-          url: /pm/
-        - name: ICAM Governance Framework
-          url: /docs/playbook-identity-governance-framework.pdf
+    children:
+      - name: Identity Risk Assessment
+        url: /playbooks/dira/
+      - name: ICAM Program Management
+        url: /pm/
+      - name: ICAM Governance Framework
+        url: /docs/playbook-identity-governance-framework.pdf
   - name: User Guides
-      children:
-        - name: Sign Word Document
-          url: /playbooks/signword/
-        - name: Sign Federal Register Document
-          url: /playbooks/signfedregister/
+    children:
+      - name: Sign Word Document
+        url: /playbooks/signword/
+      - name: Sign Federal Register Document
+        url: /playbooks/signfedregister/
 
 secondary_navigation:
   - name: Contact Us
