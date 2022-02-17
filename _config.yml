@@ -51,18 +51,22 @@ primary_navigation:
         url: /playbooks/cloud/
       - name: Digital Worker
         url: /playbooks/dw/
+      - name: Lifecycle Management (Coming Soon)
   - name: Credential Management
     children:
       - name: Federal PKI
         url: /fpki/
       - name: PIV
         url: /piv/
+      - name: PIV-I (Coming Soon)
+      - name: Authenticators (Coming Soon)
   - name: Access Management
     children:
       - name: PACS
         url: /pacs/
       - name: Single Sign-On
-        url: /sso/
+        url: /playbooks/sso/
+      - name: Privileged Users (Coming Soon)
   - name: Governance
     children:
       - name: DIRA
