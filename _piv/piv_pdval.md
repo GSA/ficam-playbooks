@@ -7,10 +7,20 @@ sticky_sidenav: true
 sidenav: piv
 
 subnav:
-    - text: Physical Features
-      href: '#physical-features'
-    - text: Electronic Features
-      href: '#electronic-features'
+    - text: Introduction
+      href: '#introduction'
+    - text: What Is a Trust Anchor?
+      href: '#what-is-a-trust-anchor'
+    - text: What Is Path Discovery and Validation?
+      href: '#what-is-path-discovery-and-validation'
+    - text: What Is a Certification Path?
+      href: '#what-is-a-certification-path'
+    - text: Certification Path Discovery
+      href: '#certification-path-discovery'
+    - text: Certification Path Validation
+      href: '#certification-path-validation'
+    - text: References
+      href: '#references'
 ---
 
 ## Introduction
