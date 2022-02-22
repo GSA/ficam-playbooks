@@ -76,10 +76,43 @@ Sometimes referred to as a certificate chain or a trust path, a certification pa
 
 Two valid certification paths for the same PIV authentication certificate are illustrated below.
 
+[![An example certification path from the Federal Common Policy CA G2.]({{site.baseurl}}/assets/piv/pdval-example-cert-path-1.png)]({{site.baseurl}}/assets/piv/pdval-example-cert-path-1.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Example Certification Path 1 - from Federal Common Policy CA G2</b></p>
+
+[![An example certification path from the Raytheon Technologies Root CA.]({{site.baseurl}}/assets/piv/pdval-example-cert-path-2.png)]({{site.baseurl}}/assets/piv/pdval-example-cert-path-2.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Example Certification Path 2 - from Raytheon Technologies Root CA</b></p>
+
+Both certification paths are valid for the same PIV authentication certificate (”(Affiliate)” in the images), but they start with different trust anchors. The configuration difference between the two example paths is only which trust anchor was installed.
+
+A variety of factors can influence which certification path is used on a system, including:
+- Which trust anchor CAs (Also known as trust roots or trusted CAs) are installed
+- Locally cached CA certificates
+- Dates the CA certificates were issued and/or expire
+- The content of the CA certificates
+
+The most important factor is the trust anchors. By limiting which trust anchors are installed, only certification paths to those trust anchors can be used on the system. Systems that are for agency use should only find certification paths to the Federal Common Policy CA for PIV certificates. If a certification path to another trust anchor is discovered, the trust anchor can be removed from the system to ensure that all certification paths validate to the Federal Common Policy CA.
+
+**Critical Note:** If certification paths from your PIV certificates do not begin with the Federal Common Policy CA G2, follow the guidance found in [Distribute the certificate to operating systems](https://playbooks.idmanagement.gov/fpki/common/distribute-os/){:target="_blank"}{:rel="noopener noreferrer"} to install the CA in the correct location. 
 
 ## Certification Path Discovery
 
-[text here]
+The first step of PDVal is finding a certification path for the certificate that needs to be verified.  The process for finding the path is called path discovery or path development.
+
+In simple cases like verifying your own agency's PIV card, this is a straightforward procedure involving only one or two CA certificates (see the Example Certification Path 1 image in the previous section) In other situations, such as validating a PIV-I certificate, the procedure can involve many CAs and significantly more challenging path discovery requirements.
+
+[![An example PIV-I certification path.]({{site.baseurl}}/assets/piv/pdval-pivi-cert-path.png)]({{site.baseurl}}/assets/piv/pdval-pivi-cert-path.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>PIV-I Certification Path</b></p>
+
+Software providers use different path discovery methods. Describing all of them is beyond the scope of this playbook, but the simple path discovery algorithm below illustrates the concept. 
+
+When a certificate must be verified, software may repeat the following path discovery procedure: 
+
+[![A simple path discovery algorithm.]({{site.baseurl}}/assets/piv/pdval-path-discovery-algorithm.png)]({{site.baseurl}}/assets/piv/pdval-path-discovery-algorithm.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+If the procedure is unable to obtain the next issuing CA certificate, the process fails.
 
 ### Finding CA Certificates
 
