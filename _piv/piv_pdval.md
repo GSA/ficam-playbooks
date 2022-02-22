@@ -52,7 +52,7 @@ PDVal is a two-step process:
 
 **Note:** The information in this playbook does not cover troubleshooting PDVal errors. Information about troubleshooting PDVal errors during smart card logon can be found in the Troubleshooting Windows Smart Card Logon with PIV-Authentication playbook [LINK TO PIV AUTH TROUBLESHOOTING PLAYBOOK WHEN IT'S READY]
 
-**Note:** This document describes the PDVal process as documented in standards. Individual vendor implementations may not support all the capabilities described in this playbook, and the details of individual implementations may vary.
+**Note:** This playbook describes the PDVal process as documented in standards. Individual vendor implementations may not support all the capabilities described in this playbook, and the details of individual implementations may vary.
 
 ### The Federal PKI
 
