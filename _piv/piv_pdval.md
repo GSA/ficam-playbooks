@@ -50,7 +50,7 @@ PDVal is a two-step process:
 1. **Certification Path Discovery:** Find a certification path to a trust anchor. 
 2. **Certification Path Validation:** Confirms that the certification path is good. 
 
-**Note:** The information in this playbook does not cover troubleshooting PDVal errors. Information about troubleshooting PDVal errors during smart card logon can be found in the Troubleshooting Windows Smart Card Logon with PIV-Authentication playbook [link to PIV Auth playbook when it's ready]
+**Note:** The information in this playbook does not cover troubleshooting PDVal errors. Information about troubleshooting PDVal errors during smart card logon can be found in the Troubleshooting Windows Smart Card Logon with PIV-Authentication playbook [LINK TO PIV AUTH TROUBLESHOOTING PLAYBOOK WHEN IT'S READY]
 
 **Note:** This document describes the PDVal process as documented in standards. Individual vendor implementations may not support all the capabilities described in this playbook, and the details of individual implementations may vary.
 
@@ -116,7 +116,21 @@ If the procedure is unable to obtain the next issuing CA certificate, the proces
 
 ### Finding CA Certificates
 
-[text here]
+For simple cases, the necessary CA certificates are often administratively installed or are cached locally by the certificate consuming software or the operating system. In more complicated situations such as verifying a PIV certificate from another agency or a PIV-I card from a commercial vendor, software must actively retrieve the CA certificates needed to discover a complete certification path. Certificates have a field called the Authority Information Access (AIA) extension which enables the path discovery implementation to do exactly that. 
+
+In the FPKI, all certificates are required to contain an AIA with an Internet-accessible URL inside. The URL usually points to a “p7c” file that contains one or more issuing CA certificates.
+
+[![A screenshot showing Authority Information Access in a certificate issued by the Federal Bridge CA.]({{site.baseurl}}/assets/piv/pdval-aia-in-cert.png.png)]({{site.baseurl}}/assets/piv/pdval-aia-in-cert.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>AIA in a Certificate Issued by the Federal Bridge CA</b></p>
+
+Path discovery follows the AIA URLs, one after the other from each certificate in sequence, until it finds a certificate issued by a trust anchor in the certificate trust list.  The figure below shows the discovery of a single correct path.  In practice though, there could be many false paths evaluated and potentially even more than one valid path discovered. The path processing software then must choose which path to use.
+
+**Fun Fact:** The algorithm to decide which correct path to choose has been a source of much debate in the PDVal community for more than two decades.
+
+[![A diagram showing the discovery of a single correct path.]({{site.baseurl}}/assets/piv/pdval-path-discovery.png)]({{site.baseurl}}/assets/piv/pdval-path-discovery.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Illustrative Path Discovery</b></p>
 
 ### Choosing CA Certificates
 
