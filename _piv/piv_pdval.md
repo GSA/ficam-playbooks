@@ -72,7 +72,10 @@ GSA’s FPKI site contains the complete [graphical FPKI CA ecosystem](https://pl
 
 ## What Is a Certification Path?
 
-[text here]
+Sometimes referred to as a certificate chain or a trust path, a certification path is the sequence of unique CA certificates between a trust anchor and a certificate issued to a person or device. Starting with the trust anchor, each subsequent CA certificate in the sequence was created and digitally signed (“issued”) by the preceding CA’s key. By verifying the digital signatures on each certificate in the sequence, trust is conveyed from the trust anchor to the person or device certificate.
+
+Two valid certification paths for the same PIV authentication certificate are illustrated below.
+
 
 ## Certification Path Discovery
 
