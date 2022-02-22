@@ -56,7 +56,19 @@ PDVal is a two-step process:
 
 ### The Federal PKI
 
-[text here]
+The Federal PKI (FPKI) includes a large number of CAs. They are managed by federal agencies, commercial providers, foreign allies, or private enterprises that issue certificates according to federal policy. The FPKI also includes what are known as bridge CAs that enable two-way trust. The bridge CA operated by FPKI is the Federal Bridge CA. 
+
+The image below illustrates the FPKI with Federal Common Policy CA G2 as the trust anchor.
+
+[![An image showing the FPKI with Federal Common Policy CA G2 as the trust anchor.]({{site.baseurl}}/assets/piv/pdval-trust-anchor.png)]({{site.baseurl}}/assets/piv/pdval-trust-anchor.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+Operating systems and many digital certificate supporting software packages come with a predefined **static** list of trust anchors called a **certificate trust list**. The trust lists can usually be further modified to add or remove specific trust anchors. This resulting list could include multiple trust anchors that are directly or indirectly connected to Federal PKI. These lists must be manually maintained over time.
+
+For example, the CertiPath Bridge CA can be seen in the above image. Several members of the Aerospace and Defense community have two-way (i.e., the bridge and the member CA have chosen to trust each other and have issued each other technical evidence of that trust for anyone to see) cross-certifications with that bridge that enable them to act as a peer and rely on their own trust anchor for interactions with Federal PKI. Examples include Raytheon Technologies, Northrop Grumman, and Boeing.
+
+GSA’s FPKI site contains the complete [graphical FPKI CA ecosystem](https://playbooks.idmanagement.gov/fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"} displaying the relationships between the CAs. The graph depicts how each CA links to each other, through cross-certificates, subordinate certificates, or bridge CAs. 
+
+**Fun Fact:** Microsoft Windows includes trust anchors that were previously connected to the FPKI via the Certipath Bridge CA. The Netherlands Ministry of Defense was connected until November 2015 and Carillon Information Security was connected until February 2020.
 
 ## What Is a Certification Path?
 
