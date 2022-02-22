@@ -134,7 +134,21 @@ Path discovery follows the AIA URLs, one after the other from each certificate i
 
 ### Choosing CA Certificates
 
-[text here]
+As mentioned in the previous section, the AIA URLs may point to files that contain more than one CA certificate, each of which could be valid entries in a certification path to your desired trust anchor. In the diagram below, the AIA URL for the Bridge CA contains three valid CA certificates. 
+
+[![A diagram showing path discovery in a bridge PKI environment.]({{site.baseurl}}/assets/piv/pdval-path-discovery-bridge-pki.png)]({{site.baseurl}}/assets/piv/pdval-path-discovery-bridge-pki.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Illustrative Path Discovery in a Bridge PKI Environment</b></p>
+
+As an example, assume that the path discovery software is attempting to find a certification path from an end user on the left to the trust anchor on the right. Said another way, we trust the anchor on the right but have been presented with the user’s credential on the left and need to see if there is any means to trust it.  When the process retrieves the AIA URL for the Bridge, it must select the CA certificate issued to the Bridge by CA C. Path discovery software that fails to select the correct certificate or is incapable of backtracking to attempt other choices may fail to find a valid certification path or end the search in an unexpected location, such as the far side of the Federal Bridge.
+
+**Fun Fact:** Yes, we wanted to say _a bridge too far_ when we wrote that.
+
+**Ah-Ha Fact:** Bridges create transitive trust.  You may recall the transitive property from Algebra.  If A = B and B = C, then A = C.  That is exactly what is going on here.  The end user’s credential above is ultimately able to be trusted because we found a means to trust its issuer and we did not directly trust that issuer already.  The means to do that was established through the transitive property.  Without constraints, transitive trust could theoretically be built indefinitely.
+
+**A-Ha Fact:** The song _Take On Me_ was recorded and failed to chart three times before the addition of the ground-breaking video and a fourth recording saw it chart to number 1. If this had been a **Take on Me note**, it would have been E<sub>5</sub>.
+
+Fortunately, beyond the more obvious matching of certificate names in the certification path, certificates provide useful information for guiding path discovery, the most important of which are public key identifiers. 
 
 #### Public Key Identifiers
 
