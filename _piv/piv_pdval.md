@@ -186,37 +186,112 @@ It is worth noting that some aspects of path validation may be successfully inco
 
 ### Basic Certificate Checks
 
-[text here]
+The checks in this section are applied in the same way to every certificate in the certification path except for the trust anchor.
 
 #### Validity Period
 
-[text here]
+Every certificate contains two dates: the date that it was issued, and the date when it will expire. The current time must be between the two dates. 
 
 #### Signature Verification
 
-[text here]
+Starting with the certificate issued by the trust anchor, every certificate in the certification path has a digital signature that must be verified using the previous certificate’s public key.
 
 #### Name Matching
 
-[text here]
+Certificates uniquely identify the owner of the certificate, whether the owner is a person, device, or CA. Certificates are named using what is called a Distinguished Name (DN). For example:
+    CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+
+Each certificate contains two Distinguished Names:
+- **Subject DN:** The owner of the certificate. The owner controls the key found in the certificate. 
+- **Issuer DN:** The CA that created and signed the certificate. 
+
+In a certification path, the subject name in the CA certificate must match the issuer name of the next certificate in the sequence.
+
+#### Required Fields
+
+CA certificates must contain fields that authorize them to be issuers of other certificates. In the FPKI, all CA certificates must contain the following:
+- **Key Usage:** Certificate Signing and CRL Signing
+- **Basic Constraints:** CA=True
+
+Certificates issued to persons or devices must meet the requirements of the use case. For example, if a certificate is being used for authentication, the software can confirm that the Extended Key Usage for Client Authentication is present. Certificate requirements for FPKI can be found in the [Certificate Profiles](#certificate-profiles) section. 
 
 #### Revocation Checking
 
-[text here]
+A certificate may need to be invalidated before it expires. This process is called revocation. You can think of what happens when you report a credit card as having been lost or stolen.  The expiration date has not passed, but you do not want anyone using the credit card going forward.
+
+A CA revokes a certificate it has issued by placing the certificate serial number (primary certificate identifier) on a digitally signed list of revoked certificates called a **Certificate Revocation List (CRL)**. If a certificate’s serial number appears on the list, it is no longer valid and should not be used.
+
+Additionally, CAs may operate **Online Certificate Status Protocol (OCSP)** servers to provide revocation status for single certificates. Instead of a potentially large CRL, software can leverage OCSP to quickly obtain status for a certificate. This is especially useful for end user applications that do not need to track the revocation status of every certificate issued by a CA.
 
 ### Certificate Policies
 
-[text here]
+In the FPKI, all certificates contain a field called the Certificate Policies extension. This field contains a list of policy identifiers. Each identifier represents a set of security requirements that are specified in the [Federal Common Policy CP](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+
+When found in a CA certificate, these policies indicate that the CA complies with applicable security requirements and  is authorized to issue certificates containing the policy. When found in a certificate issued to a person or a device, the policies communicate what security and identity proofing requirements have been met. They may also communicate the intended use case for the certificate.
+
+In the FPKI, all certificates are required to contain certificate policies and path validation software must confirm that all certificates are valid for one or more policies.
+
+For example, a PIV authentication certificate is identified by the presence of the policy identifier id-fpki-common-authentication (2.16.840.1.101.3.2.1.3.13) in the PIV authentication certificate. CAs that are authorized to issue PIV certificates must also contain this policy, and the policy must be in every CA certificate leading back to the Federal Common Policy CA. Using this information, it is possible to restrict an application to only accept PIV authentication certificates requiring this and only this policy identifier to appear. 
+
+Other examples are id-fpki-common-cardAuth (2.16.840.1.101.3.2.1.3.17) and id-fpki-certpcy-pivi-cardAuth (2.16.840.1.101.3.2.1.3.19). [Physical Access Control Systems (PACS)](https://playbooks.idmanagement.gov/pacs/){:target="_blank"}{:rel="noopener noreferrer"} are configured to require these policies for accepting PIV and PIV-I cards at building and access points.
 
 #### Policy Mapping
 
-[text here]
+To process the PIV-I credentials in the previous case, the path validation software must use another process called policy mapping. Policy mapping is how we translate a policy identifier to and from FPKI to another organization’s policy identifier. This is not as complicated as it sounds.
+
+To understand what is happening, imagine two different homes. Alice owns one home, and Bob owns the other home. Alice and Bob both have rules about shoes.
+- **Alice-Shoe-Policy:** Shoes must be removed in the foyer
+- **Bob-Shoe-Policy:** No shoes in the house
+
+These policies are enforced and controlled in different homes and they are not identical in meaning. However, they can be considered _functionally equivalent_, enabling us to see that Alice and Bob, by following their own policies, are meeting the same requirement.
+
+In PKI we apply this same logic to more complicated sets of requirements, such as those required to issue PIV-I certificates for card authentication. This enables the Federal Bridge CA to map the Federal policy identifier to the policy identifier used by a commercial PIV-I provider. This mapping enables the certificate policy to remain valid along the entire certification path, even though its name may change along the way.
+
+[![A screenshot showing example policy mapping from the Federal Bridge to the Government Printing Office.]({{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-gpo.png.png)]({{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-gpo.png.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Example Policy Mapping - Federal Bridge to Government Printing Office</b></p>
+
+When you look at a certificate, you may discover that the policies displayed as intended purposes are not actually part of the certificate. This may seem confusing at first, but if you select the Certification Path tab, you will discover that the displayed policies come from the trust anchor used to validate the certification path, and somewhere in the path the policies were mapped to the policies in the certificate. 
+
+[![A screenshot of a certificate issued by DoD.]({{site.baseurl}}/assets/piv/pdval-dod-cert.png)]({{site.baseurl}}/assets/piv/pdval-dod-cert.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+In the example above, the certificate was issued by DoD and contains DoD policies, and the certification path was validated to Northrop Grumman’s trust anchor. The policies displayed above are:
+
+- 1.3.6.1.4.1.16334.509.2.7 - Northrop Grumman Medium Assurance-256 Software
+- 1.3.6.1.4.1.16334.509.2.8 - Northrop Grumman Medium Assurance-256 Hardware
+
+#### Putting It All Together
+
+In the [Choosing CA Certificates](#choosing-ca-certificates) section, the certificates that were bi-directionaly shared between the bridge and the member CA in the bridge environment PKI image contain these policy mappings. They are the most important part of the cross-certificate because they are what expresses the literal security common ground between an issuer and the community baseline established by the bridge. As an issuer, you can always exceed a security control or requirement but you must at least meet the requirement.  As an issuer, you could say both shoes and socks are not allowed in your house but the bridge will be happy for so long as you at least enforce shoe removal. Path validation ensures that the minimum level of assurance you have set as your trust policy is met all the way to an issuer you may previously have known nothing about.  This is a very powerful capability because it affords trust at scale in a safe manner.  Here also, we are leveraging the transitive property to accomplish this effect.
+
+[![A screenshot showing example policy mapping from the Federal Bridge to the DoD interoperability root.]({{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-dod.png)]({{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-dod.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+<p align="center"><b>Example Policy Mapping - Federal Bridge to DoD Interoperability Root</b></p>
+
+Achieving the original aim of HSPD-12, to have any one agency be able to rely on an identity credential issued by any other agency within both physical and logical access systems, was and is a daunting goal.  Only a system with sophisticated controls offering great flexibility would achieve the aim.  The architects of FIPS 201 settled on digital certificates backed by PDVal for just that reason.
 
 ### Certification Path Constraints
 
-[text here]
+A CA puts information in its CA certificates that limits the trust that it will extend to other CAs, and those limits are collected and carried forward in the certification path. We refer to these limits on trust as **constraints**. Recall in the first **Ah-Ha Fact** that we said trust could theoretically be built indefinitely if constraints were not applied.  These are the specific constraints used to restrict and achieve the trust results desired, making them critical to certification path validation.
+
+The following constraints are used in the FPKI community during PDVal:
+- **Basic Constraints:** All CA certificates must indicate that they are CA certificates. Basic constraints can also limit the maximum length of the certification path.
+- **Name Constraints:** A CA certificate can provide a filter for certificates it will issue. It can indicate permitted partial names or list partial names that it explicitly excludes. For example, a CA can suggest that it will only give certificates to subjects with an email address ending in "@dod.mil."
+- **Policy Constraints:** CAs can place limits on policy mapping or require the certification path to be valid for at least one policy.
+
+The key takeaway is that CAs can place restrictions (constraints) on certificates they issue. These restrictions limit how the certificates they issue can be used. Detailed processing of these constraints is a complicated matter and is beyond the scope of this playbook.
 
 ## References
 
-[text here]
+PDVal is a complex subject. For more detailed technical information about PDVal, consult the following resources:
+
+[Understanding Certification Path Construction](http://www.oasis-pki.org/pdfs/Understanding_Path_construction-DS2.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This white paper is old but provides a helpful PDVal overview. 
+
+[RFC 5280: Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://www.rfc-editor.org/rfc/rfc5280.html){:target="_blank"}{:rel="noopener noreferrer"} - This document describes path validation in detail.
+
+[RFC 4158: Internet X.509 Public Key Infrastructure: Certification Path Building](https://www.rfc-editor.org/rfc/rfc4158.html){:target="_blank"}{:rel="noopener noreferrer"} - This document provides essential information on path discovery.
+
+[Recommendation ITU-T X.509](https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=X.509){:target="_blank"}{:rel="noopener noreferrer"} - This recommendation provides information on public-key and attribute certificate frameworks.
+
+
 
