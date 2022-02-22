@@ -152,11 +152,37 @@ Fortunately, beyond the more obvious matching of certificate names in the certif
 
 #### Public Key Identifiers
 
-[text here]
+You can think of these identifiers as unique nicknames for the keys in the certificates. Certificates usually contain two public key identifiers:
+- **Subject Key Identifier (SKID):**  Nickname for the key inside this certificate
+- **Authority Key Identifier (AKID):** Nickname for the key inside my issuing CA’s certificate
+
+When a CA issues a certificate, it populates its SKID value into the AKID value of the issued certificate. This bread crumb or chaining trail allows for path discovery to choose the CA certificate with the correct key when discovering the certification path.
+
+This mechanism becomes essential when CAs get a new key, a process called **key rollover**. In the image below, CA 1 has had a prior key rollover, resulting in two different certificates issued to CA 2. In this case, the path discovery software can match the authority key identifier in CA 2 to the subject key identifier in the CA 1 certificate to determine which certificate to use. 
+
+[![A diagram illustrating prior key rollover.]({{site.baseurl}}/assets/piv/pdval-prior-key-rollover.png)]({{site.baseurl}}/assets/piv/pdval-prior-key-rollover.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Certification Path Validation
 
-[text here]
+With a path discovered, now we need to see if it is valid.
+
+Certification path validation is the second step of PDVal where the process determines if a discovered certification path is valid. The FPKI seeks to conform to RFC 5280, so any certification path validation software that fully implements RFC 5280 path validation requirements should interoperate with all aspects of FPKI.
+
+For each certificate in the certification path, basic checks confirm the following about the certificate:
+- It is not expired
+- The signature is verified
+- The issuer name matches the CA subject name
+- It contains required fields
+- It is not revoked
+
+Then the complete certification path is checked for the correct  
+- Certificate policies 
+- Certification path constraints
+
+If all these checks pass, the certification path is considered valid. The sections below provide additional details on these steps.
+It is worth noting that some aspects of path validation may be successfully incorporated with the path discovery process. Although these techniques are not discussed in this playbook, they are discussed in detail in [RFC 4158](https://www.rfc-editor.org/rfc/rfc4158.html){:target="_blank"}{:rel="noopener noreferrer"}.
+
+**Note:** Certification path validation is a process defined in ITU-T X.509.  RFC 5280 is a profile of X.509 and contains a subset of the functionality deemed necessary for interoperability in an Internet-connected environment.  X.509 should be consulted in any case where RFC 5280 content is in question, unclear, or silent. This playbook aims to provide readers with a summary of some core certification path validation requirements, it should not be considered authoritative.
 
 ### Basic Certificate Checks
 
