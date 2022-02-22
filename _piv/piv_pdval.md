@@ -41,7 +41,7 @@ Commonly referred to as certificate validation, **Certification Path Discovery a
 
 PDVal should occur every time a certificate is used. Some common PIV card use cases include:
 - Logging onto a workstation
-- Authenticating to an application using a web browser.
+- Authenticating to an application using a web browser
 - Verifying a digital signature (for example, signed email or digitally signed documents)
 - Encrypting data for others (for example, encrypted email)
 - Accessing a building or an office
