@@ -118,7 +118,7 @@ If the procedure is unable to obtain the next issuing CA certificate, the proces
 
 For simple cases, the necessary CA certificates are often administratively installed or are cached locally by the certificate consuming software or the operating system. In more complicated situations such as verifying a PIV certificate from another agency or a PIV-I card from a commercial vendor, software must actively retrieve the CA certificates needed to discover a complete certification path. Certificates have a field called the Authority Information Access (AIA) extension which enables the path discovery implementation to do exactly that. 
 
-In the FPKI, all certificates are required to contain an AIA with an Internet-accessible URL inside. The URL usually points to a “p7c” file that contains one or more issuing CA certificates.
+In the FPKI, all certificates are required to contain an AIA with an Internet-accessible URL inside. The URL usually points to a “p7c” file that contains _one or more_ issuing CA certificates.
 
 [![A screenshot showing Authority Information Access in a certificate issued by the Federal Bridge CA.]({{site.baseurl}}/assets/piv/pdval-aia-in-cert.png.png)]({{site.baseurl}}/assets/piv/pdval-aia-in-cert.png){:target="_blank"}{:rel="noopener noreferrer"}
 
