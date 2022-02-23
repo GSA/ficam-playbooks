@@ -238,7 +238,7 @@ Other examples are id-fpki-common-cardAuth (2.16.840.1.101.3.2.1.3.17) and id-fp
 
 #### Policy Mapping
 
-To process the PIV-I credentials in the previous case, the path validation software must use another process called policy mapping. Policy mapping is how we translate a policy identifier to and from FPKI to another organization’s policy identifier. This is not as complicated as it sounds.
+To process the PIV-I credentials in the previous case, the path validation software must use another process called **policy mapping**. Policy mapping is how we translate a policy identifier to and from FPKI to another organization’s policy identifier. This is not as complicated as it sounds.
 
 To understand what is happening, imagine two different homes. Alice owns one home, and Bob owns the other home. Alice and Bob both have rules about shoes.
 - **Alice-Shoe-Policy:** Shoes must be removed in the foyer
