@@ -214,7 +214,7 @@ CA certificates must contain fields that authorize them to be issuers of other c
 - **Key Usage:** Certificate Signing and CRL Signing
 - **Basic Constraints:** CA=True
 
-Certificates issued to persons or devices must meet the requirements of the use case. For example, if a certificate is being used for authentication, the software can confirm that the Extended Key Usage for Client Authentication is present. Certificate requirements for FPKI can be found in the [Certificate Profiles](#certificate-profiles) section. 
+Certificates issued to persons or devices must meet the requirements of the use case. For example, if a certificate is being used for authentication, the software can confirm that the Extended Key Usage for Client Authentication is present. Certificate requirements for FPKI can be found in the [Certificate Policies](#certificate-policies) section. 
 
 #### Revocation Checking
 
