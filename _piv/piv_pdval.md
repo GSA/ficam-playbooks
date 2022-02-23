@@ -199,6 +199,7 @@ Starting with the certificate issued by the trust anchor, every certificate in t
 #### Name Matching
 
 Certificates uniquely identify the owner of the certificate, whether the owner is a person, device, or CA. Certificates are named using what is called a Distinguished Name (DN). For example:
+
     CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
 
 Each certificate contains two Distinguished Names:
