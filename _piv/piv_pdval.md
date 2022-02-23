@@ -182,7 +182,7 @@ Then the complete certification path is checked for the correct
 If all these checks pass, the certification path is considered valid. The sections below provide additional details on these steps.
 It is worth noting that some aspects of path validation may be successfully incorporated with the path discovery process. Although these techniques are not discussed in this playbook, they are discussed in detail in [RFC 4158](https://www.rfc-editor.org/rfc/rfc4158.html){:target="_blank"}{:rel="noopener noreferrer"}.
 
-**Note:** Certification path validation is a process defined in ITU-T X.509.  RFC 5280 is a profile of X.509 and contains a subset of the functionality deemed necessary for interoperability in an Internet-connected environment.  X.509 should be consulted in any case where RFC 5280 content is in question, unclear, or silent. This playbook aims to provide readers with a summary of some core certification path validation requirements, it should not be considered authoritative.
+**Note:** Certification path validation is a process defined in [Recommendation ITU-T X.509](https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=X.509){:target="_blank"}{:rel="noopener noreferrer"}. RFC 5280 is a profile of X.509 and contains a subset of the functionality deemed necessary for interoperability in an Internet-connected environment.  X.509 should be consulted in any case where RFC 5280 content is in question, unclear, or silent. This playbook aims to provide readers with a summary of some core certification path validation requirements, it should not be considered authoritative.
 
 ### Basic Certificate Checks
 
