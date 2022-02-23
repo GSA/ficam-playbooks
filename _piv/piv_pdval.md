@@ -100,7 +100,7 @@ The most important factor is the trust anchors. By limiting which trust anchors 
 
 The first step of PDVal is finding a certification path for the certificate that needs to be verified.  The process for finding the path is called path discovery or path development.
 
-In simple cases like verifying your own agency's PIV card, this is a straightforward procedure involving only one or two CA certificates (see the Example Certification Path 1 image in the previous section) In other situations, such as validating a PIV-I certificate, the procedure can involve many CAs and significantly more challenging path discovery requirements.
+In simple cases like verifying your own agency's PIV card, this is a straightforward procedure involving only one or two CA certificates (see the Example Certification Path 1 image in the previous section). In other situations, such as validating a PIV-I certificate, the procedure can involve many CAs and significantly more challenging path discovery requirements.
 
 [![An example PIV-I certification path.]({{site.baseurl}}/assets/piv/pdval-pivi-cert-path.png)]({{site.baseurl}}/assets/piv/pdval-pivi-cert-path.png){:target="_blank"}{:rel="noopener noreferrer"}
 
