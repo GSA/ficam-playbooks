@@ -25,15 +25,6 @@ subnav:
 
 [content here]
 
-| Symptom/Cause | Details/Steps | 
-| --------------------------------- | ----------------------------------- | 
-| **Card Selection and Pin Entry – Symptom** | Smart card icon is not displayed; user is not prompted for PIN. |
-| **Possible Cause 1** | Windows does not detect either the reader or the card due to a software or hardware issue with the card reader. |
-| **Steps to Diagnose Cause 1** | 1. Ask the user to make sure that the PIV card is fully inserted in the reader.<br> 2. If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.<br>3. Ask the user to try rebooting their workstation.<br>4. Ask the user to try using their PIV with their PIN elsewhere.<br>5. If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced. |
-| **Steps to Resolve Cause 1** | Replace the smart card reader if it is an external device. Otherwise, schedule workstation repair. |
-| **Possible Cause 2** | The PIV is damaged. |
-| **Steps to Diagnose Cause 2** | If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced. |
-| **Steps to Resolve Cause 2** | Replace the PIV card. |
 
 <table>
       <tr>
@@ -46,7 +37,7 @@ subnav:
       </tr>
       <tr>
         <td style="width:250px;border:0px;"><strong>Steps to Diagnose Cause 1</strong></td>
-        <td style="border:0px;"> 1. Ask the user to make sure that the PIV card is fully inserted in the reader.<br>2. If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.<br>3. Ask the user to try rebooting their workstation.<br>4. Ask the user to try using their PIV with their PIN elsewhere.<br>5. If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced.</td>
+        <td style="border:0px;"> 1. Ask the user to make sure that the PIV card is fully inserted in the reader.<br><b>2. If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.</b><br>3. Ask the user to try rebooting their workstation.<bt><a href="{{site.baseurl}}/assets/piv/troubleshooting/pivauth-best-match-event-viewer.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/piv/troubleshooting/pivauth-best-match-event-viewer.png" width="308" height="87" alt=" A screenshot of the Event Viewer app icon and label. The words Best Match appear above the icon." /></a><br>4. Ask the user to try using their PIV with their PIN elsewhere.<br> &nbsp&nbsp&nbsp&nbsp&nbsp5. If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced.</td>
       </tr>
       <tr>
         <td style="width:250px;border:0px;"><strong>Steps to Resolve Cause 1</strong></td>
@@ -65,6 +56,8 @@ subnav:
         <td style="border:0px;">Replace the PIV card.</td>
       </tr>
     </table>
+
+      
 
 
 
