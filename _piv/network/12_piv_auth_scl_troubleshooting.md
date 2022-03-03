@@ -21,9 +21,21 @@ subnav:
       href: '#5-client-logon-and-caching'   
 ---
 
+Within the federal enterprise, Windows smart card logon with a PIV card is the baseline capability used to satisfy Federal Information Security Management Act (FISMA) and National Institute of Standards and Technology (NIST) Risk Management Framework policy requirements regarding authentication. A PIV card enables high-assurance, two-factor authentication to a Windows desktop. Under normal conditions, this system is simple and easy for an end user to use. However, if this logon mechanism breaks, it can be difficult to troubleshoot logon and authentication errors. This page includes common symptoms and suggested steps to diagnose and solve these issues.
+
 ## Logon Process Overview
 
-[content here]
+The figure below, from the “Smart card sign-in flow in Windows” section of the [Microsoft Certificate Requirements and Enumeration article](https://docs.microsoft.com/en-us/windows/security/identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration#smart-card-sign-in-flow-in-windows){:target="_blank"}{:rel="noopener noreferrer"}, provides a detailed overview of how smart card logon works in supported versions of Windows.
+
+[![A detailed workflow diagram of how smart card logon works in supported versions of Windows.]({{site.baseurl}}/assets/piv/pivauth-overview.png)]({{site.baseurl}}/assets/piv/pivauth-overview.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+For our use, this complex process is simplified into the following workflows:
+1.	Process Start
+2.	Card Selection and PIN Entry
+3.	Credential Authentication and Secure Connection to Logon Server
+4.	Name Mapping and PIV Validation
+5.	Client Logon and Caching
+
 
 ## 1. Process Start
 
