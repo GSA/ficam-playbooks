@@ -60,7 +60,7 @@ There are five additional guides:
 - [Local Certification Authority](../network/localca/)
 - [Authentication Assurance](../network/auth/)
 - [PIV Authentication on MacOS](../network/mac/)
-- [Troubleshooting Windows Logon with PIV Authentication]../network/troubleshooting/)
+- [Troubleshooting Windows Logon with PIV Authentication](../network/troubleshooting/)
 
 We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, adressing common errors and troubleshooting, and configuring MacOSX and other operating systems.  
 
