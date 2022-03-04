@@ -48,29 +48,29 @@ When the logon screen appears, if the system has detected a smart card reader an
 
 Use the information below to troubleshoot symptoms encountered with card selection before PIN entry.
 
-**Card Selection and Pin Entry – Symptom:** 
+### Card Selection and Pin Entry – Symptom 
 Smart card icon is not displayed; user is not prompted for PIN.
 
-**Possible Cause 1:** 
+### Possible Cause 1 
 Windows does not detect either the reader or the card due to a software or hardware issue with the card reader.
 
-**Steps to Diagnose Cause 1:**
+### Steps to Diagnose Cause 1
 1.	Ask the user to make sure that the PIV card is fully inserted in the reader.
 2.	If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.
 3.	Ask the user to try rebooting their workstation.
 4.	Ask the user to try using their PIV with their PIN elsewhere.
 5.	If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced.
 
-**Steps to Resolve Cause 1:**
+### Steps to Resolve Cause 1
 Replace the smart card reader if it is an external device. Otherwise, schedule workstation repair.
 
-**Possible Cause 2:**
+### Possible Cause 2
 The PIV is damaged.
 
-**Steps to Diagnose Cause 2:**
+### Steps to Diagnose Cause 2
 If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced. 
 
-**Steps to Resolve Cause 2:** 
+### Steps to Resolve Cause 2 
 Replace the PIV card.
 
 ## 3. Credential Authentication and Secure Connection to Logon Server
