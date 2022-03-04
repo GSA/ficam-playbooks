@@ -124,25 +124,24 @@ A suitable domain controller authentication certificate is not installed on the 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	In the center of the window, click the **Add** button.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.	In the Certificates snap-in window, click **Computer account**. Then click **Next**.<br>
 [![A screenshot of an Add or Remove Snap-In window with an inset Certificate Snap-In window.]({{site.baseurl}}/assets/piv/pivauth-snap-in.png)]({{site.baseurl}}/assets/piv/pivauth-snap-in.png){:target="_blank"}{:rel="noopener noreferrer"}<br>  
-8.	In the Select Computer window, click **Finish**. 
-
-9.	In the Add or Remove Snap-ins window, click OK.
-10.	On the left side of the MMC window, use the > symbol to expand these items on the tree:
-a.	Certificates (Local Computer)
-b.	Personal
- 
-11.	Under Personal, right-click Certificates. 
- 
-12.	Click All Tasks.
-13.	Click Request New Certificate.
-14.	In the Certificate Enrollment window, click Next.
-15.	Click Next.
-16.	Click the box next to the Domain Controller Authentication template. If you do not see this, ask your CA Administrator to publish this template.
- 
-17.	Click Enroll.
-18.	Click Finish. 
-
-
+8.	In the Select Computer window, click **Finish**.<br> 
+[![A screenshot of a Select Computer window. The Local Computer radio button is highlighted and the Finish button is highlighted.]({{site.baseurl}}/assets/piv/pivauth-select-computer.png)]({{site.baseurl}}/assets/piv/pivauth-select-computer.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+9.	In the Add or Remove Snap-ins window, click **OK**.
+10.	On the left side of the MMC window, use the **>** symbol to expand these items on the tree:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	Certificates (Local Computer)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	Personal<br>
+[![A screenshot of a Console Root folder icon and label with three items below it in cascading order. A Certificates folder icon and label appear at the bottom of the screenshot and are highlighted with gray.]({{site.baseurl}}/assets/piv/pivauth-console-root-thru-certificates.png)]({{site.baseurl}}/assets/piv/pivauth-console-root-thru-certificates.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+11.	Under Personal, right-click **Certificates**.<br>  
+[![A screenshot of a Console Root folder icon and label with several items and folders below it. The Certificates folder is highlighted with blue. An inset window with All Tasks highlighted in blue appears to the right of the main window and an inset Request New Certificate window appears to right of the first inset window.]({{site.baseurl}}/assets/piv/pivauth-certificates-all-tasks.png)]({{site.baseurl}}/assets/piv/pivauth-certificates-all-tasks.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+12.	Click **All Tasks**.
+13.	Click **Request New Certificate**.
+14.	In the Certificate Enrollment window, click **Next**.
+15.	Click **Next**.
+16.	Click the box next to the Domain Controller Authentication template. If you do not see this, ask your CA Administrator to publish this template.<br>
+[![A screenshot of a Certificate Enrollment window. The words Request Certificates appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy choices, statuses, and details.]({{site.baseurl}}/assets/piv/pivauth-request-certificates.png)]({{site.baseurl}}/assets/piv/pivauth-request-certificates.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+17.	Click **Enroll**.
+18.	Click **Finish**.<br> 
+[![A screenshot of a Certificate Enrollment window. The words Certificate Installation Results appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy Domain Controller Authentication status and details. A green bar runs below the Certificate Enrollment window and the Finish button is highlighted.]({{site.baseurl}}/assets/piv/pivauth-cert-enrollment.png)]({{site.baseurl}}/assets/piv/pivauth-cert-enrollment.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## 4. Name Mapping and PIV Validation
 
