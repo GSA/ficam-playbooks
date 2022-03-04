@@ -46,6 +46,40 @@ Smart card logon begins at the client workstation. First, the system discovers s
 
 When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN.
 
+Use the table below to troubleshoot symptoms encountered with card selection before PIN entry.
+
+<table>
+      <tr>
+        <td style="width:250px;border:0px;"><strong> Card Selection and Pin Entry – Symptom</strong></td>
+        <td style="border:0px;">Smart card icon is not displayed; user is not prompted for PIN.</td>
+      </tr>
+      <tr>
+        <td style="width:250px;border:0px;"><strong>Possible Cause 1</strong></td>
+        <td style="border:0px;">Windows does not detect either the reader or the card due to a software or hardware issue with the card reader.</td>
+      </tr>
+      <tr>
+        <td style="width:250px;border:0px;"><strong>Steps to Diagnose Cause 1</strong></td>
+        <td style="border:0px;"> 1. Ask the user to make sure that the PIV card is fully inserted in the reader.<br>2. If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.<br>3. Ask the user to try rebooting their workstation.<br>4. Ask the user to try using their PIV with their PIN elsewhere.<br>5. If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced.</td>
+      </tr>
+      <tr>
+        <td style="width:250px;border:0px;"><strong>Steps to Resolve Cause 1</strong></td>
+        <td style="border:0px;">Replace the smart card reader if it is an external device. Otherwise, schedule workstation repair.</td>
+      </tr>
+      <tr>
+          <td style="width:250px;border:0px;"><strong>Possible Cause 2</strong> </td>
+        <td style="border:0px;"> The PIV is damaged.</td>
+      </tr>
+      <tr>
+        <td style="width:250px;border:0px;"><strong>Steps to Diagnose Cause 2</strong></td>
+        <td style="border:0px;">If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced.</td>
+      </tr>
+      <tr>
+        <td style="width:250px;border:0px;"><strong>Steps to Resolve Cause 2</strong></td>
+        <td style="border:0px;">Replace the PIV card.</td>
+      </tr>
+    </table>
+
+
 Use the information below to troubleshoot symptoms encountered with card selection before PIN entry.
 
 ### Card Selection and Pin Entry – Symptom 
