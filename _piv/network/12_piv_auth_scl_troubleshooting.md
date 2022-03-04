@@ -30,11 +30,11 @@ The figure below, from the “Smart card sign-in flow in Windows” section of t
 [![A detailed workflow diagram of how smart card logon works in supported versions of Windows.]({{site.baseurl}}/assets/piv/pivauth-overview.png)]({{site.baseurl}}/assets/piv/pivauth-overview.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 For our use, this complex process is simplified into the following workflows:
-1.	[Process Start](#process-start)
-2.	[Card Selection and PIN Entry](#card-selection-and-pin-entry)
-3.	[Credential Authentication and Secure Connection to Logon Server](#credential-authentication-and-secure-connection-to-logon-server)
-4.	[Name Mapping and PIV Validation](#name-mapping-and-piv-validation)
-5.	[Client Logon and Caching](#client-logon-and-caching)
+1. [Process Start](#process-start)
+2. [Card Selection and PIN Entry](#card-selection-and-pin-entry)
+3. [Credential Authentication and Secure Connection to Logon Server](#credential-authentication-and-secure-connection-to-logon-server)
+4. [Name Mapping and PIV Validation](#name-mapping-and-piv-validation)
+5. [Client Logon and Caching](#client-logon-and-caching)
 
 ## 1. Process Start
 
