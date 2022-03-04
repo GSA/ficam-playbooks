@@ -46,40 +46,6 @@ Smart card logon begins at the client workstation. First, the system discovers s
 
 When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN.
 
-Use the table below to troubleshoot symptoms encountered with card selection before PIN entry.
-
-<table>
-      <tr>
-        <td style="width:250px;border:0px;"><strong> Card Selection and Pin Entry – Symptom</strong></td>
-        <td style="border:0px;">Smart card icon is not displayed; user is not prompted for PIN.</td>
-      </tr>
-      <tr>
-        <td style="width:250px;border:0px;"><strong>Possible Cause 1</strong></td>
-        <td style="border:0px;">Windows does not detect either the reader or the card due to a software or hardware issue with the card reader.</td>
-      </tr>
-      <tr>
-        <td style="width:250px;border:0px;"><strong>Steps to Diagnose Cause 1</strong></td>
-        <td style="border:0px;"> 1. Ask the user to make sure that the PIV card is fully inserted in the reader.<br>2. If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.<br>3. Ask the user to try rebooting their workstation.<br>4. Ask the user to try using their PIV with their PIN elsewhere.<br>5. If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced.</td>
-      </tr>
-      <tr>
-        <td style="width:250px;border:0px;"><strong>Steps to Resolve Cause 1</strong></td>
-        <td style="border:0px;">Replace the smart card reader if it is an external device. Otherwise, schedule workstation repair.</td>
-      </tr>
-      <tr>
-          <td style="width:250px;border:0px;"><strong>Possible Cause 2</strong> </td>
-        <td style="border:0px;"> The PIV is damaged.</td>
-      </tr>
-      <tr>
-        <td style="width:250px;border:0px;"><strong>Steps to Diagnose Cause 2</strong></td>
-        <td style="border:0px;">If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced.</td>
-      </tr>
-      <tr>
-        <td style="width:250px;border:0px;"><strong>Steps to Resolve Cause 2</strong></td>
-        <td style="border:0px;">Replace the PIV card.</td>
-      </tr>
-    </table>
-
-
 Use the information below to troubleshoot symptoms encountered with card selection before PIN entry.
 
 ### Card Selection and Pin Entry – Symptom 
@@ -145,6 +111,36 @@ A suitable domain controller authentication certificate is not installed on the 
  
 ### Steps to Resolve Cause 1
 #### On the domain controller:
+1.	Log in as a Domain Administrator.
+2.	Open the Start Menu.
+3.	Type **mmc.exe**.
+4.	Click **MMC**, shown under Best Match.<br>
+[![A screenshot of the mmc.exe icon. The words Best Match appear above the icon and the words Run command appear below the icon.]({{site.baseurl}}/assets/piv/pivauth-best-match-mmc-exe.png)]({{site.baseurl}}/assets/piv/pivauth-best-match-mmc-exe.png){:target="_blank"}{:rel="noopener noreferrer"}<br>  
+5.	If prompted by a User Account Control pop-up, click **Yes**.
+[![A screenshot of a User Account Control window. The words Do you want to allow this app to make changes to your device? appear near the top of the screenshot. The Yes button is highlighted.]({{site.baseurl}}/assets/piv/pivauth-user-account-control.png)]({{site.baseurl}}/assets/piv/pivauth-user-account-control.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+6.	Click the **MMC** window and press and hold **Ctrl**. Then press **M** and release both keys.
+7.	In the Add or Remove Snap-ins window, click the following:<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	From the Available Snap-ins on the left, click **Certificates**.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	In the center of the window, click the **Add** button.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.	In the Certificates snap-in window, click **Computer account**. Then click **Next**.<br>
+[![A screenshot of an Add or Remove Snap-In window with an inset Certificate Snap-In window.]({{site.baseurl}}/assets/piv/pivauth-snap-in.png)]({{site.baseurl}}/assets/piv/pivauth-snap-in.png){:target="_blank"}{:rel="noopener noreferrer"}<br>  
+8.	In the Select Computer window, click **Finish**. 
+
+9.	In the Add or Remove Snap-ins window, click OK.
+10.	On the left side of the MMC window, use the > symbol to expand these items on the tree:
+a.	Certificates (Local Computer)
+b.	Personal
+ 
+11.	Under Personal, right-click Certificates. 
+ 
+12.	Click All Tasks.
+13.	Click Request New Certificate.
+14.	In the Certificate Enrollment window, click Next.
+15.	Click Next.
+16.	Click the box next to the Domain Controller Authentication template. If you do not see this, ask your CA Administrator to publish this template.
+ 
+17.	Click Enroll.
+18.	Click Finish. 
 
 
 
