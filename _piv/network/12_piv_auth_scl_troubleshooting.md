@@ -145,8 +145,101 @@ A suitable domain controller authentication certificate is not installed on the 
 
 ## 4. Name Mapping and PIV Validation
 
-[content here]
+After the domain controller’s authentication certificate is used to make a secure link from the workstation to the domain controller, the certificate data for the user’s smart card is sent to the domain controller for validation. The domain controller does the following to validate the credential:
+
+1.	The domain controller looks up the user’s account in Active Directory (AD) using information found in the user’s PIV authentication certificate. This process is known as name mapping. More information about user name mapping can be found in the [Account Linking playbook](https://playbooks.idmanagement.gov/piv/network/account/#transitioning-from-upn-mapping-to-altsecurityidentities-mapping){:target="_blank"}{:rel="noopener noreferrer"}. 
+2.	The certificate is sent to the Microsoft Crypto-API (CAPI) service running on the domain controller for path discovery and validation. CAPI performs basic certificate checks, described in the Certification Path Discovery and Validation (PDVal) playbook. [LINK TO PDVAL PLAYBOOK WHEN IT IS COMPLETE]  
+3.	The domain controller checks its local copy of the Enterprise NTAUTH store for the presence of the issuing certification authority (CA) for the PIV authentication certificate. Steps for adding a certificate to this store can be found in the [Trust Stores playbook](https://playbooks.idmanagement.gov/piv/network/trust-stores/){:target="_blank"}{:rel="noopener noreferrer"}. 
+
+**Note:** Certificate validation of the PIV authentication certificate for smart card logon only occurs on the individual domain controller processing the logon request. The client computer does not check the validity of the logon certificate. Other applications outside of Windows logon may perform certificate validation locally, so it may still be a good idea to have a valid path installed on your organization’s client computers. if you have multiple logon servers in your environment, only the one responding to the individual logon request performs validation. Therefore, it is important to maintain a consistent configuration across your domain controllers.
+
+Use the information below to troubleshoot additional symptoms encountered after the PIN is entered, but before logon occurs. 
+
+### Name Mapping and PIV Validation – Symptom 1
+After PIN entry, one of the following errors displays on the logon screen:<br> 
+“An untrusted certification authority was detected while processing the smart card certificate used for authentication.”<br>
+[![A screenshot of a logon window that includes the words An untrusted certification authority was detected while processing the smart card certificate used for authentication.]({{site.baseurl}}/assets/piv/pivauth-untrusted-ca-logon-screen.png)]({{site.baseurl}}/assets/piv/pivauth-untrusted-ca-logon-screen.png){:target="_blank"}{:rel="noopener noreferrer"}<br>
+“The smart card used for authentication has been revoked.”<br>
+[![A screenshot of a logon window that includes the words The smart card used for authentication has been revoked.]({{site.baseurl}}/assets/piv/pivauth-smart-card-revoked-logon-screen.png)]({{site.baseurl}}/assets/piv/pivauth-smart-card-revoked-logon-screen.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+### Possible Cause 1
+The user’s PIV authentication certificate fails path discovery and validation on the domain controller.
+
+### Steps to Diagnose Cause 1
+#### On the client:
+1.	Log in to Windows using a password.
+2.	Open the Start Menu, located in the bottom left corner of the screen.
+3.	Type **cmd**.
+4.	Click **Command Prompt**, shown under Best Match.<br>
+[![A screenshot of the Command Prompt app icon. The words Best Match appear above the icon.]({{site.baseurl}}/assets/piv/pivauth-best-match-command-prompt.png)]({{site.baseurl}}/assets/piv/pivauth-best-match-command-prompt.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+5.	In the command prompt, type **echo %logonserver%** and press **Enter**.<br>
+[![A screenshot of a Command Prompt window that includes the Windows version and user details.]({{site.baseurl}}/assets/piv/pivauth-command-prompt.png)]({{site.baseurl}}/assets/piv/pivauth-command-prompt.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+6.	The current domain controller being used for Windows logon is displayed. This is the best domain controller to check first for troubleshooting invalid smart card logon events.
+
+#### On the domain controller indicated above:
+1.	Log in as a Domain Administrator.
+2.	Open the Start Menu.
+3.	Type **mmc.exe**.
+4.	Log in to Windows using a password.
+5.	Open the Start Menu, located in the bottom left corner of the screen.
+6.	Type **event viewer**.
+7.	Click **Event Viewer**, shown under Best Match.<br> 
+[![A screenshot of the Event Viewer app icon and label. The words Best Match appear above the icon.]({{site.baseurl}}/assets/piv/pivauth-best-match-event-viewer.png)]({{site.baseurl}}/assets/piv/pivauth-best-match-event-viewer.png){:target="_blank"}{:rel="noopener noreferrer"}<br>  
+8.	On the left side of the Event View, use the **>** symbol to expand each of these items on the tree:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	Applications and Services Logs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	Microsoft<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.	Windows<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d.	CAPI2<br>
+9.	Click **Operational**.
+10.	On the right side of the window, under Actions, click **Enable Log** (skip this step if the option reads ”Disable Log”; the log is already enabled).<br>
+[![A screenshot of several icons, labels, and item choices below the Actions heading. The Help icon and label appears at the bottom of the screenshot. In the middle of the screenshot, the Enable Log choice is highlighted with yellow.]({{site.baseurl}}/assets/piv/pivauth-actions-thru-help.png)]({{site.baseurl}}/assets/piv/pivauth-actions-thru-help.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+11.	Log out of Windows on the client workstation.
+12.	Have the user try to log in using their PIV, taking note of the time. The error should be shown on the logon screen.
+13.	On the domain controller, still in Event Viewer, on the right pane, click **Refresh**.
+14.	New log events will be shown. Look for the events with an “Error” status  and the task category “Build Chain.”
+15.	Click the **Details** tab. In the UserData section, look for the user’s name in the Certificate [subjectName] field.<br> 
+[![A screenshot of an Operational window labeled Event 11, CAPI2. In the center of the screenshot, the subjectName and user name are highlighted with yellow.]({{site.baseurl}}/assets/piv/pivauth-operational-event11.png)]({{site.baseurl}}/assets/piv/pivauth-operational-event11.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+If you do not see the user’s name, continue scrolling through the list of events to find the next event with an “Error” status and the task category “Build Chain.” Using results filtering may help to narrow this list down.
+
+16.	Once you find the event, scroll down through the details. You will see sections that say “-ChainElement.” These indicate each of the certificates in the path that was built. Within each chain element, look again for the ”- Certificate [ subjectName ],” indicating which certificate is being checked, and below it, a ”- TrustStatus” with an ”- Error Status” which will give more details about the failing validation.
+
+**Example 1: A certificate in the path is revoked.**<br>
+[![A screenshot of an Operational window labeled Event 11, CAPI2. The Certificate and the TrustStatus details are highlighted with yellow.]({{site.baseurl}}/assets/piv/pivauth-example1.png)]({{site.baseurl}}/assets/piv/pivauth-example1.png){:target="_blank"}{:rel="noopener noreferrer"} 
+
+**Example 2: The path does not build to a trust anchor.**<br>
+[![A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Is Untrusted Root details are highlighted with yellow.]({{site.baseurl}}/assets/piv/pivauth-example2.png)]({{site.baseurl}}/assets/piv/pivauth-example2.png){:target="_blank"}{:rel="noopener noreferrer"} 
+
+**Example 3: The revocation status is unreachable, or the revocation status signature cannot be validated due to an invalid trust path.**<br>
+[![A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Revocation Status Unknown details are highlighted with yellow.]({{site.baseurl}}/assets/piv/pivauth-example3.png)]({{site.baseurl}}/assets/piv/pivauth-example3.png){:target="_blank"}{:rel="noopener noreferrer"} 
+ 
+**Note:** The error status in Example 3 will occur for any certificate lower in the path than the above Examples for 1 and 2. For example, if a trusted root cannot be found at the top of the path, no valid revocation status will be found for any certificate issued below the trusted root, including the issuing CA certificate and the end user’s PIV authentication certificate. This situation occurs because the revocation data cannot have its signature verified for the same reasons that the certificate itself cannot.
+
+### Steps to Resolve Cause 1
+1.	On the domain controller, work through any path validation issues identified in the above steps and examples. Keep in mind that that path building comes before validation and that a path is built from the bottom up. In this instance, the PIV authentication certificate chains to a trust anchor, such as Federal Common Policy G2. **Ensure that the correct trust anchor for your organization’s PIV credentials is installed on every domain controller.** If you also trust certificates from other agencies and organizations, the appropriate roots and cross-certificates may need to be installed to complete the path. 
+2.	Find expired and revoked certificates that may be installed in your domain controller certificate store and delete them as appropriate. In a Windows environment, unexpected errors often result if you have duplicates of a certificate installed in a given store or have accidently installed an intermediate CA in the trusted root store or vice versa. 
+3.	Lastly, you will need to allow outbound access over port TCP 80 from each domain controller to each of the CRL, OCSP, and AIA distribution points listed in the certificates in the path. For more information, see the Certification Path Discovery and Validation (PDVal) playbook. [LINK TO  PDVAL PLAYBOOK WHEN IT IS COMPLETE]
+
+### Possible Cause 2
+The Issuing CA is not in the NTAuth store.
+
+### Steps to Diagnose Cause 2
+1.	Follow Steps 1 through 15 for diagnosing Possible Cause 1.
+2.	Confirm that there is no error logged for the task category ”Build Chain” with matching certificate subjectName for the user.
+3.	Look for an error logged for task category ”Verify Chain Policy” with matching certificate subjectName for the user.
+4.	Confirm that the result logged is ”A certification chain processed correctly, but one of the CA certificates is not trusted by the policy provider.”<br>
+[![A screenshot of an Operational window labeled Event 30, CAPI2. Near the top of the screenshot, a row labeled Error is highlighted with yellow. Elsewhere in the screenshot, the subjectName and user name and the Result details are highlighted with yellow.]({{site.baseurl}}/assets/piv/pivauth-operational-event30.png)]({{site.baseurl}}/assets/piv/pivauth-operational-event30.png){:target="_blank"}{:rel="noopener noreferrer"} 
+
+### Steps to Resolve Cause 2
+Follow the steps in the [Trust Stores playbook](https://playbooks.idmanagement.gov/piv/network/trust-stores/){:target="_blank"}{:rel="noopener noreferrer"} to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.
 
 ## 5. Client Logon and Caching
 
-[content here]
+Once name mapping and PIV validation are complete, the domain controller sends a logon package to the client computer with the user’s domain permissions and a token that allows desktop logon for that user. If the user is permitted to log in to the computer, they will now be logged into their Windows desktop.
+
+The first logon must always occur while the system has a network connection to the domain controller, whether it is directly attached to the organization’s network or via a VPN. After the first logon, if the Group Policy setting pictured below is set to a value greater than 0, the user’s logon token will be permanently cached by their workstation as long as the number of subsequent users to log in does not exceed this number. 
+
+[![A screenshot of a Local Group Policy Editor window with two columns of folder and item icons and labels. The screenshot includes an inset Interactive Number of previous logons to cache window.]({{site.baseurl}}/assets/piv/pivauth-local-group-policy-editor.png)]({{site.baseurl}}/assets/piv/pivauth-local-group-policy-editor.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+If a future logon is attempted while the user’s workstation is disconnected from the organization’s network, and the logon token is cached, the workstation will only authenticate the PIV authentication certificate via PIN and, upon successful entry, will log the user into their desktop using their cached token and permissions. If the value is set to 0, caching does not occur and logon will only occur when the workstation is connected to the network and can communicate with a domain controller.
+
+
