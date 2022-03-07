@@ -248,7 +248,7 @@ These policies are enforced and controlled in different homes and they are not i
 
 In PKI we apply this same logic to more complicated sets of requirements, such as those required to issue PIV-I certificates for card authentication. This enables the Federal Bridge CA to map the Federal policy identifier to the policy identifier used by a commercial PIV-I provider. This mapping enables the certificate policy to remain valid along the entire certification path, even though its name may change along the way.
 
-[![A screenshot showing example policy mapping from the Federal Bridge to the Government Printing Office.]({{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-gpo.png)]({{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-gpo.png.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A screenshot showing example policy mapping from the Federal Bridge to the Government Printing Office.]({{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-gpo.png)]({{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-gpo.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 <p align="center"><b>Example Policy Mapping - Federal Bridge to Government Printing Office</b></p>
 
