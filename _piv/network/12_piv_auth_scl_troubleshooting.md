@@ -107,7 +107,7 @@ A suitable domain controller authentication certificate is not installed on the 
 10.	Log in to Windows using a password.
 11.	Repeat Steps 2 through 6 to return to the Security-Kerberos log in Event Viewer.
 12.	Click in the center of the window where ”Error” is shown. The following log will appear:<br>
-[![A screenshot of an error log. It includes several labels, including Operational and Event 104, Security-Kerberos. The Details tab is open and includes details about Event 104.]({{site.baseurl}}/assets/piv/pivath-operational-log.png)]({{site.baseurl}}/assets/piv/ pivath-operational-log.png){:target="_blank"}{:rel="noopener noreferrer"} 
+[![A screenshot of an error log. It includes several labels, including Operational and Event 104, Security-Kerberos. The Details tab is open and includes details about Event 104.]({{site.baseurl}}/assets/piv/pivath-operational-log.png)]({{site.baseurl}}/assets/piv/pivath-operational-log.png){:target="_blank"}{:rel="noopener noreferrer"} 
  
 ### Steps to Resolve Cause 1
 #### On the domain controller:
