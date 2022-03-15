@@ -44,7 +44,7 @@ To verify your copy of FCPCA G2, use one of these options:
 
 **Note:** The following .gif shows you how to verify your copy of FCPCA G2 on Microsoft Server 2016.
 <br>
-[![A .gif that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/assets/fpki/verify.gif){:style="width:100%;"}]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![A gif that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/assets/fpki/verify.gif){:style="width:100%;"}]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 <br>
 
@@ -60,7 +60,7 @@ To verify your copy of FCPCA G2, use one of these options:
 
 **Note:** The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina (10.15).
 <br>
-[![The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina 10.15]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![The following gif shows you how to verify your copy of FCPCA G2 on macOS Catalina 10 point 15]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### On Linux/Unix: Use the Command Line
