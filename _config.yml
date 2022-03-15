@@ -49,40 +49,53 @@ primary_navigation:
     children:
       - name: Cloud Identity
         url: /playbooks/cloud/
-      - name: Digital Worker
+      - name: Digital Worker Identity
         url: /playbooks/dw/
       - name: Lifecycle Management (Coming Soon)
   - name: Credential Management
     children:
+      - name: Authenticators (Coming Soon)
       - name: Federal PKI
         url: /fpki/
-      - name: PIV
+      - name: PIV Card
         url: /piv/
-      - name: PIV-I (Coming Soon)
-      - name: Authenticators (Coming Soon)
+      - name: PIV-I Card (Coming Soon)
   - name: Access Management
     children:
       - name: PACS
         url: /pacs/
+      - name: Privileged Users (Coming Soon)
       - name: Single Sign-On
         url: /playbooks/sso/
-      - name: Privileged Users (Coming Soon)
   - name: Governance
     children:
       - name: DIRA
         url: /playbooks/dira/
-      - name: ICAM Program Management
-        url: /pm/
       - name: ICAM Governance Framework
         url: /docs/playbook-identity-governance-framework.pdf
+      - name: ICAM Program Management
+        url: /pm/
+  - name: Federation (coming soon)
   - name: User Guides
     children:
-      - name: Sign Word Document
-        url: /playbooks/signword/
-      - name: Sign Federal Register Document
-        url: /playbooks/signfedregister/
-      - name: Sign Email in Outlook
+      - name: Digitally Sign Email in Outlook
         url: /piv/user-guide/outlook/
+      - name: Digitally Sign Federal Register Document
+        url: /playbooks/signfedregister/
+      - name: Digitallhy Sign Word Document
+        url: /playbooks/signword/
+  - name: Engineer Guides
+    children:
+      - name: Common G2 Migration Guide
+        url: /fpki/common/
+      - name: Configure Firefox
+        url: /piv/engineer/firefox/
+      - name: Enable SSH
+        url: /piv/engineer/ssh/
+      - name: FPKI System Change Notifications
+        url: /fpki/notifications/
+      - name: FPKI Useful Tools
+        url: /fpki/tools/
 
 secondary_navigation:
   - name: Contact Us
@@ -93,10 +106,6 @@ secondary_navigation:
     url: https://www.idmanagement.gov/contribute/
 
 # Search.gov configuration
-#
-# 1. Create an account with Search.gov https://search.usa.gov/signup
-# 2. Add a new site.
-# 3. Add your site/affiliate name here.
 searchgov:
 
   # You should not change this.
