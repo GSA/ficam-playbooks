@@ -28,35 +28,7 @@ This version of the FICAM Architecture encompasses the **enterprise** ICAM polic
 
 The following diagram is a high-level view of the ICAM practice areas and supporting elements. 
 
-<div class="margin-y-3">
-  <a
-    href="#example-modal-1"
-    class="usa-button usa-button--outline usa-button--inverse usa-button--unstyled"
-    aria-controls="example-modal-1"
-    data-open-modal
-    ><img src="{{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png" alt="A color-coded diagram that has three large connected boxes and two small auxillary boxes. The three large boxes include definitions and diagrams for Identity, Credential, and Access Management, and the two small boxes include definitions for Federation and Governance." aria-describedby="enhance-image-1"></a>
-  
-  <div
-    class="usa-modal usa-modal--lg"
-    id="example-modal-1"
-  >
-    <div class="usa-modal__content">
-      <div class="usa-modal__main">
-        <img src="{{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png" alt="A color-coded diagram that has three large connected boxes and two small auxillary boxes. The three large boxes include definitions and diagrams for Identity, Credential, and Access Management, and the two small boxes include definitions for Federation and Governance.">
-      </div>
-      <button
-        class="usa-button usa-modal__close"
-        aria-label="Close this window"
-        data-close-modal
-      >
-        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-          <use xlink:href="/assets/img/sprite.svg#close"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <span id="enhance-image-1">Clicking this image opens a modal to a larger version of the image.</span>
-</div>
+[![A color-coded diagram that has three large connected boxes and two small auxillary boxes. The three large boxes include definitions and diagrams for Identity, Credential, and Access Management, and the two small boxes include definitions for Federation and Governance.]({{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png)]({{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 The FICAM Architecture includes government-wide enterprise architecture views with the flexibility to support each agency’s unique business or mission needs. Use the FICAM Architecture as a tool to continuously improve upon your agency’s approach and align with federal security and privacy initiatives.
 
