@@ -5,3 +5,4 @@ node_modules
 .bundle
 .jekyll-cache/
 idmv2.code-workspace
+.idea/
