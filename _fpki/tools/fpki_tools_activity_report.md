@@ -25,8 +25,8 @@ This report provides a technical and policy compliance status for each Federal P
 
 Resolve issues by contacting one of the teams:  
 
-- Technical issues contact the [FPKIMA Team](mailto:fpki-help@gsa.gov) 
-- Certificate Policy issues contact the [Certificate Policy Working Group (CPWG)](mailto:fpkipa_cpwg@listserv.gsa.gov)  
+- Technical issues: Contact the [FPKIMA Team](mailto:fpki-help@gsa.gov) 
+- Certificate Policy issues: Contact the [Certificate Policy Working Group (CPWG)](mailto:fpkipa_cpwg@listserv.gsa.gov)  
 
 ## Federal Agency and Affiliate PKI Status Summary
 The operational status for each Federal Agency or affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA) is summarized below. The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating.
