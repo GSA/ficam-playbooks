@@ -32,7 +32,7 @@
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: N/A
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
-  ca_certificate_subject: CN=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  ca_certificate_subject: ON=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
   cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
   aia_uri: N/A
   sia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c
