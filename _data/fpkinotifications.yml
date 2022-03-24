@@ -34,8 +34,8 @@
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
   cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
-  aia_uri: N/A
-  sia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://pki.treasury.gov/root_sia.p7c
   ocsp_uri: N/A
 
 - notice_date: March 22, 2022
@@ -47,8 +47,8 @@
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=DigiCert Federal SSP Intermediate CA - G6, O=DigiCert Inc, C=US
   cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
-  aia_uri: N/A
-  sia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG6.p7c
   ocsp_uri: N/A
 
 - notice_date: March 22, 2022
@@ -61,7 +61,7 @@
   ca_certificate_subject: CN=DigiCert Federated ID CA - G2, OU=www.digicert.com, O=DigiCert Inc, C=US
   cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
-  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  sia_uri: N/A
   ocsp_uri: N/A
 
 - notice_date: February 28, 2022
