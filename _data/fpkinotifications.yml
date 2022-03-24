@@ -25,7 +25,7 @@
 # sia_uri:
 # ocsp_uri:
 
-- notice_date: March 24, 2022
+- notice_date: March 24, 2022 
   change_type: Intent to Perform CA Certificate Issuance 
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2 
   change_description: The Federal Common Policy CA G2 intends to issue a new certificate to the US Treasury Root CA between 4/04/2022 and 4/07/2022.
