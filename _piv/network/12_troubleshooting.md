@@ -32,7 +32,7 @@ The figure below, from the “Smart card sign-in flow in Windows” section of t
 For our use, this complex process is simplified into the following workflows:
 1. [Process Start](#process-start)
 2. [Card Selection and PIN Entry](#card-selection)
-3. [Credential Authentication and Secure Connection to Logon Server](#3-credential-authentication-and-secure-connection-to-logon-server)
+3. [Credential Authentication and Secure Connection to Logon Server](#credential-auth)
 4. [Name Mapping and PIV Validation](#4-name-mapping-and-piv-validation)
 5. [Client Logon and Caching](#5-client-logon-and-caching)
 
@@ -55,56 +55,99 @@ For our use, this complex process is simplified into the following workflows:
       1. Card Selection and PIN Entry
     </button>
   </h4>
-  <div id="m-a2" class="usa-accordion__content usa-prose">
+  <div id="card-selection-description" class="usa-accordion__content usa-prose">
     <p>When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN. Use the information below to troubleshoot symptoms encountered with card selection before PIN entry."</p>
     <hr />
-    <h2 id="2-symptom">Symptom</h2>
-    <p>Smart card icon is not displayed; user is not prompted for PIN.</p>
-    <h2 id="2-possible-cause-1">Possible Cause 1</h2>
-    <p>Windows does not detect either the reader or the card due to a software or hardware issue with the card reader.</p>
-    <h3 id="2-diagnost-cause1">Diagnose Cause 1</h2>
-1.	Ask the user to make sure that the PIV card is fully inserted in the reader.
-2.	If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.
-3.	Ask the user to try rebooting their workstation.
-4.	Ask the user to try using their PIV with their PIN elsewhere.
-5.	If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced.
-
-##### Steps to Resolve Cause 1
-Replace the smart card reader if it is an external device. Otherwise, schedule workstation repair.
-
-#### Possible Cause 2
-The PIV is damaged.
-
-##### Steps to Diagnose Cause 2
-If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced. 
-
-##### Steps to Resolve Cause 2 
-Replace the PIV card.
-      A well regulated Militia, being necessary to the security of a free State,
-      the right of the people to keep and bear Arms, shall not be infringed.
-    </p>
-    <ul>
-      <li>This is a list item</li>
-      <li>Another list item</li>
-    </ul>
+    <h2 id="card-selection-symptom">Symptom</h2>
+      <p>Smart card icon is not displayed; user is not prompted for PIN.</p>
+    <h2 id="card-selection-possible-cause-1">Possible Cause 1 - Reader or Card Not Detected</h2>
+      <p>Windows does not detect either the reader or the card due to a software or hardware issue with the card reader.</p>
+    <h3 id="card-selection-diagnose-cause-1">Diagnosis</h3>
+      <ol type="1">
+        <li>Ask the user to make sure that the PIV card is fully inserted in the reader.</li>
+        <li>If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.</li>
+        <li>Ask the user to try rebooting their workstation.</li>
+        <li>Ask the user to try using their PIV with their PIN elsewhere.</li>
+        <li>If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced.</li>
+      </ol>
+    <h3 id="card-selection-resolve-cause-1">Resolution</h3>
+      <p>Replace the smart card reader if it is an external device. Otherwise, schedule workstation repair.</p>
+    <h2 id="card-selection-possible-cause-2">Possible Cause 2 - Card Damaged</h2>
+      <p>The PIV is damaged.</p>
+    <h3 id="card-selection-diagnose-cause-2">Diagnosis</3>
+      <p>If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced.</p>
+    <h3 id="card-selection-resolve-cause-2">Resolution</h3>
+      <p>Replace the PIV card.</p>
   </div>
 
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-expanded="false"
-      aria-controls="m-a3"
-    >
-      Third Amendment
-    </button>
-  </h4>
-  <div id="m-a3" class="usa-accordion__content usa-prose">
-    <p>
-      No Soldier shall, in time of peace be quartered in any house, without the
-      consent of the Owner, nor in time of war, but in a manner to be prescribed
-      by law.
-    </p>
+  <h4 id="cred-auth" class="usa-accordion__heading"> <!-- Cred Auth -->
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3">Credential Authentication and Secure Connection to Logon Server</button>
+  <div id="cred-auth-description" class="usa-accordion__content usa-prose">
+    <p>After the user enters their PIN, Windows tries to unlock the card using the PIN entered. After the card has been unlocked, the workstation packages the user’s PIV authentication certificate and sends it to the logon server, also known as a domain controller. The workstation must be able to trust the domain controller so that the workstation can securely connect to it. Use the information below to troubleshoot symptoms encountered after the PIN is entered but before logon occurs.</p>
+    <hr />
+    <h2 id="cred-auth-symptom">Symptom</h2>
+      <p>After PIN entry, the following error is displayed on the logon screen: “Signing in with a smart card isn’t supported with your account. For more information, contact your administrator.”.</p>
+    <h2 id="cred-auth-possible-cause-1">Possible Cause - Domain Controller Certificate</h2>
+      <p>A suitable domain controller authentication certificate is not installed on the domain controller.</p>
+    <h3 id="cred-auth-diagnose-cause-1">Diagnosis</h3>
+    <h4 id="cred-auth-diagnose-cause-1-client">On the client:</h4>
+      <ol type="1">
+        <li>Log in to Windows using a password.</li>
+        <li>Open the Start Menu, located in the bottom left corner of the screen.</li>
+        <li>Type <strong>event viewer</strong>.</li>
+        <li>Click <strong>Event Viewer</strong>, shown under Best Match.</li>
+        <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-event-viewer.png" alt="A screenshot of the Event Viewer app icon and label."/>
+        <li>On the left side of the Event View, expand Applications and Services Logs, Microsoft, Windows, and Security-Kerberos on the tree.</li>
+        <img src="{{site.baseurl}}/assets/piv/pivauth-event-viewer-thru-operational.png" alt="A screenshot of the Event Viewer app icon with several app and folder icons below it in cascading order. The Operational icon appears at the bottom of the screenshot and is highlighted with gray." />
+        <li>Click <strong>Operational</strong>.</li>
+        <li>On the right side of the window, under Actions, click <strong>Enable Log</strong> (skip this step if the option reads ”Disable Log”; the log is already enabled).</li>
+        <img srv="{{site.baseurl}}/assets/piv/pivauth-actions-thru-help.png" alt="A screenshot of several icons, labels, and item choices below the Actions heading. The Help icon and label appears at the bottom of the screenshot. In the middle of the screenshot, the Enable Log choice is highlighted with yellow." /> 
+        <li>Log out of Windows.</li>
+        <li>Try having the user log in to their workstation again using their PIV.</li>
+        <li>Log in to Windows using a password.</li>
+        <li>Repeat Steps 2 through 6 to return to the Security-Kerberos log in Event Viewer.</li>
+        <li>Click in the center of the window where ”Error” is shown. The following log will appear.</li>
+        <img src="{{site.baseurl}}/assets/piv/pivath-operational-log.png" alt="A screenshot of an error log. It includes several labels, including Operational and Event 104, Security-Kerberos. The Details tab is open and includes details about Event 104." /> 
+      </ol>
+    <h3 id="cred-auth-resolve-cause-1">Resolution</h3>
+    <h4 id="cred-auth-resolve-cause-1-dc">On the domain controller:</h4>
+      <ol type="1">
+        <li>Log in as a Domain Administrator.</li>
+        <li>Open the Start Menu.</li>
+        <li>Type mmc.exe.</li>
+        <li>Click MMC, shown under Best Match.</li>
+        <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-mmc-exe.png" alt="A screenshot of the mmc.exe icon. The words Best Match appear above the icon and the words Run command appear below the icon." />
+        <li>If prompted by a User Account Control pop-up, click <strong>Yes</strong>.</li>
+        <img src="{{site.baseurl}}/assets/piv/pivauth-user-account-control.png" alt="A screenshot of a User Account Control window. The words Do you want to allow this app to make changes to your device? appear near the top of the screenshot. The Yes button is highlighted." />
+        <li>Click the MMC window and press and hold Ctrl. Then press "M" and release both keys.</li>
+        <li>In the Add or Remove Snap-ins window, click the following:</li> 
+          <ol type="a">
+            <li>From the Available Snap-ins on the left, click Certificates.</li>
+            <li>In the center of the window, click the Add button.</li>
+            <li>In the Certificates snap-in window, click Computer account. Then click Next.</li>
+          </ol>
+        <img src="{{site.baseurl}}/assets/piv/pivauth-snap-in.png" alt="A screenshot of an Add or Remove Snap-In window with an inset Certificate Snap-In window." />
+        <li>In the Select Computer window, click Finish.</li> 
+        <img src="{{site.baseurl}}/assets/piv/pivauth-select-computer.png" alt="A screenshot of a Select Computer window. The Local Computer radio button is highlighted and the Finish button is highlighted." />
+        <li>In the Add or Remove Snap-ins window, click OK.</li>
+        <li>On the left side of the MMC window, use the **>** symbol to expand these items on the tree:</li>
+        <ol type="a">
+          <li>Certificates (Local Computer)</li>
+          <li>Personal</li>
+        </ol>
+        <img src="{{site.baseurl}}/assets/piv/pivauth-console-root-thru-certificates.png" alt="A screenshot of a Console Root folder icon and label with three items below it in cascading order. A Certificates folder icon and label appear at the bottom of the screenshot and are highlighted with gray." />
+        <li>Under Personal, right-click Certificates.</li>  
+        <img src="{{{site.baseurl}}/assets/piv/pivauth-certificates-all-tasks.png" alt="A screenshot of a Console Root folder icon and label with several items and folders below it. The Certificates folder is highlighted with blue. An inset window with All Tasks highlighted in blue appears to the right of the main window and an inset Request New Certificate window appears to right of the first inset window." />
+12.	Click **All Tasks**.
+13.	Click **Request New Certificate**.
+14.	In the Certificate Enrollment window, click **Next**.
+15.	Click **Next**.
+16.	Click the box next to the Domain Controller Authentication template. If you do not see this, ask your CA Administrator to publish this template.<br>
+[![A screenshot of a Certificate Enrollment window. The words Request Certificates appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy choices, statuses, and details.]({{site.baseurl}}/assets/piv/pivauth-request-certificates.png)]({{site.baseurl}}/assets/piv/pivauth-request-certificates.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
+17.	Click **Enroll**.
+18.	Click **Finish**.<br> 
+[![A screenshot of a Certificate Enrollment window. The words Certificate Installation Results appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy Domain Controller Authentication status and details. A green bar runs below the Certificate Enrollment window and the Finish button is highlighted.]({{site.baseurl}}/assets/piv/pivauth-cert-enrollment.png)]({{site.baseurl}}/assets/piv/pivauth-cert-enrollment.png){:target="_blank"}{:rel="noopener noreferrer"}
+      <p>Replace the smart card reader if it is an external device. Otherwise, schedule workstation repair.</p>
   </div>
 
   <!-- Use the accurate heading level to maintain the document outline -->
@@ -151,76 +194,6 @@ Replace the PIV card.
     </p>
   </div>
 </div>
-
-## 3. Credential Authentication and Secure Connection to Logon Server
-
-After the user enters their PIN, Windows tries to unlock the card using the PIN entered. 
-After the card has been unlocked, the workstation packages the user’s PIV authentication certificate and sends it to the logon server, also known as a domain controller. The workstation must be able to trust the domain controller so that the workstation can securely connect to it.
-
-Use the information below to troubleshoot symptoms encountered after the PIN is entered but before logon occurs.
-
-### Credential Validation – Symptom 
-After PIN entry, the following error is displayed on the logon screen: “Signing in with a smart card isn’t supported with your account. For more information, contact your administrator.”
-
-### Possible Cause 1
-A suitable domain controller authentication certificate is not installed on the domain controller.
-
-### Steps to Diagnose Cause 1
-#### On the client: 
-1.	Log in to Windows using a password.
-2.	Open the Start Menu, located in the bottom left corner of the screen.
-3.	Type **event viewer**.
-4.	Click **Event Viewer**, shown under Best Match.<br>
- [![A screenshot of the Event Viewer app icon and label. The words Best Match appear above the icon.]({{site.baseurl}}/assets/piv/pivauth-best-match-event-viewer.png)]({{site.baseurl}}/assets/piv/pivauth-best-match-event-viewer.png){:target="_blank"}{:rel="noopener noreferrer"}<br>  
-5.	On the left side of the Event View, use the **>** symbol to expand each of these items on the tree:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	Applications and Services Logs<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	Microsoft<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.	Windows<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d.	Security-Kerberos<br>
-[![A screenshot of the Event Viewer app icon with several app and folder icons below it in cascading order. The Operational icon appears at the bottom of the screenshot and is highlighted with gray.]({{site.baseurl}}/assets/piv/pivauth-event-viewer-thru-operational.png)]({{site.baseurl}}/assets/piv/pivauth-event-viewer-thru-operational.png){:target="_blank"}{:rel="noopener noreferrer"}<br>
-6.	Click **Operational**.
-7.	On the right side of the window, under Actions, click **Enable Log** (skip this step if the option reads ”Disable Log”; the log is already enabled).<br>
-[![A screenshot of several icons, labels, and item choices below the Actions heading. The Help icon and label appears at the bottom of the screenshot. In the middle of the screenshot, the Enable Log choice is highlighted with yellow.]({{site.baseurl}}/assets/piv/pivauth-actions-thru-help.png)]({{site.baseurl}}/assets/piv/pivauth-actions-thru-help.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
-8.	Log out of Windows.
-9.	Try having the user log in to their workstation again using their PIV. 
-10.	Log in to Windows using a password.
-11.	Repeat Steps 2 through 6 to return to the Security-Kerberos log in Event Viewer.
-12.	Click in the center of the window where ”Error” is shown. The following log will appear:<br>
-[![A screenshot of an error log. It includes several labels, including Operational and Event 104, Security-Kerberos. The Details tab is open and includes details about Event 104.]({{site.baseurl}}/assets/piv/pivath-operational-log.png)]({{site.baseurl}}/assets/piv/pivath-operational-log.png){:target="_blank"}{:rel="noopener noreferrer"} 
- 
-### Steps to Resolve Cause 1
-#### On the domain controller:
-1.	Log in as a Domain Administrator.
-2.	Open the Start Menu.
-3.	Type **mmc.exe**.
-4.	Click **MMC**, shown under Best Match.<br>
-[![A screenshot of the mmc.exe icon. The words Best Match appear above the icon and the words Run command appear below the icon.]({{site.baseurl}}/assets/piv/pivauth-best-match-mmc-exe.png)]({{site.baseurl}}/assets/piv/pivauth-best-match-mmc-exe.png){:target="_blank"}{:rel="noopener noreferrer"}<br>  
-5.	If prompted by a User Account Control pop-up, click **Yes**.
-[![A screenshot of a User Account Control window. The words Do you want to allow this app to make changes to your device? appear near the top of the screenshot. The Yes button is highlighted.]({{site.baseurl}}/assets/piv/pivauth-user-account-control.png)]({{site.baseurl}}/assets/piv/pivauth-user-account-control.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
-6.	Click the **MMC** window and press and hold **Ctrl**. Then press **M** and release both keys.
-7.	In the Add or Remove Snap-ins window, click the following:<br> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	From the Available Snap-ins on the left, click **Certificates**.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	In the center of the window, click the **Add** button.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.	In the Certificates snap-in window, click **Computer account**. Then click **Next**.<br>
-[![A screenshot of an Add or Remove Snap-In window with an inset Certificate Snap-In window.]({{site.baseurl}}/assets/piv/pivauth-snap-in.png)]({{site.baseurl}}/assets/piv/pivauth-snap-in.png){:target="_blank"}{:rel="noopener noreferrer"}<br>  
-8.	In the Select Computer window, click **Finish**.<br> 
-[![A screenshot of a Select Computer window. The Local Computer radio button is highlighted and the Finish button is highlighted.]({{site.baseurl}}/assets/piv/pivauth-select-computer.png)]({{site.baseurl}}/assets/piv/pivauth-select-computer.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
-9.	In the Add or Remove Snap-ins window, click **OK**.
-10.	On the left side of the MMC window, use the **>** symbol to expand these items on the tree:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	Certificates (Local Computer)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	Personal<br>
-[![A screenshot of a Console Root folder icon and label with three items below it in cascading order. A Certificates folder icon and label appear at the bottom of the screenshot and are highlighted with gray.]({{site.baseurl}}/assets/piv/pivauth-console-root-thru-certificates.png)]({{site.baseurl}}/assets/piv/pivauth-console-root-thru-certificates.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
-11.	Under Personal, right-click **Certificates**.<br>  
-[![A screenshot of a Console Root folder icon and label with several items and folders below it. The Certificates folder is highlighted with blue. An inset window with All Tasks highlighted in blue appears to the right of the main window and an inset Request New Certificate window appears to right of the first inset window.]({{site.baseurl}}/assets/piv/pivauth-certificates-all-tasks.png)]({{site.baseurl}}/assets/piv/pivauth-certificates-all-tasks.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
-12.	Click **All Tasks**.
-13.	Click **Request New Certificate**.
-14.	In the Certificate Enrollment window, click **Next**.
-15.	Click **Next**.
-16.	Click the box next to the Domain Controller Authentication template. If you do not see this, ask your CA Administrator to publish this template.<br>
-[![A screenshot of a Certificate Enrollment window. The words Request Certificates appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy choices, statuses, and details.]({{site.baseurl}}/assets/piv/pivauth-request-certificates.png)]({{site.baseurl}}/assets/piv/pivauth-request-certificates.png){:target="_blank"}{:rel="noopener noreferrer"}<br> 
-17.	Click **Enroll**.
-18.	Click **Finish**.<br> 
-[![A screenshot of a Certificate Enrollment window. The words Certificate Installation Results appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy Domain Controller Authentication status and details. A green bar runs below the Certificate Enrollment window and the Finish button is highlighted.]({{site.baseurl}}/assets/piv/pivauth-cert-enrollment.png)]({{site.baseurl}}/assets/piv/pivauth-cert-enrollment.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## 4. Name Mapping and PIV Validation
 
