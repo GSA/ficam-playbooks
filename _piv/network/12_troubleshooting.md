@@ -31,21 +31,14 @@ The figure below, from the “Smart card sign-in flow in Windows” section of t
 
 For our use, this complex process is simplified into the following workflows:
 1. [Process Start](#process-start)
-2. [Card Selection and PIN Entry](#2-card-selection-and-pin-entry)
+2. [Card Selection and PIN Entry](#card-selection)
 3. [Credential Authentication and Secure Connection to Logon Server](#3-credential-authentication-and-secure-connection-to-logon-server)
 4. [Name Mapping and PIV Validation](#4-name-mapping-and-piv-validation)
 5. [Client Logon and Caching](#5-client-logon-and-caching)
 
 <div class="usa-accordion" aria-multiselectable="true">
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <h4 id="process-start" class="usa-accordion__heading"> <!-- process start-->
-    <button
-      class="usa-accordion__button"
-      aria-expanded="true"
-      aria-controls="m-a1"
-    >
-      1. Process Start
-    </button>
+  <h4 id="process-start" class="usa-accordion__heading"> <!-- Process Start-->
+    <button class="usa-accordion__button" aria-expanded="true" aria-controls="m-a1">1. Process Start</button>
   </h4>
   <div id="m-a1" class="usa-accordion__content usa-prose">
     <p> PIV logon begins at the client workstation. First, the system discovers smart card reader devices that are built into or attached to the workstation. Next, acceptable smart card logon certificates from any connected cards are provided to the Windows logon screen. In general, PIV cards are engineered to have one authenticate certificate marked eligible for smart card logon. However, in some instances, more than one certificate may have been inadvertently made eligible, meaning the user may first be asked to select the correct certificate for smart card logon. Conversely, the user may have a Facility Access Card (FAC) that omits access to any workstation. For more details on what is in use at your organization, speak with your agency’s credential issuer or Identity, Credential, and Access Management (ICAM) office.
@@ -53,18 +46,40 @@ For our use, this complex process is simplified into the following workflows:
     <p><img src="{{site.baseurl}}/assets/piv/pivauth-logon-screen.png)" alt="A screenshot of a logon screen that includes icons for entering a password or inserting a smart card." style="padding-left:15px" /></p>
   </div>
 
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <h4 class="usa-accordion__heading">
+  <h4 id="card-selection" class="usa-accordion__heading"> <!-- Card Selection -->
     <button
       class="usa-accordion__button"
       aria-expanded="false"
       aria-controls="m-a2"
     >
-      Second Amendment
+      1. Card Selection and PIN Entry
     </button>
   </h4>
   <div id="m-a2" class="usa-accordion__content usa-prose">
-    <p>
+    <p>When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN. Use the information below to troubleshoot symptoms encountered with card selection before PIN entry."</p>
+    <hr />
+    <h2 id="2-symptom">Symptom</h2>
+    <p>Smart card icon is not displayed; user is not prompted for PIN.</p>
+    <h2 id="2-possible-cause-1">Possible Cause 1</h2>
+    <p>Windows does not detect either the reader or the card due to a software or hardware issue with the card reader.</p>
+    <h3 id="2-diagnost-cause1">Diagnose Cause 1</h2>
+1.	Ask the user to make sure that the PIV card is fully inserted in the reader.
+2.	If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.
+3.	Ask the user to try rebooting their workstation.
+4.	Ask the user to try using their PIV with their PIN elsewhere.
+5.	If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced.
+
+##### Steps to Resolve Cause 1
+Replace the smart card reader if it is an external device. Otherwise, schedule workstation repair.
+
+#### Possible Cause 2
+The PIV is damaged.
+
+##### Steps to Diagnose Cause 2
+If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced. 
+
+##### Steps to Resolve Cause 2 
+Replace the PIV card.
       A well regulated Militia, being necessary to the security of a free State,
       the right of the people to keep and bear Arms, shall not be infringed.
     </p>
@@ -136,37 +151,6 @@ For our use, this complex process is simplified into the following workflows:
     </p>
   </div>
 </div>
-
-## 2. Card Selection and PIN Entry
-
-When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN.
-
-Use the information below to troubleshoot symptoms encountered with card selection before PIN entry.
-
-### Card Selection and Pin Entry – Symptom 
-Smart card icon is not displayed; user is not prompted for PIN.
-
-#### Possible Cause 1 
-Windows does not detect either the reader or the card due to a software or hardware issue with the card reader.
-
-##### Steps to Diagnose Cause 1
-1.	Ask the user to make sure that the PIV card is fully inserted in the reader.
-2.	If the smart card reader is an external USB device, ask the user to remove the device and try inserting it into a different USB port.
-3.	Ask the user to try rebooting their workstation.
-4.	Ask the user to try using their PIV with their PIN elsewhere.
-5.	If the issue persists through reboot, and the PIV with PIN works elsewhere, the smart card reader may need to be replaced or the workstation may need to be serviced.
-
-##### Steps to Resolve Cause 1
-Replace the smart card reader if it is an external device. Otherwise, schedule workstation repair.
-
-#### Possible Cause 2
-The PIV is damaged.
-
-##### Steps to Diagnose Cause 2
-If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced. 
-
-##### Steps to Resolve Cause 2 
-Replace the PIV card.
 
 ## 3. Credential Authentication and Secure Connection to Logon Server
 
