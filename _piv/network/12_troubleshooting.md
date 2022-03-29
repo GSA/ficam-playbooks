@@ -17,7 +17,7 @@ Within the federal enterprise, Windows smart card logon with a PIV card (PIV log
 
 The figure below, from the “Smart card sign-in flow in Windows” section of the [Microsoft Certificate Requirements and Enumeration article](https://docs.microsoft.com/en-us/windows/security/identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration#smart-card-sign-in-flow-in-windows){:target="_blank"}{:rel="noopener noreferrer"}, provides a detailed overview of how smart card logon works in supported versions of Windows.
 
-![A detailed workflow diagram of how smart card logon works in supported versions of Windows.]({{site.baseurl}}/assets/piv/pivauth-overview.png)
+<img src="{{site.baseurl}}/assets/piv/pivauth-overview.png" alt="A detailed workflow diagram of how smart card logon works in supported versions of Windows." width="882" height="820">
 
 For our use, this complex process is simplified into the following workflows:
 
@@ -36,7 +36,7 @@ For our use, this complex process is simplified into the following workflows:
     <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2">Card Selection and PIN Entry</button>
   </h4>
   <div id="m-a2" class="usa-accordion__content usa-prose">
-    <p>When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN. Use the information below to troubleshoot symptoms encountered with card selection before PIN entry."</p>
+    <p>When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN. Use the information below to troubleshoot symptoms encountered with card selection before PIN entry.</p>
     <hr />
     <h2>Symptom</h2>
     <p>Smart card icon is not displayed; user is not prompted for PIN.</p>
@@ -71,7 +71,7 @@ For our use, this complex process is simplified into the following workflows:
     <p>After the user enters their PIN, Windows tries to unlock the card using the PIN entered. After the card has been unlocked, the workstation packages the user’s PIV authentication certificate and sends it to the logon server, also known as a domain controller. The workstation must be able to trust the domain controller so that the workstation can securely connect to it. Use the information below to troubleshoot symptoms encountered after the PIN is entered but before logon occurs.</p>
     <hr />
     <h2>Symptom</h2>
-    <p>After PIN entry, the following error is displayed on the logon screen: “Signing in with a smart card isn’t supported with your account. For more information, contact your administrator.”.</p>
+    <p>After PIN entry, the following error is displayed on the logon screen: <br><strong>Signing in with a smart card isn’t supported with your account. For more information, contact your administrator.</strong>.</p>
     <hr />
     <h2>Possible Cause - Domain Controller Certificate</h2>
     <p>A suitable domain controller authentication certificate is not installed on the domain controller.</p>
@@ -116,7 +116,7 @@ For our use, this complex process is simplified into the following workflows:
       <li>In the Select Computer window, click Finish.</li> 
       <img src="{{site.baseurl}}/assets/piv/pivauth-select-computer.png" alt="A screenshot of a Select Computer window. The Local Computer radio button is highlighted and the Finish button is highlighted.">
       <li>In the Add or Remove Snap-ins window, click OK.</li>
-      <li>On the left side of the MMC window, click the <strong>></strong> symbol to expand these items on the tree:</li>
+      <li>On the left side of the MMC window, click the <strong>></strong>symbol to expand these items on the tree:</li>
       <ol type="a">
         <li>Certificates (Local Computer)</li>
         <li>Personal</li>
@@ -144,21 +144,21 @@ For our use, this complex process is simplified into the following workflows:
   <div id="m-a4" class="usa-accordion__content usa-prose">
     <p>After the domain controller’s authentication certificate is used to make a secure link from the workstation to the domain controller, the certificate data for the user’s smart card is sent to the domain controller for validation. The domain controller does the following to validate the credential:</p>
     <ol type="1">
-      <li>The domain controller looks up the user’s account in Active Directory (AD) using information found in the user’s PIV authentication certificate. This process is known as name mapping. More information about user name mapping can be found in the <a href="https://playbooks.idmanagement.gov/piv/network/account/#transitioning-from-upn-mapping-to-altsecurityidentities-mapping" target="_blank" target="no referrer">Account Linking Playbook</a></li>
+      <li>The domain controller looks up the user’s account in Active Directory (AD) using information found in the user’s PIV authentication certificate. This process is known as name mapping. More information about user name mapping can be found in the <a href="https://playbooks.idmanagement.gov/piv/network/account/#transitioning-from-upn-mapping-to-altsecurityidentities-mapping" target="_blank" rel="noopener noreferrer">Account Linking Playbook</a></li>
       <li>The certificate is sent to the Microsoft Crypto-API (CAPI) service running on the domain controller for path discovery and validation. CAPI performs basic certificate checks, described in the Certification Path Discovery and Validation (PDVal) playbook.</li>
-      <li>The domain controller checks its local copy of the Enterprise NTAUTH store for the presence of the issuing certification authority (CA) for the PIV authentication certificate. Steps for adding a certificate to this store can be found in the <a href="https://playbooks.idmanagement.gov/piv/network/trust-stores/" target="_blank" rel="no referrer">Trust Stores Playbook</a></li>
+      <li>The domain controller checks its local copy of the Enterprise NTAUTH store for the presence of the issuing certification authority (CA) for the PIV authentication certificate. Steps for adding a certificate to this store can be found in the <a href="https://playbooks.idmanagement.gov/piv/network/trust-stores/" target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a></li>
     </ol>
     <p><strong>Note:</strong> Certificate validation of the PIV authentication certificate for smart card logon only occurs on the individual domain controller processing the logon request. The client computer does not check the validity of the logon certificate. Other applications outside of Windows logon may perform certificate validation locally, so it may still be a good idea to have a valid path installed on your organization’s client computers. if you have multiple logon servers in your environment, only the one responding to the individual logon request performs validation. Therefore, it is important to maintain a consistent configuration across your domain controllers.</p>
     <p>Use the information below to troubleshoot additional symptoms encountered after the PIN is entered, but before logon occurs.</p>
     <hr />
     <h2>Symptom</h2>
-    <p>After PIN entry, one of the following errors displays on the logon screen: </p>
+    <p>After PIN entry, one of the following errors displays on the logon screen:</p>
     <ol type="1">
       <li><strong>“An untrusted certification authority was detected while processing the smart card certificate used for authentication.”</strong></li>
-      <img src="{{site.baseurl}}/assets/piv/pivauth-untrusted-ca-logon-screen.png" alt="A screenshot of a logon window that includes the words An untrusted certification authority was detected while processing the smart card certificate used for authentication.">
+      <img src="{{site.baseurl}}/assets/piv/pivauth-untrusted-ca-logon-screen.png" alt="A screenshot of a logon window that includes the words An untrusted certification authority was detected while processing the smart card certificate used for authentication." width="664" height="448">
       <li><strong>“The smart card used for authentication has been revoked.”</strong></li>
-      <img src="{{site.baseurl}}/assets/piv/pivauth-smart-card-revoked-logon-screen.png" alt="A screenshot of a logon window that includes the words The smart card used for authentication has been revoked.">
-    <ol>
+      <img src="{{site.baseurl}}/assets/piv/pivauth-smart-card-revoked-logon-screen.png" alt="A screenshot of a logon window that includes the words The smart card used for authentication has been revoked." width="664" height="448">
+    </ol>
     <hr />
     <h2>Possible Cause 1 - Certificate Fails Path Discovery and Validation</h2>
     <p>The user’s PIV authentication certificate fails path discovery and validation on the domain controller.</p>
@@ -169,7 +169,7 @@ For our use, this complex process is simplified into the following workflows:
       <li>Open the Start Menu, located in the bottom left corner of the screen.</li>
       <li>Type <strong>cmd</strong>.</li>
       <li>Click <strong>Command Prompt</strong>, shown under Best Match.</li>
-      <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-command-prompt.png"alt="A screenshot of the Command Prompt app icon. The words Best Match appear above the icon.">
+      <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-command-prompt.png" alt="A screenshot of the Command Prompt app icon. The words Best Match appear above the icon.">
       <li>In the command prompt, type <strong>echo %logonserver%</strong> and press <strong>Enter</strong>.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-command-prompt.png" alt="A screenshot of a Command Prompt window that includes the Windows version and user details.">
       <li>The current domain controller being used for Windows logon is displayed. This is the best domain controller to check first for troubleshooting invalid smart card logon events.</li>
@@ -184,7 +184,7 @@ For our use, this complex process is simplified into the following workflows:
       <li>Type <strong>event viewer</strong>.</li>
       <li>Click <strong>Event Viewer</strong>, shown under Best Match.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-event-viewer.png" alt="A screenshot of the Event Viewer app icon and label. The words Best Match appear above the icon."> 
-      <li>On the left side of the Event View, click the <strong>></strong> symbol to expand each of these items on the tree:</li>
+      <li>On the left side of the Event View, click the <strong>">"</strong> symbol to expand each of these items on the tree:</li>
       <ol type="a">
         <li>Applications and Services Logs</li>
         <li>Microsoft</li>
@@ -198,20 +198,17 @@ For our use, this complex process is simplified into the following workflows:
       <li>Have the user try to log in using their PIV, taking note of the time. The error should be shown on the logon screen.</li>
       <li>On the domain controller, still in Event Viewer, on the right pane, click <strong>Refresh</strong>.</li>
       <li>New log events will be shown. Look for the events with an “Error” status  and the task category “Build Chain.”</li>
-      <li>
-        <p>Click the <strong>Details</strong> tab. In the UserData section, look for the user’s name in the Certificate [subjectName] field.</p>
-        <img src="{{site.baseurl}}/assets/piv/pivauth-operational-event11.png" alt="A screenshot of an Operational window labeled Event 11, CAPI2. In the center of the screenshot, the subjectName and user name are highlighted with yellow.">
-        <p>If you do not see the user’s name, continue scrolling through the list of events to find the next event with an “Error” status and the task category “Build Chain.” Using results filtering may help to narrow this list down.</p>
-      </li>
+      <li>Click the <strong>Details</strong> tab. In the UserData section, look for the user’s name in the Certificate [subjectName] field. If you do not see the user’s name, continue scrolling through the list of events to find the next event with an “Error” status and the task category “Build Chain.” Using results filtering may help to narrow this list down.</li>
+      <img src="{{site.baseurl}}/assets/piv/pivauth-operational-event11.png" alt="A screenshot of an Operational window labeled Event 11, CAPI2. In the center of the screenshot, the subjectName and user name are highlighted with yellow.">
       <li>Once you find the event, scroll down through the details. You will see sections that say “-ChainElement.” These indicate each of the certificates in the path that was built. Within each chain element, look again for the ”- Certificate [ subjectName ],” indicating which certificate is being checked, and below it, a ”- TrustStatus” with an ”- Error Status” which will give more details about the failing validation.</li>
     </ol>
     <br>
-    <p><strong>Example 1: A certificate in the path is revoked.</strong><p>
-    <img src="{{site.baseurl}}/assets/piv/pivauth-example1.png" alt="A screenshot of an Operational window labeled Event 11, CAPI2. The Certificate and the TrustStatus details are highlighted with yellow.">
+    <p><strong>Example 1: A certificate in the path is revoked.</strong></p>
+    <img src="{{site.baseurl}}/assets/piv/pivauth-example1.png" alt="A screenshot of an Operational window labeled Event 11, CAPI2. The Certificate and the TrustStatus details are highlighted with yellow." width="766" height="652">
     <p><strong>Example 2: The path does not build to a trust anchor</strong></p>
-    <img src="{{site.baseurl}}/assets/piv/pivauth-example2.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Is Untrusted Root details are highlighted with yellow.">
+    <img src="{{site.baseurl}}/assets/piv/pivauth-example2.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Is Untrusted Root details are highlighted with yellow." width="766" height="652">
     <p><strong>Example 3: The revocation status is unreachable, or the revocation status signature cannot be validated due to an invalid trust path.</strong></p>
-    <img src="{{site.baseurl}}/assets/piv/pivauth-example3.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Revocation Status Unknown details are highlighted with yellow.">
+    <img src="{{site.baseurl}}/assets/piv/pivauth-example3.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Revocation Status Unknown details are highlighted with yellow." width="766" height="652">
     <p><strong>Note:</strong>The error status in Example 3 will occur for any certificate lower in the path than the above Examples for 1 and 2. For example, if a trusted root cannot be found at the top of the path, no valid revocation status will be found for any certificate issued below the trusted root, including the issuing CA certificate and the end user’s PIV authentication certificate. This situation occurs because the revocation data cannot have its signature verified for the same reasons that the certificate itself cannot.</p>
     <h3>Resolution</h3>
     <ol type="1">
@@ -225,21 +222,23 @@ For our use, this complex process is simplified into the following workflows:
       <li>Confirm that there is no error logged for the task category ”Build Chain” with matching certificate subjectName for the user.</li>
       <li>Look for an error logged for task category ”Verify Chain Policy” with matching certificate subjectName for the user.</li>
       <li>Confirm that the result logged is ”A certification chain processed correctly, but one of the CA certificates is not trusted by the policy provider.”</li>
-      <img src="{{site.baseurl}}/assets/piv/pivauth-operational-event30.png" alt="A screenshot of an Operational window labeled Event 30, CAPI2. Near the top of the screenshot, a row labeled Error is highlighted with yellow. Elsewhere in the screenshot, the subjectName and user name and the Result details are highlighted with yellow.">
+      <img src="{{site.baseurl}}/assets/piv/pivauth-operational-event30.png" alt="A screenshot of an Operational window labeled Event 30, CAPI2. Near the top of the screenshot, a row labeled Error is highlighted with yellow. Elsewhere in the screenshot, the subjectName and user name and the Result details are highlighted with yellow." width="766" height="652">
     </ol>
     <h3>Resolution</h3>
-    <p>Follow the steps in the <a href="https://playbooks.idmanagement.gov/piv/network/trust-stores/" target="_blank" rel="no referrer">Trust Stores Playbook</a> to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.</p>
+    <p>Follow the steps in the <a href="https://playbooks.idmanagement.gov/piv/network/trust-stores/" target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a> to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.</p>
+    <br>
     <a href="#logon-process-overview">Back to Process Overview</a>
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Client Logon -->
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2">Client Logon and Caching</button>
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a5">Client Logon and Caching</button>
   </h4>
   <div id="m-a5" class="usa-accordion__content usa-prose">
     <p>Once name mapping and PIV validation are complete, the domain controller sends a logon package to the client computer with the user’s domain permissions and a token that allows desktop logon for that user. If the user is permitted to log in to the computer, they will now be logged into their Windows desktop.</p>
     <p>The first logon must always occur while the system has a network connection to the domain controller, whether it is directly attached to the organization’s network or via a VPN. After the first logon, if the Group Policy setting pictured below is set to a value greater than 0, the user’s logon token will be permanently cached by their workstation as long as the number of subsequent users to log in does not exceed this number. </p>
     <img src="{{site.baseurl}}/assets/piv/pivauth-local-group-policy-editor.png" alt="A screenshot of a Local Group Policy Editor window with two columns of folder and item icons and labels. The screenshot includes an inset Interactive Number of previous logons to cache window.">
     <p>If a future logon is attempted while the user’s workstation is disconnected from the organization’s network, and the logon token is cached, the workstation will only authenticate the PIV authentication certificate via PIN and, upon successful entry, will log the user into their desktop using their cached token and permissions. If the value is set to 0, caching does not occur and logon will only occur when the workstation is connected to the network and can communicate with a domain controller.</p>
+    <br>
     <a href="#logon-process-overview">Back to Process Overview</a>
   </div>
 </div>
