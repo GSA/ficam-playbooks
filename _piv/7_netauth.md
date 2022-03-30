@@ -25,8 +25,8 @@ subnav:
     href: ../../piv/network/auth/
   - text: PIV Auth on macOS
     href: ../../piv/network/mac/
-  - text: Troubleshooting Windows Logon with PIV Auth
-    href: ../../piv/network/troubleshooting/ 
+  - text: Troubleshooting PIV Logon
+    href: ../../piv/network/troubleshooting/    
 ---
 
 These Network Authentication guides will help you configure your Windows _network domain_ for smart card logon using PIV credentials.

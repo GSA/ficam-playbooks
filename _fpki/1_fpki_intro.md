@@ -45,7 +45,7 @@ A PIV certificate is a simple example.  Although there are many types of identit
 * The _certification authority_ that issued and digitally signed your PIV certificates is called an _intermediate certification authority_. The _intermediate certification authority's certificate_ was issued by another _certification authority_.  
 * This process of issuing and signing continues until there is one _certification authority_ that is called the _root certification authority_.
 
-[![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
+![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}{:style="float:center"}
 
 The full process of proving identity when issuing certificates, auditing the certification authorities, and the cryptographic protections of the digital signatures establish the _basis of trust_.
 

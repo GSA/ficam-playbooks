@@ -71,8 +71,6 @@ piv:
     href: /piv/engineer/
   - text: User Guides
     href: /piv/user-guide/
-  - text: Certification Path Discovery and Validation
-    href: /piv/pdval/
 
 pivnetwork:
   - text: Back to PIV Guide
@@ -95,7 +93,7 @@ pivnetwork:
     href: /piv/network/auth/
   - text: PIV Auth on macOS
     href: /piv/network/mac/
-  - text: Troubleshooting Windows Logon with PIV Auth
+  - text: Troubleshooting PIV Logon
     href: /piv/network/troubleshooting/    
 
 pivengineer:
@@ -119,6 +117,8 @@ fpki:
     href: /fpki/
   - text: Certification Authorities
     href: /fpki/ca/
+  - text: Path Discovery and Validation (PDVAL)
+    href: /fpki/pdval/
   - text: Trust Stores
     href: /fpki/trust-stores/
   - text: Federal Common Policy CA Update (FY21)
