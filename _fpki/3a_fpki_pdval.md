@@ -80,7 +80,7 @@ The most important factor is the trust anchors. By limiting which trust anchors 
     <p class="usa-alert__text">
       If certification paths from your PIV certificates do not begin with the Federal Common Policy CA G2, follow the guidance found in
       <a class="usa-link" href="{{site.baseurl}}/fpki/common/distribute-os/">Distribute the certificate to operating systems</a>
-      to install the CA in the correct location. .
+      to install the CA in the correct location.
     </p>
   </div>
 </div>
