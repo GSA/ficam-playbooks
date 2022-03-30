@@ -45,7 +45,7 @@ PDVal is a two-step process:
 1. **Certification Path Discovery:** Find a certification path to a trust anchor. 
 2. **Certification Path Validation:** Confirms that the certification path is good. 
 
-**Note:** This playbook describes the PDVal process as documented in standards. Individual vendor implementations may not support all the capabilities described in this playbook, and the details of individual implementations may vary. Troubleshooting PDVal errors is not explained here. Information about troubleshooting PDVal errors during smart card logon can be found on the [Troubleshooting PIV Logon]({{site.baseurl}}piv/network/troubleshooting/) page.
+**Note:** This playbook describes the PDVal process as documented in standards. Individual vendor implementations may not support all the capabilities described in this playbook, and the details of individual implementations may vary. Troubleshooting PDVal errors is not explained here. Information about troubleshooting PDVal errors during smart card logon can be found on the [Troubleshooting PIV Logon]({{site.baseurl}}/piv/network/troubleshooting/) page.
 
 ## What Is a Certification Path?
 
@@ -65,7 +65,7 @@ Two valid certification paths for the same PIV authentication certificate are il
 
 Both certification paths are valid for the same PIV authentication certificate (”(Affiliate)” in the images), but they start with different trust anchors. The configuration difference between the two example paths is only which trust anchor was installed.
 
-Both certification paths are valid for the same PIV authentication certificate (" (Affiliate)" in the images), but they start with different trust anchors. 
+Both certification paths are valid for the same PIV authentication certificate ("(Affiliate)" in the images), but they start with different trust anchors. 
 - A variety of factors can influence the certification path, including:
 - Installed trust anchor CAs (Also known as trust roots or trusted CAs)
 - Locally cached CA certificates
@@ -180,7 +180,7 @@ It is worth noting that some aspects of path validation may be successfully inco
     <h4 class="usa-alert__heading">Informative status</h4>
     <p class="usa-alert__text">
       Certification path validation is a process defined in 
-      <a class="usa-link" href="(https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=X.509)" target="_blank" rel="noopener noreferrer">Recommendation ITU-T X.509</a>
+      <a class="usa-link" href="https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=X.509" target="_blank" rel="noopener noreferrer">Recommendation ITU-T X.509</a>
       . RFC 5280 is a profile of X.509 and contains a subset of the functionality deemed necessary for interoperability in an Internet-connected environment.  X.509 should be consulted in any case where RFC 5280 content is in question, unclear, or silent. This playbook aims to provide readers with a summary of some core certification path validation requirements, it should not be considered authoritative.
     </p>
   </div>
