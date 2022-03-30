@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: piv
-title: Troubleshooting Windows Smart Card Logon
+title: Troubleshooting PIV Logon
 permalink: piv/network/troubleshooting/
 sticky_sidenav: true
 sidenav: pivnetwork
