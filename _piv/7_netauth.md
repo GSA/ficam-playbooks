@@ -25,6 +25,8 @@ subnav:
     href: ../../piv/network/auth/
   - text: PIV Auth on macOS
     href: ../../piv/network/mac/
+  - text: Troubleshooting PIV Logon
+    href: ../../piv/network/troubleshooting/    
 ---
 
 These Network Authentication guides will help you configure your Windows _network domain_ for smart card logon using PIV credentials.
@@ -52,11 +54,13 @@ There are five configuration categories to review with your colleagues.  All fiv
 - [Account Linking: Associating PIV credentials with User Accounts](../network/account/)
 - [Group Policies and Enforcement](../network/group/)
 
-There are three additional guides:
+There are five additional guides:
 
 - [Network Tuning](../network/tuning/)
 - [Local Certification Authority](../network/localca/)
 - [Authentication Assurance](../network/auth/)
+- [PIV Authentication on MacOS](../network/mac/)
+- [Troubleshooting PIV Logon](../network/troubleshooting/)
 
 We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, adressing common errors and troubleshooting, and configuring MacOSX and other operating systems.  
 
