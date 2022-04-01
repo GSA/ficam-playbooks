@@ -37,8 +37,6 @@ piv:
     href: /piv/engineer/
   - text: User Guides
     href: /piv/user-guide/
-  - text: PIV-I for Issuers
-    href: piv/piviforissuers/
 
 pivnetwork:
   - text: Back to PIV Guide
@@ -78,7 +76,7 @@ pivuser:
 
 ## PIV-I
 pivi:
-  - text: PIV-I For Issuers
+  - text: PIV-I For Federal Agencies
     href: /cred/pivi/
 
 ## FPKI Navigation
@@ -211,6 +209,10 @@ pm:
 
 
 # Playbooks Navigation
+
+pivi:
+  - text: PIV-I for Federal Agencies
+    href: /playbooks/pivi/
 
 cloud:
   - text: Cloud Identity Playbook

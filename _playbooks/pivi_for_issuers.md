@@ -1,9 +1,11 @@
 ---
 layout: page
-collection: cred
-title: Personal Identity Verification Interoperability for Issuers
-pubdate: 2017-07
-permalink: cred/pivi/
+collection: playbooks
+title: PIV-I for Federal Agencies
+pubdate: 2022-04
+type: Markdown
+permalink: /playbooks/pivi/
+description: This guide helps federal agencies understand how federal issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) achieve interoperability with the PIV infrastructure.
 sticky_sidenav: true
 sidenav: pivi
 
@@ -23,15 +25,17 @@ subnav:
 Version 2.1  
 April 2022
 
-This guide provides guidance to help both federal issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) identity credentials to achieve credential interoperability within the Federal Government PIV infrastructure. The scope of this guide is limited to the issuance of PIV-I credentials; federal departments and agencies must continue to make their own authorization decisions to allow or deny access when a PIV-I credential is used for authentication.
+This guide helps federal agencies understand how federal issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) achieve interoperability with the PIV infrastructure. The scope of this guide is limited to the issuance of PIV-I credentials. Federal departments and agencies must continue to make their own authorization decisions to allow or deny access when using a PIV-I credential for authentication.
 
-<a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
-<a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+<img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
+<img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a>
+
+<br>
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.0 | 07/2010 | Initial Draft |
-| 2.0 | 11/2016 | - Removed most duplicative references to requirements which have been stated in other government documents as authoritative<br>- Updated references to Memorandums, Standards and common terminology<br>- Added clarification for federal agencies on the boundaries of security, auditing and procurement requirements |
+| 2.0 | 11/2016 | - Removed most duplicative references to requirements stated in other government documents.<br>- Updated references to Memorandums, Standards, and common terminology<br>- Added clarification for federal agencies on the boundaries of security, auditing, and procurement requirements |
 | 2.0.1 | 12/2016 | Updated Table 4 <now table 2> to clarify for Legislative and Judicial branches of federal government |
 | 2.1 | 02/2022 | Updated NIST and OMB references to latest publication versions and requirements. | 
 
@@ -42,23 +46,24 @@ Federal agencies are interested in issuing and acquiring identity credentials an
 1. technically interoperable with federal government PIV infrastructure, and
 2. issued in a manner that allows federal government-relying parties to trust the credentials.
 
-The PIV credential standard, Federal Information Processing Standards (FIPS) 201-2, has requirements[^1] that only federal agencies can meet to issue PIV credentials, which requires needed guidance for issuers of PIV-I credentials. Prior guidance neglected to address the issuance of these PIV-I credentials by federal agencies, requiring additional guidance for all issuers.
+PIV-I shares the same technical standard as the PIV credential standard, Federal Information Processing Standards (FIPS) 201. Prior guidance neglected to address the issuance of these PIV-I credentials by federal agencies, requiring additional guidance for all issuers. All individuals who are issued PIV credentials are <strong>required</strong> to have common, minimum personnel vetting assurance as specified in Federal Information Processing Standard 201. Individuals with PIV-I credentials assert <strong>no personnel vetting assurance</strong> in a baseline, standardized manner. PIV-I credentials may be appropriate for situations where an agency has determined that a PIV credential is not warranted, but the individual requires access. Such situations may include, but are not limited to:
 
-This guide advocates a set of minimum requirements for PIV-I credentials that can be trusted by the Federal Government, and details solutions to the four barriers to interoperability that currently challenge the government. These four barriers are as follows:
+* Temporary/seasonal employees, visiting scientists and guest researchers, or contractor personnel requiring access for less than six (6) months;
+* Non-U.S. nationals with insufficient residency in the U.S. to satisfactorily conduct the background investigation; and
+* Personnel operating outside the contiguous U.S. under special risk security considerations, as outlined in FIPS 201.
+
+This guide advocates a set of minimum requirements for PIV-I credentials that the Federal Government can trust and details solutions to the four barriers to interoperability that currently challenge the government. These four barriers are as follows:
 
 1. Common terminology for identity credentials and issuers – For consistency, a lexicon for differentiating a PIV credential from a credential interoperable with PIV infrastructure, and the differences between federal and NFI, has been developed.
-2. Assured identity – The fundamental purpose of an identity credential is to establish the identity of the credential holder. Therefore, an identity credential must be issued in a federated model and consistent manner, which provides the federal government with a requisite level of identity assurance.
-3. Technical requirements – For identity credentials to be interoperable with the federal PIV infrastructure, basic technological requirements must be met.
+2. Assured identity – The fundamental purpose of an identity credential is to establish the identity of the credential holder. The fundamental purpose of an identity credential is to establish the identity of the credential holder. Therefore, issuing an identity credential in a federated model and consistent manner provides the federal government with a requisite level of identity assurance.
+3. Technical requirements – Meet basic requirements for identity credentials to be interoperable with the federal PIV infrastructure.
 4. Security and auditing – The boundaries for auditing and compliance requirements require clarification for federal agencies.
 
 For additional information on PIV-I, please contact fpki at gsa.gov.
 
 # 1. Introduction
-## 1.1 Background
 
-The Federal Government’s reliance (trust) on PIV credentials establishes a baseline for identity assurance, authenticator assurance, and personnel vetting assurance. Federal agencies and issuers of identity credentials have expressed a desire to produce identity credentials that are interoperable with the Federal Government PIV infrastructure and are trusted in authenticating to facilities, networks, and systems.
-
-A definition for a PIV-I credential for federal agencies is required to address:
+The Federal Government's reliance (trust) on PIV credentials establishes a baseline for identity assurance, authenticator assurance, and personnel vetting assurance. Federal agencies and issuers of identity credentials express a desire to produce interoperable smart card-based credentials with the Federal Government PIV infrastructure. Agencies can trust these PIV interoperable credentials in authenticating facilities, networks, and systems. This guide provides a definition for a PIV-I credential to address the following:
 
 - Identity assurance requirements,
 - Authenticator assurance requirements,
@@ -66,73 +71,71 @@ A definition for a PIV-I credential for federal agencies is required to address:
 - Security and auditing clarifications, and
 - Procurement clarifications.
 
-## 1.2 Scope
+## 1.1 Scope
 
-This guide is limited to describing identity credentials that interoperate with the Federal Government PIV infrastructure and may be accepted by the Federal Government for access to data, applications, facilities, and networks. Additionally, this guide does not address the use cases for when it is appropriate or allowed for federal agencies to directly issue alternate non-PIV credentials for interoperability with PIV to employees, contractors, and affiliates.
+This guide is limited to describing PIV-I. Federal agencies make a risk determination to accept any credential, including PIV-I, for access to data, applications, facilities, and networks. Additionally, this guide does not address the use cases for other types of non-PIV credentials. PIV-I is used to overcome barriers to federal reliance on identity credentials, which are defined as interoperable with PIV. Four specific areas of concern are addressed.
 
-## 1.3 Objectives
-
-This guide provides solutions to overcome barriers to federal reliance on identity credentials, which are defined as interoperable with PIV. Four specific areas of concern have been identified:
-
-1. Common terminology for identity credentials and issuers – To ensure consistency, a lexicon for differentiating a PIV credential from a credential interoperable with PIV infrastructure, and the differences between federal and NFI, has been developed.
-2. Assured identity – The fundamental purpose of an identity credential is to establish the identity of the credential holder.An identity credential must be issued in a federated model and consistent manner to provide the Federal Government with a requisite level of identity assurance.
-3. Technical requirements – For identity credentials to be interoperable with the federal PIV infrastructure, basic technological requirements must be met.
+1. Common terminology for identity credentials and issuers – For consistency, a lexicon for differentiating a PIV credential from a credential interoperable with PIV infrastructure, and the differences between federal and NFI, has been developed.
+2. Assured identity – The fundamental purpose of an identity credential is to establish the identity of the credential holder. Therefore, issuing an identity credential in a federated model and consistent manner provides the federal government with a requisite level of identity assurance.
+3. Technical requirements – Meet basic requirements for identity credentials to be interoperable with the federal PIV infrastructure.
 4. Security and auditing – The boundaries for auditing and compliance requirements require clarification for federal agencies.
 
-For each of these, a minimum set of requirements is described to allow identity credentials to technically interoperate with the federal government PIV systems and be trusted by federal government relying parties.
+A minimum set of requirements is described for each area to allow identity credentials to technically interoperate with the federal government PIV systems.
 
-## 1.4 Assumptions
+## 1.2 Assumptions
 
 The following assumptions apply:
 
-1. Federal departments and agencies determine the extent to which they will trust PIV-I credentials.
+1. Federal departments and agencies determine how they will trust PIV-I credentials.
 2. Possession of a PIV-I credential does not infer access or authorization of any kind.
 3. User privileges and entitlements (authorization) are determined solely by the federal government relying party.
 4. PIV-I credentials will not be considered a substitute or alternative credential for populations otherwise subject to PIV requirements.
 
 # 2. Minimum Credential Requirements
-## 2.1 Common Terminology for Identity Credentials
 
-A lexicon for differentiating a federal government PIV credential from a PIV-I credential was developed for consistency.
+There is a lack of standard terminology to distinguish between characteristics of PIV and PIV-I credentials. This lack of common language results in confusion, uncertainty, or misunderstanding when identifying and understanding how to integrate PIV-I credentials in a federal agency.
 
-There is a lack of standard terminology to distinguish between characteristics of PIV credentials and PIV-I credentials in the identity credential space. This can result in confusion, uncertainty, or misunderstanding. This guide resolves the terminology problem by proposing a complete set of identity credential terms and scoping statements that unambiguously describe federal PIV credentials, federally issued PIV-I credentials, and non-federally issued PIV-I credentials.
+| Credential | Description |
+| ----- | ------ |
+| PIV credential | An identity credential that is fully conformant with Federal Government PIV Standards including identity assurance, authenticator assurance, **and personnel vetting assurance**. |
+| PIV-I credential | An identity credential that is conformant with the Federal Government PIV Standards for identity assurance and authenticator assurance. |
 
-- PIV credential – An identity credential that is fully conformant with Federal Government PIV Standards including identity assurance, authenticator assurance, **and baseline personnel vetting assurance**.
-- PIV-I credential – An identity credential that is conformant with the Federal Government PIV Standards for identity assurance and authenticator assurance.
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">What's the Difference?</h4>
+    <p class="usa-alert__text">
+      All individuals who are issued PIV credentials are <strong>required</strong> to have common, minimum personnel vetting assurance as specified in 
+      <a class="usa-link" href="https://pages.nist.gov/FIPS201/FIPS201.html#s-2-1" target="_blank" rel="noopener noreferrer">FIPS 201 Section 2.1 Control Objectives</a>
+      . Individuals with PIV-I credentials assert <strong>no personnel vetting assurance</strong> in a baseline, standardized manner.
+    </p>
+  </div>
+</div>
 
-Table 1 provides a summary of the identity assurance, authenticator assurance, and baseline personnel vetting assurance requirements.
+Table 1 summarizes the identity assurance, authenticator assurance, and personnel vetting assurance requirements.
 
 **Table 1: PIV and PIV-I Definitions**
 
 | Assurance | Requirements Summary[^2] | PIV | PIV-I |
 | --------- | ------------ | ---------| -------------|
-| **Identity Assurance:** The robustness of the identity proofing process and the binding between an authenticator and a specific individual. | 1. In-person proofing<br>2. Capture and verification of two (2) independent identity documents<br>3. Capture of biometrics | Yes | Yes |
-| **Authenticator Assurance:** The robustness of the authentication process, and assurance that the user has possession of the authenticator. | 1. Public key infrastructure key pairs<br>2. Biometric<br>3. Hardware based credential | Yes | Yes |
-| **Personnel Vetting Assurance:** The investigative and adjudication processes, which enhance identity assurance. personnel vetting is associated with a position designation and/or risk assessment to determine if an individual is suitable to work for or on behalf of the federal government. | A minimum of:<br> A favorably adjudicated _National Agency Check with Inquiries_, or<br> a favorably adjudicated Tier 1 or higher federal background investigation. | Yes | No |
+| **Identity Assurance:** The robustness of the identity proofing process and the binding between an authenticator and a specific individual. | 1. In-person proofing<br>2. The capture and verification of two (2) independent identity documents<br>3. The capture of biometrics | Yes | Yes |
+| **Authenticator Assurance:** The robustness of the authentication process, and assurance that the user has possession of the authenticator. | 1. Public key infrastructure key pairs<br>2. Biometric<br>3. Hardware-based credential | Yes | Yes |
+| **Personnel Vetting Assurance:** The investigative and adjudication processes, which enhance identity assurance. Personnel vetting is associated with a position designation and/or risk assessment to determine if an individual is suitable to work for or on behalf of the federal government. | A minimum of:<br> 1. A favorably adjudicated _National Agency Check with Inquiries_, or<br> 2. A favorably adjudicated Tier 1 or higher federal background investigation. | Yes | No |
 
-All individuals who are issued PIV credentials are _required_ to have common, minimum personnel vetting assurance as specified in [FIPS 201 Section 2.1 Control Objectives](https://pages.nist.gov/FIPS201/FIPS201.html#s-2-1){:target="_blank"}{:rel="noopener noreferrer"}. Individuals with PIV-I credentials assert no personnel vetting assurance in a baseline, standardized manner.
+## 2.1 Federal Issuers and NFI for PIV-I Credentials
 
-Section 2.3 outlines more information for the identity assurance, authenticator assurance, and personnel vetting assurance.
+For PIV-I credentials, there may be federal issuers and NFI who participate. Many documents have asserted the term "non-federal issuer" or NFI to be synonymous with a PIV-I credential. **NFI and PIV-I are two different terms**. Two (2) sample scenarios are outlined in Table 2 to clarify the difference between a NFI and a federal issuer of PIV-I credentials.
 
-## 2.2 Federal Issuers and NFI for PIV-I Credentials
+Table 2: Scenarios of a Federal and Non-Federal of PIV-I Credentials
 
-For PIV-I credentials, there may be federal issuers and NFI who participate. Many documents have asserted the term “non-federal issuer” or NFI to be synonymous with a PIV-I credential; the two terms are different and there is a need to clarify the terminology.
-
-Two (2) sample scenarios are outlined in Table 2 to clarify the difference between a NFI and a federal issuer of PIV-I credentials.
-
-Table 2: Scenarios of a Non-Federal and Federal Issuer of PIV-I Credentials
-
-
-| Category | Scenario A: Non-Federal Issuer | Scenario B: Federal Issuer |
+| Category | Scenario A: Federal Issuer | Scenario B: Non-Federal Issuer |
 |----------|------------------------|--------------------------|
-| **Description**      | **Federal Agency A** has affiliates or service providers who have persons who manage data systems, or need access to the federal networks or facilities. | **Federal Agency B** has short-term employees who manage data systems, or need access to the federal networks or facilities, but fall outside the requirements for a PIV card. |
-| **Scenario Outline** | Federal Agency A:<br>1. Requests partners, affiliates, or service providers to have their contracted or employee personnel obtain PIV-I credentials<br>2. Provides the request through a Department or Agency-level Policy, Memorandum, or contract action with the affiliate or service provider<br>3. The partner, affiliates, or service provider chooses the PIV-I service or builds their own, and makes any contractual or other arrangements with the PIV-I service | Federal Agency B: <br>1. Selects a PIV-I credentialing service to use<br>2. Pays for or builds the PIV-I service<br>3. Authorizes and directs persons to use a designated PIV-I service and receive PIV-I credentials<br>4. Has responsibility for the sponsoring of persons, lifecycle management, and other activities including revoking the credentials after the person terminates any service |
-| **Type**             | _Non-Federal Issuer of PIV-I Credentials_ | _Federal Issuer of PIV-I Credentials_ |
-| **Examples**         | - State, Local, Tribal, and Territorial partners<br>- Aerospace and Defense partners<br>- Financial Services partners | - Federal Agency B has determined that persons under their authority require PIV-I credentials to meet a use case where PIV credentials do not apply. |
+| **Description**      | **Federal Agency A** has short-term employees who manage data systems, or need access to the federal networks or facilities, but fall outside the requirements for a PIV card. | **Federal Agency B** has affiliates or service providers who need to sign documents or authenticator to agency systems to conduct business, but fall outside the requirements for a PIV card. |
+| **Scenario Outline** | **Federal Agency A**: <br>1. Selects a PIV-I credentialing service to use<br>2. Pays for or builds the PIV-I service<br>3. Authorizes and directs persons to use a designated PIV-I service and receive PIV-I credentials<br>4. Has responsibility for the sponsoring of persons, lifecycle management, and other activities including revoking the credentials after the person terminates any service. | **Federal Agency B**: <br>1. Requests partners, affiliates, or service providers to have their contracted or employee personnel obtain PIV-I credentials<br>2. Provides the request through a Department or Agency-level Policy, Memorandum, or contract action with the affiliate or service provider<br>3. The partner, affiliates, or service provider chooses the PIV-I service or builds their own, and makes any contractual or other arrangements with the PIV-I service.  |
+| **Issuer Type**             | _Federal Issuer_ | _Non-Federal Issuer_ |
+| **Credential Type**  | PIV-I | PIV-I |
+| **Examples**         | Federal Agency A has determined that persons under their authority require PIV-I credentials to meet a use case where PIV credentials do not apply. | State, local, tribal, and territorial partners<br>- Aerospace and DDefense partners<br>- Financial services partners |
 
-Even though the issuer name is different in scenario A and B, the credential is still a PIV-I credential.
-
-Federal agencies may choose to trust and accept the NFI PIV-I credentials, and acceptance of NFI PIV-I credentials has financial and interoperability benefits for government-wide purposes.
+Even though the issuer type is different in scenario A and B, the credential is still a PIV-I credential. Federal agencies may choose to trust and accept the NFI PIV-I credentials, and acceptance of NFI PIV-I credentials has financial and interoperability benefits for government-wide purposes.
 
 Figure 1 outlines the identity assurance services and components, the authenticator assurance components, and the NFI versus Federal Issuer distinction. Figure 1 shows two (2) certification authorities and two (2) registration, credential management, identity proofing, and lifecycle service components for each scenario to illustrate that any one individual Certification Authority system may have more than one Registration Authority system, and vice versa.
 
@@ -140,44 +143,40 @@ Figure 1 is used in later sections of this guide to identify the auditing and se
 
 **Figure 1: Federal Issuers and NFI for PIV-I Credentials**[^5]
 
-[![A diagram that displays an icon and label for PIV-I non-federal issuers on the left side of the diagram and an icon and a label for PIV-I federal issuers on the right side of the diagram. Four boxes appear in a grid below the PIV-I non-federal issuers label and four boxes appear in a grid below the PIV-I federal issuers label. The top set of boxes say Certification Authority (PKI). The bottom set of boxes say Registration Credential Management service, proofing, lifecycle. There are arrows vertically and diagonally between the four boxes on the left side of the diagram and there are arrows vertically and diagonally between the four boxes on the right side of the diagram. These two sets of four boxes are labeled Identity Assurance. Three PIV-I card icons appear on the left side of the diagram and three PIV-I card icons appear on the right side of the diagram. The PIV-I card icons are labeled Authentication Assurance. There are arrows pointing from the bottom set of Identity Assurance boxes to the two sets of PIV-I card icons. From the middle PIV-I card icon on the left side of the diagram an arrow points down and to the right to three PIV-I federal issuers icons. The words I can trust the credentials (outputs) appear beside the icons. An arrow points down from the middle from the middle PIV-I card icon on the right side of the diagram to the three PIV-I federal issuers icons.]({{site.baseurl}}/assets/piv/pivi-nonfed-and-fed-issuers.png)]({{site.baseurl}}/assets/piv/pivi-nonfed-and-fed-issuers.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/pivi-nonfed-and-fed-issuers.png" alt="A diagram that displays an icon and label for PIV-I non-federal issuers on the left side of the diagram and an icon and a label for PIV-I federal issuers on the right side of the diagram. Four boxes appear in a grid below the PIV-I non-federal issuers label and four boxes appear in a grid below the PIV-I federal issuers label. The top set of boxes say Certification Authority (PKI). The bottom set of boxes say Registration Credential Management service, proofing, lifecycle. There are arrows vertically and diagonally between the four boxes on the left side of the diagram and there are arrows vertically and diagonally between the four boxes on the right side of the diagram. These two sets of four boxes are labeled Identity Assurance. Three PIV-I card icons appear on the left side of the diagram and three PIV-I card icons appear on the right side of the diagram. The PIV-I card icons are labeled Authentication Assurance. There are arrows pointing from the bottom set of Identity Assurance boxes to the two sets of PIV-I card icons. From the middle PIV-I card icon on the left side of the diagram an arrow points down and to the right to three PIV-I federal issuers icons. The words I can trust the credentials (outputs) appear beside the icons. An arrow points down from the middle from the middle PIV-I card icon on the right side of the diagram to the three PIV-I federal issuers icons.." style="width:800px;" >
 
-## 2.3 Trusted Identity
+## 2.2 PIV-I Trusted Identity
 
 The fundamental purpose of an identity credential is to establish a trust foundation based on:
 * the _identity assurance_ of the person, and
 * the _authenticator assurance_ of the credential.
 
-Therefore, PIV-I credentials must be issued in a manner that provides the Federal Government with a commensurate level of trust for _identity assurance_ and _authenticator assurance._
+Therefore, PIV-I credentials must be issued in a manner that provides the Federal Government with a commensurate level of trust for _identity assurance_ and _authenticator assurance_. Personnel vetting assurance may not be determined from a PIV-I credential.
 
-For PIV credentials, individuals are also required to have common, minimum personnel vetting assurance defined as:
+For Federal Issuers of PIV-I, the full list of requirements for identity and authenticator assurance is in the [X.509 Certificate Policy for the Federal Common Policy Framework](https://www.idmanagement.gov/governance/fpkiaudit/#fpki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}.
 
-* a baseline personnel vetting assurance of the person to work for or on behalf of the Federal Government.
+For NFI of PIV-I, the full list of requirements for identity and authenticator assurance for PIV-I credentials is in the [X.509 Certificate Policy for the Federal Bridge Certification Authority](https://www.idmanagement.gov/governance/fpkiaudit/#fpki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}.
 
-Personnel vetting assurance may not be determined from a PIV-I credential.
+### 2.2.1 PIV-I Identity Assurance
 
-For Federal Issuers of PIV-I, the full list of requirements for identity and authenticator assurance for PIV-I credentials is listed in the [X.509 Certificate Policy for the Federal Common Policy Framework](https://www.idmanagement.gov/governance/fpkiaudit/#fpki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}.
-
-For NFI of PIV-I, the full list of requirements for identity and authenticator assurance for PIV-I credentials is listed in the [X.509 Certificate Policy for the Federal Bridge Certification Authority](https://www.idmanagement.gov/governance/fpkiaudit/#fpki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}.
-
-### 2.3.1 PIV-I Identity Assurance
-
-The Federal Government’s identity assurance requirements are defined in FIPS 201 for PIV credentials. The PIV-I credentials  adhere to the same identity assurance requirements as PIV credentials. A summation of the identity assurance requirements is defined here for informational purposes only which include the following elements.
+The PIV-I credentials adhere to the same identity assurance requirements as PIV credentials. A summation of the identity assurance requirements is defined here for informational purposes only which include the following elements.
 
 * In-person appearance and proofing
 * Verification of two independent identity documents or accounts
 * Capture of biometrics
 
-The PIV-I credential meets NIST 800-63-3 **Identity Assurance Level 3** requirements.
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">PIV-I Identity Assurance Level</h4>
+    <p class="usa-alert__text">
+      PIV-I meets NIST 800-63-3 Identity Assurance Level 3 requirements
+    </p>
+  </div>
+</div>
 
-### 2.3.2 PIV-I Authenticator Assurance
+### 2.2.2 PIV-I Authenticator Assurance
 
-The PKI certificates are where the identity assurance and authenticator assurance are asserted during use in networks, facilities, and systems. All PIV-I identity credentials must contain certificates issued from one of the Certification Authorities which operate under a Federal Public Key Infrastructure (Federal PKI) Certificate Policy.
-
-There are two Certificate Policies which govern the Federal PKI Certification Authorities:
-
-* Certificate Policy for the Federal Bridge Certification Authority
-* Certificate Policy for the Federal PKI Common Policy Framework
+The PKI certificates are where the identity assurance and authenticator assurance are asserted during use in networks, facilities, and systems. All PIV-I identity credentials must contain certificates issued from one of the Certification Authorities which operate under a Federal Public Key Infrastructure (Federal PKI) Certificate Policy listed above.
 
 There are certification authorities which operate and are audited for compliance to these certificate policies. The certification authorities also have registration authority services which may be built or operated by third-parties such as federal agencies or commercial service providers. The registration authority services encompass the _systems and processes_ where the initial collection of the Personally Identifiable Information (PII) is performed for the PIV or PIV-I identity assurance and lifecycle management functions.[^3] All certification authorities and registration authority components are subject to audits for compliance to management, operational, and technical controls specified in their respective certificate policies.[^4]
 
@@ -187,15 +186,16 @@ The certificate policies extension Object IDentifier (OID) contained in the cert
 
 However, the certificate policies extension OID for the PIV Authentication Certificates is available only to federal government organizations. PIV-I authentication certificates may not assert the PIV Certificate Policies OIDs used for PIV authentication. Therefore, additional policy defines comparable certificate policies' OIDs that are trusted by the federal government for use in PIV-I authentication certificates. In 2020, the Certificate Policy for the Federal PKI Common Policy Framework was updated to allow Federal PKI Shared Service Provider and federal agencies to issue PIV-I authentication certificates.
 
-The individual certificate policy specifies the minimum requirements for the Federal Government to rely on PIV-I credentials, and includes all requirements for PIV-I credentials inclusive of:
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">PIV-I Authenticator Assurance Level</h4>
+    <p class="usa-alert__text">
+      PIV-I meets NIST 800-63-3 Authenticator Assurance Level 3 requirements.
+    </p>
+  </div>
+</div>
 
-* Certificate policy extension object identifiers,
-* Clarification on identifier namespaces to be used, and
-* Credential requirements for security and auditing.
-
-The PIV-I credential is comparable to a NIST 800-63-3 **Authenticator Assurance Level 3** authenticator.
-
-### 2.3.3 PIV-I Personnel Vetting Assurance
+### 2.2.3 PIV-I Personnel Vetting Assurance
 
 Personnel vetting assurance is defined as the investigative and adjudication processes which _enhance_ the identity assurance. These processes are used to determine personnel vetting for granting access to federal data, applications, facilities, and networks. Only the Federal Government may determine the fitness or personnel vetting of an individual for access to Federal Government assets.
 
@@ -213,7 +213,7 @@ A standardized set of procedures and processes for personnel vetting assurance c
 
 Where personnel vetting is a concern for a federal agency, the agency may require further personnel vetting checks prior to granting any access. This guide does not prohibit a personnel vetting and fitness determination from being required by federal departments and agencies prior to issuing a PIV-I credential _or_ granting any access to an individual with a PIV-I credential.
 
-## 2.4 Technical Requirements
+## 2.3 Technical Requirements
 
 Basic technology requirements must be met for identity credentials to interact with the Federal Government’s PIV infrastructure. PIV-I credentials must conform to NIST technical specifications for PIV credentials, as defined in:
 
@@ -227,11 +227,11 @@ Further clarification of the NIST Special Publications is required to address:
 1. visual distinction
 2. identifiers
 
-### 2.4.1 Visual Distinction
+### 2.3.1 Visual Distinction
 
 PIV-I credentials shall contain distinctive markings to indicate the issuing entity and shall be visually distinct from PIV credentials. Common options for visual distinction include being printing in a horizontal (landscape) layout versus a vertical layout, or displaying PIV-I in one of the optional printed fields. The horizontal (landscape) layout is recommended to promote consistency in visual distinction.
 
-### 2.4.2 PACS Identifier Namespace
+### 2.3.2 PACS Identifier Namespace
 
 Effective use of PIV and PIV-I credentials requires one or more identifiers to support the interoperability and use in distributed systems across the Federal Government. PIV credentials include a number of identifiers which can be used to link the credential to accounts in Physical Access Control Systems (PACS), networks, and applications. These identifiers include, but are not limited to:
 
@@ -329,17 +329,17 @@ Although the NFI of PIV-I may operate and have continuous monitoring that are co
 
 Prior to _directly placing_ any PII in a service used to issue and manage PIV-I credentials or procuring any such service, federal agencies are required to confirm and request:
 
-* Audit compliance letters for Federal PKI compliance
+* Federal PKI compliance audit letters
 * An ATO Memorandum signed by the Federal Government Designated Authorizing Official, and
 * Confirmation of compliance with continuous monitoring requirements
  
 Figure 3 shows the notional system boundaries of the required FISMA ATO for federal agencies and issuers of PIV-I credentials.
 
-[![A diagram that displays an icon and label for PIV-I non-federal issuers on the left side of the diagram and an icon and a label for PIV-I federal issuers on the right side of the diagram. Four boxes appear in a grid below the PIV-I non-federal issuers label and four boxes appear in a grid below the PIV-I federal issuers label. The top set of boxes say Certification Authority (PKI). The bottom set of boxes say Registration Cred Mgmt service, proofing, lifecycle. There are arrows vertically and diagonally between the four boxes on the left side of the diagram and there are arrows vertically and diagonally between the four boxes on the right side of the diagram. On the left side of the diagram, the four boxes are labeled Identity Assurance. On the right side of the diagram, the two top boxes are labeled FISMA ATOs and the two bottom boxes are labeled FISMA ATOs. Three PIV-I card icons appear on the left side of the diagram and three PIV-I card icons appear on the right side of the diagram. The PIV-I card icons are labeled Authentication Assurance. On the left side of the diagram, there are arrows pointing from the bottom set of Identity Assurance boxes to the first set of PIV-I card icons. On the right side of the diagram, there are arrows pointing from the bottom set of FISMA ATO boxes to the second sent of PIV-I card icons.]({{site.baseurl}}/assets/piv/pivi-cred-and-fisma-ato.png)]({{site.baseurl}}/assets/piv/pivi-cred-and-fisma-ato.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A diagram that displays an icon and label for PIV-I non-federal issuers on the left side of the diagram and an icon and a label for PIV-I federal issuers on the right side of the diagram. Four boxes appear in a grid below the PIV-I non-federal issuers label and four boxes appear in a grid below the PIV-I federal issuers label. The top set of boxes say Certification Authority (PKI). The bottom set of boxes say Registration Cred Mgmt service, proofing, lifecycle. There are arrows vertically and diagonally between the four boxes on the left side of the diagram and there are arrows vertically and diagonally between the four boxes on the right side of the diagram. On the left side of the diagram, the four boxes are labeled Identity Assurance. On the right side of the diagram, the two top boxes are labeled FISMA ATOs and the two bottom boxes are labeled FISMA ATOs. Three PIV-I card icons appear on the left side of the diagram and three PIV-I card icons appear on the right side of the diagram. The PIV-I card icons are labeled Authentication Assurance. On the left side of the diagram, there are arrows pointing from the bottom set of Identity Assurance boxes to the first set of PIV-I card icons. On the right side of the diagram, there are arrows pointing from the bottom set of FISMA ATO boxes to the second sent of PIV-I card icons.]({{site.baseurl}}/assets/piv/pivi-cred-and-fisma-ato.png)
 
 <p align="center"><b>Figure 3: PIV-I Credentials and FISMA ATO</b></p>
 
-In addition, federal agencies using PIV-I services must request from the provider the Registration Authority Agreement. The Registration Authority Agreement must explain how the provider has implemented the credential management and lifecycle management requirements of the certificate policy. The contents of the Registration Authority Agreement must be approved by the PIV-I provider’s policy authority as satisfactorily implementing the requirements, and submitted to the Federal PKI as part of the audit artifacts.
+In addition, federal agencies using PIV-I services must request from the provider the Registration Authority Agreement. The Registration Authority Agreement must explain how the provider has implemented the credential management and lifecycle management requirements of the certificate policy. The contents of the Registration Authority Agreement must be approved by the PIV-I provider’s policy authority as satisfactorily implementing the requirements, and submitted to the Federal PKI as part of the audit artifacts. See this template of a [registration authority agreement](https://www.idmanagement.gov/docs/fpki-ssp-raa.docx){:target="_blank"}{:rel="noopener noreferrer"}
 
 Table 4 summarizes the FKI auditing and FISMA _Authority to Operate_ distinctions.
 
@@ -354,7 +354,7 @@ Table 4 summarizes the FKI auditing and FISMA _Authority to Operate_ distinction
 
 ## 3.2 Acquiring PIV-I Services
 
-When contracting either through interagency agreements or commercially sourced services for PIV-I services, federal agencies may have several choices concerning the extent of the service. As a federally-contracted service storing PII of persons under the authority of the federal agency, all contracts and procurement language must include the requirements to:
+When contracting either through interagency agreements or commercially sourced PIV-I services, federal agencies may have several choices concerning the extent of the service. As a federally-contracted service storing PII of persons under the authority of the federal agency, all contracts and procurement language must include the requirements to:
 
 * Have an existing FISMA ATO or provisions to obtain and maintain an ATO; and
 * Submit to continuous monitoring, inclusive of requirements for penetration testing and vulnerability scanning by the Federal Government
