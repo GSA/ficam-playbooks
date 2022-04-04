@@ -15,7 +15,7 @@ subnav:
       href: '#repository-availability'
 ---
 
-Updated: March 7, 2022
+Updated: April 4, 2022
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -46,7 +46,7 @@ The operational status for each Federal Agency or affiliate connected to the Fed
 | TSCP Bridge | FBCA | No Issues |
 | US Patent and Trademark Office (PTO) | FBCA | No Issues |
 | Department of State | FCPCA | No Issues |
-| DigiCert/Symantec/Verisign SSP | FCPCA | No Issues |
+| DigiCert/Symantec SSP | FCPCA | No Issues |
 | Entrust Managed Services SSP | FCPCA | No Issues |
 | WidePoint/ORC SSP | FCPCA | No Issues |
 | Department of the Treasury | FCPCA | No Issues |
@@ -59,22 +59,20 @@ The following certificates were issued or published to the FPKI Trust Infrastruc
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- |
-| STRAC | STRAC Bridge Root Certification Authority | Federal Bridge CA G4 | Serial: 17fa12e69b7047fe09f5e465cefd3d4e62b499c9 Hash: 4a1cfa5661875b476a0c0ed57516181a67a191ca | 2/8/22 |
-| DigiCert | DigiCert Federated ID L3 CA | Federal Bridge CA G4 | Serial: 175395887e9ea454697879d6acee30ddc333010f Hash: db41e72d1f5e1bd5349d4c9f45375fe01afbf2b6 | 2/8/22 |
+| DigiCert | DigiCert Federated ID CA - G2 | Federal Bridge CA G4 | Serial:157c835f17998392517f2fbe658018dca5445e4f Hash:a2cadce934df370609b30c42e31c5d2b682ca7b3 | 3/16/22 |
+| DigiCert | DigiCert Federal SSP Intermediate CA - G6 | Federal Common Policy CA G2 | Serial:231eb3199085ee8187df5c7a598ef336b356092f      Hash:0dd44fd015c1f76327be46661456ce8f6fb346ec | 3/16/22 |
 
 The following certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| STRAC | STRAC Bridge Root Certification Authority | Federal Bridge CA G4 | Serial: 1232058ae7987cc9ff3daa78c7b80813b840e12d Hash: c6d4d588000e823cfaf2ecf551ebcd3827fd71b6 | 2/14/22 | Removed Expired |
-| DigiCert | DigiCert Federated ID L3 CA | Federal Bridge CA G4 | Serial: 17eaffeebc2f01cf5538b875d6b6b584fa88e27f Hash: 28f059e2dffac9de78fb7a1670c082dad2522d3b | 2/28/22 | Removed Expired |
+| N/A |   |   |   |   |   |
 
 The following certificates are planned for a certificate action in the near future, dates to be determined based on availability.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| DigiCert | DigiCert Federated ID CA - G2 | Federal Bridge CA G4 | Serial:TBD      Hash:TBD |   | New CA (Rekey) 3/`6/22 |
-| DigiCert | DigiCert Federal SSP Intermediate CA - G6 | Federal Common Policy CA G2 | Serial:TBD      Hash:TBD |   | New CA (Rekey) 3/16/22 |
+| Treasury | US Treasury Root CA  | Federal Common Policy CA G2 | Serial:TBD      Hash:TBD | 8/14/22 | Renew 4/7/22 |
 
 
 ## Repository Availability 
@@ -89,22 +87,22 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | Entrust Managed Services NFI Root CA | FBCA |	100 | 100 |
 | Exostar Federated Identity Service Root CA | FBCA	| 100 |	100 |
 | Federal Bridge CA G4 | FBCA | 100	| 100 |
-| GPO PCA | FBCA | 99.50 | 99.87 |
-| IdenTrust Global Common Root CA 1 | FBCA | 99.54 | 99.84 |
+| GPO PCA | FBCA | 99.87 | 99.86 |
+| IdenTrust Global Common Root CA 1 | FBCA | 100 | 99.87 |
 | SAFE Identity Bridge CA	| FBCA | 100 | 100 |
-| STRAC Bridge Root Certification Authority	| FBCA | 100 | 99.98 |
+| STRAC Bridge Root Certification Authority	| FBCA | 99.89 | 99.97 |
 | Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 100 | 81.69 |
 | TSCP SHA256 Bridge CA	| FBCA | 100 | 95.42 |
 | USPTO_INTR_CA1 | FBCA	| 100 | 99.95 |
 | WidePoint NFI Root 2	| FBCA	| 100 |	100 |
 | DigiCert SSP CA - G5	| FCPCA	| 100 |	99.1 |
-| Entrust Managed Services Root CA	| FCPCA	| 99.83 | 99.98 |
+| Entrust Managed Services Root CA	| FCPCA	| 99.80 | 99.96 |
 | Federal Common Policy CA	| FCPCA	| 100 |	100 |
 | Federal Common Policy CA G2 | FCPCA | 100 | 100 |
 | ORC SSP 4	| FCPCA	| 100 | 100 |
 | Symantec SSP Intermediate CA - G4	| FCPCA | 100 | 98.71 |
 | U.S. Department of State AD Root CA | FCPCA | 100 | 99.85 |
-| US Treasury Root CA | FCPCA | 99.98 | 100 |
-| Verizon SSP CA A2 | FCPCA	| 100 | 99.96 |
+| US Treasury Root CA | FCPCA | 100 | 100 |
+| Verizon SSP CA A2 | FCPCA	| 100 | 99.99 |
 | WidePoint ORC SSP 5	| FCPCA	| 100 | 100 |
 
