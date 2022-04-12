@@ -25,6 +25,19 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: April 8, 2022 
+  change_type: CA Certificate Issuance 
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2 
+  change_description: The Federal Common Policy CA G2 issued a new certificate to the US Treasury Root CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 52de6628d8c70a9df9e1df94fcd84728b33c05ec
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://pki.treasury.gov/root_sia.p7c
+  ocsp_uri: N/A
+
 - notice_date: March 24, 2022 
   change_type: Intent to Perform CA Certificate Issuance 
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2 
