@@ -50,13 +50,8 @@ primary_navigation:
     url: /pm/
   - name: Federal PKI (FPKI)
     url: /fpki/
-  - name: Credential Management
-    url: /arch/services/#credential-management
-    children:
-      - name: PIV
-        url: /piv/
-      - name: PIV-I
-        url: /cred/pivi/
+  - name: Personal Identity Verificatino (PIV)
+    url: /piv/
   - name: Physical Access Control Systems (PACS)
     description: Physical Access Control Systems Guide
     url: /pacs/
