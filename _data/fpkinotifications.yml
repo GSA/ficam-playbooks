@@ -41,7 +41,7 @@
 - notice_date: April 18, 2022 
   change_type: CA Certificate Issuance 
   system: ECA Root CA 4
-  change_description: The ECA Root CA 4 issued a new certificate to the IdenTrust ECA S23.
+  change_description: The ECA Root CA 4 issued a new certificate to the IdenTrust ECA Component S23.
   contact: dodpke at mail dot mil
   ca_certificate_hash: 89cbc32b7db10e7d0a70069969c3784aba29bfd9
   ca_certificate_issuer: CN = ECA Root CA 4, OU = ECA, O=U.S. Government, O = U.S. Government, C = US
