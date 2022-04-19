@@ -25,6 +25,19 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: April 19, 2022 
+  change_type: CA Certificate Issuance 
+  system: DigiCert Federal Shared Service Provider
+  change_description: DigiCert Federal SSP Intermediate CA - G6 issued a new CA certificate to U.S. Nuclear Regulatory Commission
+  contact: pkiops at digicert dot com
+  ca_certificate_hash: 1F060CE528BDDFB3B429B7C76EEEB0F8B0FBC60A
+  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G6, O = DigiCert, Inc., C = US
+  ca_certificate_subject: CN = NRC PROD G6 Fed SSP CA, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
+  cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG6.crl
+  aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG6.p7c
+  sia_uri: http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG6.p7c
+  ocsp_uri: http://ssp-ocsp.digicert.com/
+
 - notice_date: April 18, 2022 
   change_type: CA Certificate Issuance 
   system: ECA Root CA 4
