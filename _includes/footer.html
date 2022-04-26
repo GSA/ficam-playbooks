@@ -58,7 +58,7 @@
       </div>
       <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
       <p class="footer-logo-text">This site is a collaboration between GSA and the Federal CIO Council. It is managed by the Identity Assurance and Trusted Access Division in the GSA Office of Government-wide Policy.</p>
-      {% include footer=footer path=page.path %}
+      {% include path=page.path %}
       {% assign github_info = site.github_info | default: site.github %}
       {% assign edit_link_text = include.footer.edit_page.text | default: 'Edit this page' %}
       <small><a href="https://github.com/{{ github_info.organization }}/{{ github_info.repository }}/edit/{{ github_info.default_branch }}/{{ include.path }}" class="usa-sidenav-edit" target="_blank" rel="noopener noreferrer">{{ edit_link_text }}</a></small>
