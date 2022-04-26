@@ -110,9 +110,6 @@ collections:
   piv:
     output: true
     permalink: /piv/:path/
-  cred:
-    output: true
-    permalink: /cred/:path/
   playbooks:
     output: true
     permalink: /playbooks/:path/
