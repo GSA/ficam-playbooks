@@ -25,6 +25,45 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: April 19, 2022 
+  change_type: CA Certificate Issuance 
+  system: DigiCert Federal Shared Service Provider
+  change_description: DigiCert Federal SSP Intermediate CA - G6 issued a new CA certificate to U.S. Nuclear Regulatory Commission
+  contact: pkiops at digicert dot com
+  ca_certificate_hash: 1F060CE528BDDFB3B429B7C76EEEB0F8B0FBC60A
+  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G6, O = DigiCert, Inc., C = US
+  ca_certificate_subject: CN = NRC PROD G6 Fed SSP CA, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
+  cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG6.crl
+  aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG6.p7c
+  sia_uri: http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG6.p7c
+  ocsp_uri: http://ssp-ocsp.digicert.com/
+
+- notice_date: April 18, 2022 
+  change_type: CA Certificate Issuance 
+  system: ECA Root CA 4
+  change_description: The ECA Root CA 4 issued a new certificate to the IdenTrust ECA Component S23.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 4b074f5286880e7b4026edb7b63f1ac0282ef202
+  ca_certificate_issuer: CN = ECA Root CA 4, OU = ECA, O=U.S. Government, O = U.S. Government, C = US
+  ca_certificate_subject: CN = IdenTrust ECA Component S23, OU = Certification Authorities, OU = ECA, O = U.S. Government, C = US
+  cdp_uri: http://crl.disa.mil/crl/ECAROOTCA4.crl
+  aia_uri: http://crl.disa.mil/issuedto/ECAROOTCA4_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: April 18, 2022 
+  change_type: CA Certificate Issuance 
+  system: ECA Root CA 4
+  change_description: The ECA Root CA 4 issued a new certificate to the IdenTrust ECA S23.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 89cbc32b7db10e7d0a70069969c3784aba29bfd9
+  ca_certificate_issuer: CN = ECA Root CA 4, OU = ECA, O=U.S. Government, O = U.S. Government, C = US
+  ca_certificate_subject: CN = IdenTrust ECA S23, OU = Certification Authorities, OU = ECA, O = U.S. Government, C = US
+  cdp_uri: http://crl.disa.mil/crl/ECAROOTCA4.crl
+  aia_uri: http://crl.disa.mil/issuedto/ECAROOTCA4_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+
 - notice_date: April 8, 2022 
   change_type: CA Certificate Issuance 
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2 
