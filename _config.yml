@@ -39,11 +39,11 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Home
+  - name: FICAM Playbooks Home
     description: FICAM Playbooks Home Page
     url: /
   - name: FICAM Architecture
-    description: FICAM Archtecture
+    description: FICAM Architecture
     url: /arch/
   - name: ICAM Program Management
     description: ICAM Program Management
