@@ -39,7 +39,7 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: FICAM Playbooks Home
+  - name: Playbooks Home
     description: FICAM Playbooks Home Page
     url: /
   - name: FICAM Architecture
