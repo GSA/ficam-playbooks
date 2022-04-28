@@ -10,7 +10,7 @@
 
 title: FICAM Playbooks
 email: icam@gsa.gov
-description: Helping the U.S. Federal Government Enterprise design, procure, integrate, and operate Federal Enterprise Identity, Credential, and Access Management services.  .
+description: Helping the U.S. Federal Government Enterprise design, procure, integrate, and operate Federal Enterprise Identity, Credential, and Access Management services.
 baseurl: ""
 repourl: "https://github.com/GSA/ficam-playbooks"
 
