@@ -47,7 +47,7 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top;font-family: "Cambria", "Georgia", "Times New Roman", "Times", serif;}
 </style>
 
-<table class="tg">
+<table class="tg" role="presentation">
   <tr>
     <td class="tg-yj5y" colspan="2"><b>ICAM Practice Areas</b></td>
   </tr>
