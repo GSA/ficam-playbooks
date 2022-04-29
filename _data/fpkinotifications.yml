@@ -28,7 +28,7 @@
 - notice_date: April 29, 2022
   change_type: CA Certificate Issuance 
   system: CertiPath Bridge CA 
-  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the to the Lockheed Martin Root Certification Authority 2.
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Lockheed Martin Root Certification Authority 2.
   contact: support at certipath dot com
   ca_certificate_hash: a39ee9934283324631efb314f183be743fb2b8a1
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
@@ -41,7 +41,7 @@
 - notice_date: April 29, 2022
   change_type: CA Certificate Issuance 
   system: CertiPath Bridge CA 
-  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the to the Boeing PCA G3.
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Boeing PCA G3.
   contact: support at certipath dot com
   ca_certificate_hash: 3bc0d426d437ff806f094a69210042516f96678b
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
