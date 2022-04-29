@@ -29,9 +29,9 @@ subnav:
 
 OMB M-15-13, ["Policy to Require Secure Connections Across Federal Websites and Web Services"](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-13.pdf){:target="_blank"}{:rel="noopener noreferrer"}, June 8, 2015
 
-OMB Circular A-130, ["Managing Information as a Strategic Resource"](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf){:target="_blank"}{:rel="noopener noreferrer"}, July 2016
+OMB Circular A-130, ["Managing Information as a Strategic Resource"](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf?msclkid=b1259175c7f211ec8144311a36ca5067){:target="_blank"}{:rel="noopener noreferrer"}, July 2016
 
-OMB M-05-24, ["Implementation of Homeland Security Presidential Directive (HSPD) 12 – Policy for a Common Identification Standard for Federal Employees and Contractors"](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2005/m05-24.pdf){:target="_blank"}{:rel="noopener noreferrer"}, August 5, 2005
+OMB M-05-24, ["Implementation of Homeland Security Presidential Directive (HSPD) 12 – Policy for a Common Identification Standard for Federal Employees and Contractors"](https://georgewbush-whitehouse.archives.gov/omb/memoranda/fy2005/m05-24.pdf?msclkid=c536f001c7f811ecaed4fea27a3c8d47){:target="_blank"}{:rel="noopener noreferrer"}, August 5, 2005
 
 OMB M-19-17, [Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, May 21, 2019
 
