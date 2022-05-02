@@ -30,7 +30,7 @@ The following diagram is a high-level view of the ICAM practice areas and suppor
 
 [![A diagram with definitions and icons for identity, credential, and access management and definitions for federation and governance.]({{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png)]({{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-<img src="{{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png" alt="A diagram with definitions and icons for identity, credential, and access management and definitions for federation and governance." width="870" height="547">
+<img src="{{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png" alt="A diagram with definitions and icons for identity, credential, and access management and definitions for federation and governance." width="870" height="352">
 
 The FICAM Architecture includes government-wide enterprise architecture views with the flexibility to support each agency’s unique business or mission needs. Use the FICAM Architecture as a tool to continuously improve upon your agency’s approach and align with federal security and privacy initiatives.
 
