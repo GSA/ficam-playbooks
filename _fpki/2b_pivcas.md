@@ -72,6 +72,20 @@ These CA certificates are actively issuing PIV authentication certificates.
 - SHA-1 Hash: 58085a64e181573f4fd917c5c021eb1cf344dd5f 
 
 #### DoD Issuing CAs
+**DoD ID CA-65**
+- Subject: CN = DOD ID CA-65, OU = PKI, OU = DoD, O = U.S. Government, C = US  
+- Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
+- Serial #: []  
+- Validity: []
+- SHA-1 Hash: []
+
+**DoD ID CA-64**
+- Subject: CN = DOD ID CA-64, OU = PKI, OU = DoD, O = U.S. Government, C = US  
+- Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
+- Serial #: []  
+- Validity: []
+- SHA-1 Hash: []
+
 **DoD ID CA-63**
 - Subject: CN = DOD ID CA-63, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
@@ -154,7 +168,14 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US  
 - Serial #: 3a905c654791b26551e3b7077f27aa33   
 - Validity: December 17, 2018 to December 12, 2028
-- SHA-1 Hash: 1a03581dcf159d206accd7bdd176c788a0862353  
+- SHA-1 Hash: 1a03581dcf159d206accd7bdd176c788a0862353
+
+#### NRC PROD G6 Fed SSP CA
+- Subject: CN = NRC SSP Agency CA G4, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
+- Issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US  
+- Serial #: 55C7AC031A83BEF41BAA8A73A68BC0CE   
+- Validity: April 12, 2022 to March 15, 2032
+- SHA-1 Hash: 1F060CE528BDDFB3B429B7C76EEEB0F8B0FBC60A 
 
 #### ORC SSP 4
 - Subject: CN = ORC SSP 4, O = ORC PKI, C = US
@@ -190,6 +211,13 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 224ad7d35a9d34350671f9b8be45a23a
 - Validity: July 20, 2015 to November 11, 2024 
 - SHA-1 Hash: 69e2abc173047f844e3f53cb2cbd138ba9063de8
+
+#### U.S. Department of Education Agency CA - G5
+- Subject: CN = U.S. Department of Education Agency CA - G5, OU = U.S. Department of Education, O = U.S. Government, C = US
+- Issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
+- Serial #: 5C23B98A6FF5F543B2768F6D19556C4C
+- Validity: June 9, 2020 to December 12, 2028 
+- SHA-1 Hash: 6F48424AE8A01C2A77213A9D34F5761DAACD9EAC
 
 #### U.S. Department of State PIV CA2
 - Subject: OU = U.S. Department of State PIV CA2, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
