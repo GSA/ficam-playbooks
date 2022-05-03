@@ -67,7 +67,7 @@ The following certificates were removed from the FPKI Trust Infrastructure in th
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
 | N/A |   |   |   |   |   |
 
-The following certificates are planned for a certificate action in the near future, dates to be determined based on availability.
+The following certificates are planned for a certificate action in the near future; dates to be determined based on availability.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
@@ -76,7 +76,7 @@ The following certificates are planned for a certificate action in the near futu
 
 
 ## Repository Availability 
-Repository availability is an uptime metric for Certificate Revocation List availability, based on monitoring by the FPKIMA. The table only contains Certification Authorities directly signed by the Federal Common Policy Root CA, Federal Common Policy Root G2 or Federal Bridge CA G4. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month. The last column is the 12-month average.
+Repository availability is an uptime metric for Certificate Revocation List availability, based on monitoring by the FPKIMA. The table only contains Certification Authorities directly signed by the Federal Common Policy Root CA, Federal Common Policy Root G2, or Federal Bridge CA G4. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month; in other words, the file was not available for 1% of the month. The last column is the 12-month average.
 
 | Federal Agency or Affiliate CA | FPKIMA CA | Last 30 days | Average |
 | ------------------------------ | --------- | ------------ | ------- |
