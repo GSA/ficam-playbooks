@@ -76,6 +76,8 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
   </tr>
 </table>
 
+<img src="{{site.baseurl}}/assets/arch/intro_ICAM-Identity.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management." width="125" height="125">
+
 ## What Is the FICAM Architecture?
 FICAM is the federal government’s enterprise approach to design, plan, and execute common ICAM processes.
 
