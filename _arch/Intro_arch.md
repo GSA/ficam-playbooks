@@ -52,7 +52,7 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
     <td class="tg-yj5y" colspan="2"><b>ICAM Practice Areas</b></td>
   </tr>
   <tr>
-    <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/intro_ICAM-Identity.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management." width="125" height="122"><br></td>
+    <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/intro_ICAM-Identity.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management." width="125"><br></td>
     <td class="tg-0pky"><span style="font-weight:bold">Identity Management</span> is how an agency collects, verifies, and manages attributes to establish and maintain enterprise identities for employees and contractors.</td>
   </tr>
   <tr>
