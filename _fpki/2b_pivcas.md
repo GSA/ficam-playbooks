@@ -77,17 +77,17 @@ These CA certificates are actively issuing PIV authentication certificates.
 **DoD ID CA-65**
 - Subject: CN = DOD ID CA-65, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: []  
-- Validity: []
-- SHA-1 Hash: []
+- Serial #: 054c  
+- Validity: June 1, 2021 to June 2, 2027
+- SHA-1 Hash: 2838d25ae351654a094f00348f4bd0ea3178d871
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_65.crl](http://crl.disa.mil/crl/DODIDCA_65.crl)
 
 **DoD ID CA-64**
 - Subject: CN = DOD ID CA-64, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: []  
-- Validity: []
-- SHA-1 Hash: []
+- Serial #: 054b  
+- Validity: June 1, 2021 to June 2, 2027
+- SHA-1 Hash: d9991bd1e89ae5a8b1143c3c37f01103779b8db7
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_64.crl](http://crl.disa.mil/crl/DODIDCA_64.crl)
 
 **DoD ID CA-63**
