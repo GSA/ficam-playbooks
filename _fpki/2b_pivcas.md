@@ -312,7 +312,6 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: November 9, 2015 to November 9, 2021 
 - SHA-1 Hash: cbb492c4e8a52f024772ba4e53d47391b98fcef0 
 
-<br>
 **DoD ID CA-43**
 - Subject: CN = DOD ID CA-43, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
@@ -320,7 +319,6 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: November 9, 2015 to November 9, 2021
 - SHA-1 Hash: 98d3e33b50b8f6acff8c6020e29ff967eb0e9c18     
 
-<br>
 **DoD ID CA-42**
 - Subject: CN = DOD ID CA-42, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
@@ -328,7 +326,6 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: November 9, 2015 to November 9, 2021
 - SHA-1 Hash: 8b125cfc2716558d716a9f87db7ca8316d11236e  
 
-<br>
 **DoD ID CA-41**
 - Subject: CN = DOD ID CA-41, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
