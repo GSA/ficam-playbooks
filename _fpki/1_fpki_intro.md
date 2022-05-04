@@ -23,7 +23,7 @@ Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these gui
 
 These guides are [open source](https://github.com/gsa/ficam-playbooks){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
  
-### What Is the Federal PKI?
+## What Is the Federal PKI?
 
 The Federal PKI is a network of certification authorities (CAs) that issue:
 
@@ -51,8 +51,7 @@ The full process of proving identity when issuing certificates, auditing the cer
 
 For the U.S. federal government Executive Branch agencies, there is one root certification authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of intermediate certification authorities and bridged certification authorities. See [a graph of the Federal PKI, including the business communities]({{site.baseurl}}/fpki/tools/fpkigraph/).
 
-
-### Why Should Agencies Use Certificates from the Federal PKI?
+## Why Should Agencies Use Certificates from the Federal PKI?
 
 All federal agencies should use the Federal PKI for:
 
@@ -71,8 +70,7 @@ The Federal PKI provides four core technical capabilities:
 
 These four core capabilities are made possible by leveraging digital certificates; their policies, standards, and processes; and a mission-critical trust infrastructure. 
 
-
-### Why Is the Federal PKI Important?
+## Why Is the Federal PKI Important?
 
 The Federal PKI is important to federal agencies, other government entities, and businesses that need access to federal facilities or participate in delivering federal government services.    
 
@@ -82,7 +80,6 @@ The Federal PKI is important to federal agencies, other government entities, and
 |**Compliance**| Using the Federal PKI means compliance with several Executive Orders, laws (e.g., FISMA, E-Government Act), initiatives, and standards. The Federal PKI verifies that participating certification authorities are audited and operated in a secure manner.|
 |**Interoperability**| Improved interoperability with other federal agencies and non-federal organizations that trust Federal PKI certificates. The Federal PKI helps reduce the need for issuing multiple credentials to users.|
 |**Return on Investment**| The Federal PKI improves business processes and efficiencies.  For example, leveraging digital signing, encryption, and non-repudiation allows federal agencies to migrate from manual processing to automated processing, especially around document processing/sharing, and enhances communications between two or more federal employees for internal efficiency and effectiveness.  
-
 
 ### Where Can I Find the Policies and Standards?
 
