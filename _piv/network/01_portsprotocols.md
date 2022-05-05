@@ -70,4 +70,12 @@ The Federal Common Policy Certificate Authority (COMMON) is the root certificate
 
 To enable communications with these Federal Common Policy Certificate Authority services, including those currently operational and any expansion, you should verify outbound communications to the base domain of http.fpki.gov. For example, a successful connection to http://http.fpki.gov/fcpca/fcpca.crt will download a copy of the Federal Common Policy CA certificate.
 
-You should consider allowing two protocols (port): HTTP (80) and DNS (53).  Although the web services for publishing CRLs are not currently served over HTTPS (443), you may want to allow HTTPS (443) to future proof for any expansion.
+You should consider allowing two protocols (ports): HTTP (80) and DNS (53).  Although the web services for publishing CRLs are not currently served over HTTPS (443), you may want to allow HTTPS (443) to future proof for any expansion. See the section below for more information.
+
+### HTTP and Port 80
+
+Per [OMB M-15-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-13.pdf){:target="_blank"}{:rel="noopener noreferrer"}, federal agencies can use Hypertext Transfer Protocol (HTTP) connections only for redirecting clients to Hypertext Transfer Protocol Secure (HTTPS) connections. That means agencies can use port 80 for the sole purpose of redirecting clients to a secure connection.
+
+HTTP redirects must use a response code in the 300’s, such as 301 or 302, that can reliably cause HTTP clients to perform redirects to an HTTPS Uniform Resource Identifier (URI). Using error codes in the 400’s or 500’s **does not** satisfy this requirement.
+
+**Note:** Although connections to port 80 are insecure, even for redirects, the use of HTTP Strict Transport Security (HSTS) tells supporting HTTP clients to automatically redirect themselves from port 80 to port 443, without attempting to connect to port 80 over the network. HSTS reduces the security impact of connections over port 80 and gives agencies flexibility to continue redirecting legacy clients or clients which have not yet received an HSTS policy for the target domain.
