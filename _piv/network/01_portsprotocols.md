@@ -74,7 +74,7 @@ You should consider allowing two protocols (ports): HTTP (80) and DNS (53).  Alt
 
 ### HTTP and Port 80
 
-Per [OMB M-15-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-13.pdf){:target="_blank"}{:rel="noopener noreferrer"}, federal agencies can use Hypertext Transfer Protocol (HTTP) connections only for redirecting clients to Hypertext Transfer Protocol Secure (HTTPS) connections. That means agencies can use port 80 for the sole purpose of redirecting clients to a secure connection.
+Per [OMB M-15-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-13.pdf){:target="_blank"}{:rel="noopener noreferrer"}, federal agencies can use HTTP connections only for redirecting clients to HTTPS connections. That means agencies can use port 80 for the sole purpose of redirecting clients to a secure connection.
 
 HTTP redirects must use a response code in the 300’s, such as 301 or 302, that can reliably cause HTTP clients to perform redirects to an HTTPS Uniform Resource Identifier (URI). Using error codes in the 400’s or 500’s **does not** satisfy this requirement.
 
