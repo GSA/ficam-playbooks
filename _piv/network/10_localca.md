@@ -79,3 +79,12 @@ The domain controller(s) certificate must contain valid information. These steps
   6. Open **MMC.exe -&gt; File -&gt; Add/Remove Snap-in -&gt; Certificates -&gt; Computer account -&gt; Local computer**. 
   
   If successful, you will see a new domain controller certificate in the **_Certificate (Local Computer) -&gt; Personal -&gt; Certificates folder_**. At the **Certificate Template** tab, you will also see a certificate generated with the custom certificate template.
+  
+ ## HTTP and Port 80
+
+Per [OMB M-15-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-13.pdf){:target="_blank"}{:rel="noopener noreferrer"}, federal agencies can use Hypertext Transfer Protocol (HTTP) connections only for redirecting clients to Hypertext Transfer Protocol Secure (HTTPS) connections. That means agencies can use port 80 for the sole purpose of redirecting clients to a secure connection.
+
+HTTP redirects must use a response code in the 300’s, such as 301 or 302, that can reliably cause HTTP clients to perform redirects to an HTTPS Uniform Resource Identifier (URI). Using error codes in the 400’s or 500’s **does not** satisfy this requirement.
+
+**Note:** Although connections to port 80 are insecure, even for redirects, the use of [HTTP Strict Transport Security (HSTS)](https://https.cio.gov/hsts/){:target="_blank"}{:rel="noopener noreferrer"} tells supporting HTTP clients to automatically redirect themselves from port 80 to port 443 without attempting to connect to port 80 over the network. HSTS reduces the security impact of connections over port 80 and gives agencies flexibility to continue redirecting legacy clients or clients that have not yet received an HSTS policy for the target domain.
+
