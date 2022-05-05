@@ -80,7 +80,7 @@ The domain controller(s) certificate must contain valid information. These steps
   
   If successful, you will see a new domain controller certificate in the **_Certificate (Local Computer) -&gt; Personal -&gt; Certificates folder_**. At the **Certificate Template** tab, you will also see a certificate generated with the custom certificate template.
   
- ## HTTP and Port 80
+## HTTP and Port 80
 
 Per [OMB M-15-13](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-13.pdf){:target="_blank"}{:rel="noopener noreferrer"}, federal agencies can use Hypertext Transfer Protocol (HTTP) connections only for redirecting clients to Hypertext Transfer Protocol Secure (HTTPS) connections. That means agencies can use port 80 for the sole purpose of redirecting clients to a secure connection.
 
