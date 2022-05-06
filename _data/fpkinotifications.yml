@@ -25,6 +25,32 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: April 29, 2022
+  change_type: CA Certificate Issuance 
+  system: CertiPath Bridge CA 
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Lockheed Martin Root Certification Authority 2.
+  contact: support at certipath dot com
+  ca_certificate_hash: a39ee9934283324631efb314f183be743fb2b8a1
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 2, OU=Certification Authorities , O=Lockheed Martin Corporation, L=Denver, S=Colorado C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+
+- notice_date: April 29, 2022
+  change_type: CA Certificate Issuance 
+  system: CertiPath Bridge CA 
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Boeing PCA G3.
+  contact: support at certipath dot com
+  ca_certificate_hash: 3bc0d426d437ff806f094a69210042516f96678b
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Boeing PCA G3, OU=certservers, O=Boeing, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+
 - notice_date: April 19, 2022 
   change_type: CA Certificate Issuance 
   system: DigiCert Federal Shared Service Provider
