@@ -239,23 +239,23 @@ Identity management is how an agency collects, verifies, and manages attributes 
 
 ### Privileged Credential Management
 
-Credential management is how an agency issues, manages, and revokes privileged credentials. Agencies should issue **unique, Authenticator Assurance Level 3 credentials** for each privileged user. This may include a PIV card or other two factor cryptographic hardware authenticator identified in [NIST Special Publication 800-63-3B](https://pages.nist.gov/800-63-3/sp800-63b.html)
-
-1. **Enforce Multi-factor Authentication (MFA)** for all administrator access. This may include a combination of factors as outlined in NIST Special Publication 800-63-3B.
-2. **Where MFA is not supported, consider a password vaulting tool** with a check-in/checkout capability. It is inevitable that some systems or applications must use a username and password. It is best to use a password vaulting tool and rotate passwords after every use. The password vault should be configured for Authenticator Assurance Level 3 access.
+Credential management is how an agency issues, manages, and revokes privileged credentials. Agencies should issue **unique, Authenticator Assurance Level 3 credentials** for each privileged user. This may include a PIV card or other phishing-resistant two factor cryptographic hardware authenticator identified in [NIST Special Publication 800-63-3B](https://pages.nist.gov/800-63-3/sp800-63b.html)
 
 {% include alert-success.html heading= "Authenticator Assurance Level 3" content= "Privileged users require the highest level of credential. A PIV card may not work in every use cases. Instead, consider the best Authenticator Assurance Level 3 credential for each type of access use case." %}
 
-For enterprise resources authenticating with Windows Active Directory, an agency may manage privileged user access with a user's PIV card. An agency may map the same PIV authentication certificate to multiple accounts using altSecurityIdentities and username hints. See the [PIV Guide section on Account Linking](https://playbooks.idmanagement.gov/piv/network/account/) for step-by-step actions to enable this feature.
+For enterprise resources authenticating with Windows Active Directory, an agency may manage privileged user access with a user's PIV card. An agency may map the same PIV authentication certificate to multiple accounts using altSecurityIdentities and username hints. See the [PIV Guide section on Account Linking]({{site.baseurl}}/piv/network/account/) for step-by-step actions to enable this feature.
 
 For enterprise resources that do not support PIV, an agency may use a privileged access gateway or management solution to enable a PIV card or other phishing-resistant authenticator. A privileged access management tool is an intermediary between a privileged user and an enterprise resource such as a management console, database, or command-line interface. It may provide additional capabilities such as password vaulting, key vaulting, keystroke logging, session recording, account checkout, and just-in-time provisioning. Agencies should not disable native MFA to use a password vaulting tool.
 
 ### Privileged Access Management
+
 Access management is how an agency authenticates privileged users and authorizes access to protected services. Below are examples of how access management is implemented.
 
-1. **Privilege access requests** are completed regularly and ongoing. The ongoing activity may be called an access review or certification. Access reviews may be paper-based but plan to automate this process through a workflow or identity entitlement tool.
-2. **Monitor privileged user activity** via activity logging and regular log reviews. Additional controls may include keystroke logging and session recording based on risk assessment. Consider user behavior automated monitoring outlined in insider threat programs. Because of the heightened risk, an agency can hold privileged users to a higher monitoring standard than standard users.
-3. **Use dedicated workstations** with limited applications and internet connectivity. This limits the potential risk in remote access exploitation and malware.
+1. **Enforce Multi-factor Authentication (MFA)** for all administrator access. This may include a combination of factors as outlined in NIST Special Publication 800-63-3B.
+2. **Where MFA is not supported, consider a password vaulting tool** with a check-in/checkout capability. It is inevitable that some systems or applications must use a username and password. It is best to use a password vaulting tool and rotate passwords after every use. The password vault should be configured for Authenticator Assurance Level 3 access. [OMB Memo 22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf){:target="_blank"}{:rel="noopener noreferrer"} states a PAM or password vaulting tool is not a replacement for MFA.
+3. **Privilege access requests** are completed regularly and ongoing. The ongoing activity may be called an access review or certification. Access reviews may be paper-based but plan to automate this process through a workflow or identity entitlement tool.
+4. **Monitor privileged user activity** via activity logging and regular log reviews. Additional controls may include keystroke logging and session recording based on risk assessment. Consider user behavior automated monitoring outlined in insider threat programs. Because of the heightened risk, an agency can hold privileged users to a higher monitoring standard than standard users.
+5. **Use dedicated workstations** with limited applications and internet connectivity. This limits the potential risk in remote access exploitation and malware.
 
 {% include alert-info.html heading= "Preventative and Detective Measures" content=" Preventative measures proactively stop inappropriate behavior through background investigations, training, rules of behavior, privileged access workstation and other mechanisms. Detective measures identify suspicious activities such as audit logs, keystroke logging, access logs, and account checkout. Agencies should use a combination of both to decrease privilege user risk." %}
 
