@@ -220,107 +220,107 @@ The DHS CDM Program provides a broad spectrum of tools that enable an agency to 
 
 ### Privileged Identity Management
 
-Identity management is how an agency collects, verifies, and manages attributes and entitlements for a privileged user. An agency should only grant entitlements that the privileged user needs to perform assigned duties by leveraging segregation of duties, thus enforcing least privilege.
+Identity management is how an agency collects, verifies, and manages attributes and entitlements for a privileged user. An agency should only grant entitlements that privileged users need to perform their assigned duties, thereby giving least privilege - as follows:
 
-1. **Identify Cybersecurity Workforce Position** that outlines the appropriate responsibilities and duties. Use the [NIST Workforce Framework for Cybersecurity](https://niccs.cisa.gov/about-niccs/workforce-framework-cybersecurity-nice-framework-work-roles){:target="_blank"}{:rel="noopener noreferrer"} to identify appropriate roles.
-2. **Personnel Security Vetting and Privileged User Agreement** are completely verified by the Personnel Security Office and Privileged User Program Manager on an initial and continuing basis. The security office verifies that the existing background, suitability, or fitness checks are valid and adequate. When conducting these checks, an agency should implement a consistent approach that enforces background checks commensurate to the privileged user's level of risk as determined by an agency's risk assessment (e.g., some trusted roles may require a security clearance on their position of trust). The user should also sign a Privileged User Agreement on a reoccurring basis. This agreement may also be called a Rules of Behavior or privileged appointment letter. This agreement highlights the responsibilities of the privileged user and acceptable rules of behavior. See [Appendix B: Privileged User Agreement for an agreement template](#appendix-b-privileged-user-agreement) 
-3. **Conduct Periodic Training** to ensure privileged users know their responsibilities and systems. An agency's Privileged User Agreement may also include training requirements such as annual insider threat, security awareness, and tailored privileged user procedure training. Privilege users should receive initial and continuing training on the following topics:
+1. **Identify cybersecurity workforce position** that outlines the appropriate responsibilities and duties. Use the [NIST Workforce Framework for Cybersecurity](https://niccs.cisa.gov/about-niccs/workforce-framework-cybersecurity-nice-framework-work-roles){:target="_blank"}{:rel="noopener noreferrer"} to identify appropriate roles.
+2. **Verify personnel security vetting and privileged user agreement** by the Personnel Security Office and Privileged User Program Manager on an initial and continuing basis. The security office verifies the existing background, suitability, or fitness checks are valid and adequate. When conducting these checks, an agency should implement a consistent approach that ensures background checks commensurate with the privileged user's level of risk as determined by an agency's risk assessment (e.g., some trusted roles may require a security clearance on their position of trust). The user should also sign a privileged user agreement on a recurring basis. This agreement may also be called a Rules of Behavior or privileged appointment letter. This agreement highlights the responsibilities of the privileged user and acceptable rules of behavior. See [Appendix B: Privileged User Agreement for an agreement template](#appendix-b-privileged-user-agreement) 
+3. **Conduct periodic training** to ensure privileged users know their responsibilities and systems. An agency's privileged user agreement may also include training requirements such as annual insider threat, security awareness, and tailored privileged user procedure training. Privilege users should receive initial and continuing training on the following topics:
    1. Privilege access security principles.
    2. Disaster recovery and business continuity procedures.
    3. Current and pending architecture changes, system characteristics, and hardware and software components.
-4. **Enforce Least Privileges** to only allow access to what is needed to perform their duty. If possible, implement just-in-time provisioning or implement a capability to check out an account or password. This may also include creating custom administrator accounts scoped for the duty, such as an application administrator vice a global administrator. 
-5. **Manage Administrator Lifecycle** Implement and follow lifecycle management practices:
-   1. Integrate with agency identity directory to reduce the potential in creating an orphaned privileged identity. In DHS CDM, this is a Master User Record.
+4. **Enforce least privileges** to only allow privileged users access to what is needed to perform their duty. If possible, implement just-in-time provisioning or account password check out capabilities. This may also include creating custom administrator accounts scoped for the duty, like an application administrator versus a global administrator. 
+5. **Manage administrator lifecycle** Implement and follow lifecycle management practices below:
+   1. Integrate with an agency identity directory to reduce the potential in creating an orphaned privileged identity. In DHS CDM, this directory is called a master user record.
    2. Provision access when needed.
-   3. Conduct access reviews every thirty days or less based on a risk determination. Modify privileges as needed. 
-   4. De-provision users within 24 hours or less when access is no longer needed, their role changes, or the user leaves the organization.
+   3. Conduct access reviews every 30 days or less based on a risk determination. Modify privileges as needed. 
+   4. De-provision users within 24 hours or less when access is no longer needed, their role changes, or users leave the organization.
 
-{% include alert-success.html heading= "Identity Assurance Level 3" content= "Privileged users most likely require the highest level of identity proofing. The PIV identity proofing process is comparable to Identity Assurance Level 3." %} 
+{% include alert-success.html heading= "Identity Assurance Level 3" content= "Privileged users most likely require the highest level of identity proofing. The Personal Identity Verification (PIV) proofing process is comparable to Identity Assurance Level 3 (IAL3)." %} 
 
 ### Privileged Credential Management
 
-Credential management is how an agency issues, manages, and revokes privileged credentials. Agencies should issue **unique, Authenticator Assurance Level 3 credentials** per each privileged user. This may include a PIV card or other two factor cryptographic hardware authenticator identified in [NIST Special Publication 800-63-3B](https://pages.nist.gov/800-63-3/sp800-63b.html)
+Credential management is how an agency issues, manages, and revokes privileged credentials. Agencies should issue **unique, Authenticator Assurance Level 3 credentials** for each privileged user. This may include a PIV card or other two factor cryptographic hardware authenticator identified in [NIST Special Publication 800-63-3B](https://pages.nist.gov/800-63-3/sp800-63b.html)
 
 1. **Enforce Multi-factor Authentication (MFA)** for all administrator access. This may include a combination of factors as outlined in NIST Special Publication 800-63-3B.
-2. **Where MFA Is Not Supported, Consider a Password Vaulting Tool** with a check-in/checkout capability. It is inevitable that some systems or applications must use a username and password. It is best to use a password vaulting tool and rotate passwords after every use. The password vault should be configured for Authenticator Assurance Level 3 access.
+2. **Where MFA is not supported, consider a password vaulting tool** with a check-in/checkout capability. It is inevitable that some systems or applications must use a username and password. It is best to use a password vaulting tool and rotate passwords after every use. The password vault should be configured for Authenticator Assurance Level 3 access.
 
-{% include alert-success.html heading= "Authenticator Assurance Level 3" content= "Privileged users require the highest level of credential. A PIV card may not work in all use cases. Consider the best Authenticator Assurance Level 3 credential for each type of access use case." %}
+{% include alert-success.html heading= "Authenticator Assurance Level 3" content= "Privileged users require the highest level of credential. A PIV card may not work in every use cases. Instead, consider the best Authenticator Assurance Level 3 credential for each type of access use case." %}
 
 For enterprise resources authenticating with Windows Active Directory, an agency may manage privileged user access with a user's PIV card. An agency may map the same PIV authentication certificate to multiple accounts using altSecurityIdentities and username hints. See the [PIV Guide section on Account Linking](https://playbooks.idmanagement.gov/piv/network/account/) for step-by-step actions to enable this feature.
 
 For enterprise resources that do not support PIV, an agency may use a privileged access gateway or management solution to enable a PIV card or other phishing-resistant authenticator. A privileged access management tool is an intermediary between a privileged user and an enterprise resource such as a management console, database, or command-line interface. It may provide additional capabilities such as password vaulting, key vaulting, keystroke logging, session recording, account checkout, and just-in-time provisioning. Agencies should not disable native MFA to use a password vaulting tool.
 
 ### Privileged Access Management
-Access management is how an agency authenticates privileged users and authorizes access to protected services.
+Access management is how an agency authenticates privileged users and authorizes access to protected services. Below are examples of how access management is implemented.
 
-1. **Privilege Access Request** are completed regularly and ongoing. The ongoing basis activity may be called an access review or certification. Access reviews may be a paper-based process but make a plan to automate this process through a workflow or identity entitlement tool.
-2. **Monitor Privileged User Activity** via activity logging and regular log reviews. Additional controls may include keystroke logging and session recording based on risk assessment. Consider user behavior automated monitoring outlined in insider threat programs. Because of the heightened risk, an agency can hold privileged users to a higher monitoring standard than standard users.
-3. **Use Dedicated Workstations** with limited applications and internet connectivity. This limits the potential risk in remote access exploitation and malware.
+1. **Privilege access requests** are completed regularly and ongoing. The ongoing activity may be called an access review or certification. Access reviews may be paper-based but plan to automate this process through a workflow or identity entitlement tool.
+2. **Monitor privileged user activity** via activity logging and regular log reviews. Additional controls may include keystroke logging and session recording based on risk assessment. Consider user behavior automated monitoring outlined in insider threat programs. Because of the heightened risk, an agency can hold privileged users to a higher monitoring standard than standard users.
+3. **Use dedicated workstations** with limited applications and internet connectivity. This limits the potential risk in remote access exploitation and malware.
 
-{% include alert-info.html heading= "Preventative and Detective Measures" content=" Preventative measures proactively stop inappropriate behavior through processes such as background investigations, training, rules of behavior, privileged access workstation and other mechanisms. Detective measures identify suspicious activities such as audit logs, keystroke logging, access logs, and account checkout. Agencies should use a combination of both to decrease privilege user risk." %}
+{% include alert-info.html heading= "Preventative and Detective Measures" content=" Preventative measures proactively stop inappropriate behavior through background investigations, training, rules of behavior, privileged access workstation and other mechanisms. Detective measures identify suspicious activities such as audit logs, keystroke logging, access logs, and account checkout. Agencies should use a combination of both to decrease privilege user risk." %}
 
 ## Step 4. Prioritize and Execute
-This step captures the technical capabilities to realize a Privileged User Program goals and objectives. An agency has completed the following steps.
+This step explains the technical capabilities necessary to accomplish privileged user program goals and objectives. An agency must complete the following steps:
 
-1. Created a Privileged User Program with proper governance and leadership (Step 1).
-2. Scan and inventory systems to focus on those that have a FIPS categorization of High for Confidentiality or Integrity (Step 2). Consider the risk impact of non-High connected systems such as Agency Identity Directory compromise.
-3. Leverage existing processes, controls, programs, and available tools to effectively manage the privileged user population and enterprise resources. Use capabilities from other ICAM services, such as Identity Governance and Administration (IGA), to bring privileged users into context of a user in the organization.
+1. Created a privileged user program with proper governance and leadership (Step 1).
+2. Scan and inventory systems to focus on those that have a Federal Information Processing Standards (FIPS) categorization of high for confidentiality or integrity (Step 2). Consider the risk impact of non-high connected systems such as an Agency Identity Directory compromise.
+3. Leverage existing processes, controls, programs, and available tools to effectively manage the privileged user population and enterprise resources. Use capabilities from other ICAM services, such as Identity Governance and Administration (IGA), to bring privileged users into the context of a user in the organization.
 
-{% include alert-warning.html heading= "Coverage over Depth" content="Plan your technical coverage from a highest risk first. Bring all of the sensitive accounts under control and then apply further analysis and control on those accounts. Once your agency is comfortable with the process, look at expanding technical privilege capabilities to more systems and with greater control." %}
+{% include alert-warning.html heading= "Coverage over Depth" content="Plan your technical coverage from the highest risk first. Bring all sensitive accounts under control and then apply further analysis and control on those accounts. Once your agency is comfortable with the process, consider expanding technical privilege capabilities to more systems and with greater control." %}
 
-Understand the data flows and access types when designing the technical components of a Privileged User Program. This section is a combination of best practices from [NIST Special Publication 1800-18 Privileged Access Management](https://www.nccoe.nist.gov/financial-services/privileged-account-management){:target="_blank"}{:rel="noopener noreferrer"} and [DHS Continuous Diagnostics and Mitigation PRIV function](https://community.max.gov/pages/viewpage.action?spaceKey=DHS&title=Technical){:target="_blank"}{:rel="noopener noreferrer"}. The minimum capability baseline should consist of three elements. 
+Understand the data flows and access types when designing the technical components of a privileged user program. This section is a combination of best practices from [NIST Special Publication 1800-18 Privileged Access Management](https://www.nccoe.nist.gov/financial-services/privileged-account-management){:target="_blank"}{:rel="noopener noreferrer"} and [DHS Continuous Diagnostics and Mitigation PRIV function](https://community.max.gov/pages/viewpage.action?spaceKey=DHS&title=Technical){:target="_blank"}{:rel="noopener noreferrer"}. The minimum capability baseline should consist of the three elements below. 
 
-1. An **Automated Account Discovery** identifies current and newly created privileged accounts. An advanced discovery capability can identify when privileged access is inherited rather than directly entitled.    
-2. The **Policy Manager** establishes access control policies such as a password complexity and rotation policy, MFA policy, session timeout, number of access attempts, and session requirements such as only allow specific protocols. This may be part of a Privileged Access Management Tool or separate per type of privileged access (e.g., Windows Operating System manager for remote desktop protocol.)
-3. An **Access Review** capability consists of required account reviews such as every 30 days. Conducting access reviews ensures accounts exist only as long as they are needed and removed when the user no longer needs access.
+1. An **automated account discovery** identifies current and newly created privileged accounts. An advanced discovery capability can identify when privileged access is inherited rather than directly entitled.    
+2. The **policy manager** establishes access control policies including a password complexity and rotation policy, MFA policy, session timeout, number of access attempts, and session requirements that only allow specific protocols. This may be part of a privileged access management tool or a separate type of privileged access (e.g., Windows Operating System manager for remote desktop protocol).
+3. An **access review** capability that completes required account reviews such as every 30 days. Conducting access reviews ensures the privileged user only has access to accounts for as long as they are needed.
 
 [![The Privileged User Program Technical Capabilities consist of six core functions of automated account discovery, policy manager, access review, session and command management, password vaulting, and session monitoring ]({{site.baseurl}}/assets/playbooks/pam-tech-arch.png)]({{site.baseurl}}/assets/playbooks/pam-tech-arch.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-An agency should consider using a privileged access management (PAM) tool which centralizes technical capabilities and adds advanced features for higher risk systems. A privileged account or access management tool are an important tool in protecting high value assets that are difficult or infeasible to modernize. A PAM tool can help implement needed security controls such as multifactor authentication, fine-grained access control, auditing and reporting, and other capabilities. In additional to centralizing capabilities and enhancing security of legacy infrastructure, the advanced capabilities include three core elements.
+An agency should consider using a privileged access management (PAM) tool that centralizes technical capabilities with advanced features for higher risk systems. A privileged account or access management tool are important to protect high value assets that are difficult or infeasible to modernize. A PAM tool can implement necessary security controls such as multi-factor authentication, fine-grained access control, auditing and reporting, and other capabilities. In addition to centralizing capabilities and enhancing security of legacy infrastructure, the advanced capabilities include three core elements below.
 
-1. **Session & Command Management** enforces the access control set in the Policy Manager. This may cover multiple protocols such as remote desktop protocol, secure shell, azure command line, or others.
-2. **Password Vaulting** stores and rotates passwords managed by an privileged access management tool.
-3. **Session Monitoring** records each privileged session. This can aid monitoring, logging, and auditing or for training purposes. A session recording can include an actual live screen recording or keystroke recording.
+1. **Session & command management** enforces the access control set in the policy manager. This may cover multiple protocols such as remote desktop protocol, secure shell, azure command line, or others.
+2. **Password vaulting** stores and rotates passwords managed by a PAM tool.
+3. **Session monitoring** records each privileged session. This can help with monitoring, logging, and auditing or be used for training purposes. A session recording can include an actual live screen recording or keystroke recording.
 
-{% include alert-success.html heading= "CDM Supports all Users" content="The DHS CDM architecture includes an Identity and Governance Administration tool to help aggregate information about a users clearance and background investigation status, credential, security training, accounts, and privileged account entitlements. This information is provided to a SIEM for auditing and to create an agency dashboard for an enterprise view of user risk. This information is used by the DHS CDM program for a government-wide dashboard of the all agencies participating in the CDM dashboard." %}
+{% include alert-success.html heading= "CDM Supports all Users" content="The DHS CDM architecture includes an IGA tool to help aggregate information about a users clearance and background investigation status, credential, security training, accounts, and privileged account entitlements. This information is provided to a Security Information and Event Management (SIEM) organization for auditing and to create an agency dashboard for an enterprise view of user risk. This information is used by the DHS CDM program for a government-wide dashboard of all agencies participating in the CDM dashboard." %}
 
 # Conclusion
-Privileged users are at the core of protecting federal information technology assets. Government employees and contractors need elevated access to perform necessary administrative and security functions, yet this carries an inherent risk of insider threat or account compromise. Mitigate privileged user risk through implementing and maintaining a Privileged User Program that encompasses both human and non-human users. Integrate your privileged user management with your Agency ICAM tools.
+Privileged users are at the core of protecting federal information technology assets. Government employees and contractors need elevated access to perform necessary administrative and security functions, however this creates an inherent risk of insider threat or account compromise. Agencies can reduce privileged user risk through the implementation and maintenance of a privileged user program that encompasses both human and non-human users. It is recommended to integrate the management of your privileged users with your agency ICAM tools.
 
 # Appendix A: Reference Documentation
-The following documentation references help inform the development and direction of a privilege user program.
+The following documentation references help inform the development and direction of a privileged user program.
 
 1. [National Insider Threat Policy, November 2012](https://www.dni.gov/files/NCSC/documents/nittf/National_Insider_Threat_Policy.pdf){:target="_blank"}{:rel="noopener noreferrer"} 
    -  This policy set two priorities to strengthen the protection and safeguarding of classified information. It also references [Executive Order 13587 (October 2011)](https://www.dni.gov/files/NCSC/documents/nittf/EO_13587.pdf){:target="_blank"}{:rel="noopener noreferrer"} as the primary authority to establish insider threat programs.
-      1. Created the Insider Threat Task Force.
-      2. Sets the minimum standards for Executive Branch Insider Threat programs.
+      1. Create the Insider Threat Task Force.
+      2. Set the minimum standards for Executive Branch Insider Threat programs.
    
 2. [National Strategy for Information Sharing and Safeguarding, December 2012](https://www.dni.gov/files/ISE/documents/DocumentLibrary/2012infosharingstrategy.pdf){:target="_blank"}{:rel="noopener noreferrer"} 
-   - This strategy aims to strike the proper balance between sharing information with those who need it to keep our country safe and safeguarding it from those who would do us harm. As an agency works to extend its ICAM implementations across security domains, it is important to consider Goal #4 and PO #4 in relation to managing privileged users.
+   - This strategy aims to strike the proper balance between sharing information with those who need it to keep our country safe and safeguarding it from those who would do us harm. As an agency works to extend its ICAM implementations across security domains, it is important to consider Goal #4 and Priority Objective #4 in relation to managing privileged users.
        - Goal #4 focuses on identifying, preventing, and mitigating insider threat across all domains.
-       - Priority Objective #4 calls to extend and implement the FICAM roadmap across all security domains. Note: The FICAM Roadmap is superseded by the [FICAM architecture](https://playbooks.idmanagement.gov/arch/){:target="_blank"}{:rel="noopener noreferrer"} and [accompanying playbooks](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
+       - Priority Objective #4 extends and implement the FICAM roadmap across all security domains. Note: The FICAM roadmap is superseded by the [FICAM architecture](https://playbooks.idmanagement.gov/arch/){:target="_blank"}{:rel="noopener noreferrer"} and [accompanying playbooks](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
   
 3. [National Insider Threat Task Force (NITTF)](https://www.dni.gov/index.php/ncsc-how-we-work/ncsc-nittf){:target="_blank"}{:rel="noopener noreferrer"}
-    - The primary mission of the NITTF is to develop a Government-wide insider threat program for deterring detecting, and mitigating insider threats, including the safeguarding of classified information from exploitation, compromise, or other unauthorized disclosure, taking into account risk levels, as well as the distinct needs, missions, and systems of individual agencies.
+    - The primary mission of the NITTF is to develop a government-wide insider threat program to deter detect, and mitigate insider threats, including safeguarding classified information from exploitation, compromise, or other unauthorized disclosure, and accounting for risk levels as well as any distinct needs, missions, and systems of individual agencies.
 
 4. [OMB Memo 17-09 - Management of Federal High Value Assets](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-09.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-    - General guidance for the planning, identification, categorization, prioritization, reporting, assessment, and remediation of Federal High Value Assets (HV As).
+    - General guidance for the planning, identification, categorization, prioritization, reporting, assessment, and remediation of federal HVAs.
 
 5. [NIST Special Publication 1800-18 - Privileged Account Management for the Financial Services Sector](https://www.nccoe.nist.gov/projects/use-cases/privileged-account-management){:target="_blank"}{:rel="noopener noreferrer"}
-    - While this special publication is focused on the financial services industry it contains agnostic implementation best practices.
+    - While this special publication is focused on the financial services industry it also contains agnostic implementation best practices.
 
 6. [NIST Interagency Report 7966 - Security of Interactive and Automated Access Management Using Secure Shell (SSH)](https://csrc.nist.gov/publications/detail/nistir/7966/final){:target="_blank"}{:rel="noopener noreferrer"}
   - This publication assists organizations in understanding the basics of SSH interactive and automated access management in an enterprise, focusing on the management of SSH user keys.
 
 7. [Federal Identity, Credentials, and Access Management (FICAM) Architecture - Access Management](https://playbooks.idmanagement.gov/arch/access/){:target="_blank"}{:rel="noopener noreferrer"}
-     - The FICAM Architecture is a framework for an agency to use in ICAM program and solution roadmap planning. Privileged Access Management is identified as a distinct service within the Access Management portion of the ICAM services framework.
+     - The FICAM Architecture is a framework for an agency to use in ICAM program and solution roadmap planning. Privileged Access Management is identified as a distinct service within the access management portion of the ICAM services framework.
 
 8. [Common Sense Guide to Mitigating Insider Threats (6th Edition), February 2019](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=540644){:target="_blank"}{:rel="noopener noreferrer"}
-    - The Software Engineering Institute at Carnegie Mellon University’s Insider Threat Center released the Common Sense Guide to provide the Federal Government and industry with recommendations on insider threat mitigation, based on a database of over 700 cases. This work was sponsored by the Department of Homeland Security, Office of Cybersecurity and Communications and the U.S. Secret Service. The Common Sense guide presents readers with 19 best practices to mitigate insider threats.
+    - The Software Engineering Institute at Carnegie Mellon University’s Insider Threat Center released the Common Sense Guide to provide the federal government and industry with recommendations on insider threat mitigation, based on a database of more than 700 cases. This work was sponsored by the Department of Homeland Security, Office of Cybersecurity and Communications and the U.S. Secret Service. The Common Sense Guide presents readers with 19 best practices to mitigate insider threats.
 
 # Appendix B: Privileged User Agreement
 
-An agency can tailor [this template]({{site.baseurl}}/docs/template-pua.docx){:target="_blank"} to uphold mission and business needs in support of privileged user access to logical and physical resources. An agency should obtain and retain a digitally signed copy of such instruction and ensure that privileged user access to the identified protected resource is prohibited without a signed acknowledgement of system-specific rules and a signed acknowledgement of said instruction.
+An agency can tailor [this template]({{site.baseurl}}/docs/template-pua.docx){:target="_blank"} to help meet mission goals and business needs to support privileged user access for logical and physical resources. An agency should obtain and retain a digitally signed copy of such instruction and ensure that privileged user access to the identified protected resource is prohibited without a signed acknowledgement of system-specific rules and a signed acknowledgement of said instruction.
 
 ## [AGENCY OR PROGRAM NAME] Privileged User Agreement
 
@@ -348,9 +348,9 @@ Digital Signature (preferred):
 
 # Appendix C: NIST SP 800-53 Privileged User Overlay
 
-In seeking to implement cohesive, integrated privileged user practices an agency should consider existing controls and practices which can assist in safeguarding the enterprise’s protected resources from privileged compromise. This section provides an analysis of countermeasures for privileged user compromise by leveraging NIST SP 800- 53 security controls.
+In seeking to implement cohesive, integrated privileged user practices an agency should consider existing controls and practices that can assist in safeguarding the enterprise’s protected resources from privileged compromise. This section provides an analysis of countermeasures for privileged user compromise by leveraging NIST SP 800- 53 security controls.
 
-For each identified countermeasure, an accompanying explanation provides guidance on how the associated control relates to privileged users to assist an agency defend relevant protected resources. The controls are organized into the control families as listed in SP 800-53.
+For each countermeasure, an accompanying explanation provides guidance on how the associated control relates to privileged users to assist an agency defend relevant protected resources. The controls are organized into the control families as listed in SP 800-53.
 
 <table class="usa-table pam-table">
   <thead class="usa-sr">
