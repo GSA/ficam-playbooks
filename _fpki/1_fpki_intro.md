@@ -63,7 +63,7 @@ The Federal PKI provides four core technical capabilities:
 [![Illustration of the four core FPKI capabilities]({{site.baseurl}}/assets/fpki/fpki-core.png){:style="width:40%;float:right;"}]({{site.baseurl}}/assets/fpki/fpki-core.png){:target="_blank"}{:rel="noopener noreferrer"}
 *The Four Core Federal PKI Capabilities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
-<img src="{{site.baseurl}}/assets/fpki/fpki-core.png" alt="An illustration of the four core FPKI capabilities." width="890" height="645">
+<img src="{{site.baseurl}}/assets/fpki/fpki-core.png" alt="An illustration of the four core FPKI capabilities." width="800" height="400">
 
 * Trust with federal agencies and industry
 * Support for technical non-repudiation
