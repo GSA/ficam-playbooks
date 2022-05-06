@@ -34,9 +34,6 @@ subnav:
 Version 1.1  
 February 12, 2021
 
-<a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
-<a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
-
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
@@ -95,9 +92,9 @@ SSO is a technology pattern used to centralize authentication among multiple app
 
 {% include alert-info.html heading="SAML or OIDC?" content="Picking an assertion protocol is dependent on application support. If possible, defer to a more modern protocol such as OIDC if it’s supported by the application. Assertion protocols are specific to web-based (on-premise and cloud) or mobile applications. Some SSO vendors can extend their products to integrate with workstations, Virtual Private Networks (VPN), Virtual Desktop Interfaces, or other on-premise applications and services." %} 
 
-Figure 1. Enterprise SSO Overview
+<img src="{{site.baseurl}}/assets/playbooks/sso-overview.png" alt="Basic components required to perform single sign-on." width="560" height="276">
 
-[![Basic components required to perform single sign-on]({{site.baseurl}}/assets/playbooks/sso-overview.png)]({{site.baseurl}}/assets/playbooks/sso-overview.png){:target="_blank"}{:rel="noopener noreferrer"}
+<p align="center"><b>Figure 1: Enterprise SSO Overview</b></p>
 
 Table 2 provides descriptions and alternate terms that you might see for each actor in the transaction depicted in Figure 1.
 
@@ -216,9 +213,9 @@ You may find efficiencies and scaling opportunities based on the below list. Thi
 
 For example, the [Digital Identity Risk Assessment (DIRA) Playbook]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"} provides a process for identity risk analysis that includes both an application’s level of data sensitivity and its user population (shown in Figure 2). The results are documented in a Digital Identity Assessment Statement (DIAS) which includes the identity, authenticator, and federal assurance level, which agencies can use and integrate as part of their overall Risk Management Framework (RMF) and FISMA processes. 
 
-Figure 2. DIRA Process
+<img src="{{site.baseurl}}/assets/playbooks/dira-process.png" alt="Five-step DIRA process." width="560" height="462">
 
-[![Five-step DIRA process]({{site.baseurl}}/assets/playbooks/dira-process.png)]({{site.baseurl}}/assets/playbooks/dira-process.png){:target="_blank"}{:rel="noopener noreferrer"}
+<p align="center"><b>Figure 2: DIRA Process</b></p>
 
 {% include alert-success.html heading="Best Practice - Digital Identity Risk Assessments" content="Your agency’s DIRA process documents the minimum identity, authenticator, and federation level for a given application and assists with identifying similar applications." %} 
 
@@ -263,9 +260,9 @@ In addition to system integration, the architecture review should include:
 Figure 3 provides a view of an example architecture, including where the Enterprise SSO is located within that architecture, and other potential integration points. 
 For additional information related to the architecture, visit the [FICAM Architecture Playbook Systems Component Examples]({{site.baseurl}}/arch/components){:target="_blank"}{:rel="noopener noreferrer"}.
 
-Figure 3. Example system components for an agency enterprise ICAM program
+<img src="{{site.baseurl}}/assets/playbooks/sso-ficam-components.png" alt="FICAM Architecture component view of Single Sign-On." width="560" height="334">
 
-[![FICAM Architecture component view of Single Sign-On]({{site.baseurl}}/assets/playbooks/sso-ficam-components.png)]({{site.baseurl}}/assets/playbooks/sso-ficam-components.png){:target="_blank"}{:rel="noopener noreferrer"}
+<p align="center"><b>Figure 3: Example System Components for an Agency Enterprise ICAM Program</b></p>
 
 {% include alert-info.html heading="Identity Synchronization" content="User data (e.g., identity) synchronization between the Enterprise SSO service and data repositories fall into two categories of one-way (unidirectional) or dual (bidirectional) syncs. One-way sync from the source directory to the service usually includes identity data and sometimes, passwords. Identify which service should be the authoritative source for data based on the sync method and plan accordingly." %} 
 
@@ -323,9 +320,9 @@ Application configuration is usually performed in one of two patterns.
 3. The user authenticates to the SSO service.
 4. The SSO service generates a signed assertion and the user is redirected back to the application.
 
-Figure 4. SSO-Initiated vs Application-Initiated  models
+<img src="{{site.baseurl}}/assets/playbooks/sso-models.png" alt="Single sign-on is initiated by either accessing the application or through the SSO service." width="560" height="272">
 
-[![Single sign-on is initiated by either accessing the application or through the SSO service.]({{site.baseurl}}/assets/playbooks/sso-models.png)]({{site.baseurl}}/assets/playbooks/sso-models.png){:target="_blank"}{:rel="noopener noreferrer"}
+<p align="center"><b>Figure 4: SSO-Initiated vs Application-Initiated Models</b></p>
 
 Configuring the application usually involves sharing configuration data between the SSO service and the application. What and how information is shared is dependent on the assertion protocol, but most SSO vendors have comprehensive configuration documentation. Every application may have a unique process to enable SSO. Even though the application may be unique, the assertion protocol is standardized.
 
@@ -451,13 +448,13 @@ Table 5 provides a comparison of some benefits and drawbacks of federation and d
 
 Figure 5 highlights the potentially redundant effort for each application to accept users and/or credentials from different groups using the direct enablement method.  Figure 6 depicts the reduced complexity of an identity federation.
 
-Figure 5. Direct enablement with overlapping configuration efforts
+<img src="{{site.baseurl}}/assets/playbooks/sso-direct-enablement.png" alt="Direct enablement requires overlapping configuration." width="560" height="463">
 
-[![Direct enablement requires overlapping configuration.]({{site.baseurl}}/assets/playbooks/sso-direct-enablement.png)]({{site.baseurl}}/assets/playbooks/sso-direct-enablement.png){:target="_blank"}{:rel="noopener noreferrer"}
+<p align="center"><b>Figure 5: Direct Enablement with Overlapping Configuration Efforts</b></p>
 
-Figure 6. Identity federation, streamlined configuration
+<img src="{{site.baseurl}}/assets/playbooks/sso-federation.png" alt="Federation allows for centralized configuration." width="560" height="254">
 
-[![Federation allows for centralized configuration.]({{site.baseurl}}/assets/playbooks/sso-federation.png)]({{site.baseurl}}/assets/playbooks/sso-federation.png){:target="_blank"}{:rel="noopener noreferrer"}
+<p align="center"><b>Figure 6: Identity Federation, Streamlined Configuration</b></p>
 
 After step 4, an agency may consider federating their SSO service and applications with other agencies. This comes in two patterns:
 
