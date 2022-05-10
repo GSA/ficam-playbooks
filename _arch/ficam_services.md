@@ -34,7 +34,7 @@ The Services Framework is designed for ICAM program managers and information tec
 
 ## Identity Management
 
-<img src="{{site.baseurl}}/assets/arch/services/IdentityManagementServices.png" alt="An orange box with the list of Identity Management services defined later in the body text of this page." width="260" height="333" align="right">
+<img src="{{site.baseurl}}/assets/arch/services/IdentityManagementServices.png" alt="An orange box with the list of Identity Management services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
 
 Identity Management is how an agency collects, verifies, and manages attributes and entitlements to establish and maintain enterprise identities for federal government employees, contractors, and authorized mission partners. This service does not apply to public or consumer identity management.
 
