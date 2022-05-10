@@ -169,7 +169,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <p><img src="{{site.baseurl}}/assets/arch/usecases/4-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/4-1.png" width="250" alt="A diagram showing an employee or contractor and a sponsor or supervisor initiating a credential request with an administrator." />/td>
+        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/4-1.png" width="250" alt="A diagram showing an employee or contractor and a sponsor or supervisor initiating a credential request with an administrator." /></td>
         <td style="border:0px;">An individual presents a valid government issued ID.</td>
       </tr>
       <tr>
