@@ -26,15 +26,15 @@ The Services Framework is designed for ICAM program managers and information tec
 
 ## FICAM Practice Areas
 
-[![Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area. You can find the services and definitions in the following pages.]({{site.baseurl}}/assets/arch/services/ServicesOverview.png)]({{site.baseurl}}/assets/arch/services/ServicesOverview.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/arch/services/ServicesOverview.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area. You can find the services and definitions in the following pages." width="560" height="466">
 
 ## FICAM Services
 
-[![Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages.]({{site.baseurl}}/assets/arch/services/ServicesDefinitions.png)]({{site.baseurl}}/assets/arch/services/ServicesDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/arch/services/ServicesDefinitions.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages." width="560" height="314">
 
 ## Identity Management
 
-[![An orange box with the list of Identity Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:align="right" style="padding-left:30px"}]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/arch/services/IdentityManagementServices.png" alt="An orange box with the list of Identity Management services defined later in the body text of this page." width="260" height="333" align="right">
 
 Identity Management is how an agency collects, verifies, and manages attributes and entitlements to establish and maintain enterprise identities for federal government employees, contractors, and authorized mission partners. This service does not apply to public or consumer identity management.
 
