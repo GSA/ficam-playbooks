@@ -397,4 +397,3 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
       <li>An employee or contractor from Agency A visits a shared service operated by Agency B to service all federal government users. At the homepage, the employee/contractor selects their Agency A icon and is redirected to their Agency A SSO portal. They log in using their Agency A managed credentials and are redirected back to the Agency B shared service.</li>
     </ul><br>
     <a href="#top">Back to Top</a>
-  </div>
