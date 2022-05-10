@@ -30,15 +30,15 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a1" class="usa-accordion__content usa-prose">
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/Identity-Creation.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/Identity-Creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px" /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/Identity-Creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px" /></p>
     <p>When you onboard an employee or contractor at your agency, you collect identity information from the individual and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.</p>
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/1-IconKey.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/1-IconKey.png" alt="Icon Key for the diagrams that follow." /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/1-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Collect information</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/1-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/1-1.png" width="250" alt="A diagram showing an employee or contractor providing identity information to an administrator with the authoritative source." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Collect information</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/1-1.png" width="250" alt="A diagram showing an employee or contractor providing identity information to an administrator with the authoritative source." /></td>
         <td style="border:0px;">The administrator collects identity information from the employee or contractor.<br /><br /><i>This identity information may come from the individual, onboarding documents, or HR systems.</i></td>
       </tr>
       <tr>
