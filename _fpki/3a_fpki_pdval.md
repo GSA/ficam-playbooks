@@ -95,7 +95,7 @@ The first step of PDVal is finding a certification path for the certificate that
 
 Software providers use different path discovery methods. Describing all the various PDVal software is beyond the scope of this playbook. The simple path discovery algorithm below illustrates the concept.
 
-<img src="{{site.baseurl}}/assets/piv/pdval-path-discovery-algorithm.png" alt="A simple path discovery algorithm." style="width:800px;"/>
+<img src="{{site.baseurl}}/assets/piv/pdval-path-discovery-algorithm_updated.png" alt="A simple path discovery algorithm." style="width:800px;"/>
 
 The process fails if the procedure cannot obtain the subsequent issuing CA certificate.
 
@@ -130,7 +130,7 @@ The AIA URLs may point to files that contain more than one CA certificate. Each 
 
 <p align="center"><b>Illustrative Path Discovery in a Bridge PKI Environment</b></p>
 
-For example, assume that the path discovery software is attempting to find a certification path from an end-user on the left to the trust anchor on the right. Said another way, we trust the anchor on the right but have been presented with the user's credential on the left and need to see if there are any means to trust it. When the process retrieves the AIA URL for the Bridge, it must select the CA certificate issued to the Bridge by CA. Path discovery software that fails to select the correct certificate or is incapable of backtracking to attempt other choices may fail to find a valid certification path. PDVal software may also end the search in an unexpected location, such as the far side of the Federal Bridge. Yes, in this case, it is a bridge too far.
+For example, assume that the path discovery software is attempting to find a certification path from an end-user on the left to the trust anchor on the right. Said another way, we trust the anchor on the right but have been presented with the user's credential on the left and need to see if there are any means to trust it. When the process retrieves the AIA URL for the Bridge, it must select the CA certificate issued to the Bridge by CA C. Path discovery software that fails to select the correct certificate or is incapable of backtracking to attempt other choices may fail to find a valid certification path. PDVal software may also end the search in an unexpected location, such as the far side of the Federal Bridge. Yes, in this case, it is a bridge too far.
 
 <div class="usa-alert usa-alert--success">
   <div class="usa-alert__body">
@@ -141,7 +141,7 @@ For example, assume that the path discovery software is attempting to find a cer
   </div>
 </div>
 
-Fortunately, beyond the more obvious matching of certificate names in the certification path, certificates provide useful information for guiding path discovery, the most important of which are public key identifiers. 
+Fortunately, beyond the more obvious matching of certificate names in the certification path, certificates provide useful information for guiding path discovery, the most important of which are public policy identifiers. 
 
 ### Public Key Identifiers
 
@@ -263,7 +263,7 @@ In the example above, the DoD certificate contains DoD policies and the path val
 
 #### Putting It All Together
 
-The Cross-certificates between the Bridge and the affiliate CA in the bridge environment PKI image contains policy mappings in the Choosing CA Certificates section. They are an essential part of the cross-certificate because they express the literal security common ground between an issuer and the community baseline established by the Bridge. As an issuer, you can always exceed a security control or requirement, but you must at least meet the requirement. As an issuer, you could say both shoes and socks are not allowed in your house, but the Bridge will be happy for so long as you at least enforce shoe removal. Path validation ensures that the minimum level of assurance you have set as your trust policy meets the security controls of other CAs in the trust framework. This trust mapping is a compelling capability because it affords trust at scale safely. Here also, we are leveraging the transitive property to accomplish this effect.
+The Cross-certificates between the Bridge and the affiliate CA in the bridge environment PKI image contains policy mappings in the [Choosing CA Certificates](#choosing-ca-certificates) section. They are an essential part of the cross-certificate because they express the literal security common ground between an issuer and the community baseline established by the Bridge. As an issuer, you can always exceed a security control or requirement, but you must at least meet the requirement. As an issuer, you could state that both shoes and socks are not allowed in your house, but the Bridge might be happy as long as you at least enforce shoe removal. Path validation ensures that the minimum level of assurance you have set as your trust policy meets the security controls of other CAs in the trust framework. This trust mapping is a compelling capability because it affords trust at scale safely. Here also, we are leveraging the transitive property to accomplish this effect.
 
 <img src="{{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-dod.png" alt="A screenshot showing example policy mapping from the Federal Bridge to the DoD interoperability root." style="width:800px;"/>
 
@@ -271,7 +271,7 @@ The Cross-certificates between the Bridge and the affiliate CA in the bridge env
 
 ### Certification Path Constraints
 
-A CA puts information in its CA certificates that limit the trust that it will extend to other CAs. Those limits are collected and carried forward in the certification path. We refer to these limits on trust as constraints. The FPKI community uses the following constraints during PDVal:
+A CA puts information in certificates it issues to other CAs that limit the trust that it will extend to those CAs. Those limits are collected and carried forward in the certification path. We refer to these limits on trust as constraints. The FPKI community uses the following constraints during PDVal:
 - **Basic Constraints:** All CA certificates must indicate that they are CA certificates. Basic constraints can also limit the maximum length of the certification path.
 - **Name Constraints:** A CA certificate can provide a filter for certificates it will issue. It can indicate permitted partial names or list partial names that it explicitly excludes. For example, a CA can suggest that it will only give certificates to subjects with an email address ending in "@dod.mil."
 - **Policy Constraints:** CAs can place limits on policy mapping or require the certification path to be valid for at least one policy.
