@@ -95,7 +95,7 @@ The first step of PDVal is finding a certification path for the certificate that
 
 Software providers use different path discovery methods. Describing all the various PDVal software is beyond the scope of this playbook. The simple path discovery algorithm below illustrates the concept.
 
-<img src="{{site.baseurl}}/assets/piv/pdval-path-discovery-algorithm_updated.png" alt="A simple path discovery algorithm." style="width:800px;"/>
+<img src="{{site.baseurl}}/assets/piv/pdval-path-discovery-algorithm-updated.png" alt="A simple path discovery algorithm." style="width:800px;"/>
 
 The process fails if the procedure cannot obtain the subsequent issuing CA certificate.
 
