@@ -30,13 +30,13 @@ Public Key Infrastructure (PKI) certificates follow a process called Path Discov
 # What Is a Trust Anchor?
 
 A trust anchor is a trusted certification authority (CA). These may be commonly called trust root, trusted CA, or root CA. Everything in PKI traces its trust back to a trust anchor.
-The trust anchor operated by Federal PKI, including PIV and PIV-Interoperable, is the [Federal Common Policy CA Update]({{site.baseurl}}/fpki/common/). A common misconception is that the Federal Bridge is the root of trust. Keep reading to understand why that is not the case. Every software program that interacts with a certificate installs trust anchors in a native trust store or uses the trust store of the operating system. A trust store is a list of **root, intermediate, and sometimes user certificates** that the operating system or application trusts to process transactions. For more information on trust stores, see the [PKI trust store page]({{site.baseurl}}/fpki/trust-stores/).
+The trust anchor operated by Federal PKI, including PIV and PIV-Interoperable, is the [Federal Common Policy CA]({{site.baseurl}}/fpki/common/). A common misconception is that the Federal Bridge is the root of trust. Keep reading to understand why that is not the case. Every software program that interacts with a certificate installs trust anchors in a native trust store or uses the trust store of the operating system. A trust store is a list of **root, intermediate, and sometimes user certificates** that the operating system or application trusts to process transactions. For more information on trust stores, see the [PKI trust store page]({{site.baseurl}}/fpki/trust-stores/).
 
 # What Is Path Discovery and Validation?
 
 **Certification Path Discovery and Validation (PDVal)** is a procedure to associate a certificate to a trust anchor and confirm that the certificate is valid for use. Some form of PDVal occurs with every certificate validation action. Some common PIV card use cases include:
 - Logging onto a workstation.
-- Authenticating an application using a web browser.
+- Authenticating to an application using a web browser.
 - Verifying a digital signature (for example, signed email or digitally signed documents).
 - Encrypting data for others (for example, encrypted email).
 - Accessing a building or an office
