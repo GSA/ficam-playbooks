@@ -90,7 +90,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 <br>
 8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/piv/details/#understanding-piv-certificates){:target="_blank"}{:rel="noopener noreferrer"}.)
 <br>
-[![Add CAPI Cert - #2]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:style="width:48%;"}]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-5.PNG" alt="A screenshot showing a PuTTY select certificate for authentication window with the OK button selected." width="269" height="223">
 <br>
 9. Double-click the **Pageant** icon to confirm that your certificate appears on the _Pageant Key List_.   
 10. The _Pageant Key List_ shows the certificate's SSH key attributes, such as type, size, thumbprint, etc. Click your certificate and the _Copy to Clipboard_ button. (**Note:** Pageant derives the SSH key from the public key of your authentication certificate.) Close the _Pageant Key List_.
