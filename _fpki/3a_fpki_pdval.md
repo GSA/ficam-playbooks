@@ -113,7 +113,7 @@ FPKI certificates are required to contain an AIA with an Internet-accessible URL
 
 <p align="center"><b>AIA in a Certificate Issued by the Federal Bridge CA</b></p>
 
-Path discovery follows the AIA URLs, one after the other, from each certificate in sequence until it finds a certificate issued by a trust anchor in the certificate trust list. The figure below shows the discovery of a single correct path. Many false paths could be evaluated in practice, and potentially, even more, than one valid path could be discovered. The path processing software then must choose which path to use. (**Note:** the root CA certificate or trust anchor should not be discovered in the AIA; it should have been distributed in a trusted fashion.)
+Path discovery follows the AIA URLs, one after the other, from each certificate in sequence until it finds a certificate issued by a trust anchor in the certificate trust list. The figure below shows the discovery of a single correct path. Many false paths could be evaluated in practice, and potentially, even more, than one valid path could be discovered. The path processing software then must choose which path to use. (**Note:** The root CA certificate or trust anchor should not be discovered in the AIA; it should have been distributed in a trusted fashion.)
 
 {% include alert-success.html heading = "Fun Fact" content="The algorithm to decide which correct path to choose has been a source of much debate in the PDVal community for more than two decades." %}
 
