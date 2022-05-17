@@ -256,7 +256,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 5ecb874a1b24b1113848e40e76dc3ea4449624fe
 - Validity: December 15, 2017 to December 15, 2027
 - SHA-1 Hash: fddb25c3cda647fd56954b58de95878422fb9c11
-- CRL DP: [[[http://crl.pki.va.gov/PKI/CRL/VET-SSP-CA-B1.crl](http://crl.pki.va.gov/PKI/CRL/VACAB3.crl)](http://crl.pki.va.gov/PKI/CRL/VACAB3.crl)](http://crl.pki.va.gov/PKI/CRL/VET-SSP-CA-B1.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://crl.pki.va.gov/PKI/CRL/VACAB3.crl](http://crl.pki.va.gov/PKI/CRL/VACAB3.crl)]{:target="_blank"}{:rel="noopener noreferrer"}
 
 #### WidePoint ORC NFI 4
 - Subject: CN = WidePoint ORC NFI 4, OU = Certification Authorities, O = WidePoint, C = US
@@ -307,7 +307,8 @@ These CA certificates have issued PIV authentication certificates previously and
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
 - Serial #: 4e397f22 
 - Validity: August 28, 2012 to August 28, 2022 
-- SHA-1 Hash: 519d3222a15eee034980fc0da727314f70af78c0 
+- SHA-1 Hash: 519d3222a15eee034980fc0da727314f70af78c0
+-  CRL DP: [http://pki.treasury.gov/VA_CA.crl](http://pki.treasury.gov/VA_CA.crl){:target="_blank"}{:rel="noopener noreferrer"} 
 
 #### DHS CA4
 - Subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US 
