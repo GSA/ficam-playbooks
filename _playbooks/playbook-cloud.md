@@ -33,8 +33,8 @@ subnav:
 Version 1.0  
 January 20, 2022
 
-<a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
-<a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+<img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
+<img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
 This playbook is a collaboration between the Federal Chief Information Security Officer Council Identity, Credential, and Access Management Subcommittee and the Federal Chief Information Officer Council Cloud and Infrastructure Community of Practice.
 
@@ -101,7 +101,7 @@ Identity is foundational to security both on-premises and within cloud environme
 
 Transitioning to an 'as-a-service' model allows federal agencies to buy capabilities rather than invest in infrastructure. The most common Cloud Identity example is Identity as a Service (IDaaS). An IDaaS is typically an Identity Provider (IdP) that offers a Single Sign-On (SSO), Multi-Factor Authentication (MFA), and directory services in a single platform. The IdP also provides assertions that include identity and authentication information to an application to authorize access. For more information on Single Sign-On, see the [Enterprise Single Sign-On Playbook]({{site.baseurl}}/playbooks/sso/){:target="_blank"}{:rel="noopener noreferrer"}.
 
-[![Basic components required to perform single sign-on.]({{site.baseurl}}/assets/playbooks/sso-overview.png)]({{site.baseurl}}/assets/playbooks/sso-overview.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/sso-overview.png" alt="Basic components required to perform single sign-on." width="560" height="276">
 
 <p align="center"><b>Figure 1: Enterprise SSO Overview</b></p>
 
@@ -119,7 +119,7 @@ The table below highlights the main differences between operating an on-premises
 
 The adoption of cloud services adds challenges as well. Cloud services operate on a shared responsibility model. Some of the responsibility is with the cloud service provider and some is with the agency customer. **Data classification and ICAM is always an agency customer responsibility in all cloud service models.** In no case should someone consider the cloud secure simply because the cloud provider is responsible for security. Principles such as least privilege, role-based access, multi-factor authentication (MFA), and  risk are always agency customer responsibilities, no matter what cloud service model is used.
 
-[![A chart showing how responsibilities are shared between an agency customer and a cloud service provider. ICAM is always an Agency Customer responsibility.]({{site.baseurl}}/assets/playbooks/cloud-shared-model.png)]({{site.baseurl}}/assets/playbooks/cloud-shared-model.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/cloud-shared-model.png" alt="A chart showing how responsibilities are shared between an agency customer and a cloud service provider. ICAM is always an Agency Customer responsibility." width="560" height="332">
 
 <p align="center"><b>Figure 2: Shared Responsibility Model</b></p>
 
@@ -151,7 +151,7 @@ This section provides a basic overview of IDaaS starting points and migration pa
 
 There are two potential paths to an IDaaS migration: 1) hybrid migration or 2) full migration.
 
-[![A system architecture demonstrating a hybrid migration. The on-premises components are retained and connected to an IDaaS through a federation assertion or data replication.]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png)]({{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/cloud-hybrid-idp.png" alt="A system architecture demonstrating a hybrid migration. The on-premises components are retained and connected to an IDaaS through a federation assertion or data replication." width="560" height="332">
 
 <p align="center"><b>Figure 3: Hybrid Migration with On-Premises Identity Provider</b></p>
 
@@ -166,7 +166,7 @@ An agency may choose this scenario if it has requirements for an on-premises Act
 
 {% include alert-success.html heading="Myth Busted - It's Cloud or Nothing" content="Most agencies that use an IDaaS are operating in a hybrid configuration." %} 
 
-[![A system architecture demonstrating a full migration. The on-premises components are fully replaced with an IDaaS.]({{site.baseurl}}/assets/playbooks/cloud-full-migration.png)]({{site.baseurl}}/assets/playbooks/cloud-full-migration.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/cloud-full-migration.png" alt="A system architecture demonstrating a full migration. The on-premises components are fully replaced with an IDaaS." width="560" height="257">
 
 <p align="center"><b>Figure 4: Full Migration to IDaaS</b></p>
 
@@ -253,7 +253,7 @@ A vital element of a business case is a stakeholder analysis. Follow the analysi
 
 <p align="center"><b>Table 5: ICAM Enablers for Zero Trust</b></p>
 
-| **Zero Trust Pillar** | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IDaaS Enabler** |
+| **Zero Trust Pillar** | **IDaaS Enabler** |
 | --- | --- |
 | Identity | IDaaS incorporates SSO, MFA, and directory services in a single platform that supports multiple phishing-resistant authenticator options. They may allow an Application Programming Interface to quickly query IDaaS identity stores information, making it easier to answer security questions from a single location. A cloud service operates on modern platforms and can integrate new protocols and features faster than on-premises Identity Providers. Agencies can focus more on delivering identity services than on maintaining identity infrastructure. |
 | Device | An IDaaS may act as a policy enforcement point and leverage device identification and health attributes such as device type, operating system, operating system version, and location to aid access and authorization decisions. |
@@ -273,7 +273,7 @@ The first step in any journey is identifying the destination. Document your plan
 
 A Cloud Identity strategy helps an organization work in a concerted manner. An example of pairing a strategy to a goal is consolidating identity services (strategy) to prevent capability sprawl (goal). It is possible that the Cloud Identity strategy and the Cloud Identity policy are the same document for easy management or are based on the agency's size. Large agencies may have different modernization, security, and identity-based strategies, while smaller agencies may combine these elements into a single document. Use the [ICAM Practice Areas and Services Framework]({{site.baseurl}}/arch/services/){:target="_blank"}{:rel="noopener noreferrer"} to identify ICAM services and align your plan with the FICAM Architecture. There are five core services with many sub-services. The [ICAM Governance Framework]({{site.baseurl}}/docs/playbook-identity-governance-framework.pdf){:target="_blank"}{:rel="noopener noreferrer"} is also a great resource to identify ICAM capabilities, integration points, and enterprise governance examples and templates.
 
-[![Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area.]({{site.baseurl}}/assets/arch/services/ServicesOverview.png)]({{site.baseurl}}/assets/arch/services/ServicesOverview.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/arch/services/ServicesOverview.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area." width="560" height="466">
 
 <p align="center"><b>Figure 5: FICAM Services Framework</b></p>
 
