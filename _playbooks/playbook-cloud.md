@@ -200,7 +200,7 @@ The pros and cons of each approach depend on an agency's architecture, budget, a
       <td rowspan="4">Ensure the Acquisition Gateway User can: <br><br>
         <ul>
           <li>Use an authenticator over the WebAuthN API.</li>
-          <li>Log in to the acquisition gateway.</li>
+          <li>Log in to the Acquisition Gateway.</li>
         </ul>
       </td>
     </tr>
@@ -215,10 +215,10 @@ The pros and cons of each approach depend on an agency's architecture, budget, a
         ordering platform <b>so that</b> I can remove expired bids.</td>
       <td rowspan="5">Ensure the Acquisition Gateway User is able to:<br><br>
         <ul>
-          <li>log in to the Acquisition Gateway</li>
-          <li>access the page to review items previously bid upon</li>
-          <li>select one, or multiple, expired bids</li>
-          <li>remove expired bids based on having the correct privilege</li>
+          <li>Log in to the Acquisition Gateway</li>
+          <li>Access the page to review items previously bid upon</li>
+          <li>Select one, or multiple, expired bids</li>
+          <li>Remove expired bids based on having the correct privilege</li>
         </ul>
       </td>
     </tr>
