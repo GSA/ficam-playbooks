@@ -253,7 +253,7 @@ A vital element of a business case is a stakeholder analysis. Follow the analysi
 
 <p align="center"><b>Table 5: ICAM Enablers for Zero Trust</b></p>
 
-| **Zero Trust Pillar** | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp**IDaaS Enabler** |
+| **Zero Trust Pillar** | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IDaaS Enabler** |
 | --- | --- |
 | Identity | IDaaS incorporates SSO, MFA, and directory services in a single platform that supports multiple phishing-resistant authenticator options. They may allow an Application Programming Interface to quickly query IDaaS identity stores information, making it easier to answer security questions from a single location. A cloud service operates on modern platforms and can integrate new protocols and features faster than on-premises Identity Providers. Agencies can focus more on delivering identity services than on maintaining identity infrastructure. |
 | Device | An IDaaS may act as a policy enforcement point and leverage device identification and health attributes such as device type, operating system, operating system version, and location to aid access and authorization decisions. |
