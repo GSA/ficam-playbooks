@@ -215,10 +215,10 @@ The pros and cons of each approach depend on an agency's architecture, budget, a
         ordering platform <b>so that</b> I can remove expired bids.</td>
       <td rowspan="5">Ensure the Acquisition Gateway User is able to:<br><br>
         <ul>
-          <li>Log in to the Acquisition Gateway</li>
-          <li>Access the page to review items previously bid upon</li>
-          <li>Select one, or multiple, expired bids</li>
-          <li>Remove expired bids based on having the correct privilege</li>
+          <li>Log in to the Acquisition Gateway.</li>
+          <li>Access the page to review items previously bid upon.</li>
+          <li>Select one, or multiple, expired bids.</li>
+          <li>Remove expired bids based on having the correct privilege.</li>
         </ul>
       </td>
     </tr>
@@ -253,7 +253,7 @@ A vital element of a business case is a stakeholder analysis. Follow the analysi
 
 <p align="center"><b>Table 5: ICAM Enablers for Zero Trust</b></p>
 
-| **Zero Trust Pillar** | **IDaaS Enabler** |
+| **Zero Trust Pillar** | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp**IDaaS Enabler** |
 | --- | --- |
 | Identity | IDaaS incorporates SSO, MFA, and directory services in a single platform that supports multiple phishing-resistant authenticator options. They may allow an Application Programming Interface to quickly query IDaaS identity stores information, making it easier to answer security questions from a single location. A cloud service operates on modern platforms and can integrate new protocols and features faster than on-premises Identity Providers. Agencies can focus more on delivering identity services than on maintaining identity infrastructure. |
 | Device | An IDaaS may act as a policy enforcement point and leverage device identification and health attributes such as device type, operating system, operating system version, and location to aid access and authorization decisions. |
@@ -372,7 +372,7 @@ A primary IDaaS capability is a centralized policy enforcement point that may in
 2. **Protocol Monitoring.** Access comes in many protocols. Monitor access attempts over all possible protocols such as HTTPS and secure shell—also factor in port translation technology that converts ports and protocols (e.g., Converts HTTPS into SSH).
 3. **Enable Risk-Based Access Control.** Many cloud access tools can leverage telemetry decisions such as device type, browser type, and location for Attribute-Based Access Control. Some IDaaS may provide native or, through an API, risk information to enforce risk-based access control, including behavior analytics and threat information feeds. Verify how and if an IDaaS can support this capability.
 
-{% include alert-info.html heading="Access Policy by User Type" content="Application owners can determine ideal conditions for access, such as during working hours, from the United States, on Government Furnished Equipment, or an approved device by reviewing access or activity logs. Centrally identify, implement, and track access policies and exceptions with an IDaaS." %} 
+{% include alert-info.html heading="Access Policy by User Type" content="Application owners can determine ideal conditions for access, such as during working hours, from the United States, on Government Furnished Equipment, or an approved device, by reviewing access or activity logs. Centrally identify, implement, and track access policies and exceptions with an IDaaS." %} 
 
 ### Governance
 
@@ -380,7 +380,7 @@ Identity governance includes both program oversight and technical controls. Agen
 
 1. **Certify Access.** Access certification or recertification is the process of an application owner or a manager attesting to someone's access and can be an automated or manual process. Access certifications should happen more frequently for higher impact applications, such as monthly or quarterly.
 2. **Plan for Contingencies.** Verify IDaaS availability requirements and continuity procedures. Test disaster recovery scenarios regularly. Continuity planning may require collaborating with your IDaaS to identify strategies around geographic outages, denial of service attacks, or other potential outages.
-3. **Configuration Monitoring.**. Establish audit policies to monitor for configuration changes. Implement controls to prevent misconfiguration (e.g., default private or deny). When configurations change, inform or create a training event to ensure that all administrators know about it.
+3. **Configuration Monitoring.** Establish audit policies to monitor for configuration changes. Implement controls to prevent misconfiguration (e.g., default private or deny). When configurations change, inform or create a training event to ensure that all administrators know about it.
 4. **Policy-Based Governance.** A key success factor is an agency policy that defines roles, identity lifecycle stages and procedures, and potentially a central repository of identity policies for infrastructure as code or multi-cloud management. Policy-based governance ensures consistent implementation of IDaaS policies.
 5. **Monitor Activity.** Enable activity logging for all users. Log monitoring was a primary success factor in [detecting activity related to Solarwinds and Active Directory compromise](https://us-cert.cisa.gov/ncas/analysis-reports/ar21-134a){:target="_blank"}{:rel="noopener noreferrer"}.
 
@@ -415,7 +415,7 @@ IDaaS products may vary in how they are configured and operated. This section pr
    1. User account suspension due to inactivity.
    2. Account provisioning or de-provisioning (onboarding).
    3. Approving access requests for users in a specific group.
-   4. Report on suspicious activity.
+   4. Reporting suspicious activity.
    5. Credential enrollment.
    6. PKI Trust store management.
 2. **Review Process Workflow.** The review may include a whiteboard session or watching a user perform the process. It also includes documenting pain points and dependencies to complete the task. The outcome of this step is a thorough understanding of the process.
