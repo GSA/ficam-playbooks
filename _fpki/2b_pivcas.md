@@ -240,7 +240,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 5C23B98A6FF5F543B2768F6D19556C4C
 - Validity: June 9, 2020 to December 12, 2028 
 - SHA-1 Hash: 6F48424AE8A01C2A77213A9D34F5761DAACD9EAC
-- CRL DP: [http://onsite-crl.pki.digicert.com/USDepartmentofEducationDoEDContentSignerG5/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofEducationDoEDContentSignerG5/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://pki-crl.symauth.com/ca_db1ff205d5a9b79af46c7896d15cb2a9/LatestCRL.crl](http://pki-crl.symauth.com/ca_db1ff205d5a9b79af46c7896d15cb2a9/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### U.S. Department of State PIV CA2
 - Subject: OU = U.S. Department of State PIV CA2, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
