@@ -22,11 +22,11 @@ subnav:
 {% endfor %}
 {% assign branches = branches | uniq | sort %}
 
-The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) and PIV-Interoperable (PIV-I) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates.
+The page lists the certification authorities *currently* used for Personal Identity Verification (PIV), PIV-Interoperable (PIV-I), or Derived PIV (dPIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust.
 
 ## PIV Issuer Information
 
-{% include alert-info.html content="This table was last updated on <b>February  7, 2022</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
+{% include alert-info.html content="This table was last updated on <b>May  16, 2022</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
 <br>
   
@@ -56,6 +56,22 @@ The page lists the certification authorities *currently* used for Personal Ident
 
 ## Active Issuing CA Certificate Details 
 These CA certificates are actively issuing PIV authentication certificates.  
+
+#### Carillon Federal Services PIV-I CA1
+- Subject: OU = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
+- Issuer: OU = CertiPath Bridge CA - G3, OU = Certification Authorities, O = CertiPath, C = US
+- Serial #: 06b671d311f879f98cb792bf7481bc4d
+- Validity: February 22, 2022 to February 28, 2023
+- SHA-1 Hash: 61663be2cce5eb458d612700e19ddd93f9aec2f1
+- CRL DP: [http://pub.carillonfedserv.com/CRL/CFSCA1.crl](http://pub.carillonfedserv.com/CRL/CFSCA1.crl){:target="_blank"}{:rel="noopener noreferrer"}
+
+#### Carillon Federal Services PIV-I CA2
+- Subject: OU = Carillon Federal Services PIV-I CA2, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
+- Issuer: OU = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
+- Serial #: 0777592d1294a2b19abe6a1996c0c921
+- Validity: November 4, 2021 to November 4, 2022
+- SHA-1 Hash: 323a07c5c7d59bc9c5e24282fc06393456827e3a
+- CRL DP: [http://pub.carillonfedserv.com/CRL/CFSCA2.crl](http://pub.carillonfedserv.com/CRL/CFSCA2.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Department of Veterans Affairs CA
 - Subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
@@ -138,6 +154,14 @@ These CA certificates are actively issuing PIV authentication certificates.
 - SHA-1 Hash: e9245a056b17cb5be2e36abf1b8dae6dff9d3729
 - CRL DP: [http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA.crl](http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
+#### FTI Certification Authority
+- Subject: OU = FTI Certification Authority, OU = FTI PKI Trust Infrastructure, O = Foundation for Trusted Identity, C = US
+- Issuer: OU = STRAC Bridge Root Certification Authority, OU = STRAC PKI Trust Infrastructure, O = STRAC, C = US
+- Serial #: 0118
+- Validity: February 9, 2022 to January 7, 2023
+- SHA-1 Hash: 2b6e0648ba2c7104392546ef1a08cc9bedf6829c
+- CRL DP: [http://pki.fti.org/fti_ca/crl/FTICA.crl](http://pki.fti.org/fti_ca/crl/FTICA.crl){:target="_blank"}{:rel="noopener noreferrer"}
+
 #### HHS-FPKI-Intermediate-CA-E1
 - Subject: CN = HHS-FPKI-Intermediate-CA-E1, OU = Certification Authorities, OU = HHS, O = U.S. Government, C = US 
 - Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
@@ -216,7 +240,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 5C23B98A6FF5F543B2768F6D19556C4C
 - Validity: June 9, 2020 to December 12, 2028 
 - SHA-1 Hash: 6F48424AE8A01C2A77213A9D34F5761DAACD9EAC
-- CRL DP: [http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG5/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG5/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://onsite-crl.pki.digicert.com/USDepartmentofEducationDoEDContentSignerG5/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofEducationDoEDContentSignerG5/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### U.S. Department of State PIV CA2
 - Subject: OU = U.S. Department of State PIV CA2, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
@@ -232,7 +256,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 0ed81c303ea3566787faca36899a931a
 - Validity: March 4, 2019 to December 12, 2028
 - SHA-1 Hash: b1d05e5b9e025ea4b3b3e30dc3f45a19f9ec51f6
-- CRL DP: [http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAContentSignerG5/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAContentSignerG5/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG5/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG5/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### USPTO INTR CA1
 - Subject: CN = USPTO_INTR_CA1, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = uspto, DC = gov
@@ -256,7 +280,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 5ecb874a1b24b1113848e40e76dc3ea4449624fe
 - Validity: December 15, 2017 to December 15, 2027
 - SHA-1 Hash: fddb25c3cda647fd56954b58de95878422fb9c11
-- CRL DP: [http://crl.pki.va.gov/PKI/CRL/VACAB3.crl](http://crl.pki.va.gov/PKI/CRL/VACAB3.crl)]{:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://crl.pki.va.gov/PKI/CRL/VACAB3.crl](http://crl.pki.va.gov/PKI/CRL/VACAB3.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### WidePoint ORC NFI 4
 - Subject: CN = WidePoint ORC NFI 4, OU = Certification Authorities, O = WidePoint, C = US
@@ -288,7 +312,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 15707f8b78d4594f0fdc0d7884241c7659dd83e3
 - Validity: February 3, 2021 to December 31, 2030
 - SHA-1 Hash: 8a17d236acb45af809c0a4555f7142d82ae08736
-- CRL DP: [•	http://crl-server.orc.com/CRLs/WIDEPOINTNFI6.crl](•	http://crl-server.orc.com/CRLs/WIDEPOINTNFI6.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://crl-server.orc.com/CRLs/WIDEPOINTNFI6.crl](http://crl-server.orc.com/CRLs/WIDEPOINTNFI6.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ## Maintenance Mode Issuing CA Certificate Details
@@ -308,7 +332,7 @@ These CA certificates have issued PIV authentication certificates previously and
 - Serial #: 4e397f22 
 - Validity: August 28, 2012 to August 28, 2022 
 - SHA-1 Hash: 519d3222a15eee034980fc0da727314f70af78c0
--  CRL DP: [http://pki.treasury.gov/VA_CA.crl](http://pki.treasury.gov/VA_CA.crl){:target="_blank"}{:rel="noopener noreferrer"} 
+- CRL DP: [http://pki.treasury.gov/VA_CA.crl](http://pki.treasury.gov/VA_CA.crl){:target="_blank"}{:rel="noopener noreferrer"} 
 
 #### DHS CA4
 - Subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US 
