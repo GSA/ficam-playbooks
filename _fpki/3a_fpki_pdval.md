@@ -113,7 +113,7 @@ FPKI certificates are required to contain an AIA with an Internet-accessible URL
 
 <p align="center"><b>AIA in a Certificate Issued by the Federal Bridge CA</b></p>
 
-Path discovery follows the AIA URLs, one after the other, from each certificate in sequence until it finds a certificate issued by a trust anchor in the certificate trust list. The figure below shows the discovery of a single correct path. Many false paths could be evaluated in practice, and potentially, even more, than one valid path could be discovered. The path processing software then must choose which path to use. (**Note:** The root CA certificate or trust anchor should not be discovered in the AIA; it should have been distributed in a trusted fashion.)
+Path discovery follows the AIA URLs, one after the other, from each certificate in sequence until it finds a certificate issued by a trust anchor in the certificate trust list. The figure below shows the discovery of a single correct path. Many false paths could be evaluated in practice, and potentially, even more, than one valid path could be discovered. The path processing software then must choose which path to use.
 
 {% include alert-success.html heading = "Fun Fact" content="The algorithm to decide which correct path to choose has been a source of much debate in the PDVal community for more than two decades." %}
 
@@ -129,7 +129,7 @@ The AIA URLs may point to files that contain more than one CA certificate. Each 
 
 <p align="center"><b>Illustrative Path Discovery in a Bridge PKI Environment</b></p>
 
-For example, assume that the path discovery software is attempting to find a certification path from an end-user on the left to the trust anchor on the right. Said another way, we trust the anchor on the right but have been presented with the user's credential on the left and need to see if there are any means to trust it. When the process retrieves the AIA URL for the Bridge, it must select the CA certificate issued to the Bridge by CA C. Path discovery software that fails to select the correct certificate or is incapable of backtracking to attempt other choices may fail to find a valid certification path. PDVal software may also end the search in an unexpected location, such as the far side of the Federal Bridge. Yes, in this case, it is a bridge too far.
+For example, assume that the path discovery software is attempting to find a certification path from an end-user on the left to the trust anchor on the right. Said another way, we trust the anchor on the right but have been presented with the user's credential on the left and need to see if there are any means to trust it. When the process retrieves the AIA URL for the Bridge, it must select the CA certificate issued to the Bridge by CA. Path discovery software that fails to select the correct certificate or is incapable of backtracking to attempt other choices may fail to find a valid certification path. PDVal software may also end the search in an unexpected location, such as the far side of the Federal Bridge. Yes, in this case, it is a bridge too far.
 
 <div class="usa-alert usa-alert--success">
   <div class="usa-alert__body">
@@ -140,7 +140,7 @@ For example, assume that the path discovery software is attempting to find a cer
   </div>
 </div>
 
-Fortunately, beyond the more obvious matching of certificate names in the certification path, certificates provide useful information for guiding path discovery, the most important of which are public policy identifiers. 
+Fortunately, beyond the more obvious matching of certificate names in the certification path, certificates provide useful information for guiding path discovery, the most important of which are public key identifiers. 
 
 ### Public Key Identifiers
 
@@ -271,7 +271,7 @@ The Cross-certificates between the Bridge and the affiliate CA in the bridge env
 ### Certification Path Constraints
 
 A CA puts information in certificates it issues to other CAs that limit the trust that it will extend to those CAs. Those limits are collected and carried forward in the certification path. We refer to these limits on trust as constraints. The FPKI community uses the following constraints during PDVal:
-- **Basic Constraints:** All CA certificates must indicate that they are CA certificates. Basic constraints can also limit the maximum number of additional CA certificates allowed between the CA certificate containing the maximum length in the basic constraints of that CA certificate and the user certificate.
+- **Basic Constraints:** All CA certificates must indicate that they are CA certificates. Basic constraints can also limit the maximum number of additional CA certificates allowed in the certification path.
 - **Name Constraints:** A CA certificate can provide a filter for certificates it will issue. It can indicate permitted partial names or list partial names that it explicitly excludes. For example, a CA can suggest that it will only give certificates to subjects with an email address ending in "@dod.mil."
 - **Policy Constraints:** CAs can place limits on policy mapping or require the certification path to be valid for at least one policy.
 
