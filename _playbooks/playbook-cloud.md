@@ -372,7 +372,7 @@ A primary IDaaS capability is a centralized policy enforcement point that may in
 2. **Protocol Monitoring.** Access comes in many protocols. Monitor access attempts over all possible protocols such as HTTPS and secure shell—also factor in port translation technology that converts ports and protocols (e.g., Converts HTTPS into SSH).
 3. **Enable Risk-Based Access Control.** Many cloud access tools can leverage telemetry decisions such as device type, browser type, and location for Attribute-Based Access Control. Some IDaaS may provide native or, through an API, risk information to enforce risk-based access control, including behavior analytics and threat information feeds. Verify how and if an IDaaS can support this capability.
 
-{% include alert-info.html heading="Access Policy by User Type" content="Application owners can determine ideal conditions for access, such as during working hours, from the United States, on Government Furnished Equipment, or an approved device, by reviewing access or activity logs. Centrally identify, implement, and track access policies and exceptions with an IDaaS." %} 
+{% include alert-info.html heading="Access Policy by User Type" content="Application owners can determine ideal conditions for access, such as during working hours, from the United States, on Government Furnished Equipment, or on an approved device, by reviewing access or activity logs. Centrally identify, implement, and track access policies and exceptions with an IDaaS." %} 
 
 ### Governance
 
