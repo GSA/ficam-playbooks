@@ -50,7 +50,7 @@ Do NOT use the _Insert Signature_ function (under the **INSERT** tab in the **Wo
 9. In the **Purpose for signing this document**, type the purpose or leave blank.
 10. To ensure the correct certificate is used, click the **Change** button.
 11. In the Certification Selection box, there may be multiple certificates.  Select the first **unexpired** certificate with your name. Then click the **Click here to view the certificate properties** link.<br />
-    <img src="{{site.baseurl}}/assetspiv/ofr_windows_sec_piv_or_purch_cert.png" alt="A screenshot of the Microsoft Word Select a certificate window two options circled in red." width="448" height="352">
+    <img src="{{site.baseurl}}/assets/piv/ofr_windows_sec_piv_or_purch_cert.png" alt="A screenshot of the Microsoft Word Select a certificate window two options circled in red." width="448" height="352">
 12. The **Certificate Details** box appears. Go to the _Details_ tab and scroll down to _Key Usage_.  Single-click on it.  The lower text box should now display “Digital Signature, Non-Repudiation” (for PIV card certificate) or “Digital Signature” (for a purchased certificate).  If it does, then this is the right certificate. Click **OK** to close the window and proceed with signing.<br />
     <img src="{{site.baseurl}}/assets/piv/ofr_certificate_details.png" alt="A screenshot of the Microsoft Word Certificate Details window with the details tab showing." width="336" height="426">
 13. If this is the wrong certificate, click **OK**. Then select another certificate and repeat these steps until you find the correct certificate.
