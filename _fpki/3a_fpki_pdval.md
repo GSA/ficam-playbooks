@@ -30,13 +30,13 @@ Public Key Infrastructure (PKI) certificates follow a process called Path Discov
 # What Is a Trust Anchor?
 
 A trust anchor is a trusted certification authority (CA). These may be commonly called trust root, trusted CA, or root CA. Everything in PKI traces its trust back to a trust anchor.
-The trust anchor operated by Federal PKI, including PIV and PIV-Interoperable, is the [Federal Common Policy CA Update]({{site.baseurl}}/fpki/common/). A common misconception is that the Federal Bridge is the root of trust. Keep reading to understand why that is not the case. Every software program that interacts with a certificate installs trust anchors in a native trust store or uses the trust store of the operating system. A trust store is a list of **root, intermediate, and sometimes user certificates** that the operating system or application trusts to process transactions. For more information on trust stores, see the [PKI trust store page]({{site.baseurl}}/fpki/trust-stores/).
+The trust anchor operated by Federal PKI, including PIV and PIV-Interoperable, is the [Federal Common Policy CA]({{site.baseurl}}/fpki/common/). A common misconception is that the Federal Bridge is the root of trust. Keep reading to understand why that is not the case. Every software program that interacts with a certificate installs trust anchors in a native trust store or uses the trust store of the operating system. A trust store is a list of **root, intermediate, and sometimes user certificates** that the operating system or application trusts to process transactions. For more information on trust stores, see the [PKI trust store page]({{site.baseurl}}/fpki/trust-stores/).
 
 # What Is Path Discovery and Validation?
 
 **Certification Path Discovery and Validation (PDVal)** is a procedure to associate a certificate to a trust anchor and confirm that the certificate is valid for use. Some form of PDVal occurs with every certificate validation action. Some common PIV card use cases include:
 - Logging onto a workstation.
-- Authenticating an application using a web browser.
+- Authenticating to an application using a web browser.
 - Verifying a digital signature (for example, signed email or digitally signed documents).
 - Encrypting data for others (for example, encrypted email).
 - Accessing a building or an office
@@ -64,8 +64,7 @@ Two valid certification paths for the same PIV authentication certificate are il
 <p align="center"><b>Example Certification Path 2 - from Raytheon Technologies Root CA</b></p>
 
 Both certification paths are valid for the same PIV authentication certificate (”(Affiliate)” in the images), but they start with different trust anchors. The configuration difference between the two example paths is only which trust anchor was installed.
-
-Both certification paths are valid for the same PIV authentication certificate ("(Affiliate)" in the images), but they start with different trust anchors. 
+ 
 - A variety of factors can influence the certification path, including:
 - Installed trust anchor CAs (Also known as trust roots or trusted CAs)
 - Locally cached CA certificates
@@ -87,7 +86,7 @@ The most important factor is the trust anchors. By limiting which trust anchors 
 
 ### Certification Path Discovery
 
-The first step of PDVal is finding a certification path for the certificate that needs to be verified. The process for finding the path is called path discovery or path development. Verifying a PIV card is a straightforward procedure involving only one or two CA certificates (see the Example Certification Path 1 image in the previous section). In other situations, such as validating a PIV-I certificate, the procedure can involve many CAs and significantly more challenging path discovery requirements.
+The first step of PDVal is finding a certification path for the certificate that needs to be verified. The process for finding the path is called path discovery or path development. Verifying a PIV card is a straightforward procedure involving only one or two CA certificates (see the Example Certification Path 1 image in the previous section). In other situations, such as validating a PIV-I certificate, the procedure can involve many CAs and significantly more challenging path discovery requirements. If path discovery adheres to RFC 5280, all possible paths should be discovered and details like certificate policies would be considered at each hop; the proces shouldn't wait until a single path is selected without considering additional information.
 
 <img src="{{site.baseurl}}/assets/piv/pdval-pivi-cert-path.png" alt="An example PIV-I certification path." style="width:800px;"/>
 
@@ -95,13 +94,13 @@ The first step of PDVal is finding a certification path for the certificate that
 
 Software providers use different path discovery methods. Describing all the various PDVal software is beyond the scope of this playbook. The simple path discovery algorithm below illustrates the concept.
 
-<img src="{{site.baseurl}}/assets/piv/pdval-path-discovery-algorithm.png" alt="A simple path discovery algorithm." style="width:800px;"/>
+<img src="{{site.baseurl}}/assets/piv/pdval-path-discovery-algorithm-updated.png" alt="A simple path discovery algorithm." style="width:800px;"/>
 
 The process fails if the procedure cannot obtain the subsequent issuing CA certificate.
 
 ### Finding CA Certificates
 
-For simple cases, the necessary CA certificates are often administratively installed or are cached locally by the certificate-consuming software or the operating system. Software must actively retrieve the CA certificates needed to discover a complete certification path in complicated situations. PDVal software retrieves certificates from a location in the Certificates Authority Information Access (AIA) extension.
+For simple cases, the necessary CA certificates are often administratively installed or are cached locally by the certificate-consuming software or the operating system. Software must actively retrieve the CA certificates needed to discover a complete certification path in complicated situations. PDVal software retrieves certificates from a location in the Certificate's Authority Information Access (AIA) extension.
 
 | Scenario | Example |
 | ----- | ----- |
@@ -263,7 +262,7 @@ In the example above, the DoD certificate contains DoD policies and the path val
 
 #### Putting It All Together
 
-The Cross-certificates between the Bridge and the affiliate CA in the bridge environment PKI image contains policy mappings in the Choosing CA Certificates section. They are an essential part of the cross-certificate because they express the literal security common ground between an issuer and the community baseline established by the Bridge. As an issuer, you can always exceed a security control or requirement, but you must at least meet the requirement. As an issuer, you could say both shoes and socks are not allowed in your house, but the Bridge will be happy for so long as you at least enforce shoe removal. Path validation ensures that the minimum level of assurance you have set as your trust policy meets the security controls of other CAs in the trust framework. This trust mapping is a compelling capability because it affords trust at scale safely. Here also, we are leveraging the transitive property to accomplish this effect.
+The Cross-certificates between the Bridge and the affiliate CA in the bridge environment PKI image contains policy mappings in the [Choosing CA Certificates](#choosing-ca-certificates) section. They are an essential part of the cross-certificate because they express the literal security common ground between an issuer and the community baseline established by the Bridge. As an issuer, you can always exceed a security control or requirement, but you must at least meet the requirement. As an issuer, you could state that both shoes and socks are not allowed in your house, but the Bridge might be happy as long as you at least enforce shoe removal. Path validation ensures that the minimum level of assurance you have set as your trust policy meets the security controls of other CAs in the trust framework. This trust mapping is a compelling capability because it affords trust at scale safely. Here also, we are leveraging the transitive property to accomplish this effect.
 
 <img src="{{site.baseurl}}/assets/piv/pdval-policy-mapping-fb-to-dod.png" alt="A screenshot showing example policy mapping from the Federal Bridge to the DoD interoperability root." style="width:800px;"/>
 
@@ -271,8 +270,8 @@ The Cross-certificates between the Bridge and the affiliate CA in the bridge env
 
 ### Certification Path Constraints
 
-A CA puts information in its CA certificates that limit the trust that it will extend to other CAs. Those limits are collected and carried forward in the certification path. We refer to these limits on trust as constraints. The FPKI community uses the following constraints during PDVal:
-- **Basic Constraints:** All CA certificates must indicate that they are CA certificates. Basic constraints can also limit the maximum length of the certification path.
+A CA puts information in certificates it issues to other CAs that limit the trust that it will extend to those CAs. Those limits are collected and carried forward in the certification path. We refer to these limits on trust as constraints. The FPKI community uses the following constraints during PDVal:
+- **Basic Constraints:** All CA certificates must indicate that they are CA certificates. Basic constraints can also limit the maximum number of additional CA certificates allowed in the certification path.
 - **Name Constraints:** A CA certificate can provide a filter for certificates it will issue. It can indicate permitted partial names or list partial names that it explicitly excludes. For example, a CA can suggest that it will only give certificates to subjects with an email address ending in "@dod.mil."
 - **Policy Constraints:** CAs can place limits on policy mapping or require the certification path to be valid for at least one policy.
 
