@@ -15,6 +15,8 @@ subnav:
 
 *Account linking* refers to the process of associating a certificate on a user's PIV credential with their domain account.
 
+{% include alert-warning.html heading="Warning" content="Microsoft HIGHLY recommends that all customers who use CAC, smart card, or certificate-based authentication with AltSecID to IMMEDIATELY change the registry key on domain controllers prior to installing the KB5014754 May 2022 updates. See [KB5014754—Certificate-based authentication changes on Windows domain controllers](https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16){:target="_blank"}{:rel="noopener noreferrer"} for more information. The Cybersecurity & Infrastructure Security Agency (CISA) has also “Temporarily Removed” the CVE because of the impact that the update caused. If you haven't implemented AltSecIDs, wait for further guidance from CISA or Microsoft." %}
+
 ## Comparing altSecurityIdentities and User Principal Name
 There are two account linking attributes to choose from:
 - altSecurityIdentities (_recommended_)
