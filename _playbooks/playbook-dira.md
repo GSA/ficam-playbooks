@@ -42,8 +42,8 @@ subnav:
 Version 1.1  
 September 13, 2020
 
-<a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
-<a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+<img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
+<img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
@@ -102,7 +102,7 @@ The following sections describe a basic DIRA process and provide plays to help y
 
 The DIRA process begins when a new application or system is identified or a time-driven or event-driven reassessment is triggered. Once it is determined that a DIRA is needed, application data is identified, collected, and analyzed to determine the assurance levels and produce a Digital Identity Assessment Statement (DIAS), as shown in Figure 1.
 
-[![This is a circle figure with five steps. The DIRA process starts at the top of the circle when a new application or system is identified or when a time or event-based reassessment is triggered. Step 1 is Identify User, Transactions, and Roles. Step 2 is Identify Risks and Assurance Levels. Step 3 is Determine Steps to Meet Assurance Levels. Step 4 is Finalize Digital Identify  Assessment Statement. Step 5 is Reassess. Return back to Step 1 based on new application or event trigger.]({{site.baseurl}}/assets/playbooks/dira-process.png)]({{site.baseurl}}/assets/playbooks/dira-process.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-process.png" alt="A circle figure with five steps. The DIRA process starts at the top of the circle when a new application or system is identified or when a time or event-based reassessment is triggered. Step 1 is Identify User, Transactions, and Roles. Step 2 is Identify Risks and Assurance Levels. Step 3 is Determine Steps to Meet Assurance Levels. Step 4 is Finalize Digital Identify  Assessment Statement. Step 5 is Reassess." width="560" height="462">
 
 <p align="center"><b>Figure 1: Example DIRA Process</b></p>
 
@@ -208,7 +208,7 @@ At Identity Assurance Level 1 (IAL1), the application may or may not require pro
 
 Figure 2 explains the three Identity Assurance Levels in _example_ terms of the information validated and verified during the identity proofing process.[^12] 
 
-[![Figure 2 is a building block figure. A user is on the right of the figure and to the left of the user are different data elements provided by a user. Each IAL includes addition data to increase the assurance. IAL 1 data includes Display Name & Email Address. IAL 2 data includes confirmed through record checks through virtual or in-person, address of record, and real name & email address. IAL 3 data includes confirmed through record checks and in-person, biometric, address of record, and real name & email address.]({{site.baseurl}}/assets/playbooks/dira-ial.png)]({{site.baseurl}}/assets/playbooks/dira-ial.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-ial.png" alt="A building block figure. A user is on the right of the figure and to the left of the user are different data elements provided by a user. Each IAL includes addition data to increase the assurance. IAL 1 data includes Display Name & Email Address. IAL 2 data includes confirmed through record checks through virtual or in-person, address of record, and real name & email address. IAL 3 data includes confirmed through record checks and in-person, biometric, address of record, and real name and email address." width="560" height="301">
 
 <p align="center"><b>Figure 2: Identity Assurance Levels</b></p>
 
@@ -226,7 +226,7 @@ At Authenticator Assurance Level 1 (AAL1), a user might only use a username and 
 
 Figure 3 explains the concept of the three Authenticator Assurance Levels in _example_ terms of the authentication.[^15]  
 
-[![This figure is a building block figure. A user is on the right of the figure and to the left of the user are different authenticator elements used to log in. Each AAL includes an authentication factor to increase the assurance. AAL 1 includes a single factor. AAL 2 includes two factors. AAL 3 includes two factor with cryptographic hardware.]({{site.baseurl}}/assets/playbooks/dira-aal.png)]({{site.baseurl}}/assets/playbooks/dira-aal.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-aal.png" alt="A building block figure. A user is on the right of the figure and to the left of the user are different authenticator elements used to log in. Each AAL includes an authentication factor to increase the assurance. AAL 1 includes a single factor. AAL 2 includes two factors. AAL 3 includes two factor with cryptographic hardware." width="560" height="217">
 
 <p align="center"><b>Figure 3: Authenticator Assurance Levels</b></p>
 
@@ -256,7 +256,7 @@ FALs are implemented using standard-based protocols across the federal governmen
 
 Figure 4 explains the concept of the three Federation Assurance Levels in _example_ terms.[^18]  
 
-[![This is a building block figure. On the left of the figure, there are a pair of hands shaking to represent an application sharing information. To the right of the shaking hands are blocks aligned under an FAL. There are increasing elements required under each successive FAL. FAL 1 includes a signed assertion. FAL 2 includes a signed and encrypted assertion. FAL 3 includes a signed and encrypted assertion with a re-verify authentication.]({{site.baseurl}}/assets/playbooks/dira-fal.png)]({{site.baseurl}}/assets/playbooks/dira-fal.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-fal.png" alt="A building block figure. On the left of the figure, there are a pair of hands shaking to represent an application sharing information. To the right of the shaking hands are blocks aligned under an FAL. There are increasing elements required under each successive FAL. FAL 1 includes a signed assertion. FAL 2 includes a signed and encrypted assertion. FAL 3 includes a signed and encrypted assertion with a re-verify authentication." width="560" height="209">
 
 <p align="center"><b>Figure 4: Federation Assurance Levels</b></p>
 
@@ -306,7 +306,7 @@ This section introduces six plays for your agency to create efficient and consis
 
 The Risk Management Framework (RMF) forms the basis of your agency application Assessment and Authorization (A&A) lifecycle. A DIRA process integrates into the routine phases of the RMF to streamline processes and enables efficient reuse of application and agency resources. Figure 5 shows an alignment of this playbook’s example DIRA process steps with the RMF. 
 
-[![Figure 5 is a graphic representation of the DIRA process aligned with the NIST Risk Management Framework Phase. There are three concentric circles. Continuous monitoring on the outermost circle with continuous arrows representing a continuous process. The two inner circles represent the NIST RMF process aligned with DIRA. DIRA Step 1 Identify Users, Transactions, and Roles aligns with RMF Phase Categorize System. DIRA Step 2 Identify Risks and Assurance Levels aligns with RMF Phase Selecting Controls. DIRA Step 3 Determine steps to Meet Assurance Levels aligns with RMF Phase Implement Controls. DIRA Step 4 Finalize digital identity assessment statement aligns with RMF Phase Assess Controls. There is no DIRA Step that aligns with RMF Phase Authorize. DIRA Step 5 Reassess aligns with RMF Phase Monitor.]({{site.baseurl}}/assets/playbooks/dira-rmf.png)]({{site.baseurl}}/assets/playbooks/dira-rmf.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-rmf.png" alt="A graphic representation of the DIRA process. There are three concentric circles. Continuous Monitoring appears in the outer circle. The innermost circle contains five steps. Step 1 is Identify Users, Transactions, and Roles. Step 2 is Identify Risks and Assurance Levels. Step 3 is Determine steps to Meet Assurance Levels aligns with RMF Phase Implement Controls. Step 4 is Finalize digital identity assessment statement. Step 5 is Reassess." width="560" height="522">
 
 <p align="center"><b>Figure 5: Example DIRA Process Steps in Risk Management Framework Phase</b></p>
 
@@ -424,15 +424,15 @@ This appendix provides examples and templates of existing resources to help esta
 
 This section includes additional example risk assessment decision trees used by some agencies for the Digital Identity Risk Assessment for transactions. Original source decision trees are in NIST Special Publication 800-63-3 [Digital Identity Guidelines](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-3.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Section 6, Selecting Assurance Levels.  
 
-[![Figure 6 is a decision tree to select an appropriate Identity Assurance Level (IAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, do you need any Personally Identifiable Information (PII) or Protected health information (PHI)? If no, select IAL1. If yes, do you need the PII/PHI to be validated? If no, select IAL1. If yes or if you don’t know, specify the risks (to the agency or the subject) of providing the digital service (i.e., a person falsely claiming an identity) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select IAL3. If no, did you assess moderate for personal safety? If yes, select IAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select IAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select IAL2. If no, are you making personal data accessible? If yes, select IAL2. If no, select IAL1. Reassess the IAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.]({{site.baseurl}}/assets/playbooks/dira-ial-tree.png)]({{site.baseurl}}/assets/playbooks/dira-ial-tree.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-ial-tree.png" alt="A decision tree to select an appropriate Identity Assurance Level (IAL) for each user community and transactions." width="560" height="735">
 
 <p align="center"><b>Figure 6: Identity Assurance Level Decision Tree</b></p>
 
-[![Figure 7 is a decision tree to select an appropriate Authenticator Assurance Level (AAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, specify the risks (to the agency or the subject) of providing the digital service (i.e., a false claimant using an identity that is not theirs) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select AAL3. If no, did you assess moderate for personal safety? If yes, select AAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select AAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select AAL2. If no, are you making personal data accessible? If yes, select AAL2. If no, select AAL1. Reassess the AAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.]({{site.baseurl}}/assets/playbooks/dira-aal-tree.png)]({{site.baseurl}}/assets/playbooks/dira-aal-tree.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-aal-tree.png" alt="A decision tree to select an appropriate Authenticator Assurance Level (AAL) for each user community and transactions." width="560" height="748">
 
 <p align="center"><b>Figure 7: Authenticator Assurance Level Decision Tree</b></p>
 
-[![Figure 8 is a decision tree to select an appropriate Federation Assurance Level (FAL) for each user community and transactions. Starting from the top of the decision tree, for each user community and transactions, are you federating? If no, a FAL assessment is not required. If yes, specify the risks (to the agency or the subject) of providing the digital service (i.e., an identity assertion is compromised) by determining the risk impact value for each of the impact categories in Table 3: Impact Definitions. Did you assess at high for any of the impact categories? If yes, select FAL3. If no, did you assess moderate for personal safety? If yes, select FAL3. If no, did you assess moderate for any of the remaining impact categories? If yes, select FAL2. If no, did you assess low for harm to agency programs or public interests, unauthorized release of sensitive information, personal safety, or civil or criminal violations? If yes, select FAL2. If no, are you making personal data accessible? If yes, select FAL2. If no, are you using a front channel? If yes, select FAL2. If no, select FAL1. Reassess the FAL level for each user community and transactions based on agency policies or when a significant change to the transaction occurs, whichever comes first.]({{site.baseurl}}/assets/playbooks/dira-fal-tree.png)]({{site.baseurl}}/assets/playbooks/dira-fal-tree.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-fal-tree.png" alt="A decision tree to select an appropriate Federation Assurance Level (FAL) for each user community and transactions." width="560" height="758">
 
 <p align="center"><b>Figure 8: Federation Assurance Level Decision Tree</b></p>
 
@@ -440,15 +440,15 @@ This section includes additional example risk assessment decision trees used by 
 
 This section includes additional example process flow diagrams used by some agencies for the Digital Identity Risk Assessment processes.  Choose and reuse any process flow that works best for your agency.
 
-[![Figure 9 is a graphic representation of the digital identity risk assessment process. Step 1 is Determine User Type. Step 2 is Define Transactions. Step 3 is Determine Impact Level for Transactions. Step 4 is Determine Assurance Levels. Step 5 is Map Transactions to Roles. Step 6 is Implement the Technology. Step 7 is Validate Requirements. Step 8 is Perform Periodic Reassessments.]({{site.baseurl}}/assets/playbooks/dira-process-long.png)]({{site.baseurl}}/assets/playbooks/dira-process-long.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-process-long.png" alt="A circular diagram of the digital identity risk assessment process. Step 1 is Determine User Type. Step 2 is Define Transactions. Step 3 is Determine Impact Level for Transactions. Step 4 is Determine Assurance Levels. Step 5 is Map Transactions to Roles. Step 6 is Implement the Technology. Step 7 is Validate Requirements. Step 8 is Perform Periodic Reassessments." width="560" height="554">
 
 <p align="center"><b>Figure 9: Explains the DIRA Process from Data Collection to Ongoing Assessment</b></p>
 
-[![Figure 10 is an arrow shaped graphic that depicts the six phases of the DIRA process flow. The first phase is Data Collection. The second phase is Analysis. The third phase is Review. The fourth phase is Implementation Determination. The fifth phase is Concurrence. The sixth phase is Ongoing Assessment. There is an arrow head pointing right on the right side of the sixth phase.]({{site.baseurl}}/assets/playbooks/dira-process-arrow.png)]({{site.baseurl}}/assets/playbooks/dira-process-arrow.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-process-arrow.png" alt="An arrow shaped graphic that depicts the six phases of the DIRA process flow. The first phase is Data Collection. The second phase is Analysis. The third phase is Review. The fourth phase is Implementation Determination. The fifth phase is Concurrence. The sixth phase is Ongoing Assessment. There is an arrow head pointing right on the right side of the sixth phase." width="560" height="315">
 
 <p align="center"><b>Figure 10: Explains in a More Detailed Way the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase</b></p>
 
-[![Figure 11 is a flowchart depicting 18 steps for performing a Digital Identity Risk Assessment. Steps 1 through 3 are under the column heading Data Collection. Steps 4 and 5 are under the column heading Analysis. Steps 6 through 10 are under the column heading Review. Steps 11 through 13 are under the column heading Implementation Determination. Steps 14 and 15 are under the column heading Concurrence. Steps 16 through 18 are under the column headig Ongoing Assessment. Below the first through fifth columns there is a bar labeled Outputs. The outputs are as follows Column 1 Transaction Data, Column 2 Provisional xALs for Review, Column 3 Assessed xALs, Column 4 Implementation x ALs, Column 5 Approved Digital Identity Acceptance Statement.]({{site.baseurl}}/assets/playbooks/dira-process-arrow-chart.png)]({{site.baseurl}}/assets/playbooks/dira-process-arrow-chart.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-process-arrow-chart.png" alt="A flowchart depicting 18 steps for performing a Digital Identity Risk Assessment." width="560" height="360">
 
 <p align="center"><b>Figure 11: Explains a Six-Step Process of What is Required to Implement a DIRA</b></p>
 
@@ -481,7 +481,7 @@ In June 2017, NIST replaced the Electronic Authentication Guideline[^24] with th
 
 NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.
 
-[![Figure 12 explains where the Digital Identity Guidelines information can be found.]({{site.baseurl}}/assets/playbooks/dira-800-63.png)]({{site.baseurl}}/assets/playbooks/dira-800-63.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dira-800-63.png" alt="Figure 12 explains where the Digital Identity Guidelines information can be found." width="560" height="401">
 
 <p align="center"><b>Figure 12: Digital Identity Guideline Information Locations</b></p>
 

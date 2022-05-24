@@ -42,7 +42,7 @@ sidenav: fpkicommon
 
 No. PIV credentials will *not* be affected by this change.  For example, the graphic below shows the current and future state of certificate validation for a PIV credential issued by the USAccess Program.  Although two certificates in the chain are being updated, the PIV credential certificates are *not* affected. 
 <br>
-[![current_and_future_state]({{site.baseurl}}/assets/fpki/FCPCA_G2_Transition.jpg)]({{site.baseurl}}/assets/fpki/FCPCA_G2_Transition.jpg){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/fpki/FCPCA_G2_Transition.jpg" alt="current and future state." width="560" height="315">
 
 ## Is the Federal Common Policy CA changing?
 
@@ -189,44 +189,43 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     [![error_navigation]({{site.baseurl}}/assets/fpki/error_navigation.png)]({{site.baseurl}}/assets/fpki/error_navigation.png){:target="_blank"}{:rel="noopener noreferrer"}
+     <img src="{{site.baseurl}}/assets/fpki/error_navigation.png" alt="An image showing an error navigation message." width="560" height="397">
 
 *Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     [![error_piv_auth]({{site.baseurl}}/assets/fpki/error_piv_auth.png)]({{site.baseurl}}/assets/fpki/error_piv_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+     <img src="{{site.baseurl}}/assets/fpki/error_piv_auth.png" alt="An image showing an error piv authetication message." width="560" height="292">
 
 *Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:*
      <br>
-     <br>
-     [![error_sig_val]({{site.baseurl}}/assets/fpki/error_sig_val.png)]({{site.baseurl}}/assets/fpki/error_sig_val.png){:target="_blank"}{:rel="noopener noreferrer"}
+     <img src="{{site.baseurl}}/assets/fpki/error_sig_val.png" alt="An image showing a digital signature invalid error message." width="381" height="242">
 
 ## What errors can occur in macOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     [![safari_untrusted_ssl]({{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
+     <img src="{{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png" alt="An image showing a safari untrusted ssl error message." width="476" height="284">
 
 *Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     [![safari_untrusted_auth]({{site.baseurl}}/assets/fpki/safari_untrusted_auth.png){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/safari_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+     <img src="{{site.baseurl}}/assets/fpki/safari_untrusted_auth.png" alt="An image showing a safari untrusted authentication error message." width="476" height="285">
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     [![chrome_untrusted_ssl]({{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
+     <img src="{{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png" alt="An image showing a chrome untrusted ssl error message." width="476" height="291">
 
 *Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     [![chrome_untrusted_auth]({{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+     <img src="{{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png" alt="An image showing a chrome untrusted authentication error message." width="476" height="290">
 
 ## What errors can occur in iOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     <a href="{{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png" height="600" alt="ios_safari_untrusted_ssl"></a>
+     <img src="{{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png" height="600" alt="An image showing ios safari untrusted ssl.">
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     <a href="{{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png" height="600" alt="ios_chrome_untrusted_ssl"></a>
+     <img src="{{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png" height="600" alt="An image showing ios chrome untrusted ssl.">
 
 ## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
 
@@ -246,7 +245,7 @@ To ensure PIV credential certificates issued by the Entrust Federal SSP before A
 
 The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk (" <span style="color:red">*</span>.")
 
-[![Link Certificate Path]({{site.baseurl}}/assets/fpki/link-cert-path.png)]({{site.baseurl}}/assets/fpki/link-cert-path.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/fpki/link-cert-path.png" alt="An image showing a certificate link path." width="402" height="513">
 
 ## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
 
