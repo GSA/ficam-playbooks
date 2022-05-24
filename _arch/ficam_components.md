@@ -29,7 +29,7 @@ The systems components are representative examples only. Some solutions chosen b
 
 The following figure is an example for a small selection of system components only.  You can modify the graphic or incorporate it as is and target state system components for enterprise roadmap planning.
 
-[![A diagram that shows example components for each service area, and relationships between practice areas.]({{site.baseurl}}/assets/arch/ComponentExamples.png)]({{site.baseurl}}/assets/arch/ComponentExamples.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/arch/ComponentExamples.png" alt="A diagram that shows example components for each service area, and relationships between practice areas." width="560" height="319">
 
 ## Authoritative Sources
 An authoritative source is a trusted repository of identity attribute data.  It’s possible to have multiple authoritative sources for attributes.

@@ -30,7 +30,7 @@ On this page, you'll find guidance to help you implement your ICAM program:
 
 The figure below provides an example of an ICAM governance and program management structure implemented by the Department of Health and Human Services (HHS).
 
-[![HHS ICAM Governance Structure]({{site.baseurl}}/assets/ficampm/examples_HHS-ICAM-Structure.png)]({{site.baseurl}}/assets/ficampm/examples_HHS-ICAM-Structure.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/ficampm/examples_HHS-ICAM-Structure.png" alt="HHS ICAM Governance Structure." width="560" height="336">
 
 ### ICAM PMO Charter
 For an example of an ICAM Program Management Office (PMO) charter, download the [HHS ICAM PMO Governance Charter]({{site.baseurl}}/docs/ficampm-hhs-governance-charter.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, May 2019)

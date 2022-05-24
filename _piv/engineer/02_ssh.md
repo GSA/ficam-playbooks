@@ -42,11 +42,11 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
 2. Double-click on _putty.exe_ and insert your PIV/CAC card into your card reader.
 3. At the **PuTTY Configuration** window, go to _Category:_ &gt; _Connection_ &gt; _SSH_ &gt; _Certificate_. Click the _Set CAPI Cert..._ button and _OK_.
 <br><br>
-[![PuTTY Configuration Window]({{site.baseurl}}/assets/piv/ssh-putty-cac-1.png){:style="float:left"}]({{site.baseurl}}/assets/piv/ssh-putty-cac-1.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/ssh-putty-cac-1.png" alt="PuTTY configuration window." width="470" height="449">
 <br><br>
 4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/piv/details/#understand-piv-certificates/).
 <br><br>
-[![Add CAPI Cert - #2]({{site.baseurl}}/assets/piv/winSCP-5.PNG)]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-5.PNG" alt="A PuTTY select certificate for authentication screenshot." width="454" height="377">
 <br>
 5. Back at the **PuTTY Configuration** window, click the _Copy to Clipboard_ button and paste the SSH key into a text file. (**Note:** PuTTY-CAC derives the SSH key from the public key of your authentication certificate.) The SSH key will look like this:
 
@@ -78,24 +78,24 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 4. Double-click _pageant.exe_ to launch **Pageant**. 
 5. Next, at the **Windows** taskbar, click the _up-arrow_ and right-click the **Pageant** icon (_computer wearing a Fedora_). 
 <br>
-[![Accessing Pageant - #2]({{site.baseurl}}/assets/piv/winSCP-2.PNG)]({{site.baseurl}}/assets/piv/winSCP-2.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-2.PNG" alt="A screenshot showing how to access pageant." width="282" height="162">
 <br>
 6. A **Pageant** dialog box appears. Click _Cert Auth Prompting_.
 <br>
-[![Enable Cert Auth Prompting]({{site.baseurl}}/assets/piv/winSCP-3.PNG)]({{site.baseurl}}/assets/piv/winSCP-3.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-3.PNG" alt="Enable Cert Auth Prompting." width="246" height="276">
 <br>
 7. Click _Add CAPI Cert_ to view eligible authentication certificates.
 <br>
-[![Add CAPI Cert - #1]({{site.baseurl}}/assets/piv/winSCP-4.PNG)]({{site.baseurl}}/assets/piv/winSCP-4.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-4.PNG" alt="A screenshot showing Add CAPI Cert selected." width="247" height="275">
 <br>
 8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/piv/details/#understanding-piv-certificates){:target="_blank"}{:rel="noopener noreferrer"}.)
 <br>
-[![Add CAPI Cert - #2]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:style="width:48%;"}]({{site.baseurl}}/assets/piv/winSCP-5.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-5.PNG" alt="A screenshot showing a PuTTY select certificate for authentication window with the OK button selected." width="269" height="223">
 <br>
 9. Double-click the **Pageant** icon to confirm that your certificate appears on the _Pageant Key List_.   
 10. The _Pageant Key List_ shows the certificate's SSH key attributes, such as type, size, thumbprint, etc. Click your certificate and the _Copy to Clipboard_ button. (**Note:** Pageant derives the SSH key from the public key of your authentication certificate.) Close the _Pageant Key List_.
 <br>
-[![Add CAPI Cert - #3]({{site.baseurl}}/assets/piv/winSCP-6.PNG){:style="width:48%;"}]({{site.baseurl}}/assets/piv/winSCP-6.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-6.PNG" alt="A screenshot showing a pageant key list." width="269" height="193">
 <br>
 11. Paste the SSH key into a text file. It will look like this:
      ```
@@ -106,18 +106,18 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 12. Send the text file to the server administrator and request a new account.
 13. Once you have an account, go to the **WinSCP Login** window. Click _New Site_ and then the _Advanced_ button.
 <br><br>
-[![WinSCP Configuration - #2]({{site.baseurl}}/assets/piv/winSCP-7.PNG){:style="width:63%;"}]({{site.baseurl}}/assets/piv/winSCP-7.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-7.PNG" alt="A screenshot showing the WinSCP Login window with the Advanced button selected." width="353" height="210">
 <br><br>
 15. At the **Advanced Site Settings** window, select _SSH_ &gt; _Authentication_. Click the checkbox for _Attempt Authentication using Pageant_ and then click _OK_. (WinSCP selects additional checkboxes by default.) 
 <br><br>
-[![WinSCP Configuration - #2]({{site.baseurl}}/assets/piv/winSCP-8.PNG){:style="width:63%;"}]({{site.baseurl}}/assets/piv/winSCP-8.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-8.PNG" alt="A screenshot showing the Advanced Site Settings window with SSH, Authentication, and Attempt authentication using Paegent options selected." width="353" height="210">
 <br><br>
 16. Insert your PIV/CAC card into your card reader. 
 17. Enter the remote server's host name and your username. Click _Login_. 
 18. The **Warning** dialog box displays the server’s key thumbprint. Verify it and click _Yes_ to accept.
 19. At the **Certificate Usage Confirmation - Pageant** dialog box, click _Yes_ to confirm your authentication certificate.
 <br><br>
-[![WinSCP Configuration - #2]({{site.baseurl}}/assets/piv/winSCP-10.PNG){:style="width:63%;"}]({{site.baseurl}}/assets/piv/winSCP-10.PNG){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/winSCP-10.PNG" alt="A screenshot showing the Certificate Usage Confirmation - Pageant window with the Yes button selected." width="353" height="211">
 <br><br>
 20. When prompted, enter your PIV/CAC PIN. You'll then be logged into the server.
 
