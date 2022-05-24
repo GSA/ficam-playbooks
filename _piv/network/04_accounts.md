@@ -17,9 +17,9 @@ subnav:
 
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Warning</h4>
+    <h4 class="usa-alert__heading">See This Alert First</h4>
     <p class="usa-alert__text">
-      Microsoft <strong>HIGHLY</strong> recommends that all customers who use CAC, smart card, or certificate-based authentication with AltSecID to <strong>IMMEDIATELY</strong> change the registry key on domain controllers prior to installing the KB5014754 May 2022 updates. See <a class="usa-link" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> for additional information. The Cybersecurity & Infrastructure Security Agency (CISA) has also “Temporarily Removed” the CVE because of the impact that the update caused. If you haven't implemented AltSecIDs, wait for further guidance from CISA or Microsoft.
+      We are in the process of updating this page. Please hold on implementing the guidance on this page. Microsoft <strong>HIGHLY</strong> recommends that all customers who use PIV, smart card, or certificate-based authentication with AltSecID to <strong>IMMEDIATELY</strong> change the registry key on domain controllers prior to installing the KB5014754 May 2022 updates. See <a class="usa-link" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> for additional information. Wait for further guidance from CISA or contact CyberLiasion at CISA dot gov.
     </p>
   </div>
 </div>
@@ -98,8 +98,18 @@ If you are designing an automated process to transition users from Principal Nam
 - For certificates that do not contain a UPN that matches a record in Active Directory:
      - Set aside for manual review (e.g., these users may be no longer affiliated with your organization)
 - Evaluate accounts in Active Directory that do not contain an altSecurityIdentities attribute after process execution for manual review and further remediation
- 
-{% include alert-success.html heading = "Collaborate with us!" content="We're working with a small number of agencies to pilot a simple PowerShell script to help with some of the functional requirements above.  Contact us at icam@gsa.gov if you'd like more information or if you'd like to collaborate with us." %} 
+
+<div class="usa-alert usa-alert--success">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Collaborate with us!</h4>
+    <p class="usa-alert__text">
+      We're working with a small number of agencies to pilot a simple PowerShell script to help with some of the functional requirements above. Check out the script in our    
+      <a class="usa-link" href="[javascript:void(0);](https://github.com/GSA/ficam-scripts-public/tree/master/_altSecId)">public scripts repository</a>
+      or contact ICAM at GSA.Gov for more information.
+    </p>
+  </div>
+</div>
+
 
 #### 2. Enable User Name Hints
 You need to enable _User Name Hints_ for your network domain.  This will modify the logon prompts for _Windows_ workstations and servers joined to the network domain.  Your users will be prompted to provide both the PIV credential PIN value and a User Name Hint value.
