@@ -26,7 +26,7 @@ Identity certificates are issued and digitally signed by a _certification author
 
 The full process of proving identity when issuing the certificates, auditing the certification authorities, and the cryptographic protections of the digital signatures establish the basis of trust for PIV credentials and certificates.
 
-[![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/piv/certificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/piv/certificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/certificatechain_small.png" alt="Example of an identity certificate with intermediate and root." width="506" height="269">
 
 For the federal government Executive Branch agencies, there is one root CA named _Federal Common Policy Certificate Authority G2 (FCPCAG2 or COMMON)_ and there are dozens of intermediate CAs.  The federal government has also established trust with other CAs that serve business communities, state and local government communities, and international government communities.
 
@@ -40,8 +40,7 @@ To digitally trust YOU and your PIV credential certificates, the workstations, s
 
 The certificate chain includes the intermediate CA certificates and the Federal Common Policy Certification Authority (COMMON) root certificate.
 
-[![Example of a PIV certificate chain to Common]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
-
+<img src="{{site.baseurl}}/assets/piv/pivcertificatechain_small.png" alt="Example of a PIV certificate chain to Common." width="506" height="268">
 
 {% include alert-info.html heading = "Federal PKI Person Root - COMMON" content="The Federal Common Policy Certification Authority G2 (COMMON) root certificate is included in Adobe trust stores by default.  It is not included by default in Microsoft, Apple, Mozilla, Java, all mobile device operating systems, or Linux based operating systems." %}
 

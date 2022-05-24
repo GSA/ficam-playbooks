@@ -27,8 +27,7 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 	
 	**Note:** It's okay if different certification authorities appear below the FCPCA G2 for your certificate. 
 
-[![verify_common_migration]({{site.baseurl}}/assets/fpki/verify-migration-windows.png){:style="width:40%;"}]({{site.baseurl}}/assets/fpki/verify-migration-windows.png){:target="_blank"}{:rel="noopener noreferrer"}
-
+<img src="{{site.baseurl}}/assets/fpki/verify-migration-windows.png" alt="verify common migration in Windows." width="224" height="285">
 
 ### Verify Migration on macOS
 
@@ -38,8 +37,7 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 4. Browse to and select any of the certificates found on your PIV credential (the **Name** column displays your name).
 5. Verify the *This certificate is valid* message appears beneath the certificate details.
 
-[![verify_common_migration]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:style="width:70%;"}]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:target="_blank"}{:rel="noopener noreferrer"}
-
+<img src="{{site.baseurl}}/assets/fpki/verify-migration-macos.png" alt="verify common migration in macOS." width="392" height="206">
 
 ### Troubleshooting
 
