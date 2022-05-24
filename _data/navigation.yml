@@ -83,7 +83,7 @@ fpki:
     href: /fpki/
   - text: Certification Authorities
     href: /fpki/ca/
-  - text: Path Discovery and Validation (PDVAL)
+  - text: Path Discovery and Validation (PDVal)
     href: /fpki/pdval/
   - text: Trust Stores
     href: /fpki/trust-stores/
