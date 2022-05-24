@@ -13,8 +13,7 @@ The goals are aspirational statements designed for senior government leaders, ag
 
 The visual includes three goals, each with its own objectives. 
 
-[![Three boxes that define the goals and their corresponding objectives.]({{site.baseurl}}/assets/arch/goals_GoalsAndObjectives.png)]({{site.baseurl}}/assets/arch/goals_GoalsAndObjectives.png){:target="_blank"}{:rel="noopener noreferrer"}
-
+<img src="{{site.baseurl}}/assets/arch/goals_GoalsAndObjectives.png" alt="Three boxes that define the goals and their corresponding objectives." width="560" height="312">
 
 **Goal 1: Modernize security policies and solutions to make risk-based decisions, automate identity and access management processes, and move access protections closer to government data.**
 - 1.1 - Review, update, and maintain comprehensive ICAM policies and technology solution roadmaps to inform and enforce enterprise strategic planning, risk management, and modernization.

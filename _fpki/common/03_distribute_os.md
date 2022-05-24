@@ -363,7 +363,7 @@ This option works for **iOS** devices only.
 
 	You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
-<a href="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust"></a>
+<img src="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust">
 
 <br>
 

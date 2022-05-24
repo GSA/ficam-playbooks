@@ -66,7 +66,7 @@ sudo defaults write /Library/Preferences/com.apple.security.smartcard UserPairin
 ### Step 2. Write the Property List
 A property list, or plist, maps smart card attributes to a Windows domain account. The most common configuration is to map the NT Principal Name in the PIV Authentication certificate Subject Alternative Name to the userPrincipalName attribute in Active Directory. The following image provides the contents of a configuration file that extracts the NT Principal Name from a PIV to match against a directory AltSecID in support of an authentication event.
 
-[![PList configuration for extracting a domain account identifier from a PIV]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:style="float:left"}]({{site.baseurl}}/assets/piv/attribute_mapping_plist.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/piv/attribute_mapping_plist.png" alt="PList configuration for extracting a domain account identifier from a PIV." width="560" height="201">
 
 Agencies may want to apply [additional smart card configuration](https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"} settings. Additional options may include:
 - allowSmartCard - Must be set to TRUE to allow the device to leverage smart cards for multiple functions (authentication, digital signing). 

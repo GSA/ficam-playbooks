@@ -30,19 +30,19 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a1" class="usa-accordion__content usa-prose">
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/Identity-Creation.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/Identity-Creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px" /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/Identity-Creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px" /></p>
     <p>When you onboard an employee or contractor at your agency, you collect identity information from the individual and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.</p>
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/1-IconKey.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/1-IconKey.png" alt="Icon Key for the diagrams that follow." /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/1-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Collect information</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/1-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/1-1.png" width="250" alt="A diagram showing an employee or contractor providing identity information to an administrator with the authoritative source." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Collect information</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/1-1.png" width="250" alt="A diagram showing an employee or contractor providing identity information to an administrator with the authoritative source." /></td>
         <td style="border:0px;">The administrator collects identity information from the employee or contractor.<br /><br /><i>This identity information may come from the individual, onboarding documents, or HR systems.</i></td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Create an enterprise identity</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/1-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/1-2.png" width="250" alt="A diagram showing the authoritative source populating the identity information into a data repository, creating an enterprise identity in the authoritative source." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Create an enterprise identity</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/1-2.png" width="250" alt="A diagram showing the authoritative source populating the identity information into a data repository, creating an enterprise identity in the authoritative source." /></td>
         <td style="border:0px;">The administrator adds the identity information to the authoritative source, a data repository. <br /><br /> Result: An enterprise identity in the authoritative source for the employee or contractor.</td>
       </tr>
       <tr>
@@ -50,15 +50,15 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
         <td style="border:0px;">The following steps describe identity maintenance your agency should perform on a regular basis.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>3a. Identify and aggregate identity data</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/1-3a.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/1-3a.png" width="250" alt="A diagram showing the data repository with multiple enterprise identities for one individual, and an arrow indicating the change to a single consolidated enterprise identity." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3a. Identify and aggregate identity data</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/1-3a.png" width="250" alt="A diagram showing the data repository with multiple enterprise identities for one individual, and an arrow indicating the change to a single consolidated enterprise identity." /></td>
         <td style="border:0px;">Query your data repositories for any existing identities for an individual. Aggregate these attributes as a single enterprise identity for the individual.</td>
       </tr>
       <tr>
-          <td style="width:250px;border:0px;"><strong>3b. Update the enterprise identity</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/1-3b.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/1-3b.png" width="250" alt="A diagram showing two paths to update an identity. Path 1 is the administrator updating the enterprise identity directly in the authoritative source. Path 2 is the employee or contractor updating their personal information in an agency application, and the application updating the enterprise identity in the authoritative source." /></a></td>
+          <td style="width:250px;border:0px;"><strong>3b. Update the enterprise identity</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/1-3b.png" width="250" alt="A diagram showing two paths to update an identity. Path 1 is the administrator updating the enterprise identity directly in the authoritative source. Path 2 is the employee or contractor updating their personal information in an agency application, and the application updating the enterprise identity in the authoritative source." /></td>
         <td style="border:0px;">If an individual has updated personal information, there are two ways to update the enterprise identity: <br /> <br /> <ul> <li> The administrator updates the individual’s enterprise identity attributes directly in the authoritative sources.</li> <li>The individual uses an agency application to update their personal information, and the application updates the individual’s enterprise identity attributes in the authoritative sources.</li></ul></td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>3c. Delete the enterprise identity</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/1-3c.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/1-3c.png" width="250" alt="A diagram showing an administrator deleting an enterprise identity." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3c. Delete the enterprise identity</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/1-3c.png" width="250" alt="A diagram showing an administrator deleting an enterprise identity." /></td>
         <td style="border:0px;">When you need to delete an enterprise identity, delete the identity attributes in the authoritative source.</td>
       </tr>
     </table>
@@ -78,7 +78,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a2" class="usa-accordion__content usa-prose">
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/Identity-IdentityProofing.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/Identity-IdentityProofing.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Identity Proofing service. " align="right" style="padding-left:15px" /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/Identity-IdentityProofing.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Identity Proofing service. " align="right" style="padding-left:15px" /></p>
     <p>Before you can create a credential and assign it to an individual, that person must provide proof of their claimed identity. Identity proofing is the process by which a federal agency collects and verifies information about a person to establish an enterprise identity.</p>
     <p>The location or information that a person needs to access informs the Identity Assurance Level (IAL), which determines the elements you should require from that person for identity proofing. There are three IALs; however, federal agencies require a minimum of IAL2 for employees or contractors with recurring access to government resources, so these use cases do not include IAL1.</p>
     <p>This use case describes the high-level steps to proof an identity at IAL2 or IAL3. Depending on the required IAL, you may require increasingly more information from an employee or contractor or partner along with additional verification steps. The information provided by the employee or contractor is also known as identity evidence. Identity evidence may be physical, such as passports, driver’s licenses, and birth certificates.</p>
@@ -90,14 +90,14 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <hr />
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.</p>
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/2-IconKey.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/2-IconKey.png" alt="Icon Key for the diagrams that follow." /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/2-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Collect identity information</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/2-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/2-1.png" width="250" alt="A diagram showing an employee or contractor presenting information or data to an administrator." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Collect identity information</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/2-1.png" width="250" alt="A diagram showing an employee or contractor presenting information or data to an administrator." /></td>
         <td style="border:0px;"><strong>IAL2</strong> <i>(In-person or remote)</i> - The employee or contractor presents identity information, like first name, last name, and address of record.<br /><br /><strong>IAL3</strong> <i>(In-person or supervised remote)</i> - The employee or contractor presents identity information, like first name, last name, and address of record, and biometric data like fingerprints.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Verify the identity information</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/2-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/2-2.png" width="250" alt="A diagram showing an administrator verifying information presented by an employee or contractor." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Verify the identity information</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/2-2.png" width="250" alt="A diagram showing an administrator verifying information presented by an employee or contractor." /></td>
         <td style="border:0px;"><strong>IAL2</strong> - The administrator confirms the information provided is valid and current by comparing photo identification to the individual, or confirming contact information, ensuring it matches the provided documentation. <br /><br /><strong>IAL3</strong> - The administrator verifies all information with the issuing organization. <br /> <i>Result:</i> The individual’s identity has been successfully proofed at IAL2, or IAL3. </td>
       </tr>
     </table>
@@ -120,23 +120,23 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a3" class="usa-accordion__content usa-prose">
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/Identity-Provisioning.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/Identity-Provisioning.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Provisioning service. " align="right" style="padding-left:15px" /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/Identity-Provisioning.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Provisioning service. " align="right" style="padding-left:15px" /></p>
     <p>You can assign access entitlements to individuals, roles, and groups. These entitlements define an employee or contractor’s access to agency services, so you’ll need to assign entitlements before an employee or contractor can access an agency service.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an administrator needs to assign entitlements to an employee or contractor.</p>
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/3-IconKey.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/3-IconKey.png" alt="Icon Key for the diagrams that follow." /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/3-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/3-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/3-1.png" width="250" alt="A diagram showing an employee or contractor requesting entitlements from an administrator." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/3-1.png" width="250" alt="A diagram showing an employee or contractor requesting entitlements from an administrator." /></td>
         <td style="border:0px;">An individual requests entitlements, or joins a team with specific access requirements.<br /><br />The requestor may be the employee or contractor, their supervisor, HR, or a security team member.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Review the request</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/3-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/3-2.png" width="250" alt="A diagram showing an administrator comparing an entitlement request with access requirements." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Review the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/3-2.png" width="250" alt="A diagram showing an administrator comparing an entitlement request with access requirements." /></td>
         <td style="border:0px;"> The administrator compares the employee or contractor’s requested entitlements with the relevant access requirements.<br /><br />If the employee or contractor qualifies for the requested entitlements and has a mission need for access, the administrator approves the request.</td>
       </tr>
         <tr>
-        <td style="width:250px;border:0px;"><strong>3. Assign the entitlements</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/3-3.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/3-3.png" width="250" alt="A diagram showing an administrator assigning entitlements to the employee or contractor." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3. Assign the entitlements</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/3-3.png" width="250" alt="A diagram showing an administrator assigning entitlements to the employee or contractor." /></td>
         <td style="border:0px;"> The administrator assigns the entitlements to the employee or contractor.<br /><br />Any time the employee or contractor’s role or relationship changes, the administrator updates the entitlements accordingly, including removing entitlements as needed.</td>
       </tr>
     </table>
@@ -159,25 +159,25 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a4" class="usa-accordion__content usa-prose">
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/Credential-Issuance.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/Credential-Issuance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. " align="right" style="padding-left:15px" /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/Credential-Issuance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. " align="right" style="padding-left:15px" /></p>
     <p>After you identity proof an individual, you’ll issue some proof of that individual’s claimed identity. A credential (like a physical card) is a type of authenticator that serves as a tool for an employee or contractor to gain access to agency services.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an administrator needs to issue a credential to an employee or contractor.</p>
     <p><strong>Note:</strong> The preferred credential for employees and contractors is a PIV card. For cases where you cannot issue a PIV card, you must use a combination of factors to reach at least an Authenticator Assurance Level 2 (AAL2) credential.</p>
     <p>For more information about authentication and AALs, see <a href="https://pages.nist.gov/800-63-3/" target="_blank" rel="noopener noreferrer">NIST SP 800-63-B</a> (Section 4).</p>
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/4-IconKey.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/4-IconKey.png" alt="Icon Key for the diagrams that follow." /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/4-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/4-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/4-1.png" width="250" alt="A diagram showing an employee or contractor and a sponsor or supervisor initiating a credential request with an administrator." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/4-1.png" width="250" alt="A diagram showing an employee or contractor and a sponsor or supervisor initiating a credential request with an administrator." /></td>
         <td style="border:0px;">An individual presents a valid government issued ID.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Review the request</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/4-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/4-2.png" width="250" alt="A diagram showing an administrator verifying the presented credential with the organization that issued it." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Review the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/4-2.png" width="250" alt="A diagram showing an administrator verifying the presented credential with the organization that issued it." /></td>
         <td style="border:0px;">The government ID is verified with the organization that issued it.</td>
       </tr>
         <tr>
-        <td style="width:250px;border:0px;"><strong>3. Generate and assign the authenticator(s)</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/4-3.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/4-3.png" width="250" alt="A diagram showing an administrator generating and assigning an authenticator to the employee or contractor." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3. Generate and assign the authenticator(s)</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/4-3.png" width="250" alt="A diagram showing an administrator generating and assigning an authenticator to the employee or contractor." /></td>
         <td style="border:0px;">Generate and assign the authenticator to the individual.</td>
       </tr>
     </table>
@@ -197,24 +197,24 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a5" class="usa-accordion__content usa-prose">
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/Credential-Maintenance.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/Credential-Maintenance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance service." align="right" style="padding-left:15px" /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/Credential-Maintenance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance service." align="right" style="padding-left:15px" /></p>
     <p>A derived credential is a credential derived from an existing credential, with a different form factor, such as a credential on a mobile device. Derived credentials have the same IAL as the existing credential and the same or lower AAL.</p>
     <p>When an employee or contractor requires authentication but cannot leverage an existing credential, they can use a derived credential. To be eligible for a derived credential, the employee or contractor must already have a valid credential with Authenticator Assurance Level (AAL) 2 or 3.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an employee or contractor interacts with the agency services to register or request a derived credential.</p>
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/5-IconKey.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/5-IconKey.png" alt="Icon Key for the diagrams that follow." /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/5-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/5-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/5-1.png" width="250" alt="A diagram showing an employee or contractor initiating a derived credential request to an enterprise identity management system." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/5-1.png" width="250" alt="A diagram showing an employee or contractor initiating a derived credential request to an enterprise identity management system." /></td>
         <td style="border:0px;">A request for identity data is initiated to the identity manager. <br /><br /><i> This identity manager could be a person or system, depending on the organization.</i></td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Authenticate the existing credential</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/5-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/5-2.png" width="250" alt="A diagram showing an employee or contractor authenticating an existing credential to an enterprise identity management system." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Authenticate the existing credential</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/5-2.png" width="250" alt="A diagram showing an employee or contractor authenticating an existing credential to an enterprise identity management system." /></td>
         <td style="border:0px;">The identity manager identifies relevant sources of data on the individual. <br /><br /><i> Sources could include HR systems, security data, and personal databases.</i></td>
       </tr>
         <tr>
-        <td style="width:250px;border:0px;"><strong>3. Generate the derived credential</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/5-3.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/5-3.png" width="250" alt="A diagram showing an enterprise identity management system generating a derived credential for an employee or contracter." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3. Generate the derived credential</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/5-3.png" width="250" alt="A diagram showing an enterprise identity management system generating a derived credential for an employee or contracter." /></td>
         <td style="border:0px;">Generate the derived authenticator and note the change in the user's enterprise identity record.</td>
       </tr>
     </table>
@@ -237,7 +237,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a6" class="usa-accordion__content usa-prose">
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/Credential-MaintenanceRevocation.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/Credential-MaintenanceRevocation.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. " align="right" style="padding-left:15px" /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/Credential-MaintenanceRevocation.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. " align="right" style="padding-left:15px" /></p>
     <p>Active credentials require regular maintenance. This use case describes the most common credential maintenance activities:</p>
     <ul>
       <li><strong><a href="#reset-a-credential">Reset a credential</a></strong> - An employee or contractor forgets the password or PIN associated with a credential and requests a reset.</li>
@@ -247,20 +247,20 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <p>You should periodically review your employee or contractors’ eligibility for credentials to identify potential orphaned data.</p>
     <hr />
     <h2 id="use-cases">Use Cases</h2>
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/6-IconKey.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-IconKey.png" alt="Icon Key for the diagrams that follow." /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/6-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <h3 id="reset-a-credential">Reset a Credential</h3>
     <p>In this use case, an administrator needs to reset a password or PIN for an employee or contractor credential.</p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/6-Reset-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-Reset-1.png" width="250" alt="A diagram showing an employee or contractor initiating a password or pin reset request to an enterprise identity management system." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/6-Reset-1.png" width="250" alt="A diagram showing an employee or contractor initiating a password or pin reset request to an enterprise identity management system." /></td>
         <td style="border:0px;">An employee or contractor forgets their password or PIN, and requests a reset.<br /><br />If the request is valid, the identity management system approves the request.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Issue a reset</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/6-Reset-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-Reset-2.png" width="250" alt="A diagram showing an enterprise identity management system issueing a password or pin reset to an employee or contracter." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Issue a reset</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/6-Reset-2.png" width="250" alt="A diagram showing an enterprise identity management system issueing a password or pin reset to an employee or contracter." /></td>
         <td style="border:0px;">The system issues a password/PIN reset, which may be a temporary password or a link to a web-based reset form.</td>
       </tr>
         <tr>
-        <td style="width:250px;border:0px;"><strong>3. Reset the credential</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/6-Reset-3.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-Reset-3.png" width="250" alt="A diagram showing an employee or contractor resetting a password or PIN." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3. Reset the credential</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/6-Reset-3.png" width="250" alt="A diagram showing an employee or contractor resetting a password or PIN." /></td>
         <td style="border:0px;">The employee or contractor resets their password or PIN.</td>
       </tr>
     </table>
@@ -268,15 +268,15 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <p>In this use case, an administrator needs to issue a new credential to replace one that will expire soon or has outdated identity information.</p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/6-Renew-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-Renew-1.png" width="250" alt="A diagram showing an employee or contractor initiating a credential renewal request to an enterprise identity management system." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/6-Renew-1.png" width="250" alt="A diagram showing an employee or contractor initiating a credential renewal request to an enterprise identity management system." /></td>
         <td style="border:0px;">An individual requests a renewal for an employee or contractor’s credential.<br /><br />This individual may be the employee or contractor, their supervisor, or an administrator with approval authority.<br /><br />This could also be an automated process triggered by schedules or specific events.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Review the request</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/6-Renew-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-Renew-2.png" width="250" alt="A diagram showing an enterprise identity management system reviewing a credential renewal request for an employee or contracter." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Review the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/6-Renew-2.png" width="250" alt="A diagram showing an enterprise identity management system reviewing a credential renewal request for an employee or contracter." /></td>
         <td style="border:0px;">The identity management system reviews the request and verifies that the employee or contractor qualifies for a renewed credential. If so, approve the request.</td>
       </tr>
         <tr>
-        <td style="width:250px;border:0px;"><strong>3. Replace the credential</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/6-Renew-3.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-Renew-3.png" width="250" alt="A diagram showing an enterprise identity management system issueing a new credential to an employee or contracter." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3. Replace the credential</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/6-Renew-3.png" width="250" alt="A diagram showing an enterprise identity management system issueing a new credential to an employee or contracter." /></td>
         <td style="border:0px;">The system issues a new credential to the employee or contractor, and updates the associated enterprise identity record.</td>
       </tr>
     </table>
@@ -284,15 +284,15 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <p>In this use case, an administrator needs to revoke an active credential.</p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/6-Revoke-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-Revoke-1.png" width="250" alt="A diagram showing an employee or contractor or a sponsor or supervisor initiating a credential revocation request to an enterprise identity management system." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/6-Revoke-1.png" width="250" alt="A diagram showing an employee or contractor or a sponsor or supervisor initiating a credential revocation request to an enterprise identity management system." /></td>
         <td style="border:0px;">An individual sends a separation notification or a notice of a lost or compromised credential, requesting revocation.<br /><br />This individual may be the employee or contractor, their supervisor, HR, or a security team member.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Disable the credential</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/6-Revoke-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-Revoke-2.png" width="250" alt="A diagram showing an administrator of an enterprise identity management system invalidates the credential." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Disable the credential</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/6-Revoke-2.png" width="250" alt="A diagram showing an administrator of an enterprise identity management system invalidates the credential." /></td>
         <td style="border:0px;">The administrator invalidates the credential.<br />Depending on your agency, an individual or a system may perform this task. </td>
       </tr>
         <tr>
-        <td style="width:250px;border:0px;"><strong>3. Return the credential</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/6-Revoke-3.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/6-Revoke-3.png" width="250" alt="A diagram showing an administrator returning the invalidated hardware or physical credential to the supervisor or sponsor." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3. Return the credential</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/6-Revoke-3.png" width="250" alt="A diagram showing an administrator returning the invalidated hardware or physical credential to the supervisor or sponsor." /></td>
         <td style="border:0px;">If the revoked credential is physical or hardware-based, the administrator returns the credential to the appropriate individual.<br /><br />This individual may be a supervisor, HR, or security team member.</td>
       </tr>
     </table>
@@ -317,7 +317,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a7" class="usa-accordion__content usa-prose">
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/Access-AuthnAuthz.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/Access-AuthnAuthz.png" alt="This use case corresponds to the Authentication and Authorization service areas of Access Management." align="right" style="padding-left:15px" /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/Access-AuthnAuthz.png" alt="This use case corresponds to the Authentication and Authorization service areas of Access Management." align="right" style="padding-left:15px" /></p>
     <p>This use case describes the steps to authenticate individuals and authorize access to agency services. Agency services can be anything from applications and files to physical facilities.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
@@ -326,26 +326,26 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
       <li><em>Authentication</em> - I want to verify the claimed unique identity of a given employee or contractor  so that the system can verify the right individual is attempting to access an agency service.</li>
       <li><em>Authorization</em> - I want to allow access for only employees and contractors that meet established requirements so that only the people who should have access do have access.</li>
     </ul>
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/7-IconKey.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/7-IconKey.png" alt="Icon Key for the diagrams that follow." /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/7-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Access Attempt</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/7-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/7-1.png" width="250" alt="A diagram showing an employee or contractor attempting to access a agency service through an access control system." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Access Attempt</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/7-1.png" width="250" alt="A diagram showing an employee or contractor attempting to access a agency service through an access control system." /></td>
         <td style="border:0px;">An employee or contractor attempts to access an agency service.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Authenticate the employee or contractor</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/7-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/7-2.png" width="250" alt="A diagram showing an employee or contractor presenting either an IAL2 or IAL3 authenticator to an access control system." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Authenticate the employee or contractor</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/7-2.png" width="250" alt="A diagram showing an employee or contractor presenting either an IAL2 or IAL3 authenticator to an access control system." /></td>
         <td style="border:0px;">The employee or contractor presents an authenticator to the ACS that meets the protected resource’s minimum assurance requirements:<ul><li><strong>AAL2</strong> (two-factor) - Something you know + something you have, like a one-time passcode.</li><li><strong>AAL3</strong> (two-factor + hardware) - Something you know + something you have, like a one-time passcode generated by a hardware-based authenticator; or a PIV credential. For more information about AAL values, see <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5" target="_blank" rel="noopener noreferrer">NIST SP 800-63B Section 5: Authenticator and Verifier Requirements</a>.</li></ul></td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>3. Determine the access entitlements and access requirements</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/7-3.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/7-3.png" width="250" alt="A diagram showing an access control system determining the access entitlements and access requirements." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3. Determine the access entitlements and access requirements</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/7-3.png" width="250" alt="A diagram showing an access control system determining the access entitlements and access requirements." /></td>
         <td style="border:0px;">Upon successful authentication, the ACS identifies 1) The employee or contractor's access entitlements associated with the protected resource, and 2) The protected resource's access requirements.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>4. Process the access information</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/7-4.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/7-4.png" width="250" alt="A diagram showing an access control system processing the employee or contractor access entitlements to the protected resources's access requirements." /></a></td>
+        <td style="width:250px;border:0px;"><strong>4. Process the access information</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/7-4.png" width="250" alt="A diagram showing an access control system processing the employee or contractor access entitlements to the protected resources's access requirements." /></td>
         <td style="border:0px;">The ACS compares the employee or contractor’s access entitlements to the protected resource’s access requirements to decide whether to authorize access.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>5. Grant access</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/7-5.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/7-5.png" width="250" alt="A diagram showing an access control system granting access to an employee or contractor." /></a></td>
+        <td style="width:250px;border:0px;"><strong>5. Grant access</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/7-5.png" width="250" alt="A diagram showing an access control system granting access to an employee or contractor." /></td>
         <td style="border:0px;"> If the employee or contractor meets the protected resource’s access requirements, the ACS grants access to the protected resource.<br /><br />The ACS logs the access attempt and decision for auditing purposes.</td>
       </tr>
     </table>
@@ -365,29 +365,29 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a8" class="usa-accordion__content usa-prose">
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/Federation-AttributeExchange.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/Federation-AttributeExchange.png" alt="Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for the Attribute Exchange service in Federation." align="right" style="padding-left:15px" /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/Federation-AttributeExchange.png" alt="Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for the Attribute Exchange service in Federation." align="right" style="padding-left:15px" /></p>
     <p>Federal employees and contractors often need to access protected services managed by other federal agencies. Federation is the means by which an agency can accept authentication assertions and associated identity attributes from systems within their agency and at other agencies. This allows federal employees and contractors from across agencies to access protected resources and streamlines the user’s experience.</p>
     <p>Agencies can pass assertions to share attributes about employees and contractors.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an employee or contractor from Agency A attempts to access a federated service at Agency B. This use case assumes the employee or contractor already has an account or entitlements to access resources at Agency B, or that they will be provisioned.</p>
     <p>For more information about granting access to protected resources, see Use Case 7. Grant Access.
-    <p><a href="{{site.baseurl}}/assets/arch/usecases/8-IconKey.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/8-IconKey.png" alt="Icon Key for the diagrams that follow." /></a></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/8-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>
-        <td style="width:250px;border:0px;"><strong>1. Request access to federated service</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/8-1.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/8-1.png" width="250" alt="A diagram showing an employee or contractor from Agency A requesting access to a federated service at Agency B." /></a></td>
+        <td style="width:250px;border:0px;"><strong>1. Request access to federated service</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/8-1.png" width="250" alt="A diagram showing an employee or contractor from Agency A requesting access to a federated service at Agency B." /></td>
         <td style="border:0px;">An Agency A employee or contractor requests access to a federated service at Agency B.<br /><br />The employee or contractor selects the Agency A authentication service.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>2. Redirect to Agency A for authentication</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/8-2.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/8-2.png" width="250" alt="A diagram showing an employee or contractor access request is redirected from Agency B access control system to the Agency A authentication service." /></a></td>
+        <td style="width:250px;border:0px;"><strong>2. Redirect to Agency A for authentication</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/8-2.png" width="250" alt="A diagram showing an employee or contractor access request is redirected from Agency B access control system to the Agency A authentication service." /></td>
         <td style="border:0px;">The Agency B system redirects the employee or contractor to the Agency A authentication service.<br /><br />Agency A authenticates the employee or contractor.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>3. Perform transparent transaction</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/8-3.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/8-3.png" width="250" alt="A diagram showing Agency A authentication service passing identity attributes to the Agency B access control system." /></a></td>
+        <td style="width:250px;border:0px;"><strong>3. Perform transparent transaction</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/8-3.png" width="250" alt="A diagram showing Agency A authentication service passing identity attributes to the Agency B access control system." /></td>
         <td style="border:0px;">Agency A passes identity attributes and transaction data to Agency B via a signed assertion.</td>
       </tr>
       <tr>
-        <td style="width:250px;border:0px;"><strong>4. Agency B grants access</strong> <br /> <a href="{{site.baseurl}}/assets/arch/usecases/8-4.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/arch/usecases/8-4.png" width="250" alt="A diagram showing Agency B access control system granting access to an employee or contractor from Agency A." /></a></td>
+        <td style="width:250px;border:0px;"><strong>4. Agency B grants access</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/8-4.png" width="250" alt="A diagram showing Agency B access control system granting access to an employee or contractor from Agency A." /></td>
         <td style="border:0px;"> Agency B consumes the assertion data, optionally correlating it with an established account or local identity and makes an access control decision.<br /><br />The Agency B system redirects the employee or contractor to the federated service.</td>
       </tr>
     </table>
@@ -397,5 +397,3 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
       <li>An employee or contractor from Agency A visits a shared service operated by Agency B to service all federal government users. At the homepage, the employee/contractor selects their Agency A icon and is redirected to their Agency A SSO portal. They log in using their Agency A managed credentials and are redirected back to the Agency B shared service.</li>
     </ul><br>
     <a href="#top">Back to Top</a>
-  </div>
-</div>
