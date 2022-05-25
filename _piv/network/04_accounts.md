@@ -19,7 +19,7 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">See This Alert First</h4>
     <p class="usa-alert__text">
-      We are in the process of updating this page. Please hold on implementing the guidance on this page. Microsoft <strong>HIGHLY</strong> recommends that all customers who use PIV, smart card, or certificate-based authentication with AltSecID to <strong>IMMEDIATELY</strong> change the registry key on domain controllers prior to installing the KB5014754 May 2022 updates. See <a class="usa-link" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> for additional information. Wait for further guidance from CISA or contact CyberLiasion at CISA dot gov.
+      Please hold on implementing the guidance on this page until it is updated. Microsoft <strong>HIGHLY</strong> recommends that all customers who use PIV, smart card, or certificate-based authentication with AltSecID to <strong>IMMEDIATELY</strong> change the registry key on domain controllers prior to installing the KB5014754 May 2022 updates. See <a class="usa-link" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> for additional information. Wait for further guidance from CISA or contact CyberLiasion at CISA dot gov.
     </p>
   </div>
 </div>
