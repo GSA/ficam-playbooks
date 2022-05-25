@@ -24,8 +24,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <col width="200">
 
  <tr>
-  <th colspan="2" style="background-color:#112e51;font-size:20px;"><b>FCPCA G2 Migration Checklist	</b></th>
-  <th style="background-color:#112e51;font-size:20px;" colspan="5"><b>Recommended Participants</b></th>
+  <th colspan="2" style="background-color:#FFFFFF;font-size:20px;"><b>FCPCA G2 Migration Checklist	</b></th>
+  <th style="background-color:#FFFFFF;font-size:20px;" colspan="5"><b>Recommended Participants</b></th>
  </tr>
 
  <tr>

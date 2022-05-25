@@ -32,8 +32,8 @@ subnav:
 Version 1.1  
 January 5, 2021
 
-<a href="{{site.baseurl}}/assets/img/logo-gsa.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"></a>
-<a href="{{site.baseurl}}/assets/img/logo-cio.png" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"></a><br><br><br>
+<img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
+<img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
 This playbook is a collaboration between the Identity, Credential, and Access Management Subcommittee of the Federal Chief Information Security Officer (CISO) Council and the General Services Administration Office of Government-wide Policy identity Assurance and Trusted Access Division
 
@@ -78,7 +78,7 @@ This playbook was developed by the General Services Administration Office of Gov
 
 The three-step process outlined below is a structured, iterative approach with discrete actions to create a digital worker identity management process. _CIO and CISO offices_ are the intended audience for this guide. Use this guide to write, update, or enhance existing enterprise identity management policies. Agencies are encouraged to tailor these steps to meet organizational structures, unique requirements, and mission needs. 
 
-[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. Below 1 Determine the impact is text that lists 1.1 Ensure Proper Oversight, 1.2 Score Risk Impact, and 1.3 Determine Adverse Impact Level. Below 2 Create an Identity is text that lists 2.1 Assign a Sponsor and Custodian and 2.2 Validate Worker Access. Below 3 Provision an Identity is text that lists 3.1 Capture and Store Identity Management Data Elements and 3.2 Capture and Store Identity Governance Data Elements.]({{site.baseurl}}/assets/playbooks/dw-process.png)]({{site.baseurl}}/assets/playbooks/dw-process.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dw-blue-red-green-process.png" alt="The process of establishing digital worker identities. Step 1 is Determine the impact. Step 2 is Create an identity. Step 3 is Provision an identity. The Step 1 portion is dark blue. The Step 2 portion is dark red. The Step 3 portion is dark green. Processes for each step appear below the figure." width="560" height="229">
 
 <p align="center"><b>Figure 1. A Three-Step Process for Digital Worker Identity Management</b></p>
 
@@ -99,7 +99,7 @@ This playbook should aid agencies in integrating digital worker identity managem
 
 # Step 1. Determine the Impact
 
-[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 1 Determine the Impact is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-one.png)]({{site.baseurl}}/assets/playbooks/dw-step-one.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dw-blue-step one.png" alt="The process of establishing digital worker identities. Step 1 is Determine the impact. Step 2 is Create an identity. Step 3 is Provision an identity. The Step 1 portion is dark blue. The Step 2 and Step 3 portions are gray." width="560" height="78">
 
 Ensure digital worker identity management has proper governance, score the function of the digital worker across six categories, and then use the risk score to arrive at an adverse impact level. For this step, we use the Digital Worker Impact Evaluation Matrix (Table 1).
 
@@ -196,7 +196,7 @@ The four adverse impact levels represent a different scale of harm a digital wor
 
 # Step 2. Create an Identity
 
-[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 2 Create an Identity is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-two.png)]({{site.baseurl}}/assets/playbooks/dw-step-two.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dw-red-step-two.png" alt="The process of establishing digital worker identities. Step 1 is Determine the impact. Step 2 is Create an identity. Step 3 is Provision an identity. The Step 1 portion is gray. The Step 2 portion is dark red. The Step 3 portion is gray." width="560" height="78">
 
 Once your agency has determined the digital worker’s level of potential adverse impact, a digital worker identity is created, if needed. The identity process includes sponsorship and validation activities based on the adverse impact level from Step 1. 
 
@@ -260,7 +260,7 @@ Use Table 5 for specific validation actions aligned with adverse impact level.
 
 # Step 3. Provision an Identity
 
-[![A three part arrow diagram that includes 1 Determine the Impact, 2 Create an Identity, and 3 Provision an Identity. 3 Provision an Identity is highlighted.]({{site.baseurl}}/assets/playbooks/dw-step-three.png)]({{site.baseurl}}/assets/playbooks/dw-step-three.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/playbooks/dw-green-step-three.png" alt="The process of establishing digital worker identities. Step 1 is Determine the impact. Step 2 is Create an identity. Step 3 is Provision an identity. The Step 1 and Step 2 portions are gray. The Step 3 portion is dark green." width="560" height="78">
 
 Capture the appropriate digital worker data elements. These attributes are stored in the agency IDMS or other systems.
 
