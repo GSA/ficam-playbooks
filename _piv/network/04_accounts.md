@@ -74,6 +74,49 @@ There are six mapping options to choose from, but most organizations use **Issue
 | SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Not generally recommended; may be difficult to manage.   |
 | RFC822 name | X509:\<RFC822>      |   Not recommended |    Not recommended; not commonly populated in PIV Authentication certificates. |
 
+##### Gathering PIV Authentication Certificates for Mapping into AD
+
+Identity certificates used for Windows logon can generally be found: 
+-	On the smart card itself. 
+-	By requesting the certificates directly from the smart card issuer. 
+-	By exporting the certificates from a third party application in which the certificates are already registered, such as a FIPS 201-compliant <a class="usa-link" href="https://playbooks.idmanagement.gov/pacs/what-is-pacs/" target="_blank" rel="noopener noreferrer">Physical Access Control System (PACS).</a>
+
+Each of these options is discussed below.
+
+**Gather Certificate from Smart Card** <br>
+To gather the certificate from the smart card using a Windows workstation, have the cardholder do the following: 
+1.	Open the Start Menu, located in the bottom left corner of the screen.
+2.	Type **command prompt**.
+3.	In the prompt, type **certutil -scinfo**. 
+<img src="{{site.baseurl}}/assets/piv/pivaccount-certutil.png" alt="A screenshot of a command prompt with certutil information." width="430" height="76">
+4.	Press **Enter**.
+5.	The cardholder will be prompted several times for a PIN, but a PIN is not required for this operation. Have the cardholder press cancel each time they are prompted for a PIN until they see the Certificate list.
+<img src="{{site.baseurl}}/assets/piv/pivaccount-cert-list.png" alt="A screenshot of a Windows Security Certificate List window." width="303" height="268">
+6.	Have the cardholder click **Click here to view certificate properties**. The appropriate certificate will list “Smart Card Logon” in the intended purposes on the General tab. If the certificate has this purpose listed, have the cardholder proceed to Step 7. Otherwise, have the cardholder close the certificate, click **more choices** on the Certificate List, click another certificate in the list, and click **Click here to view certificate properties** until the correct certificate has been identified.
+<img src="{{site.baseurl}}/assets/piv/pivaccount-cert-details.png" alt="A screenshot of a Certificate Details window." width="340" height="458">
+7.	Have the cardholder select the **Details** tab and then proceed with the steps below.  
+8.	Click **copy to file** to start the certificate export wizard. 
+9.	Click **Next**. 
+10.	Click **Next** again to indicate that the cardholder does not wish to export the private key.  
+11.	Click **Next** again to use the default DER encoding. 
+12.	Click **Browse** to select where to save the certificate. Have the cardholder select a location that he or she has permission to save to, such as Desktop or Documents.
+13.	 Enter a meaningful name for the certificate (such as the cardholder’s name or employee ID). 
+14.	Click **Save**. 
+15.	Click **Next**. 
+16.	Click **OK**. 
+17.	Click **OK** to close the Certificate Details window. 
+18.	Click **OK** to close the Certificate List. 
+19.	Close the command prompt.
+<img src="{{site.baseurl}}/assets/piv/pivaccount-this-pc.png" alt="A screenshot of a Save As window with the This PC option highlighted." width="468" height="293">
+<img src="{{site.baseurl}}/assets/piv/pivaccount-cert-export-wiz.png" alt="A screenshot showing several windows with the Certificate Export Wizard window on top." width="463" height="432"> 
+20.	Have the cardholder send the exported .cer file to your organization’s Network Administrator in a way that aligns with the organization’s security policies.
+
+**Request Certificates from the Smart Card Issuer** <br>
+Your organization’s credential issuer may have a copy of certificates issued to current users. You will need to specifically request from the issuer the most recent valid identity certificates suitable for smart card logon. The issuer will produce these certificates in a variety of ways, based on the certification authority or the Card Management System in use. 
+
+**Export Certificates from a Third Party System** <br>
+Your organization may have already collected the relevant certificates as part of the enrollment process for a third party application, such as a FIPS 201-compliant PACS system. Depending on the system and configuration in use, you may be able to export your cardholders’ certificates from the database where they are enrolled. Speak with your PACS integrator to understand what options are available to you.
+<img src="{{site.baseurl}}/assets/piv/pivaccount-card-ops.png" alt="A screenshot of a Card Operations window that shows several rows of card IDs and other information." width="624" height="268">
 
 ##### Methods for Linking the PIV Authentication Certificate
 System administrators can leverage one of the approaches below to link PIV Authentication certificates with user accounts. Run these steps from a domain controller with elevated privileges.
