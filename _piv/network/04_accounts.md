@@ -90,7 +90,7 @@ To gather the certificate from the smart card using a Windows workstation, have 
 3.	In the prompt, type **certutil -scinfo**. <br> 
 <img src="{{site.baseurl}}/assets/piv/pivaccount-certutil.png" alt="A screenshot of a command prompt with certutil information." width="430" height="76">
 4.	Press **Enter**. <br>
-5.	The cardholder will be prompted several times for a PIN, but a PIN is not required for this operation. Have the cardholder press cancel each time they are prompted for a PIN until they see the Certificate list. <br>
+5.	The cardholder will be prompted several times for a PIN, but a PIN is not required for this operation. Have the cardholder press **cancel** each time they are prompted for a PIN until they see the Certificate list. <br>
 <img src="{{site.baseurl}}/assets/piv/pivaccount-cert-list.png" alt="A screenshot of a Windows Security Certificate List window." width="303" height="268"> <br>
 6.	Have the cardholder click **Click here to view certificate properties**. The appropriate certificate will list “Smart Card Logon” in the intended purposes on the General tab. If the certificate has this purpose listed, have the cardholder proceed to Step 7. Otherwise, have the cardholder close the certificate, click **more choices** on the Certificate List, click another certificate in the list, and click **Click here to view certificate properties** until the correct certificate has been identified. <br>
 <img src="{{site.baseurl}}/assets/piv/pivaccount-cert-details.png" alt="A screenshot of a Certificate Details window." width="340" height="458"> <br>
