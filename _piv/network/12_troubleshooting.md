@@ -115,38 +115,38 @@ For our use, this complex process is simplified into the following workflows:
     <ol type="1">
       <li>Log in as a Domain Administrator.</li>
       <li>Open the Start Menu.</li>
-      <li>Type mmc.exe.</li>
-      <li>Click MMC, shown under Best Match.</li>
+      <li>Type <strong>mmc.exe</strong>.</li>
+      <li>Click <strong>MMC</strong>, shown under Best Match.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-mmc-exe.png" alt="A screenshot of the mmc.exe icon. The words Best Match appear above the icon and the words Run command appear below the icon.">
       <li>If prompted by a User Account Control pop-up, click <strong>Yes</strong>.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-user-account-control.png" alt="A screenshot of a User Account Control window. The words Do you want to allow this app to make changes to your device? appear near the top of the screenshot. The Yes button is highlighted.">
-      <li>Click the MMC window and press and hold Ctrl. Then press "M" and release both keys.</li>
+      <li>Click the <strong>MMC</strong> window and press and hold <strong>Ctrl</strong>. Then press <strong>M</strong> and release both keys.</li>
       <li>In the Add or Remove Snap-ins window, click the following:</li> 
       <ol type="a">
-        <li>From the Available Snap-ins on the left, click Certificates.</li>
-        <li>In the center of the window, click the Add button.</li>
-        <li>In the Certificates snap-in window, click Computer account. Then click Next.</li>
+        <li>From the Available Snap-ins on the left, click <strong>Certificates</strong>.</li>
+        <li>In the center of the window, click the <strong>Add</strong> button.</li>
+        <li>In the Certificates snap-in window, click <strong>Computer account</strong>. Then click <strong>Next</strong>.</li>
       </ol>
       <img src="{{site.baseurl}}/assets/piv/pivauth-snap-in.png" alt="A screenshot of an Add or Remove Snap-In window with an inset Certificate Snap-In window.">
-      <li>In the Select Computer window, click Finish.</li> 
+      <li>In the Select Computer window, click <strong>Finish</strong>.</li> 
       <img src="{{site.baseurl}}/assets/piv/pivauth-select-computer.png" alt="A screenshot of a Select Computer window. The Local Computer radio button is highlighted and the Finish button is highlighted.">
-      <li>In the Add or Remove Snap-ins window, click OK.</li>
-      <li>On the left side of the MMC window, click the <strong>></strong>symbol to expand these items on the tree:</li>
+      <li>In the Add or Remove Snap-ins window, click <strong>OK</strong>.</li>
+      <li>On the left side of the MMC window, click the <strong>></strong> symbol to expand these items on the tree:</li>
       <ol type="a">
         <li>Certificates (Local Computer)</li>
         <li>Personal</li>
       </ol>
       <img src="{{site.baseurl}}/assets/piv/pivauth-console-root-thru-certificates.png" alt="A screenshot of a Console Root folder icon and label with three items below it in cascading order. A Certificates folder icon and label appear at the bottom of the screenshot and are highlighted with gray.">
-      <li>Under Personal, right-click Certificates.</li>  
+      <li>Under Personal, right-click <strong>Certificates</strong>.</li>  
       <img src="{{site.baseurl}}/assets/piv/pivauth-certificates-all-tasks.png" alt="A screenshot of a Console Root folder icon and label with several items and folders below it. The Certificates folder is highlighted with blue. An inset window with All Tasks highlighted in blue appears to the right of the main window and an inset Request New Certificate window appears to right of the first inset window.">
-      <li>Click All Tasks.</li>
-      <li>Click Request New Certificate.</li>
-      <li>In the Certificate Enrollment window, click Next.</li>
-      <li>Click Next.</li>
+      <li>Click <strong>All Tasks</strong>.</li>
+      <li>Click <strong>Request New Certificate</strong>.</li>
+      <li>In the Certificate Enrollment window, click <strong>Next</strong>.</li>
+      <li>Click <strong>Next</strong>.</li>
       <li>Click the box next to the Domain Controller Authentication template. If you do not see this, ask your CA Administrator to publish this template.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-request-certificates.png" alt="A screenshot of a Certificate Enrollment window. The words Request Certificates appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy choices, statuses, and details.">
-      <li>Click Enroll.</li>
-      <li>Click Finish.</li>
+      <li>Click <strong>Enroll</strong>.</li>
+      <li>Click <strong>Finish</strong>.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-cert-enrollment.png" alt="A screenshot of a Certificate Enrollment window. The words Certificate Installation Results appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy Domain Controller Authentication status and details. A green bar runs below the Certificate Enrollment window and the Finish button is highlighted.">
     </ol>
     <br>
@@ -169,9 +169,9 @@ For our use, this complex process is simplified into the following workflows:
     <h2>Symptom</h2>
     <p>After PIN entry, one of the following errors displays on the logon screen:</p>
     <ol type="1">
-      <li><strong>“An untrusted certification authority was detected while processing the smart card certificate used for authentication.”</strong></li>
+      <li><strong>An untrusted certification authority was detected while processing the smart card certificate used for authentication.</strong></li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-untrusted-ca-logon-screen.png" alt="A screenshot of a logon window that includes the words An untrusted certification authority was detected while processing the smart card certificate used for authentication." width="664" height="448">
-      <li><strong>“The smart card used for authentication has been revoked.”</strong></li>
+      <li><strong>The smart card used for authentication has been revoked.</strong></li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-smart-card-revoked-logon-screen.png" alt="A screenshot of a logon window that includes the words The smart card used for authentication has been revoked." width="664" height="448">
     </ol>
     <hr />
@@ -199,7 +199,7 @@ For our use, this complex process is simplified into the following workflows:
       <li>Type <strong>event viewer</strong>.</li>
       <li>Click <strong>Event Viewer</strong>, shown under Best Match.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-event-viewer.png" alt="A screenshot of the Event Viewer app icon and label. The words Best Match appear above the icon."> 
-      <li>On the left side of the Event View, click the <strong>">"</strong> symbol to expand each of these items on the tree:</li>
+      <li>On the left side of the Event View, click the <strong>></strong> symbol to expand each of these items on the tree:</li>
       <ol type="a">
         <li>Applications and Services Logs</li>
         <li>Microsoft</li>
