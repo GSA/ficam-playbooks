@@ -57,9 +57,24 @@ For our use, this complex process is simplified into the following workflows:
     <h2>Possible Cause 2 - Card Damaged</h2>
     <p>The PIV is damaged.</p>
     <h3>Diagnosis</h3>
-    <p>If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced.</p>
+    <p>If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV may need to be replaced.</p>
+    <p>To confirm that the card is functional, you can use the <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a href="https://playbooks.idmanagement.gov/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
+    <p><strong>On the client:</strong></p>
+    <ol type="1">
+      <li>Log in to Windows using a password.</li>
+      <li>Open the Start Menu, located in the bottom left corner of the screen.</li>
+      <li>Type <strong>cmd</strong>.</li>
+      <li>Click <strong>Command Prompt</strong>, shown under Best Match.</li>
+      <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-command-prompt.png" alt="A screenshot of the Command Prompt app icon. The words Best Match appear above the icon.">
+      <li>In the command prompt, type <strong>certutil -scinfo</strong> and press <strong>Enter</strong>.</li>
+      <img src="{{site.baseurl}}/assets/piv/pivauth-command-prompt-certuil.png" alt="A screenshot of a command prompt that includes certutil information." width="346" height="104">
+      <li>A functioning card will return information on the card type and reader, begin polling for keys and validating certificates, and prompt for PIN entry. If this is the case with the card you are testing, click <strong>Cancel</strong> and close out of the command prompt.</li>
+<img src="{{site.baseurl}}/assets/piv/pivauth-command-prompt-and-smart-card.png" alt="A screenshot of a command prompt window with a Windows Security Smart Card window on top of it." width="624" height="524">
+      <li>If the card is malfunctioning, certutil will recognize that a reader is connected and a card is present but will display an error and will not prompt for PIN entry.</li>
+<img src="{{site.baseurl}}/assets/piv/pivauth-command-prompt-done.png" alt="A screenshot of a command prompt window that includes the word done near the bottom of the window." width="593" height="474">
+    </ol>    
     <h3>Resolution</h3>
-    <p>Replace the PIV card.</p>
+    <p>Replace the PIV card if necessary.</p>
     <br>
     <a href="#logon-process-overview">Back to Process Overview</a>
   </div>
@@ -209,7 +224,8 @@ For our use, this complex process is simplified into the following workflows:
     <img src="{{site.baseurl}}/assets/piv/pivauth-example2.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Is Untrusted Root details are highlighted with yellow." width="766" height="652">
     <p><strong>Example 3: The revocation status is unreachable, or the revocation status signature cannot be validated due to an invalid trust path.</strong></p>
     <img src="{{site.baseurl}}/assets/piv/pivauth-example3.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Revocation Status Unknown details are highlighted with yellow." width="766" height="652">
-    <p><strong>Note:</strong>The error status in Example 3 will occur for any certificate lower in the path than the above Examples for 1 and 2. For example, if a trusted root cannot be found at the top of the path, no valid revocation status will be found for any certificate issued below the trusted root, including the issuing CA certificate and the end user’s PIV authentication certificate. This situation occurs because the revocation data cannot have its signature verified for the same reasons that the certificate itself cannot.</p>
+    <p><strong>Note:</strong> The error status in Example 3 will occur for any certificate lower in the path than the above Examples for 1 and 2. For example, if a trusted root cannot be found at the top of the path, no valid revocation status will be found for any certificate issued below the trusted root, including the issuing CA certificate and the end user’s PIV authentication certificate. This situation occurs because the revocation data cannot have its signature verified for the same reasons that the certificate itself cannot.</p>
+<p>You can also use the <a href="http://pkif.sourceforge.net/pitt.html" target="_blank" rel="noopener noreferrer">PKI Interoperability Test Tool (PITT)</a>, listed on the <a href="https://playbooks.idmanagement.gov/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, to validate the certificate path on the logon server. The <a href="http://pkif.sourceforge.net/pitt_usage.pdf" target="_blank" rel="noopener noreferrer">PITT Usage Guide</a> contains procedures for using the tool.</p>    
     <h3>Resolution</h3>
     <ol type="1">
       <li>On the domain controller, work through any path validation issues identified in the above steps and examples. Keep in mind that that path building comes before validation and that a path is built from the bottom up. In this instance, the PIV authentication certificate chains to a trust anchor, such as Federal Common Policy G2. <strong>Ensure that the correct trust anchor for your organization’s PIV credentials is installed on every domain controller.</strong> If you also trust certificates from other agencies and organizations, the appropriate roots and cross-certificates may need to be installed to complete the path. </li>
