@@ -804,12 +804,6 @@
         <viz:position x="-353.5323" y="-353.5323" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
-      <node id="CN=Symantec Class 3 Non Federal SSP Private Root CA,O=Symantec Corporation,C=US">
-        <attvalues></attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-9.1860906E-14" y="-499.9706" z="0.0"></viz:position>
-        <viz:color r="153" g="0" b="153"></viz:color>
-      </node>
       <node id="CN=Australian Defence Interoperability CA,OU=CAs,OU=PKI,OU=DoD,O=GOV,C=AU">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
@@ -1423,10 +1417,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="CN=SAFE Identity Bridge CA,OU=Certification Authorities,O=SAFE Identity,C=US" source="CN=SAFE Identity Trust Anchor,OU=Certification Authorities,O=SAFE Identity,C=US" target="CN=SAFE Identity Bridge CA,OU=Certification Authorities,O=SAFE Identity,C=US" label="SAFE Identity Bridge CA">
-        <viz:color r="153" g="0" b="153"></viz:color>
-        <attvalues></attvalues>
-      </edge>
-      <edge id="CN=Symantec Class 3 SSP Intermediate CA - G3,OU=Symantec Trust Network,O=Symantec Corporation,C=US" source="CN=Symantec Class 3 Non Federal SSP Private Root CA,O=Symantec Corporation,C=US" target="CN=Symantec Class 3 SSP Intermediate CA - G3,OU=Symantec Trust Network,O=Symantec Corporation,C=US" label="Symantec Class 3 SSP Intermediate CA - G3">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
