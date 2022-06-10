@@ -25,6 +25,32 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: May 30, 2022
+  change_type: CA Certificate Issuance 
+  system: Entrust PKI Shared Service Provider 
+  change_description: The Entrust SSP rekeyed the HHS FPKI Intermediate CA E1 to include Common-PIV-I OIDs.
+  contact: support at entrust dot com
+  ca_certificate_hash: 492a40e6477eed5c39a58c24d6f3d5bffb0e1083
+  ca_certificate_issuer: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US
+  ca_certificate_subject: OU=HHS-FPKI-Intermediate-CA-E1, OU=Certification Authorities, OU=HHS, O=U.S. Government, C=US
+  cdp_uri: http://feddcsweb.managed.entrust.com/CRLs/EMSRootCA2.crl
+  aia_uri: http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+
+- notice_date: May 30, 2022
+  change_type: CA Certificate Issuance 
+  system: Entrust PKI Shared Service Provider 
+  change_description: The Entrust SSP rekeyed their Entrust Derived Credential SSP CA.
+  contact: support at entrust dot com
+  ca_certificate_hash: b3ddc2d8bc6c88883ef4c292a1175b1a267e7c23
+  ca_certificate_issuer: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US
+  ca_certificate_subject: CN=Entrust Derived Credential SSP CA, OU=Certification Authorities , O=Entrust, C=US
+  cdp_uri: http://feddcsweb.managed.entrust.com/CRLs/EMSRootCA2.crl
+  aia_uri: http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+
 - notice_date: April 29, 2022
   change_type: CA Certificate Issuance 
   system: CertiPath Bridge CA 
