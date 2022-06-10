@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: pm
 ---
 
-The **ICAM Program Management Playbook** explain how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture]({{site.baseurl}}/arch/){:target="_blank"}{:rel="noopener noreferrer"}. You'll find content for ICAM program managers who need agency-level planning best practices to drive adoption of ICAM services within their organizations. You'll also find information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
+The **ICAM Program Management Playbook** explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture]({{site.baseurl}}/arch/){:target="_blank"}{:rel="noopener noreferrer"}. You'll find content for ICAM program managers who need agency-level planning best practices to drive adoption of ICAM services within their organizations. You'll also find information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
 
 The ICAM PM Playbook will answer the most common ICAM program organization and management questions, including:
 
@@ -21,7 +21,7 @@ The content is based on the [Federal Identity, Credential, and Access Management
 
 > "The interwoven technical architecture of the Federal Government creates complexity in managing access to resources, safeguarding networks, and protecting information...each agency must harmonize its enterprise-wide approach to governance, architecture, and acquisition." - *OMB Memorandum M-19-17*
 
-An agency's Identity, Credential, and Access Management (ICAM) program requires leadership to manage and oversee the program's complex requirements, engage and collaborate with stakeholders, and apply proven risk management strategies to support the agency.
+An agency's ICAM program requires leadership to manage and oversee the program's complex requirements, engage and collaborate with stakeholders, and apply proven risk management strategies to support the agency.
 
 ## Primary Components
 

@@ -89,6 +89,8 @@ For a PMO to be effective, it must:
 - Have the support of executive leadership.
 - Be allowed to use resources as required.
 
+{% include alert-success.html heading="Organizationally, where should an ICAM PMO be located?" content="Since ICAM is technology and cybersecurity driven, an ICAM PMO should be structured under technology or cybersecurity leadership." %}
+
 ### PMO Roles and Responsibilities
 
 The PMO will typically be responsible for the following functions:
