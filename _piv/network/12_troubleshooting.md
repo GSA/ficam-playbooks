@@ -57,9 +57,24 @@ For our use, this complex process is simplified into the following workflows:
     <h2>Possible Cause 2 - Card Damaged</h2>
     <p>The PIV is damaged.</p>
     <h3>Diagnosis</h3>
-    <p>If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV will need to be replaced.</p>
+    <p>If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV may need to be replaced.</p>
+    <p>To confirm that the card is functional, you can use the <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a href="https://playbooks.idmanagement.gov/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
+    <p><strong>On the client:</strong></p>
+    <ol type="1">
+      <li>Log in to Windows using a password.</li>
+      <li>Open the Start Menu, located in the bottom left corner of the screen.</li>
+      <li>Type <strong>cmd</strong>.</li>
+      <li>Click <strong>Command Prompt</strong>, shown under Best Match.</li>
+      <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-command-prompt.png" alt="A screenshot of the Command Prompt app icon. The words Best Match appear above the icon.">
+      <li>In the command prompt, type <strong>certutil -scinfo</strong> and press <strong>Enter</strong>.</li>
+      <img src="{{site.baseurl}}/assets/piv/pivauth-command-prompt-certuil.png" alt="A screenshot of a command prompt that includes certutil information." width="346" height="104">
+      <li>A functioning card will return information on the card type and reader, begin polling for keys and validating certificates, and prompt for PIN entry. If this is the case with the card you are testing, click <strong>Cancel</strong> and close out of the command prompt.</li>
+<img src="{{site.baseurl}}/assets/piv/pivauth-command-prompt-and-smart-card.png" alt="A screenshot of a command prompt window with a Windows Security Smart Card window on top of it." width="624" height="524">
+      <li>If the card is malfunctioning, certutil will recognize that a reader is connected and a card is present but will display an error and will not prompt for PIN entry.</li>
+<img src="{{site.baseurl}}/assets/piv/pivauth-command-prompt-done.png" alt="A screenshot of a command prompt window that includes the word done near the bottom of the window." width="593" height="474">
+    </ol>    
     <h3>Resolution</h3>
-    <p>Replace the PIV card.</p>
+    <p>Replace the PIV card if necessary.</p>
     <br>
     <a href="#logon-process-overview">Back to Process Overview</a>
   </div>
@@ -100,38 +115,38 @@ For our use, this complex process is simplified into the following workflows:
     <ol type="1">
       <li>Log in as a Domain Administrator.</li>
       <li>Open the Start Menu.</li>
-      <li>Type mmc.exe.</li>
-      <li>Click MMC, shown under Best Match.</li>
+      <li>Type <strong>mmc.exe</strong>.</li>
+      <li>Click <strong>MMC</strong>, shown under Best Match.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-mmc-exe.png" alt="A screenshot of the mmc.exe icon. The words Best Match appear above the icon and the words Run command appear below the icon.">
       <li>If prompted by a User Account Control pop-up, click <strong>Yes</strong>.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-user-account-control.png" alt="A screenshot of a User Account Control window. The words Do you want to allow this app to make changes to your device? appear near the top of the screenshot. The Yes button is highlighted.">
-      <li>Click the MMC window and press and hold Ctrl. Then press "M" and release both keys.</li>
+      <li>Click the <strong>MMC</strong> window and press and hold <strong>Ctrl</strong>. Then press <strong>M</strong> and release both keys.</li>
       <li>In the Add or Remove Snap-ins window, click the following:</li> 
       <ol type="a">
-        <li>From the Available Snap-ins on the left, click Certificates.</li>
-        <li>In the center of the window, click the Add button.</li>
-        <li>In the Certificates snap-in window, click Computer account. Then click Next.</li>
+        <li>From the Available Snap-ins on the left, click <strong>Certificates</strong>.</li>
+        <li>In the center of the window, click the <strong>Add</strong> button.</li>
+        <li>In the Certificates snap-in window, click <strong>Computer account</strong>. Then click <strong>Next</strong>.</li>
       </ol>
       <img src="{{site.baseurl}}/assets/piv/pivauth-snap-in.png" alt="A screenshot of an Add or Remove Snap-In window with an inset Certificate Snap-In window.">
-      <li>In the Select Computer window, click Finish.</li> 
+      <li>In the Select Computer window, click <strong>Finish</strong>.</li> 
       <img src="{{site.baseurl}}/assets/piv/pivauth-select-computer.png" alt="A screenshot of a Select Computer window. The Local Computer radio button is highlighted and the Finish button is highlighted.">
-      <li>In the Add or Remove Snap-ins window, click OK.</li>
-      <li>On the left side of the MMC window, click the <strong>></strong>symbol to expand these items on the tree:</li>
+      <li>In the Add or Remove Snap-ins window, click <strong>OK</strong>.</li>
+      <li>On the left side of the MMC window, click the <strong>></strong> symbol to expand these items on the tree:</li>
       <ol type="a">
         <li>Certificates (Local Computer)</li>
         <li>Personal</li>
       </ol>
       <img src="{{site.baseurl}}/assets/piv/pivauth-console-root-thru-certificates.png" alt="A screenshot of a Console Root folder icon and label with three items below it in cascading order. A Certificates folder icon and label appear at the bottom of the screenshot and are highlighted with gray.">
-      <li>Under Personal, right-click Certificates.</li>  
+      <li>Under Personal, right-click <strong>Certificates</strong>.</li>  
       <img src="{{site.baseurl}}/assets/piv/pivauth-certificates-all-tasks.png" alt="A screenshot of a Console Root folder icon and label with several items and folders below it. The Certificates folder is highlighted with blue. An inset window with All Tasks highlighted in blue appears to the right of the main window and an inset Request New Certificate window appears to right of the first inset window.">
-      <li>Click All Tasks.</li>
-      <li>Click Request New Certificate.</li>
-      <li>In the Certificate Enrollment window, click Next.</li>
-      <li>Click Next.</li>
+      <li>Click <strong>All Tasks</strong>.</li>
+      <li>Click <strong>Request New Certificate</strong>.</li>
+      <li>In the Certificate Enrollment window, click <strong>Next</strong>.</li>
+      <li>Click <strong>Next</strong>.</li>
       <li>Click the box next to the Domain Controller Authentication template. If you do not see this, ask your CA Administrator to publish this template.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-request-certificates.png" alt="A screenshot of a Certificate Enrollment window. The words Request Certificates appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy choices, statuses, and details.">
-      <li>Click Enroll.</li>
-      <li>Click Finish.</li>
+      <li>Click <strong>Enroll</strong>.</li>
+      <li>Click <strong>Finish</strong>.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-cert-enrollment.png" alt="A screenshot of a Certificate Enrollment window. The words Certificate Installation Results appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy Domain Controller Authentication status and details. A green bar runs below the Certificate Enrollment window and the Finish button is highlighted.">
     </ol>
     <br>
@@ -154,9 +169,9 @@ For our use, this complex process is simplified into the following workflows:
     <h2>Symptom</h2>
     <p>After PIN entry, one of the following errors displays on the logon screen:</p>
     <ol type="1">
-      <li><strong>“An untrusted certification authority was detected while processing the smart card certificate used for authentication.”</strong></li>
+      <li><strong>An untrusted certification authority was detected while processing the smart card certificate used for authentication.</strong></li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-untrusted-ca-logon-screen.png" alt="A screenshot of a logon window that includes the words An untrusted certification authority was detected while processing the smart card certificate used for authentication." width="664" height="448">
-      <li><strong>“The smart card used for authentication has been revoked.”</strong></li>
+      <li><strong>The smart card used for authentication has been revoked.</strong></li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-smart-card-revoked-logon-screen.png" alt="A screenshot of a logon window that includes the words The smart card used for authentication has been revoked." width="664" height="448">
     </ol>
     <hr />
@@ -184,7 +199,7 @@ For our use, this complex process is simplified into the following workflows:
       <li>Type <strong>event viewer</strong>.</li>
       <li>Click <strong>Event Viewer</strong>, shown under Best Match.</li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-best-match-event-viewer.png" alt="A screenshot of the Event Viewer app icon and label. The words Best Match appear above the icon."> 
-      <li>On the left side of the Event View, click the <strong>">"</strong> symbol to expand each of these items on the tree:</li>
+      <li>On the left side of the Event View, click the <strong>></strong> symbol to expand each of these items on the tree:</li>
       <ol type="a">
         <li>Applications and Services Logs</li>
         <li>Microsoft</li>
@@ -209,7 +224,8 @@ For our use, this complex process is simplified into the following workflows:
     <img src="{{site.baseurl}}/assets/piv/pivauth-example2.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Is Untrusted Root details are highlighted with yellow." width="766" height="652">
     <p><strong>Example 3: The revocation status is unreachable, or the revocation status signature cannot be validated due to an invalid trust path.</strong></p>
     <img src="{{site.baseurl}}/assets/piv/pivauth-example3.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Revocation Status Unknown details are highlighted with yellow." width="766" height="652">
-    <p><strong>Note:</strong>The error status in Example 3 will occur for any certificate lower in the path than the above Examples for 1 and 2. For example, if a trusted root cannot be found at the top of the path, no valid revocation status will be found for any certificate issued below the trusted root, including the issuing CA certificate and the end user’s PIV authentication certificate. This situation occurs because the revocation data cannot have its signature verified for the same reasons that the certificate itself cannot.</p>
+    <p><strong>Note:</strong> The error status in Example 3 will occur for any certificate lower in the path than the above Examples for 1 and 2. For example, if a trusted root cannot be found at the top of the path, no valid revocation status will be found for any certificate issued below the trusted root, including the issuing CA certificate and the end user’s PIV authentication certificate. This situation occurs because the revocation data cannot have its signature verified for the same reasons that the certificate itself cannot.</p>
+<p>You can also use the <a href="http://pkif.sourceforge.net/pitt.html" target="_blank" rel="noopener noreferrer">PKI Interoperability Test Tool (PITT)</a>, listed on the <a href="https://playbooks.idmanagement.gov/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, to validate the certificate path on the logon server. The <a href="http://pkif.sourceforge.net/pitt_usage.pdf" target="_blank" rel="noopener noreferrer">PITT Usage Guide</a> contains procedures for using the tool.</p>    
     <h3>Resolution</h3>
     <ol type="1">
       <li>On the domain controller, work through any path validation issues identified in the above steps and examples. Keep in mind that that path building comes before validation and that a path is built from the bottom up. In this instance, the PIV authentication certificate chains to a trust anchor, such as Federal Common Policy G2. <strong>Ensure that the correct trust anchor for your organization’s PIV credentials is installed on every domain controller.</strong> If you also trust certificates from other agencies and organizations, the appropriate roots and cross-certificates may need to be installed to complete the path. </li>
