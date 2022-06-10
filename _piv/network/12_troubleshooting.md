@@ -71,7 +71,8 @@ For our use, this complex process is simplified into the following workflows:
     <p>After the user enters their PIN, Windows tries to unlock the card using the PIN entered. After the card has been unlocked, the workstation packages the user’s PIV authentication certificate and sends it to the logon server, also known as a domain controller. The workstation must be able to trust the domain controller so that the workstation can securely connect to it. Use the information below to troubleshoot symptoms encountered after the PIN is entered but before logon occurs.</p>
     <hr />
     <h2>Symptom</h2>
-    <p>After PIN entry, the following error is displayed on the logon screen: <br><strong>Signing in with a smart card isn’t supported with your account. For more information, contact your administrator.</strong>.</p>
+    <p>After PIN entry, the following error is displayed on the logon screen: <br><strong>Signing in with a smart card isn’t supported for your account. For more information, contact your administrator.</strong></p>
+    <img src="{{site.baseurl}}/assets/piv/pivauth-other-user.png" alt="A screenshot of an Other user window with an error message." width="341" height="148">
     <hr />
     <h2>Possible Cause - Domain Controller Certificate</h2>
     <p>A suitable domain controller authentication certificate is not installed on the domain controller.</p>
@@ -226,6 +227,22 @@ For our use, this complex process is simplified into the following workflows:
     </ol>
     <h3>Resolution</h3>
     <p>Follow the steps in the <a href="https://playbooks.idmanagement.gov/piv/network/trust-stores/" target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a> to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.</p>
+     <hr />    
+    <h2>Symptom</h2>
+    <p>During smart card logon attempt, the following error is displayed on the logon screen:  <br><strong>The system could not log you on. Your credentials could not be verified.</strong></p>
+  <hr />
+    <h2>Possible Cause 1</h2>
+    <p>The incorrect certificate was selected for smart card logon.</p>
+    <h3>Resolution 1</h3>
+    <ol type="1">
+      <li>In the logon screen, select a different certificate from the sign-in options. <strong>Note:</strong> Logon certificates generally display an account name in the form of an email address or user principal name.</li>
+      <li>Try entering the PIN again.</li>
+      <img src="{{site.baseurl}}/assets/piv/pivauth-logon-enter-pin.png" alt="A screenshot of a logon window that shows a user name highlighted. The other user is not highlighted." width="623" height="468">
+      </ol>
+    <h2>Possible Cause 2</h2>
+    <p>The identifiers listed in the Smart Card Logon certificate on the card cannot be matched to an AD account.</p>
+    <h3>Resolution 2</h3>
+    <p>Follow the suggestions in the <a href="https://playbooks.idmanagement.gov/piv/network/account/" target="_blank" rel="noopener noreferrer">Account Linking Playbook</a> to ensure that the card identifier can be linked to the AD account. This may require User Principal Name (UPN) mapping, adding alternate security identifiers added to the AD record, or domain hinting.</p> 
     <br>
     <a href="#logon-process-overview">Back to Process Overview</a>
   </div>
