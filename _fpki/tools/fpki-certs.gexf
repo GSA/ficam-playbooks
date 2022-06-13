@@ -78,12 +78,6 @@
         <viz:position x="-187.93086" y="-68.41883" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
-      <node id="CN=DigiCert Non Federal SSP Private Root CA - G2,O=DigiCert,Inc.,C=US" label="DigiCert Non Federal SSP Private Root CA - G2">
-        <attvalues></attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="499.9706" y="6.4532313E-25" z="0.0"></viz:position>
-        <viz:color r="153" g="0" b="153"></viz:color>
-      </node>
       <node id="CN=DocuSign Root CA,OU=TSCP,O=DocuSign Inc.,C=US" label="DocuSign Root CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
@@ -810,12 +804,6 @@
         <viz:position x="-353.58313" y="-353.58313" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
-      <node id="CN=Symantec Class 3 Non Federal SSP Private Root CA,O=Symantec Corporation,C=US">
-        <attvalues></attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-9.1860906E-14" y="-499.9706" z="0.0"></viz:position>
-        <viz:color r="153" g="0" b="153"></viz:color>
-      </node>
       <node id="CN=Australian Defence Interoperability CA,OU=CAs,OU=PKI,OU=DoD,O=GOV,C=AU">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
@@ -909,14 +897,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="CN=NRC PROD G6 Fed SSP CA,OU=U.S. Nuclear Regulatory Commission,O=U.S. Government,C=US" source="CN=DigiCert Federal SSP Intermediate CA - G6,O=DigiCert,Inc.,C=US" target="CN=NRC PROD G6 Fed SSP CA,OU=U.S. Nuclear Regulatory Commission,O=U.S. Government,C=US" label="NRC PROD G6 Fed SSP CA">
-        <viz:color r="153" g="0" b="153"></viz:color>
-        <attvalues></attvalues>
-      </edge>
-      <edge id="CN=DigiCert Class 3 SSP Intermediate CA - G4,O=DigiCert,Inc.,C=US" source="CN=DigiCert Non Federal SSP Private Root CA - G2,O=DigiCert,Inc.,C=US" target="CN=DigiCert Class 3 SSP Intermediate CA - G4,O=DigiCert,Inc.,C=US" label="DigiCert Class 3 SSP Intermediate CA - G4">
-        <viz:color r="153" g="0" b="153"></viz:color>
-        <attvalues></attvalues>
-      </edge>
-      <edge source="CN=DigiCert Non Federal SSP Private Root CA - G2,O=DigiCert,Inc.,C=US" target="CN=DigiCert Non Federal SSP Private Root CA - G2,O=DigiCert,Inc.,C=US" label="DigiCert Non Federal SSP Private Root CA - G2">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
@@ -1437,10 +1417,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="CN=SAFE Identity Bridge CA,OU=Certification Authorities,O=SAFE Identity,C=US" source="CN=SAFE Identity Trust Anchor,OU=Certification Authorities,O=SAFE Identity,C=US" target="CN=SAFE Identity Bridge CA,OU=Certification Authorities,O=SAFE Identity,C=US" label="SAFE Identity Bridge CA">
-        <viz:color r="153" g="0" b="153"></viz:color>
-        <attvalues></attvalues>
-      </edge>
-      <edge id="CN=Symantec Class 3 SSP Intermediate CA - G3,OU=Symantec Trust Network,O=Symantec Corporation,C=US" source="CN=Symantec Class 3 Non Federal SSP Private Root CA,O=Symantec Corporation,C=US" target="CN=Symantec Class 3 SSP Intermediate CA - G3,OU=Symantec Trust Network,O=Symantec Corporation,C=US" label="Symantec Class 3 SSP Intermediate CA - G3">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
