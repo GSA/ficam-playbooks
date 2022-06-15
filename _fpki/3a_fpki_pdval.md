@@ -23,16 +23,16 @@ subnav:
       href: '#references'
 ---
 
-# Introduction
+## Introduction
 
 Public Key Infrastructure (PKI) certificates follow a process called Path Discovery and Validation (PDVal) to verify if a certificate is valid and trusted. This playbook provides an overview of this PDVal process in the context of the Federal PKI. If you have heard terms like PDVal, trust paths, certificate paths, trust fabric, trust anchors, and Microsoft CAPI to name a few, you are in the right place. Knowledge of the Federal PKI is not needed to understand PDVal. If you're interested in more information about the Federal PKI, go to the [Federal PKI Overview Page]({{site.baseurl}}/fpki/).
 
-# What Is a Trust Anchor?
+## What Is a Trust Anchor?
 
 A trust anchor is a trusted certification authority (CA). These may be commonly called trust root, trusted CA, or root CA. Everything in PKI traces its trust back to a trust anchor.
 The trust anchor operated by Federal PKI, including PIV and PIV-Interoperable, is the [Federal Common Policy CA]({{site.baseurl}}/fpki/common/). A common misconception is that the Federal Bridge is the root of trust. Keep reading to understand why that is not the case. Every software program that interacts with a certificate installs trust anchors in a native trust store or uses the trust store of the operating system. A trust store is a list of **root, intermediate, and sometimes user certificates** that the operating system or application trusts to process transactions. For more information on trust stores, see the [PKI trust store page]({{site.baseurl}}/fpki/trust-stores/).
 
-# What Is Path Discovery and Validation?
+## What Is Path Discovery and Validation?
 
 **Certification Path Discovery and Validation (PDVal)** is a procedure to associate a certificate to a trust anchor and confirm that the certificate is valid for use. Some form of PDVal occurs with every certificate validation action. Some common PIV card use cases include:
 - Logging onto a workstation.
@@ -47,7 +47,7 @@ PDVal is a two-step process:
 
 **Note:** This playbook describes the PDVal process as documented in standards. Individual vendor implementations may not support all the capabilities described in this playbook, and the details of individual implementations may vary. Troubleshooting PDVal errors is not explained here. Information about troubleshooting PDVal errors during smart card logon can be found on the [Troubleshooting PIV Logon]({{site.baseurl}}/piv/network/troubleshooting/) page.
 
-## What Is a Certification Path?
+### What Is a Certification Path?
 
 Sometimes referred to as a certificate chain or a trust path, a certification path is the sequence of unique CA certificates between a trust anchor and a certificate issued to a person or device ("end-entity" or "leaf" certificate). Each CA certificate in the sequence was created and digitally signed ("issued") by the preceding CA's key. There may be multiple intermediate CA's between a trust anchor and a leaf certificate, complicating PDVal.
 
