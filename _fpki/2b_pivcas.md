@@ -149,10 +149,10 @@ These CA certificates are actively issuing PIV authentication certificates.
 #### Entrust Derived Credential SSP CA
 - Subject: OU = Entrust Derived Credential SSP CA, OU = Certification Authorities, O = Entrust, C = US
 - Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
-- Serial #: 4480b181
-- Validity: July 13, 2017 to July 13, 2025
-- SHA-1 Hash: e9245a056b17cb5be2e36abf1b8dae6dff9d3729
-- CRL DP: [http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA.crl](http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- Serial #: 44817ba9
+- Validity: May 9, 2022 to July 9, 2029
+- SHA-1 Hash: b3ddc2d8bc6c88883ef4c292a1175b1a267e7c23
+- CRL DP: [http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA1.crl](http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA1.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### FTI Certification Authority
 - Subject: OU = FTI Certification Authority, OU = FTI PKI Trust Infrastructure, O = Foundation for Trusted Identity, C = US
@@ -165,10 +165,10 @@ These CA certificates are actively issuing PIV authentication certificates.
 #### HHS-FPKI-Intermediate-CA-E1
 - Subject: CN = HHS-FPKI-Intermediate-CA-E1, OU = Certification Authorities, OU = HHS, O = U.S. Government, C = US 
 - Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
-- Serial #: 44809a90 
-- Validity: December 20, 2016 to July 20, 2025 
-- SHA-1 Hash: d5e311406437c35a79bc023c2bbb57049f5d8f77 
-- CRL DP: [http://hhspkicrl.managed.entrust.com/CRLs/HHSEntrustCA1.crl](http://hhspkicrl.managed.entrust.com/CRLs/HHSEntrustCA1.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- Serial #: 44817282 
+- Validity: February 23, 2022 to July 23, 2029 
+- SHA-1 Hash: 492a40e6477eed5c39a58c24d6f3d5bffb0e1083 
+- CRL DP: [http://hhspkicrl.managed.entrust.com/CRLs/HHSEntrustCA2.crl](http://hhspkicrl.managed.entrust.com/CRLs/HHSEntrustCA2.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### NASA Operational CA  
 - Subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US  
@@ -382,6 +382,22 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: July 30, 2015 to July 23, 2025 
 - SHA-1 Hash: dec01bf40c153fbc38bf2ca766b04f9dfbda3064 
 - CRL DP: [http://sspweb.managed.entrust.com/CRLs/EMSSSPCA2.crl](http://sspweb.managed.entrust.com/CRLs/EMSSSPCA2.crl){:target="_blank"}{:rel="noopener noreferrer"}
+
+#### Entrust Derived Credential SSP CA
+- Subject: OU = Entrust Derived Credential SSP CA, OU = Certification Authorities, O = Entrust, C = US
+- Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
+- Serial #: 4480b181
+- Validity: July 13, 2017 to July 13, 2025
+- SHA-1 Hash: e9245a056b17cb5be2e36abf1b8dae6dff9d3729
+- CRL DP: [http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA.crl](http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA.crl){:target="_blank"}{:rel="noopener noreferrer"}
+
+#### HHS-FPKI-Intermediate-CA-E1
+- Subject: CN = HHS-FPKI-Intermediate-CA-E1, OU = Certification Authorities, OU = HHS, O = U.S. Government, C = US 
+- Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
+- Serial #: 44809a90 
+- Validity: December 20, 2016 to July 20, 2025 
+- SHA-1 Hash: d5e311406437c35a79bc023c2bbb57049f5d8f77 
+- CRL DP: [http://hhspkicrl.managed.entrust.com/CRLs/HHSEntrustCA1.crl](http://hhspkicrl.managed.entrust.com/CRLs/HHSEntrustCA1.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### NASA Operational CA
 - Subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US  
