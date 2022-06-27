@@ -26,11 +26,11 @@ subnav:
     href: '#step-4-integrate-with-agency-enterprise-services'
   - text: Summary
     href: '#summary'
-  - text: Appendix
-    href: '#appendix-a-technical-information'
+  - text: Appendix A. References
+    href: '#appendix-a-policies-standards-and-guidance'
 ---
 
-Version 21.0  
+Version 1.0  
 June 2022
 
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this playbook to help federal agencies understand and plan identity lifecycle management initiatives.
@@ -109,7 +109,7 @@ It’s common in the federal ICAM community to synonymously refer to everything 
 
 This playbook has two distinct sections.
 1.	The first section is an overview of identity lifecycle management. It explains the distinct processes involved in managing identities and gives a brief description of the similarities and differences in managing a PIV card versus managing an identity.
-2.	The second section contains plays on how to create an identity lifecycle management process within your agency. It includes five steps to create a policy, identify the systems needed for lifecycle management, and ends with recommendations on how to use this as part of federating federal enterprise identities.
+2.	The second section contains plays on how to create an identity lifecycle management process within your agency. It includes four steps to create a policy, architect a solution, create a master user record, and then integrate the master user record for entrprise-wide use.
 
 The next section will outline the identity lifecycle process.
 
@@ -157,8 +157,6 @@ A master user record aggregates user accounts, attributes, entitlements, and iss
 | Vetting System | TRUST | Eligibility, Status, Type of vetting completed |
 | Training System | BEHAVE | Security Training Status, Training Types |
 
-For specific information on how DHS CDM created a Master User Record including which tools they’ve used, go to the [CDM document repository on Max.gov](https://community.max.gov/download/attachments/1843519190/CDM-ARCH-2017-01.1.1-MUR-FUNCT-DESCR%2012082017.pdf?version=1&modificationDate=1568732697362&api=v2){:target="_blank"}{:rel="noopener noreferrer"}. A master user record is most often created using either a virtual directory, identity governance and administration (IGA) tool, or potentially a Single Sign-On tool if it also supports a virtual directory capability.
-
 Vetting incorporates all steps in the end-to-end process, including: 
 1. Determine the appropriate level of investigation needed for the position. 
 2. Validate whether the individual has been investigated to the necessary level and if so, if that investigation was favorably adjudicated. 
@@ -168,20 +166,22 @@ Vetting incorporates all steps in the end-to-end process, including:
 6. Provide administrative due process or other procedural rights. 
 7. Perform ongoing assessments (to include continuous vetting or reinvestigation) to ensure that individuals continue to meet the applicable standards for the position for which they were favorably adjudicated.
 
+For specific information on how DHS CDM created a Master User Record including which tools they’ve used, go to the [CDM document repository on Max.gov](https://community.max.gov/download/attachments/1843519190/CDM-ARCH-2017-01.1.1-MUR-FUNCT-DESCR%2012082017.pdf?version=1&modificationDate=1568732697362&api=v2){:target="_blank"}{:rel="noopener noreferrer"}. A master user record is most often created using either a virtual directory, identity governance and administration (IGA) tool, or potentially a Single Sign-On tool if it also supports a virtual directory capability.
+
 ### Managing Identity Lifecycle vs Managing Credential Lifecycle
 
-A key theme in OMB Memo 19-17 is for federal agencies to shift the focus from managing the lifecycle of credentials to managing the lifecycle of identities. What does this mean? The main focus of this statement is for federal agencies to **shift the focus from managing access based on credentials to managing the lifecycle of identities as they evolve in an agency**. This focus shift will help agencies achieve an enterprise ICAM system that is agile to support technology modernization. Examples of shifting the operating model include the following.
+A key theme in OMB Memo 19-17 is for federal agencies to shift the focus from managing the lifecycle of credentials to managing the lifecycle of identities. What does this mean? The main focus of this statement is for federal agencies to **create a centralized and agile identity and access management system that leverages attributes for fine-grained authorization rather than based on a credential**. This focus shift will help agencies achieve an enterprise ICAM system that is agile to support technology modernization. Examples of shifting the operating model include the following.
 
-<p align="center"><b>Table 2: Identity-Centric Versus Credential-Centric</b></p>
+<p align="center"><b>Table 3: Identity-Centric Versus Credential-Centric</b></p>
 
 | Identity-Centric | Credential-Centric |
 | ----- | ------ |
-| Enable Single Sign-On for agency applications | Manage authentication at each individual application using an application-specific credential. |
+| Enable Single Sign-On for agency applications | Manage authentication at each individual application. |
 | Federate application for external partner access.	| Application-specific authentication using a PIV card or Username and Password. | 
 | Support a variety of phishing-resistant authenticators with a path toward a total passwordless architecture. | Only support PIV card authentication or Username and Password as a backup. |
-| Manage access based on identity or job function. | Managed access based on the user's PIV card. |
+| Leverage attributes aggregated through a MUR for fine-grained authorization. | Leverage attributes only from a PIV Card for authorization. |
 
-{% include alert-success.html heading="Myth Busted - It's PIV or Nothing" content="While an employee using PIV is the ultimate security goal, what happens when a PIV is either not available or not compatible with the access requirements? Employees lose PIV cards and it may take days, weeks, or months for an employee to receive their new or replacement PIV. An agency should have a phishing-resistant alternative when a PIV card is not available. Allowing username and password as a backup option should not be the default policy exception." %} 
+{% include alert-success.html heading="Myth Busted - A PIV Card is my only option" content="While an employee using PIV is the ultimate security goal, what happens when a PIV is either not available or not compatible with the access requirements? Employees lose PIV cards and it may take days, weeks, or months for an employee to receive their new or replacement PIV. An agency should have a phishing-resistant alternative when a PIV card is not available. Allowing username and password as a backup option should not be the default policy exception." %} 
 
 ### Phishing-Resistant Authenticator Binding
 
@@ -260,7 +260,7 @@ The main benefits of a master user record include:
 
 ### Step 4. Integrate with Agency Enterprise Services
 
-An agency can further realize the benefit of ILM by integrating the master user record with other agency enterprise ICAM  services. This integration can aid agencies to automate provisioning, de-provisioning, and reporting as well as in federating both within and external to an agency. In this context, the federation is transferring identity and authentication between networked systems rather than relying on siloed information specific to the target application.
+An agency can further realize the benefit of ILM by integrating the master user record with other agency enterprise ICAM services. This integration can aid agencies to automate provisioning, de-provisioning, and reporting as well as in federating both within and external to an agency. In this context, the federation is transferring identity and authentication between networked systems rather than relying on siloed information specific to the target application.
 
 <p align="center"><b>Figure 5: ILM Integration with Single Sign-On</b></p>
  
@@ -268,17 +268,17 @@ An agency can further realize the benefit of ILM by integrating the master user 
 
 The following is an example of the benefits of a master user record and integration with an access management tool for a cross-agency federation use case.
 
-**Use Case** - An agency employee needs to collaborate with another government agency. The other government agency application requires a specific human resources attribute to access the application. The application is federated and allows a partner agency to use their home single sign-on to authenticate to the tool.
-1.	The agency adds the human resources attribute to the individual employees using a bulk update in the Master User Record.
+**Use Case** - An agency employee needs to collaborate with another government agency. The other government agency application requires a specific human resources attribute to access the application. The application is federated with the employee's home agency and allows a partner agency to use their home single sign-on to authenticate to the tool.
+1.	The agency adds the human resources attribute to the individual employee record using a bulk update in the Master User Record.
 2.	The Master User Record is available to the Single Sign-On tool in an assertion protocol.
-3.	The Single Sign-On adds the extra human resource attribute in an assertion to the partner application to facilitate authentication and authorization in the partner application. 
+3.	The Single Sign-On adds the additional human resource attribute in an assertion to the partner application to facilitate authentication and authorization in the partner application. 
 
 Make attributes available for authorization decisions. Federation is not only accepting credentials as proof from other agencies but also making your identity credentials available to other agencies.
  - Attributes are available to your agency via SSO assertions.
  - Focus on the best practice of using assertion protocols rather than exposing attributes externally.
 - Focus on authorization through federation rather than on PIV. PIV is a static credential with static attributes. SSO with Federation is dynamic-based on the SSO integration with a master user record. It is easier to update a directory than a PIV credential.
 
-<div class="usa-alert usa-alert--success">
+<div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Use Case - Using a third-party credential service provider (CSP)</h4>
     <p class="usa-alert__text">
