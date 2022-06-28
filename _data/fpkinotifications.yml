@@ -38,7 +38,7 @@
   ocsp_uri: N/A
   
 - notice_date: June 27, 2022
-  change_type: New Certificate appearing in AIA
+  change_type: New Certificate appearing in SIA
   system: Digicert Class 3 Non-Federal SSP 
   change_description: A new Cross-certificate was published in a Digicert P7B file (http://sspsia.digicert.com/STNSSP/Certs_Issued_by_Class3SSPCA-G4.p7c)
   ca_certificate_hash: N/A
