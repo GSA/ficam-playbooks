@@ -59,6 +59,18 @@
   cdp_uri: N/A
   aia_uri: N/A
   sia_uri: http://sspsia.digicert.com/STNSSP/Certs_Issued_by_DigiCertClass3NonFederalSSPPrivateRootCAG2.p7c
+
+- notice_date: June 24, 2022
+  change_type: Intent to Perform CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the DoD Interoperability Root CA between 7/11/2022 and 7/15/2022.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: N/A
   ocsp_uri: N/A
 
 - notice_date: June 13, 2022
