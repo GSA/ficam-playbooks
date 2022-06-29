@@ -208,7 +208,9 @@ pm:
 
 
 # Playbooks Navigation
-
+ilm:
+  - text: Identity Lifecycle Management Playbook
+    href: /playbooks/ilm/
 pivi:
   - text: PIV-I for Federal Agencies
     href: /playbooks/pivi/
