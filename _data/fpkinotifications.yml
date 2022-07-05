@@ -25,6 +25,42 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: July 5, 2022
+  change_type: Certificate removed from AIA
+  system: Symantec Class 3 SSP 
+  change_description: A certificate inadvertantly published to a P7B file was removed
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: C=US, O=Symantec Corporation, CN=Symantec Class 3 Non Federal SSP Private Root CA
+  ca_certificate_subject: C=US, O=Symantec Corporation, OU=Symantec Trust Network, CN=Symantec Class 3 SSP Intermediate CA - G3
+  cdp_uri: N/A
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: N/A
+  
+- notice_date: July 5, 2022
+  change_type: Certificate removed from AIA
+  system: Digicert Class 3 SSP 
+  change_description: A certificate inadvertantly published to a P7B file was removed
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: C=US, O=DigiCert, Inc., CN=DigiCert Non Federal SSP Private Root CA - G2
+  ca_certificate_subject: C=US, O=DigiCert, Inc., CN=DigiCert Class 3 SSP Intermediate CA - G4
+  cdp_uri: N/A
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: N/A
+
+- notice_date: July 5, 2022
+  change_type: Certificate removed from AIA
+  system: Digicert Class 3 SSP 
+  change_description: A certificate inadvertantly published to a P7B file was removed
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: C=US, O=DigiCert, Inc., CN=DigiCert Non Federal SSP Private Root CA - G2
+  ca_certificate_subject: C=US, O=DigiCert, Inc., CN=DigiCert Non Federal SSP Private Root CA - G2
+  cdp_uri: N/A
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: N/A
+
 - notice_date: June 27, 2022
   change_type: New Certificate appearing in AIA
   system: Symantec Class 3 SSP 
