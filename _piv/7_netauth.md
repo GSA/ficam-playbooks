@@ -29,11 +29,7 @@ subnav:
     href: ../../piv/network/troubleshooting/    
 ---
 
-{% capture authentication_alert %}
-Some PIV based authentication to Microsoft Domain Controllers maybe impacted by May 2022 Windows server patches.  If you encounter these PIV network logon issues, please review the [CISA Guidance] (https://www.cisa.gov/guidance-applying-june-microsoft-patch\), which is supported by the following [Microsoft Knowledge Base Article] (https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16) page.  Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot GOV
-{% endcapture %}
-
-{% include alert-warning.html heading="Known Network Authentication Issue May 2022!" content=authentication_alert %}
+{% include alert-warning.html heading="Known Network Authentication Issue May 2022!" content="Some PIV based authentication to Microsoft Domain Controllers maybe impacted by May 2022 Windows server patches.  If you encounter these PIV network logon issues, please review the <a href=\"https://www.cisa.gov/guidance-applying-june-microsoft-patch\" target=\"_blank\" rel=\"noopener noreferrer\">CISA Guidance</a>, which is supported by the following <a href=\"https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Knowledge Base Article</a> page.  Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot GOV" %}
 
 These Network Authentication guides will help you configure your Windows _network domain_ for smart card logon using PIV credentials.
 
@@ -52,7 +48,7 @@ Check the following items **before** reviewing these network guides and lessons 
 
 ## Configuration Checklist
 
-There are five configuration categories to review with your colleagues.  All five include steps that must be completed; it's best to review and complete the configuration categories in this order:    
+There are five configuration categories to review with your colleagues.  All five include steps that must be completed; it's best to review and complete the configuration categories in this order:
 
 - [Network Ports and Protocols](../network/ports/)
 - [Domain Controllers](../network/dc/)
@@ -68,8 +64,6 @@ There are five additional guides:
 - [PIV Authentication on MacOS](../network/mac/)
 - [Troubleshooting PIV Logon](../network/troubleshooting/)
 
-We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, adressing common errors and troubleshooting, and configuring MacOSX and other operating systems.  
+We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, addressing common errors and troubleshooting, and configuring MacOSX and other operating systems.  
 
-Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.   
-
-
+Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.
