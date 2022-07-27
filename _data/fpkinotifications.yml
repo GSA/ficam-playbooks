@@ -25,12 +25,64 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: July 27, 2022
+  change_type: Intent to Perform CA Certificate Issuance
+  system: TSCP SHA256 Bridge CA
+  change_description: The TSCP Bridge CA plans to reissued a certificate to DocuSign Root CA.
+  contact: info at tscp dot org
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
+  ocsp_uri: N/A
+
+- notice_date: July 27, 2022
+  change_type: Intent to Perform CA Certificate Issuance
+  system: TSCP SHA256 Bridge CA
+  change_description: The TSCP Bridge CA plans to reissued a certificate to Carillon Federal Services PIV-I CA2.
+  contact: info at tscp dot org
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA2, OU=Certification Authorities, O=Carillon Federal Services Inc., C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
+  ocsp_uri: N/A
+  
+- notice_date: July 27, 2022
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Raytheon Technologies Medium Assurance CA.
+  contact: support at certipath dot com
+  ca_certificate_hash: 776dc2662d503198e00c63bc25c7d57d06499273
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Raytheon Technologies Medium Assurance CA, OU=Class3-G3, O=cas, DC=rtx, DC=com
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+
+- notice_date: July 27, 2022
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Raytheon Class 3 MASCA.
+  contact: support at certipath dot com
+  ca_certificate_hash: 55f3ac9fc4834cac88e5da4f53954ced9fec1892
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Raytheon Class 3 MASCA, OU=Class3-g2, O=cas, DC=raytheon, DC=com
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+
 - notice_date: July 13, 2022
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a new cross certificate to the DoD Interoperability Root CA.
   contact: fpki dash help at gsa dot gov
-  ca_certificate_hash: N/A
+  ca_certificate_hash: 0136b2be0a25e807fdd90300c695ab58de214dfb
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
   cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
@@ -43,7 +95,7 @@
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a new cross certificate to the TSCP SHA256 Bridge CA.
   contact: fpki dash help at gsa dot gov
-  ca_certificate_hash: N/A
+  ca_certificate_hash: dd68894ac1ae380449190487a5ff24f9fdbcd82f
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
   cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
