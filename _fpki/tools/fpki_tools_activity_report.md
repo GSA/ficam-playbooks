@@ -15,7 +15,7 @@ subnav:
       href: '#repository-availability'
 ---
 
-Updated: July 5, 2022
+Updated: August 1, 2022
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -59,19 +59,19 @@ The following certificates were issued or published to the FPKI Trust Infrastruc
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date | Expiration Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| TSCP | TSCP SHA256 Bridge CA | Federal Bridge CA G4 | Serial:12f933df736f1a13a102c6b2359cf96abac2e48c Thumbprint:dd68894ac1ae380449190487a5ff24f9fdbcd82f | 6/24/22 | 2/23/24 |
+| DoD | DoD Interoperability Root CA 2  | Federal Bridge CA G4 | Serial:101476387f77177c883bbb461f9d14d85363c472 Thumbprint:0136b2be0a25e807fdd90300c695ab58de214dfb | 7/11/22 | 7/11/23 |
 
 The following certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| TSCP | TSCP SHA256 Bridge CA  | Federal Bridge CA G4  |  Serial: 12aea252ffc8a1c961e4ef0e7529f8e88d4daa33 Thumbprint:db3f9cceb6c6be4c03e0997070d09e7e0e7ee38a |  8/6/22 | Renewed |
+| DoD | DoD Interoperability Root CA 2  | Federal Bridge CA G4  |  Serial: 125bb632cfe89c3c0cce2dc4f9a9b5c70f9e16f1 Thumbprint:125bb632cfe89c3c0cce2dc4f9a9b5c70f9e16f1 |  8/6/22 | Renewed |
 
 The following certificates are planned for a certificate action in the near future; dates to be determined based on availability.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| DoD | DoD Interoperability Root CA 2  | Federal Bridge CA G4 | Serial:TBD      Hash:TBD | 8/6/22 | Renew |
+| N/A |   |  |  |  |  |
 
 
 ## Repository Availability 
@@ -87,19 +87,19 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | Exostar Federated Identity Service Root CA | FBCA	| 100 | 99.09 |
 | Federal Bridge CA G4 | FBCA | 100	| 100 |
 | GPO PCA | FBCA | 100 | 99.86 |
-| IdenTrust Global Common Root CA 1 | FBCA | 100 | 99.97 |
+| IdenTrust Global Common Root CA 1 | FBCA | 96.87 | 99.70 |
 | SAFE Identity Bridge CA	| FBCA | 100 | 100 |
-| STRAC Bridge Root Certification Authority	| FBCA | 99.91 | 99.97 |
-| Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 100 | 82.08 |
+| STRAC Bridge Root Certification Authority	| FBCA | 100 | 99.97 |
+| Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 100 | 82.36 |
 | TSCP SHA256 Bridge CA	| FBCA | 100 | 95.42 |
 | USPTO_INTR_CA1 | FBCA	| 100 | 100 |
 | WidePoint NFI Root 2	| FBCA	| 100 |	100 |
-| DigiCert SSP CA - G5	| FCPCA	| 100 |	99.10 |
+| DigiCert SSP CA - G5	| FCPCA	| 100 |	99.37 |
 | Entrust Managed Services Root CA	| FCPCA	| 100 | 99.96 |
 | Federal Common Policy CA	| FCPCA	| 100 |	100 |
 | Federal Common Policy CA G2 | FCPCA | 100 | 100 |
 | ORC SSP 4	| FCPCA	| 100 | 100 |
-| Symantec SSP Intermediate CA - G4	| FCPCA | 100 | 99.10 |
+| Symantec SSP Intermediate CA - G4	| FCPCA | 100 | 99.38 |
 | U.S. Department of State AD Root CA | FCPCA | 100 | 99.98 |
 | US Treasury Root CA | FCPCA | 100 | 100 |
 | Verizon SSP CA A2 | FCPCA	| 100 | 99.99 |
