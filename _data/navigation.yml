@@ -238,3 +238,7 @@ signword:
 signfedregister:
   - text: Digitally Signing Documents for Office of the Federal Register Submission
     href: /playbooks/signfedregister/
+    
+pam:
+  - text: Privileged User Playbook
+    href: /playbooks/pam/
