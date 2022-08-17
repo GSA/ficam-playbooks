@@ -44,7 +44,7 @@ primary_navigation:
     url: /arch/
   - name: Identity
     children:
-      - name: Identity Overview
+      - name: Identity Management Overview
         url: /arch/services/#identity-management
       - name: Cloud Identity
         url: /playbooks/cloud/
@@ -55,7 +55,7 @@ primary_navigation:
         url: /playbooks/ilm/
   - name: Credential
     children:
-      - name: Credential Overview
+      - name: Credential Management Overview
         url: /arch/services/#credential-management
       - name: Federal PKI
         url: /fpki/
@@ -66,12 +66,20 @@ primary_navigation:
       - name: Phishing-Resistant Authenticators (Coming Soon)
   - name: Access
     children:
-      - name: Access Overview
+      - name: Access Management Overview
         url: /arch/services/#access-management
       - name: Physical Access
         url: /pacs/
       - name: Single Sign-On
         url: /playbooks/sso/
+  - name: Federation
+    children:
+      - name: Federation Overview
+        url: /arch/services/#federation
+      - name: Application Federation
+        url: /playbooks/sso/#step-5-federate-application-access
+      - name: Attribute supported Federation
+        url: /playbooks/ilm/#step-4-integrate-with-agency-enterprise-services
   - name: Governance
     children:
       - name: Governance Overview
@@ -82,24 +90,14 @@ primary_navigation:
         url: /playbooks/dira/
       - name: ICAM Governance Framework
         url: /docs/playbook-identity-governance-framework.pdf
-  - name: Federation
+  - name: Guides
     children:
-      - name: Federation Overview
-        url: /arch/services/#federation
-      - name: Application Access
-        url: /playbooks/sso/#step-5-federate-application-access
-      - name: Attribute-based Access
-        url: /playbooks/ilm/#step-4-integrate-with-agency-enterprise-services
-  - name: User Guides
-    children:
-      - name: Digitallhy Sign Word Document
+      - name: Digitally Sign Word Document
         url: /playbooks/signword/
       - name: Digitally Sign Email in Outlook
         url: /piv/user-guide/outlook/
       - name: Digitally Sign Federal Register Document
         url: /playbooks/signfedregister/
-  - name: Engineer Guides
-    children:
       - name: PIV-Enable Windows Domain
         url: /piv/network/
       - name: PIV-Enable macOS
