@@ -47,46 +47,62 @@ primary_navigation:
     url: /arch/
   - name: Identity Management
     children:
+      - name: Identity Overview
+        url: /arch/services/#identity-management
       - name: Cloud Identity
         url: /playbooks/cloud/
+      - name: Privileged Identity (Coming Soon)
       - name: Digital Worker Identity
         url: /playbooks/dw/
-      - name: Lifecycle Management (Coming Soon)
+      - name: Identity Lifecycle Management
+        url: /playbooks/ilm/
   - name: Credential Management
     children:
-      - name: Authenticators (Coming Soon)
+      - name: Credential Overview
+        url: /arch/services/#credential-management
       - name: Federal PKI
         url: /fpki/
       - name: PIV Card
         url: /piv/
-      - name: PIV-I Card (Coming Soon)
+      - name: PIV Interoperable Card
+        url: /playbooks/pivi/
+      - name: Phishing-Resistant Authenticators (Coming Soon)
   - name: Access Management
     children:
-      - name: PACS
+      - name: Access Overview
+        url: /arch/services/#access-management
+      - name: Physical Access
         url: /pacs/
-      - name: Privileged Users (Coming Soon)
       - name: Single Sign-On
         url: /playbooks/sso/
   - name: Governance
     children:
-      - name: DIRA
+      - name: Governance Overview
+        url: /arch/services/#governance
+      - name: ICAM Program Management
+        url: /pm/
+      - name: Digital Identity Risk Assessment
         url: /playbooks/dira/
       - name: ICAM Governance Framework
         url: /docs/playbook-identity-governance-framework.pdf
-      - name: ICAM Program Management
-        url: /pm/
-  - name: Federation (coming soon)
+  - name: Federation
+      - name: Federation Overview
+        url: /arch/services/#federation
+      - name: Application Access
+        url: /playbooks/sso/#step-5-federate-application-access
+      - name: Attribute-based Access
+        url: /playbooks/ilm/#step-4-integrate-with-agency-enterprise-services
   - name: User Guides
     children:
+      - name: Digitallhy Sign Word Document
+        url: /playbooks/signword/
       - name: Digitally Sign Email in Outlook
         url: /piv/user-guide/outlook/
       - name: Digitally Sign Federal Register Document
         url: /playbooks/signfedregister/
-      - name: Digitallhy Sign Word Document
-        url: /playbooks/signword/
   - name: Engineer Guides
     children:
-      - name: Common G2 Migration Guide
+      - name: FPKI Common G2 Migration Guide
         url: /fpki/common/
       - name: Configure Firefox
         url: /piv/engineer/firefox/
