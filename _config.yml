@@ -39,28 +39,80 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Playbooks Home
-    description: FICAM Playbooks Home Page
-    url: /
-  - name: FICAM Architecture
-    description: FICAM Architecture
+- name: FICAM Architecture
+    description: FICAM Archtecture
     url: /arch/
-  - name: ICAM Program Management
-    description: ICAM Program Management
-    url: /pm/
-  - name: Federal PKI (FPKI)
-    url: /fpki/
-  - name: Personal Identity Verification (PIV)
-    url: /piv/
-  - name: Physical Access Control Systems (PACS)
-    description: Physical Access Control Systems Guide
-    url: /pacs/
-  - name: Other FICAM Playbooks
-    description: Other FICAM Playbooks
-    url: /playbooks/
-#    children:
-#      - name: Playbooks Overview
-#        url: /playbooks/
+  - name: Identity Management
+    children:
+      - name: Identity Overview
+        url: /arch/services/#identity-management
+      - name: Cloud Identity
+        url: /playbooks/cloud/
+      - name: Privileged Identity (Coming Soon)
+      - name: Digital Worker Identity
+        url: /playbooks/dw/
+      - name: Identity Lifecycle Management
+        url: /playbooks/ilm/
+  - name: Credential Management
+    children:
+      - name: Credential Overview
+        url: /arch/services/#credential-management
+      - name: Federal PKI
+        url: /fpki/
+      - name: PIV Card
+        url: /piv/
+      - name: PIV Interoperable Card
+        url: /playbooks/pivi/
+      - name: Phishing-Resistant Authenticators (Coming Soon)
+  - name: Access Management
+    children:
+      - name: Access Overview
+        url: /arch/services/#access-management
+      - name: Physical Access
+        url: /pacs/
+      - name: Single Sign-On
+        url: /playbooks/sso/
+  - name: Governance
+    children:
+      - name: Governance Overview
+        url: /arch/services/#governance
+      - name: ICAM Program Management
+        url: /pm/
+      - name: Digital Identity Risk Assessment
+        url: /playbooks/dira/
+      - name: ICAM Governance Framework
+        url: /docs/playbook-identity-governance-framework.pdf
+  - name: Federation
+      - name: Federation Overview
+        url: /arch/services/#federation
+      - name: Application Access
+        url: /playbooks/sso/#step-5-federate-application-access
+      - name: Attribute-based Access
+        url: /playbooks/ilm/#step-4-integrate-with-agency-enterprise-services
+  - name: User Guides
+    children:
+      - name: Digitallhy Sign Word Document
+        url: /playbooks/signword/
+      - name: Digitally Sign Email in Outlook
+        url: /piv/user-guide/outlook/
+      - name: Digitally Sign Federal Register Document
+        url: /playbooks/signfedregister/
+  - name: Engineer Guides
+    children:
+      - name: PIV-Enable Windows Domain
+        url: /piv/network/
+      - name: PIV-Enable macOS
+        url: /piv/network/mac/
+      - name: Troubleshoot PIV Windows Logon
+        url: /piv/network/troubleshooting/
+      - name: PIV-Enable Firefox
+        url: /piv/engineer/firefox/
+      - name: PIV-Enable SSH
+        url: /piv/engineer/ssh/
+      - name: FPKI System Change Notifications
+        url: /fpki/notifications/
+      - name: FPKI Useful Tools
+        url: /fpki/tools/
 
 secondary_navigation:
   - name: Contact Us
