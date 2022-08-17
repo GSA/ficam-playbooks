@@ -39,7 +39,7 @@ ga:
 
 # Site Navigation
 primary_navigation:
-- name: FICAM Architecture
+  - name: FICAM Architecture
     description: FICAM Archtecture
     url: /arch/
   - name: Identity Management
