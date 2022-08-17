@@ -42,7 +42,7 @@ primary_navigation:
   - name: FICAM Architecture
     description: FICAM Archtecture
     url: /arch/
-  - name: Identity Management
+  - name: Identity
     children:
       - name: Identity Overview
         url: /arch/services/#identity-management
@@ -53,7 +53,7 @@ primary_navigation:
         url: /playbooks/dw/
       - name: Identity Lifecycle Management
         url: /playbooks/ilm/
-  - name: Credential Management
+  - name: Credential
     children:
       - name: Credential Overview
         url: /arch/services/#credential-management
@@ -64,7 +64,7 @@ primary_navigation:
       - name: PIV Interoperable Card
         url: /playbooks/pivi/
       - name: Phishing-Resistant Authenticators (Coming Soon)
-  - name: Access Management
+  - name: Access
     children:
       - name: Access Overview
         url: /arch/services/#access-management
@@ -83,6 +83,7 @@ primary_navigation:
       - name: ICAM Governance Framework
         url: /docs/playbook-identity-governance-framework.pdf
   - name: Federation
+    children:
       - name: Federation Overview
         url: /arch/services/#federation
       - name: Application Access
