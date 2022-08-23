@@ -116,22 +116,10 @@ Open the signed MS Word document containing the certificate(s) you want to check
 ## FAQs
 
 ### We’ve been using the free GSA Digital Signing Tool to sign documents. Do we need to change?
-Not right away, but you need to follow the provided instructions to adopt the MS Word signing procedures sooner rather than later. The GSA Digital Signing Tool is no longer supported and may malfunction.
+You should adopt the MS Word signing procedures sooner rather than later. The GSA Digital Signing Tool is no longer supported and may malfunction.
 
-### Will the portal accept both “p7m” and “.docx” files?
-Yes, for the time being. Many agencies still use the signing process that creates a “p7m” file for submission via the portal. Since OFR will accept signed MS Word files with the “.docx” extension, the portal has been configured to accept both on an interim basis.
-
-### So “p7m” files will eventually stop being accepted?
-Exactly. OFR encourages agencies to make the procedural migration to MS Word signing as soon as possible.
-
-### When will you stop accepting “p7m” files?
-The end of FY2018, September 30. OFR will give plenty of advance notice, including a blurb on the portal website.
-
-### But “p7m” files are how we do it now. It’s worked for years; why change?
-The signing process that creates the “p7m” file was adopted more than a decade ago as OFR’s technical and legal standard for ensuring the validity of submissions.  Now, the software used to create the “p7m” file is no longer updated or supported; consequently, it is failing. One of the options under consideration was procuring ongoing technical support for the software, an option that would easily run into hundreds of thousands of taxpayer dollars over the next few years. However, technological and security improvements in MS Word allow OFR to adopt the native MS Word signing function as the secure standard for digitally signed documents.
-
-### I don’t get it. What’s a “p7m” file?
-If you don’t know, don’t worry about it. Just follow the provided instructions to sign using MS Word.
+### What files does the portal accept?
+The portal accepts signed MS Word files with the “.docx” extension.
 
 ### What special software do we need to buy and install to make this work?
 None. As a federal agency, you should already have MS Office 2010 or later installed. Simply follow the provided instructions to digitally sign your documents. 
