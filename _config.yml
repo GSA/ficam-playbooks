@@ -93,7 +93,7 @@ primary_navigation:
         url: /playbooks/dira/
       - name: ICAM Governance Framework
         url: /docs/playbook-identity-governance-framework.pdf
-  - name: Guides
+  - name: User Guides
     children:
       - name: Digitally Sign Word Document
         url: /playbooks/signword/
@@ -101,6 +101,8 @@ primary_navigation:
         url: /piv/user-guide/outlook/
       - name: Digitally Sign Federal Register Document
         url: /playbooks/signfedregister/
+  - name: User Guides
+    children:
       - name: PIV-Enable Windows Domain
         url: /piv/network/
       - name: PIV-Enable macOS
