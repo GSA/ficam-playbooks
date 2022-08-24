@@ -39,12 +39,20 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Playbooks Home
-    description: FICAM Playbooks Home Page
-    url: /
   - name: FICAM Architecture
-    description: FICAM Architecture
-    url: /arch/
+    children:
+      - name: Introduction
+        url: /arch/
+      - name: Goals and Objectives
+        url: /arch/goals/
+      - name: Services Framework
+        url: /arch/services/
+      - name: Use Case
+        url: /arch/usecases/
+      - name: System Components
+        url: /arch/components/
+      - name: Standards and Policies
+        url: /arch/standards/
   - name: Identity
     children:
       - name: Identity Management Overview
