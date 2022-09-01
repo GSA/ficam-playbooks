@@ -403,7 +403,7 @@ Address the following items when taking a Cloud Identity approach to federation:
 
 1. **Trust Framework**. Federating across security or organizational boundaries requires a legal agreement and a technical exchange. An agreement between entities should identify each organization's required security and governance processes. Creating a template that includes the format and required attributes is a best practice. See [NISTIR 8149](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"} for more information on trust frameworks.
 
-### Trust Frameworks in Action
+#### Federation and Trust Frameworks in Action
 
 Agencies leverage trust frameworks everyday for different purposes. The Federal PKI is the most common digital identity trust framework in the federal government. 
 1. Governance - The [Federal PKI Policy Authority (FPKIPA)](https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-policy-authority){:target="_blank"}{:rel="noopener noreferrer"} sets policies, approves members and applicants, and oversees compliance activities of the Federal PKI Trust Framework.
@@ -417,9 +417,9 @@ Federation trust frameworks also exist in the federal government.
 - [GSA Login.gov](https://partners.login.gov/product/){:target="_blank"}{:rel="noopener noreferrer"} - Provides primarily a public-to-government federation service. This requires an agency customer agreement and following the [login.gov assertion profile](https://developers.login.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Some government agencies also recognize non-government trust frameworks.
-- The FPKI Policy Authority reviews the PKI trust frameworks of a small number of [non-government organizations](https://www.idmanagement.gov/buy/trust-services/#non-government-pki-trust-framework):target="_blank"}{:rel="noopener noreferrer"} to determine whether the policies, processes, legal agreements, privacy protections, security controls, and audit requirements are comparable with the U.S. government Federal PKI requirements. If comparable, the organizations that manage their communities’ rules act as a PKI bridge. These organizations do not manage identities or credentials for their community directly. Services that are certified and audited by these organizations provide federated PKI identity and credentials.
+- The Federal PKI Policy Authority review the PKI trust frameworks of a small number of [non-government organizations](https://www.idmanagement.gov/buy/trust-services/#non-government-pki-trust-framework){:target="_blank"}{:rel="noopener noreferrer"} to determine whether the policies, processes, legal agreements, privacy protections, security controls, and audit requirements are comparable with the U.S. government Federal PKI requirements. If comparable, the organizations that manage their communities’ rules act as a PKI bridge. These organizations do not manage identities or credentials for their community directly. Services that are certified and audited by these organizations provide federated PKI identity and credentials.
 - The Kantara Initiative is a non-government trust framework program. It operates conformity assessment and assurance and grants trust marks to companies that show conformance to a Kantara standard based on NIST Special Publication 800-63-3. The Kantara Initiative accredits full identity service providers, component services, and Kantara accredited assessors. An agency may recognize a Kantara trust mark to federate with an external Identity Provider.
-- The DirectTrust Health Information Service Provider is a PKI-based trust framework for healthcare community collaboration leveraged by Health and Human Services.
+- The DirectTrust Health Information Service Provider is a PKI trust framework for healthcare community collaboration leveraged by the Department of Health and Human Services.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
