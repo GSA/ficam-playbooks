@@ -30,7 +30,7 @@ subnav:
     href: '#appendix-b-acronyms'
 ---
 
-Version 1.0  
+Version 1.1  
 January 20, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
@@ -40,6 +40,7 @@ This playbook is a collaboration between the Federal Chief Information Security 
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
+| 1.1 | 09/18/22 | Update federation section for trust framework examples |
 | 1.0 | 01/20/22 | Initial Draft |
 
 # Executive Summary
@@ -390,7 +391,22 @@ Identity governance includes both program oversight and technical controls. Agen
 
 ### **Federation**
 
-Federation is the technology, policies, standards, and processes that allow an agency to share digital identities, attributes, and credentials between trust domains or organizations and usually occurs through an assertion. Federation can be a technical mechanism to implement a Single Sign-On in an agency (within the same trust domain). It is also a mechanism to federate between trust domains, such as between agencies, mission partners, or other trust frameworks. Address the following items when taking a Cloud Identity approach to federation:
+Federation is the technology, policies, standards, and processes that allow an agency to share digital identities, attributes, and credentials between trust domains or organizations and usually occurs through an assertion. Federation can be a technical mechanism to implement a Single Sign-On in an agency (within the same trust domain). It is also a mechanism to federate between trust domains, such as between agencies, mission partners, or other trust frameworks. 
+
+**A trust framework are the rules underpinning a federated identity management model. The components of a trust framework may include a governance body, technical and seccurity requirements, legal agreements, conformance criteria, and recognition.** For more information on identity trust frameworks, see [NIST Interagency Report 8149 on Developing Trust Frameworks to Support Identity Federations](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"}.
+
+The Federal PKI is the most common digital identity trust framework in the federal government. 
+1. Governance - The [Federal PKI Policy Authority (FPKIPA)](https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-policy-authority){:target="_blank"}{:rel="noopener noreferrer"} sets policies, approves members and applicants, and oversees compliance activities of the Federal PKI Trust Framework.
+2. Technical and security requirements - The FPKIPA maintains the [Federal PKI Certificate Policies](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"} which outline technical and security requirements for all members. There are two policies that cover internal government requirements, The Federal Common Policy Framework, and an interoperability framework for federal and private sector partners, The Federal Bridge Certificate Policy.
+3. Legal agreements - Every Federal PKI member must sign a Memorandum of Agreement with the FPKIPA that outline roles and responsibilities to maintain the security and confidence of the Federal PKI Trust Framework.
+4. Conformance Criteria - Every Federal PKI member must complete an annual 3rd party audit against either the Federal Common Policy Framework or the Federal Bridge Certificate Policy.
+5. Recognition - Federal PKI members are listed as an [identity trust service](https://www.idmanagement.gov/buy/trust-services/){:target="_blank"}{:rel="noopener noreferrer"} that offers government, business, or trust framework services.
+
+Federation trust frameworks also exist in the federal government.
+- [Max Authentication Federated Login](https://login.max.gov/cas/login?service=https%3A%2F%2Fportal.max.gov%2Fhome%2Flogin%2Fcas){:target="_blank"}{:rel="noopener noreferrer"} - Provides a Government-to-Government federation service for either access to Max.gov or an agency application. Typically, customer agencies must sign an agreement and use the Max.gov assertion profile.
+- [GSA Login.gov](https://partners.login.gov/product/){:target="_blank"}{:rel="noopener noreferrer"} - Provides primarily a public-to-government federation service. This requires an agency customer agreement and following the [login.gov assertion profile](https://developers.login.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
+
+Address the following items when taking a Cloud Identity approach to federation:
 
 **Within the Same Trust Domain**
 
@@ -400,7 +416,7 @@ Federation is the technology, policies, standards, and processes that allow an a
 
 1. **Trust Framework**. Federating across security or organizational boundaries requires a legal agreement and a technical exchange. An agreement between entities should identify each organization's required security and governance processes. Creating a template that includes the format and required attributes is a best practice. See [NISTIR 8149](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"} for more information on trust frameworks.
 
-**Trust Frameworks in Action**
+### Trust Frameworks in Action**
 
 The integrity of a trust framework is vital when federating with external identities. The trust framework partners should have governance processes that may include a verified accreditation or audit process to ensure that the identity proofing, authenticator, and federation assertion meets the intent of NIST Special Publication 800-63-3 requirements. Using a third-party audit service provides the additional assurance of secure and compliant operations. Some examples of trust frameworks include:
 - The Federal Public Key Infrastructure (PKI) Policy Authority enforces a certificate policy and third-party auditing and implements technical control through the Federal PKI certificate profiles and hierarchy. There are other [non-government PKI trust frameworks](https://www.idmanagement.gov/buy/trust-services/#non-government-pki-trust-framework){:target="_blank"}{:rel="noopener noreferrer"} that interoperate with the Federal PKI. The Federal PKI trust framework ensures that federal employee and contractor credentials meet a NIST standard (FIPS 201) and are acceptable to all federal agencies.
