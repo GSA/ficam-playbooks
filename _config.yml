@@ -83,6 +83,8 @@ primary_navigation:
         url: /playbooks/sso/#step-5-federate-application-access
       - name: Attribute supported Federation
         url: /playbooks/ilm/#step-4-integrate-with-agency-enterprise-services
+      - name: Trust Frameworks
+        url: /playbooks/cloud/#federation
   - name: Governance
     children:
       - name: Governance Overview
