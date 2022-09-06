@@ -25,6 +25,19 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: September 6, 2022
+  change_type: CA Certificate Issuance
+  system: TSCP SHA256 Bridge CA
+  change_description: The TSCP Bridge CA issued a cross-certificate to the DocuSign Root CA.
+  contact: info at tscp dot org
+  ca_certificate_hash: 7b729847af9734b8a1781db400337a09d5ff3163a79a4f80adb6c4df506d90f0
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
+  ocsp_uri: N/A
+
 - notice_date: July 27, 2022
   change_type: Intent to Perform CA Certificate Issuance
   system: TSCP SHA256 Bridge CA
