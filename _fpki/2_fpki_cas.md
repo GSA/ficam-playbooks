@@ -72,12 +72,12 @@ The overarching policy of the Federal PKI is the Federal Common Policy Framework
 
 | Certificate Type | General Purpose | Authenticator Format | 
 | ----- | ------ | ----- |
-| PIV Certificates | The PIV Card contains up to five certificates with four available to a PIV card holder. See [PIV Certificates]({{site.baseurl}}/piv/details/#understand-piv-certificates) to understand more about PIV certificates on a PIV Card. | FIPS 201 Approved Smart Card |
-| Common PIV-I Certificates | The Common PIV-I card contains up to five certificates with four available to the Common PIV-I card holder. See the [PIV-I Playbook]({{site.baseurl}}/playbooks/pivi/) for more information on a Common PIV-I card. | FIPS 201 Approved Smart Card |
-| Digital Signature | Sign documents such as a PDF or word document. | Hardware or Software |
-| Encryption (Key Management) | Encrypt files. | Hardware or Software |
-| Derived PIV Authentication | Person authentication for mobile devices based on proof of possession and control of a PIV Card. Derived PIV credentials are typically used in situations that do not easily accommodate a PIV Card, such as in conjunction with mobile devices. | Hardware or Software |
-| Device | Issued to any type of device for authentication | Hardware of Software |
+| PIV Certificates | The PIV Card contains up to five certificates with four available to a PIV card holder. See [PIV Certificates]({{site.baseurl}}/piv/details/#understand-piv-certificates) to understand more about PIV certificates on a PIV Card. | FIPS 201 Approved Smart Card (AAL3) |
+| Common PIV-I Certificates | The Common PIV-I card contains up to five certificates with four available to the Common PIV-I card holder. See the [PIV-I Playbook]({{site.baseurl}}/playbooks/pivi/) for more information on a Common PIV-I card. | FIPS 201 Approved Smart Card (AAL3) |
+| Digital Signature | Sign documents such as a PDF or word document. | Software (AAL2) or Hardware (AAL3) |
+| Encryption (Key Management) | Encrypt files. | Software (AAL2) or Hardware (AAL3) |
+| Derived PIV Authentication | Person authentication for mobile devices based on proof of possession and control of a PIV Card. Derived PIV credentials are typically used in situations that do not easily accommodate a PIV Card, such as in conjunction with mobile devices. | Software (AAL2) or Hardware (AAL3) |
+| Device | Issued to any type of device for authentication | Software (AAL2) or Hardware (AAL3) |
 
 **Code signing certificates are not allowed under the Federal Common Certificate Policy.**
 
