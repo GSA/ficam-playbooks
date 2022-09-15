@@ -8,7 +8,7 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: FICAM Playbooks
+title: FICAM Architecture
 email: icam@gsa.gov
 description: Helping the U.S. Federal Government Enterprise design, procure, integrate, and operate Federal Enterprise Identity, Credential, and Access Management services.
 baseurl: ""
@@ -39,9 +39,9 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Playbooks Home
+  - name: Home
     url: /
-  - name: FICAM Architecture
+  - name: Architecture
     children:
       - name: Introduction
         url: /arch/
