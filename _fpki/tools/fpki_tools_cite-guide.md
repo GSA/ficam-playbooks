@@ -28,7 +28,7 @@ subnav:
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
 An FPKI Policy Authority Working Group
 
-Updated: August 25, 2022 <br>
+Updated: September 7, 2022 <br>
 
 ## Overview
 
@@ -117,20 +117,27 @@ CITE Participants shall provide the FPKI Technical Working Group with email and 
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/Testfcpcag2.crt |
 
 
-| FPKI CA CRLs | Website URL |
+| FPKI CA CRLs | CRL URL |
 | ------------ | ----------- |
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/Testfcpcag2.crl |
 | Test FBCA G4 | http://cite.fpki.gov/bridge/Testfbcag4.crl |
 
-| FPKI CA p7c | Website SIA |  Website AIA |
+| FPKI CA p7c |  SIA URL |   AIA URL |
 | ------------ | ----------- | ----------- | 
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/caCertsIssuedByTestfcpcag2.p7c | http://cite.fpki.gov/fcpca/caCertsIssuedToTestfcpcag2.p7c |
 | Test FBCA G4 | http://cite.fpki.gov/bridge/caCertsIssuedByTestfbcag4.p7c | http://cite.fpki.gov/bridge/caCertsIssuedToTestfbcag4.p7c |
 
-| Test Partner |CRL | SIA | AIA |
-| ------------ | ----------- | ----------- | ----------- |
-| Treasury | http://devpki.treasury.gov/Dev_US_Treasury_Root_CA.crl | http://devpki.treasury.gov/devroot_sia.p7c | http://devpki.treasury.gov/cacertsissuedtodevtrca.p7c |
-| DoD | http://crl.nit.disa.mil/crl/DODJITCINTEROPERABILITYROOTCA2.crl | http://crl.nit.disa.mil/issuedby/DODJITCINTEROPERABILITYROOTCA2_IB.p7c | http://crl.nit.disa.mil/issuedto/DODJITCINTEROPERABILITYROOTCA2_IT.p7c |
+| Test Partner CRLs | CRL URL |
+| ------------ | ----------- |
+| Treasury | http://devpki.treasury.gov/Dev_US_Treasury_Root_CA.crl |
+| DoD | http://crl.nit.disa.mil/crl/DODJITCINTEROPERABILITYROOTCA2.crl |
+| Entrust SSP | http://dsspweb.managed.entrust.com/CRLs/EMSDemoFRootCA2.crl | 
+
+| Test Partner CA p7cs | p7c URLs |
+| ------------ | ----------- |
+| Treasury | SIA:http://devpki.treasury.gov/devroot_sia.p7c AIA:http://devpki.treasury.gov/cacertsissuedtodevtrca.p7c |
+| DoD | SIA:http://crl.nit.disa.mil/issuedby/DODJITCINTEROPERABILITYROOTCA2_IB.p7c AIA:http://crl.nit.disa.mil/issuedto/DODJITCINTEROPERABILITYROOTCA2_IT.p7c |
+| Entrust SSP | SIA:http://dsspweb.managed.entrust.com/SIA/CAcertsIssuedByEMSDemoFRootCA.p7c AIA:http://dsspweb.managed.entrust.com/AIA/CertsIssuedToEMSDemoFRootCA.p7c |
 
 ## Appendix A - Test Policy Object Identifiers
 
