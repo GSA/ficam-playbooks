@@ -121,6 +121,8 @@ primary_navigation:
         url: /piv/engineer/firefox/
       - name: PIV-Enable SSH
         url: /piv/engineer/ssh/
+  - name: Tools
+    children: 
       - name: FPKI System Change Notifications
         url: /fpki/notifications/
       - name: FPKI Useful Tools
