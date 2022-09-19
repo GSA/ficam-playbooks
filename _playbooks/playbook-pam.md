@@ -26,7 +26,7 @@ subnav:
       href: '#appendix-a-reference-documentation'
     - text: Appendix B. Privileged User Agreement
       href: '#appendix-b-privileged-user-agreement'
-    - text: Appendix C. 800-53 Privileged User Overlay
+    - text: Appendix C. 800-53 Privileged User Overlay Rev 5
       href: '#appendix-c-nist-sp-800-53-privileged-user-overlay'
       
 ---
