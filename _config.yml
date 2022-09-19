@@ -8,7 +8,7 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: FICAM Playbooks
+title: FICAM Architecture
 email: icam@gsa.gov
 description: Helping the U.S. Federal Government Enterprise design, procure, integrate, and operate Federal Enterprise Identity, Credential, and Access Management services.
 baseurl: ""
@@ -39,12 +39,22 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Playbooks Home
-    description: FICAM Playbooks Home Page
+  - name: Home
     url: /
-  - name: FICAM Architecture
-    description: FICAM Architecture
-    url: /arch/
+  - name: Architecture
+    children:
+      - name: Introduction
+        url: /arch/
+      - name: Goals and Objectives
+        url: /arch/goals/
+      - name: Services Framework
+        url: /arch/services/
+      - name: Use Case
+        url: /arch/usecases/
+      - name: System Components
+        url: /arch/components/
+      - name: Standards and Policies
+        url: /arch/standards/
   - name: Identity
     children:
       - name: Identity Management Overview
@@ -93,7 +103,7 @@ primary_navigation:
         url: /playbooks/dira/
       - name: ICAM Governance Framework
         url: /docs/playbook-identity-governance-framework.pdf
-  - name: Guides
+  - name: Playbooks
     children:
       - name: Digitally Sign Word Document
         url: /playbooks/signword/
@@ -111,6 +121,8 @@ primary_navigation:
         url: /piv/engineer/firefox/
       - name: PIV-Enable SSH
         url: /piv/engineer/ssh/
+  - name: Tools
+    children: 
       - name: FPKI System Change Notifications
         url: /fpki/notifications/
       - name: FPKI Useful Tools
