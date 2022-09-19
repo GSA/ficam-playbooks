@@ -27,7 +27,7 @@ Each section of this page lists documents in reverse chronological order, with t
 <a href="http://www.gpo.gov/fdsys/pkg/USCODE-2012-title5/pdf/USCODE-2012-title5-partI-chap5-subchapII-sec552a.pdf" target="_blank" rel="noopener noreferrer">**The Privacy Act of 1974**</a> (September 2015)<br/>
 > This Act protects certain federal government records pertaining to individuals. In particular, the Act covers systems of records that an agency maintains and retrieves by an individual’s name or other personal identifier, such as a Social Security Number.
 
-<a href="http://www.gpo.gov/fdsys/pkg/PLAW-113publ283" target="_blank" rel="noopener noreferrer">**Federal Information Security Modernization Act (FISMA) of 2014**</a> (December 2014)<br/>
+<a href="https://www.govinfo.gov/content/pkg/PLAW-113publ283/pdf/PLAW-113publ283.pdf" target="_blank" rel="noopener noreferrer">**Federal Information Security Modernization Act (FISMA) of 2014**</a> (December 2014)<br/>
 > This Act provides a framework for measuring the effectiveness of federal information systems, and it calls for the development and implementation of continuous monitoring oversight mechanisms. It also acknowledges federal agencies should take advantage of commercially available security products (including software, hardware, etc.) that often provide robust information security solutions.
 
 <a href="https://www.gpo.gov/fdsys/pkg/PLAW-107publ347/html/PLAW-107publ347.htm" target="_blank" rel="noopener noreferrer">**E-Government Act of 2002**</a> (December 2002)<br/>
@@ -36,7 +36,7 @@ Each section of this page lists documents in reverse chronological order, with t
 <a href="https://www.gpo.gov/fdsys/pkg/PLAW-106publ229/html/PLAW-106publ229.htm" target="_blank" rel="noopener noreferrer">**Electronic Signatures in Global and National (ESIGN) Commerce Act of 2000**</a> (June 2000)<br/>
 > This Act facilitates the use of electronic records and electronic signatures in interstate and foreign commerce by ensuring the validity and legal effect of electronic contracts.
 
-<a href="https://www.gpo.gov/fdsys/pkg/PLAW-105publ277/html/PLAW-105publ277.htm" target="_blank" rel="noopener noreferrer">**Government Paperwork Elimination Act of 1998 (GPEA)**</a> (October 1998)<br/>
+<a href="https://www.congress.gov/105/plaws/publ277/PLAW-105publ277.pdf" target="_blank" rel="noopener noreferrer">**Government Paperwork Elimination Act of 1998 (GPEA)**</a> (October 1998)<br/>
 > This Act requires federal agencies to allow individuals or entities that deal with the agencies the option to submit information or transact with the agency electronically when possible and to maintain records electronically when possible. This Act specifically states that electronic records and their related electronic signatures cannot be denied legal effect, validity, or enforceability just because they are in electronic form. This Act also encourages federal government use of a range of electronic signature alternatives.
 
 ## Policies
@@ -85,54 +85,54 @@ Each section of this page lists documents in reverse chronological order, with t
 
 ## Standards
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-205/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-205: Attribute Considerations for Access Control Systems**</a> (PDF, June 2019)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-205.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-205: Attribute Considerations for Access Control Systems**</a> (PDF, June 2019)<br/>
 > This guideline provides federal agencies with information for implementing attributes in access control systems. Attributes enable a logical access control methodology where authorization to perform a set of operations is determined by evaluating attributes associated with the subject, object, requested operations, and, in some cases, environment conditions against policy, rules, or relationships that describe the allowable operations for a given set of attributes. This document outlines factors which influence attributes that an authoritative body must address when standardizing an attribute system and proposes some notional implementation suggestions for consideration.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-116 Rev. 1: Guidelines for the Use of PIV Credentials in Facility Access**</a> (PDF, June 2018)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-116 Rev. 1: Guidelines for the Use of PIV Credentials in Facility Access**</a> (PDF, June 2018)<br/>
 > This guideline provides resources for using PIV credentials in facility access, enabling federal agencies to operate as government-wide interoperable enterprises. This guideline covers the risk-based strategy to select appropriate PIV authentication mechanisms as expressed within FIPS 201.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-63/3/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-63-3: Digital Identity Guidelines**</a> (June 2017)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-3.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-63-3: Digital Identity Guidelines**</a> (June 2017)<br/>
 > Agencies use these guidelines as part of the risk assessment and implementation of their digital service(s). These guidelines provide mitigations for an authentication error’s negative impacts by separating the individual elements of identity assurance into its component parts. 
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-63a/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-63A: Digital Identity Guidelines - Enrollment and Identity Proofing**</a> (PDF, June 2017)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-63A: Digital Identity Guidelines - Enrollment and Identity Proofing**</a> (PDF, June 2017)<br/>
 > This guideline focuses on the enrollment and verification of an identity for use in digital services. Central to this is a process known as identity proofing in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at an Identity Assurance Level (IAL). This document defines technical requirements for each of the three IALs.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-63b/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-63B: Digital Identity Guidelines - Authentication and Lifecycle Management**</a> (PDF, June 2017)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-63B: Digital Identity Guidelines - Authentication and Lifecycle Management**</a> (PDF, June 2017)<br/>
 > These guidelines focus on the authentication of subjects interacting with government systems over open networks, establishing that a given claimant is a subscriber who has been previously authenticated. The result of the authentication process may be used locally by the system performing the authentication or may be asserted elsewhere in a federated identity system. This document defines technical requirements for each of the three Authentication Assurance Levels (AALs). 
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-63c/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-63C: Digital Identity Guidelines - Federation and Assertions**</a> (PDF, June 2017)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63c.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-63C: Digital Identity Guidelines - Federation and Assertions**</a> (PDF, June 2017)<br/>
 > These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the use of federated identity and the use of assertions to implement identity federations. Federation allows a given CSP to provide authentication and (optionally) subscriber attributes to a number of separately-administered relying parties. Similarly, relying parties may use more than one CSP.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-73/4/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-73-4: Interfaces for PIV**</a> (PDF, February 2016)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-73-4: Interfaces for PIV**</a> (PDF, February 2016)<br/>
 > This guideline specifies the PIV data model, command interface, client application programming interface (API), and references to transitional interface specifications.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-79/2/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-79-2: Guidelines for the Authorization of PIV Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)**</a> (PDF, July 2015)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-79-2.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-79-2: Guidelines for the Authorization of PIV Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)**</a> (PDF, July 2015)<br/>
 > The guideline specifies the assessment for the reliability of issuers of PIV credentials and Derived PIV credentials. The reliability of an issuer is of utmost importance when a federal agency is required to trust the identity credentials of individuals that were created and issued by another federal agency.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53 Rev. 5: Security and Privacy Controls for Federal Information Systems and Organizations**</a> (PDF, December 2020)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-53 Rev. 5: Security and Privacy Controls for Federal Information Systems and Organizations**</a> (PDF, December 2020)<br/>
 > This guideline provides a catalog of security and privacy controls for federal information systems and organizations and a process for selecting controls to protect organizational operations, assets, individuals, other organizations, and the Nation from a diverse set of threats.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-53a/rev-4/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53A Rev. 4: Assessing Security and Privacy Controls in Federal Information Systems and Organizations - Building Effective Security Assessment Plans**</a> (PDF, December 2014)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53Ar4.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-53A Rev. 4: Assessing Security and Privacy Controls in Federal Information Systems and Organizations - Building Effective Security Assessment Plans**</a> (PDF, December 2014)<br/>
 > This guideline provides a set of procedures for conducting assessments of security controls and privacy controls employed within federal information systems and organizations. The assessment procedures, executed at various phases of the system development lifecycle, are consistent with the security and privacy controls in NIST SP 800-53, Revision 4.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-157/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-157: Guidelines for Derived PIV Credentials**</a> (PDF, December 2014)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-157.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-157: Guidelines for Derived PIV Credentials**</a> (PDF, December 2014)<br/>
 > This guideline provides technical instructions for the implementation of standards-based, secure, reliable, interoperable public key infrastructure (PKI) based identity credentials that are issued by federal departments and agencies to individuals who possess and prove control over a valid PIV credential.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-162/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations**</a> (PDF, January 2014)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.800-162.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations**</a> (PDF, January 2014)<br/>
 > This guideline provides federal agencies with a definition of ABAC. ABAC is a logical access control methodology in which authorization to perform a set of operations is determined by evaluating attributes associated with the subject, object, requested operations, and, in some cases, environment conditions against policy, rules, or relationships that describe the allowable operations for a given set of attributes.
 
-<a href="https://csrc.nist.gov/publications/detail/fips/201/2/final" target="_blank" rel="noopener noreferrer">**FIPS 201-2: PIV of Federal Employees and Contractors**</a> (PDF, August 2013)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-3.pdf" target="_blank" rel="noopener noreferrer">**FIPS 201-3: PIV of Federal Employees and Contractors**</a> (PDF, August 2013)<br/>
 > This standard specifies the architecture and technical requirements for a common identification standard for federal employees and contractors. The overall goal is to achieve appropriate security assurance for multiple applications by efficiently verifying the claimed identity of individuals seeking physical access to federally controlled government facilities and electronic access to government information systems.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-76/2/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-76-2: Biometric Data Specification for PIV**</a> (PDF, July 2013)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-76-2.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-76-2: Biometric Data Specification for PIV**</a> (PDF, July 2013)<br/>
 > This guideline contains technical specifications for biometric data mandated in FIPS. These specifications reflect the design goals of interoperability and performance of the PIV credential. This specification addresses image acquisition to support the background check, fingerprint template creation, retention, and authentication. The biometric data specification in this document is the mandatory format for biometric data carried in the PIV Data Model (SP 800-73-1, Appendix A). Biometric data used only outside the PIV Data Model is not within the scope of this standard.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-122/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-122: Guide for Protecting the Confidentiality of Personally Identifiable Information (PII)**</a> (PDF. April 2010)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf" target="_blank" rel="noopener noreferrer">**NIST SP 800-122: Guide for Protecting the Confidentiality of Personally Identifiable Information (PII)**</a> (PDF. April 2010)<br/>
 > This guideline assists federal agencies in protecting the confidentiality of a specific category of data commonly known as PII. This document provides practical, context-based guidance for identifying PII and determining what level of protection is appropriate for each instance of PII. The document also suggests safeguards that may offer appropriate levels of protection for PII and provides recommendations for developing response plans for breaches involving PII.
 
 ## Additional Resources
 
-<a href="https://csrc.nist.gov/projects/risk-management/rmf-overview" target="_blank" rel="noopener noreferrer">**NIST FISMA Implementation Project: Risk Management Framework Overview**</a> (August 2020)<br/>
+<a href="https://csrc.nist.gov/projects/risk-management" target="_blank" rel="noopener noreferrer">**NIST FISMA Implementation Project: Risk Management Framework Overview**</a> (August 2020)<br/>
 > The selection and specification of security controls for a system is accomplished as part of an organization-wide information security program that involves the management of organizational risk (that is, the risk to the organization or to individuals associated with the operation of a system). The management of organizational risk is a key element in the organization's information security program and provides an effective framework for selecting the appropriate security controls for a system (the security controls necessary to protect individuals and the operations and assets of the organization).
 
 <a href="https://pages.nist.gov/800-63-FAQ/" target="_blank" rel="noopener noreferrer">**NIST SP 800-63 Frequently Asked Questions (FAQs)**</a> (July 2020)<br/>
@@ -144,7 +144,7 @@ Each section of this page lists documents in reverse chronological order, with t
 <a href="https://www.nist.gov/privacy-framework/new-framework" target="_blank" rel="noopener noreferrer">**NIST: Privacy Framework**</a> (PDF, January 2020)<br/>
 > The Privacy Framework is a voluntary tool intended to help organizations identify and manage privacy risk to build innovative products and services while protecting individuals’ privacy. The Privacy Framework approach to privacy risk is to consider privacy events as potential problems individuals could experience arising from system, product, or service operations with data, whether in digital or non-digital form, through a complete lifecycle from data collection through disposal.
 
-<a href="https://csrc.nist.gov/publications/detail/white-paper/2016/04/21/best-practices-for-privileged-user-piv-authentication/final" target="_blank" rel="noopener noreferrer">**NIST White Paper: Best Practices for Privileged User PIV Authentication**</a> (PDF, April 2016)<br/>
+<a href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04212016.pdf" target="_blank" rel="noopener noreferrer">**NIST White Paper: Best Practices for Privileged User PIV Authentication**</a> (PDF, April 2016)<br/>
 > This white paper was developed in response to the Cybersecurity Strategy and Implementation Plan to explain the need for multifactor PIV-based user authentication for privileged users. It provides best practices for agencies implementing PIV authentication for privileged users.
 
 <a href="https://www.cisa.gov/cdm" target="_blank" rel="noopener noreferrer">**Continuous Diagnostics and Mitigation**</a><br/>
