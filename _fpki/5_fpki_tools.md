@@ -17,7 +17,7 @@ subnav:
       href: ../tools/cct/
     - text: Certificate Profile Conformance Tool
       href: ../tools/cpct/
-    - text: FPKIMA Repositories
+    - text: FPKIMA Sitemap
       href: https://www.idmanagement.gov/docs/fpki-fpkima-sitemap.pdf
       
 ---
