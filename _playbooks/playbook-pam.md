@@ -14,12 +14,12 @@ subnav:
       href: '#executive-summary'
     - text: Protect Federal Identities and Logical Assets
       href: '#protect-federal-identities-and-logical-assets'
-    - text: Step 1. Develop Program Goals
-      href: '#step-1-develop-program-goals'
+    - text: Step 1. Develop a Policy
+      href: '#step-1-develop-a-privileged-user-policy'
     - text: Step 2. Define and Identify
       href: '#step-2-define-and-identify'
-    - text: Step 3. ICAM Integration
-      href: '#step-3-icam-integration'
+    - text: Step 3. Enterprise ICAM Service
+      href: '#step-3-implement-as-an-enterprise-icam-service'
     - text: Step 4. Prioritize and Execute
       href: '#step-4-prioritize-and-execute'
     - text: Appendix A. Reference Documents
@@ -73,13 +73,14 @@ Below are key terms used throughout this playbook. A linked term denotes an offi
 - [**Privileged account**](https://csrc.nist.gov/glossary/term/privileged_account){:target="_blank"}{:rel="noopener noreferrer"} is a system account used by a privileged user. A privileged account can belong to a single endpoint, network device, domain, database, or application. A privileged account can run [**privileged commands**](https://csrc.nist.gov/glossary/term/privileged_command){:target="_blank"}{:rel="noopener noreferrer"} which involve the control, monitoring, or administration of a system, including security functions and associated security-relevant information.
 - **Privilege compromise** is either an adverse action of a privileged user or account through an insider threat or an account compromise.
 - [**Privileged User**](https://csrc.nist.gov/glossary/term/privileged_user){:target="_blank"}{:rel="noopener noreferrer"} is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or [**superuser**](https://csrc.nist.gov/glossary/term/superuser){:target="_blank"}{:rel="noopener noreferrer"}.
-- Unauthorized[**Privilege escalation**](https://csrc.nist.gov/glossary/term/privilege_escalation){:target="_blank"}{:rel="noopener noreferrer"} exploits a bug or flaw that allows for a higher privilege level than what would usually be permitted.
+- Unauthorized [**Privilege escalation**](https://csrc.nist.gov/glossary/term/privilege_escalation){:target="_blank"}{:rel="noopener noreferrer"} exploits a bug or flaw that allows for a higher privilege level than what would usually be permitted.
 
 ## Disclaimer
 
 This playbook is informative. The General Services Administration Office of Government-wide Policy, in collaboration with the Department of Homeland Security (DHS) Continuous Diagnostic and Mitigation (CDM) Program and the Federal CISO Council ICAM Subcommittee developed this playbook with input from federal identity and security practitioners. This playbook is limited to high-level guidance for privileged users accessing Federal Government information systems. This playbook shouldn't be interpreted as official policy or mandated action and doesn't provide authoritative definitions for IT terms.
 
 # Protect Federal Identities and Logical Assets
+
 Government employees and contractors need a privileged account to perform necessary administrative and security functions, which creates an inherent risk of insider threat or account compromise. As a result, agencies should implement privilege user controls that reduce this risk without hindering their ability to carry out assigned job duties. In creating a secure physical and virtual workplace for privileged users, agencies align efforts with the [FICAM Architecture]({{site.baseurl}}/arch/). The following are the four primary high-level steps to establish or enhance an agency's privileged user management function of an agency's ICAM program.
 
 1. **Develop a privileged user policy** to define or assess policies, strategies, and technologies used to control, monitor, and secure elevated access to critical agency resources. This step is intended to reduce or avoid risk and impact on the agency's mission. Agency executives must understand why privileged user management is essential and the risks associated with elevated access. This step also includes engaging agency stakeholders and staying abreast of insider threats and ICAM best practices through government-wide groups.
