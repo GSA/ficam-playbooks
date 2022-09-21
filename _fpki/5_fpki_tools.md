@@ -17,6 +17,8 @@ subnav:
       href: ../tools/cct/
     - text: Certificate Profile Conformance Tool
       href: ../tools/cpct/
+    - text: FPKIMA Repositories
+      href: https://www.idmanagement.gov/docs/fpki-fpkima-sitemap.pdf
       
 ---
 
@@ -36,4 +38,4 @@ crt.sh | [External](https://crt.sh/){:target="_blank"}{:rel="noopener noreferrer
 OpenSC | [Github (External)](https://github.com/OpenSC/OpenSC/wiki){:target="_blank"}{:rel="noopener noreferrer"} | OpenSC provides a set of libraries and utilities to work with smart cards. Use OpenSC versions of 0.20.0 or greater to reduce website authentication errors related to TLS 1.3. | System Engineers
 NIST 85B (800-73-4) Test Tool | [NIST (External)](https://csrc.nist.gov/projects/nist-personal-identity-verification-program/software-downloads){:target="_blank"}{:rel="noopener noreferrer"} | Used to pull deep PIV contents when integrating PIV with various infrastructure components. | System Engineers; FPKI Card Issuers
 Treasury PIV Authentication Tester (TLS 1.3) | [External](https://caia-dev.treasury.gov/pagination-spa){:target="_blank"}{:rel="noopener noreferrer"} | A tool from the U.S. Department of the Treasury, Bureau of the Fiscal Service used to test PIV authentication. Click on "log in" and follow the prompts for PIV. This tool will identify if your agency is impacted by TLS 1.3 break and inspect for Trusted Internet Connection (TIC). | System Engineers; PIV Holders
-FPKIMA Repositories | [Consolidated Repository List](https://www.idmanagement.gov/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"} |  A consolidated list of FPKIMA repositories, to include both production and test resources. | Relying Parties and System Engineers
+
