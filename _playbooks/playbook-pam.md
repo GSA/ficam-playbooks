@@ -122,7 +122,7 @@ An insider threat is when a government employee or contractor accidentally, comp
 | **Complacent** | Overall lax or careless approach to security. | 1. Create user accounts and assign privileges without the appropriate review and approval.<br> 2. Share system account passwords. |
 | **Malicious** | Intentionally disrupt, threaten, or endanger an agency's activities or assets. | 1. Unwanted, purposeful disclosure or of information.<br> 2. Introduce malicious code, malware, Trojan horse, and viruses.<br> 3. Destroy or modify system audit logs.|
 
-{% include alert-alert.html heading="Insider Threat Mitigation" content="Because of privileged users' elevated access, unwanted behavior by these individuals can significantly compromise agency assets or operations. Understanding insider threat classifications and unwanted behavior will support implementing an agency's privileged user management. A combination of procedural and technical measures can help agencies reduce the range of unwanted behavior." %} 
+{% include alert-error.html heading="Insider Threat Mitigation" content="Because of privileged users' elevated access, unwanted behavior by these individuals can significantly compromise agency assets or operations. Understanding insider threat classifications and unwanted behavior will support implementing an agency's privileged user management. A combination of procedural and technical measures can help agencies reduce the range of unwanted behavior." %} 
 
 ## Account Compromise
 
