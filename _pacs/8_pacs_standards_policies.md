@@ -45,8 +45,6 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 ## Standards
 
-[_Federal Identity, Credential, and Access Management (FICAM) Architecture_]({{site.baseurl}}), GSA, in coordination with OMB and DHS
-
 [FIPS PUB 199, _Standards for Security Categorization of Federal Information and Information Systems_](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, February 2004
 
 [FIPS PUB 200, _Minimum Security Requirements for Federal Information and Information Systems_](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.200.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, March 9, 2006 
