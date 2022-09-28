@@ -39,8 +39,6 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Home
-    url: /
   - name: Architecture
     children:
       - name: Introduction
