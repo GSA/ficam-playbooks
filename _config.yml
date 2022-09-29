@@ -39,8 +39,6 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Home
-    url: /
   - name: Architecture
     children:
       - name: Introduction
@@ -103,7 +101,7 @@ primary_navigation:
         url: /playbooks/dira/
       - name: ICAM Governance Framework
         url: /docs/playbook-identity-governance-framework.pdf
-  - name: User Guides
+  - name: Guides
     children:
       - name: Digitally Sign Word Document
         url: /playbooks/signword/

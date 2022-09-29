@@ -12,6 +12,9 @@ where we provide an easy way to manage your navigation system
     <div class="usa-nav__inner">
       <button class="usa-nav__close">{% asset close.svg alt="close" %}</button>
       <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="https://www.idmanagement.gov" target="_blank" rel="noopener noreferrer">IDM.gov</a>
+        </li>
         {% for nav_item in include.primary_navigation %}
         {% unless nav_item.children %}
         {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
