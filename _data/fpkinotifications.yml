@@ -35,7 +35,7 @@
   ca_certificate_subject: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
   cdp_uri: N/A
   aia_uri: N/A
-  sia_uri: fpki dash help at gsa dot gov
+  sia_uri: ldap://ldap.fpki.gov/cn=Federal Common Policy CA,ou=FPKI,o=U.S. Government,c=US?cACertificate;binary,crossCertificatePair;binary
   ocsp_uri: N/A
 
 - notice_date: September 6, 2022
