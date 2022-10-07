@@ -145,6 +145,8 @@ fpkitools:
 fpkiactiveannouncements:
   - text: Back to FPKI Guide
     href: /fpki/announcements/
+  - text: FCPCA SIA LDAP Decommissioning
+    href: /fpki/announcements/ldap-removal/
   - text: New Test Tools Available (2021) ## May 2022
     href: /fpki/announcements/test-tools/
   - text: Federal Common Policy CA G2 Update (2020) ## Oct 2022
