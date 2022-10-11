@@ -59,7 +59,8 @@ primary_navigation:
         url: /arch/services/#identity-management
       - name: Cloud Identity
         url: /playbooks/cloud/
-      - name: Privileged Identity (Coming Soon)
+      - name: Privileged Identity (New!)
+        url: /playbooks/pam/
       - name: Digital Worker Identity
         url: /playbooks/dw/
       - name: Identity Lifecycle Management
@@ -91,7 +92,7 @@ primary_navigation:
         url: /playbooks/sso/#step-5-federate-application-access
       - name: Attribute supported Federation
         url: /playbooks/ilm/#step-4-integrate-with-agency-enterprise-services
-      - name: Trust Frameworks
+      - name: Trust Frameworks (New!)
         url: /playbooks/cloud/#federation
   - name: Governance
     children:
