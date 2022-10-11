@@ -7,7 +7,7 @@ removeDate: 05/18/2024
 collection: fpki
 permalink: /fpki/announcements/test-tools/
 description: Release announcement for the Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
-category: Active
+category: Archived
 sticky_sidenav: true
 sidenav: fpkiactiveannouncements
 
