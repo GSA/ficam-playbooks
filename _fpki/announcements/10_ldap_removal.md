@@ -1,7 +1,9 @@
 ---
 layout: page
 title: FCPCA SIA LDAP Decommissioning
-pubDate: October 11, 2022
+pubDate: 10/11/2022
+archiveDate: 10/11/2023
+removeDate: 10/11/2025
 collection: fpki
 permalink: /fpki/announcements/ldap-removal/
 description: The FPKIMA will be decommissioning the LDAP service associated with the old FCPCA root's SIA repository
