@@ -11,7 +11,7 @@ sidenav: fpkiactiveannouncements
       
 ---
 
-The FPKIMA team will be taking action to reduce unnecessary external UDP activity on their repositories in order to avert potential negative impacts to availability.
+The FPKIMA team will be taking action to reduce unnecessary external activity on their repositories in order to avert potential negative impacts to availability.
 
 **Plan of Action:**
 The FPKIMA team is turning off its sole remaining LDAP repository services on 10/12/2022, this only impacts the SIA repository for the old Federal Common Policy CA (FCPCA) root.
@@ -19,6 +19,7 @@ The FPKIMA team is turning off its sole remaining LDAP repository services on 10
 **Mitigating Factors:**
 The proposed action should not impact FPKI relying parties, provided they are properly configured to validate end entity certificates up to the Federal Common Policy CA G2 (FCPCAG2).  This action is further reinforced given the following considerations:
 
+- The associated HTTP repository is still available - [http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c)
 - LDAP support was deprecated in 2013, and the last certificate issued by the old FCPCA with an FPKI LDAP URI expired in 2020 
 - The old FCPCA Self-signed root certificate expires in 2030 and contains one LDAP URI in the SIA to a Directory entry that contains no certificates
 
