@@ -31,7 +31,7 @@ subnav:
 ---
 
 Version 1.1  
-January 20, 2022
+October 11, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
@@ -40,8 +40,8 @@ This playbook is a collaboration between the Federal Chief Information Security 
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.1 | 09/18/22 | Update federation section for trust framework examples |
-| 1.0 | 01/20/22 | Initial Draft |
+| 1.1 | 10/11/22 | Update federation section for trust framework examples. |
+| 1.0 | 01/20/22 | Initial draft. |
 
 # Executive Summary
 
