@@ -25,6 +25,19 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: October 11, 2022
+  change_type: URI Decommission
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The FPKIMA will be decommissioning the LDAP service associated with the old root's SIA repository; there should be no impacts to relying parties since the migration from the FCPCA to the FCPCA2 (impacted URI - ldap://ldap.fpki.gov/cn=Federal Common Policy CA,ou=FPKI,o=U.S. Government,c=US?cACertificate;binary,crossCertificatePair;binary).
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 905f942fd9f28f679b378180fd4f846347f645c1
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: N/A
+  aia_uri: N/A
+  sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c (still available)
+  ocsp_uri: N/A
+
 - notice_date: September 6, 2022
   change_type: CA Certificate Issuance
   system: TSCP SHA256 Bridge CA
