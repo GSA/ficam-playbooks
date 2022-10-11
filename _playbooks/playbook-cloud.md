@@ -401,11 +401,11 @@ Address the following items when taking a cloud identity approach to federation:
 
 **Across Agency Domains**
 
-1. **Trust Framework**. Federating across security or organizational boundaries requires a legal agreement and a technical exchange. An agreement between entities should identify each organization's required security and governance processes. A best practice is creating a template that includes the format and required attributes. See [NISTIR 8149](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"} for more information on trust frameworks.
+1. **Trust Framework**. Federating across security or organizational boundaries requires a legal agreement and a technical exchange. An agreement between entities should identify each organization's required security and governance processes. A best practice is creating a template that includes the format and required attributes.
 
 #### Federation and Trust Frameworks in Action
 
-Agencies leverage trust frameworks daily for different purposes. The Federal Public Key Infrastructure one example of a federal trust framework.
+Agencies leverage trust frameworks daily for different purposes. The Federal Public Key Infrastructure is one example of a federal government trust framework. See [NISTIR 8149](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"} for more information on trust frameworks.
 1. Governance - The [Federal PKI Policy Authority (FPKIPA)](https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-policy-authority){:target="_blank"}{:rel="noopener noreferrer"} sets policies, approves members and applicants, and oversees compliance activities of the Federal PKI Trust Framework.
 2. Technical and security requirements - The Federal PKI Policy Authority (FPKIPA) maintains the [Federal PKI Certificate Policies](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"} that outline technical and security requirements for all members. Two policies cover internal government requirements: The Federal Common Policy Framework and The Federal Bridge Certificate Policy,
  which is an interoperability framework for federal and private sector partners.
