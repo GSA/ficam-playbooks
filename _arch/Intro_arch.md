@@ -14,7 +14,7 @@ subnav:
     href: '#what-is-icam'
   - text: Who Is the FICAM Architecture for?
     href: '#who-is-the-ficam-architecture-for'
-  - text: What Is the History of the FICAM Architecture Background?
+  - text: What Is the History of the FICAM Architecture?
     href: '#what-is-the-history-of-the-ficam-architecture-background'
 ---
 
