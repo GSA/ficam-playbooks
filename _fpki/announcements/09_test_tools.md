@@ -1,14 +1,16 @@
 ---
 layout: page
 title: New Test Tools Available
-pubDate: May 18, 2021
+pubDate: 05/18/2021
+archiveDate: 05/18/2022
+removeDate: 05/18/2024
 collection: fpki
 permalink: /fpki/announcements/test-tools/
 description: Release announcement for the Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
-category: Active
+category: Archived
 sticky_sidenav: true
 sidenav: fpkiactiveannouncements
-      
+
 ---
 
 GSA has created two tools to streamline Federal PKI Annual Review testing with remote evaluation capabilities.

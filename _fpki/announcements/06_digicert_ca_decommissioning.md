@@ -10,7 +10,8 @@ permalink: /fpki/announcements/2019digicert/
 description: Information related to the DigiCert CAs affected by this change.
 sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
-category: Archived
+category: Removed
+
 ---
 
 DigiCert is planning on decommissioning several certification authorities (CAs) from the Federal PKI. These CAs are no longer active or required, and there is no expected impact from these changes. 

@@ -86,7 +86,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
       <li><strong>IAL2</strong> - first and last name, email address, and address of record, supported by appropriate identity documentation and verified as strong.</li>
       <li><strong>IAL3</strong> - first and last name, email address, address of record, and fingerprints, supported by appropriate identity documentation and verified as superior.</li>
     </ul>
-    <p>For more information about identity proofing and IALs, see <a href="https://pages.nist.gov/800-63-3/" target="_blank">NIST SP 800-63-A</a> (Section 2.2).</p>
+    <p>For more information about identity proofing and IALs, see <a href="https://pages.nist.gov/800-63-3/sp800-63a.html#22-identity-assurance-levels" target="_blank">NIST SP 800-63A</a> (Section 2.2).</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.</p>
@@ -165,7 +165,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an administrator needs to issue a credential to an employee or contractor.</p>
     <p><strong>Note:</strong> The preferred credential for employees and contractors is a PIV card. For cases where you cannot issue a PIV card, you must use a combination of factors to reach at least an Authenticator Assurance Level 2 (AAL2) credential.</p>
-    <p>For more information about authentication and AALs, see <a href="https://pages.nist.gov/800-63-3/" target="_blank" rel="noopener noreferrer">NIST SP 800-63-B</a> (Section 4).</p>
+    <p>For more information about authentication and AALs, see <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec4" target="_blank" rel="noopener noreferrer">NIST SP 800-63B</a> (Section 4).</p>
     <p><img src="{{site.baseurl}}/assets/arch/usecases/4-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>

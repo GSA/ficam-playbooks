@@ -7,7 +7,7 @@ removeDate: 10/11/2023
 collection: fpki
 permalink: /fpki/announcements/common-g2-update/
 description: Details on the Federal Common Policy CA G2 timeline and actions agencies need to perform.
-category: Active
+category: Archived
 sticky_sidenav: true
 sidenav: fpkiactiveannouncements
 

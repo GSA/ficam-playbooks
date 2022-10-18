@@ -7,7 +7,7 @@ sidenav: fpki
 sticky_sidenav: true
 
 subnav:
-  - text: Notifications
+  - text: System Changes and Notifications
     href: '#notifications'
   - text: How to Add a New Notification
     href: '#how-to-add-a-new-notification'

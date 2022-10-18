@@ -30,8 +30,8 @@ subnav:
     href: '#appendix-b-acronyms'
 ---
 
-Version 1.0  
-January 20, 2022
+Version 1.1  
+October 11, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
@@ -40,7 +40,8 @@ This playbook is a collaboration between the Federal Chief Information Security 
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 01/20/22 | Initial Draft |
+| 1.1 | 10/11/22 | Update federation section for trust framework examples. |
+| 1.0 | 01/20/22 | Initial draft. |
 
 # Executive Summary
 
@@ -388,24 +389,48 @@ Identity governance includes both program oversight and technical controls. Agen
 
 {% include alert-warning.html heading="Workforce Challenge - Informing Users" content="Any changes to the user experience can degrade workforce efficiency. Make a plan to communicate changes and prepare your users." %} 
 
-### **Federation**
+### Federation
 
-Federation is the technology, policies, standards, and processes that allow an agency to share digital identities, attributes, and credentials between trust domains or organizations and usually occurs through an assertion. Federation can be a technical mechanism to implement a Single Sign-On in an agency (within the same trust domain). It is also a mechanism to federate between trust domains, such as between agencies, mission partners, or other trust frameworks. Address the following items when taking a Cloud Identity approach to federation:
+Federation is the technology, policies, standards, and processes that allow an agency to share digital identities, attributes, and credentials between trust domains or organizations and usually occurs through an assertion. Federation can be a technical mechanism to implement a Single Sign-On in an agency (within the same agency domain). It is also a mechanism to share identity information across domains, such as between agencies, mission partners, or trust frameworks. 
 
-**Within the Same Trust Domain**
+Address the following items when taking a cloud identity approach to federation:
 
-1. **Assertion Profile**. The greatest challenge with federating in an agency is identifying if and how an application supports an assertion protocol. Additionally, applications may need specific attributes asserted from the IDaaS. Some IDaaS may have pre-configured profiles to streamline application onboarding where this was previously a manual task. See the [Enterprise Single Sign-On Playbook]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"} section on planning application integration for more information.
+**Within the Same Agency Domain**
 
-**Across Different Trust Domains**
+1. **Assertion Profile**. The greatest challenge with federating in an agency is identifying if and how an application supports an assertion protocol. Additionally, applications may need specific attributes asserted from the IDaaS. Some IDaaS may have pre-configured profiles to streamline application onboarding, which was previously a manual task. See the [Enterprise Single Sign-On Playbook]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"} section on planning application integration for more information.
 
-1. **Trust Framework**. Federating across security or organizational boundaries requires a legal agreement and a technical exchange. An agreement between entities should identify each organization's required security and governance processes. Creating a template that includes the format and required attributes is a best practice. See [NISTIR 8149](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"} for more information on trust frameworks.
+**Across Agency Domains**
 
-**Trust Frameworks in Action**
+1. **Trust Framework**. Federating across security or organizational boundaries requires a legal agreement and a technical exchange. An agreement between entities should identify each organization's required security and governance processes. A best practice is creating a template that includes the format and required attributes.
 
-The integrity of a trust framework is vital when federating with external identities. The trust framework partners should have governance processes that may include a verified accreditation or audit process to ensure that the identity proofing, authenticator, and federation assertion meets the intent of NIST Special Publication 800-63-3 requirements. Using a third-party audit service provides the additional assurance of secure and compliant operations. Some examples of trust frameworks include:
-- The Federal Public Key Infrastructure (PKI) Policy Authority enforces a certificate policy and third-party auditing and implements technical control through the Federal PKI certificate profiles and hierarchy. There are other [non-government PKI trust frameworks](https://www.idmanagement.gov/buy/trust-services/#non-government-pki-trust-framework){:target="_blank"}{:rel="noopener noreferrer"} that interoperate with the Federal PKI. The Federal PKI trust framework ensures that federal employee and contractor credentials meet a NIST standard (FIPS 201) and are acceptable to all federal agencies.
-- The Kantara Initiative is a non-government trust framework program. It operates conformity assessment and assurance and grants trust marks to companies that show conformance to a Kantara standard based on NIST Special Publication 800-63-3. The Kantara Initiative accredits full identity service providers, component services, and Kantara accredited assessors. An agency may recognize a Kantara trust mark to federate with an external Identity Provider.
-- The DirectTrust Health Information Service Provider is a PKI-based trust framework for healthcare community collaboration." 
+#### Federation and Trust Frameworks in Action
+
+Agencies leverage trust frameworks daily for different purposes. The Federal Public Key Infrastructure is one example of a federal government trust framework. See [NISTIR 8149](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"} for more information on trust frameworks.
+1. **Governance** - The [Federal PKI Policy Authority (FPKIPA)](https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-policy-authority){:target="_blank"}{:rel="noopener noreferrer"} sets policies, approves members and applicants, and oversees compliance activities of the Federal PKI Trust Framework.
+2. **Technical and Security Requirements** - The Federal PKI Policy Authority (FPKIPA) maintains the [Federal PKI Certificate Policies](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"} that outline technical and security requirements for all members. Two policies cover internal government requirements: The Federal Common Policy Framework and The Federal Bridge Certificate Policy,
+ which is an interoperability framework for federal and private sector partners.
+3. **Legal Agreements** - Every Federal PKI member must sign a Memorandum of Agreement with the FPKIPA that outlines roles and responsibilities to maintain the security and confidence of the Federal PKI Trust Framework.
+4. **Conformance Criteria** - Every Federal PKI member must complete an annual third-party audit against either The Federal Common Policy Framework or The Federal Bridge Certificate Policy.
+5. **Recognition** - Federal PKI members are listed as an [identity trust service](https://www.idmanagement.gov/buy/trust-services/){:target="_blank"}{:rel="noopener noreferrer"} that offers government, business, or trust framework services.
+
+Federation trust frameworks also exist in the Federal Government.
+- [Max Authentication Federated Login](https://login.max.gov/cas/login?service=https%3A%2F%2Fportal.max.gov%2Fhome%2Flogin%2Fcas){:target="_blank"}{:rel="noopener noreferrer"} - Provides a government-to-government federation service for either access to Max.gov or an agency application. Typically, customer agencies must sign an agreement and use the Max.gov assertion profile.
+- [GSA Login.gov](https://partners.login.gov/product/){:target="_blank"}{:rel="noopener noreferrer"} - Provides primarily a public-to-government federation service. This requires an agency customer agreement and following the [login.gov assertion profile](https://developers.login.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
+
+Some government agencies also recognize, participate in, and leverage non-government trust frameworks. Often, these organizations do not manage identities or credentials for their community directly. They most likely certify and annually audit services that provide identity proofing and credentialing.
+- The Federal PKI Policy Authority reviews the PKI trust frameworks of a small number of [non-government organizations](https://www.idmanagement.gov/buy/trust-services/#non-government-pki-trust-framework){:target="_blank"}{:rel="noopener noreferrer"} to determine whether the policies, processes, legal agreements, privacy protections, security controls, and audit requirements are comparable with the U.S. Government Federal PKI requirements. If comparable, the organizations that manage their communities’ rules act as a PKI bridge. 
+- GSA is a member of the [Kantara Initiative](https://kantarainitiative.org/what-we-do/){:target="_blank"}{:rel="noopener noreferrer"} which is a non-profit, non-government trust framework program. It operates conformity assessment and assurance and grants trust marks to companies that show conformance to a Kantara standard based on NIST Special Publication 800-63-3. The Kantara Initiative accredits full identity service providers, component services, and Kantara accredited assessors. An agency may recognize a Kantara trust mark to federate with an external Identity Provider.
+- The [DirectTrust Health Information Service Provider](https://directtrust.org/who-we-are){:target="_blank"}{:rel="noopener noreferrer"}  is a PKI trust framework for teh healthcare community collaboration leveraged by the Department of Health and Human Services (HHS). They are a non-profit trade alliance that is an ANSI-accredited standards body, a trust framework supported by policy, and an accreditor for reliable and trusted exchange across the DirectTrust network.
+- NIST is a member of the [Fast Identity Online (FIDO) Alliance](https://fidoalliance.org/overview/){:target="_blank"}{:rel="noopener noreferrer"} which is an open industry association that promotes the development of, use, and compliance with standards for authentication and device attestation. They certify vendor products to conform to their FIDO standard, including [Functional Certification, Certified Authenticator Levels, and Biometric Component Certification programs](https://fidoalliance.org/certification/){:target="_blank"}{:rel="noopener noreferrer"} . The FIDO2 authenticators are mentioned in the Office of Management and Budget (OMB) Memo 22-09 as an example of a phishing-resistant authenticator approach and in National Institute of Standards and Technology (NIST) Special Publication 800-63-3 implementation guidance as an example of impersonation-resistant.
+
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Use Case - Using a third-party credential service provider (CSP)</h4>
+    <p class="usa-alert__text">
+      The integrity of a Trust Framework is vital when federating with external identities. The trust framework partners should have governance processes that may include a verified accreditation or audit process to ensure the identity proofing, authenticator, and federation assertion meets the intent of <a class="usa-link" href="https://pages.nist.gov/800-63-3/" target="_blank" rel="noopener noreferrer">NIST Special Publication 800-63-3 requirements</a>. Using a third-party audit service provides the additional assurance of secure and compliant operations. In the context of the Federal Risk and Authorization Management Program (FedRAMP), this is a third-party assessment organization or an annual compliance audit for the Federal Public Key Infrastructure Shared Service Providers. External examples used by federal agencies include the Kantara Initiative for federal full or component identity services and the DirectTrust for the Health Information Service Provider. The Trust Framework requirements set the assurance for how external digital identities and what NPEs are trusted to access an agency resource.
+    </p>
+  </div>
+</div>
 
 ## Step 4. Test and Deploy Identity Automation
 

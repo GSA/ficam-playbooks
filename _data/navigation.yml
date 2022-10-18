@@ -145,22 +145,18 @@ fpkitools:
 fpkiactiveannouncements:
   - text: Back to FPKI Guide
     href: /fpki/announcements/
-  - text: New Test Tools Available (2021) ## May 2022
-    href: /fpki/announcements/test-tools/
-  - text: Federal Common Policy CA G2 Update (2020) ## Oct 2022
-    href: /fpki/announcements/common-g2-update/
+  - text: FCPCA SIA LDAP Decommissioning (2022) ## Oct 2023
+    href: /fpki/announcements/ldap-removal/
 
 ## Remove Announcements older than three years
 
 fpkiarchivedannouncements:
   - text: Back to FPKI Guide
     href: /fpki/announcements/
-  - text: Upcoming Migration of Federal PKI Certificate Repository Services (2019) ## Apr 2022
-    href: /fpki/announcements/2019fpkimigration/
-  - text: DigiCert CA Decommissioning (2019) ## Mar 2022
-    href: /fpki/announcements/2019digicert/
-  - text: Removal of Health CAs from Federal PKI (2019) ##  Mar 2022
-    href: /fpki/announcements/2019removal/
+  - text: New Test Tools Available (2021) ## May 2024
+    href: /fpki/announcements/test-tools/
+  - text: Federal Common Policy CA G2 Update (2020) ## Oct 2023
+    href: /fpki/announcements/common-g2-update/
 
 #PACS Navigation
 
@@ -238,3 +234,7 @@ signword:
 signfedregister:
   - text: Digitally Signing Documents for Office of the Federal Register Submission
     href: /playbooks/signfedregister/
+    
+pam:
+  - text: Privileged User Playbook
+    href: /playbooks/pam/

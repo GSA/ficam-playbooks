@@ -131,7 +131,7 @@ Policy administration is a combination of laws, regulations, rules, and agency p
 - “Grant access to any agency employee or contractor with an authenticated PIV card.”
 - “Grant access to anyone who is a federal employee, GS-12 or higher, cleared Top Secret, trained in first aid, and certified as a project manager.”
 
-One challenge to overcome in providing access services is conducting an application discovery and inventory for both physical and logical access. For logical access, see the [application inventory section of the Single Sign-On Playbook.]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"}
+One challenge to overcome in providing access services is conducting an application discovery and inventory for both physical and logical access. For logical access, see the [Application Inventory and Identity Risk Analysis section of the Enterprise Single Sign-On Playbook.]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Authentication
  

@@ -30,14 +30,19 @@ subnav:
     href: '#appendix-a-policies-standards-and-guidance'
 ---
 
-Version 1.0  
-June 2022
+Version 1.1  
+October 11, 2022
 
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this playbook to help federal agencies understand and plan identity lifecycle management initiatives.
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
 <br><br><br>
+
+| Version Number | Date | Change Description |
+| :----------: | :-------: | -------- |
+| 1.1 | 10/11/22 | Move 3rd party federation content to Cloud Identity Playbook federation section. |
+| 1.0 | 06/30/22 | Initial Draft. |
 
 ## Executive Summary
 
@@ -278,15 +283,7 @@ Make attributes available for authorization decisions. Federation is not only ac
  - Focus on the best practice of using assertion protocols rather than exposing attributes externally.
 - Focus on authorization through federation rather than on PIV. PIV is a static credential with static attributes. SSO with Federation is dynamic-based on the SSO integration with a master user record. It is easier to update a directory than a PIV credential.
 
-<div class="usa-alert usa-alert--info">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Use Case - Using a third-party credential service provider (CSP)</h4>
-    <p class="usa-alert__text">
-      The integrity of a Trust Framework is vital when federating with external identities. The trust framework partners should have governance processes which may include a verified accreditation or audit process to ensure the identity proofing, authenticator, and federation assertion meets the intent of <a class="usa-link" href="https://pages.nist.gov/800-63-3/" target="_blank" rel="noopener noreferrer">NIST Special Publication 800-63-3 requirements</a>. Using a third-party audit service provides the additional assurance of secure and compliant operations. In the context of FedRAMP, this is a third-party assessment organization or an annual compliance audit for the Federal Public Key Infrastructure Shared Service Providers. External examples used by federal agencies include the Kantara Initiative for federal API applications or DirectTrust for the Health Information Service Provider. The Trust Framework requirements set the standard for which external digital identities and what NPEs are authorized to agency resources.</p>
-      <p>The CSP being leveraged needs to be researched thoroughly to ensure that the workflow of achieving IAL2 or IAL3 assertions are compliant with NIST SP 800-63-3 or the most updated version of that publication. CSPs will get an external audit/certification for IAL2 level of assertion by showing the workflow and identity proofing process, then that process is bypassed after the certification was awarded. The CSP must  provide a demo and have the entity prove the process.  The contract should state that the CSP will maintain NIST 800-63-3 compliant processes through the period of performance on the contract.  Bypassing any process would result in contract termination. Remember you cannot achieve IAL2 without identity proofing the individual. NIST SP 800-63A requires that the individual is identity proofed. There are no alternatives to identity proofing.
-    </p>
-  </div>
-</div>
+See the [Cloud Identity Playbook Federation section]({{site.baseurl}}/playbooks/cloud/#federation) for more information on federation and using trust frameworks for government, mission partner, or public identity federation.
 
 ## Summary
 

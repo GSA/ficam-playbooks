@@ -39,8 +39,6 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Home
-    url: /
   - name: Architecture
     children:
       - name: Introduction
@@ -61,7 +59,8 @@ primary_navigation:
         url: /arch/services/#identity-management
       - name: Cloud Identity
         url: /playbooks/cloud/
-      - name: Privileged Identity (Coming Soon)
+      - name: Privileged Identity (New!)
+        url: /playbooks/pam/
       - name: Digital Worker Identity
         url: /playbooks/dw/
       - name: Identity Lifecycle Management
@@ -93,6 +92,8 @@ primary_navigation:
         url: /playbooks/sso/#step-5-federate-application-access
       - name: Attribute supported Federation
         url: /playbooks/ilm/#step-4-integrate-with-agency-enterprise-services
+      - name: Trust Frameworks (New!)
+        url: /playbooks/cloud/#federation
   - name: Governance
     children:
       - name: Governance Overview
@@ -103,7 +104,7 @@ primary_navigation:
         url: /playbooks/dira/
       - name: ICAM Governance Framework
         url: /docs/playbook-identity-governance-framework.pdf
-  - name: User Guides
+  - name: Guides
     children:
       - name: Digitally Sign Word Document
         url: /playbooks/signword/
