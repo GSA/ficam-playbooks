@@ -14,7 +14,7 @@ sidenav: fpkiactiveannouncements
 ---
 
 **Plan of Action:**
-In order to better serve the Federal PKI community, the CPCT application will transition from an online application to an application that can be hosted and run from an individual workstation. As part of this transition, the online version of CPCT at cpct.app.cloud.gov will be disabled this Friday, October 21, 2022 at 5:00 pm EST.
+In order to better serve the Federal PKI community, the CPCT application will transition from an online application to an application that can be hosted and run from an individual workstation. As part of this transition, the online version of CPCT at `cpct.app.cloud.gov` will be disabled this **Friday, October 21, 2022 at 5:00 pm EST**.
 
 **Mitigating Factors:**
 The next version of the tool and instructions for obtaining and installing it will be provided in the coming weeks.
