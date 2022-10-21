@@ -25,6 +25,13 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: October 18, 2022  
+  change_type: OCSP Outage
+  system: Entrust Managed Services SSP OCSP Service
+  change_description: Between approximately 10 P.M ET on October 17, 2022 and 10:00 A.M on October 18, 2022, the Entrust Managed Services SSP OCSP Service was presenting "unknown,' responses; however, the OCSP proofs were regenerated and are now functioning as expected.
+  contact: support at entrust dot com   
+  ocsp_uri: ocsp.managed.entrust.com, ocspproofs.managed.entrust.com
+
 - notice_date: October 11, 2022
   change_type: URI Decommission
   system: FPKI Trust Infrastructure - Federal Common Policy CA
