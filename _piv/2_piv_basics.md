@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: piv
-title: PIV Overview
+title: PIV Basics
 permalink: piv/basics/
 sticky_sidenav: true
 sidenav: piv
@@ -42,11 +42,11 @@ The following electronic elements authenticate YOU as the user:
 
 - **Photograph**, which is stored on the chip, signed digitally, and allows a person to confirm that the printed photo on the card has not been altered.
 - **Biometric Identity Information** such as fingerprints or iris/eye templates, which can be used to verify you.
-- **PIV Authentication**,  which is a certificate and key pair and can be used to verify that the PIV credential was issued by an authorized entity, has not expired, has not been revoked, and the holder of the credential (YOU) is the same individual it was issued to.
+- **PIV Authentication**,  which is a certificate and key pair that can be used to verify that the PIV credential was issued by an authorized entity, has not expired, has not been revoked, and the holder of the credential (YOU) is the same individual it was issued to.
 
 The following electronic elements are for usage by YOU:
 
-- **Digital Signature**, which is a certificate and key pair allows YOU to digitally sign a document or email, providing both integrity and non-repudiation.
-- **Encryption**, which is a certificate and key pair and allows YOU to digitally encrypt documents or email with your colleagues in the federal government or with government partners, providing confidentiality through ensuring that only authorized parties can read the document or email.
+- **Digital Signature**, which is a certificate and key pair that allows YOU to digitally sign a document or email, providing both integrity and non-repudiation.
+- **Encryption**, which is a certificate and key pair that allows YOU to digitally encrypt documents or email with your colleagues in the federal government or with government partners, providing confidentiality through ensuring that only authorized parties can read the document or email.
 
 The Card Authentication, PIV Authentication, Digital Signature, and Encryption all leverage four separate certificates and key pairs issued from certificate authorities that are audited and certified by the Federal Public Key Infrastructure (FPKI).
