@@ -15,7 +15,7 @@ subnav:
       href: '#repository-availability'
 ---
 
-Updated: October 24, 2022
+Updated: November 1, 2022
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -66,9 +66,9 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | Exostar Federated Identity Service Root CA | FBCA	| 100 |
 | Federal Bridge CA G4 | FBCA | 100	| 
 | GPO PCA | FBCA | 100 | 
-| IdenTrust Global Common Root CA 1 | FBCA | 96.87 | 
+| IdenTrust Global Common Root CA 1 | FBCA | 100 | 
 | SAFE Identity Bridge CA	| FBCA | 100 |
-| STRAC Bridge Root Certification Authority	| FBCA | 100 |
+| STRAC Bridge Root Certification Authority	| FBCA | 99.89 |
 | Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 100 |
 | TSCP SHA256 Bridge CA	| FBCA | 100 |
 | USPTO_INTR_CA1 | FBCA	| 100 |
