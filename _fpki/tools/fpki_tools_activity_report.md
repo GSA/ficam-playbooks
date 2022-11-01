@@ -15,7 +15,7 @@ subnav:
       href: '#repository-availability'
 ---
 
-Updated: November 1, 2022
+Updated: November 1, 2022 
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
