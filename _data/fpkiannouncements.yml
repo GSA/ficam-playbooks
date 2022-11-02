@@ -1,5 +1,11 @@
 ## FPKI announcements
 
+- title: CPCT Tool transition from Cloud.gov
+  pubDate: October 21, 2022
+  url: /fpki/announcements/cpct-transition/
+  description: The Certificate Profile Conformance Tool (CPCT) will transition from Cloud.gov.
+  status: Active
+
 - title: FCPCA SIA LDAP Decommissioning
   pubDate: October 11, 2022
   url: /fpki/announcements/ldap-removal/
