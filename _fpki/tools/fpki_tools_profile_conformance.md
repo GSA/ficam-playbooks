@@ -33,7 +33,7 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
 
 {% include alert-warning.html heading="Note" content="Users who do not possess Administrative Privileges for their device will require IT support from within their organization to perform the Docker Desktop download and subsequent install." %}
 
-{% include alert-info.html heading="Attention:" content="Agencies may need to obtain a license for Docker Desktop for each employee or contractor using the application. Appropriate agency personnel should review the information on the following page and make a determination: <https://www.docker.com/pricing/faq/#subscriptionandlicensing>" %}
+{% include alert-info.html heading="Attention:" content="Agencies may need to obtain a license for Docker Desktop for each employee or contractor using the application. Appropriate agency personnel should review the information on the following page and make a determination: https://www.docker.com/pricing/faq/#subscriptionandlicensing" %}
 
 # Step-by-step Instructions
 
