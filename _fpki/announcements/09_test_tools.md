@@ -28,8 +28,8 @@ For more information, see the following web sites:
      - Support page: [https://github.com/GSA/piv-conformance/wiki](https://github.com/GSA/piv-conformance/wiki){:target="_blank"}{:rel="noopener noreferrer"} 
 
 - Certificate Profile Conformance Tool 
-     - URL: [https://cpct.app.cloud.gov/](https://cpct.app.cloud.gov/){:target="_blank"}{:rel="noopener noreferrer"} 
-     - Support page: [https://cpct.app.cloud.gov/help/](https://cpct.app.cloud.gov/help/){:target="_blank"}{:rel="noopener noreferrer"}  
+     - Latest release: [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"} 
+     - Support page: [https://github.com/GSA/cpct-tool/wiki](https://github.com/GSA/cpct-tool/wiki){:target="_blank"}{:rel="noopener noreferrer"}  
 
 ## Who can I contact for help or more information?
 Email us at <span>fpki</span><span>@</span><span>gsa</span><span>.</span><span>gov</span>.
