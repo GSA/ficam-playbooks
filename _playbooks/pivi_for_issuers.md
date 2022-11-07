@@ -54,7 +54,7 @@ PIV-Interoperable (PIV-I) was created to meet this need. PIV-I shares the same t
 This guide advocates a set of minimum requirements for PIV-I credentials that the Federal Government can trust and details solutions to the four barriers to interoperability that currently challenge the government. These four barriers are as follows:
 
 1. Common terminology for identity credentials and issuers – For consistency, a lexicon for differentiating a PIV credential from a credential interoperable with PIV infrastructure, and the differences between federal and NFI, has been developed.
-2. Assured identity – The fundamental purpose of an identity credential is to establish the identity of the credential holder. The fundamental purpose of an identity credential is to establish the identity of the credential holder. Therefore, issuing an identity credential in a federated model and consistent manner provides the federal government with a requisite level of identity assurance.
+2. Assured identity – The fundamental purpose of an identity credential is to establish the identity of the credential holder. Therefore, issuing an identity credential in a federated model and consistent manner provides the federal government with a requisite level of identity assurance.
 3. Technical requirements – Meet basic requirements for identity credentials to be interoperable with the federal PIV infrastructure.
 4. Security and auditing – The boundaries for auditing and compliance requirements require clarification for federal agencies.
 
