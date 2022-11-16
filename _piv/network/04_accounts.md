@@ -147,7 +147,7 @@ If you are designing an automated process to transition users from Principal Nam
     <h4 class="usa-alert__heading">Collaborate with us!</h4>
     <p class="usa-alert__text">
       We're working with a small number of agencies to pilot a simple PowerShell script to help with some of the functional requirements above. Check out the script in our    
-      <a class="usa-link" href="[javascript:void(0);](https://github.com/GSA/ficam-scripts-public/tree/master/_altSecId)">public scripts repository</a>
+      <a class="usa-link" href="https://github.com/GSA/ficam-scripts-public/tree/master/_altSecId" target="_blank">public scripts repository</a>
       or contact ICAM at GSA.Gov for more information.
     </p>
   </div>
