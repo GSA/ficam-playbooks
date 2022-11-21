@@ -264,7 +264,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 4c296f47
 - Validity: April 7, 2018 to December 7, 2029
 - SHA-1 Hash: bc67b9e65ee05c3742c27187259ded3e6112a587
-- CRL DP: [http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL2.crl)](http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL2.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL3.crl)](http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL3.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Veterans Affairs User CA B1
 - Subject: CN = Veterans Affairs User CA B1, OU = PKI, OU = Services, DC = va, DC = gov
