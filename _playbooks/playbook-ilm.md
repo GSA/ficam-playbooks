@@ -285,6 +285,8 @@ Make attributes available for authorization decisions. Federation is not only ac
 
 See the [Cloud Identity Playbook Federation section]({{site.baseurl}}/playbooks/cloud/#federation) for more information on federation and using trust frameworks for government, mission partner, or public identity federation.
 
+**Detailee Use Case** - An Agency A employee is detailed to Agency B. How can Agency B use their ILM system for this existing Agency A employee, but short-term Agency B employee. Can Agency A share HR data to do birth-right provisioning in Agency B? I think the corpus of this use case is how Agency B can provision Agency A employee without issuing them an Agency A piv card and an Agency A email.
+
 ## Summary
 
 The ILM playbook outlined an identity lifecycle process and four steps to create a master user record and lifecycle process within your agency. ILM is the evolution of an identity from creation to deactivation. There are specific steps within each lifecycle phase of the joiner-mover-leaver process. A master user record is the core of ILM and acts as an aggregation point of identity data for all agency users. A master user record integrated with access management tools provides a foundation for more mature ICAM processes.
