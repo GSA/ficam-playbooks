@@ -260,10 +260,10 @@ These CA certificates are actively issuing PIV authentication certificates.
 
 #### USPTO INTR CA1
 - Subject: CN = USPTO_INTR_CA1, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = uspto, DC = gov
-- Issuer: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = US
-- Serial #: 10f82e9132e31f62dba620ab66f6e7f836e663c7
-- Validity: November 12, 2020 to December 12, 2022
-- SHA-1 Hash: edd7e56da5147cf98ea580a176a27bc990b243ce
+- Issuer: CN = USPTO_INTR_CA1, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = uspto, DC = gov
+- Serial #: 4c296f47
+- Validity: April 7, 2018 to December 7, 2029
+- SHA-1 Hash: bc67b9e65ee05c3742c27187259ded3e6112a587
 - CRL DP: [http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL3.crl](http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL3.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Veterans Affairs User CA B1
