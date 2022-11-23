@@ -25,6 +25,14 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: November 23, 2022
+  change_type: CRL and OCSP Outage
+  system: Entrust Federal CRL and OCSP Service
+  change_description: On Wendnesday, Novebmer 23, 2022, Entrust has reported intermittent availabiltiy issues their CRL and Federal OCSP Service.
+  contact: support at entrust dot com
+  cdp_uri: Multiple, http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl, http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA1.crl
+  ocsp_uri: ocsp.managed.entrust.com, ocspproofs.managed.entrust.com, nfiocsp.managed.entrust.com, doesspocsp.managed.entrust.com, hhspkiocsp.managed.entrust.com, feddcsocsp.managed.entrust.com
+
 - notice_date: November 21, 2022
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
