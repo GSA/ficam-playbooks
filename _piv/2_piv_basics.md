@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: piv
-title: PIV Basics
+title: PIV Overview
 permalink: piv/basics/
 sticky_sidenav: true
 sidenav: piv
@@ -21,7 +21,7 @@ There are two main categories for the features of a PIV credential: [_physical_ 
 
 An example of a PIV credential can be seen above.
 
-The image shows the standard placement for information such as photograph, name, affiliation, expiration date, organization, and the **chip**.   
+The image shows the standard placement for information such as photograph, name, affiliation, expiration date, organization, and the **chip**.
 
 PIV credentials also contain at least one security feature that aids in reducing counterfeiting, is resistant to tampering, and provides visual evidence of tampering attempts such as optical varying structures or inks, laser etching, holographic images, and watermarks.  
 
