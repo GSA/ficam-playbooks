@@ -70,7 +70,7 @@ If you are interested in the bits and bytes of PIV credentials, you can review t
 
 To review the standards, there is a [National Institute of Standards and Technology (NIST) website](http://csrc.nist.gov/groups/SNS/piv/standards.html){:target="_blank"}{:rel="noopener noreferrer"} with all PIV-related standards. Here are links to some of the most common standards:
 
-- [**FIPS201**](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the issuance and management of PIV credentials.
+- [**FIPS 201**](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the issuance and management of PIV credentials.
 - [**NIST Special Publication 800-73, "Interfaces for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the interface and data elements of PIV credentials.
 - [**NIST Special Publication 800-76, "Biometric Data Specification for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the technical acquisition and formatting requirements for biometric data of PIV credentials.
 
