@@ -163,10 +163,10 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | Certificate Attribute | Value                                              |
 | :--------  | :--------------------------------------------------------     |
 | Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, <br>OU=Department of the Treasury, O=U.S. Government, C=US |
-| Validity | November 18, 2020 to August 14, 2022 |
-| Serial Number | 2013db2cd30dd29d17edc48535c5e00d8916cf02 |
-| SHA-1 Thumbprint | d7d298927d339efa414f2565923e28b98acd970a |
-| SHA-256 Thumbprint | 209ce84f4b4811542c5c4754a73a9c272ae1458c04493c89c74ed6773aca553f |
+| Validity | April 6, 2022 to April 6, 2025 |
+| Serial Number | 279f09737fe5dd3d7534be0ea51aff9dc4018501 |
+| SHA-1 Thumbprint | 52de6628d8c70a9df9e1df94fcd84728b33c05ec |
+| SHA-256 Thumbprint | ed40cc2e18e224f1c8dc6d0786559576517139be777153cd9f8ad2d215a9be79 |
 | Download Location | Click [here]({{site.baseurl}}/fpki/certs/US_Treasury_Root_CA.cer)|
 
 #### Issued to: DigiCert Federal SSP Intermediate CA - G5
