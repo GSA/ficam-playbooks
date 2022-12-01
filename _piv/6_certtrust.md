@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: piv
 
 subnav:
-  - text: Certificate Trust
+  - text: Trust
     href: '#trust'
   - text: Certificate Chains
     href: '#certificate-chains'
@@ -38,7 +38,7 @@ The [FPKI Graph]({{site.baseurl}}/fpki/tools/fpkigraph/){:target="_blank"}{:rel=
 ## Certificate Chains
 To digitally trust YOU and your PIV credential certificates, the workstations, servers, applications, and network domains will be configured. Understanding and managing certificate chains are one of the methods to configure trust.
 
-The certificate chain includes the intermediate CA certificates and the Federal Common Policy Certification Authority (COMMON) root certificate.
+The certificate chain includes the intermediate CA certificates and the Federal Common Policy Certification Authority G2 (COMMON) root certificate.
 
 <img src="{{site.baseurl}}/assets/piv/pivcertificatechain_small.png" alt="Example of a PIV certificate chain to Common." width="506" height="268">
 
@@ -87,7 +87,7 @@ For instructions on how to download the new root and intermediate certificates, 
 
 You can contact your agency's information security teams for help with additional intermediate certificates, or you can find the intermediate certificates by using information in your PIV certificates directly.
 
-- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate, go to the [Details of a PIV Credential](../details){:target="_blank"}{:rel="noopener noreferrer"}
+- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate, go to the [PIV Details](../details){:target="_blank"}{:rel="noopener noreferrer"}
 - In the **Authority Information Access (AIA)** extension, there is a URL (http://) that references a file with a .p7b or .p7c extension.
 - Download the file, open it, and view the intermediate CA certificates.
 - Repeat the process using the AIA extension of the intermediate CA certificates until the final reference finds an intermediate CA certificate that is issued and signed by COMMON.
