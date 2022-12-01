@@ -21,7 +21,7 @@ arch:
 piv:
   - text: Introduction
     href: /piv/
-  - text: Basics of a PIV
+  - text: PIV Overview
     href: /piv/basics/
   - text: Getting Started
     href: /piv/gettingstarted/
