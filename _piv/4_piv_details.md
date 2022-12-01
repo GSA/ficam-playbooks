@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: piv
-title: Details
+title: PIV Details
 permalink: piv/details/
 sticky_sidenav: true
 sidenav: piv
