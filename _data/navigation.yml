@@ -21,13 +21,13 @@ arch:
 piv:
   - text: Introduction
     href: /piv/
-  - text: Basics of a PIV
+  - text: PIV Overview
     href: /piv/basics/
   - text: Getting Started
     href: /piv/gettingstarted/
-  - text: Details of a PIV
+  - text: PIV Details 
     href: /piv/details/
-  - text: Identifiers in a PIV
+  - text: PIV Identifiers 
     href: /piv/identifiers/
   - text: Certificate Trust
     href: /piv/cert-trust/

@@ -33,7 +33,7 @@ Agencies may additionally choose a machine or user-based enforcement which disab
 1. Machine-Based Enforcement (MBE): This implementation removes the option for password-based authentication in favor of smart card-only authentication for any account accessible by the macOS device (local or network).
 2. User-Based Enforcement (UBE): This implementation creates an exception to smart card-only authentication for specific users or groups of users (e.g., network admins, device admins, and individuals waived from smart card requirements).
 
-This [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"} provides some additional detail on MBE vs. UBE. Additional details on [Windows authentication enforcement models]({{site.baseurl}}/piv/network/group/){:target="_blank"}{:rel="noopener noreferrer"} are available in this section of the PIV Playbook.
+This [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"} provides some additional detail on MBE vs. UBE. Additional details on [Windows authentication enforcement models]({{site.baseurl}}/piv/network/group/){:target="_blank"}{:rel="noopener noreferrer"} can be found here.
 
 ## Local Account Pairing
 Local Account Pairing is a user-prompted process.
@@ -91,4 +91,4 @@ If a remote deployment it not availabler, the administrator may also perform the
 ## Helpful References
 1. [Apple Deployment Guide - Use a smart card in macOS](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"}
 2. [Apple Deployment Guide - Configure macOS for smart card-only authentication](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
-3. [Apple Deployment Guide - Smart card advanced configuration commands](https://support.apple.com/guide/deployment/advanced-smart-card-options-dep7b2ede1e3/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
+3. [Apple Deployment Guide - Advanced smart card options in macOS](https://support.apple.com/guide/deployment/advanced-smart-card-options-dep7b2ede1e3/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
