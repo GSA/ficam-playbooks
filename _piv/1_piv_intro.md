@@ -7,8 +7,8 @@ sticky_sidenav: true
 sidenav: piv
 
 subnav:
-    - text: What Is PIV?
-      href: '#what-is-piv'
+    - text: What Is a PIV Credential?
+      href: '#what-is-a-piv-credential'
     - text: What Information Is in These PIV Guides?
       href: '#what-information-is-in-these-piv-guides'
     - text: Why Is PIV Usage Important?
@@ -29,7 +29,7 @@ If you cannot find a particular topic, it may still be in development. Review th
 
 Read on to learn more about PIV credentials.
 
-## What Is PIV?
+## What Is a PIV Credential?
 
 A PIV credential is a U.S. federal government-wide credential used to access federally controlled facilities and information systems at the appropriate security level.
 
@@ -47,13 +47,13 @@ We also cover applications and guidance for developers and users—which need yo
 
 ## Why Is PIV Usage Important?
 
-Agency security is enhanced when PIV credentials are used for authentication to agency systems and facilities. PIV credentials allow for a high level of assurance in the individuals that access your resources, because the credentials are only issued by trusted providers to individuals that have been verified in person. PIV credentials are highly resistant to identity fraud, tampering, counterfeiting, and exploitation.
+Agency security is enhanced when PIV credentials are used for authentication to agency systems and facilities. PIV credentials allow for a high level of assurance in the individuals who that access your resources, because the credentials are only issued by trusted providers to individuals who that have been verified in person. PIV credentials are highly resistant to identity fraud, tampering, counterfeiting, and exploitation.
 
-PIV credentials are _standardized_ as well. PIV credentials might be issued by different organizations using different commercial or open source products, on different form factors (cards, mobile devices, etc.).  However, PIV credentials are standardized——every PIV credential is required to have specific information, using technology that is _interoperable_.
+PIV credentials are _standardized_ as well. PIV credentials might be issued by different organizations using different commercial or open source products, on different form factors (cards, mobile devices, etc.).  However, PIV credentials are standardized—every PIV credential is required to have specific information, using technology that is _interoperable_.
 
 Your PIV credential from one agency will have the same basic required format, information, and technology as a PIV credential from your partner agencies. This allows us to trust each other, share applications, and architect and implement systems using common patterns for authentication.
 
-## What Systems Should Use PIV?  
+## What Systems Should Use PIV?
 Any system at your organization that requires heightened security for determining who should gain access can and should use PIV for authentication. While PIV credentials can be used for authentication on almost any system, they are especially useful for systems that protect sensitive information.
 
 PIV should be used for:
@@ -63,15 +63,14 @@ PIV should be used for:
 * All application authentication for _all_ users of an application that protects or contains sensitive information; and
 * Access to facilities and buildings.
 
-## Where Can I Find the Standards? 
-
+## Where Can I Find the Standards?
 Review the information on this site if you are interested in PIV credentials or work on _using_ PIV credentials.
 
 If you are interested in the bits and bytes of PIV credentials, you can review the standards (see below), particularly if you develop products such as hardware or software that are _specific_ to PIV credentials for the U.S. federal government. (For most users and engineers, the standards may be too detailed for your needs.)
 
-To review the standards, there is a [National Institute for Science and Technology (NIST) website](http://csrc.nist.gov/groups/SNS/piv/standards.html){:target="_blank"}{:rel="noopener noreferrer"} with all PIV-related standards. Here are links to some of the most common standards:
+To review the standards, there is a [National Institute of Standards and Technology (NIST) website](http://csrc.nist.gov/groups/SNS/piv/standards.html){:target="_blank"}{:rel="noopener noreferrer"} with all PIV-related standards. Here are links to some of the most common standards:
 
-- [**FIPS-201**](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the issuance and management of PIV credentials.
+- [**FIPS 201**](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the issuance and management of PIV credentials.
 - [**NIST Special Publication 800-73, "Interfaces for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the interface and data elements of PIV credentials.
 - [**NIST Special Publication 800-76, "Biometric Data Specification for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the technical acquisition and formatting requirements for biometric data of PIV credentials.
 

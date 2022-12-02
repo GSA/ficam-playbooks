@@ -15,7 +15,7 @@ subnav:
       href: '#resources'
 ---
 
-**Last Update**: October 28, 2022
+**Last Update**: November 30, 2022
 
 The Certificate Profile Conformance Tool (CPCT) is an application that supports FPKI annual reviews and compliance by analyzing public X.509 certificates for conformance to a specified FPKI profile:
 
@@ -98,4 +98,5 @@ Links to the CPCT Tool and associated support pages:
 
 - GitHub link:  [https://github.com/GSA/cpct-tool](https://github.com/GSA/cpct-tool)
 - GitHub Releases page:  [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases)
+- GitHub Wiki page:  [https://github.com/GSA/cpct-tool/wiki](https://github.com/GSA/cpct-tool/wiki)
 - GitHub Issues page:  [https://github.com/GSA/cpct-tool/issues](https://github.com/GSA/cpct-tool/issues)

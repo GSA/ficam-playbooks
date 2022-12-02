@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: piv
-title: Identifiers
+title: PIV Identifiers
 permalink: piv/identifiers/
 sticky_nav: true
 sidenav: piv

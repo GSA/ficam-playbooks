@@ -68,7 +68,7 @@ The graphical user interface allows you to check OCSP, CRL, and AIA (intermediat
 
 ## Web Services for Validating PIV Certificates
 
-[Revocation]({{site.baseurl}}/piv/cert-trust/#revocation) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Authentication certificates]({{site.baseurl}}/piv/details/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
+[Revocation]({{site.baseurl}}/piv/cert-trust/#revocation) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/piv/details/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
 
 | Type | Certificate Extension | Protocol (Port) | Considerations|
 | ----- | -------| -------| ------|
@@ -81,8 +81,8 @@ There are dozens of OCSP and CRL URLs for *all* issued PIV credentials.  If you 
 
 ## Web Services for the Federal Public Key Infrastructure
 
-The Federal Common Policy Certificate Authority (COMMON) is the root certificate authority and has web services to publish both [certificate chains]({{site.baseurl}}/piv/cert-trust/#certificate-chains) (p7b files) and [CRLs]({{site.baseurl}}/piv/cert-trust/#revocation) for all intermediate certificate authorities which the root signs.
+The Federal Common Policy Certificate Authority G2 (COMMON) is the root certificate authority and has web services to publish both [certificate chains]({{site.baseurl}}/piv/cert-trust/#certificate-chains) (p7b files) and [CRLs]({{site.baseurl}}/piv/cert-trust/#revocation) for all intermediate certificate authorities which the root signs.
 
-To enable communications with these Federal Common Policy Certificate Authority services, including those currently operational and any expansion, you should verify outbound communications to the base domain of http.fpki.gov. For example, a successful connection to http://http.fpki.gov/fcpca/fcpca.crt will download a copy of the Federal Common Policy CA certificate.
+To enable communications with these Federal Common Policy Certificate Authority services, including those currently operational and any expansion, you should verify outbound communications to the base domain of _http.fpki.gov_. For example, a successful connection to [http://http.fpki.gov/fcpca/fcpca.crt](http://http.fpki.gov/fcpca/fcpca.crt) will download a copy of the Federal Common Policy CA certificate.
 
 You should consider allowing two protocols (ports): HTTP (80) and DNS (53).  Although the web services for publishing CRLs are not currently served over HTTPS (443), you may want to allow HTTPS (443) to future proof for any expansion. 

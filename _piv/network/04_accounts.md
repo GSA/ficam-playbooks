@@ -8,7 +8,7 @@ sidenav: pivnetwork
 
 subnav:
   - text: Comparing altSecurityIdentities and User Principal Name
-    href: '#background-comparing-altsecurityidentities-and-user-principal-name'
+    href: '#comparing-altsecurityidentities-and-user-principal-name'
   - text: Transitioning from UPN Mapping to altSecurityIdentities Mapping
     href: '#transitioning-from-upn-mapping-to-altsecurityidentities-mapping'
 ---
@@ -37,7 +37,7 @@ It's not possible to configure a domain to use *both* altSecurityIdentities *and
 - Users are presented with an additional field during network authentication to identify which account the user wants to access. This field is known as the _User Name Hint_.
      - The User Name Hint informs Windows which account the user is trying to log in to if the mapped certificate is associated with multiple accounts.
      - Entering a User Name Hint is optional if the user's PIV Authentication certificate UPN matches their Windows logon name.
-- You can choose from one of [six options](#2-link-the-piv-authentication-certificate) to map a certificate to a given account.
+- You can choose from one of [six options](#1-link-the-piv-authentication-certificate) to map a certificate to a given account.
 - There is more flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable (PIV-I) credentials.
 
 ### User Principal Name Approach
