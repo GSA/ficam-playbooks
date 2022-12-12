@@ -35,7 +35,7 @@ COMMON serves as the _root_ and _trust anchor_ for the _intermediate_ and _issui
 
 ### Federal Common Policy Certification Authority
 
-The _Federal Common Policy CA_ may be referred to as the _FCPCAG2_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the federal government, the FCPCAG2 supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials]({{site.baseurl}}/piv#what-is-piv){:target="_blank"}{:rel="noopener noreferrer"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
+The _Federal Common Policy CA_ may be referred to as the _FCPCAG2_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the federal government, the FCPCAG2 supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials]({{site.baseurl}}/piv#what-is-piv). The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
 
 A few commercial vendors include the FCPCAG2 root certificate in the commercial-off-the-shelf (COTS) products' [trust stores]({{site.baseurl}}/fpki/trust-stores/). This enables federal government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCAG2 root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
 
@@ -53,8 +53,6 @@ The CAs with certificates signed by the Federal Bridge CA G4 are _cross-certifie
 
 ### All Federal PKI Certification Authorities
 
-<img src="{{site.baseurl}}/assets/fpki/intro_participatingCAsV3.png" width="200" align="left" alt="FPKI Participating CAs">
-
 A CA that is part of the FPKI is called a _participating certification authority_. 
 
 For historical records, we might _label_ or identify CA systems using a category that shows _when_ the system was established and for what types of _communities_ it is or was used. 
@@ -64,8 +62,22 @@ We realize all the acronyms and labels may be confusing and welcome your input t
 
 |**Certification Authority Category**|**Description**|
 |-----------|---------------|
-| PKI Shared Service Provider (SSP) Certification Authorities | An SSP CA is *subordinate* to the FCPCAG2.  Any certificate that an SSP CA creates, signs, and issues to people or devices is in the FCPCA _trust chain_. An SSP must adhere to strict federal IT security standards and requirements.  The SSPs are granted a FISMA Authority to Operate (ATO), undergo continuous monitoring, and are contracted by the federal government to issue certificates to federal employees and contractors as well as devices that are deployed in federal agency networks. |
-| Private Sector Certification Authorities | A private sector CA that is cross-certified has shown a valid need to conduct business or provide PKI services to the federal government. |
-| Other Government Certification Authorities | These CAs are managed and operated by state, local, tribal, territorial, or international governments. |
-| Bridge Certification Authorities | Bridge CAs connect member PKIs and are designed to enable interoperability between different PKIs operating under their own certificate policies. A bridge CA is not a _root_. |
-| Federal Agency Legacy | Prior to 2004, some agencies had already deployed and invested in their own PKI and CAs. Some of these agencies opted out of migrating to the SSP Program and continued to manage their existing infrastructures. These federal agencies legacy operate one or more CAs that are cross-certified with a Federal PKI Trust Infrastructure CA.|
+| PKI Shared Service Provider (SSP) Certification Authorities | An SSP CA operates under the Federal Common Certificate Policy and offer [federal workforce credentialing services](https://www.idmanagement.gov/buy/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}.  Any certificate that an SSP CA creates, signs, and issues to people or devices is in the FCPCA _trust chain_. An SSP must adhere to strict federal IT security standards and requirements.  The SSPs are granted a FISMA Authority to Operate (ATO) by GSA, undergo continuous monitoring, and are contracted by the federal government to issue certificates to federal employees and contractors as well as devices that are deployed in federal agency networks. The primary certificate type issued by a PKI SSP are the certificates on a PIV card. There are some PKI SSPs authorized to issue Common PIV-I. |
+| Non-Federal Issuer (NFI) Certification Authorities | A Non-Federal Issuer or NFI is a private sector CA that is cross-certified with the Federal Bridge CA. These organizations provide [business identity services](https://www.idmanagement.gov/buy/trust-services/#business-identity-services){:target="_blank"}{:rel="noopener noreferrer"} for persons who do business with the federal government, but are not part of the federal workforce. Federal agencies may refer business partners to an NFI provider if the agency requires digital signatures and in some limited circumstances PKI authenticators. PIV-I along with other PKI credentials are issued by NFI providers. For more information on NFI PIV-I, see the [PIV-I Playbook]({{site.baseurl}}/playbooks/pivi/). An NFI must adhere and receive 3rd party independent audits to validate equivalent operations and practices to the Federal Bridge Certificate Policy. A federal agency must configure their systems to validate NFI certificates by installing the Federal Bridge _trust chain_. |
+| Bridge Certification Authorities | Bridge CAs connect member PKIs and are designed to enable interoperability between different PKIs operating under their own certificate policies. A bridge CA is not a _root_ and are part of a [non-government PKI trust framework](https://www.idmanagement.gov/buy/trust-services/#non-government-pki-trust-framework){:target="_blank"}{:rel="noopener noreferrer"} through the Federal Bridge. A PKI Bridge must adhere and receive 3rd party independent audits to validate equivalent operations and practices to the Federal Bridge Certificate Policy. A federal agency must configure their systems to validate PKI Bridge certificates by installing the Federal Bridge _trust chain_. |
+| Federal Agency Certification Authorities | A very small amount of government agencies self-operate CAs connected to the Federal PKI Trust Framework. These agencies include the Department of Defense, Department of State, Department of the Treasury, the Government Printing Office, and the U.S. Patent and Trademark Office.| 
+
+### Certificate Types within the Federal PKI
+The overarching policy of the Federal PKI is the Federal Common Policy Framework or the Federal Bridge Certificate Policy. For federal agencies that utilize a PKI Shared Service Provider, this is a list of common certificates types available from all PKI Shared Service Provider. Please check with your individual provider if they support your specific need.
+
+| Certificate Type | General Purpose | Authenticator Format | 
+| ----- | ------ | ----- |
+| PIV Certificates | The PIV Card contains up to five certificates with four available to a PIV card holder. See [PIV Certificates]({{site.baseurl}}/piv/details/#understand-piv-certificates) to understand more about PIV certificates on a PIV Card. | FIPS 201 Approved Smart Card (AAL3) |
+| Common PIV-I Certificates | The Common PIV-I card contains up to five certificates with four available to the Common PIV-I card holder. See the [PIV-I Playbook]({{site.baseurl}}/playbooks/pivi/) for more information on a Common PIV-I card. | FIPS 201 Approved Smart Card (AAL3) |
+| Digital Signature | Sign documents such as a PDF or word document. | Software (AAL2) or Hardware (AAL3) |
+| Encryption (Key Management) | Encrypt files. | Software (AAL2) or Hardware (AAL3) |
+| Derived PIV Authentication | Person authentication for mobile devices based on proof of possession and control of a PIV Card. Derived PIV credentials are typically used in situations that do not easily accommodate a PIV Card, such as in conjunction with mobile devices. | Software (AAL2) or Hardware (AAL3) |
+| Device | Issued to any type of device for authentication | Software (AAL2) or Hardware (AAL3) |
+
+**Code signing certificates are not allowed under the Federal Common Certificate Policy.**
+

@@ -11,7 +11,7 @@ subnav:
       href: '#card-readers'
     - text: Middleware
       href: '#middleware'
-    - text: Middleware definitions
+    - text: Middleware Definitions
       href: '#middleware-definitions'
     - text: Next Steps
       href: '#next-steps'
