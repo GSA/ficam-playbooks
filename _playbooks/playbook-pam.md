@@ -210,7 +210,7 @@ An agency's privileged user population can include a range of accounts with elev
   - SSH (Secure Shell) keys
   - Emergency or break-glass accounts
   
-<p align="center"><b>Figure 2: Privileged users can be either people or non-persons</b></p>
+<p align="center"><b>Figure 2: Privileged Users Can Be Either People or Non-Persons</b></p>
 
 <img src="{{site.baseurl}}/assets/playbooks/pam-iceberg.png" alt="Privileged users include both people accessing and interacting with data and machines communicating and interacting with data." style="width:800px;" >
 
@@ -220,7 +220,7 @@ The most common definition of a privileged user is a user who is authorized (and
 
 - Access that impacts the confidentiality, integrity, or availability of an application.
 - Access to alter data or across multiple data sets.
-- Ability to reset passwords
+- Ability to reset passwords.
 - Ability to change access privileges.
 - Ability to create accounts (especially other privileged accounts).
 - Ability to start or stop processes in cloud-based tools.
@@ -237,7 +237,12 @@ Once the definition of a privileged user is established, an agency can identify 
 - Physical and logical location (on-premises, cloud service provider, or others)
 - Data sensitivity
 2. Identify and document IT staff roles, roles requiring separation of duties, trusted roles, and associated accounts that require elevated access to perform their role. The IT staff role may include identifying a specific cyber workforce position or role required to manage the system.
-3. Perform a **privileged account discovery** exercise to identify accounts that have elevated access. Accomplish discovery through an automated tool or directory analysis. Don't be surprised if there are more privileged accounts than expected. Privileged account discovery intends to identify accounts that lack accountability. Account types may include group, orphaned, rogue, and default accounts that may go unnoticed or unmanaged. Discovery should consist of all environments, including Windows, Unix/Linux, database, applications, and cloud environments that encompass infrastructure, platform, and software as a service platforms and applications.
+3. Perform an automated analysis of permissions assigned versus those in use. The ongoing existence of unused but active permissions creates risk. The analysis can reveal unknown or unmanaged privileged user accounts originating by failure to disable
+- the privileges of former employees
+- default accounts created for new endpoints
+- obsolete or abandoned accounts
+4. Perform an automated analysis to identify the existence of microservices, the applications that use them, and the associated user groups. Such an analysis provides context regarding microservice use as well as visibility into the potential threats they may create. The use environment might reflect a combination of privileged and nonprivileged users who are both internal and external to the organization. Use by one group might pose low risk whereas use by the other might create high risk warranting corrective action.
+5. Perform a **privileged account discovery** exercise to identify accounts that have elevated access. Accomplish discovery through an automated tool or directory analysis. Don't be surprised if there are more privileged accounts than expected. Privileged account discovery intends to identify accounts that lack accountability. Account types may include group, orphaned, rogue, and default accounts that may go unnoticed or unmanaged. Discovery should consist of all environments, including Windows, Unix/Linux, database, applications, and cloud environments that encompass infrastructure, platform, and software as a service platforms and applications.
 
 <p align="center"><b>Figure 3: Location of Privileged Accounts</b></p>
 
