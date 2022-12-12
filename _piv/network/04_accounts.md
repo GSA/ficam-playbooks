@@ -24,7 +24,14 @@ subnav:
   </div>
 </div>
 
-{% include alert-error.html heading="Dec 2022 Update to Microsoft Network Authentication Issue" content="The Microsoft KB mentioned above is updated. Note that the "disabled" mode retirement is still targeted at 2/14/23. CISA encourages any agency still reliant on "disabled" mode to move to "compatibility mode" by following the <a href=\"https://www.cisa.gov/guidance-applying-june-microsoft-patch\" target=\"_blank\" rel=\"noopener noreferrer\">CISA Guidance</a> as soon as possible while a timeline and plans around long term resolution of this issue is finalized with Microsoft. Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot GOV" %}
+<div class="usa-alert usa-alert--error" role="alert">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Dec 2022 Update to Microsoft Network Authentication Issue</h4>
+    <p class="usa-alert__text">
+      The Microsoft KB mentioned above is updated. Note that the "disabled" mode retirement is still targeted at 2/14/23. CISA encourages any agency still reliant on "disabled" mode to move to "compatibility mode" by following the <a class="usa-link" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> as soon as possible while a timeline and plans around long term resolution of this issue is finalized with Microsoft. Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
+    </p>
+  </div>
+</div>
 
 ## Comparing altSecurityIdentities and User Principal Name
 There are two account linking attributes to choose from:
