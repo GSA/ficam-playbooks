@@ -25,6 +25,19 @@
 # sia_uri:
 # ocsp_uri:
 
+- notice_date: December 13, 2022
+  change_type: CA Certificate Issuance
+  system: SAFE Identity Bridge
+  change_description: The SAFE Identity Bridge issued a new cross certificate to the Trans Sped Mobile eIDAS QCA G2.
+  contact: Camelia Ivan <camelia.ivan@transsped.ro>
+  ca_certificate_hash: 103bb602cd5fa6b13dfd61ec9f15ee6a0b8fc800
+  ca_certificate_issuer: CN = SAFE Identity Bridge CA, OU = Certification Authorities, O = SAFE Identity, C = US
+  ca_certificate_subject: CN = Trans Sped Mobile eIDAS QCA G2, OU = Individual Subscriber CA, O = Trans Sped SRL, C = RO
+  cdp_uri: http://www.transsped.ro/crl/ts_mobile_eidas_qca_g2.crl
+  aia_uri: http://www.transsped.ro/cacerts/ts_mobile_eidas_qca_g2.p7c
+  sia_uri: None
+  ocsp_uri: http://ocsp.transsped.ro/
+
 - notice_date: November 23, 2022
   change_type: CRL and OCSP Outage
   system: Entrust Federal CRL and OCSP Service
@@ -45,7 +58,7 @@
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
   sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
   ocsp_uri: http://ocsp.uspto.gov
-  
+
 - notice_date: November 14, 2022
   change_type: CA Certificate Issuance
   system: IdenTrust Global Common Root CA 1
