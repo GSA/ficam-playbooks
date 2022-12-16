@@ -17,6 +17,15 @@ subnav:
 
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Dec 2022 - Update to Microsoft Network Authentication Issue</h4>
+    <p class="usa-alert__text">
+      The Microsoft KB mentioned above is updated. Note that the "disabled" mode retirement is still targeted at 2/14/23. CISA encourages any agency still reliant on "disabled" mode to move to "compatibility mode" by following the <a class="usa-link" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> as soon as possible while a timeline and plans around long term resolution of this issue is finalized with Microsoft. Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
+    </p>
+  </div>
+</div>
+
+<div class="usa-alert usa-alert--error" role="alert">
+  <div class="usa-alert__body">
     <h4 class="usa-alert__heading">See This Alert First</h4>
     <p class="usa-alert__text">
       Please hold off on implementing the guidance on this page until it is updated. Microsoft <strong>HIGHLY</strong> recommends that all customers who use PIV, smart card, or certificate-based authentication with AltSecID to <strong>IMMEDIATELY</strong> change the registry key on domain controllers prior to installing the KB5014754 May 2022 updates. See <a class="usa-link" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> for additional information. Wait for further guidance from CISA or contact CyberLiasion at CISA dot gov.
