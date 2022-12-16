@@ -17,7 +17,9 @@ contact:
 ca_certificate_hash: 
 ca_certificate_issuer: 
 ca_certificate_subject: 
-cdp_uri: 
-aia_uri: 
-sia_uri: 
-ocsp_uri:
+ca_cdp_uri: 
+ca_aia_uri: 
+ca_sia_uri: 
+ca_ocsp_uri:
+ee_cdp_uri:
+ee_ocsp_uri:  
