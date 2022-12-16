@@ -38,12 +38,17 @@ subnav:
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
   
-Version 1.0<br>
-September 25, 2022
+Version 1.1<br>
+December 15, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cisa.png" width="64" height='64' align="left" alt="U.S. Department of Homeland Security Cybersecurity and Infrastructure Security Agency Logo"><br><br><br>
+
+| Version Number | Date | Change Description |
+| :----------: | :-------: | -------- |
+| 1.1 | 12/15/22 | Clarify activites around automated discovery of entitlements and microservices. |
+| 1.0 | 09/25/22 | Initial Draft. |
 
 This playbook is a collaboration among the General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, Federal Chief Information Security Officer Council ICAM Subcommittee, and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA) Continuous Diagnostic and Mitigation (CDM) Program.
 
