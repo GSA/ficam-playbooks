@@ -30,8 +30,8 @@ subnav:
     href: '#appendix-a-policies-standards-and-guidance'
 ---
 
-Version 1.1  
-October 11, 2022
+Version 1.2  
+December 15, 2022
 
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this playbook to help federal agencies understand and plan identity lifecycle management initiatives.
 
@@ -41,6 +41,7 @@ The Identity Lifecycle Management Working Group of the Federal Chief Information
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
+| 1.2 | 12/15/22 | Minor editorial updates. |
 | 1.1 | 10/11/22 | Move 3rd party federation content to Cloud Identity Playbook federation section. |
 | 1.0 | 06/30/22 | Initial Draft. |
 
