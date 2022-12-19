@@ -1,0 +1,15 @@
+{
+  "defaults": {
+    "concurrency": 1,
+    "standard": "WCAG2AA",
+    "runners": ["axe", "htmlcs"],
+    "ignore": [
+        "color-contrast",
+        "frame-tested"
+    ],
+    "timeout": 5000,
+    "reporters": [
+        "cli"
+    ]
+  }
+}
