@@ -5,12 +5,15 @@
     "build": "bundle exec jekyll build",
     "clean": "bundle exec jekyll clean",
     "reset": "npx rimraf .git",
-    "start": "bundle exec jekyll serve"
+    "start": "bundle exec jekyll serve",
+    "htmlproofer": "bundle exec htmlproofer _site",
+    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\"  --sitemap-exclude \"/admin\""
   },
   "dependencies": {
     "uswds": "~2.13.3"
   },
   "devDependencies": {
+    "pa11y-ci": "^2.4.0",
     "rimraf": "^3.0.2"
   }
 }
