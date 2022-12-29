@@ -2,7 +2,7 @@
 layout: page
 collection: playbooks
 title: Privileged Identity Playbook
-pubdate: 2022-09
+pubdate: 2022-12
 type: Markdown
 permalink: /playbooks/pam/
 description: This Playbook provides federal agencies with best practices in managing its privileged user population.
