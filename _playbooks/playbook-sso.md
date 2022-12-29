@@ -3,7 +3,7 @@ layout: page
 collection: playbooks
 title: Enterprise Single Sign-On Playbook
 category: sso
-pubdate: 2021-02
+pubdate: 2021-11
 date: February 12, 2021
 type: Markdown
 permalink: /playbooks/sso/
