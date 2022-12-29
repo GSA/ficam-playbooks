@@ -2,7 +2,7 @@
 layout: page
 collection: playbooks
 title: Digital Worker Identity Playbook 
-pubdate: 2021-01
+pubdate: 2022-12
 date: October 14, 2021
 type: Markdown
 permalink: /playbooks/dw/ 
