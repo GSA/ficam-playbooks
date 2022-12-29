@@ -2,7 +2,7 @@
 layout: page
 collection: playbooks
 title: Cloud Identity Playbook
-pubdate: 2022-01
+pubdate: 2022-12
 type: Markdown
 permalink: /playbooks/cloud/
 description: The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.
