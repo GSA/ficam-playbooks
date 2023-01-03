@@ -90,6 +90,14 @@ These CA certificates are actively issuing PIV authentication certificates.
 - CRL DP: [http://pki.treas.gov/DHS_CA3.crl](http://pki.treas.gov/DHS_CA3.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### DoD Issuing CAs
+**DoD ID CA-71**
+- Subject: CN = DOD ID CA-71, OU = PKI, OU = DoD, O = U.S. Government, C = US  
+- Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
+- Serial #: 070c  
+- Validity: December 6, 2022 to December 6, 2028
+- SHA-1 Hash: d398c9f709ea787f46afb2b31cbd964628afa3d4
+- CRL DP: [http://crl.disa.mil/crl/DODIDCA_71.crl](http://crl.disa.mil/crl/DODIDCA_71.crl){:target="_blank"}{:rel="noopener noreferrer"}
+
 **DoD ID CA-65**
 - Subject: CN = DOD ID CA-65, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
