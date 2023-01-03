@@ -68,9 +68,9 @@ These CA certificates are actively issuing PIV authentication certificates.
 #### Carillon Federal Services PIV-I CA2
 - Subject: OU = Carillon Federal Services PIV-I CA2, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
 - Issuer: OU = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
-- Serial #: 0777592d1294a2b19abe6a1996c0c921
-- Validity: November 4, 2021 to November 4, 2022
-- SHA-1 Hash: 323a07c5c7d59bc9c5e24282fc06393456827e3a
+- Serial #: 47224bf49b46145a171ebc013e067f43
+- Validity: August 23, 2022 to August 23, 2023
+- SHA-1 Hash: 79e5b88df6cc9b9eb3b88c17d9662011e651f003
 - CRL DP: [http://pub.carillonfedserv.com/CRL/CFSCA2.crl](http://pub.carillonfedserv.com/CRL/CFSCA2.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Department of Veterans Affairs CA
