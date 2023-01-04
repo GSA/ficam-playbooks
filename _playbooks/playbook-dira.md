@@ -39,18 +39,19 @@ subnav:
   
 ---
 
-Version 1.1  
-September 13, 2020
+Version 1.2  
+December 29, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 09/13/20 | Initial Draft |
+| 1.2 | 12/29/22 | Fixed heading typo, updated Appendix A. links |
 | 1.1 | 11/17/21 | Inserted Key Point box at the end of Step 2. |
+| 1.0 | 09/13/20 | Initial Draft |
 
-# Acknowledgements
+# Acknowledgments
 
 This playbook reflects the contributions of the Digital Identity Risk Assessment working group of the Identity, Credential, and Access Management Subcommittee (ICAMSC). The working group was co-chaired by members from the Internal Revenue Service (IRS) and the Environmental Protection Agency (EPA). Contributions were made by the members of services or agencies representing the Center of Medicare and Medicaid Services (CMS), Department of Defense (DOD), Department of Health and Human Services (HHS), Department of Homeland Security (DHS), Department of Justice (DOJ), Department of the Treasury (USDT), Department of Transportation (DOT), and General Services Administration (GSA). 
 
@@ -408,8 +409,8 @@ This section provides links to the federal laws, policies, standards and other g
 | M-19-17 | OMB M-19-17, [Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, May 21, 2019 | 
 | FIPS 199 | NIST FIPS Publication 199, [Standards for Security Categorization of Federal Information and Information Systems](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf){:target="_blank"}{:rel="noopener noreferrer"}, February 2004 | 
 | NIST SP 800-37 | NIST Special Publication 800-37, Revision 2, [Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf){:target="_blank"}{:rel="noopener noreferrer"}, December 2018 | 
-| NIST SP 800-53-4 | NIST Special Publication 800-53, Revision 4, [Security and Privacy Controls for Federal Information Systems and Organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf){:target="_blank"}{:rel="noopener noreferrer"}, April 2013; Updated January 22, 2015 | 
-| NIST SP 800-53A | NIST Special Publication 800-53A, Revision 4, [Assessing Security and Privacy Controls in Federal Information Systems and Organizations: Building Effective Security Assessment Plans](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53Ar4.pdf){:target="_blank"}{:rel="noopener noreferrer"}, July 2008; Updated December 18, 2014| 
+| NIST SP 800-53-4 | NIST Special Publication 800-53, Revision 5, [Security and Privacy Controls for Information Systems and Organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Updated September 2020 | 
+| NIST SP 800-53A | NIST Special Publication 800-53A, Revision 5, [Assessing Security and Privacy Controls in Information Systems and Organizations](https://csrc.nist.gov/publications/detail/sp/800-53a/rev-5/final){:target="_blank"}{:rel="noopener noreferrer"}, Updated January 2022 | 
 | NIST RMF Overview&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | NIST [Risk Management Framework Overview](https://csrc.nist.gov/projects/risk-management/about-rmf){:target="_blank"}{:rel="noopener noreferrer"}, November 30, 2016| 
 
 # Appendix B. Examples and Templates

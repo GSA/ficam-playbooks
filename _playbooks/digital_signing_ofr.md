@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Digitally Sign an Office of the Federal Register Document
-pubdate: 2018-07
-date: July 17, 2018
+pubdate: 2022-08
+date: August 17, 2022
 category: Digitally Sign
 type: Markdown
 permalink: /playbooks/signfedregister/
@@ -22,6 +22,17 @@ subnav:
   - text: FAQs
     href: '#faqs'
 ---
+
+Version 1.1  
+August 17, 2022
+
+<img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
+<img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
+
+| Version Number | Date | Change Description |
+| :----------: | :-------: | -------- |
+| 1.1 | 08/17/2022 | Update remove P7M and PKCS7 Signing Tool references. |
+| 1.0 | 01/05/2018 | Initial Draft. |
 
 This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register (OFR) using your PIV credential or similar digital certificate.
 
