@@ -41,9 +41,9 @@ The Identity Lifecycle Management Working Group of the Federal Chief Information
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.2 | 12/15/22 | Minor editorial updates. |
-| 1.1 | 10/11/22 | Move 3rd party federation content to Cloud Identity Playbook federation section. |
-| 1.0 | 06/30/22 | Initial Draft. |
+| 1.2 | 12/15/2022 | Minor editorial updates. |
+| 1.1 | 10/11/2022 | Move 3rd party federation content to Cloud Identity Playbook federation section. |
+| 1.0 | 06/30/2022 | Initial Draft. |
 
 ## Executive Summary
 
