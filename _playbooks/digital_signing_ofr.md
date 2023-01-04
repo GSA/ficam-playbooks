@@ -2,7 +2,7 @@
 layout: page
 title: Digitally Sign an Office of the Federal Register Document
 pubdate: 2022-08
-date: July 17, 2018
+date: August 1, 2022
 category: Digitally Sign
 type: Markdown
 permalink: /playbooks/signfedregister/
