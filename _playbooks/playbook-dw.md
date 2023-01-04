@@ -3,7 +3,7 @@ layout: page
 collection: playbooks
 title: Digital Worker Identity Playbook 
 pubdate: 2022-12
-date: October 14, 2021
+date: December 29, 2022
 type: Markdown
 permalink: /playbooks/dw/ 
 description: The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.
@@ -39,9 +39,9 @@ This playbook is a collaboration between the Identity, Credential, and Access Ma
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 1/5/21 | Initial Draft |
-| 1.1 | 11/18/21 | Renumbered tables |
-| 1.2 | 12/29/22 | Fixed Acknowlegment(US) word usage |
+| 1.2 | 12/29/2022 | Fixed Acknowlegment(US) word usage |
+| 1.1 | 11/18/2021 | Renumbered tables |
+| 1.0 | 01/05/2021 | Initial Draft |
 
 # Executive Summary
 
