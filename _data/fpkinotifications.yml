@@ -24,6 +24,53 @@
 # aia_uri:
 # sia_uri:
 # ocsp_uri:
+# ee_cdp_uri:
+# ee_ocsp_uri:  
+
+- notice_date: January 2nd, 2023
+  change_type: CA Certificate Issuance
+  start_datetime: December 6. 2022
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD SW CA-75.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: a3ab50e1786d4f58746d235bb6849943a82623f1
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD SW CA-75, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODIDSWCA_75.crl
+
+- notice_date: January 2nd, 2023
+  change_type: CA Certificate Issuance
+  start_datetime: December 6. 2022
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD ID CA-71.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 1cc9a190866963444e1aed4547f26a61f288f13b
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD ID CA-71, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODIDCA_71.crl
+
+- notice_date: January 2nd, 2023
+  change_type: CA Certificate Issuance
+  start_datetime: December 6. 2022
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to DOD EMAIL CA-71.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 02ed392be1eb3efb03a138f5ca827108994501d0
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD EMAIL CA-71, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODEMAILCA_71.crl
 
 - notice_date: December 13, 2022
   change_type: CA Certificate Issuance
