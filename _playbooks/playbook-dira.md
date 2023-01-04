@@ -47,9 +47,9 @@ December 29, 2022
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 09/13/20 | Initial Draft |
-| 1.1 | 11/17/21 | Inserted Key Point box at the end of Step 2. |
 | 1.2 | 12/29/22 | Fixed heading typo, updated Appendix A. links |
+| 1.1 | 11/17/21 | Inserted Key Point box at the end of Step 2. |
+| 1.0 | 09/13/20 | Initial Draft |
 
 # Acknowledgments
 
