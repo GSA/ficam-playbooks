@@ -27,6 +27,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:  
 
+- notice_date: January 12, 2023
+  change_type: CA Certificate Issuance
+  system: STRAC Bridge Root Certification Authority
+  change_description: The STRAC Bridge Root Certification Authority issued a renewed cross certificate to the FTI Certification Authority.
+  contact: pki at strac dot org
+  ca_certificate_hash: cbbc028fae9da429e1b34a4ccadd9cd815b40d9c
+  ca_certificate_issuer: CN=STRAC Bridge Root Certification Authority, OU=STRAC PKI Trust Infrastructure, O=STRAC, C=US
+  ca_certificate_subject: CN=FTI Certification Authority, OU=FTI PKI Trust Infrastructure, O=Foundation for Trusted Identity, C=US
+  cdp_uri: http://pki.strac.org/bridge/crl/STRACBridgeRootCA.crl
+  aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
+  sia_uri: http://pki.fti.org/fti_ca/certificates/FTICA.p7c
+  ocsp_uri: http://certstatus.strac.org
+  ee_cdp_uri: http://pki.fti.org/fti_ca/crl/FTICA.crl
+  ee_ocsp_uri: http://certstatus.fti.org/
+
 - notice_date: January 2nd, 2023
   change_type: CA Certificate Issuance
   start_datetime: December 6. 2022
