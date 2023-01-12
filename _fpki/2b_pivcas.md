@@ -165,9 +165,9 @@ These CA certificates are actively issuing PIV authentication certificates.
 #### FTI Certification Authority
 - Subject: OU = FTI Certification Authority, OU = FTI PKI Trust Infrastructure, O = Foundation for Trusted Identity, C = US
 - Issuer: OU = STRAC Bridge Root Certification Authority, OU = STRAC PKI Trust Infrastructure, O = STRAC, C = US
-- Serial #: 0118
-- Validity: February 9, 2022 to January 7, 2023
-- SHA-1 Hash: 2b6e0648ba2c7104392546ef1a08cc9bedf6829c
+- Serial #: 0141
+- Validity: January 7, 2023 to January 6, 2026
+- SHA-1 Hash: cbbc028fae9da429e1b34a4ccadd9cd815b40d9c
 - CRL DP: [http://pki.fti.org/fti_ca/crl/FTICA.crl](http://pki.fti.org/fti_ca/crl/FTICA.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### HHS-FPKI-Intermediate-CA-E1
