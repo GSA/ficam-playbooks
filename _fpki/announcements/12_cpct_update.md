@@ -2,7 +2,7 @@
 layout: page
 title: CPCT Tool Version Update
 pubDate: 1/12/2023
-archiveDate: 1/12/2026
+archiveDate: 1/12/2024
 removeDate: 1/12/2026
 collection: fpki
 permalink: /fpki/announcements/cpct-update101/
