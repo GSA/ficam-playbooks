@@ -18,8 +18,8 @@ In order to account for the recent FPKIPA approval of Common Policy X.509 Certif
 
 **CPCT Update Instructions:**
 In order to update the CPCT tool you will need to remove any existing instances of the Docker image, and subsequently reintall the latest release.  Please find the following links with more detailed instructions on this updgate process:
-1. [Remove the current Docker image](https://github.com/GSA/cpct-tool/wiki/Removing-Docker-Images)
-2. [Update the CPCT Tool](https://github.com/GSA/cpct-tool/wiki/Updating-the-CPCT-Tool)
+1. [Remove the current Docker image](https://github.com/GSA/cpct-tool/wiki/Removing-Docker-Images){:target="_blank"}{:rel="noopener noreferrer"} 
+2. [Update the CPCT Tool](https://github.com/GSA/cpct-tool/wiki/Updating-the-CPCT-Tool){:target="_blank"}{:rel="noopener noreferrer"} 
 
 If you have any questions regarding this action please contact:
 fpki dash help at gsa dot gov
