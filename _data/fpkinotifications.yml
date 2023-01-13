@@ -57,7 +57,7 @@
   ee_cdp_uri: http://pki.fti.org/fti_ca/crl/FTICA.crl
   ee_ocsp_uri: http://certstatus.fti.org/
 
-- notice_date: January 2nd, 2023
+- notice_date: January 2, 2023
   change_type: CA Certificate Issuance
   start_datetime: December 6. 2022
   system: DoD Root CA 3
@@ -72,7 +72,7 @@
   ocsp_uri: http://ocsp.disa.mil
   ee_cdp_uri: http://crl.disa.mil/crl/DODIDSWCA_75.crl
 
-- notice_date: January 2nd, 2023
+- notice_date: January 2, 2023
   change_type: CA Certificate Issuance
   start_datetime: December 6. 2022
   system: DoD Root CA 3
@@ -87,7 +87,7 @@
   ocsp_uri: http://ocsp.disa.mil
   ee_cdp_uri: http://crl.disa.mil/crl/DODIDCA_71.crl
 
-- notice_date: January 2nd, 2023
+- notice_date: January 2, 2023
   change_type: CA Certificate Issuance
   start_datetime: December 6. 2022
   system: DoD Root CA 3
