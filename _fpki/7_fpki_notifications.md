@@ -47,6 +47,8 @@ To report a change **or** system outage not listed below, please email <span>fpk
     <li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
     <li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
     <li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
+    <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
+    <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
   </ul>
 
 {% endfor %}
