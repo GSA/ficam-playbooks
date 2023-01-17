@@ -28,6 +28,21 @@
 # ee_ocsp_uri:  
 
 - notice_date: January 13, 2023
+  System: FPKI Trust Infrastructure - Federal Bridge CA G4
+  Type: CA Certificate Issuance
+  Change Description: The Federal Bridge CA G4 issued a new cross certificate to the CertiPath Bridge CA - G3.
+  Contact: fpki dash help at gsa.gov
+  Certificate Issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  Certificate Subject: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  Certificate SHA1 Hash: 6f9f85401ac97654fa815206ebdbc0656c7903bc
+  Certificate Revocation List: http://repo.fpki.gov/bridge/fbcag4.crl
+  Certificate Bundle (AIA): http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  Certificate Bundle (SIA): http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  OCSP: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: January 13, 2023
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a new cross certificate to the WidePoint NFI Root 2.
