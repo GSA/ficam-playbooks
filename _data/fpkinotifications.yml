@@ -27,7 +27,52 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:  
 
-- notice_date: January 2nd, 2023
+- notice_date: January 13, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the CertiPath Bridge CA - G3.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: 6f9f85401ac97654fa815206ebdbc0656c7903bc
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: January 13, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the WidePoint NFI Root 2.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: fadaf283e8839c5f296b9eebb00bc6cf848646f2
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: January 12, 2023
+  change_type: CA Certificate Issuance
+  system: STRAC Bridge Root Certification Authority
+  change_description: The STRAC Bridge Root Certification Authority issued a renewed cross certificate to the FTI Certification Authority.
+  contact: pki at strac dot org
+  ca_certificate_hash: cbbc028fae9da429e1b34a4ccadd9cd815b40d9c
+  ca_certificate_issuer: CN=STRAC Bridge Root Certification Authority, OU=STRAC PKI Trust Infrastructure, O=STRAC, C=US
+  ca_certificate_subject: CN=FTI Certification Authority, OU=FTI PKI Trust Infrastructure, O=Foundation for Trusted Identity, C=US
+  cdp_uri: http://pki.strac.org/bridge/crl/STRACBridgeRootCA.crl
+  aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
+  sia_uri: http://pki.fti.org/fti_ca/certificates/FTICA.p7c
+  ocsp_uri: http://certstatus.strac.org
+  ee_cdp_uri: http://pki.fti.org/fti_ca/crl/FTICA.crl
+  ee_ocsp_uri: http://certstatus.fti.org/
+
+- notice_date: January 2, 2023
   change_type: CA Certificate Issuance
   start_datetime: December 6. 2022
   system: DoD Root CA 3
@@ -42,7 +87,7 @@
   ocsp_uri: http://ocsp.disa.mil
   ee_cdp_uri: http://crl.disa.mil/crl/DODIDSWCA_75.crl
 
-- notice_date: January 2nd, 2023
+- notice_date: January 2, 2023
   change_type: CA Certificate Issuance
   start_datetime: December 6. 2022
   system: DoD Root CA 3
@@ -57,7 +102,7 @@
   ocsp_uri: http://ocsp.disa.mil
   ee_cdp_uri: http://crl.disa.mil/crl/DODIDCA_71.crl
 
-- notice_date: January 2nd, 2023
+- notice_date: January 2, 2023
   change_type: CA Certificate Issuance
   start_datetime: December 6. 2022
   system: DoD Root CA 3
@@ -71,6 +116,32 @@
   sia_uri: N/A
   ocsp_uri: http://ocsp.disa.mil
   ee_cdp_uri: http://crl.disa.mil/crl/DODEMAILCA_71.crl
+
+- notice_date: December 14, 2022
+  change_type: Intent to Perform CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the CertiPath Bridge CA - G3 between 01/09/2022 and 01/13/2022.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN= CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: N/A
+
+- notice_date: December 14, 2022
+  change_type: Intent to Perform CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the WidePoint NFI Root 2 between 01/09/2022 and 01/13/2022.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: N/A
 
 - notice_date: December 13, 2022
   change_type: CA Certificate Issuance
