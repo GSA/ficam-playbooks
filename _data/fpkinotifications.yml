@@ -35,7 +35,7 @@
   contact: fpki dash help at gsa.gov
   ca_certificate_hash: <the sha1 thumbprint of the certificate>
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
-  ca_certificate_subject:CN = Exostar Federated Identity Service Root CA 2, OU = Certification Authorities, O = Exostar LLC, C = US
+  ca_certificate_subject: CN = Exostar Federated Identity Service Root CA 2, OU = Certification Authorities, O = Exostar LLC, C = US
   cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
   sia_uri: N/A
