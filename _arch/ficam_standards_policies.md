@@ -112,7 +112,7 @@ Each section of this page lists documents in reverse chronological order, with t
 <a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53 Rev. 5: Security and Privacy Controls for Federal Information Systems and Organizations**</a> (PDF, December 2020)<br/>
 > This guideline provides a catalog of security and privacy controls for federal information systems and organizations and a process for selecting controls to protect organizational operations, assets, individuals, other organizations, and the Nation from a diverse set of threats.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-53a/rev-4/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53A Rev. 5: Assessing Security and Privacy Controls in Information Systems and Organizations**</a> (PDF, January 2022)<br/>
+<a href="https://csrc.nist.gov/publications/detail/sp/800-53a/rev-5/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53A Rev. 5: Assessing Security and Privacy Controls in Information Systems and Organizations**</a> (PDF, January 2022)<br/>
 > This guideline provides a set of procedures for conducting assessments of security controls and privacy controls employed within federal information systems and organizations. The assessment procedures, executed at various phases of the system development life cycle, are consistent with the security and privacy controls in NIST Special Publication 800-53, Revision 5.
 
 <a href="https://csrc.nist.gov/publications/detail/sp/800-157/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-157: Guidelines for Derived PIV Credentials**</a> (PDF, December 2014)<br/>
