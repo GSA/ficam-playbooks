@@ -9,8 +9,10 @@ sticky_sidenav: true
 subnav:
   - text: What Is a Trust Store?
     href: '#what-is-a-trust-store'
+  - text: What Is a Public Trust Store?
+    href: '#what-is-a-public-trust-store'
   - text: Commonly Used Trust Stores
-    href: '#what-are-the-most-commonly-used-trust-stores'
+    href: '#what-are-the-most-common-public-trust-stores'
   - text: Adobe Trust Store
     href: '#what-federal-pki-certificate-policies-are-trusted-by-adobe-and-how-do-i-view-them'
 ---
