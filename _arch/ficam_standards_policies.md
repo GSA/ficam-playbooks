@@ -24,7 +24,7 @@ Each section of this page lists documents in reverse chronological order, with t
 
 ## Laws
 
-<a href="http://www.gpo.gov/fdsys/pkg/USCODE-2012-title5/pdf/USCODE-2012-title5-partI-chap5-subchapII-sec552a.pdf" target="_blank" rel="noopener noreferrer">**The Privacy Act of 1974**</a> (September 2015)<br/>
+<a href="https://www.govinfo.gov/content/pkg/USCODE-2018-title5/pdf/USCODE-2018-title5-partI-chap5-subchapII-sec552a.pdf" target="_blank" rel="noopener noreferrer">**The Privacy Act of 1974**</a> (2018)<br/>
 > This Act protects certain federal government records pertaining to individuals. In particular, the Act covers systems of records that an agency maintains and retrieves by an individual’s name or other personal identifier, such as a Social Security Number.
 
 <a href="http://www.gpo.gov/fdsys/pkg/PLAW-113publ283" target="_blank" rel="noopener noreferrer">**Federal Information Security Modernization Act (FISMA) of 2014**</a> (December 2014)<br/>
@@ -112,8 +112,8 @@ Each section of this page lists documents in reverse chronological order, with t
 <a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53 Rev. 5: Security and Privacy Controls for Federal Information Systems and Organizations**</a> (PDF, December 2020)<br/>
 > This guideline provides a catalog of security and privacy controls for federal information systems and organizations and a process for selecting controls to protect organizational operations, assets, individuals, other organizations, and the Nation from a diverse set of threats.
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-53a/rev-4/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53A Rev. 4: Assessing Security and Privacy Controls in Federal Information Systems and Organizations - Building Effective Security Assessment Plans**</a> (PDF, December 2014)<br/>
-> This guideline provides a set of procedures for conducting assessments of security controls and privacy controls employed within federal information systems and organizations. The assessment procedures, executed at various phases of the system development lifecycle, are consistent with the security and privacy controls in NIST SP 800-53, Revision 4.
+<a href="https://csrc.nist.gov/publications/detail/sp/800-53a/rev-5/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-53A Rev. 5: Assessing Security and Privacy Controls in Information Systems and Organizations**</a> (PDF, January 2022)<br/>
+> This guideline provides a set of procedures for conducting assessments of security controls and privacy controls employed within federal information systems and organizations. The assessment procedures, executed at various phases of the system development life cycle, are consistent with the security and privacy controls in NIST Special Publication 800-53, Revision 5.
 
 <a href="https://csrc.nist.gov/publications/detail/sp/800-157/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-157: Guidelines for Derived PIV Credentials**</a> (PDF, December 2014)<br/>
 > This guideline provides technical instructions for the implementation of standards-based, secure, reliable, interoperable public key infrastructure (PKI) based identity credentials that are issued by federal departments and agencies to individuals who possess and prove control over a valid PIV credential.
@@ -121,7 +121,7 @@ Each section of this page lists documents in reverse chronological order, with t
 <a href="https://csrc.nist.gov/publications/detail/sp/800-162/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations**</a> (PDF, January 2014)<br/>
 > This guideline provides federal agencies with a definition of ABAC. ABAC is a logical access control methodology in which authorization to perform a set of operations is determined by evaluating attributes associated with the subject, object, requested operations, and, in some cases, environment conditions against policy, rules, or relationships that describe the allowable operations for a given set of attributes.
 
-<a href="https://csrc.nist.gov/publications/detail/fips/201/2/final" target="_blank" rel="noopener noreferrer">**FIPS 201-2: PIV of Federal Employees and Contractors**</a> (PDF, August 2013)<br/>
+<a href="https://csrc.nist.gov/publications/detail/fips/201/3/final" target="_blank" rel="noopener noreferrer">**FIPS 201-3: Personal Identity Verification (PIV) of Federal Employees and Contractors**</a> (PDF, January 2022)<br/>
 > This standard specifies the architecture and technical requirements for a common identification standard for federal employees and contractors. The overall goal is to achieve appropriate security assurance for multiple applications by efficiently verifying the claimed identity of individuals seeking physical access to federally controlled government facilities and electronic access to government information systems.
 
 <a href="https://csrc.nist.gov/publications/detail/sp/800-76/2/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-76-2: Biometric Data Specification for PIV**</a> (PDF, July 2013)<br/>
