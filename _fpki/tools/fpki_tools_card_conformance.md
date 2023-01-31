@@ -17,7 +17,7 @@ subnav:
 
 The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"} is a GSA managed, Java tool hosted on GitHub that can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model per current releases of related standards, including:
 
-- [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"}: PIV of Federal Employees and Contractors
+- [FIPS 201-3](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}: PIV of Federal Employees and Contractors
 - [NIST SP 800-73](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}: Interfaces for Personal Identity Verification
 - [NIST SP 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}: Biometric Specifications for Personal Identity Verification
 - [NIST SP 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}: Cryptographic Algorithms and Key Sizes for Personal Identity Verification
