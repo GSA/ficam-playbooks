@@ -1,17 +1,17 @@
 ---
 layout: page
 collection: fpki
-title: Announcements
-permalink: /fpki/announcements/
+title: Archived Announcements
+permalink: /fpki/announcements/archived/
 sticky_sidenav: true
 sidenav: fpki
 
 subnav:
-  - text: Archived
-    href: ../announcements/archived/
+  - text: Back to Announcements
+    href: /fpki/announcements
 ---
 
-These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
+These announcements have been archived one year after they their release and will be removed from the site after three years.
 
 <table class="usa-table--borderless">
   <thead class="usa-sr">
@@ -24,7 +24,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
   <tbody>
     {% assign announcements = site.fpki.announcements | concat: site.data.fpkiannouncements %}
       {% for announcement in announcements %}
-        {% if announcement.status == "Active" %}
+        {% if announcement.status == "Archived" %}
           <tr>
               <td headers="announce-table-heading-{{ status | slugify }} announce-table-heading-title"><a href="{{ announcement.url | relative_url }}" title="announcement.title">{{ announcement.title }}</a></td>
               <td headers="announce-table-heading-{{ status | slugify }} announce-table-heading-date"><a date="announcement.pubDate">{{ announcement.pubDate }}</a></td>
