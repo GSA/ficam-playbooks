@@ -96,7 +96,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 04c2  
 - Validity: January 19, 2021 to January 20, 2027
 - SHA-1 Hash: 6b250683b996e2581696f499061b5581a7867c89
-- CRL DP: [http://crl.disa.mil/crl/DODIDCA_71.crl](http://crl.disa.mil/crl/DODDERILITYCA_1.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://crl.disa.mil/crl/DODDERILITYCA_1.crl](http://crl.disa.mil/crl/DODDERILITYCA_1.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 **DoD ID CA-71**
 - Subject: CN = DOD ID CA-71, OU = PKI, OU = DoD, O = U.S. Government, C = US  
