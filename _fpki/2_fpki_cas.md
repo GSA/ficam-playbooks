@@ -13,10 +13,12 @@ subnav:
     href: '#federal-bridge-certification-authority'
   - text: All Federal PKI Certification Authorities
     href: '#all-federal-pki-certification-authorities'
+  - text: Certificate Types within the Federal PKI
+    href: '#certificate-types-within-the-federal-pki'
   - text: Federal Common and Federal Bridge Certificate Details
     href: ../certsandcrls/
   - text: PIV CAs and Agencies
-    href: ../pivcas-and-agencies/
+    href: ../pivcas-and-agencies/    
 ---
 
 A **_certification authority_** is a system that issues digital certificates. These digital certificates are based on _cryptography_ and follow the X.509 standards defined for information security.
