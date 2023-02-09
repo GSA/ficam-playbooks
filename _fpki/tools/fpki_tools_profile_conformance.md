@@ -47,47 +47,52 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
     <img src="{{site.baseurl}}/assets/fpki/tools/docker_desktop.png" alt="Docker Desktop" style="padding-left:30px;">
     <br><br>
 
-3. Next, copy and paste the link below in your web browser. Download the zip file of the latest released version. It can be located in the device’s Downloads folder as indicated in the screenshot below.
+3. Next, click the link below or copy and paste its address into your web browser to visit the releases page.
 
-    - Link: [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases)
+    - Link: [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}
+      <br><br>
+
+4. To download the latest release, click the **Source code (zip)** link at the bottom of the page, then save to download the zip file.
+
+    <img src="{{site.baseurl}}/assets/fpki/tools/cpct-source.png" alt="Zipped CPCT Folder" style="padding-left:30px;">
     <br><br>
 
-4. Go to your device’s Downloads folder and copy the cpct-tool-1.x.x.zip (your version number may be different). file to your Desktop. Then, extract the folder and save it on the device Desktop for ease of use.
+5. Go to your device’s Downloads folder and copy the cpct-tool-1.x.x.zip (your version number may be different). file to your Desktop. Then, extract the folder and save it on the device Desktop for ease of use.
 
     <img src="{{site.baseurl}}/assets/fpki/tools/cpct-tool-zip-download.png" alt="Zipped CPCT Folder" style="padding-left:30px;">
     <br><br>
 
-5. Open the `cpct-tool-1.x.x` folder and  double click the `start.exe` file. Refer to the screenshot below.
+6. Open the `cpct-tool-1.x.x` folder and  double click the `start.exe` file. Refer to the screenshot below.
 
     <img src="{{site.baseurl}}/assets/fpki/tools/cpct-unzipped-files.png" alt="CPCT Folder Unzipped" style="padding-left:30px;">
     <br><br>
 
-6. The following window may appear, based on the device’s user settings. Click on **"More info"**.
+7. The following window may appear, based on the device’s user settings. Click on **"More info"**.
 
     <img src="{{site.baseurl}}/assets/fpki/tools/more-info.png" alt="More Info" style="padding-left:30px;">
     <br><br>
 
-7. The following window will then appear on your screen. Select the **"Run anyway"** icon.
+8. The following window will then appear on your screen. Select the **"Run anyway"** icon.
 
     <img src="{{site.baseurl}}/assets/fpki/tools/run-anyway.png" alt="Run Anyway" style="padding-left:30px;">
     <br><br>
 
-8. A Command line prompt window will open and ask whether you would like to continue, as shown in the screenshot below.
+9. A Command line prompt window will open and ask whether you would like to continue, as shown in the screenshot below.
 
     <img src="{{site.baseurl}}/assets/fpki/tools/start_install.png" alt="Start of Install" style="padding-left:30px;">
     <br><br>
 
-9. If you are ready for the CPCT to build, type “y” and hit enter at the blinking cursor. Allow the program to fully execute the build of the CPCT image in Docker Desktop. Once complete, the status message shown below will appear.
+10. If you are ready for the CPCT to build, type “y” and hit enter at the blinking cursor. Allow the program to fully execute the build of the CPCT image in Docker Desktop. Once complete, the status message shown below will appear.
 
     <img src="{{site.baseurl}}/assets/fpki/tools/end_install.png" alt="End of Install" style="padding-left:30px;">
     <br><br>
 
-10. To confirm that your image is running, check Docker Desktop to make sure you see the `cpct-tool:latest` running
+11. To confirm that your image is running, check Docker Desktop to make sure you see the `cpct-tool:latest` running
 
     <img src="{{site.baseurl}}/assets/fpki/tools/cpct-tool-docker.png" alt="cpct-tool:latest running" style="padding-left:30px;">
     <br><br>
 
-11. Arrive at the CPCT landing page. Use the CPCT application as in the past. Remember to bookmark this page for future use.
+12. Arrive at the CPCT landing page. Use the CPCT application as in the past. Remember to bookmark this page for future use.
 
     <img src="{{site.baseurl}}/assets/fpki/tools/cpct_in_browser.png" alt="The CPCT Tool Running Locally" style="padding-left:30px;">
     <br><br>
@@ -96,7 +101,7 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
 
 Links to the CPCT Tool and associated support pages:
 
-- GitHub link:  [https://github.com/GSA/cpct-tool](https://github.com/GSA/cpct-tool)
-- GitHub Releases page:  [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases)
-- GitHub Wiki page:  [https://github.com/GSA/cpct-tool/wiki](https://github.com/GSA/cpct-tool/wiki)
-- GitHub Issues page:  [https://github.com/GSA/cpct-tool/issues](https://github.com/GSA/cpct-tool/issues)
+- GitHub link:  [https://github.com/GSA/cpct-tool](https://github.com/GSA/cpct-tool){:target="_blank"}{:rel="noopener noreferrer"}
+- GitHub Releases page:  [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}
+- GitHub Wiki page:  [https://github.com/GSA/cpct-tool/wiki](https://github.com/GSA/cpct-tool/wiki){:target="_blank"}{:rel="noopener noreferrer"}
+- GitHub Issues page:  [https://github.com/GSA/cpct-tool/issues](https://github.com/GSA/cpct-tool/issues){:target="_blank"}{:rel="noopener noreferrer"}
