@@ -57,7 +57,7 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
     <img src="{{site.baseurl}}/assets/fpki/tools/cpct-source.png" alt="Source Zip" style="padding-left:30px;">
     <br><br>
 
-5. Go to your device’s Downloads folder and copy the cpct-tool-1.x.x.zip (your version number may be different). file to your Desktop. Then, extract the folder and save it on the device Desktop for ease of use.
+5. Go to the location you downloaded the cpct-tool-1.x.x.zip (your version number may be different) file and copy it to your Desktop. Then, extract the folder to your Desktop for ease of use.
 
     <img src="{{site.baseurl}}/assets/fpki/tools/cpct-tool-zip-download.png" alt="Zipped CPCT Folder" style="padding-left:30px;">
     <br><br>
