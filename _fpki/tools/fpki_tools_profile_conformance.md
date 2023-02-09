@@ -42,7 +42,10 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
     <img src="{{site.baseurl}}/assets/fpki/tools/docker-website.png" alt="Docker.com Website" style="padding-left:30px;">
     <br><br>
 
-2. Once Docker Desktop has been installed successfully on your device, it will continue to run in the background and no further action will be required.
+2. Once Docker Desktop has been installed successfully, it will continue to run in the background on most systems. If you see that Docker is not running, please make sure it is running before installing the CPCT Tool in the next step.
+
+{% include alert-warning.html heading="Note" content="If you are an existing user of the CPCT Tool and have not used it in a while or you were sent here to reinstall the CPCT Tool, we advise that you first remove the previously installed Docker CPCT Tool container and image from Docker Desktop before downloading and installing a new version of the CPCT Tool." %}
+
 
     <img src="{{site.baseurl}}/assets/fpki/tools/docker_desktop.png" alt="Docker Desktop" style="padding-left:30px;">
     <br><br>
