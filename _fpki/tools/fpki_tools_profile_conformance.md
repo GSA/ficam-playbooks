@@ -46,7 +46,7 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
 
 {% include alert-warning.html heading="Note" content="If you are an existing user of the CPCT Tool and have not used it in a while or you were sent here to reinstall the CPCT Tool, we advise that you first remove the previously installed Docker CPCT Tool container and image from Docker Desktop before downloading and installing a new version of the CPCT Tool." %}
 
-
+    <br>
     <img src="{{site.baseurl}}/assets/fpki/tools/docker_desktop.png" alt="Docker Desktop" style="padding-left:30px;">
     <br><br>
 
