@@ -47,9 +47,9 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
     <img src="{{site.baseurl}}/assets/fpki/tools/docker_desktop.png" alt="Docker Desktop" style="padding-left:30px;">
     <br><br>
 
-3. Next, copy and paste the link below in your web browser. The cpct-tool.zip folder will download. It can be located in the device’s Downloads folder as indicated in the screenshot below.
+3. Next, copy and paste the link below in your web browser. Download the zip file of the latest released version. It can be located in the device’s Downloads folder as indicated in the screenshot below.
 
-    - Link: [https://github.com/GSA/cpct-tool/archive/refs/tags/v1.0.0.zip](https://github.com/GSA/cpct-tool/archive/refs/tags/v1.0.0.zip)
+    - Link: [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases)
     <br><br>
 
 4. Go to your device’s Downloads folder and copy the cpct-tool-1.x.x.zip (your version number may be different). file to your Desktop. Then, extract the folder and save it on the device Desktop for ease of use.

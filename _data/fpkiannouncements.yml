@@ -1,5 +1,11 @@
 ## FPKI announcements
 
+- title: CPCT Tool Update
+  pubDate: January 12, 2023
+  url: /fpki/announcements/cpct-update101/
+  description: The Certificate Profile Conformance Tool (CPCT) has been updated to account for Common Profiles v2.2.
+  status: Active
+
 - title: CPCT Tool transition from Cloud.gov
   pubDate: October 21, 2022
   url: /fpki/announcements/cpct-transition/

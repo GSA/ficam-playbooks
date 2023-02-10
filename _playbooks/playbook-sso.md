@@ -3,13 +3,11 @@ layout: page
 collection: playbooks
 title: Enterprise Single Sign-On Playbook
 category: sso
-pubdate: 2021-02
-date: February 12, 2021
+pubdate: 2021-11
 type: Markdown
 permalink: /playbooks/sso/
 description: The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.
 sticky_sidenav: true
-pdf: "docs/playbook-sso.pdf"
 sidenav: sso
 
 subnav:
@@ -31,8 +29,8 @@ subnav:
     href: '#appendix-a-troubleshooting-single-sign-on'
 ---
 
-Version 1.1  
-February 12, 2021
+Version 1.1<br>
+November 16, 2021
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
@@ -41,8 +39,8 @@ This playbook is a collaboration between the Identity, Credential, and Access Ma
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 2/12/21 | Initial Draft |
-| 1.1 | 11/16/21 | Add SSO US code reference. Added Appendix A of SSO troubleshooting steps. |
+| 1.1 | 11/16/2021 | Add SSO US code reference. Added Appendix A of SSO troubleshooting steps. |
+| 1.0 | 02/12/2021 | Initial Draft |
 
 ## Executive Summary
 The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federal agencies implement or modernize an SSO service for federal employee access to government applications. SSO is a component of Identity, Credential, and Access Management (ICAM) that agencies use to centralize access to applications. SSO enables end users to log in to multiple applications using extensible multi-factor authentication options. It also extends capabilities for applications that don’t natively support multi-factor authentication. Other benefits of Enterprise SSO include: 

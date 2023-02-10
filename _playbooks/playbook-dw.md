@@ -2,8 +2,8 @@
 layout: page
 collection: playbooks
 title: Digital Worker Identity Playbook 
-pubdate: 2021-01
-date: October 14, 2021
+pubdate: 2022-12
+date: December 29, 2022
 type: Markdown
 permalink: /playbooks/dw/ 
 description: The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.
@@ -29,8 +29,8 @@ subnav:
     
 ---
 
-Version 1.1  
-January 5, 2021
+Version 1.2  
+December 29, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
@@ -39,8 +39,9 @@ This playbook is a collaboration between the Identity, Credential, and Access Ma
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 1/5/21 | Initial Draft |
-| 1.1 | 11/18/21 | Renumbered tables |
+| 1.2 | 12/29/2022 | Fixed Acknowlegment(US) word usage |
+| 1.1 | 11/18/2021 | Renumbered tables |
+| 1.0 | 01/05/2021 | Initial Draft |
 
 # Executive Summary
 
@@ -236,7 +237,7 @@ Validation actions record the activities to ensure the digital worker continues 
 2.	**Separation of duties (VD-2)** is a principle that prevents any single person or entity from completing all the functions in a critical or sensitive process. It is designed to “prevent fraud, theft, and errors.” The sponsor should review that the digital worker role does not create a separation of duty conflict. If there is a conflict, document the exception.
 3.	**Code review (VD-3).** Digital worker code may include worker logic and decision-making processes. Include design or other system documentation as part of code review for reasoning and decision-making intent.
 4.	**Ethics and bias review (VD-4 and VD-5).** While government-wide standards for ethics and bias are in development, agencies should define their own ethics standards or collaborate with other agencies that align with the agency mission.
-5.	**Recertification acknowledgement (VD-6 and VD-7).** Recertification is the act of reviewing access on a periodic basis. It should occur on an annual or bi-annual schedule based on the adverse impact level.
+5.	**Recertification acknowledgment (VD-6 and VD-7).** Recertification is the act of reviewing access on a periodic basis. It should occur on an annual or bi-annual schedule based on the adverse impact level.
 
 {% include alert-info.html heading="Key Point" content="Existing validation activities can be leveraged and integrated into the digital worker validation process. Even though there are no activities for low impact, reassess a digital worker impact level every time there is a code change or update to ensure the impact level has not changed." %}
 
@@ -251,10 +252,10 @@ Use Table 5 for specific validation actions aligned with adverse impact level.
 | VD-3 | **Validate the digital worker has undergone a code review prior to release. Additional code reviews are required for any code changes at higher impact.** | N/A | <b>✓</b><br>Following major changes to code | <b>✓</b><br>Following any changes to code | <b>✓</b><br>Following any changes to code |
 | VD-4| **Validate the digital worker has undergone review of ethics according to applicable government and/or agency standards** | N/A | N/A | <b>✓</b><br>Conduct initial review and annual periodic review | <b>✓</b><br>Conduct initial review and periodic review every six months |
 | VD-5 | **Validate the digital worker has undergone review for bias according to applicable government standards.** | N/A | <b>✓</b><br>Conduct initial bias review | <b>✓</b><br>Conduct initial bias review and annual periodic review | <b>✓</b><br>Conduct initial bias review and periodic review every six months |
-| VD-6 | **Validate the sponsor has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification every six months |
-| VD-7| **Validate the custodian has recertified acknowledgement of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification every six months |
+| VD-6 | **Validate the sponsor has recertified acknowledgment of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification every six months |
+| VD-7| **Validate the custodian has recertified acknowledgment of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification every six months |
 
-{% include alert-info.html heading="Key Point" content="SP-3 is a similar but separate activity than VD-6. In SP-3 the sponsor acknowledges their role and responsibilities initially and reacknowledges them every six months. VD-6 is validation of the acknowledgement. Perform each action together or separately, but they are tracked separately for flexibility." %}
+{% include alert-info.html heading="Key Point" content="SP-3 is a similar but separate activity than VD-6. In SP-3 the sponsor acknowledges their role and responsibilities initially and reacknowledges them every six months. VD-6 is validation of the acknowledgment. Perform each action together or separately, but they are tracked separately for flexibility." %}
 
 {% include alert-info.html heading="Key Point" content="VD-3, VD-4, and VD-5 are validating the code, ethics, and bias reviews that have been conducted. It is up to the individual agencies to ensure a standard for conducting such reviews is followed. Agency representatives, such as the sponsor or custodian, should collaborate within a community of practice to capture best practices on how to perform the various reviews in Step 2.2." %}
 
@@ -295,11 +296,11 @@ Agencies may store and track identity governance data elements in an existing sy
  
 | &nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Data Element | Additional Guidance |
 | ----------- | ------------ | ----------- | 
-| DF-8 | **Digital Worker Sponsor Date of Last Acknowledgement** | _Specify the date the sponsor acknowledged responsibility for the digital worker. Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
-| DF-9 | **Digital Worker Date of Sponsor Acknowledgement Recertification**<br>_(optional)_ | _Track when the sponsor acknowledgement must be recertified. This can be tracked as a formula based on the last acknowledgement date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
+| DF-8 | **Digital Worker Sponsor Date of Last Acknowledgment** | _Specify the date the sponsor acknowledged responsibility for the digital worker. Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-9 | **Digital Worker Date of Sponsor Acknowledgment Recertification**<br>_(optional)_ | _Track when the sponsor acknowledgment must be recertified. This can be tracked as a formula based on the last acknowledgment date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
 | DF-10 | **Level of Potential Adverse Impact** | _Specify the level of potential adverse impact as determined using the methodology in section 3.2 of this document. Limited response (e.g., “Low”, “Moderate,” “High,” or “Critical”)._ |
-| DF-11 | **Digital Worker Date of Last Custodian Acknowledgement** | _Specify the date the custodian acknowledged responsibility for the digital worker. Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
-| DF-12 | **Digital Worker Date of Custodian Acknowledgement Recertification**<br>_(optional)_ | _Track when the custodian acknowledgement must be recertified. This can be tracked as a formula based on the last acknowledgement date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
+| DF-11 | **Digital Worker Date of Last Custodian Acknowledgment** | _Specify the date the custodian acknowledged responsibility for the digital worker. Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
+| DF-12 | **Digital Worker Date of Custodian Acknowledgment Recertification**<br>_(optional)_ | _Track when the custodian acknowledgment must be recertified. This can be tracked as a formula based on the last acknowledgment date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
 | DF-13 | **Approved Source Internet Protocol (IP) Address Range**<br>_( only for High and Critical)_ | _Specify the range of source IP addresses on which the digital worker may operate._ |
 | DF-14 | **Code Review Completion Date**<br>_(optional)_ | _Specify the code review completion date (refer to VD-3 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
 | DF-15 | **Ethics Review Completion Date** | _Specify the digital worker ethics review completion date (refer to VD-4 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
@@ -425,7 +426,7 @@ The hospital digital worker in this case study has a _critical_ adverse impact l
 | ------------------------ | :------------: | 
 | **&nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;** | **Critical Actions** | 
 | SP-1 | The business owner documents the business need to use a digital worker. | 
-| SP-2<br> SP-3 | The CISO reviews the business need and assigns the systems Information Security System Manager (ISSM) as sponsor. The CISO notifies the ISSM and the ISSM electronically signs an acknowledgement letter every six months. | 
+| SP-2<br> SP-3 | The CISO reviews the business need and assigns the systems Information Security System Manager (ISSM) as sponsor. The CISO notifies the ISSM and the ISSM electronically signs an acknowledgment letter every six months. | 
 | SP-4<br> SP-5 | As sponsor, the ISSM assigns and notifies the contractor maintaining the digital worker of their responsibility as custodian. | 
 | SP-6 | The contractor, as custodian, acknowledges their assignment and responsibility every six months. | 
 |     | **Hospital Digital Worker Validation (VD)** |
@@ -433,7 +434,7 @@ The hospital digital worker in this case study has a _critical_ adverse impact l
 | VD-2 | The ISSM and ISSO validate the standard system account does not create a separation of duty conflict with a human user. | 
 | VD-3 | The ISSM verifies a code review was conducted with the business owner and sets a reminder to verify the code review every six months. | 
 | VD-4<br> VD-5 | The ISSM verifies with the ethics office that the digital worker output is in line with agency ethics and bias standards and sets a reminder to verify with the ethics office every six months. | 
-| VD-6<br> VD-7 | The ISSM and contractor, as sponsor and custodian, recertify acknowledgement of responsibility for the digital worker and set a reminder to conduct this action every six months. | 
+| VD-6<br> VD-7 | The ISSM and contractor, as sponsor and custodian, recertify acknowledgment of responsibility for the digital worker and set a reminder to conduct this action every six months. | 
 
 After the sponsorship and validation activities are complete and documented, the hospital digital worker identity was created and provisioned. Identity management data fields are captured in the directory service. The identity governance data fields are captured in an agency security assessment tool.
 
@@ -449,11 +450,11 @@ After the sponsorship and validation activities are complete and documented, the
 | DF-6 | **Digital Worker Description** _(optional new field)_ | N/A |
 | DF-7 | **Responsible Organization** _(optional new field)_ | Patient Health Division |
 |      | **Additional Identity Governance Data Fields** |     |
-| DF-8 | **DW Sponsor Acknowledgement Date** | 09/1/2020 |
-| DF-9 | **DW Sponsor Acknowledgement Recertification<br>Date** _(optional)_ | 02/1/2021 |
+| DF-8 | **DW Sponsor Acknowledgment Date** | 09/1/2020 |
+| DF-9 | **DW Sponsor Acknowledgment Recertification<br>Date** _(optional)_ | 02/1/2021 |
 | DF-10 | **DW Level of Potential Adverse Impact** | Critical |
-| DF-11 | **DW Custodian Acknowledgement Date** | 09/10/2020 |
-| DF-12 | **DW Custodian Acknowledgement Recertification<br>Date** _(optional)_ | 02/10/2021 |
+| DF-11 | **DW Custodian Acknowledgment Date** | 09/10/2020 |
+| DF-12 | **DW Custodian Acknowledgment Recertification<br>Date** _(optional)_ | 02/10/2021 |
 | DF-13 | **DW Approved Source Internet Protocol (IP)<br>Address Range** _(only for High and Critical)_ | 192.168.0.0/16 |
 | DF-14 | **DW Code Review Completion Date** _(optional)_ | 07/04/2020 |
 | DF-15 | **DW Next Code Review Date** _(optional)_ | 01/04/2021 |

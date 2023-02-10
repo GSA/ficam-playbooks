@@ -2,7 +2,7 @@
 layout: page
 collection: playbooks
 title: Privileged Identity Playbook
-pubdate: 2022-09
+pubdate: 2022-12
 type: Markdown
 permalink: /playbooks/pam/
 description: This Playbook provides federal agencies with best practices in managing its privileged user population.
@@ -38,8 +38,8 @@ subnav:
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
   
-Version 1.1<br>
-December 15, 2022
+Version 1.2<br>
+December 29, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
@@ -47,8 +47,9 @@ December 15, 2022
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.1 | 12/15/22 | Clarify activites around automated discovery of entitlements and microservices. |
-| 1.0 | 09/25/22 | Initial Draft. |
+| 1.2 | 12/29/2022 | Fixed Acknowledgment word usage. |
+| 1.1 | 12/15/2022 | Clarify activites around automated discovery of entitlements and microservices. |
+| 1.0 | 09/25/2022 | Initial Draft. |
 
 This playbook is a collaboration among the General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, Federal Chief Information Security Officer Council ICAM Subcommittee, and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA) Continuous Diagnostic and Mitigation (CDM) Program.
 
@@ -415,7 +416,7 @@ The following documentation references help inform the development and direction
 
 # Appendix B: Privileged User Agreement
 
-An agency can tailor [this template]({{site.baseurl}}/docs/template-pua.docx){:target="_blank"} to help meet mission goals and business needs to support privileged user access for logical and physical resources. An agency should obtain and retain a digitally signed copy of such instruction and ensure that privileged user access to the identified protected resource is prohibited without a signed acknowledgement of system-specific rules and a signed acknowledgement of said instruction.
+An agency can tailor [this template]({{site.baseurl}}/docs/template-pua.docx){:target="_blank"} to help meet mission goals and business needs to support privileged user access for logical and physical resources. An agency should obtain and retain a digitally signed copy of such instruction and ensure that privileged user access to the identified protected resource is prohibited without a signed acknowledgment of system-specific rules and a signed acknowledgment of said instruction.
 
 ## [AGENCY OR PROGRAM NAME] Privileged User Agreement
 

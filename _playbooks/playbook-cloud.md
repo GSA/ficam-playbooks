@@ -2,7 +2,7 @@
 layout: page
 collection: playbooks
 title: Cloud Identity Playbook
-pubdate: 2022-01
+pubdate: 2022-12
 type: Markdown
 permalink: /playbooks/cloud/
 description: The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.
@@ -30,8 +30,8 @@ subnav:
     href: '#appendix-b-acronyms'
 ---
 
-Version 1.1  
-October 11, 2022
+Version 1.2  
+December 29, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
@@ -40,6 +40,7 @@ This playbook is a collaboration between the Federal Chief Information Security 
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
+| 1.2 | 12/29/22 | Updated link in Appendix A |
 | 1.1 | 10/11/22 | Update federation section for trust framework examples. |
 | 1.0 | 01/20/22 | Initial draft. |
 
@@ -500,7 +501,7 @@ See the [GSA Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_bl
 
 1. [CISA Cloud Security Technical Reference Architecture](https://www.cisa.gov/publication/cloud-security-technical-reference-architecture){:target="_blank"}{:rel="noopener noreferrer"}
 2. [CISA Zero Trust Maturity Model](https://www.cisa.gov/publication/zero-trust-maturity-model){:target="_blank"}{:rel="noopener noreferrer"}
-3. [Digital Identity Risk Assessment Playbook]({{site.baseurl}}/docs/playbook-dira.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+3. [Digital Identity Risk Assessment Playbook](https://playbooks.idmanagement.gov/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}
 4. [Data Center and Cloud Optimization Initiative Cloud Strategy Guide](https://community.max.gov/display/Egov/Agency%2BIT%2BModernization%3A%2BEducational%2BResources%2BBuilding%2BBlocks){:target="_blank"}{:rel="noopener noreferrer"}
 5. [Enterprise Single Sign-On Playbook]({{site.baseurl}}/playbooks/sso/){:target="_blank"}{:rel="noopener noreferrer"}
 6. [FedRAMP Digital Identity Requirements (Version 1.0)](https://s3.amazonaws.com/sitesusa/wp-content/uploads/var/www/html/sites/www/app/wordpress/wp-content/blogs.dir/482/files/2016/06/FedRAMP_Digital_Identity_Requirements_v1.0.pdf){:target="_blank"}{:rel="noopener noreferrer"}
