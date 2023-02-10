@@ -55,7 +55,7 @@ The page lists the certification authorities *currently* used for Personal Ident
 </table>
 
 ## Active Issuing CA Certificate Details 
-These CA certificates are actively issuing PIV authentication certificates.  
+These CA certificates are actively issuing PIV , PIV-I and/or Derived PIV authentication certificates.  
 
 #### Carillon Federal Services PIV-I CA1
 - Subject: OU = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
@@ -68,9 +68,9 @@ These CA certificates are actively issuing PIV authentication certificates.
 #### Carillon Federal Services PIV-I CA2
 - Subject: OU = Carillon Federal Services PIV-I CA2, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
 - Issuer: OU = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
-- Serial #: 0777592d1294a2b19abe6a1996c0c921
-- Validity: November 4, 2021 to November 4, 2022
-- SHA-1 Hash: 323a07c5c7d59bc9c5e24282fc06393456827e3a
+- Serial #: 47224bf49b46145a171ebc013e067f43
+- Validity: August 23, 2022 to August 23, 2023
+- SHA-1 Hash: 79e5b88df6cc9b9eb3b88c17d9662011e651f003
 - CRL DP: [http://pub.carillonfedserv.com/CRL/CFSCA2.crl](http://pub.carillonfedserv.com/CRL/CFSCA2.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Department of Veterans Affairs CA
@@ -90,6 +90,22 @@ These CA certificates are actively issuing PIV authentication certificates.
 - CRL DP: [http://pki.treas.gov/DHS_CA3.crl](http://pki.treas.gov/DHS_CA3.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### DoD Issuing CAs
+**DoD DERILITY CA-1**
+- Subject: CN = DOD DERILITY CA-1, OU = PKI, OU = DoD, O = U.S. Government, C = US  
+- Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
+- Serial #: 04c2  
+- Validity: January 19, 2021 to January 20, 2027
+- SHA-1 Hash: 6b250683b996e2581696f499061b5581a7867c89
+- CRL DP: [http://crl.disa.mil/crl/DODDERILITYCA_1.crl](http://crl.disa.mil/crl/DODDERILITYCA_1.crl){:target="_blank"}{:rel="noopener noreferrer"}
+
+**DoD ID CA-71**
+- Subject: CN = DOD ID CA-71, OU = PKI, OU = DoD, O = U.S. Government, C = US  
+- Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
+- Serial #: 070c  
+- Validity: December 6, 2022 to December 6, 2028
+- SHA-1 Hash: d398c9f709ea787f46afb2b31cbd964628afa3d4
+- CRL DP: [http://crl.disa.mil/crl/DODIDCA_71.crl](http://crl.disa.mil/crl/DODIDCA_71.crl){:target="_blank"}{:rel="noopener noreferrer"}
+
 **DoD ID CA-65**
 - Subject: CN = DOD ID CA-65, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
@@ -157,9 +173,9 @@ These CA certificates are actively issuing PIV authentication certificates.
 #### FTI Certification Authority
 - Subject: OU = FTI Certification Authority, OU = FTI PKI Trust Infrastructure, O = Foundation for Trusted Identity, C = US
 - Issuer: OU = STRAC Bridge Root Certification Authority, OU = STRAC PKI Trust Infrastructure, O = STRAC, C = US
-- Serial #: 0118
-- Validity: February 9, 2022 to January 7, 2023
-- SHA-1 Hash: 2b6e0648ba2c7104392546ef1a08cc9bedf6829c
+- Serial #: 0141
+- Validity: January 7, 2023 to January 6, 2026
+- SHA-1 Hash: cbbc028fae9da429e1b34a4ccadd9cd815b40d9c
 - CRL DP: [http://pki.fti.org/fti_ca/crl/FTICA.crl](http://pki.fti.org/fti_ca/crl/FTICA.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### HHS-FPKI-Intermediate-CA-E1
@@ -316,7 +332,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 
 
 ## Maintenance Mode Issuing CA Certificate Details
-These CA certificates have issued PIV authentication certificates previously and are in maintenance mode only.  Agency system administrators may need to include these CAs in configurations. 
+These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication certificates previously and are in maintenance mode only.  Agency system administrators may need to include these CAs in configurations. 
 
 #### Department of Veterans Affairs CA (1 of 2)
 - Subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
