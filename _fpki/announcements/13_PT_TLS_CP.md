@@ -15,7 +15,7 @@ sidenav: fpkiactiveannouncements
 
 **US Federal Public Trust TLS Certificate Policy**
 
-The current version (v1.0) of the [US Federal Public Trust TLS Certificate Policy](https://devicepki.idmanagement.gov/assets/docs/us-federal-public-trust-tls-cp.pdf){:target="_blank"}{:rel="noopener noreferrer"} has been archived.  This version of the policy was completed in 2019 in order to prepare for an operational PKI aimed at facilitating certificate issaunce and subsequent wide-spread trust in .mil and .gov websites.
+The current version (v1.0) of the [US Federal Public Trust TLS Certificate Policy](https://devicepki.idmanagement.gov/assets/docs/us-federal-public-trust-tls-cp.pdf){:target="_blank"}{:rel="noopener noreferrer"} has been archived.  This version of the policy was completed in 2019 in order to prepare for a publicly trusted government operated PKI aimed at facilitating TLS certificate issuance for .mil and .gov websites.
 
 **Document Updates**
 
