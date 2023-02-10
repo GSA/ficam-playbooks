@@ -55,7 +55,7 @@ The page lists the certification authorities *currently* used for Personal Ident
 </table>
 
 ## Active Issuing CA Certificate Details 
-These CA certificates are actively issuing PIV authentication certificates.  
+These CA certificates are actively issuing PIV authentication, PIV-I authentication and Derived PIV authentication certificates.  
 
 #### Carillon Federal Services PIV-I CA1
 - Subject: OU = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
@@ -332,7 +332,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 
 
 ## Maintenance Mode Issuing CA Certificate Details
-These CA certificates have issued PIV authentication certificates previously and are in maintenance mode only.  Agency system administrators may need to include these CAs in configurations. 
+These CA certificates have issued PIV authentication, PIV-I authentication or Derived PIV authentication certificates previously and are in maintenance mode only.  Agency system administrators may need to include these CAs in configurations. 
 
 #### Department of Veterans Affairs CA (1 of 2)
 - Subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
