@@ -27,6 +27,20 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:  
 
+- notice_date: February 10, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the Exostar Federated Identity Service Root CA 2
+  contact: fpki dash help at gsa.gov
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN = Exostar Federated Identity Service Root CA 2, OU = Certification Authorities, O = Exostar LLC, C = US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://www.fis.evincible.com/fis/public/ExostarFederatedIdentityServiceRootCA2.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: Multiple
+  ee_ocsp_uri: N/A
+
 - notice_date: January 23, 2023
   change_type: CA Certificate Revocation intent
   start_datetime: February 7, 2023
@@ -47,7 +61,7 @@
   change_type: Intent to Perform CA Certificate Renewal Issuance
   start_datetime: Between February 7, 2023 and February 9, 2023
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
-  change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the Exostar Federated Identity Service Root CA
+  change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the Exostar Federated Identity Service Root CA 2
   contact: fpki dash help at gsa.gov
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN = Exostar Federated Identity Service Root CA 2, OU = Certification Authorities, O = Exostar LLC, C = US
