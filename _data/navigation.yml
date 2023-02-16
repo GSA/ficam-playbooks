@@ -145,12 +145,15 @@ fpkitools:
 fpkiactiveannouncements:
   - text: Back to FPKI Guide
     href: /fpki/announcements/
+  - text: Public Trust TLS PKI CP
+    href: /fpki/announcements/PT-TLS-CP/
+  - text: CPCT Tool Update
+    href: /fpki/announcements/cpct-update101/
   - text: FCPCA SIA LDAP Decommissioning (2022) ## Oct 2023
     href: /fpki/announcements/ldap-removal/
   - text: CPCT Tool Transition
     href: /fpki/announcements/cpct-transition/
-  - text: CPCT Tool Update
-    href: /fpki/announcements/cpct-update101/
+
 
 ## Remove Announcements older than three years
 
