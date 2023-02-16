@@ -1,5 +1,11 @@
 ## FPKI announcements
 
+- title: Public Trust PKI Certificate Policy
+  pubDate: February 10, 2023
+  url: /fpki/announcements/PT-TLS-CP/
+  description: The US Federal Public Trust PKI Certificate Policy v1.0 is now archived and undergoing revision.
+  status: Active
+
 - title: CPCT Tool Update
   pubDate: January 12, 2023
   url: /fpki/announcements/cpct-update101/
