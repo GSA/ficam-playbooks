@@ -37,6 +37,9 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
 
 # Step-by-step Instructions
 
+{% include alert-warning.html heading="Note" content="If you are an existing user of the CPCT Tool and have not used it in a while or you were sent here to reinstall the CPCT Tool, we advise that you first remove the previously installed Docker CPCT Tool container and image from Docker Desktop before downloading and installing a new version of the CPCT Tool." %}
+
+
 1. Go to [Docker Desktop](https://www.docker.com). Download and install the version compatible with your device (MacOS, Windows or Linux).
 
     <img src="{{site.baseurl}}/assets/fpki/tools/docker-website.png" alt="Docker.com Website" style="padding-left:30px;">
@@ -44,13 +47,11 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
 
 2. Once Docker Desktop has been installed successfully, it will continue to run in the background on most systems. If you see that Docker is not running, please make sure it is running before installing the CPCT Tool in the next step.
 
-{% include alert-warning.html heading="Note" content="If you are an existing user of the CPCT Tool and have not used it in a while or you were sent here to reinstall the CPCT Tool, we advise that you first remove the previously installed Docker CPCT Tool container and image from Docker Desktop before downloading and installing a new version of the CPCT Tool." %}
-
-    <br>
     <img src="{{site.baseurl}}/assets/fpki/tools/docker_desktop.png" alt="Docker Desktop" style="padding-left:30px;">
-    <br><br>
+    <br><br>  
 
-3. Next, click the link below or copy and paste it into your web browser to visit the releases page.
+
+3.  Next, click the link below or copy and paste it into your web browser to visit the releases page.
 
     - Link: [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}
       <br><br>
