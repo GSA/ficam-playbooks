@@ -72,13 +72,14 @@ The notification can also be emailed to <span>fpki</span><span>@</span><span>gsa
 Subject:  FPKI System Notification - System Name 
   
 - Notice date  
-- Change type of one of the following: CA Certificate Issuance, CA Certificate Revocation, New CA, URI Change, System Outage  
-- Change start date   
-- Change end date  
-- Change description  
+- System
+- Change type of one of the following: CA Certificate Issuance, CA Certificate Revocation, New CA, URI Change, System Outage, Intent to Issue/Revoke CA Certificate    
+- Change description: Include a start date or end date if applicable
 - Contact email  
-- If the change is a new or revoked CA certificate, include the CA Certificate hash (sha1 thumbprint), Issuer and Subject DNs  
-- If the change is a new URI, include the new CDP, AIA, SIA, or OCSP value  
+- Issuer 
+- Subject DNs  
+- If the change is a new or revoked CA certificate, include the CA Certificate hash (sha1 thumbprint), 
+- If the change is a new URI, include the new Certificate Revocation List (CRL), Certificate Bundle AIA and SIA, OCSP, EE CRL DP, and/or EE OCSP value. 
 
 
 
