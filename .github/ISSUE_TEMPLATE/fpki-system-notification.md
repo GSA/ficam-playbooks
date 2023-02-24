@@ -8,16 +8,14 @@ assignees: ''
 ---
 
 notice_date: 
-change_type:  CA Certificate Issuance, CA Certificate Revocation, New CA, URI Change, System Outage 
-start_datetime: 
-end_datetime: 
-system: 
-change_description: 
+system:
+change_type:  CA Certificate Issuance, CA Certificate Revocation, New CA, URI Change, System Outage, Intent to Issue/Revoke CA Certificate
+change_description: Include start and end dates if applicable
 contact: 
-ca_certificate_hash: 
 ca_certificate_issuer: 
 ca_certificate_subject: 
-ca_cdp_uri: 
+ca_certificate_hash:
+ca_cdp_uri: Certificate Revocation List
 ca_aia_uri: 
 ca_sia_uri: 
 ca_ocsp_uri:
