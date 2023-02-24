@@ -12,7 +12,6 @@
 
 #notice_date: notice date in <Month Day, Year>
 #change_type: < CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New URI in Certificates, OCSP Outage, CRL Outage >
-#start_datetime: start date of the change in <<Month Day, Year> HH:MM> format
 #system: <what is the system known as>
 #change_description: <detailed statement>
 #contact: <email, phone>
