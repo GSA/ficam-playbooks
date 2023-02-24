@@ -47,7 +47,7 @@
   change_type: CA Certificate Revocation
   system: Treasury SSP
   change_description: The Treasury Fiscal Service CA was decommissioned on February 15, 2023. 
-  contact: pki_ops@fiscal.treasury.gov
+  contact: pki_ops at fiscal.treasury dot gov
   ca_certificate_hash: ed3fb316118257a44ea11a493da1415beb3012d7
   ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
   ca_certificate_subject: OU = Fiscal Service, OU = Department of the Treasury, O = U.S. Government, C = US
