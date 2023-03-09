@@ -26,6 +26,22 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:  
 
+- notice_date: March 7, 2023
+  change_type: Intent to Issue CA Certificate
+  system: US Treasury Root CA
+  change_description: The NASA Operational CA will undergo a key update and a new CA certificate will be issued from the US Treasury Root CA on 04/08/2023. The new CA key will begin to be used on 04/29/2023 to sign new end-entity certificates.
+  contact:  pki_ops at fiscal dot treasury dot gov
+### The following are all optional fields based on the change type
+  ca_certificate_hash: Certificate will be available on https://pki.treasury.gov following the key update.
+  ca_certificate_issuer: ou=US Treasury Root CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
+  ca_certificate_subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US
+  cdp_uri: N/A
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: February 21, 2023
   change_type: Intent to Issue CA Certificate 
   system: US Treasury Root CA 
@@ -76,7 +92,7 @@
   start_datetime: February 7, 2023
   system: Treasury SSP
   change_description: The Treasury Fiscal Service CA will be decommissioned. The revocation is planned for completion by April 4, 2023.
-  contact: pki_ops@fiscal.treasury.gov
+  contact: pki_ops at fiscal dot treasury dot gov
   ca_certificate_hash: ed3fb316118257a44ea11a493da1415beb3012d7
   ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
   ca_certificate_subject: OU = Fiscal Service, OU = Department of the Treasury, O = U.S. Government, C = US
