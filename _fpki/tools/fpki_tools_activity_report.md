@@ -15,7 +15,7 @@ subnav:
       href: '#repository-availability'
 ---
 
-Updated: February 2, 2023 
+Updated: March 7, 2023 
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -38,22 +38,21 @@ Certificates issued and published to the FPKI Trust Infrastructure Repository in
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date | Expiration Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| WidePoint	| WidePoint NFI Root 2 | Federal Bridge CA G4 | Serial:13a7eda47618daa676730aefaa86d5986966eaf5 Hash:fadaf283e8839c5f296b9eebb00bc6cf848646f2 | 1/10/23 | 1/10/26 | 
-| CertiPath | CertiPath Bridge CA - G3 | Federal Bridge CA G4 | Serial:152f481a78a3f94e3626e0507f30336378014b6c Hash:6f9f85401ac97654fa815206ebdbc0656c7903bc | 1/10/23 | 1/10/26 |
+| DoD |Federal Bridge CA G4 | DoD Interoperability Root CA 2 | Serial:09c6 Hash:3c4b8ae115d3b46e1b03952d71404cc35ba2b2fd | 2/7/23 | 2/7/26 | 
+| Exostar | Exostar Federated Identity Service Root CA 2 | Federal Bridge CA G4 | Serial:172383c4c5440fed1605c82ebc35d81518a14730 Hash:0454375f93e8da6bebde68db8e7f9ebdbba1655e | 2/7/23 | 2/7/26 |
 
 Certificates removed from the FPKI Trust Infrastructure Repository in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| WidePoint	| WidePoint NFI Root 2 | Federal Bridge CA G4 | Serial:11dd76c9f15569ee0810d5af6e3d5aa104b343f5 Hash:b0b49b217bce1b18fb374dc629d5f100ba9dde49 |	2/4/23 | Renewed |
-| CertiPath	| CertiPath Bridge CA - G3 | Federal Bridge CA G4 | Serial:146bc4c37a7753b792ae772067de692f093c6df1 Hash:7d6cf512ec6054e9ddf37a37d83c4955228e21c | 2/18/23 | Renewed |
-| TSCP | Federal Bridge CA G4 | TSCP SHA256 Bridge CA | Serial:0bf647c7bc7ef5293968884b35105803 Hash:cc2f344b6c6965073129342f761dc9d55f6ae3fe | 1/15/23 | Removed |
+| DoD |Federal Bridge CA G4 | DoD Interoperability Root CA 2 | Serial:0657 Hash:1e95e1de935599c3e7c9c72e5989665e3311d867 |	2/25/23 | Renewed |
+| Exostar | Exostar Federated Identity Service Root CA 2 | Federal Bridge CA G4 | Serial:16c8691eec73f84d2db6d0ccb58bc8675cf0220e Hash:3930a7c9ce718d0994394feea49a4ada1ebf665d | 2/25/23 | Renewed |
 
 The following certificates are planned for a certificate action in the near future; dates to be determined based on availability.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| Exostar | Exostar Federated Identity Service Root CA 2 | Federal Bridge CA G4 | Serial:16c8691eec73f84d2db6d0ccb58bc8675cf0220e Hash:3930a7c9ce718d0994394feea49a4ada1ebf665d | 2/25/23 | Renewal 2/7/23 |
+| WidePoint | TBD | Federal Common Policy CA G2 | Serial:TBD Hash:TBD | 2/25/23 | Initial Issuance TBD |
 
 
 ## Repository Availability 
@@ -82,9 +81,8 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | Federal Common Policy CA G2 | FCPCA | 100 |
 | ORC SSP 4	| FCPCA	| 100 |
 | Symantec SSP Intermediate CA - G4	| FCPCA | 100 |
-| U.S. Department of State AD Root CA | FCPCA | 98.17 |
-| US Treasury Root CA | FCPCA | 86.65* |
+| U.S. Department of State AD Root CA | FCPCA | 100 |
+| US Treasury Root CA | FCPCA | 100 |
 | Verizon SSP CA A2 | FCPCA	| 100 |
 | WidePoint ORC SSP 5	| FCPCA	| 100 |
 
-*May have been related to a temporary issue with IPv6 at the hosted repository
