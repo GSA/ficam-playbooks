@@ -24,7 +24,39 @@
 # sia_uri:
 # ocsp_uri:
 # ee_cdp_uri:
-# ee_ocsp_uri:  
+# ee_ocsp_uri: 
+
+- notice_date: March 10, 2023
+  change_type: CA Certificate Issuance
+  system: Certipath Bridge CA - G3
+  change_description: CertiPath is now requiring SIA in all CA certificates. The CertiPath Bridge CA – G3 has published new cross certificates to Carillon PKI Services G2 Root CA 2.
+  contact: support at certipath dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: c5eb76e58dae6041cafd005b322d69d2a910a3a9
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G3, OU = Certification Authorities, O = CertiPath, C = US
+  ca_certificate_subject: CN = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pub.carillonfedserv.com/CRL/CFSCA1.crl
+  ee_ocsp_uri: http://pub.carillonfedserv.com/ocsp
+
+- notice_date: March 10, 2023
+  change_type: CA Certificate Issuance
+  system: Certipath Bridge CA - G3
+  change_description: CertiPath is now requiring SIA in all CA certificates. The CertiPath Bridge CA – G3 has published new cross certificates to Carillon Federal Services PIV-I CA1.
+  contact: support at certipath dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: c5eb76e58dae6041cafd005b322d69d2a910a3a9
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G3, OU = Certification Authorities, O = CertiPath, C = US
+  ca_certificate_subject: CN = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pub.carillonfedserv.com/CRL/CFSCA1.crl
+  ee_ocsp_uri: http://pub.carillonfedserv.com/ocsp
 
 - notice_date: March 7, 2023
   change_type: Intent to Issue CA Certificate
