@@ -32,7 +32,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 
 ## Assess Facility Security Level 
 
-{% include alert-info.html content="These federal standards provide guidance for assessing FSL, including how to categorize site risks:<br> - <a href=\"https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_2.pdf" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard </a> <br> - <a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access. </a>" %}
+{% include alert-info.html content="These federal standards provide guidance for assessing FSL, including how to categorize site risks:<br> - <a href=\"https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_2.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard </a> <br> - <a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access. </a>" %}
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
 - When you inventory critical assets, also document any challenges to secure them.  <br><br>Examples of critical assets include:
