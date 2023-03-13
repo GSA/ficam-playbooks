@@ -49,7 +49,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [FIPS PUB 200, _Minimum Security Requirements for Federal Information and Information Systems_](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.200.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, March 9, 2006 
 
-[FIPS 201-2, _Personal Identity Verification (PIV) of Federal Employees and Contractors_](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, August 2013
+[FIPS 201-3, _Personal Identity Verification (PIV) of Federal Employees and Contractors_](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, January 2022
 
 [NIST SP 800-53, Revision 5, _Recommended Security Controls for Federal Information Systems and Organizations_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf){:target="_blank"}{:rel="noopener noreferrer"}, September 2020
 
@@ -77,7 +77,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_](https://www.idmanagement.gov/docs/pacs-piv-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014
 
-[_Personal Identity Verification Interoperability for Issuers_](https://www.idmanagement.gov/docs/fpki-pivi-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017
+[_Personal Identity Verification Interoperability for Issuers_](https://www.idmanagement.gov/docs/archived/fpki-pivi-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017
 
 [_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, ISC, 2nd Edition, November 2016
 
