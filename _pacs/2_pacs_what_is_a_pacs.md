@@ -40,7 +40,7 @@ Management_. Related to PACS, M-19-17 rescinded memorandum [M-11-11](https://oba
 
 Characteristics of NIST SP 800-116, Revision 1, compliant systems include, but are not limited to:
 - Use high-assurance credentials for electronic authentication of employees and contractors.
-- Use non-deprecated authentication mechanisms, as defined by [FIPS 201-3](https://csrc.nist.gov/publications/detail/fips/201/3/finall){:target="_blank"}{:rel="noopener noreferrer"}.
+- Use non-deprecated authentication mechanisms, as defined by [FIPS 201-3](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}.
 - Validate the status and authenticity of credentials.
 - Interoperate with PIV credentials issued by other agencies.
 - Use components listed on the GSA FIPS 201 Approved Products List (APL).
