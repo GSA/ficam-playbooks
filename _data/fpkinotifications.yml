@@ -26,6 +26,22 @@
 # ee_cdp_uri:
 # ee_ocsp_uri: 
 
+- notice_date: March 17, 2023
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The FCPCAG2 intends to issue a new cross certificate to the WidePoint SSP Intermediate CA between 4/3/2023 and 4/5/2023.
+  contact: fpki dash help at gsa.gov
+### The following are all optional fields based on the change type
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN = Federal Common Policy CA G2
+  ca_certificate_subject: CN = WidePoint SSP Intermediate CA
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: March 10, 2023
   change_type: CA Certificate Issuance
   system: Certipath Bridge CA - G3
