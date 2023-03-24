@@ -26,7 +26,7 @@
 # ee_cdp_uri:
 # ee_ocsp_uri: 
 
-  notice_date: March 21, 2023
+- notice_date: March 21, 2023
   change_type: CA Certificate Issuance
   system: Certipath Bridge CA - G3
   change_description: The CertiPath Bridge CA – G3 has published a new cross certificate to Ministerie van Defensie PKIoverheid Organisatie Persoon CA – G3, expiring February 28, 2024.
