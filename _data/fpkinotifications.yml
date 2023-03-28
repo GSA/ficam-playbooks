@@ -26,6 +26,34 @@
 # ee_cdp_uri:
 # ee_ocsp_uri: 
 
+- notice_date: March 21, 2023
+  change_type: CA Certificate Issuance
+  system: Certipath Bridge CA - G3
+  change_description: The CertiPath Bridge CA – G3 has published a new cross certificate to Ministerie van Defensie PKIoverheid Organisatie Persoon CA – G3, expiring February 28, 2024.
+  contact: support at certipath dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: f87fe5f500992ece3530423719694b390d116e6e
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G3, OU = Certification Authorities, O = CertiPath, C = US
+  ca_certificate_subject: CN = Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3, 2.5.4.97 = NTRNL-27370985, O = Ministerie van Defensie, C = NL
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+
+- notice_date: March 21, 2023
+  change_type: CA Certificate Issuance
+  system: Certipath Bridge CA - G3
+  change_description: The CertiPath Bridge CA – G3 has published a new cross certificate to Northrop Grumman Corporate Root CA-G2, expiring February 28, 2024.
+  contact: support at certipath dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: 3d2c9322e8ed28ae12531b1c526f3e0e164f617c
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G3, OU = Certification Authorities, O = CertiPath, C = US
+  ca_certificate_subject: CN = Northrop Grumman Corporate Root CA-G2, OU = Northrop Grumman Information Technology, O = Northrop Grumman Corporation, C = US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  
 - notice_date: March 17, 2023
   change_type: Intent to Issue CA Certificate
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
