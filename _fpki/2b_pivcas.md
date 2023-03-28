@@ -57,22 +57,6 @@ The page lists the certification authorities *currently* used for Personal Ident
 ## Active Issuing CA Certificate Details 
 These CA certificates are actively issuing PIV , PIV-I and/or Derived PIV authentication certificates.  
 
-#### Carillon Federal Services PIV-I CA1
-- Subject: OU = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
-- Issuer: OU = CertiPath Bridge CA - G3, OU = Certification Authorities, O = CertiPath, C = US
-- Serial #: 06b671d311f879f98cb792bf7481bc4d
-- Validity: February 22, 2022 to February 28, 2023
-- SHA-1 Hash: 61663be2cce5eb458d612700e19ddd93f9aec2f1
-- CRL DP: [http://pub.carillonfedserv.com/CRL/CFSCA1.crl](http://pub.carillonfedserv.com/CRL/CFSCA1.crl){:target="_blank"}{:rel="noopener noreferrer"}
-
-#### Carillon Federal Services PIV-I CA2
-- Subject: OU = Carillon Federal Services PIV-I CA2, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
-- Issuer: OU = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
-- Serial #: 47224bf49b46145a171ebc013e067f43
-- Validity: August 23, 2022 to August 23, 2023
-- SHA-1 Hash: 79e5b88df6cc9b9eb3b88c17d9662011e651f003
-- CRL DP: [http://pub.carillonfedserv.com/CRL/CFSCA2.crl](http://pub.carillonfedserv.com/CRL/CFSCA2.crl){:target="_blank"}{:rel="noopener noreferrer"}
-
 #### Department of Veterans Affairs CA
 - Subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
