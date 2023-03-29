@@ -136,7 +136,7 @@ An agency must define the delegation process, including maintaining, auditing, a
 
 1. An agency policy that delegates the Federal Register signing authority to leverage a digital autopen.
 2. A process to receive delegation approval and affix a digital autopen signature to a document. See [Appendix C](#appendix-c-templates) for an example of a decision document.
-3. A process to obtain a role-based certificate. Required and optional controls are in [Step 2]((#step-2-define-controls).
+3. A process to obtain a role-based certificate. Required and optional controls are in [Step 2](#step-2-define-controls).
 
 See [Appendix C](#appendix-c-templates) for sample templates including standard operating procedures.
 
