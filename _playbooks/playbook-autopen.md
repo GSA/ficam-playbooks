@@ -101,4 +101,142 @@ The OFR outlines signing requirements in the [Document Drafting Handbook](https:
 An agency may delegate the authority to electronically sign a document to someone with an official executive agency billet to sign a document, such as a Deputy Secretary or General Counsel. An agency may delegate a signature to an appropriate authority named in a Federal Register document (see Figure 1).
 
 Figure 1. Named Delegation Example
+<img src="{{site.baseurl}}/assets/playbooks/autopen-1-nameddelegation.png)" alt="An example of a named delegation from a Federal Register document." width="560" height="319">
+
+However, in some circumstances, only the federal executive has the authority to sign a Federal Register document. The Federal Register document may face various legal challenges if not signed by the proper authority. This paper proposes a second option when the Authorizing Sponsor completes an official agency delegation of authority process to authorize the use of a digital autopen. A digital autopen leverages a Federal PKI role-based digital signature certificate. **This option is the method proposed by this paper and the focus for the remainder of this paper**.
+
+A digital signature is a cryptographically secure electronic signature. An agency achieves the cryptographic component by using a PKI certificate. For more information on the difference between electronic and digital signatures, see the [Federal CIO Council guidance on the Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}. An agency can request a role-based digital signature certificate from a Federal PKI Shared Service Provider. A PIV card is issued to a single person and not shared under any circumstance. 
+
+This playbook outlines the process for federal agencies to create a Federal Register digital autopen process. It outlines controls around the digital autopen certificate to meet the OFR's digital signature requirements for Federal Register documents and federal cybersecurity. For instructions on digitally signing a Federal Register document, see the [FICAM Playbook Digitally Sign an Office of the Federal Register Document](https://playbooks.idmanagement.gov/playbooks/signfedregister/).
+
+An agency may implement or update a process by following these three playbook steps.
+
+1. [Define the agency process](#step-1-define-the-agency-process) to delegate signing Federal Register documents. 
+2. [Define controls](#step-2-define-controls) to ensure the certificate and associated key are used only for the intended purpose. 
+3. [Obtain a role-based digital signature certificate](#step-3-obtain-a-digital-autopen-certificate) from a PKI Shared Service Provider. 
+
+Send any process questions or concerns to ICAM at gsa.gov.
+
+## Step 1. Define the Agency Process
+
+This section is written for executive staff to understand an overall digital autopen process. An agency owns the process for identifying authorized individuals and delegating authority to others. This playbook builds on the assumption that agencies have a defined process for Federal Register documents, which should be updated to include the extra steps and guidance to leverage a digital autopen. At the end of this step, agency executive staff will have the following deliverables. 
+
+1. A delegation of authority through an agency policy.
+2. A digital autopen standard operating procedure.
+3. Signed user agreements from the Authorizing Sponsor and Digital Autopen Recipient.
+4. Senior security official approval.
+
+### Delegate Authority Through An Agency Policy
+
+An agency has the authority and should have an existing process to delegate specific agency activity. An agency should follow its existing delegation process to delegate digitally signing Federal Register documents. This paper will not outline how to create a delegation process. Agencies should involve their General Counsel’s Office for advice and recommendations on the agency’s authority and delegation process. 
+
+### Develop a Standard Operating Procedure
+
+An agency must define the delegation process, including maintaining, auditing, and measuring the process through a standard operating procedure. Collaborate in the early stages of development with your technology and security officials to create an agreeable process within the agency's risk appetite. The rules or Standard Operating Procedure should include the following elements.
+
+1. An agency policy that delegates the Federal Register signing authority to leverage a digital autopen.
+2. A process to receive delegation approval and affix a digital autopen signature to a document. See [Appendix F](#appendix-f-template-decision-document) for an example of a decision document.
+3. A process to obtain a role-based certificate. Required and optional controls are in [Step 2]((#step-2-define-controls).
+
+See [Appendix C](#appendix-c-templates) for an example of standard operating procedures.
+
+### User Agreement
+A user must understand their responsibilities and the requirements to use and protect a digital autopen certificate. See [Appendix D](#appendix-d-template-user-agreement) for an example of a user agreement. An agency may define additional annual training or refresher requirements. The user signs the agreement to obtain a certificate.
+
+### Issuance Request
+
+The final step involves an agency defining the issuance request procedures. The issuance document is signed by the agency's senior security official such as the Chief Security Officer or Chief Information Security Office. As part of the issuance, the requesting office may submit the following verification documents:
+
+1. An agency policy delegating signing authority to an office or a designated individual.
+2. The requesting office document identifies the digital autopen recipient.
+3. The current version of a digital autopen standard operating procedure.
+4. Verify this request doesn't exceed the maximum number of allowed delegates.
+5. A signed user agreement.
+
+The agency senior security official or designate verifies the request with supporting documentation and approves or disapproves as appropriate.  Once the request is approved, the agency stores the evidence for audit or review purposes and submits the required information to their certificate issuer. See [Appendix E](#appendix-e-template-issuance-request) for an issuance request example.
+
+## Step 2. Define Controls
+
+This section is written for security and risk managers to identify specific controls to mitigate digital autopen unintended use risks. An agency should define and implement controls to ensure the digital autopen certificate is only used for its intended purpose. Controls may include a combination of physical or logical controls to limit how or when a digital autopen certificate is used. Agencies should integrate these controls into an existing audit process. Agencies must adopt the following required administrative and certificate controls.
+
+### Required Administrative Controls
+
+1. Review the digital autopen standard operating procedures annually, or more frequently ([Appendix C](#appendix-c-templates)).
+2. Before digital autopen issuance, verify the authorizing sponsor and each digital autopen recipient have a valid PIV card.
+3. The digital autopen recipient must be a federal employee.
+4. The digital autopen recipient must sign a user agreement ([Appendix D](#appendix-d-template-user-agreement)).
+5. The authorizing sponsor must separately authorize each use of the digital autopen signature, and the digital autopen recipient must keep a record of each approval ([Appendix F](#appendix-f-template-decision-document).
+
+### Required Certificate Controls
+
+1. A digital autopen certificate is never issued on a PIV card.
+2. Issue a digital autopen certificate to a hardware device such as a smart card on GSA’s FIPS 201 Evaluation Program Approved Product List or a FIPS-140 Level 2 certified authenticator or security module.
+3. If the digital autopen certificate is issued to a smart card:
+   1. It shall be visually distinct from a PIV card.
+   2. It shall not have a photo.
+   3. It shall have the words “digital autopen” or similar to identify the card uniquely.
+4. Maximum of two digital autopen recipients to one authorizing sponsor.
+5. Authentication of the authorizing sponsor and digital autopen recipient is performed using their PIV cards.
+6. The common name in the certificate must state the role of authorizing official such as “Secretary of Homeland Security” or “Secretary Name - Secretary of Homeland Security.”
+7. The validity period of the digital autopen certificate must:
+    1. not exceed twelve months or
+    2. be set to the associated expiration date of the digital autopen recipient's PIV card if less than twelve months remains until expiration.
+8. After issuance, the authorizing sponsor is notified of digital autopen certificate issuance via email or other means of communication.
+
+Due to unique agency risks, the working group identifies the below optional controls for additional consideration. Consider remote work and exigent circumstances before applying a physical location control. For example, limiting use to during working hours will hinder agency signing operations during off hours when the Authorizing Sponsor is not available to digitally sign.
+
+### Optional Controls
+
+1. Develop an automated approval workflow as an automated and auditable mechanism to record when a delegation is given.
+
+## Step 3. Obtain a Digital Autopen Certificate
+
+A digital autopen certificate is available from any Federal PKI Shared Service Provider. [Federal Agency Legacy PKI](https://playbooks.idmanagement.gov/fpki/ca/#all-federal-pki-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate for their agency. An agency must request a **ROLE-BASED SIGNATURE CERTIFICATE**. Check with your Homeland Security Presidential Directive-12 Security Office or PIV card issuer if they can issue a role-based certificate. Federal PKI Shared Service Providers are listed as government identity providers on [idmanagement.gov](https://www.idmanagement.gov/buy/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. They provide Federal PKI certificates and PIV services.
+
+While OFR accepts any Federal PKI digital signature certificate, this playbook recommends a hardware-based certificate issued to a FIPS-140 Level 2 certified hardware device such as a visually distinct, approved smart card or USB device such as a FIDO authenticator. Below are examples of the Common Name used in digital autopen certificates.
+
+
+Table 01. Example Common Name in Role-Based Certificate
+| Position | Common Name Example | Note |
+| ------- | -------- | -------- |
+| Secretary | CN: Secretary of DHS Jane Smith | Exclusive to the Secretary Role. |
+| Commissioner | CN: Commissioner FDA John Smith | Exclusive to the Commissioner Role. |
+| Administrator | CN: Administrator NASA Jane Smith | Exclusive to the Administrator Role. |
+| Director CN: Director ATF Jane Smith | Exclusive to the Director Role. |
+
+## Summary
+
+This paper outlines a process for an agency to create and leverage a digital autopen for Federal Register documents. An agency must define its approach in a policy, identify a solution, and then obtain a certificate. This paper recommends an agency use a hardware-based certificate for added security and control. This paper also includes policy recommendations for suggested updates to the OFR Document Drafting Handbook, Federal PKI Certificate Policy, FICAM playbooks, and the CIO Council E-Signature Document.
+
+## Appendix A. References
+
+1. {Office of the Federal Register's Document Drafting Handbook](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+2. [Federal CIO Council & Federal Public Key Infrastructure Policy Authority (FPKIPA) - Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+3. [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document](https://playbooks.idmanagement.gov/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"}
+4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+
+## Appendix B. Policy Recommendations
+
+The Delegated Digital Signature Working Group identified policy update recommendations to streamline signature processes.
+
+### Recommendation 1. Update OFR's Document Drafting Handbook
+
+Recommendation: Update the Document Drafting Handbook consistent with this paper to clarify guidance on digital autopen signatures.
+Resolution: Pending final digital autopen paper.
+
+### Recommendation 2. Update Federal PKI Certificate Policy for Digital Autopen
+
+Recommendation: Update the Federal Common Policy Certificate Policy for specific procedures to issue a digital autopen certificate. 
+Resolution: The Federal PKI Policy Authority identified existing procedures for role-based certificates are sufficient.
+
+### Recommendation 3. Update FICAM Playbook on Digitally Signing an OFR Document
+
+Recommendation: Update the [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document](https://playbooks.idmanagement.gov/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"} in line with this paper.
+Resolution: Pending final digital autopen paper.
+
+### Recommendation 4. Update the Federal CIO E-Signature Document
+
+Recommendation: Update the [Federal CIO E-signature document](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"} to reference this paper.
+Resolution: Pending final digital autopen paper.
+
 
