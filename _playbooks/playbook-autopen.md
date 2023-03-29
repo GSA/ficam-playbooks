@@ -210,7 +210,7 @@ This paper outlines a process for an agency to create and leverage a digital aut
 
 ## Appendix A. References
 
-1. {Office of the Federal Register's Document Drafting Handbook](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+1. [Office of the Federal Register's Document Drafting Handbook](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 2. [Federal CIO Council & Federal Public Key Infrastructure Policy Authority (FPKIPA) - Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 3. [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document](https://playbooks.idmanagement.gov/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"}
 4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
@@ -239,4 +239,173 @@ Resolution: Pending final digital autopen paper.
 Recommendation: Update the [Federal CIO E-signature document](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"} to reference this paper.
 Resolution: Pending final digital autopen paper.
 
+## Appendix C. Templates
 
+1. [Standard Operating Procedure]({{site.baseurl}}/docs/autopen-template-sop.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
+2. [User Agreement]({{site.baseurl}}/docs/autopen-template-user-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
+3. [Issuance Request]({{site.baseurl}}/docs/autopen-template-issuance-request.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
+4. [Decision Document]({{site.baseurl}}/docs/autopen-template-decision-document.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
+
+### Teamplate - Standard Operating Procedure
+
+#### Standard Operating Procedure for Federal Register Signing
+
+I. Authority
+
+[Name of delegation policy with the date and subsection] delegates authority to the [office with delegated authority] to sign Federal Register documents. The [office with delegated authority] may delegate this authority, in writing, only to the [positions].
+Once delegated, only the [positions] for [office with delegated authority] are authorized to use the delegated signature authority. Because the delegation and sub-delegation are to the respective positions, the delegations do not need to be reissued when a new [authorizing sponsor] starts, or should new officials be appointed to serve in the abovementioned positions.
+The delegation identifies the total number of approved delegates, not to exceed two (a primary and alternate).
+
+II. Process
+
+The digital autopen is used to affix the [authorizing sponsor] signature on a document. Before using the digital autopen to affix the [authorizing sponsor] signature, the user must ensure the following:
+The [authorizing sponsor] approved the underlying document using a decision document. The [authorizing sponsor] may verbally approve a document in exigent circumstances. In that event, the [office of delegated authority] must note this verbal approval on the decision document. The decision document will note if [the authorizing sponsor] directs a digital autopen approval. A template for the decision document is attached.
+The [digital autopen recipient] digitally signing the document must verify the [authorizing sponsor] prior approval of the underlying document and the approval for the [digital autopen recipient] to affix the [authorizing sponsor] signature.  
+The digital autopen cannot be used to affix the signature before the [authorizing sponsor] has approved the underlying document (for example, no “sign and hold”). See the FICAM Playbook Digitally Sign an Office of the Federal Register Document for the latest instructions on digitally signing a Microsoft Word document.
+
+III. Security and Logs
+
+[office with delegated authority] will maintain a physical or digital log of digital autopen use. The digital autopen recipient will capture the following information in the log:  
+Document Number of the Underlying Decision Document.  
+Date and time of the digital autopen use.  
+Name of the digital autopen recipient affixing the [authorized sponsor]’s signature.  
+Check box to verify that the [authorizing sponsor] approved the underlying decision document.  
+Check box to verify that the [authorizing sponsor] directed the use of the digital autopen and by what method (direct or verbally transmitted) and noted on the decision document.
+
+#### Standard Operating Procedure for Digital Autopen Certificate
+
+I. Authorities
+
+Homeland Security Presidential Directive 12 (HSPD-12), Policy for a Common Identification Standard for Federal Employees and Contractors  
+Federal Information Processing Standards (FIPS) Publication 201, Personal Identity Verification (PIV) of Federal Employees and Contractors;  
+X.509 Certificate Policy for the U.S. Federal Public Key Infrastructure (PKI) Common Policy Framework  
+National Institute of Standards and Technology (NIST) Special Publication (SP) 800-157, Guidelines for Derived PIV Credentials.
+
+II. Process
+
+The [agency] digital autopen certificate is only used to affix the [authorizing sponsor] signature on a Federal Register document. The [office with delegated authority] must ensure the following before requesting a digital autopen.
+The user signs the User Agreement with their PIV card. See attached sample User Agreement. The user must comply with all requirements of the User Agreement.  
+The [office with delegated authority] attaches the delegation authority and signed User Agreement to an issuance request form to the [security office].
+The [security office] verifies the person is a federal employee, is in a position in the [office with delegated authority] named in the [Name of delegation policy with date and subsection], and has signed the user agreement. 
+The [security office] verifies that this request doesn't exceed the maximum authorized delegates.
+The [security office] sends a request with attachments to the certificate issuer.
+The [security office] retains this package for auditable purposes.
+The certificate issuer verifies the information and coordinates with the user for certificate issuance.
+According to the User Agreement, the user receives and protects the digital autopen certificate.
+
+III. Security and Logs
+
+Secure the digital autopen certificate following the User Agreement.  The following artifacts create an auditable trail of delegation and certificate issuance.
+[Name of delegation policy with date and subsection]
+Signed User Agreement
+Signed Certificate Issuance Request
+
+Other Information
+The [office with delegated authority] should periodically review the logs to maintain them properly.  
+The [office with delegated authority] should coordinate any changes to this Standard Operating Procedure with the Office of the General Counsel.  
+
+
+Approved:
+
+
+[Name] 
+[Title]
+
+
+Date
+
+
+Attachment:
+
+1. Decision Document
+2. Sample User Agreement  
+3. Issuance Request
+
+### Template - User Agreement
+
+Name of User:  
+
+The agency employee must sign this cardholder responsibility agreement before issuing a digital autopen certificate ("the certificate"). The following documents govern the certificate: 
+1. Homeland Security Presidential Directive 12 (HSPD-12), Policy for a Common Identification Standard for Federal Employees and Contractors;
+2. Federal Information Processing Standards (FIPS) Publication 201, Personal Identity Verification (PIV) of Federal Employees and Contractors; 
+3. X.509 Certificate Policy for the U.S. Federal Public Key Infrastructure (PKI) Common Policy Framework, and 
+4. National Institute of Standards and Technology (NIST) Special Publication 800-157, Guidelines for Derived PIV Credentials. 
+
+As a digital autopen certificate holder, I agree to the following: 
+1. I will use the certificate for official purposes only. I will digitally sign Federal Register documents only after the [authorizing sponsor] has approved the Federal Register document and after the [authorizing sponsor] has directed the use of the digital autopen. 
+2. I will always maintain control of the certificate and not allow anyone to use it for any unauthorized purpose. When not performing duties at my work site, I shall store the certificate in a secure (i.e., locked) location. 
+3. I will ensure the proper records are created, followed, and archive when the [authorizing sponsor] approves use of the digital autopen certificate in my control.
+4. I will not move or copy this certificate to another device and will only use this credential on an agency issued device. 
+5. I will create a password or PIN that is not easily guessable or individually identifiable and protect the password/PIN by not giving it to others or making it easily accessible. 
+6. I will always protect this certificate from loss, unauthorized disclosure, or suspicion of compromise.
+7. I will report changes to the [head of the office with delegated authority] to my employee status (e.g., Federal employee to contractor, etc.); my role status (e.g., emergency response official, etc.); a change in my name; if this certificate is nearing expiration, or other changes that impact the integrity of the digital autopen certificate.
+8. I will report a compromised, lost, or stolen certificate to [Insert Agency Security Information], so they can immediately revoke it. 
+9. I understand that I may be subject to administrative action if I misuse the certificate or if it is compromised, lost, or stolen through my non-compliance with these requirements. 
+10. I will surrender the certificate to the appropriate authority when my employment or association with [Agency] is terminated; or upon request by the appropriate authority. 
+
+[Agency] Rights and Responsibilities: 
+1. [Agency] will not disclose certificate keys issued from the Certificate Authority (CA), except with the consent of the certificate holder or as required by law. 
+2. [Agency] reserves the right to refuse to issue certificates to any person, and such decision may be made by [Agency] without notice and at its sole discretion. In addition, [Agency] may revoke any certificate at any time without notice. 
+
+I acknowledge that I have read and understood the above and agree to the terms.  
+
+
+Employee Signature
+
+
+Printed Name
+
+
+Date
+
+### Template - Issuance Request
+
+[Date] 
+
+MEMORANDUM FOR: 	
+[Name of CSO] 
+Chief Security Officer 
+Senior Authorizing Official 
+
+FROM: 
+[Office Name]
+[Name of Supervisor of the office with delegated authority]
+[Agency Name] 
+
+SUBJECT: Issuance of Digital Autopen Certificate
+
+The Office of the Federal Register requires documents for publication submitted with a digital signature to be digitally signed using a Microsoft Word and X.509 v3 compliant XaDES digital signature. As such, I request that the [Agency Certificate Issuer] issue a [Agency Name] Digital Autopen Certificate to the following individual for purposes of digitally signing documents for publication in the Federal Register.  
+
+- Authorizing Sponsor Subject Name: [Title] [Agency] [Name of Signing Authority] 
+- Authorizing Sponsor Email: [Email]
+- Digital Autopen Recipient: [Name], [Title], [Office]
+- Email for Subject Alternative Name: [digital autopen recipient email]
+- Requirements: The [Agency Name] Delegated Signature Certificate shall: 
+    1. Contain visually discerning text on the card body stating that the issued credential is an official Federal Register Digital Autopen designated credential.
+    2. Be compatible with Microsoft Word digital signature signing requirements.
+    3. Have the email address of the digital autopen recipient placed in the Subject Alternate Name of the Federal PKI role-based certificate.
+    4. Be issued to the individual only after verifying they possess a Personal Identity Verification card.
+    5. Ensure that when the credential is used for the Federal Register document digital signature, the subject name displayed on the certificate is the [authorizing sponsor] when applied to the document. 
+ 
+Anyone named in this issuance request can revoke the digital autopen at any time. 
+
+Cc: [input as necessary]
+
+### Template - Decision Document
+
+#### Decision Document
+
+
+[Agency]: [Title of Document]
+
+[Date]
+
+[ ] Document approved and signed.
+
+[ ] Approve the document and direct an appropriate [office with delegated authority] official to affix the digital autopen signature to the document for publication in the Federal Register.
+
+[ ] Disapprove the document.
+
+[ ] Modify per further instructions.
+
+[ ] Needs discussion.
