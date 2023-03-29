@@ -7,7 +7,7 @@ type: Markdown
 permalink: /playbooks/autopen/
 description: This playbook outlines the process for an agency to implement a Digital Autopen for Federal Register documents.
 sticky_sidenav: true
-sidenav: ilm
+sidenav: autopen
 
 subnav:
   - text: Executive Summary
@@ -135,13 +135,13 @@ An agency has the authority and should have an existing process to delegate spec
 An agency must define the delegation process, including maintaining, auditing, and measuring the process through a standard operating procedure. Collaborate in the early stages of development with your technology and security officials to create an agreeable process within the agency's risk appetite. The rules or Standard Operating Procedure should include the following elements.
 
 1. An agency policy that delegates the Federal Register signing authority to leverage a digital autopen.
-2. A process to receive delegation approval and affix a digital autopen signature to a document. See [Appendix F](#appendix-f-template-decision-document) for an example of a decision document.
+2. A process to receive delegation approval and affix a digital autopen signature to a document. See [the decision document](#template-decision-document) for an example of a decision document.
 3. A process to obtain a role-based certificate. Required and optional controls are in [Step 2]((#step-2-define-controls).
 
-See [Appendix C](#appendix-c-templates) for an example of standard operating procedures.
+See [Appendix C](#appendix-c-templates) for sample templates including standard operating procedures.
 
 ### User Agreement
-A user must understand their responsibilities and the requirements to use and protect a digital autopen certificate. See [Appendix D](#appendix-d-template-user-agreement) for an example of a user agreement. An agency may define additional annual training or refresher requirements. The user signs the agreement to obtain a certificate.
+A user must understand their responsibilities and the requirements to use and protect a digital autopen certificate. See the [user agreement template](#template-user-agreement) for an example of a user agreement. An agency may define additional annual training or refresher requirements. The user signs the agreement to obtain a certificate.
 
 ### Issuance Request
 
@@ -153,7 +153,7 @@ The final step involves an agency defining the issuance request procedures. The 
 4. Verify this request doesn't exceed the maximum number of allowed delegates.
 5. A signed user agreement.
 
-The agency senior security official or designate verifies the request with supporting documentation and approves or disapproves as appropriate.  Once the request is approved, the agency stores the evidence for audit or review purposes and submits the required information to their certificate issuer. See [Appendix E](#appendix-e-template-issuance-request) for an issuance request example.
+The agency senior security official or designate verifies the request with supporting documentation and approves or disapproves as appropriate.  Once the request is approved, the agency stores the evidence for audit or review purposes and submits the required information to their certificate issuer. See [issuance request template](#template-issuance-request) for an issuance request example.
 
 ## Step 2. Define Controls
 
@@ -161,11 +161,11 @@ This section is written for security and risk managers to identify specific cont
 
 ### Required Administrative Controls
 
-1. Review the digital autopen standard operating procedures annually, or more frequently ([Appendix C](#appendix-c-templates)).
+1. Review the digital autopen standard operating procedures annually, or more frequently ([Template](#template-standard-operating-procedure).
 2. Before digital autopen issuance, verify the authorizing sponsor and each digital autopen recipient have a valid PIV card.
 3. The digital autopen recipient must be a federal employee.
-4. The digital autopen recipient must sign a user agreement ([Appendix D](#appendix-d-template-user-agreement)).
-5. The authorizing sponsor must separately authorize each use of the digital autopen signature, and the digital autopen recipient must keep a record of each approval ([Appendix F](#appendix-f-template-decision-document).
+4. The digital autopen recipient must sign a user agreement ([Template](#template-user-agreement)).
+5. The authorizing sponsor must separately authorize each use of the digital autopen signature, and the digital autopen recipient must keep a record of each approval ([Template(#template-decision-document).
 
 ### Required Certificate Controls
 
@@ -246,7 +246,7 @@ Resolution: Pending final digital autopen paper.
 3. [Issuance Request]({{site.baseurl}}/docs/autopen-template-issuance-request.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
 4. [Decision Document]({{site.baseurl}}/docs/autopen-template-decision-document.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
 
-### Teamplate - Standard Operating Procedure
+### Template - Standard Operating Procedure
 
 #### Standard Operating Procedure for Federal Register Signing
 
@@ -394,7 +394,6 @@ Cc: [input as necessary]
 ### Template - Decision Document
 
 #### Decision Document
-
 
 [Agency]: [Title of Document]
 
