@@ -59,7 +59,7 @@ primary_navigation:
         url: /arch/services/#identity-management
       - name: Cloud Identity
         url: /playbooks/cloud/
-      - name: Privileged Identity (New!)
+      - name: Privileged Identity
         url: /playbooks/pam/
       - name: Digital Worker Identity
         url: /playbooks/dw/
@@ -92,7 +92,7 @@ primary_navigation:
         url: /playbooks/sso/#step-5-federate-application-access
       - name: Attribute supported Federation
         url: /playbooks/ilm/#step-4-integrate-with-agency-enterprise-services
-      - name: Trust Frameworks (New!)
+      - name: Trust Frameworks
         url: /playbooks/cloud/#federation
   - name: Governance
     children:
@@ -112,6 +112,8 @@ primary_navigation:
         url: /piv/user-guide/outlook/
       - name: Digitally Sign Federal Register Document
         url: /playbooks/signfedregister/
+      - name: Digital Autopen for OFR Documents (NEW!)
+        url: /playbooks/autopen/
       - name: PIV-Enable Windows Domain
         url: /piv/network/
       - name: PIV-Enable macOS
