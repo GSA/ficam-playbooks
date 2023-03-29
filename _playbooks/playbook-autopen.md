@@ -202,7 +202,7 @@ Table 01. Example Common Name in Role-Based Certificate
 | Secretary | CN: Secretary of DHS Jane Smith | Exclusive to the Secretary Role. |
 | Commissioner | CN: Commissioner FDA John Smith | Exclusive to the Commissioner Role. |
 | Administrator | CN: Administrator NASA Jane Smith | Exclusive to the Administrator Role. |
-| Director CN: Director ATF Jane Smith | Exclusive to the Director Role. |
+| Director | CN: Director ATF Jane Smith | Exclusive to the Director Role. |
 
 ## Summary
 
