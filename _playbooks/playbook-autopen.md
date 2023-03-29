@@ -141,7 +141,7 @@ An agency must define the delegation process, including maintaining, auditing, a
 See [Appendix C](#appendix-c-templates) for sample templates including standard operating procedures.
 
 ### User Agreement
-A user must understand their responsibilities and the requirements to use and protect a digital autopen certificate. See the [user agreement template](#template-user-agreement) for an example of a user agreement. An agency may define additional annual training or refresher requirements. The user signs the agreement to obtain a certificate.
+A user must understand their responsibilities and the requirements to use and protect a digital autopen certificate. See the [user agreement template](#template---user-agreement) for an example of a user agreement. An agency may define additional annual training or refresher requirements. The user signs the agreement to obtain a certificate.
 
 ### Issuance Request
 
@@ -153,7 +153,7 @@ The final step involves an agency defining the issuance request procedures. The 
 4. Verify this request doesn't exceed the maximum number of allowed delegates.
 5. A signed user agreement.
 
-The agency senior security official or designate verifies the request with supporting documentation and approves or disapproves as appropriate.  Once the request is approved, the agency stores the evidence for audit or review purposes and submits the required information to their certificate issuer. See [issuance request template](#template-issuance-request) for an issuance request example.
+The agency senior security official or designate verifies the request with supporting documentation and approves or disapproves as appropriate.  Once the request is approved, the agency stores the evidence for audit or review purposes and submits the required information to their certificate issuer. See [issuance request template](#template---issuance-request) for an issuance request example.
 
 ## Step 2. Define Controls
 
@@ -161,11 +161,11 @@ This section is written for security and risk managers to identify specific cont
 
 ### Required Administrative Controls
 
-1. Review the digital autopen standard operating procedures annually, or more frequently ([Template](#template-standard-operating-procedure).
+1. Review the digital autopen standard operating procedures annually, or more frequently ([Template](#template---standard-operating-procedure)).
 2. Before digital autopen issuance, verify the authorizing sponsor and each digital autopen recipient have a valid PIV card.
 3. The digital autopen recipient must be a federal employee.
-4. The digital autopen recipient must sign a user agreement ([Template](#template-user-agreement)).
-5. The authorizing sponsor must separately authorize each use of the digital autopen signature, and the digital autopen recipient must keep a record of each approval ([Template(#template-decision-document).
+4. The digital autopen recipient must sign a user agreement ([Template](#template---user-agreement)).
+5. The authorizing sponsor must separately authorize each use of the digital autopen signature, and the digital autopen recipient must keep a record of each approval ([Template](#template---decision-document)).
 
 ### Required Certificate Controls
 
@@ -194,7 +194,6 @@ Due to unique agency risks, the working group identifies the below optional cont
 A digital autopen certificate is available from any Federal PKI Shared Service Provider. [Federal Agency Legacy PKI](https://playbooks.idmanagement.gov/fpki/ca/#all-federal-pki-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate for their agency. An agency must request a **ROLE-BASED SIGNATURE CERTIFICATE**. Check with your Homeland Security Presidential Directive-12 Security Office or PIV card issuer if they can issue a role-based certificate. Federal PKI Shared Service Providers are listed as government identity providers on [idmanagement.gov](https://www.idmanagement.gov/buy/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. They provide Federal PKI certificates and PIV services.
 
 While OFR accepts any Federal PKI digital signature certificate, this playbook recommends a hardware-based certificate issued to a FIPS-140 Level 2 certified hardware device such as a visually distinct, approved smart card or USB device such as a FIDO authenticator. Below are examples of the Common Name used in digital autopen certificates.
-
 
 Table 01. Example Common Name in Role-Based Certificate
 | Position | Common Name Example | Note |
