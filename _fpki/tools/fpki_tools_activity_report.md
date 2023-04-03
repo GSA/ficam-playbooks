@@ -38,7 +38,7 @@ No Certificates issued or published to the FPKI Trust Infrastructure Repository 
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date | Expiration Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| N/A |  |   | Serial: Hash: |   |   | 
+| WidePoint | WidePoint SSP Intermediate CA | Federal Common Policy CA G2 | Serial:28f49a629440b3fdf097ac0fd46dbd9735379187 Hash:eef5180a852b044483a138bcb30ad9548463e09b | 4/3/23 | 3/15/33  | 
 
 No Certificates were removed from the FPKI Trust Infrastructure Repository in the last 30 days.
 
@@ -50,7 +50,6 @@ The following certificates are planned for a certificate action in the near futu
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| WidePoint | WidePoint SSP Intermediate CA | Federal Common Policy CA G2 | Serial:TBD Hash:TBD | TBD | Initial Issuance 4/5/23 |
 | DigiCert | DigiCert Class 3 SSP Intermediate CA – G4 | Federal Bridge CA G4 | Serial:15728cdad19f38d34b9d09df45729a6f8df6a2ba Hash:8a8e06a378289206a64c85ad7dd37846b1ed3aad | 5/14/23 | Renewal TBD |
 
 
