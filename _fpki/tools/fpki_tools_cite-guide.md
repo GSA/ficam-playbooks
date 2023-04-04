@@ -366,13 +366,13 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 
 | Test OID                      | Policy                                            | Production OID               |
 |-------------------------------|---------------------------------------------------|------------------------------|
-| 1.3.6.1.4.1.3922.1.1.2.3 | id-orc-nfissp-certpolicy-mediumAssurance | 1.3.6.1.4.1.3922.1.1.1.3 |
-| 1.3.6.1.4.1.3922.1.1.2.12	| id-orc-nfissp-certpolicy-mediumhardware |	1.3.6.1.4.1.3922.1.1.1.12 |
-| 1.3.6.1.4.1.3922.1.1.2.18	| id-orc-nfissp-certpolicy-pivi-hardware | 1.3.6.1.4.1.3922.1.1.1.18 |
-| 1.3.6.1.4.1.3922.1.1.2.19 | id-orc-nfissp-certpolicy-pivi-cardAuth | 1.3.6.1.4.1.3922.1.1.1.19 |
-| 1.3.6.1.4.1.3922.1.1.2.20 | id-orc-nfissp-certpolicy-pivi-contentSigning | 1.3.6.1.4.1.3922.1.1.1.20 |
-| 1.3.6.1.4.1.3922.1.1.2.37 | id-orc-nfissp-certpolicy-mediumDevice | 1.3.6.1.4.1.3922.1.1.1.37 |
-| 1.3.6.1.4.1.3922.1.1.2.38 | id-orc-nfissp-certpolicy-mediumDeviceHardware | 1.3.6.1.4.1.3922.1.1.1.38 |
+| 1.3.6.1.4.1.3922.1.2.1.3 | id-orc-nfissp-certpolicy-mediumAssurance | 1.3.6.1.4.1.3922.1.1.1.3 |
+| 1.3.6.1.4.1.3922.1.2.1.12	| id-orc-nfissp-certpolicy-mediumhardware |	1.3.6.1.4.1.3922.1.1.1.12 |
+| 1.3.6.1.4.1.3922.1.2.1.18	| id-orc-nfissp-certpolicy-pivi-hardware | 1.3.6.1.4.1.3922.1.1.1.18 |
+| 1.3.6.1.4.1.3922.1.2.1.19 | id-orc-nfissp-certpolicy-pivi-cardAuth | 1.3.6.1.4.1.3922.1.1.1.19 |
+| 1.3.6.1.4.1.3922.1.2.1.20 | id-orc-nfissp-certpolicy-pivi-contentSigning | 1.3.6.1.4.1.3922.1.1.1.20 |
+| 1.3.6.1.4.1.3922.1.2.1.37 | id-orc-nfissp-certpolicy-mediumDevice | 1.3.6.1.4.1.3922.1.1.1.37 |
+| 1.3.6.1.4.1.3922.1.2.1.38 | id-orc-nfissp-certpolicy-mediumDeviceHardware | 1.3.6.1.4.1.3922.1.1.1.38 |
 
 
 ### Commercial PKI Bridge Test OIDs
