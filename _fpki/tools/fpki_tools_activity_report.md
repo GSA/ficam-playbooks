@@ -34,7 +34,7 @@ If there are operational issues with a Federal Agency or affiliate connected to 
 ## FPKIMA Certificate Activity
 The activity listed in this section is limited to the certificates issued BY or TO the Federal Bridge or Federal Common Policy CA.
 
-No Certificates issued or published to the FPKI Trust Infrastructure Repository in the last 30 days.
+Certificates issued and published to the FPKI Trust Infrastructure Repository in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date | Expiration Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
