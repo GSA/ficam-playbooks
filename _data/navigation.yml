@@ -245,3 +245,7 @@ signfedregister:
 pam:
   - text: Privileged Identity Playbook
     href: /playbooks/pam/
+
+autopen:
+  - text: Digital Autopen Playbook
+    href: /playbooks/autopen/
