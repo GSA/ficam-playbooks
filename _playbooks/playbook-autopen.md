@@ -101,7 +101,8 @@ The OFR outlines signing requirements in the [Document Drafting Handbook](https:
 An agency may delegate the authority to electronically sign a document to someone with an official executive agency billet to sign a document, such as a Deputy Secretary or General Counsel. An agency may delegate a signature to an appropriate authority named in a Federal Register document (see Figure 1).
 
 Figure 1. Named Delegation Example
-<img src="{{site.baseurl}}/assets/playbooks/autopen-1-nameddelegation.png)" alt="An example of a named delegation from a Federal Register document." width="560" height="319">
+<img src="{{site.baseurl}}/assets/playbooks/autopen-1-nameddelegation.png" align="center" alt="An example of a named delegation in a Federal Register document.">
+<br>
 
 However, in some circumstances, only the federal executive has the authority to sign a Federal Register document. The Federal Register document may face various legal challenges if not signed by the proper authority. This paper proposes a second option when the Authorizing Sponsor completes an official agency delegation of authority process to authorize the use of a digital autopen. A digital autopen leverages a Federal PKI role-based digital signature certificate. **This option is the method proposed by this paper and the focus for the remainder of this paper**.
 
