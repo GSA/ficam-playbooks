@@ -26,9 +26,163 @@
 # ee_cdp_uri:
 # ee_ocsp_uri: 
 
+- notice_date: April 11, 2023
+  change_type: Intent to Issue CA Certificate
+  system: US Treasury Root CA 
+  change_description: The DHS CA4 will undergo a key update and a new CA certificate will be issued from the US Treasury Root CA on 04/29/2023.  The new CA key will begin to be used on 05/20/2023 to sign new end-entity certificates.
+  contact: pki underscore ops at fiscal dot treasury dot gov
+### The following are all optional fields based on the change type
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: ou=US Treasury Root CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
+  ca_certificate_subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/dhsca_aia.p7c
+  sia_uri: http://pki.treasury.gov/dhsca_sia.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pki.treasury.gov/DHS_CA4.crl
+  ee_ocsp_uri: N/A
+  
+- notice_date: April 11, 2023
+  change_type: Intent to Issue CA Certificate
+  system: US Treasury Root CA 
+  change_description: The Treasury OCIO CA will undergo a key update and a new CA certificate will be issued from the US Treasury Root CA on 05/20/2023.  The new CA key will begin to be used on 06/24/2023 to sign new end-entity certificates.
+  contact: pki underscore ops at fiscal dot treasury dot gov
+### The following are all optional fields based on the change type
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: ou=US Treasury Root CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
+  ca_certificate_subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/cacertsissuedtotrca.p7c
+  sia_uri: http://pki.treasury.gov/root_sia.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pki.treasury.gov/OCIO_CA6.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: April 11, 2023
+  change_type: Intent to Issue CA Certificate
+  system: US Treasury Root CA 
+  change_description: The Veterans Affairs CA will undergo a key update and a new CA certificate will be issued from the US Treasury Root CA on 05/20/2023.  The new CA key will begin to be used on 06/24/2023 to sign new end-entity certificates.
+  contact: pki underscore ops at fiscal dot treasury dot gov
+### The following are all optional fields based on the change type
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: ou=US Treasury Root CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
+  ca_certificate_subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/vaca_aia.p7c
+  sia_uri: http://pki.treasury.gov/vaca_sia.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pki.treasury.gov/VA_CA3.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: April 10, 2023
+  change_type: Intent to Issue CA Certificate
+  system: CertiPath Bridge CA - G3
+  change_description: CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 6 on or about April 19, 2023.
+  contact: support at certipath dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: <the sha1 thumbprint of the certificate>
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 6, OU=Certification Authorities , O=Lockheed Martin Corporation, L=Denver, S=Colorado C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+
+- notice_date: April 10, 2023
+  change_type: Intent to Issue CA Certificate
+  system: CertiPath Bridge CA - G3
+  change_description: CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 2 on or about April 19, 2023.
+  contact: support at certipath dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 2, OU=Certification Authorities , O=Lockheed Martin Corporation, L=Denver, S=Colorado C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+
+- notice_date: April 10, 2023
+  change_type: Intent to Issue CA Certificate
+  system: CertiPath Bridge CA - G3
+  change_description: CertiPath intends to issue a new cross certificate to the Boeing Company on or about April 19, 2023.
+  contact: support at certipath dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G3, OU = Certification Authorities, O = CertiPath, C = US
+  ca_certificate_subject: CN = Boeing PCA G3, OU = certservers, O = Boeing, C = US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  
+- notice_date: April 6, 2023
+  change_type: Intent to Issue CA Certificate
+  system: WidePoint NFI Root 2
+  change_description: On or after 21 April 2023 WidePoint will create U.S. Department of Transportation Agency CA G6 signed by WidePoint SSP Intermediate CA which was recently issued by Federal Common Policy CA G2.
+  contact: WCSC-PKIPolicy at widepoint dot com 
+### The following are all optional fields based on the change type
+  ca_certificate_hash: <the sha1 thumbprint of the certificate>
+  ca_certificate_issuer: CN = WidePoint NFI Root 2, OU = Certification Authorities, O = WidePoint, C = US
+  ca_certificate_subject: CN=U.S. Department of Transportation Agency CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri:
+  ocsp_uri:
+  ee_cdp_uri:
+  ee_ocsp_uri: 
+        
+- notice_date: April 6, 2023
+  change_type: Intent to Issue CA Certificate
+  system: WidePoint NFI Root 2
+  change_description: On or after 21 April 2023 WidePoint will create U.S. Department of Transportation Device CA G6 signed by WidePoint SSP Intermediate CA which was recently issued by Federal Common Policy CA G2.
+  contact: WCSC-PKIPolicy at widepoint dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: <the sha1 thumbprint of the certificate>
+  ca_certificate_issuer: CN = WidePoint NFI Root 2, OU = Certification Authorities, O = WidePoint, C = US
+  ca_certificate_subject: CN=U.S. Department of Transportation Device CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri:
+  ocsp_uri:
+  ee_cdp_uri:
+  ee_ocsp_uri:
+  
+- notice_date: April 6, 2023
+  change_type: Intent to Issue CA Certificate
+  system: WidePoint NFI Root 2
+  change_description: On or after 21 April 2023 WidePoint will create the Senate PIV-I CA G6 signed by WidePoint NFI Root 2 which is signed by Federal Bridge CA G4.
+  contact: WCSC-PKIPolicy at widepoint dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN = WidePoint NFI Root 2, OU = Certification Authorities, O = WidePoint, C = US
+  ca_certificate_subject: CN = Senate PIV-I CA G6, OU = Office of the Sergeant at Arms, OU = U.S. Senate, O = U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+  
+- notice_date: April 3, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The FCPCAG2 issued a new cross certificate to the WidePoint SSP Intermediate CA.
+  contact: fpki dash help at gsa.gov
+### The following are all optional fields based on the change type
+  ca_certificate_hash: eef5180a852b044483a138bcb30ad9548463e09b
+  ca_certificate_issuer: CN = Federal Common Policy CA G2, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = WidePoint SSP Intermediate CA, O = ORC PKI, C = US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedByWPSSPIntCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: March 21, 2023
   change_type: CA Certificate Issuance
-  system: Certipath Bridge CA - G3
+  system: CertiPath Bridge CA - G3
   change_description: The CertiPath Bridge CA – G3 has published a new cross certificate to Ministerie van Defensie PKIoverheid Organisatie Persoon CA – G3, expiring February 28, 2024.
   contact: support at certipath dot com
 ### The following are all optional fields based on the change type
