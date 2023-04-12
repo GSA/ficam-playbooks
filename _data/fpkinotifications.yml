@@ -156,7 +156,7 @@
 ### The following are all optional fields based on the change type
   ca_certificate_hash: N/A
   ca_certificate_issuer: CN = WidePoint NFI Root 2, OU = Certification Authorities, O = WidePoint, C = US
-  ca_certificate_subject: DN: CN=Senate PIV-I CA G6, OU=Office of the Sergeant at Arms, OU=U.S. Senate, O=U.S. Government, C=US
+  ca_certificate_subject: CN = Senate PIV-I CA G6, OU = Office of the Sergeant at Arms, OU = U.S. Senate, O = U.S. Government, C=US
   cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
   aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
   sia_uri: N/A
