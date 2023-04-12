@@ -139,7 +139,7 @@
   contact: WCSC-PKIPolicy at widepoint dot com
 ### The following are all optional fields based on the change type
   ca_certificate_hash: <the sha1 thumbprint of the certificate>
-  ca_certificate_issuer:CN = WidePoint NFI Root 2, OU = Certification Authorities, O = WidePoint, C = US
+  ca_certificate_issuer: CN = WidePoint NFI Root 2, OU = Certification Authorities, O = WidePoint, C = US
   ca_certificate_subject: CN=U.S. Department of Transportation Device CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
   cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
   aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
