@@ -77,7 +77,7 @@
 - notice_date: April 10, 2023
   change_type: Intent to Issue CA Certificate
   system: CertiPath Bridge CA - G3
-  change_description:  CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 6 on or about April 19, 2023.
+  change_description: CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 6 on or about April 19, 2023.
   contact: support at certipath dot com
 ### The following are all optional fields based on the change type
   ca_certificate_hash: <the sha1 thumbprint of the certificate>
@@ -91,7 +91,7 @@
 - notice_date: April 10, 2023
   change_type: Intent to Issue CA Certificate
   system: CertiPath Bridge CA - G3
-  change_description:  CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 2 on or about April 19, 2023.
+  change_description: CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 2 on or about April 19, 2023.
   contact: support at certipath dot com
 ### The following are all optional fields based on the change type
   ca_certificate_hash: N/A
