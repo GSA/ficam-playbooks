@@ -26,6 +26,22 @@
 # ee_cdp_uri:
 # ee_ocsp_uri: 
 
+- notice_date: April 17, 2023
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4 
+  change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the DigiCert Class 3 SSP Intermediate CA – G4 between 5/2/2023 and 5/4/2023.
+  contact: fpki dash help at gsa.gov
+### The following are all optional fields based on the change type.
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN = DigiCert Class 3 SSP Intermediate CA – G4
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+  
 - notice_date: April 11, 2023
   change_type: Intent to Issue CA Certificate
   system: US Treasury Root CA 
