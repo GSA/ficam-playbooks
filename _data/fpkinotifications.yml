@@ -47,6 +47,7 @@
   system: US Treasury Root CA 
   change_description: The DHS CA4 will undergo a key update and a new CA certificate will be issued from the US Treasury Root CA on 04/29/2023.  The new CA key will begin to be used on 05/20/2023 to sign new end-entity certificates.
   contact: pki underscore ops at fiscal dot treasury dot gov
+### The following are all optional fields based on the change type
   ca_certificate_hash: N/A
   ca_certificate_issuer: ou=US Treasury Root CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
   ca_certificate_subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US
