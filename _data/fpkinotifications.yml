@@ -133,12 +133,12 @@
   ca_certificate_hash: N/A
   ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O = ORC PKI, C = US
   ca_certificate_subject: CN=U.S. Department of Transportation Agency CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
-  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
-  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
-  sia_uri:
-  ocsp_uri:
-  ee_cdp_uri:
-  ee_ocsp_uri: 
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
   
 - notice_date: April 6, 2023
   change_type: Intent to Issue CA Certificate
@@ -148,12 +148,12 @@
   ca_certificate_hash: N/A
   ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O = ORC PKI, C = US
   ca_certificate_subject: CN=U.S. Department of Transportation Device CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
-  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
-  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
-  sia_uri:
-  ocsp_uri:
-  ee_cdp_uri:
-  ee_ocsp_uri:
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
   
 - notice_date: April 6, 2023
   change_type: Intent to Issue CA Certificate
