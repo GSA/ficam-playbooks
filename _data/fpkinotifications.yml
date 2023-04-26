@@ -31,7 +31,6 @@
   system: FPKI Trust Infrastructure - Federal Bridge CA G4 
   change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the DigiCert Class 3 SSP Intermediate CA – G4 between 5/2/2023 and 5/4/2023.
   contact: fpki dash help at gsa.gov
-### The following are all optional fields based on the change type.
   ca_certificate_hash: N/A
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN = DigiCert Class 3 SSP Intermediate CA – G4
@@ -47,7 +46,6 @@
   system: US Treasury Root CA 
   change_description: The DHS CA4 will undergo a key update and a new CA certificate will be issued from the US Treasury Root CA on 04/29/2023.  The new CA key will begin to be used on 05/20/2023 to sign new end-entity certificates.
   contact: pki underscore ops at fiscal dot treasury dot gov
-### The following are all optional fields based on the change type
   ca_certificate_hash: N/A
   ca_certificate_issuer: ou=US Treasury Root CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
   ca_certificate_subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US
@@ -63,7 +61,6 @@
   system: US Treasury Root CA 
   change_description: The Treasury OCIO CA will undergo a key update and a new CA certificate will be issued from the US Treasury Root CA on 05/20/2023.  The new CA key will begin to be used on 06/24/2023 to sign new end-entity certificates.
   contact: pki underscore ops at fiscal dot treasury dot gov
-### The following are all optional fields based on the change type
   ca_certificate_hash: N/A
   ca_certificate_issuer: ou=US Treasury Root CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
   ca_certificate_subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
@@ -79,7 +76,6 @@
   system: US Treasury Root CA 
   change_description: The Veterans Affairs CA will undergo a key update and a new CA certificate will be issued from the US Treasury Root CA on 05/20/2023.  The new CA key will begin to be used on 06/24/2023 to sign new end-entity certificates.
   contact: pki underscore ops at fiscal dot treasury dot gov
-### The following are all optional fields based on the change type
   ca_certificate_hash: N/A
   ca_certificate_issuer: ou=US Treasury Root CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
   ca_certificate_subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
@@ -95,7 +91,6 @@
   system: CertiPath Bridge CA - G3
   change_description: CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 6 on or about April 19, 2023.
   contact: support at certipath dot com
-### The following are all optional fields based on the change type
   ca_certificate_hash: <the sha1 thumbprint of the certificate>
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
   ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 6, OU=Certification Authorities , O=Lockheed Martin Corporation, L=Denver, S=Colorado C=US
