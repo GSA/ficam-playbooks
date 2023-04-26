@@ -70,7 +70,7 @@
   ocsp_uri: N/A
   ee_cdp_uri: http://pki.treasury.gov/OCIO_CA6.crl
   ee_ocsp_uri: N/A
-
+  
 - notice_date: April 11, 2023
   change_type: Intent to Issue CA Certificate
   system: US Treasury Root CA 
@@ -85,7 +85,7 @@
   ocsp_uri: N/A
   ee_cdp_uri: http://pki.treasury.gov/VA_CA3.crl
   ee_ocsp_uri: N/A
-
+  
 - notice_date: April 10, 2023
   change_type: Intent to Issue CA Certificate
   system: CertiPath Bridge CA - G3
@@ -98,7 +98,7 @@
   aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
   sia_uri: N/A
   ocsp_uri: N/A
-
+  
 - notice_date: April 10, 2023
   change_type: Intent to Issue CA Certificate
   system: CertiPath Bridge CA - G3
@@ -111,7 +111,7 @@
   aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
   sia_uri: N/A
   ocsp_uri: N/A
-
+  
 - notice_date: April 10, 2023
   change_type: Intent to Issue CA Certificate
   system: CertiPath Bridge CA - G3
@@ -139,7 +139,7 @@
   ocsp_uri:
   ee_cdp_uri:
   ee_ocsp_uri: 
-        
+  
 - notice_date: April 6, 2023
   change_type: Intent to Issue CA Certificate
   system: WidePoint SSP
