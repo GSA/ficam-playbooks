@@ -26,7 +26,7 @@
 # ee_cdp_uri:
 # ee_ocsp_uri: 
 
-  - notice_date: April 18, 2023
+- notice_date: April 18, 2023
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA - G3
   change_description: ertiPath issued a new CertiPath Bridge CA - G3 to Lockheed Martin Root CA 2 certificate
@@ -42,7 +42,7 @@
   ee_cdp_uri: N/A
   ee_ocsp_uri: N/A
   
-  - notice_date: April 18, 2023
+- notice_date: April 18, 2023
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA - G3
   change_description: CertiPath issued a new CertiPath Bridge CA - G3 to Lockheed Martin Root CA 6 certificate
@@ -58,7 +58,7 @@
   ee_cdp_uri: N/A
   ee_ocsp_uri: N/A
   
-  - notice_date: April 18, 2023
+- notice_date: April 18, 2023
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA - G3
   change_description: CertiPath issued a new CertiPath Bridge CA - G3 to Boeing PCA G3 certificate
