@@ -154,7 +154,7 @@
   system: CertiPath Bridge CA - G3
   change_description: CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 6 on or about April 19, 2023.
   contact: support at certipath dot com
-  ca_certificate_hash: <the sha1 thumbprint of the certificate>
+  ca_certificate_hash: N/A
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
   ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 6, OU=Certification Authorities , O=Lockheed Martin Corporation, L=Denver, S=Colorado C=US
   cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
