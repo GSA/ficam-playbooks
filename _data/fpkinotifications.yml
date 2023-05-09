@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri: 
 
+- notice_date: May 8, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4 
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the DigiCert Class 3 SSP Intermediate CA – G4, valid from 5/2/2023 to 5/2/2026.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: 527bc6165aa93e38853714675e2a452e1437a522
+  ca_certificate_issuer: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = DigiCert Class 3 SSP Intermediate CA - G4, O = DigiCert, Inc., C = US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://sspsia.digicert.com/STNSSP/Certs_Issued_by_Class3SSPCA-G4.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://ssp-crl.digicert.com/NFSSP/Class3SSPCAG4.crl
+  ee_ocsp_uri: http://ssp-ocsp.digicert.com
+  
 - notice_date: April 18, 2023
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA - G3
@@ -139,7 +154,7 @@
   system: CertiPath Bridge CA - G3
   change_description: CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 6 on or about April 19, 2023.
   contact: support at certipath dot com
-  ca_certificate_hash: <the sha1 thumbprint of the certificate>
+  ca_certificate_hash: N/A
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
   ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 6, OU=Certification Authorities , O=Lockheed Martin Corporation, L=Denver, S=Colorado C=US
   cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
