@@ -38,7 +38,7 @@
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
   sia_uri: http://sspsia.digicert.com/STNSSP/Certs_Issued_by_Class3SSPCA-G4.p7c
   ocsp_uri: N/A
-  ee_cdp_uri: http://pki-crl.symauth.com/ca_fc26996dc726cf860f12aa77d4270098/LatestCRL.crl
+  ee_cdp_uri: http://ssp-crl.digicert.com/NFSSP/Class3SSPCAG4.crl
   ee_ocsp_uri: http://ssp-ocsp.digicert.com
   
 - notice_date: April 18, 2023
