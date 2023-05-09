@@ -29,7 +29,7 @@
 - notice_date: May 8, 2023
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4 
-  change_description: The Federal Bridge CA G4 issues a new cross certificate to the DigiCert Class 3 SSP Intermediate CA – G4, valid from 5/2/2023 to 5/2/2026.
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the DigiCert Class 3 SSP Intermediate CA – G4, valid from 5/2/2023 to 5/2/2026.
   contact: fpki dash help at gsa.gov
   ca_certificate_hash: 527bc6165aa93e38853714675e2a452e1437a522
   ca_certificate_issuer: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = US
