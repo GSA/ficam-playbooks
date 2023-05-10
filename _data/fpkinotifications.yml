@@ -24,8 +24,53 @@
 # sia_uri:
 # ocsp_uri:
 # ee_cdp_uri:
-# ee_ocsp_uri: 
+# ee_ocsp_uri:
 
+- notice_date: May 10, 2023
+  change_type: CA Certificate Issuance
+  system: WidePoint SSP
+  change_description: WidePoint has created a new CA under the WidePoint SSP Intermediate CA, the U.S. Department of Transportation Agency CA G6 valid from 5/4/2023 to 3/7/2033.
+  contact: WCSC-PKIPolicy at widepoint dot com 
+  ca_certificate_hash: 7b6dcb34ab284ec897f0ffe1a2f8f95082f09c74
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O = ORC PKI, C = US
+  ca_certificate_subject: CN=U.S. Department of Transportation Agency CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTAgencyCAG6.crl
+  ee_ocsp_uri: http://dotagencyg6.eva.orc.com/
+  
+- notice_date: May 10, 2023
+  change_type: CA Certificate Issuance
+  system: WidePoint SSP
+  change_description: WidePoint has created a new CA under the WidePoint SSP Intermediate CA, the U.S. Department of Transportation Device CA G6 valid from 5/4/2023 to 3/7/2033.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: e0f1bd791fe607a6a3b1f5528eab4687dbbb9dce
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O = ORC PKI, C = US
+  ca_certificate_subject: CN=U.S. Department of Transportation Device CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTDeviceCAG6.crl
+  ee_ocsp_uri: http://dotdeviceg6.eva.orc.com/
+  
+- notice_date: May 10, 2023
+  change_type: CA Certificate Issuance
+  system: WidePoint NFI Root 2
+  change_description: WidePoint has created a new CA under the WidePoint NFI Root 2, the Senate PIV-I CA G6 valid from 5/5/2023 to 12/31/2030
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: 1d946c2a1724ed576e436604f02dbfc3f2dccff0
+  ca_certificate_issuer: CN = WidePoint NFI Root 2, OU = Certification Authorities, O = WidePoint, C = US
+  ca_certificate_subject: CN = Senate PIV-I CA G6, OU = Office of the Sergeant at Arms, OU = U.S. Senate, O = U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/SenatePIVICAG6.crl
+  ee_ocsp_uri: http://senatepivig6.eva.orc.com/
+  
 - notice_date: May 8, 2023
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4 
