@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: May 26, 2023
+  change_type: CA Certificate Issuance
+  system: US Treasury Root CA 
+  change_description: A new DHS CA4 certificate has been issued from US Treasury Root CA, valid from 4/29/2023 to 4/29/2033.
+  contact: pki underscore ops at fiscal dot treasury dot gov
+  ca_certificate_hash: d8624442ccc91753aca89698f2cbcdf59f32d3f1
+  ca_certificate_issuer: ou=US Treasury Root CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
+  ca_certificate_subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/dhsca_aia.p7c
+  sia_uri: http://pki.treasury.gov/dhsca_sia.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pki.treasury.gov/DHS_CA4.crl
+  ee_ocsp_uri: N/A
+  
 - notice_date: May 10, 2023
   change_type: CA Certificate Issuance
   system: WidePoint SSP
