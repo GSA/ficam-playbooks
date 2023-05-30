@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: May 30, 2023
+  change_type: Intent to issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the DoD Interoperability Root CA2 between 6/8/2023 and 6/14/2023.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: N/A 
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DoD Interoperability Root CA 2, OU = PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: May 26, 2023
   change_type: CA Certificate Issuance
   system: US Treasury Root CA 
