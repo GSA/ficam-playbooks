@@ -11,6 +11,9 @@ subnav:
       href: '#physical-features'
     - text: Electronic Features
       href: '#electronic-features'
+    - text: Example Forms
+      href: '#example-forms'
+      
 ---
 
 There are two main categories for the features of a PIV credential: [_physical_ features](#physical-features) and [_electronic_ features](#electronic-features).
@@ -50,3 +53,10 @@ The following electronic elements are for usage by YOU:
 - **Encryption**, which is a certificate and key pair that allows YOU to digitally encrypt documents or email with your colleagues in the federal government or with government partners, providing confidentiality through ensuring that only authorized parties can read the document or email.
 
 The Card Authentication, PIV Authentication, Digital Signature, and Encryption all leverage four separate certificates and key pairs issued from certificate authorities that are audited and certified by the Federal Public Key Infrastructure (FPKI).
+
+## Example Forms
+Provided below are links to example forms you can use as templates to create or update your own PIV acceptance and agreement forms.
+
+- [Digital Certificate user agreement](https://playbooks.idmanagement.gov/playbooks/autopen/#appendix-c-templates){:target="_blank"}{:rel="noopener noreferrer"}
+- [USAccess acknowledgment](https://ack.usaccess.gsa.gov/acknowledgement/activation.aspx){:target="_blank"}{:rel="noopener noreferrer"}
+- [DoD PKI Certificate Acceptance DD From 2842](https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2842.pdf){:target="_blank"}{:rel="noopener noreferrer"} 
