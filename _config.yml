@@ -75,7 +75,7 @@ primary_navigation:
         url: /piv/
       - name: PIV Interoperable Card
         url: /playbooks/pivi/
-      - name: Phishing-Resistant Authenticators Criteria (New)
+      - name: Phishing Resistant Authenticator Criteria (New)
         url: /prac/phishing-resistant-auth/
   - name: Access
     children:
