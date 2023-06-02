@@ -90,15 +90,14 @@ application is verified that it contains all necessary information and links to 
 vendor’s compliance with an external certification body.
 
 4. Decision – If all information is verified and validated, the vendor and product are listed on
-the product list available at [{{site.baseurl}}/buy/#products]({{site.baseurl}}/buy/#products){:target="_blank"}{:rel="noopener noreferrer"}.
+the product list available at [idmanagement.gov/buy/#products](https://www.idmanagement.gov/buy/#products){:target="_blank"}{:rel="noopener noreferrer"}.
 
 5. Maintenance – Vendors are required to provide timely updates with changes within their
 product certification. GSA IATAD team reviews and validates product submissions on a
 quarterly basis.
 
 6. Removal – If a vendor fails to provide accurate information or an issue is found that
-brings into question the security and resiliency, the product is moved to the [Removed
-Product List]({{site.baseurl}}/removed-products-list/) and the community is notified of its removal through idmanagement.gov,
+brings into question the security and resiliency, the product is moved to the [Removed Product List](https://www.idmanagement.gov/buy/removed-products-list/){:target="_blank"}{:rel="noopener noreferrer"} and the community is notified of its removal through idmanagement.gov,
 ICAMSC, and Digital identity Community of Practice, as well as federal acquisition
 channels.
 
@@ -118,7 +117,7 @@ testing and certification to NIST 800-63, FIPS 140 certification, and supply cha
 Vendors are encouraged to complete the questionnaire to the maximum extent possible and
 provide artifacts to validate their inputs.
 
-Once approved, the product will be listed on [idmanagement.gov]({{site.baseurl}}){:target="_blank"}{:rel="noopener noreferrer"} and shared through federal
+Once approved, the product will be listed on [idmanagement.gov](https://www.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} and shared through federal
 security and acquisition communities.
 
 
