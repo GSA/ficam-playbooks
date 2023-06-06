@@ -76,6 +76,11 @@ pivuser:
   - text: Configure Outlook for Secure Email
     href: /piv/user-guide/outlook/
 
+# New Phishing-Resistant sidenav
+prac:
+  - text: Phishing-Resistant Authenticator Criteria
+    href: /prac/phishing-resistant-auth/
+
 ## FPKI Navigation
 
 fpki:
