@@ -75,8 +75,7 @@ primary_navigation:
         url: /piv/
       - name: PIV Interoperable Card
         url: /playbooks/pivi/
-      - name: Phishing Resistant Authenticator Criteria (New)
-        url: /prac/phishing-resistant-auth/
+      - name: Phishing-Resistant Authenticators (Coming Soon)
   - name: Access
     children:
       - name: Access Management Overview
@@ -180,10 +179,6 @@ collections:
   piv:
     output: true
     permalink: /piv/:path/
-  # Phishing Resistant Auth Criteria (prac)
-  prac:
-    output: true
-    permalink: /prac/:path/
   playbooks:
     output: true
     permalink: /playbooks/:path/
