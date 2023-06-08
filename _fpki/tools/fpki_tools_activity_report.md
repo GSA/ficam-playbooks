@@ -38,7 +38,7 @@ Certificates issued and published to the FPKI Trust Infrastructure Repository in
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date | Expiration Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| DoD | DoD Interoperability Root CA 2 | Federal Bridge CA G4 | Serial: Hash: | 6/8/23 | 2/7/26  | 
+| DoD | DoD Interoperability Root CA 2 | Federal Bridge CA G4 | Serial:17a0f13585bbcfaa0d56f5041897029ee690020b Hash:eacd48fc71861e25223deea1815f49483fc1b07d | 6/8/23 | 2/7/26  | 
 
 Certificates removed from the FPKI Trust Infrastructure Repository in the last 30 days.
 
@@ -51,7 +51,7 @@ The following certificates are planned for a certificate action in the near futu
 | Affiliate |   Subject CA   | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | -------------- | ---------- | --------------------- | --------------- | ------ |
 | GPO |   GPO PCA   | Federal Bridge CA G4 | Serial:195cb9376d0a7dea78ab51500fd5f74a85a5f602 Hash:52db35c57036a5641bb8dd6b552391a7815681dd | 6/25/23 | Removal TBD |
-| Entrust | Entrust Managed Services Root CA | Federal Common Policy CA G2 | Serial:215e78d99648b021c6394a6566d8e00f46a1e595 Hash:07f5dc58f83778d5b5738a988292c00a674a0f40 | 8/14/29 | New cert after rekey TBD |
+| Entrust | Entrust Managed Services Root CA | Federal Common Policy CA G2 | Serial:215e78d99648b021c6394a6566d8e00f46a1e595 Hash:07f5dc58f83778d5b5738a988292c00a674a0f40 | 8/14/29 | Issue after rekey TBD |
 
 
 
