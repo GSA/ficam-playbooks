@@ -75,6 +75,8 @@ primary_navigation:
         url: /piv/
       - name: PIV Interoperable Card
         url: /playbooks/pivi/
+      - name: WHfB Playbook
+        url: /playbooks/whfb/
       - name: Phishing-Resistant Authenticators (Coming Soon)
   - name: Access
     children:
