@@ -130,7 +130,7 @@ If organization policy allows, users can employ biometrics (fingerprint and faci
 
 **Figure 1: Windows Hello Sign-in Options**
 
-![Figure 1: Windows Hello Sign-in Options](/assets/playbooks/whfb/01-Windows-Hello-Sign-In-Options.png)
+![Figure 1: Windows Hello Sign-in Options]({{site.baseurl}}/assets/playbooks/whfb/01-Windows-Hello-Sign-In-Options.png)
 
 In establishing a policy requiring WHfB use in the workplace, you must educate users on how to use WHfB.
 
@@ -183,13 +183,13 @@ Windows Hello for Business can be enabled multiple ways through Microsoft Intune
 
     **Figure 2: Intune Devices \| Overview Page**
 
-    ![Figure 2: Intune Devices \| Overview Page](/assets/playbooks/whfb/02-Intune-WHfB-Enrollment.png)
+    ![Figure 2: Intune Devices \| Overview Page]({{site.baseurl}}/assets/playbooks/whfb/02-Intune-WHfB-Enrollment.png)
 
 3. By default, **Windows enrollment** is preselected on the **Enroll devices** page. Choose the button named **Windows Hello for Business.** Figure 3 displays the Intune Windows enrollment page.
 
     **Figure 3: Intune Windows Enrollment Page**
 
-    ![Figure 3: Intune Windows Enrollment Page](/assets/playbooks/whfb/03-Intune-WHfB-Enrollment.png)
+    ![Figure 3: Intune Windows Enrollment Page]({{site.baseurl}}/assets/playbooks/whfb/03-Intune-WHfB-Enrollment.png)
 
 4. A new blade appears on the right when Windows Hello for Business is selected. WHfB enrollment by default is **Enabled** and assigned to **All users**. This assignment cannot be changed and will always remain scoped to all users. In order to limit the scope of WHfB, disable this enrollment policy and instead proceed with deploying WHfB through a device configuration profile (detailed in the next section). Device configuration profiles can be assigned to user or device groups, and they can be used as a proof of concept, pilot, or gradual rollout of WHfB throughout the organization.
 
@@ -197,7 +197,7 @@ Settings for this policy can be **Enabled, Not configured, or Disabled,** as sho
 
 **Figure 4: Windows Hello for Business Enrollment Policy Settings**
 
-![Figure 4: Windows Hello for Business Enrollment Policy Settings](/assets/playbooks/whfb/04-Intune-WHfB-Enrollment-Policy.png)
+![Figure 4: Windows Hello for Business Enrollment Policy Settings]({{site.baseurl}}/assets/playbooks/whfb/04-Intune-WHfB-Enrollment-Policy.png)
 
 After enabling the policy, a series of policy choices must be made. Recommended settings are as follows:
 
@@ -269,13 +269,13 @@ Figures 5 and 6 depict the policy choices that must be made when a WHfB policy i
 
 **Figure 5: Windows Hello for Business Enrollment Policy Settings 1**
 
-![Figure 5: Windows Hello for Business Enrollment Policy Settings 1](/assets/playbooks/whfb/05-Intune-WHfB-Enrollment-Policy-settings1.png)
+![Figure 5: Windows Hello for Business Enrollment Policy Settings 1]({{site.baseurl}}/assets/playbooks/whfb/05-Intune-WHfB-Enrollment-Policy-settings1.png)
 
 <br><br>
 
 **Figure 6: Windows Hello for Business Enrollment Policy Settings 2**
 
-![Figure 6: Windows Hello for Business Enrollment Policy Settings 2](/assets/playbooks/whfb/06-Intune-WHfB-Enrollment-Policy-settings2.png)
+![Figure 6: Windows Hello for Business Enrollment Policy Settings 2]({{site.baseurl}}/assets/playbooks/whfb/06-Intune-WHfB-Enrollment-Policy-settings2.png)
 
 ## WHfB device configuration profile steps
 
@@ -290,7 +290,7 @@ Figure 7 depicts steps 1 through 6 for creating a device configuration profile.
 
 **Figure 7: Windows Device Configuration Profile Creation**
 
-![Figure 7: Windows Device Configuration Profile Creation](/assets/playbooks/whfb/07-Intune-WHfB-ConfigProfile.png)
+![Figure 7: Windows Device Configuration Profile Creation]({{site.baseurl}}/assets/playbooks/whfb/07-Intune-WHfB-ConfigProfile.png)
 
 <ol start="7">
     <li>As illustrated in Figure 8, enter the following properties in  <strong>Basics</strong> :
@@ -304,7 +304,7 @@ Figure 7 depicts steps 1 through 6 for creating a device configuration profile.
 
 **Figure 8: Windows Device Configuration Profile Name and Description**
 
-![Figure 8: Windows Device Configuration Profile Name and Description](/assets/playbooks/whfb/08-Intune-WHfB-ConfigProfile-name.png)
+![Figure 8: Windows Device Configuration Profile Name and Description]({{site.baseurl}}/assets/playbooks/whfb/08-Intune-WHfB-ConfigProfile-name.png)
 
 In  **Configuration settings** (see Figure 9), configure the following settings:  
 
@@ -366,7 +366,7 @@ Select  **Next**  to continue.
 
 **Figure 9: Windows Device Configuration Policy Settings**
 
-![Figure 9: Windows Device Configuration Policy Settings](/assets/playbooks/whfb/09-Intune-WHfB-ConfigProfile-settings.png)
+![Figure 9: Windows Device Configuration Policy Settings]({{site.baseurl}}/assets/playbooks/whfb/09-Intune-WHfB-ConfigProfile-settings.png)
 
 <ol start="8">
   <li>
@@ -393,7 +393,7 @@ Select  **Next**  to continue.
 
 **Figure 10: Windows Device Configuration Group Assignment**
 
-![Figure 10: Windows Device Configuration Group Assignment](/assets/playbooks/whfb/10-Intune-WHfB-ConfigProfile-assignments.png)
+![Figure 10: Windows Device Configuration Group Assignment]({{site.baseurl}}/assets/playbooks/whfb/10-Intune-WHfB-ConfigProfile-assignments.png)
 
 <ol start="9">
     <li>In  <strong>Applicability Rules</strong> (see Figure 11), use the  <strong>Rule</strong>,  <strong>Property</strong>, and  <strong>Value</strong>  options to define how this profile applies within assigned groups. Intune applies the profile to devices that meet the rules you enter.</li>  
@@ -420,7 +420,7 @@ Select  **Next**  to continue.
 
 **Figure 12: Windows Device Configuration Applicability Rules Review**
 
-![Figure 12: Windows Device Configuration Applicability Rules Review](/assets/playbooks/whfb/12-Intune-WHfB-ConfigProfile-applicability2.png)
+![Figure 12: Windows Device Configuration Applicability Rules Review]({{site.baseurl}}/assets/playbooks/whfb/12-Intune-WHfB-ConfigProfile-applicability2.png)
 
 <ol start="10">
     <li>In <strong>Review + create</strong> (see Figure 13), review your settings. Select  <strong>Create</strong> to save your changes; the profile is assigned. The policy is also shown in the profiles list from step 2 in this section.</li>
@@ -428,7 +428,7 @@ Select  **Next**  to continue.
 
 **Figure 13: Windows Hello for Business Configuration Profile Completion**
 
-![Figure 13: Windows Hello for Business Configuration Profile Completion](/assets/playbooks/whfb/13-Intune-WHfB-ConfigProfile-review.png)
+![Figure 13: Windows Hello for Business Configuration Profile Completion]({{site.baseurl}}/assets/playbooks/whfb/13-Intune-WHfB-ConfigProfile-review.png)
 
 
 # WHfB user experience
@@ -443,19 +443,19 @@ Enter the username and password for an Azure AD user on a Windows 10 or 11 devic
 
 **Figure 14: Windows Sign-in**
 
-![Figure 14: Windows Sign-in](/assets/playbooks/whfb/14-FirstTimeSetUp.png)
+![Figure 14: Windows Sign-in]({{site.baseurl}}/assets/playbooks/whfb/14-FirstTimeSetUp.png)
 
 As shown in Figure 15, the user is prompted to set up WHfB.
 
 **Figure 15: Windows Hello Setup Prompt**
 
-![Figure 15: Windows Hello Setup Prompt](/assets/playbooks/whfb/15-WHfb-prompt.png)
+![Figure 15: Windows Hello Setup Prompt]({{site.baseurl}}/assets/playbooks/whfb/15-WHfb-prompt.png)
 
 The MFA challenge only occurs on the first sign-in to Windows when setting up Windows Hello. The user will receive a push notification or number-matching prompt on the Microsoft Authenticator mobile application. By default, Windows does not offer additional MFA with the Microsoft Authenticator app on Windows Sign-ins. Figure 16 shows the Microsoft Authenticator prompt.
 
 **Figure 16: Microsoft Authenticator Request**
 
-![Figure 16: Microsoft Authenticator Request](/assets/playbooks/whfb/16-WHfb-mfa.png)
+![Figure 16: Microsoft Authenticator Request]({{site.baseurl}}/assets/playbooks/whfb/16-WHfb-mfa.png)
 
 To view Microsoft Authenticator application setup instructions, please follow this link to [Windows Hello for Business – Microsoft Authenticator Setup for iOS & Android](#windows-hello-for-business-microsoft-authenticator-setup-for-ios-and-android).
 
@@ -463,19 +463,19 @@ Based on the WHfB Enrollment or Identity Protection policy previously discussed,
 
 **Figure 17: Windows PIN Creation**
 
-![Figure 17: Windows PIN Creation](/assets/playbooks/whfb/17-WHfB_1st_pin_setup.png)
+![Figure 17: Windows PIN Creation]({{site.baseurl}}/assets/playbooks/whfb/17-WHfB_1st_pin_setup.png)
 
 Once the PIN is successfully created, the screen shown in Figure 18 will appear.
 
 **Figure 18: Windows PIN Completion**
 
-![Figure 18: Windows PIN Completion](/assets/playbooks/whfb/18-WHfB-allset.png)
+![Figure 18: Windows PIN Completion]({{site.baseurl}}/assets/playbooks/whfb/18-WHfB-allset.png)
 
 After signing out once, WHfB is configured with a PIN (minimum requirement), as shown in Figure 19.
 
 **Figure 19: Windows Sign-in with PIN**
 
-![Figure 19: Windows Sign-in with PIN](/assets/playbooks/whfb/19-whfb_sign_out_experience.png)
+![Figure 19: Windows Sign-in with PIN]({{site.baseurl}}/assets/playbooks/whfb/19-whfb_sign_out_experience.png)
 
 # Windows Hello for Business: Microsoft Authenticator Setup for iOS and Android
 
@@ -487,7 +487,7 @@ After signing out once, WHfB is configured with a PIN (minimum requirement), as 
 
 **Figure 20: iOS App Store Microsoft Authenticator Install**
 
-![Figure 20: iOS App Store Microsoft Authenticator Install](/assets/playbooks/whfb/20-WHfB-iOS-SetUp.png)
+![Figure 20: iOS App Store Microsoft Authenticator Install]({{site.baseurl}}/assets/playbooks/whfb/20-WHfB-iOS-SetUp.png)
 
 <ol start="2">
     <li>Set up two-step verification on Authenticator. To secure your account, the Authenticator app can provide you with a code that provides additional verification. There is no need to wait for texts or calls. The following instructions ensure only you can access your information.</li>
@@ -501,19 +501,19 @@ Select **Next** on your Windows device to begin the Microsoft Authenticator setu
 
 **Figure 21: Windows and Microsoft Authenticator Setup**
 
-![Figure 21: Windows and Microsoft Authenticator SetupFigure 21: Windows and Microsoft Authenticator Setup](/assets/playbooks/whfb/21-WHfB-iOS-MSAuth-Setup.png)
+![Figure 21: Windows and Microsoft Authenticator SetupFigure 21: Windows and Microsoft Authenticator Setup]({{site.baseurl}}/assets/playbooks/whfb/21-WHfB-iOS-MSAuth-Setup.png)
 
 On your phone, select **Work or school account** , as shown in Figure 22.
 
 **Figure 22: Microsoft Authenticator Work or School Account Selection**
 
-![Figure 22: Microsoft Authenticator Work or School Account Selection](/assets/playbooks/whfb/22-WHfB-iOS-MSAuth-account.png)
+![Figure 22: Microsoft Authenticator Work or School Account Selection]({{site.baseurl}}/assets/playbooks/whfb/22-WHfB-iOS-MSAuth-account.png)
 
 Select **OK** when prompted to allow the camera to scan the QR code (see Figure 23). Doing so allows the Authenticator app to access the camera on your phone to scan QR codes for account setup.
 
 **Figure 23: Microsoft Authenticator for iOS Allow Camera Access**
 
-![Figure 23: Microsoft Authenticator for iOS Allow Camera Access](/assets/playbooks/whfb/23-WHfB-iOS-MSAuth-camera.png)
+![Figure 23: Microsoft Authenticator for iOS Allow Camera Access]({{site.baseurl}}/assets/playbooks/whfb/23-WHfB-iOS-MSAuth-camera.png)
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
@@ -526,49 +526,49 @@ Select **Next**.
 
 **Figure 24: Microsoft Authenticator for iOS Account Setup**
 
-![Figure 24: Microsoft Authenticator for iOS Account Setup](/assets/playbooks/whfb/24-WHfB-iOS-MSAuth-next.png)
+![Figure 24: Microsoft Authenticator for iOS Account Setup]({{site.baseurl}}/assets/playbooks/whfb/24-WHfB-iOS-MSAuth-next.png)
 
 Point your camera at the QR code (see Figure 25) or follow the instructions provided in your account settings and click **Next** and **Allow** when prompted to allow the camera to scan the QR code.
 
 **Figure 25: Microsoft Authenticator for iOS Scan QR Code**
 
-![Figure 25: Microsoft Authenticator for iOS Scan QR Code](/assets/playbooks/whfb/25-WHfB-iOS-MSAuth-qrcode.png)
+![Figure 25: Microsoft Authenticator for iOS Scan QR Code]({{site.baseurl}}/assets/playbooks/whfb/25-WHfB-iOS-MSAuth-qrcode.png)
 
 Select **Allow** (see Figure 26) to allow notifications from the Microsoft Authenticator app.
 
 **Figure 26: Microsoft Authenticator for iOS Allow Notifications**
 
-![Figure 26: Microsoft Authenticator for iOS Allow Notifications](/assets/playbooks/whfb/26-WHfB-iOS-MSAuth-qrcode-scan.png)
+![Figure 26: Microsoft Authenticator for iOS Allow Notifications]({{site.baseurl}}/assets/playbooks/whfb/26-WHfB-iOS-MSAuth-qrcode-scan.png)
 
 A notification will be sent to your device. Tap **Approve** when the notification appears, as shown in Figure 27. This process will be the means for authenticating sign-ins from now on.
 
 **Figure 27: Microsoft Authenticator for iOS Approve Sign-in**
 
-![Figure 27: Microsoft Authenticator for iOS Approve Sign-in](/assets/playbooks/whfb/27-WHfB-iOS-MSAuth-appsignin.png)
+![Figure 27: Microsoft Authenticator for iOS Approve Sign-in]({{site.baseurl}}/assets/playbooks/whfb/27-WHfB-iOS-MSAuth-appsignin.png)
 
 When the screen shown in Figure 28 appears on your computer, click **Next.**
 
 **Figure 28: Microsoft Authenticator Notification Approved**
 
-![Figure 28: Microsoft Authenticator Notification Approved](/assets/playbooks/whfb/28-WHfB-iOS-MSAuth-notifapp.png)
+![Figure 28: Microsoft Authenticator Notification Approved]({{site.baseurl}}/assets/playbooks/whfb/28-WHfB-iOS-MSAuth-notifapp.png)
 
 Select  **Next** after verifying the 6-digit code, as illustrated in Figure 29.
 
 **Figure 29: Multi-Factor Authentication SMS One-time passcode**
 
-![Figure 29: Multi-Factor Authentication SMS One-time passcode](/assets/playbooks/whfb/29-WHfB-iOS-MSAuth-smsotp.png)
+![Figure 29: Multi-Factor Authentication SMS One-time passcode]({{site.baseurl}}/assets/playbooks/whfb/29-WHfB-iOS-MSAuth-smsotp.png)
 
 Select **Next** when you receive the verification message shown in Figure 30.
 
 **Figure 30: Multi-Factor Authentication SMS Completed**
 
-![Figure 30: Multi-Factor Authentication SMS Completed](/assets/playbooks/whfb/30-WHfB-iOS-MSAuth-smsverif.png)
+![Figure 30: Multi-Factor Authentication SMS Completed]({{site.baseurl}}/assets/playbooks/whfb/30-WHfB-iOS-MSAuth-smsverif.png)
 
 Congratulations! Multi-Factor Authentication for Windows Hello for Business is set up when the screen shown in Figure 31 appears. Select  **Done.**
 
 **Figure 31: Multi-Factor Authentication Setup Complete**
 
-![Figure 31: Multi-Factor Authentication Setup Complete](/assets/playbooks/whfb/31-WHfB-iOS-MSAuth-complete.png)
+![Figure 31: Multi-Factor Authentication Setup Complete]({{site.baseurl}}/assets/playbooks/whfb/31-WHfB-iOS-MSAuth-complete.png)
 
 ## Android – Microsoft Authenticator setup
 
@@ -579,32 +579,32 @@ Download and install the app:
 
     **Figure 32: Microsoft Authenticator for Android Account Setup**
 
-    ![Figure 32: Microsoft Authenticator for Android Account Setup](/assets/playbooks/whfb/32-WHfB-Android-MSAuth.png)
+    ![Figure 32: Microsoft Authenticator for Android Account Setup]({{site.baseurl}}/assets/playbooks/whfb/32-WHfB-Android-MSAuth.png)
 
 2. On your Android device, go to Google Play to [download and install the Authenticator app](https://play.google.com/store/search?q=microsoft+authenticator&c=apps){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.  
 3. **Install, download,** and **open the Microsoft Authenticator** app from the **Google Play Store** (see Figure 33).
 
     **Figure 33: Google Play Store Microsoft Authenticator Install**
 
-    ![Figure 33: Google Play Store Microsoft Authenticator Install](/assets/playbooks/whfb/33-WHfB-Android-MFA-appinstall.png)
+    ![Figure 33: Google Play Store Microsoft Authenticator Install]({{site.baseurl}}/assets/playbooks/whfb/33-WHfB-Android-MFA-appinstall.png)
 
 4. Select **Add account** , as shown in Figure 34.
 
     **Figure 34: Microsoft Authenticator for Android Add Account**
 
-    ![Figure 34: Microsoft Authenticator for Android Add Account](/assets/playbooks/whfb/34-WHfB-Android-MFA-addacct.png)
+    ![Figure 34: Microsoft Authenticator for Android Add Account]({{site.baseurl}}/assets/playbooks/whfb/34-WHfB-Android-MFA-addacct.png)
 
 5. Select **Work or school account** (seeFigure 35).
 
     **Figure 35: Microsoft Authenticator for Android Account Type Selection**
 
-    ![Figure 35: Microsoft Authenticator for Android Account Type Selection](/assets/playbooks/whfb/35-WHfB-Android-MFA-accttype.png)
+    ![Figure 35: Microsoft Authenticator for Android Account Type Selection]({{site.baseurl}}/assets/playbooks/whfb/35-WHfB-Android-MFA-accttype.png)
 
 6. Choose **Scan a QR code** (see Figure 36).
 
     **Figure 36 : Microsoft Authenticator for Android Work or School Account Setup**
 
-    ![Figure 36 : Microsoft Authenticator for Android Work or School Account Setup](/assets/playbooks/whfb/36-WHfB-Android-MFA-qrcode.png)
+    ![Figure 36 : Microsoft Authenticator for Android Work or School Account Setup]({{site.baseurl}}/assets/playbooks/whfb/36-WHfB-Android-MFA-qrcode.png)
 
     **Note** : The first time you set up the Microsoft Authenticator app, you might receive a prompt asking whether to allow the app to take pictures and record video. You must select  **Allow**  so the Authenticator app can access your camera to take a picture of the QR code in the next step. If you don't allow camera access, you can still set up the Authenticator app, but you'll need to add the code information manually.
 
@@ -612,37 +612,37 @@ Download and install the app:
 
     **Figure 37: Microsoft Authenticator for Android Account Setup**
 
-    ![Figure 37: Microsoft Authenticator for Android Account Setup](/assets/playbooks/whfb/37-WHfB-Android-MSAuth-next.png)
+    ![Figure 37: Microsoft Authenticator for Android Account Setup]({{site.baseurl}}/assets/playbooks/whfb/37-WHfB-Android-MSAuth-next.png)
 
 8. Microsoft Authenticator displays a QR Code (see Figure 38). Using the QR scanner on your device, scan the QR code shown. Then, click **Next**.
 
     **Figure 38: Microsoft Authenticator for Android QR Code Scan**
 
-    ![Figure 38: Microsoft Authenticator for Android QR Code Scan](/assets/playbooks/whfb/38-WHfB-Android-MSAuth-qrcode.png)
+    ![Figure 38: Microsoft Authenticator for Android QR Code Scan]({{site.baseurl}}/assets/playbooks/whfb/38-WHfB-Android-MSAuth-qrcode.png)
 
 9. Use the phone camera to scan the QR code, as shown in Figure 39.
 
     **Figure 39: Microsoft Authenticator for Android Scan QR Code Camera View**
 
-    ![Figure 39: Microsoft Authenticator for Android Scan QR Code Camera View](/assets/playbooks/whfb/39-WHfB-Android-MSAuth-qrcode2.png)
+    ![Figure 39: Microsoft Authenticator for Android Scan QR Code Camera View]({{site.baseurl}}/assets/playbooks/whfb/39-WHfB-Android-MSAuth-qrcode2.png)
 
     The Microsoft Authenticator app will display **Account added successfully** once the scan is finished, as shown in Figure 40.
 
     **Figure 40: Microsoft Authenticator for Android Account Added**
 
-    ![Figure 40: Microsoft Authenticator for Android Account Added](/assets/playbooks/whfb/40-WHfB-Android-MSAuth-acctadd.png)
+    ![Figure 40: Microsoft Authenticator for Android Account Added]({{site.baseurl}}/assets/playbooks/whfb/40-WHfB-Android-MSAuth-acctadd.png)
 
 10. Respond **Approve** to the push notification to approve the sign-in (see Figure 41).
 
     **Figure 41: Microsoft Authenticator for Android Push Notification**
 
-    ![Figure 41: Microsoft Authenticator for Android Push Notification](/assets/playbooks/whfb/41-WHfB-Android-MSAuth-pushnotif.png)
+    ![Figure 41: Microsoft Authenticator for Android Push Notification]({{site.baseurl}}/assets/playbooks/whfb/41-WHfB-Android-MSAuth-pushnotif.png)
 
 11. The screen depicted in Figure 42 appears after tapping **Approve** on your device. Click **Next** on your computer.
 
     **Figure 42: Microsoft Authenticator for Android App Notification Approved**
 
-    ![Figure 42: Microsoft Authenticator for Android App Notification Approved](/assets/playbooks/whfb/42-WHfB-Android-MSAuth-notifapp.png)
+    ![Figure 42: Microsoft Authenticator for Android App Notification Approved]({{site.baseurl}}/assets/playbooks/whfb/42-WHfB-Android-MSAuth-notifapp.png)
 
     Enter a phone number when prompted to receive text message notifications to ensure your security information is up to date.
 
@@ -652,13 +652,13 @@ Download and install the app:
 
     **Figure 43: Multi-Factor Authentication Phone Number Setup**
 
-    ![Figure 43: Multi-Factor Authentication Phone Number Setup](/assets/playbooks/whfb/43-WHfB-Android-MSAuth-smsstart.png)
+    ![Figure 43: Multi-Factor Authentication Phone Number Setup]({{site.baseurl}}/assets/playbooks/whfb/43-WHfB-Android-MSAuth-smsstart.png)
 
 13. Enter the one-time passcode from the text message (illustrated in Figure 44). Then select **Next**.
 
     **Figure 44: Multi-Factor Authentication SMS One-Time Passcode**
 
-    ![Figure 44: Multi-Factor Authentication SMS One-Time Passcode](/assets/playbooks/whfb/44-WHfB-Android-MSAuth-smsotp.png)
+    ![Figure 44: Multi-Factor Authentication SMS One-Time Passcode]({{site.baseurl}}/assets/playbooks/whfb/44-WHfB-Android-MSAuth-smsotp.png)
 
     Your security information will now be updated and you can use text messaging to verify your identity when using two-step verification or password reset.
 
@@ -666,13 +666,13 @@ Download and install the app:
 
     **Figure 45: Multi-Factor Authentication SMS Complete**
 
-    ![Figure 45: Multi-Factor Authentication SMS Complete](/assets/playbooks/whfb/45-WHfB-Android-MSAuth-smscomp.png)
+    ![Figure 45: Multi-Factor Authentication SMS Complete]({{site.baseurl}}/assets/playbooks/whfb/45-WHfB-Android-MSAuth-smscomp.png)
 
 15. Congratulations! Multi-factor authentication has now been set up (see Figure 46). Select  **Done.**
 
     **Figure 46: Multi-Factor Authentication Complete**
 
-    ![Figure 46: Multi-Factor Authentication Complete](/assets/playbooks/whfb/46-WHfB-Android-MSAuth-complete.png)
+    ![Figure 46: Multi-Factor Authentication Complete]({{site.baseurl}}/assets/playbooks/whfb/46-WHfB-Android-MSAuth-complete.png)
 
 ## Windows infrared camera biometric set-up
 
@@ -682,19 +682,19 @@ Choose **Get started** to begin the facial recognition process (see Figure 47).
 
 **Figure 47: Windows Hello for Business Facial Recognition Setup**
 
-![Figure 47: Windows Hello for Business Facial Recognition Setup](/assets/playbooks/whfb/47-WHfB-Camera-start.png)
+![Figure 47: Windows Hello for Business Facial Recognition Setup]({{site.baseurl}}/assets/playbooks/whfb/47-WHfB-Camera-start.png)
 
 The user will receive a prompt to center their face in the camera (see Figure 48). A square will appear around the user's face. The user must keep their eyes on the camera during this time. The square will highlight green around the perimeter of the square as Windows records and maps the user's face.
 
 **Figure 48: Windows Hello for Business Facial Recognition Scan**
 
-![Figure 48: Windows Hello for Business Facial Recognition Scan](/assets/playbooks/whfb/48-WHfB-Camera-facescan.png)
+![Figure 48: Windows Hello for Business Facial Recognition Scan]({{site.baseurl}}/assets/playbooks/whfb/48-WHfB-Camera-facescan.png)
 
 Once the facial scanning is complete, the user will be prompted to improve recognition by taking another photo with or without glasses, if they have glasses (see Figure 49).
 
 **Figure 49: Windows Hello for Business Facial Recognition Complete**
 
-![Figure 49: Windows Hello for Business Facial Recognition Complete](/assets/playbooks/whfb/49-WHfB-Camera-finish.png)
+![Figure 49: Windows Hello for Business Facial Recognition Complete]({{site.baseurl}}/assets/playbooks/whfb/49-WHfB-Camera-finish.png)
 
 ## Windows fingerprint biometric setup
 
@@ -706,25 +706,25 @@ Begin by touching your thumb or another finger to the fingerprint sensor, as sho
 
 **Figure 50: Windows Hello for Business Fingerprint Setup**
 
-![Figure 50: Windows Hello for Business Fingerprint Setup](/assets/playbooks/whfb/50-WHfB-Fingerprint-start.png)
+![Figure 50: Windows Hello for Business Fingerprint Setup]({{site.baseurl}}/assets/playbooks/whfb/50-WHfB-Fingerprint-start.png)
 
 Follow the prompts to lift your finger and touch the sensor again in order to map the entire print (see Figures 51 through 54).
 
 **Figure 51: Windows Hello for Business Fingerprint Scan 1**
 
-![Figure 51: Windows Hello for Business Fingerprint Scan 1](/assets/playbooks/whfb/51-WHfB-Fingerprint-scan1.png)
+![Figure 51: Windows Hello for Business Fingerprint Scan 1]({{site.baseurl}}/assets/playbooks/whfb/51-WHfB-Fingerprint-scan1.png)
 
 **Figure 52: Windows Hello for Business Fingerprint Scan 2**
 
-![Figure 52: Windows Hello for Business Fingerprint Scan 2](/assets/playbooks/whfb/52-WHfB-Fingerprint-scan2.png)
+![Figure 52: Windows Hello for Business Fingerprint Scan 2]({{site.baseurl}}/assets/playbooks/whfb/52-WHfB-Fingerprint-scan2.png)
 
 **Figure 53: Windows Hello for Business Fingerprint Scan 3**
 
-![Figure 53: Windows Hello for Business Fingerprint Scan 3](/assets/playbooks/whfb/53-WHfB-Fingerprint-scan3.png)
+![Figure 53: Windows Hello for Business Fingerprint Scan 3]({{site.baseurl}}/assets/playbooks/whfb/53-WHfB-Fingerprint-scan3.png)
 
 **Figure 54: Windows Hello for Business Fingerprint Scan Complete**
 
-![Figure 54: Windows Hello for Business Fingerprint Scan Complete](/assets/playbooks/whfb/54-WHfB-Fingerprint-complete.png)
+![Figure 54: Windows Hello for Business Fingerprint Scan Complete]({{site.baseurl}}/assets/playbooks/whfb/54-WHfB-Fingerprint-complete.png)
 
 If users choose to do so, they can add multiple fingerprints for improved recognition.
 
