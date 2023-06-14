@@ -401,7 +401,7 @@ Select  **Next**  to continue.
 
 **Figure 11: Windows Device Configuration Applicability Rules**
 
-![Figure 11: Windows Device Configuration Applicability Rules](/assets/playbooks/whfb/11-Intune-WHfB-ConfigProfile-applicability.png)
+![Figure 11: Windows Device Configuration Applicability Rules]({{site.baseurl}}/assets/playbooks/whfb/11-Intune-WHfB-ConfigProfile-applicability.png)
 
  <ol type="a">
   <li>
