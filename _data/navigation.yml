@@ -211,6 +211,10 @@ pm:
 
 
 # Playbooks Navigation
+whfb:
+  - text: WHfB Playbook
+    href: /playbooks/whfb/
+
 ilm:
   - text: Identity Lifecycle Management Playbook
     href: /playbooks/ilm/
@@ -249,3 +253,5 @@ pam:
 autopen:
   - text: Digital Autopen Playbook
     href: /playbooks/autopen/
+
+
