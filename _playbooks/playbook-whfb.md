@@ -10,30 +10,22 @@ sidenav: whfb
 sticky_sidenav: true
 
 subnav:
-  - text: About Windows Hello for Business
-    href: '#about-windows-hello-for-business'
-  - text: Assumptions
-    href: '#assumptions'
   - text: Prerequisites
     href: '#prerequisites'
-  - text: Technology and terms
-    href: '#technology-and-terms'
-  - text: Prepare users to use Windows Hello
+  - text: Prepare users for WHfB
     href: '#prepare-users-to-use-windows-hello'
-  - text: WHfB policy configuration
+  - text: Policy configuration
     href: '#whfb-policy-configuration'
-  - text: WHfB device enrollment configuration steps
+  - text: Device enrollment configuration steps
     href: '#whfb-device-enrollment-configuration-steps'
-  - text: WHfB device configuration profile steps
+  - text: Device configuration profile steps
     href: '#whfb-device-configuration-profile-steps'
-  - text: WHfB user experience
+  - text: User experience
     href: '#whfb-user-experience'
   - text: First time setup for new device/PIN creation
     href: '#first-time-setup-for-new-devicepin-creation'
-  - text: 'Windows Hello for Business: Microsoft Authenticator Setup for iOS and Android'
+  - text: Microsoft Authenticator Setup for iOS and Android
     href: '#windows-hello-for-business-microsoft-authenticator-setup-for-ios-and-android'
-  - text: iOS - Microsoft Authenticator setup
-    href: '#ios---microsoft-authenticator-setup'
   - text: Windows fingerprint biometric setup
     href: '#windows-fingerprint-biometric-setup'
   - text: Windows security key setup
@@ -51,7 +43,7 @@ WHfB PINs may seem similar to passwords at first glance. However, there is a fun
 
 Device PIN creation establishes a trusted relationship with the identity provider (Azure AD). It also creates an asymmetric key pair that is used for authentication. Transmittal of the key to the authentication server completes the sign-in request. When paired with a Trusted Platform Module (TPM) chip, tamper protection is enabled. This feature protects the key material from attackers and locks the device after too many incorrect PIN attempts.
 
-### Windows Hello for Business Sign-in Options
+## Windows Hello for Business Sign-in Options
 
 The available sign-in options for Windows Hello for Business include:
 
@@ -62,7 +54,7 @@ The available sign-in options for Windows Hello for Business include:
 
 Biometric data is stored locally on the device, and it is never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
 
-# Assumptions
+## Assumptions
 This playbook assumes that devices are cloud-only and there is no hybrid device configuration with Active Directory. Deploying Windows Hello for Business in a hybrid environment requires configuring Azure AD Connect, Azure AD Kerberos and deploying either a Cloud Trust Device Configuration Profile in Microsoft Intune (Intune), a Key trust deployment in on-premises Active Directory, or a hybrid certificate trust deployment, which requires Active Directory Federated Services (ADFS). Of these three hybrid options, the Cloud Kerberos trust deployment is recommended. More on that here: [Windows Hello for Business cloud Kerberos trust clients configuration and enrollment | Microsoft Learn](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust-provision?tabs=intune){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 This playbook assumes that all devices have a TPM 2.0 module that complies with Federal Information Processing Standards (FIPS). All devices should be on Windows 10 version 1709 (or later) or Windows 11. Preferably, all devices should be Windows 10 version 1903 or later.
@@ -79,7 +71,7 @@ Users must have a Microsoft Intune license feature as a stand-alone license or a
 
 It's also preferrable that all users have an Azure AD Premium P1 or P2 subscription, which is needed for automatic MDM enrollment when the device joins Azure AD. Azure AD Premium P1 licenses also grant access to Azure AD Multi-Factor Authentication (MFA) through Conditional Access policies.
 
-# Technology and terms
+## Technology and terms
 
 [Introduction to device identity and join types](https://learn.microsoft.com/en-us/azure/active-directory/devices/overview){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
