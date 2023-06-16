@@ -10,6 +10,8 @@ sidenav: whfb
 sticky_sidenav: true
 
 subnav:
+  - text: Why WHfB
+    href: '#why-windows-hello-for-business'
   - text: Prerequisites
     href: '#prerequisites'
   - text: Prepare users for WHfB
@@ -35,24 +37,47 @@ subnav:
 
 ---
 
-The purpose of this playbook is to guide administrators through planning, configuring, testing, and implementing Windows Hello for Business (WHfB). WHfB offers two-factor authentication by combining user credentials tied to a device with a biometric or a personal identification number (PIN).
+| Version Number | Date | Change Description |
+| :----------: | :-------: | -------- |
+| 1.0 | 06/16/2023 | Initial draft. |
+
+The purpose of this playbook is to guide ICAM program managers and Azure Active Directory administrators through planning, configuring, testing, and implementing Windows Hello for Business (WHfB). WHfB is a phishing-resistant, Multi-Factor Authenticator that combines user credentials tied to a device with a biometric or personal identification number (PIN).
+
+# Why Windows Hello for Business
+Windows Hello for Business is a phishing-resistant FIDO2 platform authenticator native to Azure AD that does not require additional hardware or software. It is an alternative authenticator for use cases where using PIV is impractical. Some everyday use cases where PIV is impractical or unavailable may include the following:
+1. Agency staff completing a fitness determination and eligible to begin work. However, issuing a PIV card may take weeks or months due to supply chain issues or proximity to a PIV issuance station.
+2. Agency staff who've lost or damaged their PIV card and need a temporary authenticator until they can get a new PIV card.
+3. Short-term staff who are not eligible for a PIV card.
+5. Mobile or personal device access where using a smart card or Derived PIV is impractical due to form factor, technology, or cost limitations.
+
+In these scenarios, agencies commonly leverage a policy exception process where the exception authenticator is either a time-limited username and password or a One-Time Pin. Unfortunately, these exception authenticators are susceptible to sophisticated phishing attacks, which can convincingly spoof official applications and involve dynamic user interaction. Users can be fooled into providing a one-time code or responding to a security prompt that grants the attacker account access. These attacks can be fully automated and operate cheaply at a significant scale.
+
+## Lessons Learned from FIDO2 Community of Action
+
+The FIDO2 Community of Action is an Office of Management and Budget initiative to help agencies rapidly replace exception authenticators with a phishing-resistant alternative either as an alternative or a backup authenticator. The most common authenticators piloted by the CoA agencies include WHfB, FIDO2 security keys, and Derived PIV on a government mobile device or a FIDO2 security key. For common questions with WHfB, see the [FAQs](#windows-hello-for-business-faqs). Below is a list of lessons learned from CoA agencies in the piloting and production use of WHfB.
+
+1. Depending on the size of your agency, the prerequisites to using WHfB could be a major technology shift. The most time-intensive activity includes migrating device management to Azure AD, or a hybrid Azure join, which also means becoming comfortable with leveraging Azure group policies over traditional Microsoft Group Policy Object.
+2. Migrating to a complete cloud Azure configuration with Azure joined devices is possible for agencies with a small on-premise Active Directory footprint. This alleviates the risk of Active Directory vulnerabilities, but agencies must ensure they have the right talent and understanding of Azure AD operations and constraints.
+3. Most agencies have an adequate level of licensing (usually E3 or E5) to leverage conditional access policies and automated device enrollment. It is not required to use WHfB but does help with other security priorities to integrate device-level signals and better user experience.
+4. Once enabled, WHfB provides a more natural authentication experience when using biometrics. Biometrics requires a compatible Windows device.
+5. WHfB is only supported on Windows devices (e.g., iPhone, iPad, and Android Devices) as of June 16th, 2023. For phishing-resistant MFA on mobile devices to Azure, only security keys and certificate-based authentication is supported.
 
 ## About Windows Hello for Business
 
-WHfB PINs may seem similar to passwords at first glance. However, there is a fundamental difference: PINs typically are local to the device and not transmitted over the internet unlike a Microsoft 365 or Azure Active Directory (Azure AD) User Principal Name and Password combination.
+WHfB PINs may seem similar to passwords at first glance. However, there is a fundamental difference: PINs typically are local to the device and not transmitted over the internet, unlike a Microsoft 365 or Azure Active Directory (Azure AD) User Principal Name and Password combination.
 
 Device PIN creation establishes a trusted relationship with the identity provider (Azure AD). It also creates an asymmetric key pair that is used for authentication. Transmittal of the key to the authentication server completes the sign-in request. When paired with a Trusted Platform Module (TPM) chip, tamper protection is enabled. This feature protects the key material from attackers and locks the device after too many incorrect PIN attempts.
 
 ## Windows Hello for Business Sign-in Options
 
-The available sign-in options for Windows Hello for Business include:
+The available sign-in options for Windows Hello for Business include the following:
 
 - Facial recognition
 - Fingerprint recognition
 - PIN (for use as a backup in case the biometric authentication fails or in the absence of camera/fingerprint scanning technology)
 - Security key (a physical key)
 
-Biometric data is stored locally on the device, and it is never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
+Biometric data is stored locally on the device and never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
 
 ## Assumptions
 This playbook assumes that devices are cloud-only and there is no hybrid device configuration with Active Directory. Deploying Windows Hello for Business in a hybrid environment requires configuring Azure AD Connect, Azure AD Kerberos and deploying either a Cloud Trust Device Configuration Profile in Microsoft Intune (Intune), a Key trust deployment in on-premises Active Directory, or a hybrid certificate trust deployment, which requires Active Directory Federated Services (ADFS). Of these three hybrid options, the Cloud Kerberos trust deployment is recommended. More on that here: [Windows Hello for Business cloud Kerberos trust clients configuration and enrollment | Microsoft Learn](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust-provision?tabs=intune){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
