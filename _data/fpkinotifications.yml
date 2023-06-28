@@ -29,7 +29,7 @@
 - notice_date: June 28, 2023
   change_type: CA Certificate Issuance
   system: US Treasury Root CA
-  change_description: The Veterans Affairs CA underwent a key update and a new CA certificate was issued from the US Treasury Root CA on 05/20/2023.
+  change_description: The Veterans Affairs CA underwent a key update and a new CA certificate was issued from the US Treasury Root CA on 05/20/2023. Valid until 5/20/2033.
   contact: pki underscore ops at fiscal dot treasury dot gov
 ### The following are all optional fields based on the change type
   ca_certificate_hash: d81577f94652b7a9eb9d0d4602060f7d16492413
@@ -45,7 +45,7 @@
 - notice_date: June 28, 2023
   change_type: CA Certificate Issuance
   system: US Treasury Root CA 
-  change_description: The Treasury OCIO CA underwent a key update and a new CA certificate was issued from the US Treasury Root CA on 05/20/2023.
+  change_description: The Treasury OCIO CA underwent a key update and a new CA certificate was issued from the US Treasury Root CA on 05/20/2023. Valid until 5/20/2033.
   contact: pki underscore ops at fiscal dot treasury dot gov
   ca_certificate_hash: 3f3a62c0d4b5a2d70054ea7de33c9a691937ec02
   ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
