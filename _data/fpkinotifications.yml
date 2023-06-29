@@ -58,7 +58,7 @@
   ee_ocsp_uri: N/A
 
 - notice_date: June 28, 2023
-  change_type: Intent to issue CA Certificate
+  change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a new cross certificate to the DoD Interoperability Root CA2 on 6/8/2023. Valid until 2/7/2026.
   contact: fpki dash help at gsa.gov
