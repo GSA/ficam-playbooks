@@ -66,7 +66,7 @@ The FIDO2 Community of Action is an Office of Management and Budget initiative t
 
 WHfB PINs may seem similar to passwords at first glance. However, there is a fundamental difference: PINs typically are local to the device and not transmitted over the internet, unlike a Microsoft 365 or Azure Active Directory (Azure AD) User Principal Name and Password combination.
 
-Device PIN creation establishes a trusted relationship with the identity provider (Azure AD). It also creates an asymmetric key pair that is used for authentication. Transmittal of the key to the authentication server completes the sign-in request. When paired with a Trusted Platform Module (TPM) chip, tamper protection is enabled. This feature protects the key material from attackers and locks the device after too many incorrect PIN attempts.
+Device PIN creation establishes a trusted relationship with the identity provider (Azure AD). It also creates an asymmetric key pair that is used for authentication. When paired with a Trusted Platform Module (TPM) chip, tamper protection is enabled. This feature protects the key material from attackers and locks the device after too many incorrect PIN attempts.
 
 ## Windows Hello for Business Sign-in Options
 
@@ -75,7 +75,6 @@ The available sign-in options for Windows Hello for Business include the followi
 - Facial recognition
 - Fingerprint recognition
 - PIN (for use as a backup in case the biometric authentication fails or in the absence of camera/fingerprint scanning technology)
-- Security key (a physical key)
 
 Biometric data is stored locally on the device and never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
 
