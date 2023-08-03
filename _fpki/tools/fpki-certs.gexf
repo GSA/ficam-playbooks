@@ -49,7 +49,7 @@
             <node id="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" label="CertiPath Bridge CA - G3">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="199.0" y="28.0" z="0.0"/>
+                <viz:position x="198.0" y="29.0" z="0.0"/>
             </node>
             <node id="common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD DERILITY CA-1">
                 <size value="10.0"/>
@@ -179,7 +179,7 @@
             <node id="common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US" label="DigiCert Class 3 SSP Intermediate CA - G4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="193.0" y="56.0" z="0.0"/>
+                <viz:position x="192.0" y="57.0" z="0.0"/>
             </node>
             <node id="common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US" label="DigiCert Federal SSP Intermediate CA - G5">
                 <size value="10.0"/>
@@ -194,17 +194,17 @@
             <node id="common_name:DigiCert Federated ID CA - G2,organization_name:DigiCert, Inc.,country_name:US" label="DigiCert Federated ID CA - G2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="183.0" y="82.0" z="0.0"/>
+                <viz:position x="182.0" y="84.0" z="0.0"/>
             </node>
             <node id="common_name:DigiCert Federated ID L3 CA,organizational_unit_name:www.digicert.com,organization_name:DigiCert Inc,country_name:US" label="DigiCert Federated ID L3 CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="170.0" y="106.0" z="0.0"/>
+                <viz:position x="169.0" y="109.0" z="0.0"/>
             </node>
             <node id="common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DoD Interoperability Root CA 2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="154.0" y="129.0" z="0.0"/>
+                <viz:position x="152.0" y="131.0" z="0.0"/>
             </node>
             <node id="common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DoD Root CA 3">
                 <size value="10.0"/>
@@ -239,12 +239,12 @@
             <node id="common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust Derived Credential SSP CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="134.0" y="149.0" z="0.0"/>
+                <viz:position x="131.0" y="152.0" z="0.0"/>
             </node>
             <node id="common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US" label="Exostar Federated Identity Service Root CA 2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="112.0" y="166.0" z="0.0"/>
+                <viz:position x="109.0" y="169.0" z="0.0"/>
             </node>
             <node id="common_name:Exostar Federated Identity Service Signing CA 3,domain_component:evincible,domain_component:com" label="Exostar Federated Identity Service Signing CA 3">
                 <size value="10.0"/>
@@ -269,12 +269,12 @@
             <node id="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" label="Federal Common Policy CA G2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="88.0" y="180.0" z="0.0"/>
+                <viz:position x="0.0" y="0.0" z="0.0"/>
             </node>
             <node id="common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US" label="HHS-FPKI-Intermediate-CA-E1">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="62.0" y="191.0" z="0.0"/>
+                <viz:position x="84.0" y="182.0" z="0.0"/>
             </node>
             <node id="common_name:IGC CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US" label="IGC CA 1">
                 <size value="10.0"/>
@@ -319,7 +319,7 @@
             <node id="common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US" label="IdenTrust Global Common Root CA 1">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="35.0" y="197.0" z="0.0"/>
+                <viz:position x="57.0" y="192.0" z="0.0"/>
             </node>
             <node id="common_name:Leidos FBCA Cloud PKI CA-1,organization_name:Leidos" label="Leidos FBCA Cloud PKI CA-1">
                 <size value="10.0"/>
@@ -354,37 +354,37 @@
             <node id="common_name:NRC PROD G6 Fed SSP CA,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US" label="NRC PROD G6 Fed SSP CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="7.0" y="200.0" z="0.0"/>
+                <viz:position x="29.0" y="198.0" z="0.0"/>
             </node>
             <node id="common_name:NRC SSP Agency CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US" label="NRC SSP Agency CA G3">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-20.0" y="199.0" z="0.0"/>
+                <viz:position x="1.0" y="200.0" z="0.0"/>
             </node>
             <node id="common_name:NRC SSP Agency CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US" label="NRC SSP Agency CA G4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-48.0" y="195.0" z="0.0"/>
+                <viz:position x="-28.0" y="198.0" z="0.0"/>
             </node>
             <node id="common_name:NRC SSP Device CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US" label="NRC SSP Device CA G3">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-74.0" y="186.0" z="0.0"/>
+                <viz:position x="-56.0" y="192.0" z="0.0"/>
             </node>
             <node id="common_name:NRC SSP Device CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US" label="NRC SSP Device CA G4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-99.0" y="174.0" z="0.0"/>
+                <viz:position x="-83.0" y="182.0" z="0.0"/>
             </node>
             <node id="common_name:Naval Reactors SSP Agency CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US" label="Naval Reactors SSP Agency CA G3">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-123.0" y="158.0" z="0.0"/>
+                <viz:position x="-108.0" y="169.0" z="0.0"/>
             </node>
             <node id="common_name:Naval Reactors SSP Device CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US" label="Naval Reactors SSP Device CA G3">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-143.0" y="139.0" z="0.0"/>
+                <viz:position x="-130.0" y="152.0" z="0.0"/>
             </node>
             <node id="common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US" label="Northrop Grumman Corporate Root CA-384">
                 <size value="10.0"/>
@@ -419,7 +419,7 @@
             <node id="common_name:SAFE Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:SAFE Identity,country_name:US" label="SAFE Identity Bridge CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-161.0" y="118.0" z="0.0"/>
+                <viz:position x="-151.0" y="131.0" z="0.0"/>
             </node>
             <node id="common_name:SAIC FBCA Cloud PKI CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:SAIC LLC,country_name:US" label="SAIC FBCA Cloud PKI CA 1">
                 <size value="10.0"/>
@@ -429,7 +429,7 @@
             <node id="common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US" label="STRAC Bridge Root Certification Authority">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-176.0" y="94.0" z="0.0"/>
+                <viz:position x="-168.0" y="109.0" z="0.0"/>
             </node>
             <node id="common_name:Senate PIV-I CA G4,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US" label="Senate PIV-I CA G4">
                 <size value="10.0"/>
@@ -469,7 +469,7 @@
             <node id="common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US" label="Symantec Class 3 SSP Intermediate CA - G3">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-187.0" y="69.0" z="0.0"/>
+                <viz:position x="-181.0" y="84.0" z="0.0"/>
             </node>
             <node id="common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US" label="Symantec SSP Intermediate CA - G4">
                 <size value="10.0"/>
@@ -479,7 +479,7 @@
             <node id="common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US" label="TSCP SHA256 Bridge CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-195.0" y="42.0" z="0.0"/>
+                <viz:position x="-191.0" y="57.0" z="0.0"/>
             </node>
             <node id="common_name:Trans Sped Mobile eIDAS QCA G2,organizational_unit_name:Individual Subscriber CA,organization_name:Trans Sped SRL,country_name:RO" label="Trans Sped Mobile eIDAS QCA G2">
                 <size value="10.0"/>
@@ -489,27 +489,27 @@
             <node id="common_name:U.S. Department of Education Agency CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US" label="U.S. Department of Education Agency CA - G4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-199.0" y="14.0" z="0.0"/>
+                <viz:position x="-197.0" y="29.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of Education Agency CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US" label="U.S. Department of Education Agency CA - G5">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-199.0" y="-13.0" z="0.0"/>
+                <viz:position x="-200.0" y="1.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of Education Device CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US" label="U.S. Department of Education Device CA - G4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-195.0" y="-41.0" z="0.0"/>
+                <viz:position x="-197.0" y="-28.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of Education Device CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US" label="U.S. Department of Education Device CA - G5">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-187.0" y="-68.0" z="0.0"/>
+                <viz:position x="-191.0" y="-56.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu" label="U.S. Department of State AD High Assurance CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-176.0" y="-93.0" z="0.0"/>
+                <viz:position x="-181.0" y="-83.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu" label="U.S. Department of State AD Root CA">
                 <size value="10.0"/>
@@ -519,37 +519,37 @@
             <node id="common_name:U.S. Department of Transportation Agency CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US" label="U.S. Department of Transportation Agency CA G4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-161.0" y="-117.0" z="0.0"/>
+                <viz:position x="-168.0" y="-108.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of Transportation Agency CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US" label="U.S. Department of Transportation Agency CA G5">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-143.0" y="-138.0" z="0.0"/>
+                <viz:position x="-151.0" y="-130.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of Transportation Agency CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US" label="U.S. Department of Transportation Agency CA G6">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-123.0" y="-157.0" z="0.0"/>
+                <viz:position x="-130.0" y="-151.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of Transportation Device CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US" label="U.S. Department of Transportation Device CA G4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-100.0" y="-173.0" z="0.0"/>
+                <viz:position x="-108.0" y="-168.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of Transportation Device CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US" label="U.S. Department of Transportation Device CA G5">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-74.0" y="-185.0" z="0.0"/>
+                <viz:position x="-83.0" y="-181.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of Transportation Device CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US" label="U.S. Department of Transportation Device CA G6">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-48.0" y="-194.0" z="0.0"/>
+                <viz:position x="-56.0" y="-191.0" z="0.0"/>
             </node>
             <node id="common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov" label="USPTO_INTR_CA1">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-20.0" y="-198.0" z="0.0"/>
+                <viz:position x="-28.0" y="-197.0" z="0.0"/>
             </node>
             <node id="common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US" label="Verizon SSP CA A2">
                 <size value="10.0"/>
@@ -559,12 +559,12 @@
             <node id="common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov" label="Veterans Affairs CA B3">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="7.0" y="-199.0" z="0.0"/>
+                <viz:position x="0.0" y="-200.0" z="0.0"/>
             </node>
             <node id="common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov" label="Veterans Affairs User CA B1">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="35.0" y="-196.0" z="0.0"/>
+                <viz:position x="29.0" y="-197.0" z="0.0"/>
             </node>
             <node id="common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="WidePoint ECA 8">
                 <size value="10.0"/>
@@ -584,7 +584,7 @@
             <node id="common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US" label="WidePoint NFI Root 2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="62.0" y="-190.0" z="0.0"/>
+                <viz:position x="57.0" y="-191.0" z="0.0"/>
             </node>
             <node id="common_name:WidePoint ORC ECA 7,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="WidePoint ORC ECA 7">
                 <size value="10.0"/>
@@ -609,17 +609,17 @@
             <node id="organizational_unit_name:DHS CA4,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Homeland Security,organization_name:U.S. Government,country_name:US" label="DHS CA4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="88.0" y="-179.0" z="0.0"/>
+                <viz:position x="84.0" y="-181.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:Department of Veterans Affairs CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Veterans Affairs,organization_name:U.S. Government,country_name:US" label="Department of Veterans Affairs CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="112.0" y="-165.0" z="0.0"/>
+                <viz:position x="109.0" y="-168.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust Managed Services NFI Root CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="134.0" y="-148.0" z="0.0"/>
+                <viz:position x="131.0" y="-151.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust Managed Services Root CA">
                 <size value="10.0"/>
@@ -629,7 +629,7 @@
             <node id="organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust Managed Services SSP CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="154.0" y="-128.0" z="0.0"/>
+                <viz:position x="152.0" y="-130.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust NFI Medium Assurance SSP CA">
                 <size value="10.0"/>
@@ -639,22 +639,22 @@
             <node id="organizational_unit_name:NASA Operational CA,organizational_unit_name:Certification Authorities,organizational_unit_name:NASA,organization_name:U.S. Government,country_name:US" label="NASA Operational CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="170.0" y="-105.0" z="0.0"/>
+                <viz:position x="169.0" y="-108.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:OCIO CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US" label="OCIO CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="183.0" y="-81.0" z="0.0"/>
+                <viz:position x="182.0" y="-83.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:Social Security Administration Certification Authority,organizational_unit_name:SSA,organization_name:U.S. Government,country_name:US" label="Social Security Administration Certification Authority">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="193.0" y="-55.0" z="0.0"/>
+                <viz:position x="192.0" y="-56.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:U.S. Department of State PIV CA2,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US" label="U.S. Department of State PIV CA2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="199.0" y="-27.0" z="0.0"/>
+                <viz:position x="198.0" y="-28.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US" label="US Treasury Root CA">
                 <size value="10.0"/>
