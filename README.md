@@ -1,3 +1,5 @@
+**The content in this repository has migrated to https://github.com/GSA/idmanagement.gov. This repository was public archived on September 7th, 2023.**
+
 [![CircleCI](https://circleci.com/gh/GSA/ficam-playbooks.svg?style=svg)](https://circleci.com/gh/GSA/ficam-playbooks)
 
 This work is led by the GSA Identity and Trusted Access Division FICAM Program in coordination with the ICAM Subcommittee of the Federal CISO Council.
